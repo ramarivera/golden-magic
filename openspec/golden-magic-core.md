@@ -10,7 +10,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Native Nushell plugin follow-up: `golden-magic-6eh`
 - Completed descriptor fixture harness: `golden-magic-4db`
 - Nix fixture isolation follow-up: `golden-magic-jp7`
-- Performance gates follow-up: `golden-magic-bz6`
+- Completed performance gates: `golden-magic-bz6`
 - Debug instrumentation design follow-up: `golden-magic-f4n`
 
 ## Acceptance Criteria
@@ -32,6 +32,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Include CLI integration tests for stdin parsing, output modes, header modes, rule listing, and invalid rule rejection.
 - [x] Include a Nushell wrapper integration test.
 - [x] Include a Criterion performance benchmark harness with initial parser baselines.
+- [x] Include hard parser performance regression gates in `cargo test`.
 - [x] Include a generic TOML descriptor registry substrate with duplicate-id conflict tests.
 - [x] Wire descriptor registry selection into CLI parser options with validation for descriptor rule ids.
 - [x] Load default descriptors from XDG config with an opt-out for hermetic runs.
@@ -43,7 +44,6 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 
 - [ ] Implement native `from golden-magic` as a Nushell plugin binary instead of a CLI-backed wrapper.
 - [ ] Add isolated Nix-backed fixture/runtime harness.
-- [ ] Promote performance baselines into hard documented budgets/gates.
 - [ ] Add hidden/debug instrumentation design only after security review.
 
 ## Evidence

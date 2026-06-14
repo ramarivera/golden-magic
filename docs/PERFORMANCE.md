@@ -24,16 +24,24 @@ Initial local baseline from 2026-06-14 on Ramiro's machine, using `--sample-size
 | `parse large rectangular tsv` (10,000 × 8) | ~9.66 ms |
 | `parse first-row headers` (1,000 × 2) | ~0.38 ms |
 
-These are baseline observations, not hard gates yet.
+## Hard Gates
+
+`tests/performance_gate.rs` enforces conservative regression budgets during `cargo test`:
+
+| Gate | Budget |
+| --- | ---: |
+| large rectangular TSV parse (10,000 × 8) | 250 ms |
+| first-row header parse (1,000 × 2) | 100 ms |
+
+These budgets are intentionally much looser than the Criterion baselines. They are tripwires for accidental regressions, not microbenchmark claims.
+
+Any regression beyond the budget should require either an optimization or a documented tradeoff.
 
 ## Future Gates
 
-Before claiming production-grade performance, define explicit budgets for:
+Additional budgets still needed:
 
-- interactive CLI latency
-- large stdin parsing
-- descriptor registry selection
+- interactive CLI startup latency
+- descriptor registry selection under large registries
 - Nushell adapter overhead
 - full fixture harness execution
-
-Any regression beyond the budget should require either an optimization or a documented tradeoff.
