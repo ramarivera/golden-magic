@@ -2,7 +2,7 @@
 
 Golden Magic is an experimental parser for turning hostile, table-ish CLI text into structured data for Nushell-oriented workflows without requiring upstream JSON.
 
-It currently provides a Rust core, a small CLI adapter, and a Nushell wrapper module:
+It currently provides a Rust core, a small CLI adapter, a Nushell wrapper module, and a native Nushell plugin binary:
 
 ```bash
 printf 'alpha\tbeta\ngamma\tdelta\n' | golden-magic
@@ -10,6 +10,14 @@ printf 'alpha\tbeta\ngamma\tdelta\n' | golden-magic
 
 ```nu
 use ./nu/golden-magic.nu *
+"name\tstatus\nalpha\tok\n" | from golden-magic --headers first-row
+```
+
+Native plugin smoke path:
+
+```nu
+plugin add ./target/debug/nu_plugin_golden_magic
+plugin use golden_magic
 "name\tstatus\nalpha\tok\n" | from golden-magic --headers first-row
 ```
 
@@ -109,6 +117,7 @@ Implemented generic heuristics:
 - trace-only output with `--output trace-json` or `--explain`
 - generated or first-row header modes with `--headers generated|first-row`
 - Nushell wrapper command `from golden-magic` in `nu/golden-magic.nu`
+- native Nushell plugin binary `nu_plugin_golden_magic` exporting `from golden-magic`
 - descriptor registry loading with `--descriptor-dir`
 - default descriptor discovery from XDG config with `--no-default-descriptors` opt-out
 - config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml`
@@ -117,7 +126,7 @@ Implemented generic heuristics:
 
 Not implemented yet:
 
-- Native Nushell plugin binary for `from golden-magic`
+- descriptor/config loading inside the native Nu plugin; use the CLI wrapper when descriptor packs are needed
 - broader extension loading beyond TOML descriptors
 - full descriptor-driven Nix fixture manifest harness
 - implemented hidden debug channel; current design explicitly rejects hidden channels by default
@@ -141,4 +150,4 @@ cargo test
 cargo bench --bench parser -- --sample-size 10
 ```
 
-The parser core is intentionally independent from Nushell plugin APIs so a future Nu adapter can reuse the same domain logic.
+The parser core is intentionally independent from Nushell plugin APIs. Both the CLI wrapper and native plugin reuse the same domain logic.

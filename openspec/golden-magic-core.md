@@ -7,7 +7,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 ## Beads Mapping
 
 - Completed core slice: `golden-magic-hog`
-- Native Nushell plugin follow-up: `golden-magic-6eh`
+- Completed native Nushell plugin: `golden-magic-6eh`
 - Completed descriptor fixture harness: `golden-magic-4db`
 - Completed Nix fixture isolation: `golden-magic-jp7`
 - Completed performance gates: `golden-magic-bz6`
@@ -24,6 +24,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Support full-report, rows-only, and trace-only JSON output modes through the CLI.
 - [x] Support generated and first-row header modes through the CLI and parser core.
 - [x] Provide a Nushell wrapper module exporting `from golden-magic` over the CLI adapter.
+- [x] Provide a native Nushell plugin binary exporting `from golden-magic` over the same parser core.
 - [x] Support disabling specific heuristic rules through the CLI.
 - [x] Support running only specific heuristic rules through the CLI.
 - [x] Reject unknown rule ids instead of silently ignoring typos.
@@ -44,7 +45,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 
 ## Deferred Criteria
 
-- [ ] Implement native `from golden-magic` as a Nushell plugin binary instead of a CLI-backed wrapper.
+No core spec criteria currently deferred. Native plugin descriptor/config parity can be tracked by a new follow-up bead if needed.
 
 ## Evidence
 

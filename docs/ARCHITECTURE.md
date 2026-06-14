@@ -9,7 +9,7 @@ Golden Magic uses a hexagonal-ish split so parser logic stays independent from N
 │ Adapters                                                   │
 │ - CLI binary                                               │
 │ - Nushell wrapper module                                   │
-│ - future native Nushell plugin                             │
+│ - native Nushell plugin                                    │
 │ - future test/runtime harness                              │
 └───────────────────────────┬───────────────────────────────┘
                             │
@@ -59,8 +59,13 @@ A descriptor should be testable alone and inside the full registry. Native dynam
 
 Debug channels must not interfere with stdout/stderr pipeline semantics. Prefer explicit `--output trace-json` / `--explain` outputs first. `docs/DEBUG-INSTRUMENTATION.md` documents the current decision: no hidden side channel in normal builds, and strict compile-time/runtime gates before any future harness-only channel.
 
-## Nushell Integration Direction
+## Nushell Integration
 
-The current Nushell adapter is `nu/golden-magic.nu`, which exports `from golden-magic` and shells out to the Rust CLI. This gives the intended spell shape now while preserving the parser core as the stable boundary.
+Golden Magic has two Nushell adapters:
 
-The eventual target is a native Nushell plugin command shaped like `from golden-magic`, backed by the same domain core and compatible with the wrapper's command surface where practical.
+- `nu/golden-magic.nu`: wrapper module exporting `from golden-magic` over the CLI, including descriptor/config support.
+- `src/bin/nu_plugin_golden_magic.rs`: native plugin binary named `nu_plugin_golden_magic`, exporting `from golden-magic` over Nu plugin protocol.
+
+The native plugin returns Nu records directly rather than JSON text. The parser core remains the stable boundary shared by both adapters.
+
+Current limitation: descriptor/config loading is implemented in the CLI adapter path, not yet in the native plugin path.
