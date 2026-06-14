@@ -112,13 +112,14 @@ Implemented generic heuristics:
 - descriptor registry loading with `--descriptor-dir`
 - default descriptor discovery from XDG config with `--no-default-descriptors` opt-out
 - config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml`
+- optional Nix-backed fixture test pattern for real CLI isolation
+- Criterion benchmark harness and cargo-test parser performance gates
 
 Not implemented yet:
 
 - Native Nushell plugin binary for `from golden-magic`
 - broader extension loading beyond TOML descriptors
-- Nix-backed fixture installation
-- performance harness
+- full descriptor-driven Nix fixture manifest harness
 - implemented hidden debug channel; current design explicitly rejects hidden channels by default
 
 See:
@@ -127,6 +128,7 @@ See:
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/DESCRIPTORS.md`](docs/DESCRIPTORS.md)
 - [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md)
+- [`docs/NIX-FIXTURES.md`](docs/NIX-FIXTURES.md)
 - [`docs/DEBUG-INSTRUMENTATION.md`](docs/DEBUG-INSTRUMENTATION.md)
 - [`AGENTS.md`](AGENTS.md)
 
