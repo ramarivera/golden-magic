@@ -1,0 +1,1 @@
+{"id":"int-144f3a29","kind":"field_change","created_at":"2026-06-14T20:14:49.902164Z","actor":"Ramiro Rivera","issue_id":"golden-magic-hog","extra":{"field":"status","new_value":"closed","old_value":"open","reason":"Implemented initial generic core slice with CLI, Nu wrapper, descriptors, tests, docs, and benchmarks."}}
