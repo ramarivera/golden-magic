@@ -119,7 +119,7 @@ Not implemented yet:
 - broader extension loading beyond TOML descriptors
 - Nix-backed fixture installation
 - performance harness
-- hidden debug protocol
+- implemented hidden debug channel; current design explicitly rejects hidden channels by default
 
 See:
 
@@ -127,6 +127,7 @@ See:
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/DESCRIPTORS.md`](docs/DESCRIPTORS.md)
 - [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md)
+- [`docs/DEBUG-INSTRUMENTATION.md`](docs/DEBUG-INSTRUMENTATION.md)
 - [`AGENTS.md`](AGENTS.md)
 
 ## Development

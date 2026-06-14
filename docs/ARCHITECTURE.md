@@ -41,7 +41,7 @@ Golden Magic uses a hexagonal-ish split so parser logic stays independent from N
 
 ## Descriptor Registry
 
-The current descriptor substrate lives in `src/descriptors.rs`. It can recursively load TOML descriptors, reject duplicate ids, sort by priority, and select descriptors by required substrings. The parser does not consume descriptor selections yet.
+The current descriptor substrate lives in `src/descriptors.rs`. It can recursively load TOML descriptors, reject duplicate ids, sort by priority, and select descriptors by required substrings. The CLI consumes selected descriptors by applying their parser rule hints before calling the parser core.
 
 ## Extension Direction
 
@@ -57,7 +57,7 @@ A descriptor should be testable alone and inside the full registry. Native dynam
 
 ## Debug/Instrumentation Direction
 
-Debug channels must not interfere with stdout/stderr pipeline semantics. Prefer explicit `--trace` / `--explain` outputs first. Any hidden file descriptor, socket, or harness-only protocol needs a security review and a documented activation handshake before implementation.
+Debug channels must not interfere with stdout/stderr pipeline semantics. Prefer explicit `--output trace-json` / `--explain` outputs first. `docs/DEBUG-INSTRUMENTATION.md` documents the current decision: no hidden side channel in normal builds, and strict compile-time/runtime gates before any future harness-only channel.
 
 ## Nushell Integration Direction
 
