@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "golden_magic",
+  "project_id": "adddff18-520d-4a3a-bdd5-0997471949ff"
+}
