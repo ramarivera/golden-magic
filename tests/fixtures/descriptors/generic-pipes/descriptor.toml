@@ -1,0 +1,9 @@
+id = "fixture.generic-pipes"
+name = "Fixture Generic Pipes"
+priority = 10
+
+[matches]
+required_substrings = ["|"]
+
+[parser]
+only_rules = ["detect.delimited.pipes"]

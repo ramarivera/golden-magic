@@ -66,16 +66,19 @@ When `descriptor_dirs` is present in config, it replaces the built-in default de
 
 When descriptors match, the highest-priority selected descriptor can apply parser `only_rules` and `disable_rules`. The trace includes `descriptor.selected`.
 
+Fixture harness:
+
+Descriptor fixtures live under `tests/fixtures/descriptors/<case>/`.
+
+Each case contains:
+
+- `descriptor.toml`
+- `input.txt`
+- `negative.txt`
+- `expected.rows.json`
+
+The harness verifies isolated descriptor selection, negative inputs, expected parsed rows, and full-registry duplicate-id failures.
+
 Not wired yet:
 
-- descriptor fixture harness
 - descriptor conflict diagnostics beyond duplicate ids
-
-## Testing Expectations
-
-Every descriptor should eventually have:
-
-- an isolated fixture test
-- a full-registry selection test
-- a negative fixture that should not match
-- explicit rule ids matching `golden-magic --list-rules`
