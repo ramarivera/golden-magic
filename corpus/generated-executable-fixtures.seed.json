@@ -3478,5 +3478,65 @@
     "negative": "file url expires\nreport.txt https://transfer.sh/report 14d\n",
     "analysis_notes": "Modeled transfer.sh upload output with a generated executable-json parser plugin.",
     "variants": ["file header row", "url row", "expires field"]
+  },
+  {
+    "fixture": "lynis-findings",
+    "descriptor_id": "known.lynis.findings",
+    "name": "Lynis finding list",
+    "repo": "https://github.com/CISOfy/lynis",
+    "required_substrings": ["test\tresult", "AUTH-9282\twarning"],
+    "parser": "tab-pairs",
+    "input": "test\tresult hardening\nAUTH-9282\twarning medium\nKRNL-5820\tok high\nFILE-6310\tsuggestion low\n",
+    "negative": "test result hardening\nAUTH-9282 warning medium\n",
+    "analysis_notes": "Modeled Lynis finding output with a generated executable-json parser plugin.",
+    "variants": ["test header row", "result row", "hardening field"]
+  },
+  {
+    "fixture": "blessed-contrib-widgets",
+    "descriptor_id": "known.blessed-contrib.widgets",
+    "name": "blessed-contrib widget list",
+    "repo": "https://github.com/yaronn/blessed-contrib",
+    "required_substrings": ["widget\ttype", "line\tchart"],
+    "parser": "tab-pairs",
+    "input": "widget\ttype cells\nline\tchart 12\nmap\tpanel 24\ntable\tgrid 18\n",
+    "negative": "widget type cells\nline chart 12\n",
+    "analysis_notes": "Modeled blessed-contrib widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "type row", "cells field"]
+  },
+  {
+    "fixture": "vercel-deployments",
+    "descriptor_id": "known.vercel.deployments",
+    "name": "Vercel deployment list",
+    "repo": "https://github.com/vercel/vercel",
+    "required_substrings": ["deployment\tstate", "web-prod\tready"],
+    "parser": "tab-pairs",
+    "input": "deployment\tstate age\nweb-prod\tready 2m\napi-preview\tbuilding 18s\ndocs\tqueued 4s\n",
+    "negative": "deployment state age\nweb-prod ready 2m\n",
+    "analysis_notes": "Modeled Vercel CLI deployment output with a generated executable-json parser plugin.",
+    "variants": ["deployment header row", "state row", "age field"]
+  },
+  {
+    "fixture": "plandex-plans",
+    "descriptor_id": "known.plandex.plans",
+    "name": "Plandex plan list",
+    "repo": "https://github.com/plandex-ai/plandex",
+    "required_substrings": ["plan\tstatus", "refactor-api\tactive"],
+    "parser": "tab-pairs",
+    "input": "plan\tstatus files\nrefactor-api\tactive 12\nfix-tests\tpending 7\nwrite-docs\tapplied 5\n",
+    "negative": "plan status files\nrefactor-api active 12\n",
+    "analysis_notes": "Modeled Plandex plan output with a generated executable-json parser plugin.",
+    "variants": ["plan header row", "status row", "files field"]
+  },
+  {
+    "fixture": "kaldi-jobs",
+    "descriptor_id": "known.kaldi.jobs",
+    "name": "Kaldi job list",
+    "repo": "https://github.com/kaldi-asr/kaldi",
+    "required_substrings": ["job\tstate", "decode-dev\trunning"],
+    "parser": "tab-pairs",
+    "input": "job\tstate graph\ndecode-dev\trunning HCLG\nalign-train\tdone tri3\nlmrescore\tqueued tgsmall\n",
+    "negative": "job state graph\ndecode-dev running HCLG\n",
+    "analysis_notes": "Modeled Kaldi job output with a generated executable-json parser plugin.",
+    "variants": ["job header row", "state row", "graph field"]
   }
 ]

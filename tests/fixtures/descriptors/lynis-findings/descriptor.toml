@@ -1,0 +1,10 @@
+id = "known.lynis.findings"
+name = "Lynis finding list"
+priority = 50
+
+[matches]
+required_substrings = ["test\tresult","AUTH-9282\twarning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

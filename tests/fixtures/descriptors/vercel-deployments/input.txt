@@ -1,0 +1,4 @@
+deployment	state age
+web-prod	ready 2m
+api-preview	building 18s
+docs	queued 4s

@@ -1,0 +1,4 @@
+widget	type cells
+line	chart 12
+map	panel 24
+table	grid 18

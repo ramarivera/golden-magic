@@ -2168,5 +2168,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/transfer-sh-uploads",
     "analysis_notes": "Modeled transfer.sh upload output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/CISOfy/lynis",
+    "descriptor_id": "known.lynis.findings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lynis-findings",
+    "analysis_notes": "Modeled Lynis finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yaronn/blessed-contrib",
+    "descriptor_id": "known.blessed-contrib.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/blessed-contrib-widgets",
+    "analysis_notes": "Modeled blessed-contrib widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel/vercel",
+    "descriptor_id": "known.vercel.deployments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vercel-deployments",
+    "analysis_notes": "Modeled Vercel CLI deployment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/plandex-ai/plandex",
+    "descriptor_id": "known.plandex.plans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/plandex-plans",
+    "analysis_notes": "Modeled Plandex plan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kaldi-asr/kaldi",
+    "descriptor_id": "known.kaldi.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kaldi-jobs",
+    "analysis_notes": "Modeled Kaldi job output with a generated executable-json parser plugin."
   }
 ]

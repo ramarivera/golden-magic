@@ -1,0 +1,2 @@
+widget type cells
+line chart 12

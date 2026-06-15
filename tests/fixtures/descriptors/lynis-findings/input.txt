@@ -1,0 +1,4 @@
+test	result hardening
+AUTH-9282	warning medium
+KRNL-5820	ok high
+FILE-6310	suggestion low

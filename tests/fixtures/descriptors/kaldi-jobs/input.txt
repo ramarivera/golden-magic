@@ -1,0 +1,4 @@
+job	state graph
+decode-dev	running HCLG
+align-train	done tri3
+lmrescore	queued tgsmall

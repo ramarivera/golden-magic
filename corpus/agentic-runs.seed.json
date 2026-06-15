@@ -5578,5 +5578,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/CISOfy/lynis",
+    "descriptor_id": "known.lynis.findings",
+    "run_id": "agentic.lynis-findings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lynis-findings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lynis-findings/expected.rows.json",
+    "variants": [
+      "test header row",
+      "result row",
+      "hardening field"
+    ],
+    "transcript": [
+      "selected descriptor known.lynis.findings for Lynis finding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yaronn/blessed-contrib",
+    "descriptor_id": "known.blessed-contrib.widgets",
+    "run_id": "agentic.blessed-contrib-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/blessed-contrib-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/blessed-contrib-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "type row",
+      "cells field"
+    ],
+    "transcript": [
+      "selected descriptor known.blessed-contrib.widgets for blessed-contrib widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel/vercel",
+    "descriptor_id": "known.vercel.deployments",
+    "run_id": "agentic.vercel-deployments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vercel-deployments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vercel-deployments/expected.rows.json",
+    "variants": [
+      "deployment header row",
+      "state row",
+      "age field"
+    ],
+    "transcript": [
+      "selected descriptor known.vercel.deployments for Vercel deployment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/plandex-ai/plandex",
+    "descriptor_id": "known.plandex.plans",
+    "run_id": "agentic.plandex-plans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/plandex-plans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/plandex-plans/expected.rows.json",
+    "variants": [
+      "plan header row",
+      "status row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.plandex.plans for Plandex plan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kaldi-asr/kaldi",
+    "descriptor_id": "known.kaldi.jobs",
+    "run_id": "agentic.kaldi-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kaldi-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kaldi-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "state row",
+      "graph field"
+    ],
+    "transcript": [
+      "selected descriptor known.kaldi.jobs for Kaldi job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

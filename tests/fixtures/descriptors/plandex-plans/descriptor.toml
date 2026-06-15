@@ -1,0 +1,10 @@
+id = "known.plandex.plans"
+name = "Plandex plan list"
+priority = 50
+
+[matches]
+required_substrings = ["plan\tstatus","refactor-api\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

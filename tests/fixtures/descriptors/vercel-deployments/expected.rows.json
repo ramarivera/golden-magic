@@ -1,0 +1,18 @@
+[
+  {
+    "name": "deployment",
+    "value": "state age"
+  },
+  {
+    "name": "web-prod",
+    "value": "ready 2m"
+  },
+  {
+    "name": "api-preview",
+    "value": "building 18s"
+  },
+  {
+    "name": "docs",
+    "value": "queued 4s"
+  }
+]

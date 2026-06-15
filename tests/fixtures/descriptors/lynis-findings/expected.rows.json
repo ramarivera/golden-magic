@@ -1,0 +1,18 @@
+[
+  {
+    "name": "test",
+    "value": "result hardening"
+  },
+  {
+    "name": "AUTH-9282",
+    "value": "warning medium"
+  },
+  {
+    "name": "KRNL-5820",
+    "value": "ok high"
+  },
+  {
+    "name": "FILE-6310",
+    "value": "suggestion low"
+  }
+]
