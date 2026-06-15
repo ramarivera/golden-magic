@@ -1,0 +1,10 @@
+id = "known.mole.tunnels"
+name = "Mole tunnel list"
+priority = 50
+
+[matches]
+required_substrings = ["tunnel\tstatus","dev\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

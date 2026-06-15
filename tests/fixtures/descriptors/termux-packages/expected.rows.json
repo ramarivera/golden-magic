@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "state version"
+  },
+  {
+    "name": "openssh",
+    "value": "installed 9.9"
+  },
+  {
+    "name": "nodejs",
+    "value": "installed 22.11"
+  },
+  {
+    "name": "python",
+    "value": "available 3.12"
+  }
+]

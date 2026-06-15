@@ -1,0 +1,4 @@
+tunnel	status target
+dev	open localhost:3000
+api	open localhost:8080
+db	closed localhost:5432

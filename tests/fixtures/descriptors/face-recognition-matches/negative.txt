@@ -1,0 +1,2 @@
+image match distance
+person-a.jpg known 0.31

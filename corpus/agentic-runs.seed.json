@@ -2338,5 +2338,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/ghostty-org/ghostty",
+    "descriptor_id": "known.ghostty.config",
+    "run_id": "agentic.ghostty-config.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ghostty-config/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ghostty-config/expected.rows.json",
+    "variants": [
+      "config key row",
+      "theme row",
+      "shell row"
+    ],
+    "transcript": [
+      "selected descriptor known.ghostty.config for Ghostty config summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ageitgey/face_recognition",
+    "descriptor_id": "known.face-recognition.matches",
+    "run_id": "agentic.face-recognition-matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/face-recognition-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/face-recognition-matches/expected.rows.json",
+    "variants": [
+      "image header row",
+      "known match row",
+      "distance field"
+    ],
+    "transcript": [
+      "selected descriptor known.face-recognition.matches for face_recognition match list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/termux/termux-app",
+    "descriptor_id": "known.termux.packages",
+    "run_id": "agentic.termux-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termux-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termux-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "installed package row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.termux.packages for Termux package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tw93/Mole",
+    "descriptor_id": "known.mole.tunnels",
+    "run_id": "agentic.mole-tunnels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mole-tunnels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mole-tunnels/expected.rows.json",
+    "variants": [
+      "tunnel header row",
+      "open tunnel row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.mole.tunnels for Mole tunnel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AntonOsika/gpt-engineer",
+    "descriptor_id": "known.gpt-engineer.steps",
+    "run_id": "agentic.gpt-engineer-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gpt-engineer-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gpt-engineer-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "complete step row",
+      "file count field"
+    ],
+    "transcript": [
+      "selected descriptor known.gpt-engineer.steps for gpt-engineer step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

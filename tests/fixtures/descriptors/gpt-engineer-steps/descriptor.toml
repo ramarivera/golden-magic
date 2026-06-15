@@ -1,0 +1,10 @@
+id = "known.gpt-engineer.steps"
+name = "gpt-engineer step list"
+priority = 50
+
+[matches]
+required_substrings = ["step\tstate","plan\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

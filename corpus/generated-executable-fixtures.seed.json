@@ -1318,5 +1318,65 @@
     "negative": "renderable style width\ntable box 80\n",
     "analysis_notes": "Modeled Rich renderable list output with a generated executable-json parser plugin.",
     "variants": ["renderable header row", "table row", "width field"]
+  },
+  {
+    "fixture": "ghostty-config",
+    "descriptor_id": "known.ghostty.config",
+    "name": "Ghostty config summary",
+    "repo": "https://github.com/ghostty-org/ghostty",
+    "required_substrings": ["key:", "theme:"],
+    "parser": "colon-kv",
+    "input": "key: font-family\nvalue: JetBrainsMono\ntheme: dark\nshell: /bin/zsh\n",
+    "negative": "key font-family\ntheme dark\n",
+    "analysis_notes": "Modeled Ghostty config summary output with a generated executable-json parser plugin.",
+    "variants": ["config key row", "theme row", "shell row"]
+  },
+  {
+    "fixture": "face-recognition-matches",
+    "descriptor_id": "known.face-recognition.matches",
+    "name": "face_recognition match list",
+    "repo": "https://github.com/ageitgey/face_recognition",
+    "required_substrings": ["image\tmatch", "person-a.jpg\tknown"],
+    "parser": "tab-pairs",
+    "input": "image\tmatch distance\nperson-a.jpg\tknown 0.31\nunknown.jpg\tunknown 0.88\nperson-b.jpg\tknown 0.28\n",
+    "negative": "image match distance\nperson-a.jpg known 0.31\n",
+    "analysis_notes": "Modeled face_recognition CLI match output with a generated executable-json parser plugin.",
+    "variants": ["image header row", "known match row", "distance field"]
+  },
+  {
+    "fixture": "termux-packages",
+    "descriptor_id": "known.termux.packages",
+    "name": "Termux package list",
+    "repo": "https://github.com/termux/termux-app",
+    "required_substrings": ["package\tstate", "openssh\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "package\tstate version\nopenssh\tinstalled 9.9\nnodejs\tinstalled 22.11\npython\tavailable 3.12\n",
+    "negative": "package state version\nopenssh installed 9.9\n",
+    "analysis_notes": "Modeled Termux package list output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "installed package row", "version field"]
+  },
+  {
+    "fixture": "mole-tunnels",
+    "descriptor_id": "known.mole.tunnels",
+    "name": "Mole tunnel list",
+    "repo": "https://github.com/tw93/Mole",
+    "required_substrings": ["tunnel\tstatus", "dev\topen"],
+    "parser": "tab-pairs",
+    "input": "tunnel\tstatus target\ndev\topen localhost:3000\napi\topen localhost:8080\ndb\tclosed localhost:5432\n",
+    "negative": "tunnel status target\ndev open localhost:3000\n",
+    "analysis_notes": "Modeled Mole tunnel list output with a generated executable-json parser plugin.",
+    "variants": ["tunnel header row", "open tunnel row", "target field"]
+  },
+  {
+    "fixture": "gpt-engineer-steps",
+    "descriptor_id": "known.gpt-engineer.steps",
+    "name": "gpt-engineer step list",
+    "repo": "https://github.com/AntonOsika/gpt-engineer",
+    "required_substrings": ["step\tstate", "plan\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "step\tstate files\nplan\tcomplete 1\ngenerate\trunning 8\nverify\tqueued 0\n",
+    "negative": "step state files\nplan complete 1\n",
+    "analysis_notes": "Modeled gpt-engineer step list output with a generated executable-json parser plugin.",
+    "variants": ["step header row", "complete step row", "file count field"]
   }
 ]

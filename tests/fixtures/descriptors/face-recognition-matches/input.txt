@@ -1,0 +1,4 @@
+image	match distance
+person-a.jpg	known 0.31
+unknown.jpg	unknown 0.88
+person-b.jpg	known 0.28

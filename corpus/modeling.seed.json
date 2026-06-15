@@ -908,5 +908,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/rich-renderables",
     "analysis_notes": "Modeled Rich renderable list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ghostty-org/ghostty",
+    "descriptor_id": "known.ghostty.config",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ghostty-config",
+    "analysis_notes": "Modeled Ghostty config summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ageitgey/face_recognition",
+    "descriptor_id": "known.face-recognition.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/face-recognition-matches",
+    "analysis_notes": "Modeled face_recognition CLI match output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/termux/termux-app",
+    "descriptor_id": "known.termux.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termux-packages",
+    "analysis_notes": "Modeled Termux package list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tw93/Mole",
+    "descriptor_id": "known.mole.tunnels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mole-tunnels",
+    "analysis_notes": "Modeled Mole tunnel list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AntonOsika/gpt-engineer",
+    "descriptor_id": "known.gpt-engineer.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gpt-engineer-steps",
+    "analysis_notes": "Modeled gpt-engineer step list output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.face-recognition.matches"
+name = "face_recognition match list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tmatch","person-a.jpg\tknown"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

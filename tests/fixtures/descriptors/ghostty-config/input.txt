@@ -1,0 +1,4 @@
+key: font-family
+value: JetBrainsMono
+theme: dark
+shell: /bin/zsh

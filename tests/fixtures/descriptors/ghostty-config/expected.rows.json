@@ -1,0 +1,18 @@
+[
+  {
+    "key": "key",
+    "value": "font-family"
+  },
+  {
+    "key": "value",
+    "value": "JetBrainsMono"
+  },
+  {
+    "key": "theme",
+    "value": "dark"
+  },
+  {
+    "key": "shell",
+    "value": "/bin/zsh"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.ghostty.config"
+name = "Ghostty config summary"
+priority = 50
+
+[matches]
+required_substrings = ["key:","theme:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

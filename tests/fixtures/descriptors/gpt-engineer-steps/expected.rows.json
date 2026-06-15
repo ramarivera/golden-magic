@@ -1,0 +1,18 @@
+[
+  {
+    "name": "step",
+    "value": "state files"
+  },
+  {
+    "name": "plan",
+    "value": "complete 1"
+  },
+  {
+    "name": "generate",
+    "value": "running 8"
+  },
+  {
+    "name": "verify",
+    "value": "queued 0"
+  }
+]

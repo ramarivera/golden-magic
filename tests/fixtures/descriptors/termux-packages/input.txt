@@ -1,0 +1,4 @@
+package	state version
+openssh	installed 9.9
+nodejs	installed 22.11
+python	available 3.12

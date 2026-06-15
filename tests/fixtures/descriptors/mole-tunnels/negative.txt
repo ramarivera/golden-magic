@@ -1,0 +1,2 @@
+tunnel status target
+dev open localhost:3000
