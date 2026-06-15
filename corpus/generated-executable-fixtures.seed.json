@@ -3778,5 +3778,65 @@
     "negative": "image base size\ncurl alpine 8MB\n",
     "analysis_notes": "Modeled jessfraz/dockerfiles image output with a generated executable-json parser plugin.",
     "variants": ["image header row", "base row", "size field"]
+  },
+  {
+    "fixture": "tview-widgets",
+    "descriptor_id": "known.tview.widgets",
+    "name": "tview widget list",
+    "repo": "https://github.com/rivo/tview",
+    "required_substrings": ["widget\tkind", "table\tprimitive"],
+    "parser": "tab-pairs",
+    "input": "widget\tkind focusable\ntable\tprimitive true\nform\tprimitive true\ntextview\tprimitive false\n",
+    "negative": "widget kind focusable\ntable primitive true\n",
+    "analysis_notes": "Modeled tview widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "kind row", "focusable field"]
+  },
+  {
+    "fixture": "wechattweak-plugins",
+    "descriptor_id": "known.wechattweak.plugins",
+    "name": "WeChatTweak plugin list",
+    "repo": "https://github.com/sunnyyoung/WeChatTweak",
+    "required_substrings": ["plugin\tstate", "revoke-block\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstate version\nrevoke-block\tenabled 1.2\nmulti-login\tenabled 1.0\nmessage-export\tdisabled 0.9\n",
+    "negative": "plugin state version\nrevoke-block enabled 1.2\n",
+    "analysis_notes": "Modeled WeChatTweak plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "state row", "version field"]
+  },
+  {
+    "fixture": "git-history-commits",
+    "descriptor_id": "known.git-history.commits",
+    "name": "git-history commit list",
+    "repo": "https://github.com/pomber/git-history",
+    "required_substrings": ["commit\tauthor", "a1b2c3d\tRamiro"],
+    "parser": "tab-pairs",
+    "input": "commit\tauthor files\na1b2c3d\tRamiro 5\nb2c3d4e\tAgent 8\nc3d4e5f\tReviewer 2\n",
+    "negative": "commit author files\na1b2c3d Ramiro 5\n",
+    "analysis_notes": "Modeled git-history commit output with a generated executable-json parser plugin.",
+    "variants": ["commit header row", "author row", "files field"]
+  },
+  {
+    "fixture": "unleash-flags",
+    "descriptor_id": "known.unleash.flags",
+    "name": "Unleash feature flag list",
+    "repo": "https://github.com/Unleash/unleash",
+    "required_substrings": ["flag\tstate", "new-checkout\tenabled"],
+    "parser": "tab-pairs",
+    "input": "flag\tstate strategy\nnew-checkout\tenabled gradualRollout\nbeta-search\tdisabled default\nops-panel\tenabled userWithId\n",
+    "negative": "flag state strategy\nnew-checkout enabled gradualRollout\n",
+    "analysis_notes": "Modeled Unleash feature flag output with a generated executable-json parser plugin.",
+    "variants": ["flag header row", "state row", "strategy field"]
+  },
+  {
+    "fixture": "termui-widgets",
+    "descriptor_id": "known.termui.widgets",
+    "name": "termui widget list",
+    "repo": "https://github.com/gizak/termui",
+    "required_substrings": ["widget\tstatus", "gauge\tready"],
+    "parser": "tab-pairs",
+    "input": "widget\tstatus rows\ngauge\tready 3\nsparkline\tready 4\nparagraph\tdeprecated 2\n",
+    "negative": "widget status rows\ngauge ready 3\n",
+    "analysis_notes": "Modeled termui widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "status row", "rows field"]
   }
 ]

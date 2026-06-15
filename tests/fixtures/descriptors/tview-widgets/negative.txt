@@ -1,0 +1,2 @@
+widget kind focusable
+table primitive true

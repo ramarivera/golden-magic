@@ -6028,5 +6028,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/rivo/tview",
+    "descriptor_id": "known.tview.widgets",
+    "run_id": "agentic.tview-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tview-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tview-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "kind row",
+      "focusable field"
+    ],
+    "transcript": [
+      "selected descriptor known.tview.widgets for tview widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sunnyyoung/WeChatTweak",
+    "descriptor_id": "known.wechattweak.plugins",
+    "run_id": "agentic.wechattweak-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wechattweak-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wechattweak-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "state row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.wechattweak.plugins for WeChatTweak plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pomber/git-history",
+    "descriptor_id": "known.git-history.commits",
+    "run_id": "agentic.git-history-commits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-history-commits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-history-commits/expected.rows.json",
+    "variants": [
+      "commit header row",
+      "author row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-history.commits for git-history commit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Unleash/unleash",
+    "descriptor_id": "known.unleash.flags",
+    "run_id": "agentic.unleash-flags.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/unleash-flags/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/unleash-flags/expected.rows.json",
+    "variants": [
+      "flag header row",
+      "state row",
+      "strategy field"
+    ],
+    "transcript": [
+      "selected descriptor known.unleash.flags for Unleash feature flag list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gizak/termui",
+    "descriptor_id": "known.termui.widgets",
+    "run_id": "agentic.termui-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termui-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termui-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "status row",
+      "rows field"
+    ],
+    "transcript": [
+      "selected descriptor known.termui.widgets for termui widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

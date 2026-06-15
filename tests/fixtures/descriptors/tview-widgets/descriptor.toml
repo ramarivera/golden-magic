@@ -1,0 +1,10 @@
+id = "known.tview.widgets"
+name = "tview widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tkind","table\tprimitive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

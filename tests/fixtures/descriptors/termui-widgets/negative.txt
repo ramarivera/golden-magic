@@ -1,0 +1,2 @@
+widget status rows
+gauge ready 3

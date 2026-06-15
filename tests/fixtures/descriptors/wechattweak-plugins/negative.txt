@@ -1,0 +1,2 @@
+plugin state version
+revoke-block enabled 1.2

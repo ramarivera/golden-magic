@@ -1,0 +1,4 @@
+plugin	state version
+revoke-block	enabled 1.2
+multi-login	enabled 1.0
+message-export	disabled 0.9

@@ -1,0 +1,10 @@
+id = "known.wechattweak.plugins"
+name = "WeChatTweak plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tstate","revoke-block\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

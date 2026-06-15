@@ -1,0 +1,4 @@
+widget	kind focusable
+table	primitive true
+form	primitive true
+textview	primitive false

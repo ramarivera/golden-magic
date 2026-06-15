@@ -1,0 +1,4 @@
+widget	status rows
+gauge	ready 3
+sparkline	ready 4
+paragraph	deprecated 2

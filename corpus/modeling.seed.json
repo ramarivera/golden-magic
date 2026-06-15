@@ -2343,5 +2343,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/dockerfiles-images",
     "analysis_notes": "Modeled jessfraz/dockerfiles image output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rivo/tview",
+    "descriptor_id": "known.tview.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tview-widgets",
+    "analysis_notes": "Modeled tview widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sunnyyoung/WeChatTweak",
+    "descriptor_id": "known.wechattweak.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wechattweak-plugins",
+    "analysis_notes": "Modeled WeChatTweak plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pomber/git-history",
+    "descriptor_id": "known.git-history.commits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-history-commits",
+    "analysis_notes": "Modeled git-history commit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Unleash/unleash",
+    "descriptor_id": "known.unleash.flags",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/unleash-flags",
+    "analysis_notes": "Modeled Unleash feature flag output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gizak/termui",
+    "descriptor_id": "known.termui.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termui-widgets",
+    "analysis_notes": "Modeled termui widget output with a generated executable-json parser plugin."
   }
 ]
