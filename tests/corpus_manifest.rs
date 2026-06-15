@@ -1,5 +1,5 @@
 use serde::Deserialize;
-use std::collections::BTreeSet;
+use std::collections::{BTreeMap, BTreeSet};
 
 #[derive(Debug, Deserialize)]
 struct CorpusEntry {
@@ -29,6 +29,18 @@ struct CorpusLifecycle {
     modeled: bool,
     deterministic_tested: bool,
     agentic_tested: bool,
+}
+
+#[derive(Debug, Deserialize)]
+struct AgenticRun {
+    repo: String,
+    descriptor_id: String,
+    run_id: String,
+    run_kind: String,
+    input_fixture: String,
+    expected_rows: String,
+    variants: Vec<String>,
+    transcript: Vec<String>,
 }
 
 fn is_cli_oriented_query(query: &str) -> bool {
@@ -156,9 +168,92 @@ fn seed_corpus_lifecycle_counts_are_explicitly_incomplete() {
         "only explicitly fixture-backed entries may claim deterministic tests"
     );
     assert_eq!(
-        agentic, 0,
-        "seed fetch alone must not claim agentic tool tests"
+        agentic, 2,
+        "only manifest-backed entries may claim agentic tests"
     );
+}
+
+#[test]
+fn agentic_run_manifest_backs_agentic_corpus_claims() {
+    let entries: Vec<CorpusEntry> =
+        serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
+            .expect("seed corpus parses");
+    let runs: Vec<AgenticRun> =
+        serde_json::from_str(include_str!("../corpus/agentic-runs.seed.json"))
+            .expect("agentic run manifest parses");
+
+    let mut runs_by_repo: BTreeMap<&str, Vec<&AgenticRun>> = BTreeMap::new();
+    let mut run_ids = BTreeSet::new();
+    for run in &runs {
+        assert!(
+            run.repo.starts_with("https://github.com/"),
+            "agentic run repo must be GitHub URL: {}",
+            run.repo
+        );
+        assert!(
+            run_ids.insert(run.run_id.as_str()),
+            "agentic run ids must be unique: {}",
+            run.run_id
+        );
+        assert!(
+            !run.descriptor_id.trim().is_empty(),
+            "agentic run {} needs descriptor_id",
+            run.run_id
+        );
+        assert!(
+            !run.run_kind.trim().is_empty(),
+            "agentic run {} needs run_kind",
+            run.run_id
+        );
+        assert!(
+            run.variants.len() >= 2,
+            "agentic run {} needs multiple explored variants",
+            run.run_id
+        );
+        assert!(
+            run.transcript.len() >= 3,
+            "agentic run {} needs transcript evidence",
+            run.run_id
+        );
+        assert!(
+            std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join(&run.input_fixture)
+                .exists(),
+            "agentic run {} input fixture missing",
+            run.run_id
+        );
+        assert!(
+            std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+                .join(&run.expected_rows)
+                .exists(),
+            "agentic run {} expected rows missing",
+            run.run_id
+        );
+        runs_by_repo.entry(&run.repo).or_default().push(run);
+    }
+
+    for entry in entries
+        .iter()
+        .filter(|entry| entry.lifecycle.agentic_tested)
+    {
+        let runs = runs_by_repo.get(entry.repo.as_str()).unwrap_or_else(|| {
+            panic!("{} claims agentic testing without run manifest", entry.repo)
+        });
+        assert_eq!(
+            runs.len(),
+            entry.agentic_runs,
+            "{} agentic_runs must match manifest runs",
+            entry.repo
+        );
+        for run in runs {
+            assert_eq!(
+                Some(run.descriptor_id.as_str()),
+                entry.descriptor_id.as_deref(),
+                "{} agentic run descriptor must match corpus descriptor",
+                entry.repo
+            );
+        }
+    }
 }
 
 #[test]

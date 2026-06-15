@@ -366,13 +366,13 @@
       "analyzed": true,
       "modeled": true,
       "deterministic_tested": true,
-      "agentic_tested": false
+      "agentic_tested": true
     },
-    "status": "deterministic-tested",
+    "status": "agentic-tested",
     "descriptor_id": "known.ripgrep.matches",
     "backend": "executable-json",
     "deterministic_cases": 1,
-    "agentic_runs": 0,
+    "agentic_runs": 1,
     "analysis_notes": "Modeled ripgrep path:line:column:match output with tests/fixtures/descriptors/ripgrep-matches.",
     "source_query": "topic:cli stars:>1000",
     "source_queries": [
@@ -589,13 +589,13 @@
       "analyzed": true,
       "modeled": true,
       "deterministic_tested": true,
-      "agentic_tested": false
+      "agentic_tested": true
     },
-    "status": "deterministic-tested",
+    "status": "agentic-tested",
     "descriptor_id": "known.git.branch-verbose",
     "backend": "heuristic",
     "deterministic_cases": 1,
-    "agentic_runs": 0,
+    "agentic_runs": 1,
     "analysis_notes": "Modeled git branch --verbose fixed-width output with tests/fixtures/descriptors/git-branch-verbose.",
     "source_query": "topic:shell stars:>1000",
     "source_queries": [

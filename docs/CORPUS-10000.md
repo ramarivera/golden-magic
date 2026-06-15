@@ -68,8 +68,14 @@ Current modeled entries:
 
 | Repo | Descriptor | Backend | Deterministic cases | Agentic runs |
 | --- | --- | --- | ---: | ---: |
-| `BurntSushi/ripgrep` | `known.ripgrep.matches` | `executable-json` | 1 | 0 |
-| `git/git` | `known.git.branch-verbose` | `heuristic` | 1 | 0 |
+| `BurntSushi/ripgrep` | `known.ripgrep.matches` | `executable-json` | 1 | 1 |
+| `git/git` | `known.git.branch-verbose` | `heuristic` | 1 | 1 |
+
+Agentic/exploratory run evidence lives in
+`corpus/agentic-runs.seed.json`. The manifest records the repository,
+descriptor id, input fixture, expected rows, explored variants, and a short
+transcript for each run. Corpus entries may claim `agentic_tested = true` only
+when matching manifest rows exist.
 
 Run the manifest checks with:
 

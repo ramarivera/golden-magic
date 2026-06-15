@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "https://github.com/BurntSushi/ripgrep",
+    "descriptor_id": "known.ripgrep.matches",
+    "run_id": "agentic.ripgrep.matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ripgrep-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ripgrep-matches/expected.rows.json",
+    "variants": [
+      "path:line:column:match",
+      "multiple files",
+      "source-code match text containing punctuation"
+    ],
+    "transcript": [
+      "selected descriptor known.ripgrep.matches for ripgrep-style path:line:column output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/git/git",
+    "descriptor_id": "known.git.branch-verbose",
+    "run_id": "agentic.git.branch-verbose.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-branch-verbose/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-branch-verbose/expected.rows.json",
+    "variants": [
+      "current branch marker",
+      "tracking branch annotation",
+      "unpadded branch names"
+    ],
+    "transcript": [
+      "selected descriptor known.git.branch-verbose for git branch --verbose output",
+      "ran golden-magic against fixture input through fixed-width heuristic",
+      "compared emitted rows against expected.rows.json"
+    ]
+  }
+]
