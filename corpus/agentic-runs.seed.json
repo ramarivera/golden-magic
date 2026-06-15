@@ -5668,5 +5668,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/SimulatedGREG/electron-vue",
+    "descriptor_id": "known.electron-vue.commands",
+    "run_id": "agentic.electron-vue-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/electron-vue-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/electron-vue-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "mode row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.electron-vue.commands for electron-vue command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/beetbox/beets",
+    "descriptor_id": "known.beets.albums",
+    "run_id": "agentic.beets-albums.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/beets-albums/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/beets-albums/expected.rows.json",
+    "variants": [
+      "album header row",
+      "artist row",
+      "tracks field"
+    ],
+    "transcript": [
+      "selected descriptor known.beets.albums for beets album list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Bash-it/bash-it",
+    "descriptor_id": "known.bash-it.plugins",
+    "run_id": "agentic.bash-it-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bash-it-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bash-it-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.bash-it.plugins for Bash-it plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/coderamp-labs/gitingest",
+    "descriptor_id": "known.gitingest.summaries",
+    "run_id": "agentic.gitingest-summaries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitingest-summaries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitingest-summaries/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "files row",
+      "tokens field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitingest.summaries for gitingest summary list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vuejs/pinia",
+    "descriptor_id": "known.pinia.stores",
+    "run_id": "agentic.pinia-stores.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pinia-stores/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pinia-stores/expected.rows.json",
+    "variants": [
+      "store header row",
+      "state row",
+      "actions field"
+    ],
+    "transcript": [
+      "selected descriptor known.pinia.stores for Pinia store list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

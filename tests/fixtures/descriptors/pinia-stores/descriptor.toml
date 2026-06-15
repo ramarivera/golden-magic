@@ -1,0 +1,10 @@
+id = "known.pinia.stores"
+name = "Pinia store list"
+priority = 50
+
+[matches]
+required_substrings = ["store\tstate","cart\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

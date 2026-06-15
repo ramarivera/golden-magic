@@ -3538,5 +3538,65 @@
     "negative": "job state graph\ndecode-dev running HCLG\n",
     "analysis_notes": "Modeled Kaldi job output with a generated executable-json parser plugin.",
     "variants": ["job header row", "state row", "graph field"]
+  },
+  {
+    "fixture": "electron-vue-commands",
+    "descriptor_id": "known.electron-vue.commands",
+    "name": "electron-vue command list",
+    "repo": "https://github.com/SimulatedGREG/electron-vue",
+    "required_substrings": ["command\tmode", "dev\twatch"],
+    "parser": "tab-pairs",
+    "input": "command\tmode target\ndev\twatch renderer\nbuild\tproduction desktop\nlint\tcheck source\n",
+    "negative": "command mode target\ndev watch renderer\n",
+    "analysis_notes": "Modeled electron-vue command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "mode row", "target field"]
+  },
+  {
+    "fixture": "beets-albums",
+    "descriptor_id": "known.beets.albums",
+    "name": "beets album list",
+    "repo": "https://github.com/beetbox/beets",
+    "required_substrings": ["album\tartist", "Kind-of-Blue\tMiles-Davis"],
+    "parser": "tab-pairs",
+    "input": "album\tartist tracks\nKind-of-Blue\tMiles-Davis 5\nBlue-Train\tJohn-Coltrane 5\nHead-Hunters\tHerbie-Hancock 4\n",
+    "negative": "album artist tracks\nKind-of-Blue Miles-Davis 5\n",
+    "analysis_notes": "Modeled beets album output with a generated executable-json parser plugin.",
+    "variants": ["album header row", "artist row", "tracks field"]
+  },
+  {
+    "fixture": "bash-it-plugins",
+    "descriptor_id": "known.bash-it.plugins",
+    "name": "Bash-it plugin list",
+    "repo": "https://github.com/Bash-it/bash-it",
+    "required_substrings": ["plugin\tstatus", "git\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstatus category\ngit\tenabled scm\nkubectl\tdisabled cloud\nhistory\tenabled shell\n",
+    "negative": "plugin status category\ngit enabled scm\n",
+    "analysis_notes": "Modeled Bash-it plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "status row", "category field"]
+  },
+  {
+    "fixture": "gitingest-summaries",
+    "descriptor_id": "known.gitingest.summaries",
+    "name": "gitingest summary list",
+    "repo": "https://github.com/coderamp-labs/gitingest",
+    "required_substrings": ["repo\tfiles", "golden-magic\t128"],
+    "parser": "tab-pairs",
+    "input": "repo\tfiles tokens\ngolden-magic\t128 44120\ntoolbox\t512 155004\ndocs\t36 9800\n",
+    "negative": "repo files tokens\ngolden-magic 128 44120\n",
+    "analysis_notes": "Modeled gitingest summary output with a generated executable-json parser plugin.",
+    "variants": ["repo header row", "files row", "tokens field"]
+  },
+  {
+    "fixture": "pinia-stores",
+    "descriptor_id": "known.pinia.stores",
+    "name": "Pinia store list",
+    "repo": "https://github.com/vuejs/pinia",
+    "required_substrings": ["store\tstate", "cart\tactive"],
+    "parser": "tab-pairs",
+    "input": "store\tstate actions\ncart\tactive 8\nuser\tactive 5\ncheckout\tidle 3\n",
+    "negative": "store state actions\ncart active 8\n",
+    "analysis_notes": "Modeled Pinia store output with a generated executable-json parser plugin.",
+    "variants": ["store header row", "state row", "actions field"]
   }
 ]

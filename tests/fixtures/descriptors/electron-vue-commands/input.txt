@@ -1,0 +1,4 @@
+command	mode target
+dev	watch renderer
+build	production desktop
+lint	check source

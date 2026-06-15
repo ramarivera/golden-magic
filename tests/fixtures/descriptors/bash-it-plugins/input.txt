@@ -1,0 +1,4 @@
+plugin	status category
+git	enabled scm
+kubectl	disabled cloud
+history	enabled shell

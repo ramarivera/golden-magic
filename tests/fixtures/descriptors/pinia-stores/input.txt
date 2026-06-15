@@ -1,0 +1,4 @@
+store	state actions
+cart	active 8
+user	active 5
+checkout	idle 3

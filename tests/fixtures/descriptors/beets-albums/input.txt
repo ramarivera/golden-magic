@@ -1,0 +1,4 @@
+album	artist tracks
+Kind-of-Blue	Miles-Davis 5
+Blue-Train	John-Coltrane 5
+Head-Hunters	Herbie-Hancock 4

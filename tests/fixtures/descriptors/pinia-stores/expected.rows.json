@@ -1,0 +1,18 @@
+[
+  {
+    "name": "store",
+    "value": "state actions"
+  },
+  {
+    "name": "cart",
+    "value": "active 8"
+  },
+  {
+    "name": "user",
+    "value": "active 5"
+  },
+  {
+    "name": "checkout",
+    "value": "idle 3"
+  }
+]

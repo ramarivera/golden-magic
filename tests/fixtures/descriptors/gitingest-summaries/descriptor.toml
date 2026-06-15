@@ -1,0 +1,10 @@
+id = "known.gitingest.summaries"
+name = "gitingest summary list"
+priority = 50
+
+[matches]
+required_substrings = ["repo\tfiles","golden-magic\t128"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

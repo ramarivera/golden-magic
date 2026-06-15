@@ -1,0 +1,10 @@
+id = "known.electron-vue.commands"
+name = "electron-vue command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tmode","dev\twatch"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.beets.albums"
+name = "beets album list"
+priority = 50
+
+[matches]
+required_substrings = ["album\tartist","Kind-of-Blue\tMiles-Davis"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
