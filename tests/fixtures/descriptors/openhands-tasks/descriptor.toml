@@ -1,0 +1,10 @@
+id = "known.openhands.tasks"
+name = "OpenHands task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstate","setup\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

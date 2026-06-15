@@ -1,0 +1,18 @@
+[
+  {
+    "name": "list",
+    "value": "entries category"
+  },
+  {
+    "name": "Discovery/Web-Content",
+    "value": "120000 fuzzing"
+  },
+  {
+    "name": "Passwords/Common-Credentials",
+    "value": "75000 passwords"
+  },
+  {
+    "name": "Usernames",
+    "value": "30000 identity"
+  }
+]

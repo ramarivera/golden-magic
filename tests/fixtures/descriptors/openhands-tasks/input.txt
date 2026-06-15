@@ -1,0 +1,4 @@
+task	state agent
+setup	complete planner
+edit	running coder
+verify	queued tester

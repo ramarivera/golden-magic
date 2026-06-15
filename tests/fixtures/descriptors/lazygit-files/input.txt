@@ -1,0 +1,4 @@
+file	status hunks
+src/main.go	modified 3
+README.md	staged 1
+Cargo.toml	untracked 0

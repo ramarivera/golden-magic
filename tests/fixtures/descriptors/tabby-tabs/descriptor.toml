@@ -1,0 +1,10 @@
+id = "known.tabby.tabs"
+name = "Tabby terminal tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\tprofile","1\tlocal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

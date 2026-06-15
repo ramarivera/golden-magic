@@ -1,0 +1,10 @@
+id = "known.seclists.wordlists"
+name = "SecLists wordlist index"
+priority = 50
+
+[matches]
+required_substrings = ["list\tentries","Discovery/Web-Content\t120000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.apollo11.assemblies"
+name = "Apollo 11 assembly source index"
+priority = 50
+
+[matches]
+required_substrings = ["module\tlines","AGC\t1200"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

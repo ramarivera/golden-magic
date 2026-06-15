@@ -1,0 +1,4 @@
+module	lines language
+AGC	1200 assembly
+Luminary	980 assembly
+Comanche	870 assembly

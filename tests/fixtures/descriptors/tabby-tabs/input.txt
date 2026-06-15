@@ -1,0 +1,4 @@
+tab	profile title
+1	local shell
+2	ssh prod
+3	serial device

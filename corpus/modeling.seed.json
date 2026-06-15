@@ -768,5 +768,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/hoppscotch-requests",
     "analysis_notes": "Modeled Hoppscotch request collection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jesseduffield/lazygit",
+    "descriptor_id": "known.lazygit.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lazygit-files",
+    "analysis_notes": "Modeled lazygit file status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/OpenHands/OpenHands",
+    "descriptor_id": "known.openhands.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openhands-tasks",
+    "analysis_notes": "Modeled OpenHands task list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Eugeny/tabby",
+    "descriptor_id": "known.tabby.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tabby-tabs",
+    "analysis_notes": "Modeled Tabby terminal tab list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/danielmiessler/SecLists",
+    "descriptor_id": "known.seclists.wordlists",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/seclists-wordlists",
+    "analysis_notes": "Modeled SecLists wordlist index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chrislgarry/Apollo-11",
+    "descriptor_id": "known.apollo11.assemblies",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/apollo11-assemblies",
+    "analysis_notes": "Modeled Apollo-11 assembly source index output with a generated executable-json parser plugin."
   }
 ]

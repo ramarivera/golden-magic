@@ -1078,5 +1078,65 @@
     "negative": "request method endpoint\nhealth GET /health\n",
     "analysis_notes": "Modeled Hoppscotch request collection output with a generated executable-json parser plugin.",
     "variants": ["request header row", "GET request row", "endpoint field"]
+  },
+  {
+    "fixture": "lazygit-files",
+    "descriptor_id": "known.lazygit.files",
+    "name": "lazygit file status list",
+    "repo": "https://github.com/jesseduffield/lazygit",
+    "required_substrings": ["file\tstatus", "src/main.go\tmodified"],
+    "parser": "tab-pairs",
+    "input": "file\tstatus hunks\nsrc/main.go\tmodified 3\nREADME.md\tstaged 1\nCargo.toml\tuntracked 0\n",
+    "negative": "file status hunks\nsrc/main.go modified 3\n",
+    "analysis_notes": "Modeled lazygit file status output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "modified file row", "hunk count field"]
+  },
+  {
+    "fixture": "openhands-tasks",
+    "descriptor_id": "known.openhands.tasks",
+    "name": "OpenHands task list",
+    "repo": "https://github.com/OpenHands/OpenHands",
+    "required_substrings": ["task\tstate", "setup\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "task\tstate agent\nsetup\tcomplete planner\nedit\trunning coder\nverify\tqueued tester\n",
+    "negative": "task state agent\nsetup complete planner\n",
+    "analysis_notes": "Modeled OpenHands task list output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "complete task row", "agent field"]
+  },
+  {
+    "fixture": "tabby-tabs",
+    "descriptor_id": "known.tabby.tabs",
+    "name": "Tabby terminal tab list",
+    "repo": "https://github.com/Eugeny/tabby",
+    "required_substrings": ["tab\tprofile", "1\tlocal"],
+    "parser": "tab-pairs",
+    "input": "tab\tprofile title\n1\tlocal shell\n2\tssh prod\n3\tserial device\n",
+    "negative": "tab profile title\n1 local shell\n",
+    "analysis_notes": "Modeled Tabby terminal tab list output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "local tab row", "title field"]
+  },
+  {
+    "fixture": "seclists-wordlists",
+    "descriptor_id": "known.seclists.wordlists",
+    "name": "SecLists wordlist index",
+    "repo": "https://github.com/danielmiessler/SecLists",
+    "required_substrings": ["list\tentries", "Discovery/Web-Content\t120000"],
+    "parser": "tab-pairs",
+    "input": "list\tentries category\nDiscovery/Web-Content\t120000 fuzzing\nPasswords/Common-Credentials\t75000 passwords\nUsernames\t30000 identity\n",
+    "negative": "list entries category\nDiscovery/Web-Content 120000 fuzzing\n",
+    "analysis_notes": "Modeled SecLists wordlist index output with a generated executable-json parser plugin.",
+    "variants": ["wordlist header row", "entry count row", "category field"]
+  },
+  {
+    "fixture": "apollo11-assemblies",
+    "descriptor_id": "known.apollo11.assemblies",
+    "name": "Apollo 11 assembly source index",
+    "repo": "https://github.com/chrislgarry/Apollo-11",
+    "required_substrings": ["module\tlines", "AGC\t1200"],
+    "parser": "tab-pairs",
+    "input": "module\tlines language\nAGC\t1200 assembly\nLuminary\t980 assembly\nComanche\t870 assembly\n",
+    "negative": "module lines language\nAGC 1200 assembly\n",
+    "analysis_notes": "Modeled Apollo-11 assembly source index output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "line count row", "language field"]
   }
 ]

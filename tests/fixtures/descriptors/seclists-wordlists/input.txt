@@ -1,0 +1,4 @@
+list	entries category
+Discovery/Web-Content	120000 fuzzing
+Passwords/Common-Credentials	75000 passwords
+Usernames	30000 identity

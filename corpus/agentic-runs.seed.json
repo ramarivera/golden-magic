@@ -1978,5 +1978,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jesseduffield/lazygit",
+    "descriptor_id": "known.lazygit.files",
+    "run_id": "agentic.lazygit-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lazygit-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lazygit-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "modified file row",
+      "hunk count field"
+    ],
+    "transcript": [
+      "selected descriptor known.lazygit.files for lazygit file status list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/OpenHands/OpenHands",
+    "descriptor_id": "known.openhands.tasks",
+    "run_id": "agentic.openhands-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openhands-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openhands-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "complete task row",
+      "agent field"
+    ],
+    "transcript": [
+      "selected descriptor known.openhands.tasks for OpenHands task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Eugeny/tabby",
+    "descriptor_id": "known.tabby.tabs",
+    "run_id": "agentic.tabby-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tabby-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tabby-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "local tab row",
+      "title field"
+    ],
+    "transcript": [
+      "selected descriptor known.tabby.tabs for Tabby terminal tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/danielmiessler/SecLists",
+    "descriptor_id": "known.seclists.wordlists",
+    "run_id": "agentic.seclists-wordlists.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/seclists-wordlists/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/seclists-wordlists/expected.rows.json",
+    "variants": [
+      "wordlist header row",
+      "entry count row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.seclists.wordlists for SecLists wordlist index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chrislgarry/Apollo-11",
+    "descriptor_id": "known.apollo11.assemblies",
+    "run_id": "agentic.apollo11-assemblies.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/apollo11-assemblies/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/apollo11-assemblies/expected.rows.json",
+    "variants": [
+      "module header row",
+      "line count row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.apollo11.assemblies for Apollo 11 assembly source index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
