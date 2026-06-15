@@ -1,0 +1,10 @@
+id = "known.cool-retro-term.profiles"
+name = "cool-retro-term profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tshader","amber\tcrt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

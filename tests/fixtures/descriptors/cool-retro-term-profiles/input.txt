@@ -1,0 +1,4 @@
+profile	shader status
+amber	crt active
+green	crt ready
+monochrome	scanline ready

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "plugin",
+    "value": "version source"
+  },
+  {
+    "name": "nodejs",
+    "value": "24.0 official"
+  },
+  {
+    "name": "rust",
+    "value": "1.87 community"
+  },
+  {
+    "name": "python",
+    "value": "3.13 community"
+  }
+]

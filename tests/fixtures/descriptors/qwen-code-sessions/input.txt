@@ -1,0 +1,4 @@
+session	model status
+fix-001	qwen3 running
+review-002	qwen-coder queued
+plan-003	qwen3 complete

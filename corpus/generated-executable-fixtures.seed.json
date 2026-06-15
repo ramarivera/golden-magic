@@ -2338,5 +2338,65 @@
     "negative": "package version source\nMicrosoft.PowerShell 7.5 winget\n",
     "analysis_notes": "Modeled winget package output with a generated executable-json parser plugin.",
     "variants": ["package header row", "version row", "source field"]
+  },
+  {
+    "fixture": "cool-retro-term-profiles",
+    "descriptor_id": "known.cool-retro-term.profiles",
+    "name": "cool-retro-term profile list",
+    "repo": "https://github.com/Swordfish90/cool-retro-term",
+    "required_substrings": ["profile\tshader", "amber\tcrt"],
+    "parser": "tab-pairs",
+    "input": "profile\tshader status\namber\tcrt active\ngreen\tcrt ready\nmonochrome\tscanline ready\n",
+    "negative": "profile shader status\namber crt active\n",
+    "analysis_notes": "Modeled cool-retro-term profile output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "shader row", "status field"]
+  },
+  {
+    "fixture": "asdf-plugins",
+    "descriptor_id": "known.asdf.plugins",
+    "name": "asdf plugin list",
+    "repo": "https://github.com/asdf-vm/asdf",
+    "required_substrings": ["plugin\tversion", "nodejs\t24.0"],
+    "parser": "tab-pairs",
+    "input": "plugin\tversion source\nnodejs\t24.0 official\nrust\t1.87 community\npython\t3.13 community\n",
+    "negative": "plugin version source\nnodejs 24.0 official\n",
+    "analysis_notes": "Modeled asdf plugin listing output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "version row", "source field"]
+  },
+  {
+    "fixture": "awesome-agent-skills-index",
+    "descriptor_id": "known.awesome-agent-skills.index",
+    "name": "awesome-agent-skills index",
+    "repo": "https://github.com/VoltAgent/awesome-agent-skills",
+    "required_substrings": ["skill\tcategory", "research\tagent"],
+    "parser": "tab-pairs",
+    "input": "skill\tcategory status\nresearch\tagent ready\nbrowser\tautomation ready\nplanner\tworkflow draft\n",
+    "negative": "skill category status\nresearch agent ready\n",
+    "analysis_notes": "Modeled awesome-agent-skills index output with a generated executable-json parser plugin.",
+    "variants": ["skill header row", "category row", "status field"]
+  },
+  {
+    "fixture": "qwen-code-sessions",
+    "descriptor_id": "known.qwen-code.sessions",
+    "name": "qwen-code session list",
+    "repo": "https://github.com/QwenLM/qwen-code",
+    "required_substrings": ["session\tmodel", "fix-001\tqwen3"],
+    "parser": "tab-pairs",
+    "input": "session\tmodel status\nfix-001\tqwen3 running\nreview-002\tqwen-coder queued\nplan-003\tqwen3 complete\n",
+    "negative": "session model status\nfix-001 qwen3 running\n",
+    "analysis_notes": "Modeled qwen-code session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "model row", "status field"]
+  },
+  {
+    "fixture": "claude-hud-panels",
+    "descriptor_id": "known.claude-hud.panels",
+    "name": "claude-hud panel list",
+    "repo": "https://github.com/jarrodwatts/claude-hud",
+    "required_substrings": ["panel\tstate", "tokens\tvisible"],
+    "parser": "tab-pairs",
+    "input": "panel\tstate metric\ntokens\tvisible count\ncost\tvisible usd\ntrace\thidden events\n",
+    "negative": "panel state metric\ntokens visible count\n",
+    "analysis_notes": "Modeled claude-hud panel output with a generated executable-json parser plugin.",
+    "variants": ["panel header row", "visible panel row", "metric field"]
   }
 ]

@@ -1,0 +1,2 @@
+plugin version source
+nodejs 24.0 official

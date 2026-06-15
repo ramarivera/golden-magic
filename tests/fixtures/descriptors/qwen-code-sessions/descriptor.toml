@@ -1,0 +1,10 @@
+id = "known.qwen-code.sessions"
+name = "qwen-code session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tmodel","fix-001\tqwen3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

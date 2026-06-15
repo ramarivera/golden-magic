@@ -1,0 +1,10 @@
+id = "known.awesome-agent-skills.index"
+name = "awesome-agent-skills index"
+priority = 50
+
+[matches]
+required_substrings = ["skill\tcategory","research\tagent"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

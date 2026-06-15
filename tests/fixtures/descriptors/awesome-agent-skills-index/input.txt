@@ -1,0 +1,4 @@
+skill	category status
+research	agent ready
+browser	automation ready
+planner	workflow draft

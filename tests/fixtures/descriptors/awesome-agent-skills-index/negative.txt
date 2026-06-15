@@ -1,0 +1,2 @@
+skill category status
+research agent ready

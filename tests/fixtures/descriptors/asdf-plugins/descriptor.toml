@@ -1,0 +1,10 @@
+id = "known.asdf.plugins"
+name = "asdf plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tversion","nodejs\t24.0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

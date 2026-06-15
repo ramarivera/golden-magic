@@ -1503,5 +1503,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/winget-packages",
     "analysis_notes": "Modeled winget package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Swordfish90/cool-retro-term",
+    "descriptor_id": "known.cool-retro-term.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cool-retro-term-profiles",
+    "analysis_notes": "Modeled cool-retro-term profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/asdf-vm/asdf",
+    "descriptor_id": "known.asdf.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asdf-plugins",
+    "analysis_notes": "Modeled asdf plugin listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/VoltAgent/awesome-agent-skills",
+    "descriptor_id": "known.awesome-agent-skills.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-agent-skills-index",
+    "analysis_notes": "Modeled awesome-agent-skills index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/QwenLM/qwen-code",
+    "descriptor_id": "known.qwen-code.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qwen-code-sessions",
+    "analysis_notes": "Modeled qwen-code session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jarrodwatts/claude-hud",
+    "descriptor_id": "known.claude-hud.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-hud-panels",
+    "analysis_notes": "Modeled claude-hud panel output with a generated executable-json parser plugin."
   }
 ]

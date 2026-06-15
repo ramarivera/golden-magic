@@ -1,0 +1,2 @@
+session model status
+fix-001 qwen3 running

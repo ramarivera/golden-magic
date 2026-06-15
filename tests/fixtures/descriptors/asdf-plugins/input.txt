@@ -1,0 +1,4 @@
+plugin	version source
+nodejs	24.0 official
+rust	1.87 community
+python	3.13 community

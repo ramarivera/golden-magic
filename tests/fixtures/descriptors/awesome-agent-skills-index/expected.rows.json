@@ -1,0 +1,18 @@
+[
+  {
+    "name": "skill",
+    "value": "category status"
+  },
+  {
+    "name": "research",
+    "value": "agent ready"
+  },
+  {
+    "name": "browser",
+    "value": "automation ready"
+  },
+  {
+    "name": "planner",
+    "value": "workflow draft"
+  }
+]

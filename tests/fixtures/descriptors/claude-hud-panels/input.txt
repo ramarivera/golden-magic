@@ -1,0 +1,4 @@
+panel	state metric
+tokens	visible count
+cost	visible usd
+trace	hidden events

@@ -3868,5 +3868,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Swordfish90/cool-retro-term",
+    "descriptor_id": "known.cool-retro-term.profiles",
+    "run_id": "agentic.cool-retro-term-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cool-retro-term-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cool-retro-term-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "shader row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.cool-retro-term.profiles for cool-retro-term profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/asdf-vm/asdf",
+    "descriptor_id": "known.asdf.plugins",
+    "run_id": "agentic.asdf-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asdf-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asdf-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "version row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.asdf.plugins for asdf plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/VoltAgent/awesome-agent-skills",
+    "descriptor_id": "known.awesome-agent-skills.index",
+    "run_id": "agentic.awesome-agent-skills-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-agent-skills-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-agent-skills-index/expected.rows.json",
+    "variants": [
+      "skill header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-agent-skills.index for awesome-agent-skills index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/QwenLM/qwen-code",
+    "descriptor_id": "known.qwen-code.sessions",
+    "run_id": "agentic.qwen-code-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qwen-code-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qwen-code-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.qwen-code.sessions for qwen-code session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jarrodwatts/claude-hud",
+    "descriptor_id": "known.claude-hud.panels",
+    "run_id": "agentic.claude-hud-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-hud-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-hud-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "visible panel row",
+      "metric field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-hud.panels for claude-hud panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

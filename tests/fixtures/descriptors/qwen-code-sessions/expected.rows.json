@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "model status"
+  },
+  {
+    "name": "fix-001",
+    "value": "qwen3 running"
+  },
+  {
+    "name": "review-002",
+    "value": "qwen-coder queued"
+  },
+  {
+    "name": "plan-003",
+    "value": "qwen3 complete"
+  }
+]

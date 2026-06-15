@@ -1,0 +1,2 @@
+profile shader status
+amber crt active
