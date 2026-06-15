@@ -1,0 +1,4 @@
+note	tags state
+rust	cli indexed
+nu	shell indexed
+old	archive hidden

@@ -1,0 +1,4 @@
+query	status state
+GetUsers	200 ok
+CreateUser	200 ok
+BadQuery	400 failed

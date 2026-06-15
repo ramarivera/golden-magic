@@ -1,0 +1,4 @@
+resource	region state
+droplet-1	nyc3 active
+volume-1	sfo3 active
+old-lb	ams3 deleted

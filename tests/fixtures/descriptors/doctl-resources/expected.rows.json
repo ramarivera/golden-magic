@@ -1,0 +1,18 @@
+[
+  {
+    "name": "resource",
+    "value": "region state"
+  },
+  {
+    "name": "droplet-1",
+    "value": "nyc3 active"
+  },
+  {
+    "name": "volume-1",
+    "value": "sfo3 active"
+  },
+  {
+    "name": "old-lb",
+    "value": "ams3 deleted"
+  }
+]

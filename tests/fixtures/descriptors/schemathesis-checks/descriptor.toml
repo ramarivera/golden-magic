@@ -1,0 +1,10 @@
+id = "known.schemathesis.checks"
+name = "schemathesis check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tstatus","not_a_server_error\tpassed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

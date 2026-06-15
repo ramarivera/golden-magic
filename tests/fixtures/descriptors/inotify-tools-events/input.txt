@@ -1,0 +1,4 @@
+path	event state
+src/main.rs	MODIFY seen
+README.md	OPEN seen
+target	IGNORED skipped

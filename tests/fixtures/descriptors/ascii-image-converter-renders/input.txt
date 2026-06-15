@@ -1,0 +1,4 @@
+image	mode state
+logo.png	braille rendered
+photo.jpg	ascii rendered
+bad.gif	unsupported skipped

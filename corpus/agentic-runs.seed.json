@@ -14650,5 +14650,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/digitalocean/doctl",
+    "descriptor_id": "known.doctl.resources",
+    "run_id": "agentic.doctl-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/doctl-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/doctl-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "region row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.doctl.resources for doctl resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mczachurski/wallpapper",
+    "descriptor_id": "known.wallpapper.assets",
+    "run_id": "agentic.wallpapper-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wallpapper-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wallpapper-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "appearance row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wallpapper.assets for wallpapper asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sveinbjornt/Platypus",
+    "descriptor_id": "known.platypus.apps",
+    "run_id": "agentic.platypus-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/platypus-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/platypus-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "script row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.platypus.apps for Platypus app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/killercup/cargo-edit",
+    "descriptor_id": "known.cargo-edit.dependencies",
+    "run_id": "agentic.cargo-edit-dependencies.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cargo-edit-dependencies/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cargo-edit-dependencies/expected.rows.json",
+    "variants": [
+      "dependency header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cargo-edit.dependencies for cargo-edit dependency list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/inotify-tools/inotify-tools",
+    "descriptor_id": "known.inotify-tools.events",
+    "run_id": "agentic.inotify-tools-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inotify-tools-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inotify-tools-events/expected.rows.json",
+    "variants": [
+      "path header row",
+      "event row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.inotify-tools.events for inotify-tools event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gnebbia/kb",
+    "descriptor_id": "known.kb.notes",
+    "run_id": "agentic.kb-notes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kb-notes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kb-notes/expected.rows.json",
+    "variants": [
+      "note header row",
+      "tags row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kb.notes for kb note list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hasura/graphqurl",
+    "descriptor_id": "known.graphqurl.queries",
+    "run_id": "agentic.graphqurl-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/graphqurl-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/graphqurl-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.graphqurl.queries for graphqurl query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/schemathesis/schemathesis",
+    "descriptor_id": "known.schemathesis.checks",
+    "run_id": "agentic.schemathesis-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/schemathesis-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/schemathesis-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.schemathesis.checks for schemathesis check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/TheZoraiz/ascii-image-converter",
+    "descriptor_id": "known.ascii-image-converter.renders",
+    "run_id": "agentic.ascii-image-converter-renders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ascii-image-converter-renders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ascii-image-converter-renders/expected.rows.json",
+    "variants": [
+      "image header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ascii-image-converter.renders for ascii-image-converter render list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jarun/ddgr",
+    "descriptor_id": "known.ddgr.results",
+    "run_id": "agentic.ddgr-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ddgr-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ddgr-results/expected.rows.json",
+    "variants": [
+      "result header row",
+      "domain row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ddgr.results for ddgr result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

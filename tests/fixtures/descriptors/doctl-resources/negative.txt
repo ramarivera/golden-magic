@@ -1,0 +1,2 @@
+resource region state
+droplet-1 nyc3 active

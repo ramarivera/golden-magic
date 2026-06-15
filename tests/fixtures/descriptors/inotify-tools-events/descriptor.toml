@@ -1,0 +1,10 @@
+id = "known.inotify-tools.events"
+name = "inotify-tools event list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tevent","src/main.rs\tMODIFY"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

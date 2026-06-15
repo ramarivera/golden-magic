@@ -1,0 +1,4 @@
+asset	appearance state
+day.heic	light included
+night.heic	dark included
+old.jpg	fallback skipped

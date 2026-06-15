@@ -1,0 +1,10 @@
+id = "known.doctl.resources"
+name = "doctl resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tregion","droplet-1\tnyc3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

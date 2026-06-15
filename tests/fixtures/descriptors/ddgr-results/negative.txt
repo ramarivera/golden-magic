@@ -1,0 +1,2 @@
+result domain state
+docs duckduckgo.com visible

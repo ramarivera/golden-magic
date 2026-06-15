@@ -1,0 +1,18 @@
+[
+  {
+    "name": "result",
+    "value": "domain state"
+  },
+  {
+    "name": "docs",
+    "value": "duckduckgo.com visible"
+  },
+  {
+    "name": "repo",
+    "value": "github.com visible"
+  },
+  {
+    "name": "old",
+    "value": "example.com hidden"
+  }
+]

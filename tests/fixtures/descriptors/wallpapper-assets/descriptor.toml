@@ -1,0 +1,10 @@
+id = "known.wallpapper.assets"
+name = "wallpapper asset list"
+priority = 50
+
+[matches]
+required_substrings = ["asset\tappearance","day.heic\tlight"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

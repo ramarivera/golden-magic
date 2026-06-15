@@ -5696,5 +5696,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/qawolf-runs",
     "analysis_notes": "Modeled QA Wolf CLI run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/digitalocean/doctl",
+    "descriptor_id": "known.doctl.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/doctl-resources",
+    "analysis_notes": "Modeled doctl cloud resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mczachurski/wallpapper",
+    "descriptor_id": "known.wallpapper.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wallpapper-assets",
+    "analysis_notes": "Modeled wallpapper dynamic wallpaper asset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sveinbjornt/Platypus",
+    "descriptor_id": "known.platypus.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/platypus-apps",
+    "analysis_notes": "Modeled Platypus generated app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/killercup/cargo-edit",
+    "descriptor_id": "known.cargo-edit.dependencies",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cargo-edit-dependencies",
+    "analysis_notes": "Modeled cargo-edit dependency operation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/inotify-tools/inotify-tools",
+    "descriptor_id": "known.inotify-tools.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inotify-tools-events",
+    "analysis_notes": "Modeled inotify-tools filesystem event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gnebbia/kb",
+    "descriptor_id": "known.kb.notes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kb-notes",
+    "analysis_notes": "Modeled kb knowledge-base note output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hasura/graphqurl",
+    "descriptor_id": "known.graphqurl.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/graphqurl-queries",
+    "analysis_notes": "Modeled graphqurl GraphQL query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/schemathesis/schemathesis",
+    "descriptor_id": "known.schemathesis.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/schemathesis-checks",
+    "analysis_notes": "Modeled schemathesis API check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/TheZoraiz/ascii-image-converter",
+    "descriptor_id": "known.ascii-image-converter.renders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ascii-image-converter-renders",
+    "analysis_notes": "Modeled ascii-image-converter render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jarun/ddgr",
+    "descriptor_id": "known.ddgr.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ddgr-results",
+    "analysis_notes": "Modeled ddgr search result output with a generated executable-json parser plugin."
   }
 ]

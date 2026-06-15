@@ -1,0 +1,10 @@
+id = "known.platypus.apps"
+name = "Platypus app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tscript","Backup.app\tbackup.sh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

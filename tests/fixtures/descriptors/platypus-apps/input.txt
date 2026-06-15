@@ -1,0 +1,4 @@
+app	script state
+Backup.app	backup.sh built
+Deploy.app	deploy.sh built
+Old.app	old.sh archived

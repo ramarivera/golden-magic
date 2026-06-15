@@ -1,0 +1,4 @@
+result	domain state
+docs	duckduckgo.com visible
+repo	github.com visible
+old	example.com hidden

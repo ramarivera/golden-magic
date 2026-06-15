@@ -1,0 +1,4 @@
+check	status state
+not_a_server_error	passed complete
+schema_conformance	passed complete
+response_time	failed retry
