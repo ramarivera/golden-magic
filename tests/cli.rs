@@ -447,3 +447,13 @@ fn cli_lists_known_rule_ids() {
         .stdout(predicates::str::contains("detect.delimited.tabs"))
         .stdout(predicates::str::contains("detect.fixed-width.gaps"));
 }
+
+#[test]
+fn cli_lists_known_backend_ids() {
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--list-backends")
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("heuristic"));
+}

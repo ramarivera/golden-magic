@@ -37,6 +37,9 @@ struct Args {
 
     #[arg(long)]
     list_rules: bool,
+
+    #[arg(long)]
+    list_backends: bool,
 }
 
 #[derive(Debug, Clone, Copy, ValueEnum)]
@@ -70,6 +73,13 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
     if args.list_rules {
         for rule_id in known_rule_ids() {
             println!("{rule_id}");
+        }
+        return Ok(());
+    }
+
+    if args.list_backends {
+        for backend_id in known_backend_ids() {
+            println!("{backend_id}");
         }
         return Ok(());
     }

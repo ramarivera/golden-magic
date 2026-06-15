@@ -71,6 +71,12 @@ backend = "heuristic"
 
 Descriptors that request `tree-sitter` fail validation until the backend exists.
 
+Inspect implemented backend ids with:
+
+```bash
+golden-magic --list-backends
+```
+
 Backend results must include:
 
 - stable rule id, such as `backend.tree-sitter.example`
@@ -85,7 +91,7 @@ Before closing `golden-magic-2mf`, the implementation must prove:
 
 - a descriptor can select a backend explicitly
 - tree-sitter support is either implemented for one narrow grammar or rejected with measured evidence
-- backend rule ids are listed or discoverable
+- backend ids are listed or discoverable
 - backend failures fall back safely or report clear diagnostics
 - fixtures cover positive input, negative input, malformed input, and expected rows
 - property tests cover backend invariants that matter for row emission

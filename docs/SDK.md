@@ -53,13 +53,19 @@ Inspect available rule ids:
 golden-magic --list-rules
 ```
 
+Inspect available parser backend ids:
+
+```bash
+golden-magic --list-backends
+```
+
 Validate a descriptor pack without stdin:
 
 ```bash
 golden-magic --validate-descriptor-dir ./my-pack
 ```
 
-The validator checks TOML loading, duplicate descriptor ids, and parser rule ids. A valid directory prints the number of descriptors loaded. Unknown rules fail with a message that points back to `--list-rules`.
+The validator checks TOML loading, duplicate descriptor ids, parser backend ids, and parser rule ids. A valid directory prints the number of descriptors loaded. Unknown rules fail with a message that points back to `--list-rules`.
 
 ## Schema
 

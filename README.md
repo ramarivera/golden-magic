@@ -70,6 +70,12 @@ Inspect available heuristic rules:
 golden-magic --list-rules
 ```
 
+Inspect available parser backends:
+
+```bash
+golden-magic --list-backends
+```
+
 Validate descriptor packs without stdin:
 
 ```bash
@@ -135,6 +141,7 @@ Implemented generic heuristics:
 - repeated-space fixed-width-ish splitting
 - safe fallback to one-column lines
 - rule listing with `--list-rules`
+- parser backend listing with `--list-backends`
 - rule toggles with `--disable-rule` and `--only-rule`
 - row-only output with `--output rows-json`
 - trace-only output with `--output trace-json` or `--explain`
