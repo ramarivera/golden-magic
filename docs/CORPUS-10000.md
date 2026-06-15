@@ -58,6 +58,15 @@ This is an explicit partial corpus mode: the command reports
 `materialized/total` partition counts and must not be used as evidence that the
 full 10k corpus has been found.
 
+To fetch the generated grid in bounded shards, use 1-based partition bounds:
+
+```bash
+GOLDEN_MAGIC_CORPUS_START_PARTITION=269 GOLDEN_MAGIC_CORPUS_END_PARTITION=320 GOLDEN_MAGIC_CORPUS_OUT=/tmp/golden-magic-shard.json scripts/fetch_cli_corpus_seed.sh 100
+```
+
+After fetching one or more shards, rerun the cache-only partial command above to
+materialize a combined seed from every cached partition.
+
 Every entry also carries explicit lifecycle state:
 
 ```json

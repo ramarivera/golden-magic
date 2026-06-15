@@ -126,6 +126,18 @@ fn corpus_fetcher_has_resumable_partition_cache_controls() {
         "fetcher should support partial cache materialization for rate-limit recovery"
     );
     assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_START_PARTITION"),
+        "fetcher should support bounded shard starts"
+    );
+    assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_END_PARTITION"),
+        "fetcher should support bounded shard ends"
+    );
+    assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_OUT"),
+        "bounded live shards should not accidentally overwrite the default seed"
+    );
+    assert!(
         script.contains("using cached partition"),
         "fetcher should make cache hits visible in stderr receipts"
     );

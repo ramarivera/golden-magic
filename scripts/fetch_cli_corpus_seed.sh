@@ -10,6 +10,9 @@ cache_dir="${GOLDEN_MAGIC_CORPUS_CACHE_DIR:-corpus/.cache/github-search}"
 cache_refresh="${GOLDEN_MAGIC_CORPUS_CACHE_REFRESH:-0}"
 cache_only="${GOLDEN_MAGIC_CORPUS_CACHE_ONLY:-0}"
 allow_partial_cache="${GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_CACHE:-0}"
+start_partition="${GOLDEN_MAGIC_CORPUS_START_PARTITION:-1}"
+end_partition="${GOLDEN_MAGIC_CORPUS_END_PARTITION:-0}"
+allow_partial_out="${GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_OUT:-0}"
 fetched_at="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 tmpdir="$(mktemp -d)"
 existing="$tmpdir/existing.json"
@@ -31,6 +34,14 @@ if [[ ! -f "$queries_file" ]]; then
   echo "missing corpus query file: $queries_file" >&2
   exit 1
 fi
+if [[ "$cache_only" != "1" && "$out" == "corpus/cli-tools.seed.json" ]]; then
+  if [[ "$start_partition" -gt 1 || "$end_partition" -gt 0 ]]; then
+    if [[ "$allow_partial_out" != "1" ]]; then
+      echo "bounded live shard would overwrite default seed; set GOLDEN_MAGIC_CORPUS_OUT to a temp path or GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_OUT=1" >&2
+      exit 1
+    fi
+  fi
+fi
 
 query_count=0
 materialized_count=0
@@ -41,6 +52,13 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
   [[ -z "$query" ]] && continue
 
   query_count=$((query_count + 1))
+  if [[ "$query_count" -lt "$start_partition" ]]; then
+    continue
+  fi
+  if [[ "$end_partition" -gt 0 && "$query_count" -gt "$end_partition" ]]; then
+    continue
+  fi
+
   query_out="$tmpdir/query-$query_count.json"
   cache_key="$(printf '%s\n%s\n' "$per_query_limit" "$query" | shasum -a 256 | awk '{print $1}')"
   cache_raw="$cache_dir/$cache_key.raw.json"
@@ -150,4 +168,10 @@ jq -s --slurpfile existing "$existing" '
   | map(.value + {rank: (.key + 1)})
 ' "$tmpdir"/query-*.json > "$out"
 
-echo "wrote $(jq length "$out") corpus entries from $materialized_count/$query_count partitions to $out"
+if [[ "$end_partition" -gt 0 ]]; then
+  selected_partitions="$start_partition..$end_partition"
+else
+  selected_partitions="$start_partition..$query_count"
+fi
+
+echo "wrote $(jq length "$out") corpus entries from $materialized_count/$query_count partitions (selected $selected_partitions) to $out"
