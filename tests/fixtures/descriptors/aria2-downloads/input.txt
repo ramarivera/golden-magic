@@ -1,0 +1,4 @@
+gid	status size
+abc123	active 42MB
+def456	waiting 100MB
+ghi789	complete 7MB

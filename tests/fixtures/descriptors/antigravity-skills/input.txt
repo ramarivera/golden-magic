@@ -1,0 +1,4 @@
+skill	status category
+planner	available agent
+browser	available automation
+research	installed agent

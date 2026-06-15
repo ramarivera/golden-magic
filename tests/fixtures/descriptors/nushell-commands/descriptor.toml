@@ -1,0 +1,10 @@
+id = "known.nushell.commands"
+name = "Nushell command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcategory","from csv\tparser"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.aria2.downloads"
+name = "aria2 download list"
+priority = 50
+
+[matches]
+required_substrings = ["gid\tstatus","abc123\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1618,5 +1618,65 @@
     "negative": "topic examples section\nstrings 18 shell\n",
     "analysis_notes": "Modeled pure-bash-bible topic index output with a generated executable-json parser plugin.",
     "variants": ["topic header row", "example count row", "section field"]
+  },
+  {
+    "fixture": "cheatsh-topics",
+    "descriptor_id": "known.cheatsh.topics",
+    "name": "cheat.sh topic list",
+    "repo": "https://github.com/chubin/cheat.sh",
+    "required_substrings": ["topic\tlanguage", "tar\tshell"],
+    "parser": "tab-pairs",
+    "input": "topic\tlanguage examples\ntar\tshell 12\npython\tpython 34\ngit\tshell 42\n",
+    "negative": "topic language examples\ntar shell 12\n",
+    "analysis_notes": "Modeled cheat.sh topic list output with a generated executable-json parser plugin.",
+    "variants": ["topic header row", "shell topic row", "example count field"]
+  },
+  {
+    "fixture": "aria2-downloads",
+    "descriptor_id": "known.aria2.downloads",
+    "name": "aria2 download list",
+    "repo": "https://github.com/aria2/aria2",
+    "required_substrings": ["gid\tstatus", "abc123\tactive"],
+    "parser": "tab-pairs",
+    "input": "gid\tstatus size\nabc123\tactive 42MB\ndef456\twaiting 100MB\nghi789\tcomplete 7MB\n",
+    "negative": "gid status size\nabc123 active 42MB\n",
+    "analysis_notes": "Modeled aria2 download list output with a generated executable-json parser plugin.",
+    "variants": ["gid header row", "active download row", "size field"]
+  },
+  {
+    "fixture": "antigravity-skills",
+    "descriptor_id": "known.antigravity.skills",
+    "name": "antigravity skill list",
+    "repo": "https://github.com/sickn33/antigravity-awesome-skills",
+    "required_substrings": ["skill\tstatus", "planner\tavailable"],
+    "parser": "tab-pairs",
+    "input": "skill\tstatus category\nplanner\tavailable agent\nbrowser\tavailable automation\nresearch\tinstalled agent\n",
+    "negative": "skill status category\nplanner available agent\n",
+    "analysis_notes": "Modeled antigravity-awesome-skills index output with a generated executable-json parser plugin.",
+    "variants": ["skill header row", "available skill row", "category field"]
+  },
+  {
+    "fixture": "nushell-commands",
+    "descriptor_id": "known.nushell.commands",
+    "name": "Nushell command list",
+    "repo": "https://github.com/nushell/nushell",
+    "required_substrings": ["command\tcategory", "from csv\tparser"],
+    "parser": "tab-pairs",
+    "input": "command\tcategory input\nfrom csv\tparser stream\nwhere\tfilter table\nopen\tfilesystem path\n",
+    "negative": "command category input\nfrom csv parser stream\n",
+    "analysis_notes": "Modeled Nushell command list output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "parser command row", "input kind field"]
+  },
+  {
+    "fixture": "yazi-files",
+    "descriptor_id": "known.yazi.files",
+    "name": "yazi file list",
+    "repo": "https://github.com/sxyazi/yazi",
+    "required_substrings": ["file\ttype", "src\tdir"],
+    "parser": "tab-pairs",
+    "input": "file\ttype size\nsrc\tdir 4K\nREADME.md\tfile 8K\ntarget\tdir 12K\n",
+    "negative": "file type size\nsrc dir 4K\n",
+    "analysis_notes": "Modeled yazi file list output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "directory row", "size field"]
   }
 ]

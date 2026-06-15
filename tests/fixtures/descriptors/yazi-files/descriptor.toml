@@ -1,0 +1,10 @@
+id = "known.yazi.files"
+name = "yazi file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\ttype","src\tdir"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

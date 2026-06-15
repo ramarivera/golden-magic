@@ -1,0 +1,4 @@
+command	category input
+from csv	parser stream
+where	filter table
+open	filesystem path

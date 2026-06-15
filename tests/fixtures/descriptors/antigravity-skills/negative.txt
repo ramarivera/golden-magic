@@ -1,0 +1,2 @@
+skill status category
+planner available agent

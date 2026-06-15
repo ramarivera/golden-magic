@@ -1,0 +1,2 @@
+command category input
+from csv parser stream

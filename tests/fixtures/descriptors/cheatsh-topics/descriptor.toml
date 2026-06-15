@@ -1,0 +1,10 @@
+id = "known.cheatsh.topics"
+name = "cheat.sh topic list"
+priority = 50
+
+[matches]
+required_substrings = ["topic\tlanguage","tar\tshell"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

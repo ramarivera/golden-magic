@@ -1,0 +1,10 @@
+id = "known.antigravity.skills"
+name = "antigravity skill list"
+priority = 50
+
+[matches]
+required_substrings = ["skill\tstatus","planner\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

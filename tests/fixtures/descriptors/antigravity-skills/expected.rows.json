@@ -1,0 +1,18 @@
+[
+  {
+    "name": "skill",
+    "value": "status category"
+  },
+  {
+    "name": "planner",
+    "value": "available agent"
+  },
+  {
+    "name": "browser",
+    "value": "available automation"
+  },
+  {
+    "name": "research",
+    "value": "installed agent"
+  }
+]

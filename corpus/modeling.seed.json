@@ -1083,5 +1083,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/pure-bash-bible-topics",
     "analysis_notes": "Modeled pure-bash-bible topic index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chubin/cheat.sh",
+    "descriptor_id": "known.cheatsh.topics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cheatsh-topics",
+    "analysis_notes": "Modeled cheat.sh topic list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aria2/aria2",
+    "descriptor_id": "known.aria2.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aria2-downloads",
+    "analysis_notes": "Modeled aria2 download list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sickn33/antigravity-awesome-skills",
+    "descriptor_id": "known.antigravity.skills",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/antigravity-skills",
+    "analysis_notes": "Modeled antigravity-awesome-skills index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nushell/nushell",
+    "descriptor_id": "known.nushell.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nushell-commands",
+    "analysis_notes": "Modeled Nushell command list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sxyazi/yazi",
+    "descriptor_id": "known.yazi.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yazi-files",
+    "analysis_notes": "Modeled yazi file list output with a generated executable-json parser plugin."
   }
 ]

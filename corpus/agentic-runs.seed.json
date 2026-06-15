@@ -2788,5 +2788,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/chubin/cheat.sh",
+    "descriptor_id": "known.cheatsh.topics",
+    "run_id": "agentic.cheatsh-topics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cheatsh-topics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cheatsh-topics/expected.rows.json",
+    "variants": [
+      "topic header row",
+      "shell topic row",
+      "example count field"
+    ],
+    "transcript": [
+      "selected descriptor known.cheatsh.topics for cheat.sh topic list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aria2/aria2",
+    "descriptor_id": "known.aria2.downloads",
+    "run_id": "agentic.aria2-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aria2-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aria2-downloads/expected.rows.json",
+    "variants": [
+      "gid header row",
+      "active download row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.aria2.downloads for aria2 download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sickn33/antigravity-awesome-skills",
+    "descriptor_id": "known.antigravity.skills",
+    "run_id": "agentic.antigravity-skills.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/antigravity-skills/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/antigravity-skills/expected.rows.json",
+    "variants": [
+      "skill header row",
+      "available skill row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.antigravity.skills for antigravity skill list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nushell/nushell",
+    "descriptor_id": "known.nushell.commands",
+    "run_id": "agentic.nushell-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nushell-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nushell-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "parser command row",
+      "input kind field"
+    ],
+    "transcript": [
+      "selected descriptor known.nushell.commands for Nushell command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sxyazi/yazi",
+    "descriptor_id": "known.yazi.files",
+    "run_id": "agentic.yazi-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yazi-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yazi-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "directory row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.yazi.files for yazi file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

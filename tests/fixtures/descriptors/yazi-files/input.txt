@@ -1,0 +1,4 @@
+file	type size
+src	dir 4K
+README.md	file 8K
+target	dir 12K
