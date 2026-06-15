@@ -109,8 +109,9 @@ executable = "./parser-plugin"
 ```
 
 `executable-json` launches an explicit parser executable, writes the input text
-to stdin, and expects stdout to be a JSON array of row objects. Relative
-executable paths resolve beside the descriptor file.
+to stdin, and expects stdout to be a `golden-magic.executable-json.v1` envelope
+with a `rows` array. Relative executable paths resolve beside the descriptor
+file. The host enforces a 2 second timeout and a 1 MiB stdout cap.
 
 Direct core use can also select the implemented backend:
 

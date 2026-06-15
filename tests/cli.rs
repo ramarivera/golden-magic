@@ -722,3 +722,61 @@ backend = "executable-json"
             "uses executable-json backend but parser.executable is missing",
         ));
 }
+
+#[test]
+fn cli_executable_json_backend_reports_timeout() {
+    let fixture = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+        .join("tests/fixtures/descriptors/executable-json-timeout");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(&fixture)
+        .arg("--output")
+        .arg("trace-json")
+        .write_stdin("plugin-timeout: alpha\n")
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let trace: Value = serde_json::from_slice(&output).expect("valid JSON trace");
+    assert!(trace.as_array().expect("trace array").iter().any(|event| {
+        event["rule_id"] == "backend.executable-json.error"
+            && event["message"]
+                .as_str()
+                .expect("message string")
+                .contains("timeout")
+    }));
+}
+
+#[test]
+fn cli_executable_json_backend_reports_stdout_limit() {
+    let fixture = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+        .join("tests/fixtures/descriptors/executable-json-large-output");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(&fixture)
+        .arg("--output")
+        .arg("trace-json")
+        .write_stdin("plugin-large-output: alpha\n")
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let trace: Value = serde_json::from_slice(&output).expect("valid JSON trace");
+    assert!(trace.as_array().expect("trace array").iter().any(|event| {
+        event["rule_id"] == "backend.executable-json.error"
+            && event["message"]
+                .as_str()
+                .expect("message string")
+                .contains("stdout limit")
+    }));
+}

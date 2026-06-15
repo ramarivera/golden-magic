@@ -47,16 +47,22 @@ backend = "executable-json"
 executable = "./parser-plugin"
 ```
 
-Golden Magic writes the raw input to stdin and expects stdout to be a JSON array
-of row objects:
+Golden Magic writes the raw input to stdin and expects stdout to be a v1 JSON
+envelope:
 
 ```json
-[
-  {"name": "alpha", "status": "ok"}
-]
+{
+  "protocol": "golden-magic.executable-json.v1",
+  "rows": [
+    {"name": "alpha", "status": "ok"}
+  ]
+}
 ```
 
-Relative executable paths resolve beside `descriptor.toml`.
+Relative executable paths resolve beside `descriptor.toml`. The current host
+also accepts a bare JSON array of row objects for the first compatibility pass,
+but new plugins should emit the envelope. The host enforces a 2 second timeout,
+a 1 MiB stdout cap, and a 64 KiB stderr cap.
 
 Subprocess extensions should:
 

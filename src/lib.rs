@@ -5,9 +5,11 @@ pub mod tool_packs;
 
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
-use std::io::Write;
+use std::io::{Read, Write};
 use std::path::PathBuf;
 use std::process::{Command, Stdio};
+use std::thread;
+use std::time::{Duration, Instant};
 
 pub type Row = BTreeMap<String, String>;
 
@@ -29,6 +31,10 @@ const BACKEND_TREE_SITTER_RUST_PARSED: &str = "backend.tree-sitter-rust.parsed";
 const BACKEND_TREE_SITTER_RUST_ERROR: &str = "backend.tree-sitter-rust.error";
 const BACKEND_EXECUTABLE_JSON_PARSED: &str = "backend.executable-json.parsed";
 const BACKEND_EXECUTABLE_JSON_ERROR: &str = "backend.executable-json.error";
+const EXECUTABLE_JSON_PROTOCOL: &str = "golden-magic.executable-json.v1";
+const EXECUTABLE_JSON_TIMEOUT: Duration = Duration::from_secs(2);
+const EXECUTABLE_JSON_MAX_STDOUT: usize = 1024 * 1024;
+const EXECUTABLE_JSON_MAX_STDERR: usize = 64 * 1024;
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct ParseReport {
@@ -54,6 +60,13 @@ pub enum ParseKind {
 pub struct TraceEvent {
     pub rule_id: String,
     pub message: String,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(untagged)]
+enum ExecutableJsonOutput {
+    Envelope { protocol: String, rows: Vec<Row> },
+    Rows(Vec<Row>),
 }
 
 #[derive(Debug, Clone, Copy, Default, PartialEq, Eq, Serialize, Deserialize)]
@@ -460,7 +473,7 @@ fn parse_with_executable_json_backend(input: &str, options: &ParseOptions) -> Pa
         return plugin_report(Vec::new(), 0.0, trace);
     }
 
-    let output = match child.wait_with_output() {
+    let output = match wait_for_executable_json_output(&mut child) {
         Ok(output) => output,
         Err(error) => {
             trace.push(event(
@@ -474,20 +487,43 @@ fn parse_with_executable_json_backend(input: &str, options: &ParseOptions) -> Pa
         }
     };
 
-    if !output.status.success() {
+    if output.timed_out {
         trace.push(event(
             BACKEND_EXECUTABLE_JSON_ERROR,
             format!(
-                "executable parser {} exited with {}; stderr: {}",
+                "executable parser {} exceeded {:?} timeout",
                 path.display(),
-                output.status,
+                EXECUTABLE_JSON_TIMEOUT
+            ),
+        ));
+        return plugin_report(Vec::new(), 0.0, trace);
+    }
+
+    if output.stdout_truncated {
+        trace.push(event(
+            BACKEND_EXECUTABLE_JSON_ERROR,
+            format!(
+                "executable parser {} exceeded stdout limit of {} byte(s)",
+                path.display(),
+                EXECUTABLE_JSON_MAX_STDOUT
+            ),
+        ));
+        return plugin_report(Vec::new(), 0.0, trace);
+    }
+
+    if !output.status_success {
+        trace.push(event(
+            BACKEND_EXECUTABLE_JSON_ERROR,
+            format!(
+                "executable parser {} exited unsuccessfully; stderr: {}",
+                path.display(),
                 String::from_utf8_lossy(&output.stderr).trim()
             ),
         ));
         return plugin_report(Vec::new(), 0.0, trace);
     }
 
-    let rows = match serde_json::from_slice::<Vec<Row>>(&output.stdout) {
+    let rows = match parse_executable_json_output(&output.stdout) {
         Ok(rows) => rows,
         Err(error) => {
             trace.push(event(
@@ -511,6 +547,90 @@ fn parse_with_executable_json_backend(input: &str, options: &ParseOptions) -> Pa
     ));
 
     plugin_report(rows, 0.78, trace)
+}
+
+#[derive(Debug)]
+struct ExecutableProcessOutput {
+    status_success: bool,
+    timed_out: bool,
+    stdout: Vec<u8>,
+    stderr: Vec<u8>,
+    stdout_truncated: bool,
+}
+
+fn wait_for_executable_json_output(
+    child: &mut std::process::Child,
+) -> Result<ExecutableProcessOutput, std::io::Error> {
+    let mut stdout = child.stdout.take().expect("child stdout configured");
+    let mut stderr = child.stderr.take().expect("child stderr configured");
+    let stdout_reader =
+        thread::spawn(move || read_limited(&mut stdout, EXECUTABLE_JSON_MAX_STDOUT));
+    let stderr_reader =
+        thread::spawn(move || read_limited(&mut stderr, EXECUTABLE_JSON_MAX_STDERR));
+    let start = Instant::now();
+    let mut timed_out = false;
+
+    let status_success = loop {
+        if let Some(status) = child.try_wait()? {
+            break status.success();
+        }
+        if start.elapsed() >= EXECUTABLE_JSON_TIMEOUT {
+            timed_out = true;
+            let _ = child.kill();
+            let status = child.wait()?;
+            break status.success();
+        }
+        thread::sleep(Duration::from_millis(10));
+    };
+
+    let (stdout, stdout_truncated) = stdout_reader.join().expect("stdout reader thread joins")?;
+    let (stderr, _) = stderr_reader.join().expect("stderr reader thread joins")?;
+
+    Ok(ExecutableProcessOutput {
+        status_success,
+        timed_out,
+        stdout,
+        stderr,
+        stdout_truncated,
+    })
+}
+
+fn read_limited(reader: &mut impl Read, limit: usize) -> Result<(Vec<u8>, bool), std::io::Error> {
+    let mut output = Vec::new();
+    let mut buffer = [0u8; 8192];
+    let mut truncated = false;
+
+    loop {
+        let read = reader.read(&mut buffer)?;
+        if read == 0 {
+            break;
+        }
+        let remaining = limit.saturating_sub(output.len());
+        if read > remaining {
+            output.extend_from_slice(&buffer[..remaining]);
+            truncated = true;
+            break;
+        }
+        output.extend_from_slice(&buffer[..read]);
+    }
+
+    Ok((output, truncated))
+}
+
+fn parse_executable_json_output(bytes: &[u8]) -> Result<Vec<Row>, String> {
+    match serde_json::from_slice::<ExecutableJsonOutput>(bytes) {
+        Ok(ExecutableJsonOutput::Rows(rows)) => Ok(rows),
+        Ok(ExecutableJsonOutput::Envelope { protocol, rows }) => {
+            if protocol == EXECUTABLE_JSON_PROTOCOL {
+                Ok(rows)
+            } else {
+                Err(format!(
+                    "unsupported executable-json protocol {protocol}; expected {EXECUTABLE_JSON_PROTOCOL}"
+                ))
+            }
+        }
+        Err(error) => Err(error.to_string()),
+    }
 }
 
 fn plugin_report(rows: Vec<Row>, confidence: f32, trace: Vec<TraceEvent>) -> ParseReport {

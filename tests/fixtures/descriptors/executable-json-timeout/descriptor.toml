@@ -1,0 +1,10 @@
+id = "known.executable-json.timeout"
+name = "Executable JSON timeout"
+priority = 70
+
+[matches]
+required_substrings = ["plugin-timeout:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

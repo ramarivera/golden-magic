@@ -1,0 +1,10 @@
+id = "known.executable-json.large-output"
+name = "Executable JSON large output"
+priority = 70
+
+[matches]
+required_substrings = ["plugin-large-output:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"
