@@ -314,6 +314,113 @@ backend = "tree-sitter-rust"
     assert_eq!(rows[1]["name"], "run");
 }
 
+#[test]
+fn cli_applies_tree_sitter_descriptor_backend_with_rust_grammar() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("rust.toml"),
+        r#"
+id = "backend.tree-sitter"
+name = "Backend Tree Sitter"
+priority = 10
+[matches]
+required_substrings = ["fn ", "struct "]
+[parser]
+backend = "tree-sitter"
+grammar = "rust"
+query = "declarations.scm"
+"#,
+    )
+    .expect("write descriptor");
+    fs::write(
+        dir.path().join("declarations.scm"),
+        "[(struct_item name: (type_identifier) @name) (function_item name: (identifier) @name)] @declaration\n",
+    )
+    .expect("write query");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(dir.path())
+        .arg("--output")
+        .arg("report-json")
+        .write_stdin("struct Tool;\nfn run() {}\n")
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let report: Value = serde_json::from_slice(&output).expect("valid JSON report");
+    assert_eq!(report["kind"], "tree-sitter");
+    assert_eq!(report["rows"][0]["kind"], "struct");
+    assert_eq!(report["rows"][0]["name"], "Tool");
+    assert_eq!(report["rows"][1]["kind"], "function");
+    assert_eq!(report["rows"][1]["name"], "run");
+    assert!(report["trace"].as_array().unwrap().iter().any(|event| {
+        event["rule_id"] == "backend.tree-sitter.grammar"
+            && event["message"] == "selected tree-sitter grammar rust"
+    }));
+    assert!(report["trace"].as_array().unwrap().iter().any(|event| {
+        event["rule_id"] == "backend.tree-sitter.query"
+            && event["message"]
+                .as_str()
+                .is_some_and(|message| message.ends_with("declarations.scm"))
+    }));
+}
+
+#[test]
+fn cli_rejects_tree_sitter_backend_without_grammar() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("rust.toml"),
+        r#"
+id = "backend.tree-sitter.missing-grammar"
+name = "Backend Tree Sitter Missing Grammar"
+[parser]
+backend = "tree-sitter"
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--validate-descriptor-dir")
+        .arg(dir.path())
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "uses tree-sitter backend without parser.grammar",
+        ));
+}
+
+#[test]
+fn cli_rejects_unknown_tree_sitter_grammar() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("python.toml"),
+        r#"
+id = "backend.tree-sitter.python"
+name = "Backend Tree Sitter Python"
+[parser]
+backend = "tree-sitter"
+grammar = "python"
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--validate-descriptor-dir")
+        .arg(dir.path())
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "requests unsupported tree-sitter grammar python",
+        ));
+}
+
 fn toml_string(value: String) -> String {
     serde_json::to_string(&value).expect("path string serializes")
 }

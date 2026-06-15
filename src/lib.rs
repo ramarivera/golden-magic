@@ -22,6 +22,7 @@ const FALLBACK_EMPTY: &str = "fallback.empty";
 const FALLBACK_LINES: &str = "fallback.lines";
 const BACKEND_HEURISTIC: &str = "heuristic";
 const BACKEND_SECTIONS: &str = "sections";
+const BACKEND_TREE_SITTER: &str = "tree-sitter";
 const BACKEND_TREE_SITTER_RUST: &str = "tree-sitter-rust";
 const BACKEND_EXECUTABLE_JSON: &str = "executable-json";
 const BACKEND_SECTIONS_SELECTED: &str = "backend.sections";
@@ -83,6 +84,8 @@ pub struct ParseOptions {
     only_rules: Vec<String>,
     header_mode: HeaderMode,
     backend: ParserBackendSelection,
+    tree_sitter_grammar: Option<String>,
+    tree_sitter_query: Option<PathBuf>,
     executable_plugin: Option<PathBuf>,
     trace_events: Vec<TraceEvent>,
 }
@@ -130,6 +133,16 @@ impl ParseOptions {
         self
     }
 
+    pub fn tree_sitter_grammar(mut self, grammar: impl Into<String>) -> Self {
+        self.tree_sitter_grammar = Some(grammar.into());
+        self
+    }
+
+    pub fn tree_sitter_query(mut self, path: impl Into<PathBuf>) -> Self {
+        self.tree_sitter_query = Some(path.into());
+        self
+    }
+
     pub fn executable_plugin(mut self, path: impl Into<PathBuf>) -> Self {
         self.executable_plugin = Some(path.into());
         self
@@ -154,6 +167,14 @@ impl ParseOptions {
 
     pub fn selected_backend(&self) -> &str {
         &self.backend.id
+    }
+
+    pub fn selected_tree_sitter_grammar(&self) -> Option<&str> {
+        self.tree_sitter_grammar.as_deref()
+    }
+
+    pub fn selected_tree_sitter_query(&self) -> Option<&PathBuf> {
+        self.tree_sitter_query.as_ref()
     }
 
     pub fn selected_executable_plugin(&self) -> Option<&PathBuf> {
@@ -192,6 +213,7 @@ pub fn parse_with_options(input: &str, options: &ParseOptions) -> ParseReport {
     match options.selected_backend() {
         BACKEND_HEURISTIC => parse_with_heuristic_backend(input, options),
         BACKEND_SECTIONS => parse_with_sections_backend(input, options),
+        BACKEND_TREE_SITTER => parse_with_tree_sitter_backend(input, options),
         BACKEND_TREE_SITTER_RUST => parse_with_tree_sitter_rust_backend(input, options),
         BACKEND_EXECUTABLE_JSON => parse_with_executable_json_backend(input, options),
         other => unsupported_backend_report(other, options),
@@ -274,6 +296,7 @@ pub fn known_backend_ids() -> &'static [&'static str] {
     &[
         BACKEND_HEURISTIC,
         BACKEND_SECTIONS,
+        BACKEND_TREE_SITTER,
         BACKEND_TREE_SITTER_RUST,
         BACKEND_EXECUTABLE_JSON,
     ]
@@ -286,6 +309,20 @@ fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
         trace.push(event(
             backend_rule_id(options.selected_backend()),
             format!("selected {} parser backend", options.selected_backend()),
+        ));
+    }
+
+    if let Some(grammar) = options.selected_tree_sitter_grammar() {
+        trace.push(event(
+            "backend.tree-sitter.grammar",
+            format!("selected tree-sitter grammar {grammar}"),
+        ));
+    }
+
+    if let Some(query) = options.selected_tree_sitter_query() {
+        trace.push(event(
+            "backend.tree-sitter.query",
+            format!("selected tree-sitter query {}", query.display()),
         ));
     }
 
@@ -310,6 +347,7 @@ fn backend_rule_id(backend: &str) -> &'static str {
     match backend {
         BACKEND_HEURISTIC => "backend.heuristic",
         BACKEND_SECTIONS => BACKEND_SECTIONS_SELECTED,
+        BACKEND_TREE_SITTER => "backend.tree-sitter",
         BACKEND_TREE_SITTER_RUST => "backend.tree-sitter-rust",
         BACKEND_EXECUTABLE_JSON => "backend.executable-json",
         _ => "backend.unsupported",
@@ -369,6 +407,42 @@ fn parse_with_sections_backend(input: &str, options: &ParseOptions) -> ParseRepo
         columns,
         rows,
         trace,
+    }
+}
+
+fn parse_with_tree_sitter_backend(input: &str, options: &ParseOptions) -> ParseReport {
+    match options.selected_tree_sitter_grammar() {
+        Some("rust") => parse_with_tree_sitter_rust_backend(input, options),
+        Some(grammar) => {
+            let mut trace = options_trace(options);
+            trace.push(event(
+                BACKEND_TREE_SITTER_RUST_ERROR,
+                format!(
+                    "tree-sitter grammar {grammar} is not implemented; implemented grammar(s): rust"
+                ),
+            ));
+            ParseReport {
+                kind: ParseKind::TreeSitter,
+                confidence: 0.0,
+                columns: tree_sitter_declaration_columns(),
+                rows: Vec::new(),
+                trace,
+            }
+        }
+        None => {
+            let mut trace = options_trace(options);
+            trace.push(event(
+                BACKEND_TREE_SITTER_RUST_ERROR,
+                "tree-sitter backend requires parser.grammar",
+            ));
+            ParseReport {
+                kind: ParseKind::TreeSitter,
+                confidence: 0.0,
+                columns: tree_sitter_declaration_columns(),
+                rows: Vec::new(),
+                trace,
+            }
+        }
     }
 }
 

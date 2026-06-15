@@ -30,6 +30,10 @@ pub struct ParserHint {
     #[serde(default)]
     pub backend: Option<String>,
     #[serde(default)]
+    pub grammar: Option<String>,
+    #[serde(default)]
+    pub query: Option<PathBuf>,
+    #[serde(default)]
     pub executable: Option<PathBuf>,
     #[serde(default)]
     pub only_rules: Vec<String>,

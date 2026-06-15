@@ -6,4 +6,6 @@ priority = 60
 required_substrings = ["fn ", "struct "]
 
 [parser]
-backend = "tree-sitter-rust"
+backend = "tree-sitter"
+grammar = "rust"
+query = "declarations.scm"

@@ -43,7 +43,9 @@ Optional fields:
 
 - `priority`: higher priority wins when multiple descriptors match.
 - `matches.required_substrings`: every listed string must appear in the input.
-- `parser.backend`: parser backend id. Implemented ids are `heuristic`, `sections`, and `tree-sitter-rust`.
+- `parser.backend`: parser backend id. Implemented ids are `heuristic`, `sections`, `tree-sitter`, `tree-sitter-rust`, and `executable-json`.
+- `parser.grammar`: tree-sitter grammar id when using `backend = "tree-sitter"`. Currently implemented: `rust`.
+- `parser.query`: optional tree-sitter query file path. Relative paths resolve beside the descriptor file.
 - `parser.only_rules`: restrict parser selection to specific stable rule ids.
 - `parser.disable_rules`: disable specific stable rule ids.
 
@@ -105,6 +107,7 @@ Descriptor authors should treat these as stable:
 - parser rule ids returned by `--list-rules`
 - parser backend id `heuristic`
 - parser backend id `sections`
+- parser backend id `tree-sitter` with `parser.grammar = "rust"`
 - parser backend id `tree-sitter-rust`
 - `matches.required_substrings`
 - `parser.only_rules`
@@ -115,7 +118,7 @@ Adding new matcher fields or parser engines is allowed in future releases, but e
 
 When a descriptor selects `backend = "heuristic"`, Golden Magic records `backend.heuristic` in trace output before heuristic rule events.
 When a descriptor selects `backend = "sections"`, Golden Magic parses repeated `section: <name>` blocks followed by `key: value` fields into one row per section.
-When a descriptor selects `backend = "tree-sitter-rust"`, Golden Magic parses Rust syntax with tree-sitter and emits declaration rows for supported modules, structs, and functions.
+When a descriptor selects `backend = "tree-sitter"` plus `grammar = "rust"`, Golden Magic parses Rust syntax with tree-sitter and emits declaration rows for supported modules, structs, and functions. `tree-sitter-rust` remains a compatibility backend id for the same first grammar target.
 
 ## Publishing
 

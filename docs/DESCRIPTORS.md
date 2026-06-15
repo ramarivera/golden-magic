@@ -28,7 +28,10 @@ disable_rules = []
 - `name`: human-readable descriptor name.
 - `priority`: higher values are selected first when multiple descriptors match.
 - `matches.required_substrings`: all listed strings must appear in the input.
-- `parser.backend`: parser backend id. Implemented ids are `heuristic` and `sections`.
+- `parser.backend`: parser backend id. Implemented ids are `heuristic`, `sections`, `tree-sitter`, `tree-sitter-rust`, and `executable-json`.
+- `parser.grammar`: tree-sitter grammar id when `parser.backend = "tree-sitter"`. Currently implemented: `rust`.
+- `parser.query`: optional tree-sitter query file path. Relative paths resolve beside the descriptor file.
+- `parser.executable`: executable parser path when `parser.backend = "executable-json"`. Relative paths resolve beside the descriptor file.
 - `parser.only_rules`: heuristic rule ids to restrict parser selection.
 - `parser.disable_rules`: heuristic rule ids to disable.
 
@@ -43,6 +46,9 @@ Implemented:
 - expose descriptor parser rule ids for validation/wiring
 - validate descriptor parser backend ids
 - parse sectioned key-value blocks through the `sections` backend
+- parse Rust declarations through the `tree-sitter` backend with `grammar = "rust"` and optional descriptor-local query metadata
+- keep `tree-sitter-rust` as a compatibility backend id for the first Rust grammar target
+- launch explicit subprocess parser plugins through the bounded `executable-json` backend
 
 CLI integration:
 
@@ -76,7 +82,22 @@ descriptor_dirs = ["/path/to/descriptors"]
 
 When `descriptor_dirs` is present in config, it replaces the built-in default descriptor directory. Additional `--descriptor-dir` flags are appended. Use `--config <path>` to load a specific config file.
 
-When descriptors match, the highest-priority selected descriptor can apply parser `only_rules` and `disable_rules`. The trace includes `descriptor.selected`.
+When descriptors match, the highest-priority selected descriptor can apply parser backend hints, `only_rules`, and `disable_rules`. The trace includes `descriptor.selected`.
+
+Tree-sitter descriptor example:
+
+```toml
+id = "example.rust.declarations"
+name = "Rust declarations"
+
+[matches]
+required_substrings = ["fn ", "struct "]
+
+[parser]
+backend = "tree-sitter"
+grammar = "rust"
+query = "declarations.scm"
+```
 
 Fixture harness:
 

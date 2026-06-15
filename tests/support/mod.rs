@@ -185,6 +185,12 @@ pub fn parse_options_from_descriptor(descriptor: &Descriptor) -> ParseOptions {
     if let Some(backend) = &descriptor.parser.backend {
         options = options.backend(backend);
     }
+    if let Some(grammar) = &descriptor.parser.grammar {
+        options = options.tree_sitter_grammar(grammar);
+    }
+    if let Some(query) = &descriptor.parser.query {
+        options = options.tree_sitter_query(query);
+    }
     if let Some(executable) = &descriptor.parser.executable {
         options = options.executable_plugin(executable);
     }
@@ -209,6 +215,17 @@ pub fn parse_options_from_loaded_descriptor(loaded: &LoadedDescriptor) -> ParseO
                 .parent()
                 .unwrap_or_else(|| Path::new("."))
                 .join(executable),
+        );
+    }
+    if let Some(query) = &loaded.descriptor.parser.query
+        && query.is_relative()
+    {
+        options = options.tree_sitter_query(
+            loaded
+                .path
+                .parent()
+                .unwrap_or_else(|| Path::new("."))
+                .join(query),
         );
     }
 

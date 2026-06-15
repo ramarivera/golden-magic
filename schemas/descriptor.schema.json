@@ -42,8 +42,18 @@
       "properties": {
         "backend": {
           "type": "string",
-          "enum": ["heuristic", "sections", "tree-sitter-rust", "executable-json"],
+          "enum": ["heuristic", "sections", "tree-sitter", "tree-sitter-rust", "executable-json"],
           "description": "Parser backend id."
+        },
+        "grammar": {
+          "type": "string",
+          "enum": ["rust"],
+          "description": "Tree-sitter grammar id for tree-sitter backends. Currently implemented: rust."
+        },
+        "query": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional tree-sitter query path for grammar-backed descriptors. Relative paths resolve beside descriptor.toml."
         },
         "executable": {
           "type": "string",
