@@ -1,0 +1,4 @@
+content	state count
+post	published 12
+page	draft 3
+asset	published 44

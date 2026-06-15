@@ -3953,5 +3953,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/aidlearning-environments",
     "analysis_notes": "Modeled AidLearning environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/istanbuljs/nyc",
+    "descriptor_id": "known.nyc.coverage",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nyc-coverage",
+    "analysis_notes": "Modeled nyc coverage output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ponzu-cms/ponzu",
+    "descriptor_id": "known.ponzu.content",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ponzu-content",
+    "analysis_notes": "Modeled ponzu content output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dundee/gdu",
+    "descriptor_id": "known.gdu.usage",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gdu-usage",
+    "analysis_notes": "Modeled gdu disk usage output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mtkennerly/ludusavi",
+    "descriptor_id": "known.ludusavi.backups",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ludusavi-backups",
+    "analysis_notes": "Modeled ludusavi backup output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ankitpokhrel/jira-cli",
+    "descriptor_id": "known.jira-cli.issues",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jira-cli-issues",
+    "analysis_notes": "Modeled jira-cli issue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tuist/tuist",
+    "descriptor_id": "known.tuist.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tuist-projects",
+    "analysis_notes": "Modeled tuist project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google/clasp",
+    "descriptor_id": "known.clasp.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clasp-scripts",
+    "analysis_notes": "Modeled clasp script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/frostming/legit",
+    "descriptor_id": "known.legit.branches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/legit-branches",
+    "analysis_notes": "Modeled legit branch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ogulcancelik/herdr",
+    "descriptor_id": "known.herdr.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/herdr-agents",
+    "analysis_notes": "Modeled herdr agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/andmarti1424/sc-im",
+    "descriptor_id": "known.sc-im.sheets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sc-im-sheets",
+    "analysis_notes": "Modeled sc-im sheet output with a generated executable-json parser plugin."
   }
 ]

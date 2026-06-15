@@ -1,0 +1,10 @@
+id = "known.herdr.agents"
+name = "herdr agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\tstate","codex\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

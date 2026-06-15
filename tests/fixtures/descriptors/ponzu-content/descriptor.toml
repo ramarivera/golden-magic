@@ -1,0 +1,10 @@
+id = "known.ponzu.content"
+name = "ponzu content type list"
+priority = 50
+
+[matches]
+required_substrings = ["content\tstate","post\tpublished"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

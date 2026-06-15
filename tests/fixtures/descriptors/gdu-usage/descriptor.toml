@@ -1,0 +1,10 @@
+id = "known.gdu.usage"
+name = "gdu disk usage list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tsize","/var\t12G"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+metric	percent files
+lines	92 18
+branches	84 18
+functions	89 18

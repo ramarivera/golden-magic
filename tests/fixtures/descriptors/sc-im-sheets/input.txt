@@ -1,0 +1,4 @@
+sheet	rows cols
+budget	42 8
+inventory	120 12
+notes	10 3

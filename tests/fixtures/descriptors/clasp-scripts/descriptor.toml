@@ -1,0 +1,10 @@
+id = "known.clasp.scripts"
+name = "clasp script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tstate","Code.js\tpushed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

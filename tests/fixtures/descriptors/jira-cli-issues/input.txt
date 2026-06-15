@@ -1,0 +1,4 @@
+issue	status assignee
+GM-1	Open ramiro
+GM-2	InProgress agent
+GM-3	Done bot

@@ -1,0 +1,10 @@
+id = "known.tuist.projects"
+name = "tuist project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\tplatform","App\tiOS"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

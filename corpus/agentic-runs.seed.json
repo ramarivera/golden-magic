@@ -10168,5 +10168,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/istanbuljs/nyc",
+    "descriptor_id": "known.nyc.coverage",
+    "run_id": "agentic.nyc-coverage.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nyc-coverage/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nyc-coverage/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "percent row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.nyc.coverage for nyc coverage summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ponzu-cms/ponzu",
+    "descriptor_id": "known.ponzu.content",
+    "run_id": "agentic.ponzu-content.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ponzu-content/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ponzu-content/expected.rows.json",
+    "variants": [
+      "content header row",
+      "state row",
+      "count field"
+    ],
+    "transcript": [
+      "selected descriptor known.ponzu.content for ponzu content type list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dundee/gdu",
+    "descriptor_id": "known.gdu.usage",
+    "run_id": "agentic.gdu-usage.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gdu-usage/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gdu-usage/expected.rows.json",
+    "variants": [
+      "path header row",
+      "size row",
+      "percent field"
+    ],
+    "transcript": [
+      "selected descriptor known.gdu.usage for gdu disk usage list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mtkennerly/ludusavi",
+    "descriptor_id": "known.ludusavi.backups",
+    "run_id": "agentic.ludusavi-backups.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ludusavi-backups/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ludusavi-backups/expected.rows.json",
+    "variants": [
+      "game header row",
+      "status row",
+      "saves field"
+    ],
+    "transcript": [
+      "selected descriptor known.ludusavi.backups for ludusavi backup list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ankitpokhrel/jira-cli",
+    "descriptor_id": "known.jira-cli.issues",
+    "run_id": "agentic.jira-cli-issues.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jira-cli-issues/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jira-cli-issues/expected.rows.json",
+    "variants": [
+      "issue header row",
+      "status row",
+      "assignee field"
+    ],
+    "transcript": [
+      "selected descriptor known.jira-cli.issues for jira-cli issue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tuist/tuist",
+    "descriptor_id": "known.tuist.projects",
+    "run_id": "agentic.tuist-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tuist-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tuist-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tuist.projects for tuist project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/google/clasp",
+    "descriptor_id": "known.clasp.scripts",
+    "run_id": "agentic.clasp-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clasp-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clasp-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "state row",
+      "project field"
+    ],
+    "transcript": [
+      "selected descriptor known.clasp.scripts for clasp script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/frostming/legit",
+    "descriptor_id": "known.legit.branches",
+    "run_id": "agentic.legit-branches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/legit-branches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/legit-branches/expected.rows.json",
+    "variants": [
+      "branch header row",
+      "status row",
+      "remote field"
+    ],
+    "transcript": [
+      "selected descriptor known.legit.branches for legit branch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ogulcancelik/herdr",
+    "descriptor_id": "known.herdr.agents",
+    "run_id": "agentic.herdr-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/herdr-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/herdr-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "state row",
+      "session field"
+    ],
+    "transcript": [
+      "selected descriptor known.herdr.agents for herdr agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/andmarti1424/sc-im",
+    "descriptor_id": "known.sc-im.sheets",
+    "run_id": "agentic.sc-im-sheets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sc-im-sheets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sc-im-sheets/expected.rows.json",
+    "variants": [
+      "sheet header row",
+      "rows row",
+      "cols field"
+    ],
+    "transcript": [
+      "selected descriptor known.sc-im.sheets for sc-im sheet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

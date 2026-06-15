@@ -1,0 +1,4 @@
+project	platform state
+App	iOS generated
+Kit	macOS cached
+Watch	watchOS pending

@@ -1,0 +1,4 @@
+path	size percent
+/var	12G 40
+/home	9G 30
+/tmp	1G 3

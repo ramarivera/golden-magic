@@ -1,0 +1,4 @@
+branch	status remote
+main	current origin
+feature	local origin
+release	merged origin

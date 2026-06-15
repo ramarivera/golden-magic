@@ -1,0 +1,10 @@
+id = "known.jira-cli.issues"
+name = "jira-cli issue list"
+priority = 50
+
+[matches]
+required_substrings = ["issue\tstatus","GM-1\tOpen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

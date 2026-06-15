@@ -1,0 +1,18 @@
+[
+  {
+    "name": "metric",
+    "value": "percent files"
+  },
+  {
+    "name": "lines",
+    "value": "92 18"
+  },
+  {
+    "name": "branches",
+    "value": "84 18"
+  },
+  {
+    "name": "functions",
+    "value": "89 18"
+  }
+]

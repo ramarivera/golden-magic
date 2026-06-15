@@ -1,0 +1,10 @@
+id = "known.sc-im.sheets"
+name = "sc-im sheet list"
+priority = 50
+
+[matches]
+required_substrings = ["sheet\trows","budget\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.ludusavi.backups"
+name = "ludusavi backup list"
+priority = 50
+
+[matches]
+required_substrings = ["game\tstatus","Hades\tbacked_up"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

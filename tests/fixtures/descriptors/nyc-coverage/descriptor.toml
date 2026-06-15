@@ -1,0 +1,10 @@
+id = "known.nyc.coverage"
+name = "nyc coverage summary"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tpercent","lines\t92"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

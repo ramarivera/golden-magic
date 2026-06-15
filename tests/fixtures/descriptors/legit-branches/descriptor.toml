@@ -1,0 +1,10 @@
+id = "known.legit.branches"
+name = "legit branch list"
+priority = 50
+
+[matches]
+required_substrings = ["branch\tstatus","main\tcurrent"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

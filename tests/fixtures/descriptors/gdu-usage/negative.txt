@@ -1,0 +1,2 @@
+path size percent
+/var 12G 40

@@ -1,0 +1,4 @@
+agent	state session
+codex	active 1
+claude	idle 2
+reviewer	active 3

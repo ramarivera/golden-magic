@@ -1,0 +1,4 @@
+game	status saves
+Hades	backed_up 4
+Celeste	changed 2
+Portal	missing 0

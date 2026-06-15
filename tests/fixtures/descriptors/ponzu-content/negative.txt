@@ -1,0 +1,2 @@
+content state count
+post published 12

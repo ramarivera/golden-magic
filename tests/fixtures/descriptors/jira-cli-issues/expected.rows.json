@@ -1,0 +1,18 @@
+[
+  {
+    "name": "issue",
+    "value": "status assignee"
+  },
+  {
+    "name": "GM-1",
+    "value": "Open ramiro"
+  },
+  {
+    "name": "GM-2",
+    "value": "InProgress agent"
+  },
+  {
+    "name": "GM-3",
+    "value": "Done bot"
+  }
+]
