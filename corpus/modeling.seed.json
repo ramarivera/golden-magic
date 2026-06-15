@@ -558,5 +558,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/checkstyle-violations",
     "analysis_notes": "Modeled checkstyle violation fields with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/akavel/up",
+    "descriptor_id": "known.up.query",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/up-query",
+    "analysis_notes": "Modeled up interactive query result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mvdan/sh",
+    "descriptor_id": "known.shfmt.diagnostics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shfmt-diagnostics",
+    "analysis_notes": "Modeled shfmt diagnostic fields with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pdfcpu/pdfcpu",
+    "descriptor_id": "known.pdfcpu.info",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pdfcpu-info",
+    "analysis_notes": "Modeled pdfcpu info output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kellyjonbrazil/jc",
+    "descriptor_id": "known.jc.parser-list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jc-parser-list",
+    "analysis_notes": "Modeled jc parser-list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vi/websocat",
+    "descriptor_id": "known.websocat.connection",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/websocat-connection",
+    "analysis_notes": "Modeled websocat connection summary output with a generated executable-json parser plugin."
   }
 ]

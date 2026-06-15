@@ -1,0 +1,10 @@
+id = "known.up.query"
+name = "up query result"
+priority = 50
+
+[matches]
+required_substrings = ["query:","result:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

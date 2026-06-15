@@ -1,0 +1,4 @@
+query: .items | length
+result: 42
+format: json
+status: ok

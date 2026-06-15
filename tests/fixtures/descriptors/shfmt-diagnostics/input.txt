@@ -1,0 +1,4 @@
+file: scripts/build.sh
+line: 12
+column: 5
+message: indent with tabs

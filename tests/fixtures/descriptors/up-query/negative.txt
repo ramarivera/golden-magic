@@ -1,0 +1,2 @@
+query .items | length
+result 42

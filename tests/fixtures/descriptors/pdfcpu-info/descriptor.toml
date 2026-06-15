@@ -1,0 +1,10 @@
+id = "known.pdfcpu.info"
+name = "pdfcpu info output"
+priority = 50
+
+[matches]
+required_substrings = ["pages:","version:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

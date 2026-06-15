@@ -1,0 +1,18 @@
+[
+  {
+    "key": "query",
+    "value": ".items | length"
+  },
+  {
+    "key": "result",
+    "value": "42"
+  },
+  {
+    "key": "format",
+    "value": "json"
+  },
+  {
+    "key": "status",
+    "value": "ok"
+  }
+]

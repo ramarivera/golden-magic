@@ -1,0 +1,18 @@
+[
+  {
+    "key": "file",
+    "value": "scripts/build.sh"
+  },
+  {
+    "key": "line",
+    "value": "12"
+  },
+  {
+    "key": "column",
+    "value": "5"
+  },
+  {
+    "key": "message",
+    "value": "indent with tabs"
+  }
+]

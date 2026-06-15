@@ -1,0 +1,10 @@
+id = "known.websocat.connection"
+name = "websocat connection summary"
+priority = 50
+
+[matches]
+required_substrings = ["source:","destination:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

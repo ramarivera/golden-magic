@@ -718,5 +718,65 @@
     "negative": "file src/Main.java\nseverity error\n",
     "analysis_notes": "Modeled checkstyle violation fields with a generated executable-json parser plugin.",
     "variants": ["file row", "line row", "rule row"]
+  },
+  {
+    "fixture": "up-query",
+    "descriptor_id": "known.up.query",
+    "name": "up query result",
+    "repo": "https://github.com/akavel/up",
+    "required_substrings": ["query:", "result:"],
+    "parser": "colon-kv",
+    "input": "query: .items | length\nresult: 42\nformat: json\nstatus: ok\n",
+    "negative": "query .items | length\nresult 42\n",
+    "analysis_notes": "Modeled up interactive query result output with a generated executable-json parser plugin.",
+    "variants": ["query row", "result row", "format row"]
+  },
+  {
+    "fixture": "shfmt-diagnostics",
+    "descriptor_id": "known.shfmt.diagnostics",
+    "name": "shfmt diagnostics",
+    "repo": "https://github.com/mvdan/sh",
+    "required_substrings": ["file:", "message:"],
+    "parser": "colon-kv",
+    "input": "file: scripts/build.sh\nline: 12\ncolumn: 5\nmessage: indent with tabs\n",
+    "negative": "file scripts/build.sh\nmessage indent with tabs\n",
+    "analysis_notes": "Modeled shfmt diagnostic fields with a generated executable-json parser plugin.",
+    "variants": ["file row", "line row", "message row"]
+  },
+  {
+    "fixture": "pdfcpu-info",
+    "descriptor_id": "known.pdfcpu.info",
+    "name": "pdfcpu info output",
+    "repo": "https://github.com/pdfcpu/pdfcpu",
+    "required_substrings": ["pages:", "version:"],
+    "parser": "colon-kv",
+    "input": "pages: 12\nversion: 1.7\nproducer: golden-magic\noptimized: true\n",
+    "negative": "pages 12\nversion 1.7\n",
+    "analysis_notes": "Modeled pdfcpu info output with a generated executable-json parser plugin.",
+    "variants": ["page count row", "PDF version row", "optimization row"]
+  },
+  {
+    "fixture": "jc-parser-list",
+    "descriptor_id": "known.jc.parser-list",
+    "name": "jc parser list",
+    "repo": "https://github.com/kellyjonbrazil/jc",
+    "required_substrings": ["parser\tdescription", "ls\tParse ls output"],
+    "parser": "tab-pairs",
+    "input": "parser\tdescription category\nls\tParse ls output filesystem\nps\tParse ps output process\nnetstat\tParse netstat output network\n",
+    "negative": "parser description category\nls Parse ls output filesystem\n",
+    "analysis_notes": "Modeled jc parser-list output with a generated executable-json parser plugin.",
+    "variants": ["parser header row", "filesystem parser row", "network parser row"]
+  },
+  {
+    "fixture": "websocat-connection",
+    "descriptor_id": "known.websocat.connection",
+    "name": "websocat connection summary",
+    "repo": "https://github.com/vi/websocat",
+    "required_substrings": ["source:", "destination:"],
+    "parser": "colon-kv",
+    "input": "source: ws://127.0.0.1:8080\ndestination: tcp:127.0.0.1:9000\nmode: bridge\nstatus: connected\n",
+    "negative": "source ws://127.0.0.1:8080\ndestination tcp:127.0.0.1:9000\n",
+    "analysis_notes": "Modeled websocat connection summary output with a generated executable-json parser plugin.",
+    "variants": ["source endpoint row", "destination endpoint row", "bridge mode row"]
   }
 ]

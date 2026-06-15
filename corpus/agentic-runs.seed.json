@@ -1438,5 +1438,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/akavel/up",
+    "descriptor_id": "known.up.query",
+    "run_id": "agentic.up-query.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/up-query/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/up-query/expected.rows.json",
+    "variants": [
+      "query row",
+      "result row",
+      "format row"
+    ],
+    "transcript": [
+      "selected descriptor known.up.query for up query result output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mvdan/sh",
+    "descriptor_id": "known.shfmt.diagnostics",
+    "run_id": "agentic.shfmt-diagnostics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shfmt-diagnostics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shfmt-diagnostics/expected.rows.json",
+    "variants": [
+      "file row",
+      "line row",
+      "message row"
+    ],
+    "transcript": [
+      "selected descriptor known.shfmt.diagnostics for shfmt diagnostics output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pdfcpu/pdfcpu",
+    "descriptor_id": "known.pdfcpu.info",
+    "run_id": "agentic.pdfcpu-info.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pdfcpu-info/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pdfcpu-info/expected.rows.json",
+    "variants": [
+      "page count row",
+      "PDF version row",
+      "optimization row"
+    ],
+    "transcript": [
+      "selected descriptor known.pdfcpu.info for pdfcpu info output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kellyjonbrazil/jc",
+    "descriptor_id": "known.jc.parser-list",
+    "run_id": "agentic.jc-parser-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jc-parser-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jc-parser-list/expected.rows.json",
+    "variants": [
+      "parser header row",
+      "filesystem parser row",
+      "network parser row"
+    ],
+    "transcript": [
+      "selected descriptor known.jc.parser-list for jc parser list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vi/websocat",
+    "descriptor_id": "known.websocat.connection",
+    "run_id": "agentic.websocat-connection.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/websocat-connection/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/websocat-connection/expected.rows.json",
+    "variants": [
+      "source endpoint row",
+      "destination endpoint row",
+      "bridge mode row"
+    ],
+    "transcript": [
+      "selected descriptor known.websocat.connection for websocat connection summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

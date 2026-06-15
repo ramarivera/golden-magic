@@ -1,0 +1,4 @@
+parser	description category
+ls	Parse ls output filesystem
+ps	Parse ps output process
+netstat	Parse netstat output network

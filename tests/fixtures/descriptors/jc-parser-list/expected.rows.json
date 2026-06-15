@@ -1,0 +1,18 @@
+[
+  {
+    "name": "parser",
+    "value": "description category"
+  },
+  {
+    "name": "ls",
+    "value": "Parse ls output filesystem"
+  },
+  {
+    "name": "ps",
+    "value": "Parse ps output process"
+  },
+  {
+    "name": "netstat",
+    "value": "Parse netstat output network"
+  }
+]

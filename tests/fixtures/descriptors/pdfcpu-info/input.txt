@@ -1,0 +1,4 @@
+pages: 12
+version: 1.7
+producer: golden-magic
+optimized: true

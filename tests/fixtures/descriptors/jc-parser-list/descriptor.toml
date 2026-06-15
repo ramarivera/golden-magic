@@ -1,0 +1,10 @@
+id = "known.jc.parser-list"
+name = "jc parser list"
+priority = 50
+
+[matches]
+required_substrings = ["parser\tdescription","ls\tParse ls output"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
