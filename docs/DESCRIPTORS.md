@@ -88,7 +88,7 @@ Each case contains:
 - `negative.txt`
 - `expected.rows.json`
 
-The harness verifies isolated descriptor selection, negative inputs, expected parsed rows, and full-registry duplicate-id failures.
+The harness verifies isolated descriptor selection, backend hints, parser rule hints, negative inputs, expected parsed rows, and full-registry duplicate-id failures.
 
 Not wired yet:
 

@@ -6,4 +6,5 @@ priority = 10
 required_substrings = ["|"]
 
 [parser]
+backend = "heuristic"
 only_rules = ["detect.delimited.pipes"]
