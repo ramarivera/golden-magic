@@ -1,0 +1,4 @@
+scheme	state contrast
+Dracula	installed high
+Solarized	available medium
+Nord	installed medium

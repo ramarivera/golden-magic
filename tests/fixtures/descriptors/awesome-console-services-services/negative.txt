@@ -1,0 +1,2 @@
+service category endpoint
+wttr.in weather /weather

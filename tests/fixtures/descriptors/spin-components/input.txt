@@ -1,0 +1,4 @@
+component	state trigger
+api	running http
+worker	ready redis
+cron	stopped timer

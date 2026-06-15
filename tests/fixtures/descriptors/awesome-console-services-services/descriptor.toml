@@ -1,0 +1,10 @@
+id = "known.awesome-console-services.services"
+name = "awesome-console-services service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tcategory","wttr.in\tweather"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

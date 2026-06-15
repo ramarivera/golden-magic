@@ -1,0 +1,10 @@
+id = "known.himalaya.messages"
+name = "himalaya message list"
+priority = 50
+
+[matches]
+required_substrings = ["mailbox\tunread","inbox\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

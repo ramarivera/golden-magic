@@ -5938,5 +5938,65 @@
     "negative": "path count status\n/api 120 200\n",
     "analysis_notes": "Modeled ngxtop request output with a generated executable-json parser plugin.",
     "variants": ["path header row", "count row", "status field"]
+  },
+  {
+    "fixture": "macos-terminal-themes-schemes",
+    "descriptor_id": "known.macos-terminal-themes.schemes",
+    "name": "macos-terminal-themes scheme list",
+    "repo": "https://github.com/lysyi3m/macos-terminal-themes",
+    "required_substrings": ["scheme\tstate", "Dracula\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "scheme\tstate contrast\nDracula\tinstalled high\nSolarized\tavailable medium\nNord\tinstalled medium\n",
+    "negative": "scheme state contrast\nDracula installed high\n",
+    "analysis_notes": "Modeled macos-terminal-themes scheme output with a generated executable-json parser plugin.",
+    "variants": ["scheme header row", "state row", "contrast field"]
+  },
+  {
+    "fixture": "spin-components",
+    "descriptor_id": "known.spin.components",
+    "name": "spin component list",
+    "repo": "https://github.com/spinframework/spin",
+    "required_substrings": ["component\tstate", "api\trunning"],
+    "parser": "tab-pairs",
+    "input": "component\tstate trigger\napi\trunning http\nworker\tready redis\ncron\tstopped timer\n",
+    "negative": "component state trigger\napi running http\n",
+    "analysis_notes": "Modeled spin component output with a generated executable-json parser plugin.",
+    "variants": ["component header row", "state row", "trigger field"]
+  },
+  {
+    "fixture": "awesome-console-services-services",
+    "descriptor_id": "known.awesome-console-services.services",
+    "name": "awesome-console-services service list",
+    "repo": "https://github.com/chubin/awesome-console-services",
+    "required_substrings": ["service\tcategory", "wttr.in\tweather"],
+    "parser": "tab-pairs",
+    "input": "service\tcategory endpoint\nwttr.in\tweather /weather\ncheat.sh\tdocs /cheat\nrate.sx\tfinance /rates\n",
+    "negative": "service category endpoint\nwttr.in weather /weather\n",
+    "analysis_notes": "Modeled awesome-console-services service output with a generated executable-json parser plugin.",
+    "variants": ["service header row", "category row", "endpoint field"]
+  },
+  {
+    "fixture": "numi-calculations",
+    "descriptor_id": "known.numi.calculations",
+    "name": "numi calculation list",
+    "repo": "https://github.com/nikolaeu/numi",
+    "required_substrings": ["expression\tresult", "2+2\t4"],
+    "parser": "tab-pairs",
+    "input": "expression\tresult unit\n2+2\t4 number\n10 USD\t9.20 EUR currency\n5 km\t3.11 mi distance\n",
+    "negative": "expression result unit\n2+2 4 number\n",
+    "analysis_notes": "Modeled numi calculation output with a generated executable-json parser plugin.",
+    "variants": ["expression header row", "result row", "unit field"]
+  },
+  {
+    "fixture": "himalaya-messages",
+    "descriptor_id": "known.himalaya.messages",
+    "name": "himalaya message list",
+    "repo": "https://github.com/pimalaya/himalaya",
+    "required_substrings": ["mailbox\tunread", "inbox\t12"],
+    "parser": "tab-pairs",
+    "input": "mailbox\tunread total\ninbox\t12 140\nsent\t0 88\narchive\t3 900\n",
+    "negative": "mailbox unread total\ninbox 12 140\n",
+    "analysis_notes": "Modeled himalaya message output with a generated executable-json parser plugin.",
+    "variants": ["mailbox header row", "unread row", "total field"]
   }
 ]

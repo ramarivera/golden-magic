@@ -1,0 +1,10 @@
+id = "known.macos-terminal-themes.schemes"
+name = "macos-terminal-themes scheme list"
+priority = 50
+
+[matches]
+required_substrings = ["scheme\tstate","Dracula\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

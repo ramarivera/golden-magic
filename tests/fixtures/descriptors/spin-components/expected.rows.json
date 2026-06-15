@@ -1,0 +1,18 @@
+[
+  {
+    "name": "component",
+    "value": "state trigger"
+  },
+  {
+    "name": "api",
+    "value": "running http"
+  },
+  {
+    "name": "worker",
+    "value": "ready redis"
+  },
+  {
+    "name": "cron",
+    "value": "stopped timer"
+  }
+]

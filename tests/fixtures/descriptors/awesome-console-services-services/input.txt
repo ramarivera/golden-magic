@@ -1,0 +1,4 @@
+service	category endpoint
+wttr.in	weather /weather
+cheat.sh	docs /cheat
+rate.sx	finance /rates

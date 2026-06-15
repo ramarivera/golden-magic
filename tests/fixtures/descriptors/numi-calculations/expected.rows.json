@@ -1,0 +1,18 @@
+[
+  {
+    "name": "expression",
+    "value": "result unit"
+  },
+  {
+    "name": "2+2",
+    "value": "4 number"
+  },
+  {
+    "name": "10 USD",
+    "value": "9.20 EUR currency"
+  },
+  {
+    "name": "5 km",
+    "value": "3.11 mi distance"
+  }
+]

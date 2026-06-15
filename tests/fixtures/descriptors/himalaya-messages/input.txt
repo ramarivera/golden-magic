@@ -1,0 +1,4 @@
+mailbox	unread total
+inbox	12 140
+sent	0 88
+archive	3 900

@@ -9268,5 +9268,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/lysyi3m/macos-terminal-themes",
+    "descriptor_id": "known.macos-terminal-themes.schemes",
+    "run_id": "agentic.macos-terminal-themes-schemes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/macos-terminal-themes-schemes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/macos-terminal-themes-schemes/expected.rows.json",
+    "variants": [
+      "scheme header row",
+      "state row",
+      "contrast field"
+    ],
+    "transcript": [
+      "selected descriptor known.macos-terminal-themes.schemes for macos-terminal-themes scheme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/spinframework/spin",
+    "descriptor_id": "known.spin.components",
+    "run_id": "agentic.spin-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spin-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spin-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "state row",
+      "trigger field"
+    ],
+    "transcript": [
+      "selected descriptor known.spin.components for spin component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chubin/awesome-console-services",
+    "descriptor_id": "known.awesome-console-services.services",
+    "run_id": "agentic.awesome-console-services-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-console-services-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-console-services-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "category row",
+      "endpoint field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-console-services.services for awesome-console-services service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nikolaeu/numi",
+    "descriptor_id": "known.numi.calculations",
+    "run_id": "agentic.numi-calculations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/numi-calculations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/numi-calculations/expected.rows.json",
+    "variants": [
+      "expression header row",
+      "result row",
+      "unit field"
+    ],
+    "transcript": [
+      "selected descriptor known.numi.calculations for numi calculation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pimalaya/himalaya",
+    "descriptor_id": "known.himalaya.messages",
+    "run_id": "agentic.himalaya-messages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/himalaya-messages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/himalaya-messages/expected.rows.json",
+    "variants": [
+      "mailbox header row",
+      "unread row",
+      "total field"
+    ],
+    "transcript": [
+      "selected descriptor known.himalaya.messages for himalaya message list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

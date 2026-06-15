@@ -3603,5 +3603,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/ngxtop-requests",
     "analysis_notes": "Modeled ngxtop request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lysyi3m/macos-terminal-themes",
+    "descriptor_id": "known.macos-terminal-themes.schemes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/macos-terminal-themes-schemes",
+    "analysis_notes": "Modeled macos-terminal-themes scheme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spinframework/spin",
+    "descriptor_id": "known.spin.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spin-components",
+    "analysis_notes": "Modeled spin component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chubin/awesome-console-services",
+    "descriptor_id": "known.awesome-console-services.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-console-services-services",
+    "analysis_notes": "Modeled awesome-console-services service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nikolaeu/numi",
+    "descriptor_id": "known.numi.calculations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/numi-calculations",
+    "analysis_notes": "Modeled numi calculation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pimalaya/himalaya",
+    "descriptor_id": "known.himalaya.messages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/himalaya-messages",
+    "analysis_notes": "Modeled himalaya message output with a generated executable-json parser plugin."
   }
 ]

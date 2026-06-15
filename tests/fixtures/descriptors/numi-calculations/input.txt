@@ -1,0 +1,4 @@
+expression	result unit
+2+2	4 number
+10 USD	9.20 EUR currency
+5 km	3.11 mi distance

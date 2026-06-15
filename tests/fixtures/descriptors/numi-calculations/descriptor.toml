@@ -1,0 +1,10 @@
+id = "known.numi.calculations"
+name = "numi calculation list"
+priority = 50
+
+[matches]
+required_substrings = ["expression\tresult","2+2\t4"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
