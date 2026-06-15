@@ -1,0 +1,4 @@
+style	category ansi
+red	color 31
+bold	modifier 1
+bgBlue	background 44

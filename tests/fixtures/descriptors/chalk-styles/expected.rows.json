@@ -1,0 +1,18 @@
+[
+  {
+    "name": "style",
+    "value": "category ansi"
+  },
+  {
+    "name": "red",
+    "value": "color 31"
+  },
+  {
+    "name": "bold",
+    "value": "modifier 1"
+  },
+  {
+    "name": "bgBlue",
+    "value": "background 44"
+  }
+]

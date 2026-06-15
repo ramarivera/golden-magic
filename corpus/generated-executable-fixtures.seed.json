@@ -2578,5 +2578,65 @@
     "negative": "command status category\nls implemented filesystem\n",
     "analysis_notes": "Modeled uutils coreutils command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "implemented command row", "category field"]
+  },
+  {
+    "fixture": "rome-diagnostics",
+    "descriptor_id": "known.rome.diagnostics",
+    "name": "Rome diagnostics",
+    "repo": "https://github.com/rome/tools",
+    "required_substrings": ["file\tseverity", "src/main.ts\terror"],
+    "parser": "tab-pairs",
+    "input": "file\tseverity rule\nsrc/main.ts\terror lint/style\nsrc/app.ts\twarning lint/suspicious\ntests/main.ts\tinfo format\n",
+    "negative": "file severity rule\nsrc/main.ts error lint/style\n",
+    "analysis_notes": "Modeled Rome diagnostics output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "severity row", "rule field"]
+  },
+  {
+    "fixture": "spicetify-extensions",
+    "descriptor_id": "known.spicetify.extensions",
+    "name": "Spicetify extension list",
+    "repo": "https://github.com/spicetify/cli",
+    "required_substrings": ["extension\tstatus", "theme\tactive"],
+    "parser": "tab-pairs",
+    "input": "extension\tstatus type\ntheme\tactive ui\nlyrics-plus\tactive plugin\nadblock\tinactive plugin\n",
+    "negative": "extension status type\ntheme active ui\n",
+    "analysis_notes": "Modeled Spicetify extension output with a generated executable-json parser plugin.",
+    "variants": ["extension header row", "active extension row", "type field"]
+  },
+  {
+    "fixture": "planning-with-files-plans",
+    "descriptor_id": "known.planning-with-files.plans",
+    "name": "planning-with-files plan list",
+    "repo": "https://github.com/OthmanAdi/planning-with-files",
+    "required_substrings": ["plan\tstatus", "roadmap\tactive"],
+    "parser": "tab-pairs",
+    "input": "plan\tstatus files\nroadmap\tactive 4\nlaunch\tqueued 7\nretrospective\tcomplete 2\n",
+    "negative": "plan status files\nroadmap active 4\n",
+    "analysis_notes": "Modeled planning-with-files plan output with a generated executable-json parser plugin.",
+    "variants": ["plan header row", "status row", "files field"]
+  },
+  {
+    "fixture": "superclaude-commands",
+    "descriptor_id": "known.superclaude.commands",
+    "name": "SuperClaude command list",
+    "repo": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+    "required_substrings": ["command\tpersona", "/analyze\tarchitect"],
+    "parser": "tab-pairs",
+    "input": "command\tpersona status\n/analyze\tarchitect ready\n/build\tfrontend ready\n/troubleshoot\tdebugger ready\n",
+    "negative": "command persona status\n/analyze architect ready\n",
+    "analysis_notes": "Modeled SuperClaude command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "persona row", "status field"]
+  },
+  {
+    "fixture": "chalk-styles",
+    "descriptor_id": "known.chalk.styles",
+    "name": "Chalk style list",
+    "repo": "https://github.com/chalk/chalk",
+    "required_substrings": ["style\tcategory", "red\tcolor"],
+    "parser": "tab-pairs",
+    "input": "style\tcategory ansi\nred\tcolor 31\nbold\tmodifier 1\nbgBlue\tbackground 44\n",
+    "negative": "style category ansi\nred color 31\n",
+    "analysis_notes": "Modeled Chalk style output with a generated executable-json parser plugin.",
+    "variants": ["style header row", "category row", "ansi field"]
   }
 ]

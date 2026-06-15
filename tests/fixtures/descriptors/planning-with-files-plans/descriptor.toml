@@ -1,0 +1,10 @@
+id = "known.planning-with-files.plans"
+name = "planning-with-files plan list"
+priority = 50
+
+[matches]
+required_substrings = ["plan\tstatus","roadmap\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

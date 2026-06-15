@@ -1,0 +1,4 @@
+file	severity rule
+src/main.ts	error lint/style
+src/app.ts	warning lint/suspicious
+tests/main.ts	info format

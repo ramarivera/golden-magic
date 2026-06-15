@@ -1,0 +1,10 @@
+id = "known.rome.diagnostics"
+name = "Rome diagnostics"
+priority = 50
+
+[matches]
+required_substrings = ["file\tseverity","src/main.ts\terror"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

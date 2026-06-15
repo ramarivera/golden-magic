@@ -1,0 +1,10 @@
+id = "known.chalk.styles"
+name = "Chalk style list"
+priority = 50
+
+[matches]
+required_substrings = ["style\tcategory","red\tcolor"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.spicetify.extensions"
+name = "Spicetify extension list"
+priority = 50
+
+[matches]
+required_substrings = ["extension\tstatus","theme\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

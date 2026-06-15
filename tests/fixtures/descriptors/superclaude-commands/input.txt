@@ -1,0 +1,4 @@
+command	persona status
+/analyze	architect ready
+/build	frontend ready
+/troubleshoot	debugger ready

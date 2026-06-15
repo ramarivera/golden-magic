@@ -4228,5 +4228,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/rome/tools",
+    "descriptor_id": "known.rome.diagnostics",
+    "run_id": "agentic.rome-diagnostics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rome-diagnostics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rome-diagnostics/expected.rows.json",
+    "variants": [
+      "file header row",
+      "severity row",
+      "rule field"
+    ],
+    "transcript": [
+      "selected descriptor known.rome.diagnostics for Rome diagnostics output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/spicetify/cli",
+    "descriptor_id": "known.spicetify.extensions",
+    "run_id": "agentic.spicetify-extensions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spicetify-extensions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spicetify-extensions/expected.rows.json",
+    "variants": [
+      "extension header row",
+      "active extension row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.spicetify.extensions for Spicetify extension list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/OthmanAdi/planning-with-files",
+    "descriptor_id": "known.planning-with-files.plans",
+    "run_id": "agentic.planning-with-files-plans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/planning-with-files-plans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/planning-with-files-plans/expected.rows.json",
+    "variants": [
+      "plan header row",
+      "status row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.planning-with-files.plans for planning-with-files plan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+    "descriptor_id": "known.superclaude.commands",
+    "run_id": "agentic.superclaude-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/superclaude-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/superclaude-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "persona row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.superclaude.commands for SuperClaude command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chalk/chalk",
+    "descriptor_id": "known.chalk.styles",
+    "run_id": "agentic.chalk-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chalk-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chalk-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "category row",
+      "ansi field"
+    ],
+    "transcript": [
+      "selected descriptor known.chalk.styles for Chalk style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

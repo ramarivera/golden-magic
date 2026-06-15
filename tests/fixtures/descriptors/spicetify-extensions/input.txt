@@ -1,0 +1,4 @@
+extension	status type
+theme	active ui
+lyrics-plus	active plugin
+adblock	inactive plugin

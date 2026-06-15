@@ -1643,5 +1643,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/uutils-coreutils-commands",
     "analysis_notes": "Modeled uutils coreutils command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rome/tools",
+    "descriptor_id": "known.rome.diagnostics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rome-diagnostics",
+    "analysis_notes": "Modeled Rome diagnostics output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spicetify/cli",
+    "descriptor_id": "known.spicetify.extensions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spicetify-extensions",
+    "analysis_notes": "Modeled Spicetify extension output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/OthmanAdi/planning-with-files",
+    "descriptor_id": "known.planning-with-files.plans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/planning-with-files-plans",
+    "analysis_notes": "Modeled planning-with-files plan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+    "descriptor_id": "known.superclaude.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/superclaude-commands",
+    "analysis_notes": "Modeled SuperClaude command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chalk/chalk",
+    "descriptor_id": "known.chalk.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chalk-styles",
+    "analysis_notes": "Modeled Chalk style output with a generated executable-json parser plugin."
   }
 ]
