@@ -1,0 +1,4 @@
+site	result url
+GitHub	found https://github.com/example
+GitLab	missing -
+Reddit	found https://reddit.com/user/example

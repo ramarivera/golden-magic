@@ -1,0 +1,10 @@
+id = "known.sherlock.results"
+name = "Sherlock username results"
+priority = 50
+
+[matches]
+required_substrings = ["site\tresult","GitHub\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

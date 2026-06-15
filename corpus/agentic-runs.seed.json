@@ -1888,5 +1888,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/nvm-sh/nvm",
+    "descriptor_id": "known.nvm.versions",
+    "run_id": "agentic.nvm-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nvm-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nvm-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "current version row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.nvm.versions for nvm version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "descriptor_id": "known.ui-ux-pro-max-skill.checks",
+    "run_id": "agentic.ui-ux-pro-max-skill-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/uiux-skill-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/uiux-skill-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "passing check row",
+      "warning check row"
+    ],
+    "transcript": [
+      "selected descriptor known.ui-ux-pro-max-skill.checks for ui-ux-pro-max-skill check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/openai/codex",
+    "descriptor_id": "known.codex.runs",
+    "run_id": "agentic.codex-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/codex-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/codex-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "completed run row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.codex.runs for Codex run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sherlock-project/sherlock",
+    "descriptor_id": "known.sherlock.results",
+    "run_id": "agentic.sherlock-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sherlock-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sherlock-results/expected.rows.json",
+    "variants": [
+      "site header row",
+      "found result row",
+      "missing result row"
+    ],
+    "transcript": [
+      "selected descriptor known.sherlock.results for Sherlock username results output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "descriptor_id": "known.hoppscotch.requests",
+    "run_id": "agentic.hoppscotch-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hoppscotch-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hoppscotch-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "GET request row",
+      "endpoint field"
+    ],
+    "transcript": [
+      "selected descriptor known.hoppscotch.requests for Hoppscotch request collection output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

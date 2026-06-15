@@ -1018,5 +1018,65 @@
     "negative": "rule state priority\ngit_push enabled 10\n",
     "analysis_notes": "Modeled thefuck rule list output with a generated executable-json parser plugin.",
     "variants": ["rule header row", "enabled rule row", "priority field"]
+  },
+  {
+    "fixture": "nvm-versions",
+    "descriptor_id": "known.nvm.versions",
+    "name": "nvm version list",
+    "repo": "https://github.com/nvm-sh/nvm",
+    "required_substrings": ["version\tstatus", "v22.11.0\tcurrent"],
+    "parser": "tab-pairs",
+    "input": "version\tstatus source\nv20.18.1\tinstalled local\nv22.11.0\tcurrent local\nv23.3.0\tremote index\n",
+    "negative": "version status source\nv22.11.0 current local\n",
+    "analysis_notes": "Modeled nvm version list output with a generated executable-json parser plugin.",
+    "variants": ["version header row", "current version row", "source field"]
+  },
+  {
+    "fixture": "uiux-skill-checks",
+    "descriptor_id": "known.ui-ux-pro-max-skill.checks",
+    "name": "ui-ux-pro-max-skill check list",
+    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "required_substrings": ["check\tstatus", "responsive\tpass"],
+    "parser": "tab-pairs",
+    "input": "check\tstatus scope\nresponsive\tpass layout\ncontrast\tpass visual\nspacing\twarn polish\n",
+    "negative": "check status scope\nresponsive pass layout\n",
+    "analysis_notes": "Modeled ui-ux-pro-max-skill checklist output with a generated executable-json parser plugin.",
+    "variants": ["check header row", "passing check row", "warning check row"]
+  },
+  {
+    "fixture": "codex-runs",
+    "descriptor_id": "known.codex.runs",
+    "name": "Codex run list",
+    "repo": "https://github.com/openai/codex",
+    "required_substrings": ["run\tstatus", "parser-work\tcompleted"],
+    "parser": "tab-pairs",
+    "input": "run\tstatus model\nparser-work\tcompleted gpt-5\nfixture-batch\trunning gpt-5\nreview\tqueued gpt-5\n",
+    "negative": "run status model\nparser-work completed gpt-5\n",
+    "analysis_notes": "Modeled Codex run list output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "completed run row", "model field"]
+  },
+  {
+    "fixture": "sherlock-results",
+    "descriptor_id": "known.sherlock.results",
+    "name": "Sherlock username results",
+    "repo": "https://github.com/sherlock-project/sherlock",
+    "required_substrings": ["site\tresult", "GitHub\tfound"],
+    "parser": "tab-pairs",
+    "input": "site\tresult url\nGitHub\tfound https://github.com/example\nGitLab\tmissing -\nReddit\tfound https://reddit.com/user/example\n",
+    "negative": "site result url\nGitHub found https://github.com/example\n",
+    "analysis_notes": "Modeled Sherlock site result output with a generated executable-json parser plugin.",
+    "variants": ["site header row", "found result row", "missing result row"]
+  },
+  {
+    "fixture": "hoppscotch-requests",
+    "descriptor_id": "known.hoppscotch.requests",
+    "name": "Hoppscotch request collection",
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "required_substrings": ["request\tmethod", "health\tGET"],
+    "parser": "tab-pairs",
+    "input": "request\tmethod endpoint\nhealth\tGET /health\ncreate-user\tPOST /users\nremove-user\tDELETE /users/:id\n",
+    "negative": "request method endpoint\nhealth GET /health\n",
+    "analysis_notes": "Modeled Hoppscotch request collection output with a generated executable-json parser plugin.",
+    "variants": ["request header row", "GET request row", "endpoint field"]
   }
 ]

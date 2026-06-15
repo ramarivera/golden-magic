@@ -1,0 +1,10 @@
+id = "known.nvm.versions"
+name = "nvm version list"
+priority = 50
+
+[matches]
+required_substrings = ["version\tstatus","v22.11.0\tcurrent"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

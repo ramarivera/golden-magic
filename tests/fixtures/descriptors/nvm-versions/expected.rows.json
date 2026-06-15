@@ -1,0 +1,18 @@
+[
+  {
+    "name": "version",
+    "value": "status source"
+  },
+  {
+    "name": "v20.18.1",
+    "value": "installed local"
+  },
+  {
+    "name": "v22.11.0",
+    "value": "current local"
+  },
+  {
+    "name": "v23.3.0",
+    "value": "remote index"
+  }
+]

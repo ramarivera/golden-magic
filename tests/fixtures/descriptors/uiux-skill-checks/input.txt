@@ -1,0 +1,4 @@
+check	status scope
+responsive	pass layout
+contrast	pass visual
+spacing	warn polish

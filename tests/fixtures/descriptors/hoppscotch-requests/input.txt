@@ -1,0 +1,4 @@
+request	method endpoint
+health	GET /health
+create-user	POST /users
+remove-user	DELETE /users/:id

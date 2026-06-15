@@ -1,0 +1,10 @@
+id = "known.ui-ux-pro-max-skill.checks"
+name = "ui-ux-pro-max-skill check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tstatus","responsive\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

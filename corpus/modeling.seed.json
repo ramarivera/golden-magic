@@ -733,5 +733,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/thefuck-rules",
     "analysis_notes": "Modeled thefuck rule list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nvm-sh/nvm",
+    "descriptor_id": "known.nvm.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nvm-versions",
+    "analysis_notes": "Modeled nvm version list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+    "descriptor_id": "known.ui-ux-pro-max-skill.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/uiux-skill-checks",
+    "analysis_notes": "Modeled ui-ux-pro-max-skill checklist output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openai/codex",
+    "descriptor_id": "known.codex.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/codex-runs",
+    "analysis_notes": "Modeled Codex run list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sherlock-project/sherlock",
+    "descriptor_id": "known.sherlock.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sherlock-results",
+    "analysis_notes": "Modeled Sherlock site result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hoppscotch/hoppscotch",
+    "descriptor_id": "known.hoppscotch.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hoppscotch-requests",
+    "analysis_notes": "Modeled Hoppscotch request collection output with a generated executable-json parser plugin."
   }
 ]

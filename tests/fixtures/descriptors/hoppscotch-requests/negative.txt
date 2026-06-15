@@ -1,0 +1,2 @@
+request method endpoint
+health GET /health

@@ -1,0 +1,4 @@
+version	status source
+v20.18.1	installed local
+v22.11.0	current local
+v23.3.0	remote index
