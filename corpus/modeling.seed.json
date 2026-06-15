@@ -3043,5 +3043,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/dat-peers",
     "analysis_notes": "Modeled dat peer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor",
+    "descriptor_id": "known.claude-code-usage-monitor.warnings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-usage-monitor-warnings",
+    "analysis_notes": "Modeled Claude Code Usage Monitor warning output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/htop-dev/htop",
+    "descriptor_id": "known.htop.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/htop-processes",
+    "analysis_notes": "Modeled htop process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kepano/defuddle",
+    "descriptor_id": "known.defuddle.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/defuddle-documents",
+    "analysis_notes": "Modeled defuddle document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/docopt/docopt",
+    "descriptor_id": "known.docopt.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/docopt-options",
+    "analysis_notes": "Modeled docopt option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mmulet/term.everything",
+    "descriptor_id": "known.term-everything.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/term-everything-apps",
+    "analysis_notes": "Modeled term.everything app output with a generated executable-json parser plugin."
   }
 ]

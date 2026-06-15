@@ -1,0 +1,4 @@
+pid	cpu command
+101	12.5 cargo
+202	4.1 nu
+303	0.8 ssh

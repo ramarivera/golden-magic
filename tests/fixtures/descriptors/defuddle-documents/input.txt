@@ -1,0 +1,4 @@
+document	state words
+article	extracted 1200
+manual	queued 0
+blog	extracted 840

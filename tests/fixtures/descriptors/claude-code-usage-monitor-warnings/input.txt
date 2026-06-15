@@ -1,0 +1,4 @@
+window	status tokens
+current	warning 184000
+next	ok 32000
+weekly	critical 910000

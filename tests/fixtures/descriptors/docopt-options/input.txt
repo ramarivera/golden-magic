@@ -1,0 +1,4 @@
+option	kind default
+--help	flag false
+--count	value 1
+--verbose	flag false

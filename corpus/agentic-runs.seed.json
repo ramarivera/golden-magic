@@ -7828,5 +7828,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor",
+    "descriptor_id": "known.claude-code-usage-monitor.warnings",
+    "run_id": "agentic.claude-code-usage-monitor-warnings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-usage-monitor-warnings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-usage-monitor-warnings/expected.rows.json",
+    "variants": [
+      "window header row",
+      "status row",
+      "tokens field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-code-usage-monitor.warnings for Claude Code Usage Monitor warning list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/htop-dev/htop",
+    "descriptor_id": "known.htop.processes",
+    "run_id": "agentic.htop-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/htop-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/htop-processes/expected.rows.json",
+    "variants": [
+      "pid header row",
+      "cpu row",
+      "command field"
+    ],
+    "transcript": [
+      "selected descriptor known.htop.processes for htop process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kepano/defuddle",
+    "descriptor_id": "known.defuddle.documents",
+    "run_id": "agentic.defuddle-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/defuddle-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/defuddle-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "state row",
+      "words field"
+    ],
+    "transcript": [
+      "selected descriptor known.defuddle.documents for defuddle document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/docopt/docopt",
+    "descriptor_id": "known.docopt.options",
+    "run_id": "agentic.docopt-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/docopt-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/docopt-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "kind row",
+      "default field"
+    ],
+    "transcript": [
+      "selected descriptor known.docopt.options for docopt option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mmulet/term.everything",
+    "descriptor_id": "known.term-everything.apps",
+    "run_id": "agentic.term-everything-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/term-everything-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/term-everything-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "state row",
+      "backend field"
+    ],
+    "transcript": [
+      "selected descriptor known.term-everything.apps for term.everything app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

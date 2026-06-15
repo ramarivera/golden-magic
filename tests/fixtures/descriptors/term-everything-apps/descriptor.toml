@@ -1,0 +1,10 @@
+id = "known.term-everything.apps"
+name = "term.everything app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tstate","calculator\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

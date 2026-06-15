@@ -1,0 +1,10 @@
+id = "known.docopt.options"
+name = "docopt option list"
+priority = 50
+
+[matches]
+required_substrings = ["option\tkind","--help\tflag"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

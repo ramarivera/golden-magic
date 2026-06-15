@@ -1,0 +1,10 @@
+id = "known.claude-code-usage-monitor.warnings"
+name = "Claude Code Usage Monitor warning list"
+priority = 50
+
+[matches]
+required_substrings = ["window\tstatus","current\twarning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+document state words
+article extracted 1200

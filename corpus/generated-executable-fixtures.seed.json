@@ -4978,5 +4978,65 @@
     "negative": "peer state blocks\npeer-a connected 128\n",
     "analysis_notes": "Modeled dat peer output with a generated executable-json parser plugin.",
     "variants": ["peer header row", "state row", "blocks field"]
+  },
+  {
+    "fixture": "claude-code-usage-monitor-warnings",
+    "descriptor_id": "known.claude-code-usage-monitor.warnings",
+    "name": "Claude Code Usage Monitor warning list",
+    "repo": "https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor",
+    "required_substrings": ["window\tstatus", "current\twarning"],
+    "parser": "tab-pairs",
+    "input": "window\tstatus tokens\ncurrent\twarning 184000\nnext\tok 32000\nweekly\tcritical 910000\n",
+    "negative": "window status tokens\ncurrent warning 184000\n",
+    "analysis_notes": "Modeled Claude Code Usage Monitor warning output with a generated executable-json parser plugin.",
+    "variants": ["window header row", "status row", "tokens field"]
+  },
+  {
+    "fixture": "htop-processes",
+    "descriptor_id": "known.htop.processes",
+    "name": "htop process list",
+    "repo": "https://github.com/htop-dev/htop",
+    "required_substrings": ["pid\tcpu", "101\t12.5"],
+    "parser": "tab-pairs",
+    "input": "pid\tcpu command\n101\t12.5 cargo\n202\t4.1 nu\n303\t0.8 ssh\n",
+    "negative": "pid cpu command\n101 12.5 cargo\n",
+    "analysis_notes": "Modeled htop process output with a generated executable-json parser plugin.",
+    "variants": ["pid header row", "cpu row", "command field"]
+  },
+  {
+    "fixture": "defuddle-documents",
+    "descriptor_id": "known.defuddle.documents",
+    "name": "defuddle document list",
+    "repo": "https://github.com/kepano/defuddle",
+    "required_substrings": ["document\tstate", "article\textracted"],
+    "parser": "tab-pairs",
+    "input": "document\tstate words\narticle\textracted 1200\nmanual\tqueued 0\nblog\textracted 840\n",
+    "negative": "document state words\narticle extracted 1200\n",
+    "analysis_notes": "Modeled defuddle document output with a generated executable-json parser plugin.",
+    "variants": ["document header row", "state row", "words field"]
+  },
+  {
+    "fixture": "docopt-options",
+    "descriptor_id": "known.docopt.options",
+    "name": "docopt option list",
+    "repo": "https://github.com/docopt/docopt",
+    "required_substrings": ["option\tkind", "--help\tflag"],
+    "parser": "tab-pairs",
+    "input": "option\tkind default\n--help\tflag false\n--count\tvalue 1\n--verbose\tflag false\n",
+    "negative": "option kind default\n--help flag false\n",
+    "analysis_notes": "Modeled docopt option output with a generated executable-json parser plugin.",
+    "variants": ["option header row", "kind row", "default field"]
+  },
+  {
+    "fixture": "term-everything-apps",
+    "descriptor_id": "known.term-everything.apps",
+    "name": "term.everything app list",
+    "repo": "https://github.com/mmulet/term.everything",
+    "required_substrings": ["app\tstate", "calculator\trunning"],
+    "parser": "tab-pairs",
+    "input": "app\tstate backend\ncalculator\trunning x11\npaint\tpaused wayland\nbrowser\trunning x11\n",
+    "negative": "app state backend\ncalculator running x11\n",
+    "analysis_notes": "Modeled term.everything app output with a generated executable-json parser plugin.",
+    "variants": ["app header row", "state row", "backend field"]
   }
 ]

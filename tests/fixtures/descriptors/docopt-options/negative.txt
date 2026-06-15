@@ -1,0 +1,2 @@
+option kind default
+--help flag false

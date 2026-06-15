@@ -1,0 +1,18 @@
+[
+  {
+    "name": "app",
+    "value": "state backend"
+  },
+  {
+    "name": "calculator",
+    "value": "running x11"
+  },
+  {
+    "name": "paint",
+    "value": "paused wayland"
+  },
+  {
+    "name": "browser",
+    "value": "running x11"
+  }
+]

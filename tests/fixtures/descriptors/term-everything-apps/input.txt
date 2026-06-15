@@ -1,0 +1,4 @@
+app	state backend
+calculator	running x11
+paint	paused wayland
+browser	running x11
