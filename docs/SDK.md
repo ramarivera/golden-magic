@@ -29,6 +29,7 @@ priority = 10
 required_substrings = ["NAME|STATUS"]
 
 [parser]
+backend = "heuristic"
 only_rules = ["detect.delimited.pipes"]
 disable_rules = []
 ```
@@ -42,6 +43,7 @@ Optional fields:
 
 - `priority`: higher priority wins when multiple descriptors match.
 - `matches.required_substrings`: every listed string must appear in the input.
+- `parser.backend`: parser backend id. Only `heuristic` is implemented today.
 - `parser.only_rules`: restrict parser selection to specific stable rule ids.
 - `parser.disable_rules`: disable specific stable rule ids.
 
@@ -85,12 +87,13 @@ Descriptor authors should treat these as stable:
 
 - descriptor ids
 - parser rule ids returned by `--list-rules`
+- parser backend id `heuristic`
 - `matches.required_substrings`
 - `parser.only_rules`
 - `parser.disable_rules`
 - fixture file names above
 
-Adding new matcher fields or parser engines is allowed in future releases, but existing descriptor fields should remain backwards compatible unless a spec explicitly breaks them.
+Adding new matcher fields or parser engines is allowed in future releases, but existing descriptor fields should remain backwards compatible unless a spec explicitly breaks them. `tree-sitter` is reserved as a candidate backend in [`docs/PARSER-BACKENDS.md`](PARSER-BACKENDS.md), but descriptors cannot use it until the backend is implemented.
 
 ## Publishing
 

@@ -1,6 +1,6 @@
 use crate::config::{Config, load_config};
-use crate::descriptors::{DescriptorRegistry, descriptor_rule_ids};
-use crate::{HeaderMode, ParseOptions, known_rule_ids, parse_with_options};
+use crate::descriptors::{DescriptorRegistry, descriptor_backend_id, descriptor_rule_ids};
+use crate::{HeaderMode, ParseOptions, known_backend_ids, known_rule_ids, parse_with_options};
 use clap::{Parser, ValueEnum};
 use std::io::{self, Read};
 use std::path::{Path, PathBuf};
@@ -192,6 +192,7 @@ fn descriptor_options(
 
     for dir in descriptor_dirs {
         let registry = DescriptorRegistry::load_dir(dir)?;
+        reject_unknown_descriptor_backends(&registry)?;
         reject_unknown_descriptor_rules(&registry)?;
         let selected = registry.select(input);
         if let Some(loaded) = selected.first() {
@@ -203,6 +204,7 @@ fn descriptor_options(
                     loaded.path.display()
                 ),
             );
+            options = apply_descriptor_backend(options, loaded)?;
             for rule in &loaded.descriptor.parser.disable_rules {
                 options = options.disable_rule(rule);
             }
@@ -221,6 +223,7 @@ fn validate_descriptor_dirs(dirs: &[PathBuf]) -> Result<(), Box<dyn std::error::
 
     for dir in dirs {
         let registry = DescriptorRegistry::load_dir(dir)?;
+        reject_unknown_descriptor_backends(&registry)?;
         reject_unknown_descriptor_rules(&registry)?;
         let count = registry.descriptors().len();
         total += count;
@@ -229,6 +232,54 @@ fn validate_descriptor_dirs(dirs: &[PathBuf]) -> Result<(), Box<dyn std::error::
 
     println!("validated {total} descriptor(s) total");
     Ok(())
+}
+
+fn apply_descriptor_backend(
+    options: ParseOptions,
+    loaded: &crate::descriptors::LoadedDescriptor,
+) -> Result<ParseOptions, Box<dyn std::error::Error>> {
+    let Some(backend) = descriptor_backend_id(&loaded.descriptor) else {
+        return Ok(options);
+    };
+
+    match backend {
+        "heuristic" => Ok(options.trace_event(
+            "backend.heuristic",
+            format!("selected heuristic parser backend from {}", loaded.descriptor.id),
+        )),
+        other => Err(format!(
+            "descriptor {} requests parser backend {other}, but only {} is implemented. See docs/PARSER-BACKENDS.md.",
+            loaded.descriptor.id,
+            known_backend_ids().join(", ")
+        )
+        .into()),
+    }
+}
+
+fn reject_unknown_descriptor_backends(
+    registry: &DescriptorRegistry,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let known = known_backend_ids();
+    let unknown: Vec<String> = registry
+        .descriptors()
+        .iter()
+        .filter_map(|loaded| {
+            descriptor_backend_id(&loaded.descriptor)
+                .filter(|backend| !known.iter().any(|known_backend| known_backend == backend))
+                .map(ToOwned::to_owned)
+        })
+        .collect();
+
+    if unknown.is_empty() {
+        return Ok(());
+    }
+
+    Err(format!(
+        "descriptor contains unknown or unsupported parser backend(s): {}. Implemented backend(s): {}.",
+        unknown.join(", "),
+        known.join(", ")
+    )
+    .into())
 }
 
 fn reject_unknown_descriptor_rules(

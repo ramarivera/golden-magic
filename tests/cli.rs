@@ -170,6 +170,74 @@ only_rules = ["detect.delimited.pipes"]
 }
 
 #[test]
+fn cli_applies_selected_descriptor_backend() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("pipes.toml"),
+        r#"
+id = "backend.pipes"
+name = "Backend Pipes"
+priority = 10
+[matches]
+required_substrings = ["|"]
+[parser]
+backend = "heuristic"
+only_rules = ["detect.delimited.pipes"]
+"#,
+    )
+    .expect("write descriptor");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(dir.path())
+        .arg("--output")
+        .arg("trace-json")
+        .write_stdin("alpha|beta\ngamma|delta\n")
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let trace: Value = serde_json::from_slice(&output).expect("valid JSON trace");
+
+    assert!(
+        trace
+            .as_array()
+            .expect("trace array")
+            .iter()
+            .any(|event| event["rule_id"] == "backend.heuristic")
+    );
+}
+
+#[test]
+fn cli_rejects_unsupported_descriptor_backend() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("tree_sitter.toml"),
+        r#"
+id = "backend.tree-sitter"
+name = "Backend Tree Sitter"
+[parser]
+backend = "tree-sitter"
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--validate-descriptor-dir")
+        .arg(dir.path())
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "descriptor contains unknown or unsupported parser backend(s): tree-sitter",
+        ));
+}
+
+#[test]
 fn cli_rejects_unknown_descriptor_rule_ids() {
     let dir = tempdir().expect("temp dir");
     fs::write(

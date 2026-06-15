@@ -28,6 +28,8 @@ pub struct MatchRules {
 #[serde(deny_unknown_fields)]
 pub struct ParserHint {
     #[serde(default)]
+    pub backend: Option<String>,
+    #[serde(default)]
     pub only_rules: Vec<String>,
     #[serde(default)]
     pub disable_rules: Vec<String>,
@@ -172,6 +174,10 @@ pub fn descriptor_rule_ids(descriptor: &Descriptor) -> BTreeSet<&str> {
         .chain(descriptor.parser.disable_rules.iter())
         .map(String::as_str)
         .collect()
+}
+
+pub fn descriptor_backend_id(descriptor: &Descriptor) -> Option<&str> {
+    descriptor.parser.backend.as_deref()
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]

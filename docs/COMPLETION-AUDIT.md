@@ -54,3 +54,4 @@ This audit validates the previously claimed completion list against current repo
 - Descriptor loading now ignores reserved `nix.toml` fixture manifests, so a descriptor directory can contain optional Nix fixture metadata without breaking `--descriptor-dir` or `--validate-descriptor-dir`.
 - Added a unit test for ignoring `nix.toml` in descriptor directories.
 - Criterion regression was investigated and recorded in [`docs/PERFORMANCE.md`](PERFORMANCE.md). No baseline was updated.
+- Descriptor parser backends now have explicit validation. `heuristic` is implemented; `tree-sitter` remains a planned candidate and fails validation until implemented.

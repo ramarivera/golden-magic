@@ -62,6 +62,15 @@ query = "rows.scm"
 
 This TOML shape is a design target, not implemented API yet.
 
+The implemented descriptor surface currently accepts only:
+
+```toml
+[parser]
+backend = "heuristic"
+```
+
+Descriptors that request `tree-sitter` fail validation until the backend exists.
+
 Backend results must include:
 
 - stable rule id, such as `backend.tree-sitter.example`

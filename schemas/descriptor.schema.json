@@ -40,6 +40,11 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "backend": {
+          "type": "string",
+          "enum": ["heuristic"],
+          "description": "Parser backend id. Only heuristic is implemented today."
+        },
         "only_rules": {
           "type": "array",
           "items": {

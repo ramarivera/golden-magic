@@ -191,6 +191,10 @@ pub fn known_rule_ids() -> &'static [&'static str] {
     ]
 }
 
+pub fn known_backend_ids() -> &'static [&'static str] {
+    &["heuristic"]
+}
+
 fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
     let mut trace = options.trace_events.clone();
 
