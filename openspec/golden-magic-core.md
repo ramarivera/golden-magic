@@ -14,6 +14,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Completed debug instrumentation design: `golden-magic-f4n`
 - Completed native plugin descriptor/config parity: `golden-magic-9e1`
 - Completed descriptor-driven Nix manifest harness: `golden-magic-714`
+- Completed prior-art research artifact: `golden-magic-4re`
 
 ## Acceptance Criteria
 
@@ -52,7 +53,6 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - `golden-magic-9pu`: big known-tool descriptor corpus is not implemented. Current descriptor fixtures are representative harness coverage, not a broad tool catalog.
 - `golden-magic-2mf`: grammar engine is not implemented. Current parsing remains heuristic rule selection plus descriptor parser hints.
 - `golden-magic-euf`: rich extension-author SDK is not implemented. Current extension surface is TOML descriptors and fixture conventions.
-- `golden-magic-4re`: deep prior-art research artifact is not implemented.
 - Live execution of descriptor-driven Nix manifest fixtures is not verified in environments without `nix`; the harness skips unless `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` and `nix` is available.
 
 ## Evidence

@@ -148,7 +148,6 @@ Not implemented yet:
 - big known-tool descriptor corpus
 - grammar engine beyond the current heuristic parser
 - rich extension-author SDK beyond TOML descriptor and fixture conventions
-- deep prior-art research artifact
 - guaranteed live Nix fixture execution on machines without `nix`; optional Nix fixtures skip when Nix is unavailable
 - hidden debug channel; current design explicitly rejects hidden channels by default
 
@@ -160,6 +159,7 @@ See:
 - [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md)
 - [`docs/NIX-FIXTURES.md`](docs/NIX-FIXTURES.md)
 - [`docs/DEBUG-INSTRUMENTATION.md`](docs/DEBUG-INSTRUMENTATION.md)
+- [`docs/PRIOR-ART.md`](docs/PRIOR-ART.md)
 - [`AGENTS.md`](AGENTS.md)
 
 ## Development
