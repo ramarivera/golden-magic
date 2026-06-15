@@ -10,7 +10,7 @@ This is intentionally opt-in. Normal `cargo test` should stay fast and should no
 GOLDEN_MAGIC_RUN_NIX_FIXTURES=1 cargo test --test nix_fixture -- --nocapture
 ```
 
-If the environment variable is absent, the test skips itself. If `nix` is not on `PATH`, the test also skips itself with a diagnostic.
+If the environment variable is absent, the test skips itself. If `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` is set, `nix` must be on `PATH` and working; otherwise the test fails. This keeps normal local tests cheap while making opt-in live verification honest.
 
 ## Manifest Fixtures
 
@@ -53,6 +53,7 @@ Nix can be slow on cold caches and can require network access. Hard-requiring it
 
 - core/unit/property/CLI tests run always
 - optional real-tool fixtures run when explicitly requested
+- opt-in real-tool fixture runs fail when `nix` is missing, rather than reporting a false pass
 - CI can choose a Nix-enabled job later
 
 ## Fixture Rules

@@ -11,10 +11,16 @@ fn nix_manifest_fixtures_run_cli_without_system_installs_when_enabled() {
         return;
     }
 
-    if Command::new("nix").arg("--version").output().is_err() {
-        eprintln!("skipping nix fixture; nix is not available on PATH");
-        return;
-    }
+    let nix_version = Command::new("nix")
+        .arg("--version")
+        .output()
+        .expect("GOLDEN_MAGIC_RUN_NIX_FIXTURES=1 requires nix on PATH");
+    assert!(
+        nix_version.status.success(),
+        "GOLDEN_MAGIC_RUN_NIX_FIXTURES=1 requires a working nix binary\nstdout: {}\nstderr: {}",
+        String::from_utf8_lossy(&nix_version.stdout),
+        String::from_utf8_lossy(&nix_version.stderr)
+    );
 
     let golden_magic = cargo_bin("golden-magic");
     let fixtures = nix_fixtures();
