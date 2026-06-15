@@ -1,0 +1,10 @@
+id = "known.isort.imports"
+name = "isort import list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tsection","os\tstdlib"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -5758,5 +5758,65 @@
     "negative": "gpu mem util\n0 8192 45\n",
     "analysis_notes": "Modeled nvitop GPU device output with a generated executable-json parser plugin.",
     "variants": ["gpu header row", "mem row", "util field"]
+  },
+  {
+    "fixture": "isort-imports",
+    "descriptor_id": "known.isort.imports",
+    "name": "isort import list",
+    "repo": "https://github.com/PyCQA/isort",
+    "required_substrings": ["module\tsection", "os\tstdlib"],
+    "parser": "tab-pairs",
+    "input": "module\tsection action\nos\tstdlib keep\nrequests\tthirdparty sort\napp.local\tfirstparty sort\n",
+    "negative": "module section action\nos stdlib keep\n",
+    "analysis_notes": "Modeled isort import output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "section row", "action field"]
+  },
+  {
+    "fixture": "rio-tabs",
+    "descriptor_id": "known.rio.tabs",
+    "name": "rio terminal tab list",
+    "repo": "https://github.com/raphamorim/rio",
+    "required_substrings": ["tab\tstate", "shell\tactive"],
+    "parser": "tab-pairs",
+    "input": "tab\tstate cwd\nshell\tactive /repo\nlogs\tidle /var/log\nbuild\trunning /repo\n",
+    "negative": "tab state cwd\nshell active /repo\n",
+    "analysis_notes": "Modeled rio terminal tab output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "state row", "cwd field"]
+  },
+  {
+    "fixture": "hug-routes",
+    "descriptor_id": "known.hug.routes",
+    "name": "hug route list",
+    "repo": "https://github.com/hugapi/hug",
+    "required_substrings": ["route\tmethod", "/health\tGET"],
+    "parser": "tab-pairs",
+    "input": "route\tmethod status\n/health\tGET 200\n/items\tPOST 201\n/items/{id}\tGET 200\n",
+    "negative": "route method status\n/health GET 200\n",
+    "analysis_notes": "Modeled hug route output with a generated executable-json parser plugin.",
+    "variants": ["route header row", "method row", "status field"]
+  },
+  {
+    "fixture": "spotify-player-tracks",
+    "descriptor_id": "known.spotify-player.tracks",
+    "name": "spotify-player track list",
+    "repo": "https://github.com/aome510/spotify-player",
+    "required_substrings": ["track\tstate", "Intro\tplaying"],
+    "parser": "tab-pairs",
+    "input": "track\tstate artist\nIntro\tplaying ArtistA\nLoop\tqueued ArtistB\nOutro\tplayed ArtistC\n",
+    "negative": "track state artist\nIntro playing ArtistA\n",
+    "analysis_notes": "Modeled spotify-player track output with a generated executable-json parser plugin.",
+    "variants": ["track header row", "state row", "artist field"]
+  },
+  {
+    "fixture": "pry-sessions",
+    "descriptor_id": "known.pry.sessions",
+    "name": "pry session list",
+    "repo": "https://github.com/pry/pry",
+    "required_substrings": ["session\tbinding", "main\tObject"],
+    "parser": "tab-pairs",
+    "input": "session\tbinding depth\nmain\tObject 0\nmodel\tUser 1\nconsole\tIRB 0\n",
+    "negative": "session binding depth\nmain Object 0\n",
+    "analysis_notes": "Modeled pry session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "binding row", "depth field"]
   }
 ]

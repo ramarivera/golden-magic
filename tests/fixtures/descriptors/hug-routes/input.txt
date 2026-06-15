@@ -1,0 +1,4 @@
+route	method status
+/health	GET 200
+/items	POST 201
+/items/{id}	GET 200

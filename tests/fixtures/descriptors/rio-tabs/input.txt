@@ -1,0 +1,4 @@
+tab	state cwd
+shell	active /repo
+logs	idle /var/log
+build	running /repo

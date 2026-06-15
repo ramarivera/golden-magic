@@ -3498,5 +3498,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/nvitop-devices",
     "analysis_notes": "Modeled nvitop GPU device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PyCQA/isort",
+    "descriptor_id": "known.isort.imports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/isort-imports",
+    "analysis_notes": "Modeled isort import output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/raphamorim/rio",
+    "descriptor_id": "known.rio.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rio-tabs",
+    "analysis_notes": "Modeled rio terminal tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hugapi/hug",
+    "descriptor_id": "known.hug.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hug-routes",
+    "analysis_notes": "Modeled hug route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aome510/spotify-player",
+    "descriptor_id": "known.spotify-player.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spotify-player-tracks",
+    "analysis_notes": "Modeled spotify-player track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pry/pry",
+    "descriptor_id": "known.pry.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pry-sessions",
+    "analysis_notes": "Modeled pry session output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.spotify-player.tracks"
+name = "spotify-player track list"
+priority = 50
+
+[matches]
+required_substrings = ["track\tstate","Intro\tplaying"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

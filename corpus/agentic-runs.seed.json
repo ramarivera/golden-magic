@@ -8998,5 +8998,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/PyCQA/isort",
+    "descriptor_id": "known.isort.imports",
+    "run_id": "agentic.isort-imports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/isort-imports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/isort-imports/expected.rows.json",
+    "variants": [
+      "module header row",
+      "section row",
+      "action field"
+    ],
+    "transcript": [
+      "selected descriptor known.isort.imports for isort import list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/raphamorim/rio",
+    "descriptor_id": "known.rio.tabs",
+    "run_id": "agentic.rio-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rio-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rio-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "state row",
+      "cwd field"
+    ],
+    "transcript": [
+      "selected descriptor known.rio.tabs for rio terminal tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hugapi/hug",
+    "descriptor_id": "known.hug.routes",
+    "run_id": "agentic.hug-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hug-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hug-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "method row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.hug.routes for hug route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aome510/spotify-player",
+    "descriptor_id": "known.spotify-player.tracks",
+    "run_id": "agentic.spotify-player-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spotify-player-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spotify-player-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "state row",
+      "artist field"
+    ],
+    "transcript": [
+      "selected descriptor known.spotify-player.tracks for spotify-player track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pry/pry",
+    "descriptor_id": "known.pry.sessions",
+    "run_id": "agentic.pry-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pry-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pry-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "binding row",
+      "depth field"
+    ],
+    "transcript": [
+      "selected descriptor known.pry.sessions for pry session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

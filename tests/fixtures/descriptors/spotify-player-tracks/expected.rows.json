@@ -1,0 +1,18 @@
+[
+  {
+    "name": "track",
+    "value": "state artist"
+  },
+  {
+    "name": "Intro",
+    "value": "playing ArtistA"
+  },
+  {
+    "name": "Loop",
+    "value": "queued ArtistB"
+  },
+  {
+    "name": "Outro",
+    "value": "played ArtistC"
+  }
+]

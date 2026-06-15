@@ -1,0 +1,4 @@
+track	state artist
+Intro	playing ArtistA
+Loop	queued ArtistB
+Outro	played ArtistC

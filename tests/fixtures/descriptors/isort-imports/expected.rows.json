@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "section action"
+  },
+  {
+    "name": "os",
+    "value": "stdlib keep"
+  },
+  {
+    "name": "requests",
+    "value": "thirdparty sort"
+  },
+  {
+    "name": "app.local",
+    "value": "firstparty sort"
+  }
+]
