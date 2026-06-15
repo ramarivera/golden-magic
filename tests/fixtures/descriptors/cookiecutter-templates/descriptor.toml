@@ -1,0 +1,10 @@
+id = "known.cookiecutter.templates"
+name = "Cookiecutter template list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tlanguage","python-package\tpython"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

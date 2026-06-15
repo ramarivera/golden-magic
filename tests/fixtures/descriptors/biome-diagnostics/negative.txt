@@ -1,0 +1,2 @@
+file severity rule
+src/main.ts error lint/style

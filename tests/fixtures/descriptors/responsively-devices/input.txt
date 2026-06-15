@@ -1,0 +1,4 @@
+device	width height
+iPhone 15	393 852
+Pixel 8	412 915
+iPad	768 1024

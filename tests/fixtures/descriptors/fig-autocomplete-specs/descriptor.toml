@@ -1,0 +1,10 @@
+id = "known.fig-autocomplete.specs"
+name = "Fig autocomplete spec list"
+priority = 50
+
+[matches]
+required_substrings = ["spec\tcommand","git\tgit"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+template	language status
+python-package	python ready
+django-app	python ready
+rust-cli	rust community

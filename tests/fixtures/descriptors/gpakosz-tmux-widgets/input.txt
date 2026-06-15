@@ -1,0 +1,4 @@
+widget	position status
+battery	right enabled
+cpu	right enabled
+session	left enabled

@@ -3958,5 +3958,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/withfig/autocomplete",
+    "descriptor_id": "known.fig-autocomplete.specs",
+    "run_id": "agentic.fig-autocomplete-specs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fig-autocomplete-specs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fig-autocomplete-specs/expected.rows.json",
+    "variants": [
+      "spec header row",
+      "command row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.fig-autocomplete.specs for Fig autocomplete spec list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gpakosz/.tmux",
+    "descriptor_id": "known.gpakosz-tmux.widgets",
+    "run_id": "agentic.gpakosz-tmux-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gpakosz-tmux-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gpakosz-tmux-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "position row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.gpakosz-tmux.widgets for .tmux widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/biomejs/biome",
+    "descriptor_id": "known.biome.diagnostics",
+    "run_id": "agentic.biome-diagnostics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/biome-diagnostics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/biome-diagnostics/expected.rows.json",
+    "variants": [
+      "file header row",
+      "severity row",
+      "rule field"
+    ],
+    "transcript": [
+      "selected descriptor known.biome.diagnostics for Biome diagnostic list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/responsively-org/responsively-app",
+    "descriptor_id": "known.responsively.devices",
+    "run_id": "agentic.responsively-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/responsively-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/responsively-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "width row",
+      "height field"
+    ],
+    "transcript": [
+      "selected descriptor known.responsively.devices for Responsively device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cookiecutter/cookiecutter",
+    "descriptor_id": "known.cookiecutter.templates",
+    "run_id": "agentic.cookiecutter-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cookiecutter-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cookiecutter-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "language row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.cookiecutter.templates for Cookiecutter template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

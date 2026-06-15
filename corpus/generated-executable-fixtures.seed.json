@@ -2398,5 +2398,65 @@
     "negative": "panel state metric\ntokens visible count\n",
     "analysis_notes": "Modeled claude-hud panel output with a generated executable-json parser plugin.",
     "variants": ["panel header row", "visible panel row", "metric field"]
+  },
+  {
+    "fixture": "fig-autocomplete-specs",
+    "descriptor_id": "known.fig-autocomplete.specs",
+    "name": "Fig autocomplete spec list",
+    "repo": "https://github.com/withfig/autocomplete",
+    "required_substrings": ["spec\tcommand", "git\tgit"],
+    "parser": "tab-pairs",
+    "input": "spec\tcommand status\ngit\tgit ready\nnpm\tnpm ready\ndocker\tdocker beta\n",
+    "negative": "spec command status\ngit git ready\n",
+    "analysis_notes": "Modeled Fig autocomplete spec output with a generated executable-json parser plugin.",
+    "variants": ["spec header row", "command row", "status field"]
+  },
+  {
+    "fixture": "gpakosz-tmux-widgets",
+    "descriptor_id": "known.gpakosz-tmux.widgets",
+    "name": ".tmux widget list",
+    "repo": "https://github.com/gpakosz/.tmux",
+    "required_substrings": ["widget\tposition", "battery\tright"],
+    "parser": "tab-pairs",
+    "input": "widget\tposition status\nbattery\tright enabled\ncpu\tright enabled\nsession\tleft enabled\n",
+    "negative": "widget position status\nbattery right enabled\n",
+    "analysis_notes": "Modeled .tmux widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "position row", "status field"]
+  },
+  {
+    "fixture": "biome-diagnostics",
+    "descriptor_id": "known.biome.diagnostics",
+    "name": "Biome diagnostic list",
+    "repo": "https://github.com/biomejs/biome",
+    "required_substrings": ["file\tseverity", "src/main.ts\terror"],
+    "parser": "tab-pairs",
+    "input": "file\tseverity rule\nsrc/main.ts\terror lint/style\nsrc/app.ts\twarning lint/suspicious\ntests/main.ts\tinfo format\n",
+    "negative": "file severity rule\nsrc/main.ts error lint/style\n",
+    "analysis_notes": "Modeled Biome diagnostic output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "severity row", "rule field"]
+  },
+  {
+    "fixture": "responsively-devices",
+    "descriptor_id": "known.responsively.devices",
+    "name": "Responsively device list",
+    "repo": "https://github.com/responsively-org/responsively-app",
+    "required_substrings": ["device\twidth", "iPhone 15\t393"],
+    "parser": "tab-pairs",
+    "input": "device\twidth height\niPhone 15\t393 852\nPixel 8\t412 915\niPad\t768 1024\n",
+    "negative": "device width height\niPhone 15 393 852\n",
+    "analysis_notes": "Modeled Responsively device output with a generated executable-json parser plugin.",
+    "variants": ["device header row", "width row", "height field"]
+  },
+  {
+    "fixture": "cookiecutter-templates",
+    "descriptor_id": "known.cookiecutter.templates",
+    "name": "Cookiecutter template list",
+    "repo": "https://github.com/cookiecutter/cookiecutter",
+    "required_substrings": ["template\tlanguage", "python-package\tpython"],
+    "parser": "tab-pairs",
+    "input": "template\tlanguage status\npython-package\tpython ready\ndjango-app\tpython ready\nrust-cli\trust community\n",
+    "negative": "template language status\npython-package python ready\n",
+    "analysis_notes": "Modeled Cookiecutter template output with a generated executable-json parser plugin.",
+    "variants": ["template header row", "language row", "status field"]
   }
 ]

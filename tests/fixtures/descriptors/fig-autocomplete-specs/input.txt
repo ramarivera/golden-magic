@@ -1,0 +1,4 @@
+spec	command status
+git	git ready
+npm	npm ready
+docker	docker beta

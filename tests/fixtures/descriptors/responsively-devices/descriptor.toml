@@ -1,0 +1,10 @@
+id = "known.responsively.devices"
+name = "Responsively device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\twidth","iPhone 15\t393"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

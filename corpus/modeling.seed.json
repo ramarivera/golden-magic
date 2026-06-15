@@ -1538,5 +1538,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/claude-hud-panels",
     "analysis_notes": "Modeled claude-hud panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/withfig/autocomplete",
+    "descriptor_id": "known.fig-autocomplete.specs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fig-autocomplete-specs",
+    "analysis_notes": "Modeled Fig autocomplete spec output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gpakosz/.tmux",
+    "descriptor_id": "known.gpakosz-tmux.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gpakosz-tmux-widgets",
+    "analysis_notes": "Modeled .tmux widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/biomejs/biome",
+    "descriptor_id": "known.biome.diagnostics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/biome-diagnostics",
+    "analysis_notes": "Modeled Biome diagnostic output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/responsively-org/responsively-app",
+    "descriptor_id": "known.responsively.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/responsively-devices",
+    "analysis_notes": "Modeled Responsively device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cookiecutter/cookiecutter",
+    "descriptor_id": "known.cookiecutter.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cookiecutter-templates",
+    "analysis_notes": "Modeled Cookiecutter template output with a generated executable-json parser plugin."
   }
 ]

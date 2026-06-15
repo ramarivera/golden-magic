@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "position status"
+  },
+  {
+    "name": "battery",
+    "value": "right enabled"
+  },
+  {
+    "name": "cpu",
+    "value": "right enabled"
+  },
+  {
+    "name": "session",
+    "value": "left enabled"
+  }
+]
