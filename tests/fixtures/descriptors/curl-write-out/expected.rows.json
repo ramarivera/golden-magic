@@ -1,0 +1,20 @@
+[
+  {
+    "column0": "method",
+    "column1": "url",
+    "column2": "code",
+    "column3": "time_total"
+  },
+  {
+    "column0": "GET",
+    "column1": "https://example.com",
+    "column2": "200",
+    "column3": "0.123456"
+  },
+  {
+    "column0": "POST",
+    "column1": "https://api.example.test/items",
+    "column2": "201",
+    "column3": "0.240100"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.just.list"
+name = "just --list recipes"
+priority = 50
+
+[matches]
+required_substrings = ["Available recipes:", "build", "# Build"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

@@ -88,5 +88,77 @@
       "ran golden-magic against fixture input through fixed-width heuristic parsing",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/yt-dlp/yt-dlp",
+    "descriptor_id": "known.yt-dlp.print",
+    "run_id": "agentic.yt-dlp.print.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yt-dlp-print/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yt-dlp-print/expected.rows.json",
+    "variants": [
+      "mp4 video row",
+      "webm video row",
+      "title text containing spaces"
+    ],
+    "transcript": [
+      "selected descriptor known.yt-dlp.print for yt-dlp --print selected-field output",
+      "ran golden-magic against fixture input through pipe-delimited heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ytdl-org/youtube-dl",
+    "descriptor_id": "known.youtube-dl.print",
+    "run_id": "agentic.youtube-dl.print.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/youtube-dl-print/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/youtube-dl-print/expected.rows.json",
+    "variants": [
+      "mp4 video row",
+      "m4a audio row",
+      "title text containing spaces"
+    ],
+    "transcript": [
+      "selected descriptor known.youtube-dl.print for youtube-dl selected-field output",
+      "ran golden-magic against fixture input through pipe-delimited heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/curl/curl",
+    "descriptor_id": "known.curl.write-out",
+    "run_id": "agentic.curl.write-out.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/curl-write-out/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/curl-write-out/expected.rows.json",
+    "variants": [
+      "GET transfer row",
+      "POST transfer row",
+      "decimal timing metric"
+    ],
+    "transcript": [
+      "selected descriptor known.curl.write-out for curl --write-out metric output",
+      "ran golden-magic against fixture input through pipe-delimited heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/casey/just",
+    "descriptor_id": "known.just.list",
+    "run_id": "agentic.just.list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/just-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/just-list/expected.rows.json",
+    "variants": [
+      "single-word recipe",
+      "recipe with argument",
+      "comment text after spacing"
+    ],
+    "transcript": [
+      "selected descriptor known.just.list for just --list recipe output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

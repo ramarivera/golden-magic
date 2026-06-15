@@ -1,0 +1,3 @@
+method|url|code|time_total
+GET|https://example.com|200|0.123456
+POST|https://api.example.test/items|201|0.240100

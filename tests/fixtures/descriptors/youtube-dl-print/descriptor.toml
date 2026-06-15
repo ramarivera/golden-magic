@@ -1,0 +1,9 @@
+id = "known.youtube-dl.print"
+name = "youtube-dl --print selected fields"
+priority = 50
+
+[matches]
+required_substrings = ["video_id|ext|title", "BaW_jenozKc"]
+
+[parser]
+only_rules = ["detect.delimited.pipes"]

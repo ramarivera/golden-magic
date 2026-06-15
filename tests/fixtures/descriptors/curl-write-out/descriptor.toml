@@ -1,0 +1,9 @@
+id = "known.curl.write-out"
+name = "curl --write-out transfer metrics"
+priority = 50
+
+[matches]
+required_substrings = ["method|url|code|time_total", "https://example.com"]
+
+[parser]
+only_rules = ["detect.delimited.pipes"]

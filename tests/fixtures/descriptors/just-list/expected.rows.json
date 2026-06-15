@@ -1,0 +1,14 @@
+[
+  {
+    "recipe": "build",
+    "comment": "# Build project"
+  },
+  {
+    "recipe": "test target",
+    "comment": "# Run tests for target"
+  },
+  {
+    "recipe": "release",
+    "comment": "# Create release"
+  }
+]
