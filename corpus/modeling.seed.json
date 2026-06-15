@@ -2448,5 +2448,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/osintgram-results",
     "analysis_notes": "Modeled Osintgram result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chromedp/chromedp",
+    "descriptor_id": "known.chromedp.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chromedp-tasks",
+    "analysis_notes": "Modeled chromedp task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bitwarden/clients",
+    "descriptor_id": "known.bitwarden.vault-items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bitwarden-vault-items",
+    "analysis_notes": "Modeled Bitwarden vault output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/k4m4/terminals-are-sexy",
+    "descriptor_id": "known.terminals-are-sexy.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminals-are-sexy-tools",
+    "analysis_notes": "Modeled terminals-are-sexy tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/opencode-ai/opencode",
+    "descriptor_id": "known.opencode.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/opencode-sessions",
+    "analysis_notes": "Modeled opencode session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/juewuy/ShellCrash",
+    "descriptor_id": "known.shellcrash.proxies",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shellcrash-proxies",
+    "analysis_notes": "Modeled ShellCrash proxy output with a generated executable-json parser plugin."
   }
 ]

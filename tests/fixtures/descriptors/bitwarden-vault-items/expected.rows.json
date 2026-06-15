@@ -1,0 +1,18 @@
+[
+  {
+    "name": "item",
+    "value": "type revision"
+  },
+  {
+    "name": "github",
+    "value": "login 12"
+  },
+  {
+    "name": "ssh-key",
+    "value": "note 4"
+  },
+  {
+    "name": "bank-card",
+    "value": "card 2"
+  }
+]

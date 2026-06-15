@@ -1,0 +1,2 @@
+session state turns
+golden-magic active 42

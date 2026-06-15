@@ -1,0 +1,4 @@
+proxy	state latency
+auto	selected 42ms
+hk-node	available 88ms
+us-node	available 130ms

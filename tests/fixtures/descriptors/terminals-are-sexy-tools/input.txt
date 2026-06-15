@@ -1,0 +1,4 @@
+tool	category stars
+fzf	search 64000
+tmux	multiplexer 36000
+ripgrep	search 48000

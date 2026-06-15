@@ -1,0 +1,4 @@
+item	type revision
+github	login 12
+ssh-key	note 4
+bank-card	card 2

@@ -1,0 +1,2 @@
+proxy state latency
+auto selected 42ms

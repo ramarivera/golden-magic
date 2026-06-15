@@ -3958,5 +3958,65 @@
     "negative": "account metric value\ntarget followers 1200\n",
     "analysis_notes": "Modeled Osintgram result output with a generated executable-json parser plugin.",
     "variants": ["account header row", "metric row", "value field"]
+  },
+  {
+    "fixture": "chromedp-tasks",
+    "descriptor_id": "known.chromedp.tasks",
+    "name": "chromedp task list",
+    "repo": "https://github.com/chromedp/chromedp",
+    "required_substrings": ["task\tstate", "screenshot\tdone"],
+    "parser": "tab-pairs",
+    "input": "task\tstate duration\nscreenshot\tdone 240ms\nnavigate\tdone 120ms\npdf\tqueued 0ms\n",
+    "negative": "task state duration\nscreenshot done 240ms\n",
+    "analysis_notes": "Modeled chromedp task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "state row", "duration field"]
+  },
+  {
+    "fixture": "bitwarden-vault-items",
+    "descriptor_id": "known.bitwarden.vault-items",
+    "name": "Bitwarden vault item list",
+    "repo": "https://github.com/bitwarden/clients",
+    "required_substrings": ["item\ttype", "github\tlogin"],
+    "parser": "tab-pairs",
+    "input": "item\ttype revision\ngithub\tlogin 12\nssh-key\tnote 4\nbank-card\tcard 2\n",
+    "negative": "item type revision\ngithub login 12\n",
+    "analysis_notes": "Modeled Bitwarden vault output with a generated executable-json parser plugin.",
+    "variants": ["item header row", "type row", "revision field"]
+  },
+  {
+    "fixture": "terminals-are-sexy-tools",
+    "descriptor_id": "known.terminals-are-sexy.tools",
+    "name": "terminals-are-sexy tool list",
+    "repo": "https://github.com/k4m4/terminals-are-sexy",
+    "required_substrings": ["tool\tcategory", "fzf\tsearch"],
+    "parser": "tab-pairs",
+    "input": "tool\tcategory stars\nfzf\tsearch 64000\ntmux\tmultiplexer 36000\nripgrep\tsearch 48000\n",
+    "negative": "tool category stars\nfzf search 64000\n",
+    "analysis_notes": "Modeled terminals-are-sexy tool output with a generated executable-json parser plugin.",
+    "variants": ["tool header row", "category row", "stars field"]
+  },
+  {
+    "fixture": "opencode-sessions",
+    "descriptor_id": "known.opencode.sessions",
+    "name": "opencode session list",
+    "repo": "https://github.com/opencode-ai/opencode",
+    "required_substrings": ["session\tstate", "golden-magic\tactive"],
+    "parser": "tab-pairs",
+    "input": "session\tstate turns\ngolden-magic\tactive 42\ntoolbox\tidle 8\nscratch\tclosed 3\n",
+    "negative": "session state turns\ngolden-magic active 42\n",
+    "analysis_notes": "Modeled opencode session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "turns field"]
+  },
+  {
+    "fixture": "shellcrash-proxies",
+    "descriptor_id": "known.shellcrash.proxies",
+    "name": "ShellCrash proxy list",
+    "repo": "https://github.com/juewuy/ShellCrash",
+    "required_substrings": ["proxy\tstate", "auto\tselected"],
+    "parser": "tab-pairs",
+    "input": "proxy\tstate latency\nauto\tselected 42ms\nhk-node\tavailable 88ms\nus-node\tavailable 130ms\n",
+    "negative": "proxy state latency\nauto selected 42ms\n",
+    "analysis_notes": "Modeled ShellCrash proxy output with a generated executable-json parser plugin.",
+    "variants": ["proxy header row", "state row", "latency field"]
   }
 ]

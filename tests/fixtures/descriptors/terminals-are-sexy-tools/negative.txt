@@ -1,0 +1,2 @@
+tool category stars
+fzf search 64000

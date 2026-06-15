@@ -1,0 +1,4 @@
+task	state duration
+screenshot	done 240ms
+navigate	done 120ms
+pdf	queued 0ms

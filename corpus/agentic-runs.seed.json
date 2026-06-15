@@ -6298,5 +6298,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/chromedp/chromedp",
+    "descriptor_id": "known.chromedp.tasks",
+    "run_id": "agentic.chromedp-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chromedp-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chromedp-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.chromedp.tasks for chromedp task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bitwarden/clients",
+    "descriptor_id": "known.bitwarden.vault-items",
+    "run_id": "agentic.bitwarden-vault-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bitwarden-vault-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bitwarden-vault-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "type row",
+      "revision field"
+    ],
+    "transcript": [
+      "selected descriptor known.bitwarden.vault-items for Bitwarden vault item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/k4m4/terminals-are-sexy",
+    "descriptor_id": "known.terminals-are-sexy.tools",
+    "run_id": "agentic.terminals-are-sexy-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminals-are-sexy-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminals-are-sexy-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "stars field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminals-are-sexy.tools for terminals-are-sexy tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/opencode-ai/opencode",
+    "descriptor_id": "known.opencode.sessions",
+    "run_id": "agentic.opencode-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/opencode-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/opencode-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "turns field"
+    ],
+    "transcript": [
+      "selected descriptor known.opencode.sessions for opencode session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/juewuy/ShellCrash",
+    "descriptor_id": "known.shellcrash.proxies",
+    "run_id": "agentic.shellcrash-proxies.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shellcrash-proxies/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shellcrash-proxies/expected.rows.json",
+    "variants": [
+      "proxy header row",
+      "state row",
+      "latency field"
+    ],
+    "transcript": [
+      "selected descriptor known.shellcrash.proxies for ShellCrash proxy list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

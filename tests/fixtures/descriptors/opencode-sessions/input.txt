@@ -1,0 +1,4 @@
+session	state turns
+golden-magic	active 42
+toolbox	idle 8
+scratch	closed 3

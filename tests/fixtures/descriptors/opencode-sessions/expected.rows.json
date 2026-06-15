@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "state turns"
+  },
+  {
+    "name": "golden-magic",
+    "value": "active 42"
+  },
+  {
+    "name": "toolbox",
+    "value": "idle 8"
+  },
+  {
+    "name": "scratch",
+    "value": "closed 3"
+  }
+]
