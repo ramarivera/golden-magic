@@ -6208,5 +6208,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/JustArchiNET/ArchiSteamFarm",
+    "descriptor_id": "known.archisteamfarm.bots",
+    "run_id": "agentic.archisteamfarm-bots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/archisteamfarm-bots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/archisteamfarm-bots/expected.rows.json",
+    "variants": [
+      "bot header row",
+      "state row",
+      "games field"
+    ],
+    "transcript": [
+      "selected descriptor known.archisteamfarm.bots for ArchiSteamFarm bot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tinode/chat",
+    "descriptor_id": "known.tinode.topics",
+    "run_id": "agentic.tinode-topics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tinode-topics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tinode-topics/expected.rows.json",
+    "variants": [
+      "topic header row",
+      "state row",
+      "users field"
+    ],
+    "transcript": [
+      "selected descriptor known.tinode.topics for Tinode topic list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cheat/cheat",
+    "descriptor_id": "known.cheat.sheets",
+    "run_id": "agentic.cheat-sheets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cheat-sheets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cheat-sheets/expected.rows.json",
+    "variants": [
+      "sheet header row",
+      "tags row",
+      "lines field"
+    ],
+    "transcript": [
+      "selected descriptor known.cheat.sheets for cheat sheet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jonas/tig",
+    "descriptor_id": "known.tig.commits",
+    "run_id": "agentic.tig-commits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tig-commits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tig-commits/expected.rows.json",
+    "variants": [
+      "commit header row",
+      "subject row",
+      "author field"
+    ],
+    "transcript": [
+      "selected descriptor known.tig.commits for tig commit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Datalux/Osintgram",
+    "descriptor_id": "known.osintgram.results",
+    "run_id": "agentic.osintgram-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/osintgram-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/osintgram-results/expected.rows.json",
+    "variants": [
+      "account header row",
+      "metric row",
+      "value field"
+    ],
+    "transcript": [
+      "selected descriptor known.osintgram.results for Osintgram result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

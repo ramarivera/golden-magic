@@ -1,0 +1,4 @@
+sheet	tags lines
+tar	archive 18
+grep	search 22
+kubectl	cluster 40

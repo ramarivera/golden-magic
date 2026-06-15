@@ -1,0 +1,18 @@
+[
+  {
+    "name": "account",
+    "value": "metric value"
+  },
+  {
+    "name": "target",
+    "value": "followers 1200"
+  },
+  {
+    "name": "target",
+    "value": "following 180"
+  },
+  {
+    "name": "target",
+    "value": "posts 42"
+  }
+]

@@ -1,0 +1,4 @@
+account	metric value
+target	followers 1200
+target	following 180
+target	posts 42

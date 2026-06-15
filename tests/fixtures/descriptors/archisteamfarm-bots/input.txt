@@ -1,0 +1,4 @@
+bot	state games
+main	farming 12
+trader	online 4
+idle	offline 0

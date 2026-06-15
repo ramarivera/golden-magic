@@ -3898,5 +3898,65 @@
     "negative": "segment state position\nvcs active left\n",
     "analysis_notes": "Modeled Powerlevel9k segment output with a generated executable-json parser plugin.",
     "variants": ["segment header row", "state row", "position field"]
+  },
+  {
+    "fixture": "archisteamfarm-bots",
+    "descriptor_id": "known.archisteamfarm.bots",
+    "name": "ArchiSteamFarm bot list",
+    "repo": "https://github.com/JustArchiNET/ArchiSteamFarm",
+    "required_substrings": ["bot\tstate", "main\tfarming"],
+    "parser": "tab-pairs",
+    "input": "bot\tstate games\nmain\tfarming 12\ntrader\tonline 4\nidle\toffline 0\n",
+    "negative": "bot state games\nmain farming 12\n",
+    "analysis_notes": "Modeled ArchiSteamFarm bot output with a generated executable-json parser plugin.",
+    "variants": ["bot header row", "state row", "games field"]
+  },
+  {
+    "fixture": "tinode-topics",
+    "descriptor_id": "known.tinode.topics",
+    "name": "Tinode topic list",
+    "repo": "https://github.com/tinode/chat",
+    "required_substrings": ["topic\tstate", "general\tactive"],
+    "parser": "tab-pairs",
+    "input": "topic\tstate users\ngeneral\tactive 42\nsupport\tactive 7\narchive\tmuted 3\n",
+    "negative": "topic state users\ngeneral active 42\n",
+    "analysis_notes": "Modeled Tinode topic output with a generated executable-json parser plugin.",
+    "variants": ["topic header row", "state row", "users field"]
+  },
+  {
+    "fixture": "cheat-sheets",
+    "descriptor_id": "known.cheat.sheets",
+    "name": "cheat sheet list",
+    "repo": "https://github.com/cheat/cheat",
+    "required_substrings": ["sheet\ttags", "tar\tarchive"],
+    "parser": "tab-pairs",
+    "input": "sheet\ttags lines\ntar\tarchive 18\ngrep\tsearch 22\nkubectl\tcluster 40\n",
+    "negative": "sheet tags lines\ntar archive 18\n",
+    "analysis_notes": "Modeled cheat sheet output with a generated executable-json parser plugin.",
+    "variants": ["sheet header row", "tags row", "lines field"]
+  },
+  {
+    "fixture": "tig-commits",
+    "descriptor_id": "known.tig.commits",
+    "name": "tig commit list",
+    "repo": "https://github.com/jonas/tig",
+    "required_substrings": ["commit\tsubject", "abc1234\tfix-parser"],
+    "parser": "tab-pairs",
+    "input": "commit\tsubject author\nabc1234\tfix-parser Ramiro\nbcd2345\tadd-fixture Agent\ncde3456\tupdate-docs Reviewer\n",
+    "negative": "commit subject author\nabc1234 fix-parser Ramiro\n",
+    "analysis_notes": "Modeled tig commit output with a generated executable-json parser plugin.",
+    "variants": ["commit header row", "subject row", "author field"]
+  },
+  {
+    "fixture": "osintgram-results",
+    "descriptor_id": "known.osintgram.results",
+    "name": "Osintgram result list",
+    "repo": "https://github.com/Datalux/Osintgram",
+    "required_substrings": ["account\tmetric", "target\tfollowers"],
+    "parser": "tab-pairs",
+    "input": "account\tmetric value\ntarget\tfollowers 1200\ntarget\tfollowing 180\ntarget\tposts 42\n",
+    "negative": "account metric value\ntarget followers 1200\n",
+    "analysis_notes": "Modeled Osintgram result output with a generated executable-json parser plugin.",
+    "variants": ["account header row", "metric row", "value field"]
   }
 ]

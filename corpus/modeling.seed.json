@@ -2413,5 +2413,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/powerlevel9k-segments",
     "analysis_notes": "Modeled Powerlevel9k segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JustArchiNET/ArchiSteamFarm",
+    "descriptor_id": "known.archisteamfarm.bots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/archisteamfarm-bots",
+    "analysis_notes": "Modeled ArchiSteamFarm bot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tinode/chat",
+    "descriptor_id": "known.tinode.topics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tinode-topics",
+    "analysis_notes": "Modeled Tinode topic output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cheat/cheat",
+    "descriptor_id": "known.cheat.sheets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cheat-sheets",
+    "analysis_notes": "Modeled cheat sheet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jonas/tig",
+    "descriptor_id": "known.tig.commits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tig-commits",
+    "analysis_notes": "Modeled tig commit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Datalux/Osintgram",
+    "descriptor_id": "known.osintgram.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/osintgram-results",
+    "analysis_notes": "Modeled Osintgram result output with a generated executable-json parser plugin."
   }
 ]

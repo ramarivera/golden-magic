@@ -1,0 +1,18 @@
+[
+  {
+    "name": "bot",
+    "value": "state games"
+  },
+  {
+    "name": "main",
+    "value": "farming 12"
+  },
+  {
+    "name": "trader",
+    "value": "online 4"
+  },
+  {
+    "name": "idle",
+    "value": "offline 0"
+  }
+]

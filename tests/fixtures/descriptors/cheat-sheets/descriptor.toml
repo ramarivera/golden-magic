@@ -1,0 +1,10 @@
+id = "known.cheat.sheets"
+name = "cheat sheet list"
+priority = 50
+
+[matches]
+required_substrings = ["sheet\ttags","tar\tarchive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

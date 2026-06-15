@@ -1,0 +1,18 @@
+[
+  {
+    "name": "topic",
+    "value": "state users"
+  },
+  {
+    "name": "general",
+    "value": "active 42"
+  },
+  {
+    "name": "support",
+    "value": "active 7"
+  },
+  {
+    "name": "archive",
+    "value": "muted 3"
+  }
+]

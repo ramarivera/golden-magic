@@ -1,0 +1,10 @@
+id = "known.tinode.topics"
+name = "Tinode topic list"
+priority = 50
+
+[matches]
+required_substrings = ["topic\tstate","general\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

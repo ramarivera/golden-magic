@@ -1,0 +1,2 @@
+account metric value
+target followers 1200

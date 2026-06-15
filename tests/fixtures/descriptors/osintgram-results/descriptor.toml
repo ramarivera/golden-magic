@@ -1,0 +1,10 @@
+id = "known.osintgram.results"
+name = "Osintgram result list"
+priority = 50
+
+[matches]
+required_substrings = ["account\tmetric","target\tfollowers"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
