@@ -1,0 +1,2 @@
+command state args
+deploy registered 2

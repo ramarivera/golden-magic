@@ -1,0 +1,4 @@
+command	state args
+deploy	registered 2
+serve	registered 1
+clean	hidden 0

@@ -1,0 +1,2 @@
+channel unread guild
+general 3 golden

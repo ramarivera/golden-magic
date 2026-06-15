@@ -1,0 +1,4 @@
+run	agent state
+analysis	codex done
+review	claude running
+plan	gemini queued

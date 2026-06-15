@@ -1,0 +1,10 @@
+id = "known.discordo.channels"
+name = "discordo channel list"
+priority = 50
+
+[matches]
+required_substrings = ["channel\tunread","general\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

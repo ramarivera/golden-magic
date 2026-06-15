@@ -1,0 +1,10 @@
+id = "known.git-ftp.transfers"
+name = "git-ftp transfer list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","index.html\tuploaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

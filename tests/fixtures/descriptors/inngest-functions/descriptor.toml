@@ -1,0 +1,10 @@
+id = "known.inngest.functions"
+name = "inngest function list"
+priority = 50
+
+[matches]
+required_substrings = ["function\tstate","sync-users\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+file	status remote
+index.html	uploaded /public
+app.js	changed /public
+old.css	deleted /public

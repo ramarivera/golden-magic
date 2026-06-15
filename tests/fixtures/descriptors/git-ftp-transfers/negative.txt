@@ -1,0 +1,2 @@
+file status remote
+index.html uploaded /public

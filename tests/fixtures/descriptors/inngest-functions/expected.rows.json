@@ -1,0 +1,18 @@
+[
+  {
+    "name": "function",
+    "value": "state trigger"
+  },
+  {
+    "name": "sync-users",
+    "value": "running event"
+  },
+  {
+    "name": "send-email",
+    "value": "queued cron"
+  },
+  {
+    "name": "cleanup",
+    "value": "idle cron"
+  }
+]

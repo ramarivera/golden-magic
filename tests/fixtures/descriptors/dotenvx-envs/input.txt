@@ -1,0 +1,4 @@
+env	keys encrypted
+production	12 yes
+staging	10 yes
+local	8 no

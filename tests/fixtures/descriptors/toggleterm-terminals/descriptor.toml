@@ -1,0 +1,10 @@
+id = "known.toggleterm.terminals"
+name = "toggleterm terminal list"
+priority = 50
+
+[matches]
+required_substrings = ["terminal\tstate","1\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

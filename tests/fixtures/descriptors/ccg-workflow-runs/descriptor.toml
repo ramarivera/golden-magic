@@ -1,0 +1,10 @@
+id = "known.ccg-workflow.runs"
+name = "ccg-workflow run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tagent","analysis\tcodex"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

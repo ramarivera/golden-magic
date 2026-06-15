@@ -1,0 +1,4 @@
+channel	unread guild
+general	3 golden
+ops	0 golden
+random	12 friends

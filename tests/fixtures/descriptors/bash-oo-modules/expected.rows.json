@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "status functions"
+  },
+  {
+    "name": "oo-bootstrap",
+    "value": "loaded 8"
+  },
+  {
+    "name": "oo-log",
+    "value": "loaded 5"
+  },
+  {
+    "name": "oo-test",
+    "value": "available 12"
+  }
+]

@@ -10348,5 +10348,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/dthree/vorpal",
+    "descriptor_id": "known.vorpal.commands",
+    "run_id": "agentic.vorpal-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vorpal-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vorpal-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "state row",
+      "args field"
+    ],
+    "transcript": [
+      "selected descriptor known.vorpal.commands for vorpal command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/niieani/bash-oo-framework",
+    "descriptor_id": "known.bash-oo.modules",
+    "run_id": "agentic.bash-oo-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bash-oo-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bash-oo-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "status row",
+      "functions field"
+    ],
+    "transcript": [
+      "selected descriptor known.bash-oo.modules for bash-oo-framework module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nunomaduro/phpinsights",
+    "descriptor_id": "known.phpinsights.checks",
+    "run_id": "agentic.phpinsights-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/phpinsights-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/phpinsights-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "score row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.phpinsights.checks for phpinsights check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ayn2op/discordo",
+    "descriptor_id": "known.discordo.channels",
+    "run_id": "agentic.discordo-channels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/discordo-channels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/discordo-channels/expected.rows.json",
+    "variants": [
+      "channel header row",
+      "unread row",
+      "guild field"
+    ],
+    "transcript": [
+      "selected descriptor known.discordo.channels for discordo channel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/HuolalaTech/page-spy-web",
+    "descriptor_id": "known.page-spy-web.sessions",
+    "run_id": "agentic.page-spy-web-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/page-spy-web-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/page-spy-web-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "browser field"
+    ],
+    "transcript": [
+      "selected descriptor known.page-spy-web.sessions for page-spy-web session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/git-ftp/git-ftp",
+    "descriptor_id": "known.git-ftp.transfers",
+    "run_id": "agentic.git-ftp-transfers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-ftp-transfers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-ftp-transfers/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "remote field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-ftp.transfers for git-ftp transfer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dotenvx/dotenvx",
+    "descriptor_id": "known.dotenvx.envs",
+    "run_id": "agentic.dotenvx-envs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dotenvx-envs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dotenvx-envs/expected.rows.json",
+    "variants": [
+      "env header row",
+      "keys row",
+      "encrypted field"
+    ],
+    "transcript": [
+      "selected descriptor known.dotenvx.envs for dotenvx environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fengshao1227/ccg-workflow",
+    "descriptor_id": "known.ccg-workflow.runs",
+    "run_id": "agentic.ccg-workflow-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ccg-workflow-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ccg-workflow-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "agent row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ccg-workflow.runs for ccg-workflow run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/akinsho/toggleterm.nvim",
+    "descriptor_id": "known.toggleterm.terminals",
+    "run_id": "agentic.toggleterm-terminals.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/toggleterm-terminals/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/toggleterm-terminals/expected.rows.json",
+    "variants": [
+      "terminal header row",
+      "state row",
+      "shell field"
+    ],
+    "transcript": [
+      "selected descriptor known.toggleterm.terminals for toggleterm terminal list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/inngest/inngest",
+    "descriptor_id": "known.inngest.functions",
+    "run_id": "agentic.inngest-functions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inngest-functions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inngest-functions/expected.rows.json",
+    "variants": [
+      "function header row",
+      "state row",
+      "trigger field"
+    ],
+    "transcript": [
+      "selected descriptor known.inngest.functions for inngest function list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

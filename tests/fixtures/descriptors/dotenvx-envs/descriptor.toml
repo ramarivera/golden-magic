@@ -1,0 +1,10 @@
+id = "known.dotenvx.envs"
+name = "dotenvx environment list"
+priority = 50
+
+[matches]
+required_substrings = ["env\tkeys","production\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+module	status functions
+oo-bootstrap	loaded 8
+oo-log	loaded 5
+oo-test	available 12

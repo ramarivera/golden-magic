@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "agent state"
+  },
+  {
+    "name": "analysis",
+    "value": "codex done"
+  },
+  {
+    "name": "review",
+    "value": "claude running"
+  },
+  {
+    "name": "plan",
+    "value": "gemini queued"
+  }
+]

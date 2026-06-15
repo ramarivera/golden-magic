@@ -1,0 +1,4 @@
+check	score status
+complexity	92 pass
+architecture	88 pass
+style	74 warn

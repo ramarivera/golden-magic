@@ -1,0 +1,4 @@
+terminal	state shell
+1	open zsh
+2	hidden bash
+3	open nu

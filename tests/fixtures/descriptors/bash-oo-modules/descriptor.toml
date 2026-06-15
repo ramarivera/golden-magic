@@ -1,0 +1,10 @@
+id = "known.bash-oo.modules"
+name = "bash-oo-framework module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tstatus","oo-bootstrap\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

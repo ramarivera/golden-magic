@@ -1,0 +1,4 @@
+session	state browser
+mobile	connected safari
+desktop	connected chrome
+stale	disconnected firefox

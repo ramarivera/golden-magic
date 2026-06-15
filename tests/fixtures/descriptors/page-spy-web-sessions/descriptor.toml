@@ -1,0 +1,10 @@
+id = "known.page-spy-web.sessions"
+name = "page-spy-web session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","mobile\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

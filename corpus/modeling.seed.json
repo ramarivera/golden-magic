@@ -4023,5 +4023,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/sc-im-sheets",
     "analysis_notes": "Modeled sc-im sheet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dthree/vorpal",
+    "descriptor_id": "known.vorpal.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vorpal-commands",
+    "analysis_notes": "Modeled vorpal command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/niieani/bash-oo-framework",
+    "descriptor_id": "known.bash-oo.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bash-oo-modules",
+    "analysis_notes": "Modeled bash-oo-framework module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nunomaduro/phpinsights",
+    "descriptor_id": "known.phpinsights.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/phpinsights-checks",
+    "analysis_notes": "Modeled phpinsights check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ayn2op/discordo",
+    "descriptor_id": "known.discordo.channels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/discordo-channels",
+    "analysis_notes": "Modeled discordo channel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/HuolalaTech/page-spy-web",
+    "descriptor_id": "known.page-spy-web.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/page-spy-web-sessions",
+    "analysis_notes": "Modeled page-spy-web session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/git-ftp/git-ftp",
+    "descriptor_id": "known.git-ftp.transfers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-ftp-transfers",
+    "analysis_notes": "Modeled git-ftp transfer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dotenvx/dotenvx",
+    "descriptor_id": "known.dotenvx.envs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dotenvx-envs",
+    "analysis_notes": "Modeled dotenvx environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fengshao1227/ccg-workflow",
+    "descriptor_id": "known.ccg-workflow.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ccg-workflow-runs",
+    "analysis_notes": "Modeled ccg-workflow run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/akinsho/toggleterm.nvim",
+    "descriptor_id": "known.toggleterm.terminals",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/toggleterm-terminals",
+    "analysis_notes": "Modeled toggleterm terminal output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/inngest/inngest",
+    "descriptor_id": "known.inngest.functions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inngest-functions",
+    "analysis_notes": "Modeled inngest function output with a generated executable-json parser plugin."
   }
 ]

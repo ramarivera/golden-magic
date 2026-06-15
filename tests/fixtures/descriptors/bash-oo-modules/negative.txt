@@ -1,0 +1,2 @@
+module status functions
+oo-bootstrap loaded 8

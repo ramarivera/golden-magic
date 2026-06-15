@@ -1,0 +1,2 @@
+check score status
+complexity 92 pass

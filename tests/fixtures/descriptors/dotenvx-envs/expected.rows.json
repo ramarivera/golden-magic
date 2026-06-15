@@ -1,0 +1,18 @@
+[
+  {
+    "name": "env",
+    "value": "keys encrypted"
+  },
+  {
+    "name": "production",
+    "value": "12 yes"
+  },
+  {
+    "name": "staging",
+    "value": "10 yes"
+  },
+  {
+    "name": "local",
+    "value": "8 no"
+  }
+]
