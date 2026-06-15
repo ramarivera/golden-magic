@@ -14,14 +14,14 @@ Golden Magic should not treat "grammar engine" as a synonym for "build a custom 
 
 Use tree-sitter as the first serious candidate for grammar-like parser backends, but do not replace the current table heuristics with tree-sitter.
 
-The next implementation slice should be a narrow backend experiment, not a general grammar engine:
+The implemented slice is a narrow backend experiment, not a general grammar engine:
 
-1. Add a backend abstraction that can return rows, trace events, confidence, and stable rule ids.
-2. Let descriptors opt into a backend by id.
-3. Prototype one structured output family whose shape is awkward for delimiter or repeated-space parsing.
-4. Keep fallback heuristics as the default path for ordinary CLI tables.
+1. Backend abstraction returns rows, trace events, confidence, and stable rule ids.
+2. Descriptors opt into a backend by id.
+3. The `sections` backend prototypes one structured output family whose shape is awkward for delimiter or repeated-space parsing.
+4. Fallback heuristics remain the default path for ordinary CLI tables.
 
-Status: the core now has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic` and `sections` backends. Tree-sitter remains unimplemented.
+Status: the core has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic` and `sections` backends. Tree-sitter is evaluated below and deferred for this scope.
 
 ## Why Tree-sitter Fits Some Cases
 
@@ -38,6 +38,19 @@ Most first-class Golden Magic inputs are hostile-but-table-ish CLI text. For tab
 Tree-sitter requires generated language artifacts. That adds build tooling, grammar package selection, dependency policy, and distribution questions. It is overkill for rectangular text.
 
 Tree-sitter is also strongest when there is a real grammar. Many CLI outputs are not languages; they are loosely aligned text with occasional headers. For those, descriptors plus existing heuristics are still the right center.
+
+## Tree-sitter Scope Decision
+
+Tree-sitter is rejected for the current `golden-magic-2mf` implementation slice and kept as a future backend candidate.
+
+The evidence:
+
+- Official tree-sitter docs frame it as a parser generator plus incremental parsing library that produces concrete syntax trees for source files. Golden Magic's dominant inputs are one-shot CLI output streams, not editable source files.
+- Rust tree-sitter usage requires the `tree-sitter` crate plus a language grammar crate such as `tree-sitter-rust`; that is at least one new parser dependency and one grammar dependency per supported grammar.
+- Tree-sitter parser authoring uses generated grammars from `grammar.js`. The authoring docs call out a real grammar development workflow, including grammar DSL, parser writing, tests, and publishing. That is heavier than the current descriptor-pack SDK.
+- The current repo now has a real non-table backend, `sections`, with stable trace IDs, fixture coverage, property coverage, malformed-input diagnostics, and descriptor integration. That satisfies the immediate need to prove backend routing without taking on tree-sitter packaging yet.
+
+Tree-sitter should be reconsidered when there is a named CLI output family with an actual grammar, fixtures that cannot be handled by `heuristic` or `sections`, and explicit approval to add both the tree-sitter runtime crate and a generated grammar package.
 
 ## Rejected Default
 
@@ -78,7 +91,7 @@ and:
 backend = "sections"
 ```
 
-Descriptors that request `tree-sitter` fail validation until the backend exists.
+Descriptors that request `tree-sitter` fail validation until a future tree-sitter backend exists.
 
 Direct core use can also select the implemented backend:
 
@@ -103,10 +116,10 @@ Backend results must include:
 
 ## Prototype Acceptance Criteria
 
-Before closing `golden-magic-2mf`, the implementation must prove:
+This slice proves:
 
 - a descriptor can select a backend explicitly
-- tree-sitter support is either implemented for one narrow grammar or rejected with measured evidence
+- tree-sitter support is rejected for this scope with evidence and future-entry criteria
 - backend ids are listed or discoverable
 - backend failures fall back safely or report clear diagnostics
 - fixtures cover positive input, negative input, malformed input, and expected rows

@@ -18,6 +18,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Completed safe runtime extension architecture design: `golden-magic-by0`
 - Completed known-tool descriptor corpus for current descriptor schema: `golden-magic-9pu`
 - Completed extension-author SDK for descriptor packs: `golden-magic-euf`
+- Completed parser-backend/grammar-like parsing slice: `golden-magic-2mf`
 
 ## Acceptance Criteria
 
@@ -48,14 +49,16 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Include descriptor fixture harness tests for isolated matching, negative inputs, expected rows, and duplicate registry ids.
 - [x] Include optional descriptor-driven Nix manifest fixture harness and docs.
 - [x] Include extension-author SDK docs, descriptor schema, validation command, example descriptor pack, and fixture guidance.
+- [x] Include descriptor-selected parser backend support with `heuristic` and `sections` backends.
+- [x] Include backend listing, validation, fixture coverage, malformed-input diagnostics, and property tests for current backend behavior.
+- [x] Evaluate tree-sitter before inventing a custom grammar DSL and document why tree-sitter is deferred for this scope.
 - [x] Document debug instrumentation threat model and explicit no-hidden-channel default.
 - [x] Keep parser core independent from Nushell plugin APIs.
 
 ## Deferred Criteria
 
 - Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/EXTENSIONS.md` explicitly rejects native runtime loading until a separate security and portability review; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
-- `golden-magic-2mf`: grammar engine is not implemented. Current parsing remains heuristic rule selection plus descriptor parser hints.
-- Parser-backend work must evaluate tree-sitter first; do not assume a custom Golden Magic grammar DSL.
+- Tree-sitter backend is not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding the runtime and generated grammar package.
 - Native runtime extension SDK is not implemented. The current SDK is descriptor-pack authoring, validation, schema, examples, and fixture guidance.
 - Live execution of descriptor-driven Nix manifest fixtures is not verified in environments without `nix`; the harness skips unless `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` and `nix` is available.
 

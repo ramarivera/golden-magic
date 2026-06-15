@@ -40,7 +40,7 @@ This audit validates the previously claimed completion list against current repo
 | Claim | Status |
 | --- | --- |
 | Arbitrary Rust runtime extension/plugin loading | Not implemented by design. Current docs reject it until separate security and portability review. |
-| Grammar engine | Not implemented. Bead `golden-magic-2mf` remains open and now requires parser-backend evaluation with tree-sitter as the first serious candidate. |
+| Tree-sitter backend | Not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding tree-sitter runtime and grammar packages. |
 | Full live Nix fixture execution | Not proven in this environment because `nix` is not available on `PATH`; bead `golden-magic-714` remains in progress. |
 
 ## Weak Or Qualified Evidence
