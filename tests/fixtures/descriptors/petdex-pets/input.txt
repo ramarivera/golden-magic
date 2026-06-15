@@ -1,0 +1,4 @@
+pet	rarity state
+sprig	common found
+ember	rare found
+old	common hidden

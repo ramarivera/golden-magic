@@ -1,0 +1,10 @@
+id = "known.claude-codex-bridge.links"
+name = "claude_codex_bridge link list"
+priority = 50
+
+[matches]
+required_substrings = ["link\tmodel","handoff\tcodex"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

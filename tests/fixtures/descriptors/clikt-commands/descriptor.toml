@@ -1,0 +1,10 @@
+id = "known.clikt.commands"
+name = "Clikt command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tarity","serve\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

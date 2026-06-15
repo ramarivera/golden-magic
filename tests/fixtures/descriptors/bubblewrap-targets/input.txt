@@ -1,0 +1,4 @@
+target	package state
+webapk	com.example built
+release	com.example.release built
+old	com.old skipped

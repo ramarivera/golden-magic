@@ -1,0 +1,4 @@
+asset	kind state
+icon.png	image ready
+prompt.md	text ready
+old.psd	design skipped

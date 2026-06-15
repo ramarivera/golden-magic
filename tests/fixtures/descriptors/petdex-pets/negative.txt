@@ -1,0 +1,2 @@
+pet rarity state
+sprig common found

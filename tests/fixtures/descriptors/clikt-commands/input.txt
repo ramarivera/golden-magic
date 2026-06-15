@@ -1,0 +1,4 @@
+command	arity state
+serve	2 registered
+init	1 registered
+old	0 hidden

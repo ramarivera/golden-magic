@@ -1,0 +1,18 @@
+[
+  {
+    "name": "target",
+    "value": "package state"
+  },
+  {
+    "name": "webapk",
+    "value": "com.example built"
+  },
+  {
+    "name": "release",
+    "value": "com.example.release built"
+  },
+  {
+    "name": "old",
+    "value": "com.old skipped"
+  }
+]

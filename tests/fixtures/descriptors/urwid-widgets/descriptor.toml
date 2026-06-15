@@ -1,0 +1,10 @@
+id = "known.urwid.widgets"
+name = "Urwid widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\trole","Pile\tlayout"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

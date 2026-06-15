@@ -1,0 +1,10 @@
+id = "known.bubblewrap.targets"
+name = "Bubblewrap target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tpackage","webapk\tcom.example"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

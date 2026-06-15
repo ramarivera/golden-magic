@@ -6326,5 +6326,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/devlake-blueprints",
     "analysis_notes": "Modeled Apache DevLake blueprint output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wuyoscar/GPT-Image2-Skill",
+    "descriptor_id": "known.gpt-image2-skill.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gpt-image2-skill-assets",
+    "analysis_notes": "Modeled GPT-Image2-Skill generated asset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dotnet/try",
+    "descriptor_id": "known.dotnet-try.samples",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dotnet-try-samples",
+    "analysis_notes": "Modeled .NET try sample listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gflags/gflags",
+    "descriptor_id": "known.gflags.flags",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gflags-flags",
+    "analysis_notes": "Modeled gflags command flag output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/crafter-station/petdex",
+    "descriptor_id": "known.petdex.pets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/petdex-pets",
+    "analysis_notes": "Modeled Petdex terminal catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/adamschwartz/log",
+    "descriptor_id": "known.adamschwartz-log.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/adamschwartz-log-events",
+    "analysis_notes": "Modeled log event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/urwid/urwid",
+    "descriptor_id": "known.urwid.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/urwid-widgets",
+    "analysis_notes": "Modeled Urwid widget catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chaterm/Chaterm",
+    "descriptor_id": "known.chaterm.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chaterm-hosts",
+    "analysis_notes": "Modeled Chaterm terminal host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GoogleChromeLabs/bubblewrap",
+    "descriptor_id": "known.bubblewrap.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bubblewrap-targets",
+    "analysis_notes": "Modeled Bubblewrap Android target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SeemSeam/claude_codex_bridge",
+    "descriptor_id": "known.claude-codex-bridge.links",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-codex-bridge-links",
+    "analysis_notes": "Modeled claude_codex_bridge link output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ajalt/clikt",
+    "descriptor_id": "known.clikt.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clikt-commands",
+    "analysis_notes": "Modeled Clikt command registry output with a generated executable-json parser plugin."
   }
 ]

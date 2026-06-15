@@ -1,0 +1,4 @@
+link	model state
+handoff	codex active
+review	claude active
+old	legacy disabled

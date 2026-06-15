@@ -1,0 +1,4 @@
+host	protocol state
+prod	ssh connected
+staging	ssh connected
+old	telnet blocked

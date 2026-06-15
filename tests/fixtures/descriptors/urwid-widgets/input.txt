@@ -1,0 +1,4 @@
+widget	role state
+Pile	layout available
+Edit	input available
+Old	legacy hidden

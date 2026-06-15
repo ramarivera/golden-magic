@@ -1,0 +1,4 @@
+flag	type state
+--verbose	bool defined
+--port	int defined
+--old	string deprecated

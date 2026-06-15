@@ -1,0 +1,2 @@
+flag type state
+--verbose bool defined

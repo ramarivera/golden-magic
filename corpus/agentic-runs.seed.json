@@ -16270,5 +16270,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/wuyoscar/GPT-Image2-Skill",
+    "descriptor_id": "known.gpt-image2-skill.assets",
+    "run_id": "agentic.gpt-image2-skill-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gpt-image2-skill-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gpt-image2-skill-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gpt-image2-skill.assets for GPT-Image2-Skill asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dotnet/try",
+    "descriptor_id": "known.dotnet-try.samples",
+    "run_id": "agentic.dotnet-try-samples.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dotnet-try-samples/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dotnet-try-samples/expected.rows.json",
+    "variants": [
+      "sample header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dotnet-try.samples for .NET try sample list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gflags/gflags",
+    "descriptor_id": "known.gflags.flags",
+    "run_id": "agentic.gflags-flags.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gflags-flags/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gflags-flags/expected.rows.json",
+    "variants": [
+      "flag header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gflags.flags for gflags flag list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/crafter-station/petdex",
+    "descriptor_id": "known.petdex.pets",
+    "run_id": "agentic.petdex-pets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/petdex-pets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/petdex-pets/expected.rows.json",
+    "variants": [
+      "pet header row",
+      "rarity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.petdex.pets for Petdex pet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/adamschwartz/log",
+    "descriptor_id": "known.adamschwartz-log.events",
+    "run_id": "agentic.adamschwartz-log-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/adamschwartz-log-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/adamschwartz-log-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "level row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.adamschwartz-log.events for log event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/urwid/urwid",
+    "descriptor_id": "known.urwid.widgets",
+    "run_id": "agentic.urwid-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/urwid-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/urwid-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "role row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.urwid.widgets for Urwid widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chaterm/Chaterm",
+    "descriptor_id": "known.chaterm.hosts",
+    "run_id": "agentic.chaterm-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chaterm-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chaterm-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "protocol row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chaterm.hosts for Chaterm host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GoogleChromeLabs/bubblewrap",
+    "descriptor_id": "known.bubblewrap.targets",
+    "run_id": "agentic.bubblewrap-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bubblewrap-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bubblewrap-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "package row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bubblewrap.targets for Bubblewrap target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/SeemSeam/claude_codex_bridge",
+    "descriptor_id": "known.claude-codex-bridge.links",
+    "run_id": "agentic.claude-codex-bridge-links.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-codex-bridge-links/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-codex-bridge-links/expected.rows.json",
+    "variants": [
+      "link header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-codex-bridge.links for claude_codex_bridge link list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ajalt/clikt",
+    "descriptor_id": "known.clikt.commands",
+    "run_id": "agentic.clikt-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clikt-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clikt-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "arity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.clikt.commands for Clikt command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

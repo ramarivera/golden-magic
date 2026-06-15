@@ -1,0 +1,10 @@
+id = "known.dotnet-try.samples"
+name = ".NET try sample list"
+priority = 50
+
+[matches]
+required_substrings = ["sample\tlanguage","linq\tcsharp"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

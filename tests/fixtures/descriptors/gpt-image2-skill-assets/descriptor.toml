@@ -1,0 +1,10 @@
+id = "known.gpt-image2-skill.assets"
+name = "GPT-Image2-Skill asset list"
+priority = 50
+
+[matches]
+required_substrings = ["asset\tkind","icon.png\timage"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

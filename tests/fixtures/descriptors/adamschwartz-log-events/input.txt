@@ -1,0 +1,4 @@
+event	level state
+startup	info emitted
+failure	error emitted
+old	debug suppressed

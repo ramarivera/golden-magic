@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pet",
+    "value": "rarity state"
+  },
+  {
+    "name": "sprig",
+    "value": "common found"
+  },
+  {
+    "name": "ember",
+    "value": "rare found"
+  },
+  {
+    "name": "old",
+    "value": "common hidden"
+  }
+]

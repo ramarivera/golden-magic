@@ -1,0 +1,10 @@
+id = "known.gflags.flags"
+name = "gflags flag list"
+priority = 50
+
+[matches]
+required_substrings = ["flag\ttype","--verbose\tbool"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
