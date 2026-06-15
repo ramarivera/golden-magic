@@ -5,9 +5,14 @@ use std::collections::BTreeSet;
 struct CorpusEntry {
     rank: usize,
     repo: String,
+    name: String,
     stars: u64,
+    language: String,
+    description: String,
     cli_evidence: String,
     status: String,
+    source_query: String,
+    fetched_at: String,
 }
 
 #[test]
@@ -26,9 +31,19 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
             "repo must be a GitHub URL: {}",
             entry.repo
         );
+        assert!(!entry.name.trim().is_empty(), "name is required");
+        assert!(entry.stars > 0, "stars must be captured for {}", entry.repo);
         assert!(
             repos.insert(&entry.repo),
             "repo appears more than once: {}",
+            entry.repo
+        );
+        assert!(
+            entry.cli_evidence.contains("cli")
+                || entry.cli_evidence.contains("command")
+                || entry.cli_evidence.contains("terminal")
+                || entry.source_query.contains("topic:cli"),
+            "entry must preserve CLI-oriented evidence or query context: {}",
             entry.repo
         );
         assert!(
@@ -46,6 +61,16 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
             entry.stars <= previous_stars,
             "corpus must be sorted by descending stars"
         );
+        assert!(
+            !entry.fetched_at.trim().is_empty(),
+            "fetched_at is required for {}",
+            entry.repo
+        );
+        assert!(
+            entry.source_query.contains("topic:cli"),
+            "seed corpus must use an explicit CLI topic query"
+        );
+        let _ = (&entry.language, &entry.description);
         previous_stars = entry.stars;
     }
 }

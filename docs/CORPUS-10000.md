@@ -12,6 +12,20 @@ This repository does not yet contain the full 10k corpus. The measurable contrac
 
 Current bootstrap manifest: `corpus/cli-tools.seed.json`.
 
+Refresh the seed with:
+
+```bash
+scripts/fetch_cli_corpus_seed.sh 100
+```
+
+The default seed query is:
+
+```text
+topic:cli stars:>1000
+```
+
+Override `GOLDEN_MAGIC_CORPUS_QUERY` when partitioning the GitHub search space toward the full 10,000 target. Any checked-in seed must preserve `source_query`, `fetched_at`, `stars`, and descending rank order.
+
 Run the manifest checks with:
 
 ```bash
