@@ -4,8 +4,11 @@ set -euo pipefail
 per_query_limit="${1:-100}"
 queries_file="${GOLDEN_MAGIC_CORPUS_QUERIES:-corpus/cli-corpus.queries.txt}"
 out="${GOLDEN_MAGIC_CORPUS_OUT:-corpus/cli-tools.seed.json}"
+fetch_sleep_seconds="${GOLDEN_MAGIC_CORPUS_FETCH_SLEEP_SECONDS:-2}"
+fetch_retries="${GOLDEN_MAGIC_CORPUS_FETCH_RETRIES:-2}"
 fetched_at="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 tmpdir="$(mktemp -d)"
+existing="$tmpdir/existing.json"
 
 cleanup() {
   rm -rf "$tmpdir"
@@ -13,6 +16,11 @@ cleanup() {
 trap cleanup EXIT
 
 mkdir -p "$(dirname "$out")"
+if [[ -f "$out" ]]; then
+  cp "$out" "$existing"
+else
+  printf '[]\n' > "$existing"
+fi
 
 if [[ ! -f "$queries_file" ]]; then
   echo "missing corpus query file: $queries_file" >&2
@@ -30,12 +38,23 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
   query_out="$tmpdir/query-$query_count.json"
   echo "fetching partition $query_count: $query" >&2
 
-  gh search repos "$query" \
-    --sort stars \
-    --order desc \
-    --limit "$per_query_limit" \
-    --json fullName,url,stargazersCount,description,language \
-    | jq --arg query "$query" --arg fetched_at "$fetched_at" '
+  attempt=0
+  until gh search repos "$query" \
+      --sort stars \
+      --order desc \
+      --limit "$per_query_limit" \
+      --json fullName,url,stargazersCount,description,language > "$query_out.raw"; do
+    attempt=$((attempt + 1))
+    if [[ "$attempt" -gt "$fetch_retries" ]]; then
+      echo "failed partition after $fetch_retries retries: $query" >&2
+      exit 1
+    fi
+    sleep_for=$((fetch_sleep_seconds * attempt))
+    echo "retrying partition $query_count after ${sleep_for}s: $query" >&2
+    sleep "$sleep_for"
+  done
+
+  jq --arg query "$query" --arg fetched_at "$fetched_at" '
         to_entries
         | map({
             repo: .value.url,
@@ -61,7 +80,7 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
             source_queries: [$query],
             fetched_at: $fetched_at
           })
-      ' > "$query_out"
+      ' "$query_out.raw" > "$query_out"
 done < "$queries_file"
 
 if [[ "$query_count" -eq 0 ]]; then
@@ -69,15 +88,33 @@ if [[ "$query_count" -eq 0 ]]; then
   exit 1
 fi
 
-jq -s '
-  flatten
+jq -s --slurpfile existing "$existing" '
+  flatten as $fresh
+  | ($existing[0] // []) as $existing_entries
+  | ($existing_entries
+      | map({
+          key: .repo,
+          value: {
+            lifecycle,
+            status,
+            descriptor_id,
+            backend,
+            deterministic_cases,
+            agentic_runs,
+            analysis_notes
+          }
+        })
+      | from_entries) as $existing_by_repo
+  | $fresh
   | group_by(.repo)
   | map(
       sort_by(.stars) | reverse | .[0] as $best
+      | ($existing_by_repo[$best.repo] // {}) as $previous
       | $best + {
           source_query: ((map(.source_query) | unique)[0]),
           source_queries: (map(.source_query) | unique)
         }
+      | . + $previous
     )
   | sort_by(.stars) | reverse
   | to_entries

@@ -33,6 +33,18 @@ Override `GOLDEN_MAGIC_CORPUS_QUERIES` to use a different query-partition file.
 Any checked-in seed must preserve `source_query`, `source_queries`, `fetched_at`,
 `stars`, and descending rank order.
 
+The default query file intentionally includes multiple topic, star-window, and
+language partitions. GitHub repository search can enforce secondary rate limits,
+so the fetch script retries each partition with a small backoff. Tune this with:
+
+```bash
+GOLDEN_MAGIC_CORPUS_FETCH_RETRIES=4 GOLDEN_MAGIC_CORPUS_FETCH_SLEEP_SECONDS=10 scripts/fetch_cli_corpus_seed.sh 100
+```
+
+The fetcher preserves existing lifecycle/modeling evidence for repositories
+already present in `corpus/cli-tools.seed.json`; refreshing discovery must not
+erase analyzed, modeled, deterministic, or agentic evidence.
+
 Every entry also carries explicit lifecycle state:
 
 ```json

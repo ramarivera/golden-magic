@@ -8,3 +8,21 @@ topic:terminal stars:>1000
 topic:tui stars:>1000
 topic:shell stars:>1000
 topic:command-line-tool stars:>1000
+topic:cli stars:500..1000
+topic:command-line stars:500..1000
+topic:terminal stars:500..1000
+topic:tui stars:500..1000
+topic:shell stars:500..1000
+topic:command-line-tool stars:500..1000
+topic:cli language:Rust stars:>500
+topic:cli language:Go stars:>500
+topic:cli language:Python stars:>500
+topic:cli language:Shell stars:>500
+topic:cli language:JavaScript stars:>500
+topic:cli language:TypeScript stars:>500
+topic:command-line language:Rust stars:>500
+topic:command-line language:Go stars:>500
+topic:command-line language:Python stars:>500
+topic:terminal language:Rust stars:>500
+topic:terminal language:Go stars:>500
+topic:tui language:Rust stars:>500

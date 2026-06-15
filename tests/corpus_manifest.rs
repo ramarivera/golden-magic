@@ -57,6 +57,30 @@ fn is_cli_oriented_query(query: &str) -> bool {
 }
 
 #[test]
+fn corpus_query_partitions_are_broad_enough_to_scale_discovery() {
+    let queries = include_str!("../corpus/cli-corpus.queries.txt")
+        .lines()
+        .map(str::trim)
+        .filter(|line| !line.is_empty() && !line.starts_with('#'))
+        .collect::<Vec<_>>();
+
+    assert!(
+        queries.len() >= 20,
+        "query partition file should not regress to a tiny single-window seed"
+    );
+    assert!(
+        queries
+            .iter()
+            .any(|query| query.contains("stars:500..1000")),
+        "query partitions should include a lower star window toward 10k"
+    );
+    assert!(
+        queries.iter().any(|query| query.contains("language:Rust")),
+        "query partitions should include language windows"
+    );
+}
+
+#[test]
 fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
     let entries: Vec<CorpusEntry> =
         serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
