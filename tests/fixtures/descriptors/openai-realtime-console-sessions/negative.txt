@@ -1,0 +1,2 @@
+session model state
+demo gpt-realtime connected

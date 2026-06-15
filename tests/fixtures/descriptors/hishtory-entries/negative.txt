@@ -1,0 +1,2 @@
+entry host state
+git status laptop synced

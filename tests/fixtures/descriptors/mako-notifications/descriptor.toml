@@ -1,0 +1,10 @@
+id = "known.mako.notifications"
+name = "mako notification list"
+priority = 50
+
+[matches]
+required_substrings = ["notification\turgency","build\tlow"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

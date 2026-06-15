@@ -1,0 +1,2 @@
+command arity state
+help 0 builtin

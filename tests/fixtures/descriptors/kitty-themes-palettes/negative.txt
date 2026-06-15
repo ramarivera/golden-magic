@@ -1,0 +1,2 @@
+theme variant state
+Dracula dark installed

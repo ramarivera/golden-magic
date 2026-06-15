@@ -1,0 +1,10 @@
+id = "known.openai-realtime-console.sessions"
+name = "OpenAI Realtime Console session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tmodel","demo\tgpt-realtime"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

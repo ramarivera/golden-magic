@@ -6116,5 +6116,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/react-native-cli-devices",
     "analysis_notes": "Modeled React Native CLI device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openai/openai-realtime-console",
+    "descriptor_id": "known.openai-realtime-console.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openai-realtime-console-sessions",
+    "analysis_notes": "Modeled OpenAI Realtime Console session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/entropy-research/Devon",
+    "descriptor_id": "known.devon.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devon-tasks",
+    "analysis_notes": "Modeled Devon pair-programmer task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mvanhorn/cli-printing-press",
+    "descriptor_id": "known.cli-printing-press.apis",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cli-printing-press-apis",
+    "analysis_notes": "Modeled cli-printing-press API discovery output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/archivy/archivy",
+    "descriptor_id": "known.archivy.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/archivy-documents",
+    "analysis_notes": "Modeled Archivy knowledge document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jcubic/jquery.terminal",
+    "descriptor_id": "known.jquery-terminal.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jquery-terminal-commands",
+    "analysis_notes": "Modeled jQuery Terminal command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tuic-protocol/tuic",
+    "descriptor_id": "known.tuic.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tuic-connections",
+    "analysis_notes": "Modeled TUIC proxy connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/emersion/mako",
+    "descriptor_id": "known.mako.notifications",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mako-notifications",
+    "analysis_notes": "Modeled mako Wayland notification output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dexpota/kitty-themes",
+    "descriptor_id": "known.kitty-themes.palettes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kitty-themes-palettes",
+    "analysis_notes": "Modeled kitty-themes palette output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lxgr-linux/pokete",
+    "descriptor_id": "known.pokete.party",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pokete-party",
+    "analysis_notes": "Modeled pokete terminal game party output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ddworken/hishtory",
+    "descriptor_id": "known.hishtory.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hishtory-entries",
+    "analysis_notes": "Modeled hishtory synced shell-history output with a generated executable-json parser plugin."
   }
 ]

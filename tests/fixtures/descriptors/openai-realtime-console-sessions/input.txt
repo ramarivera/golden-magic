@@ -1,0 +1,4 @@
+session	model state
+demo	gpt-realtime connected
+voice	gpt-realtime idle
+old	gpt-4o-realtime archived

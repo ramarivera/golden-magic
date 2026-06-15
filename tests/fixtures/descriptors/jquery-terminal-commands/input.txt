@@ -1,0 +1,4 @@
+command	arity state
+help	0 builtin
+echo	1 builtin
+login	2 custom

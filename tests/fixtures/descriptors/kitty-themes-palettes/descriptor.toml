@@ -1,0 +1,10 @@
+id = "known.kitty-themes.palettes"
+name = "kitty-themes palette list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tvariant","Dracula\tdark"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

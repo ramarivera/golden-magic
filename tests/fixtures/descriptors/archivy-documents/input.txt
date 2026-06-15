@@ -1,0 +1,4 @@
+document	tags state
+notes	cli indexed
+links	web indexed
+old	archive hidden

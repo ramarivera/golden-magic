@@ -1,0 +1,10 @@
+id = "known.cli-printing-press.apis"
+name = "cli-printing-press API list"
+priority = 50
+
+[matches]
+required_substrings = ["api\tsecret","billing\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

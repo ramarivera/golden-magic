@@ -1,0 +1,10 @@
+id = "known.archivy.documents"
+name = "Archivy document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\ttags","notes\tcli"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+notification	urgency state
+build	low visible
+alert	critical visible
+old	normal expired

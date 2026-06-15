@@ -1,0 +1,4 @@
+theme	variant state
+Dracula	dark installed
+Solarized	light available
+Old	dark archived

@@ -1,0 +1,10 @@
+id = "known.pokete.party"
+name = "pokete party list"
+priority = 50
+
+[matches]
+required_substrings = ["pokete\tlevel","flamio\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

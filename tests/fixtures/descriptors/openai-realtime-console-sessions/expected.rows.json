@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "model state"
+  },
+  {
+    "name": "demo",
+    "value": "gpt-realtime connected"
+  },
+  {
+    "name": "voice",
+    "value": "gpt-realtime idle"
+  },
+  {
+    "name": "old",
+    "value": "gpt-4o-realtime archived"
+  }
+]

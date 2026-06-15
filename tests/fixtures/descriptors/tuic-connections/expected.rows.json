@@ -1,0 +1,18 @@
+[
+  {
+    "name": "connection",
+    "value": "state status"
+  },
+  {
+    "name": "proxy",
+    "value": "0-rtt active"
+  },
+  {
+    "name": "relay",
+    "value": "ready active"
+  },
+  {
+    "name": "old",
+    "value": "closed archived"
+  }
+]

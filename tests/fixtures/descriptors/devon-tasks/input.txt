@@ -1,0 +1,4 @@
+task	status state
+implement	running active
+review	queued waiting
+old	done archived

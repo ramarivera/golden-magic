@@ -1,0 +1,10 @@
+id = "known.hishtory.entries"
+name = "hishtory entry list"
+priority = 50
+
+[matches]
+required_substrings = ["entry\thost","git status\tlaptop"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

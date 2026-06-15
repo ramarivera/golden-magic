@@ -1,0 +1,4 @@
+entry	host state
+git status	laptop synced
+cargo test	workstation synced
+old command	server archived

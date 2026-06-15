@@ -1,0 +1,18 @@
+[
+  {
+    "name": "api",
+    "value": "secret state"
+  },
+  {
+    "name": "billing",
+    "value": "found absorbed"
+  },
+  {
+    "name": "users",
+    "value": "found absorbed"
+  },
+  {
+    "name": "legacy",
+    "value": "missing skipped"
+  }
+]

@@ -1,0 +1,4 @@
+connection	state status
+proxy	0-rtt active
+relay	ready active
+old	closed archived

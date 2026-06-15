@@ -1,0 +1,18 @@
+[
+  {
+    "name": "entry",
+    "value": "host state"
+  },
+  {
+    "name": "git status",
+    "value": "laptop synced"
+  },
+  {
+    "name": "cargo test",
+    "value": "workstation synced"
+  },
+  {
+    "name": "old command",
+    "value": "server archived"
+  }
+]

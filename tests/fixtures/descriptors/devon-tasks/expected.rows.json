@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "status state"
+  },
+  {
+    "name": "implement",
+    "value": "running active"
+  },
+  {
+    "name": "review",
+    "value": "queued waiting"
+  },
+  {
+    "name": "old",
+    "value": "done archived"
+  }
+]

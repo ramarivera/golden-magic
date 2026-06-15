@@ -1,0 +1,10 @@
+id = "known.tuic.connections"
+name = "TUIC connection list"
+priority = 50
+
+[matches]
+required_substrings = ["connection\tstate","proxy\t0-rtt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

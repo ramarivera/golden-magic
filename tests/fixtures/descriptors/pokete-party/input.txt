@@ -1,0 +1,4 @@
+pokete	level state
+flamio	12 active
+aquata	9 active
+old	2 boxed

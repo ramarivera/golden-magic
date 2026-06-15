@@ -15730,5 +15730,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/openai/openai-realtime-console",
+    "descriptor_id": "known.openai-realtime-console.sessions",
+    "run_id": "agentic.openai-realtime-console-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openai-realtime-console-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openai-realtime-console-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.openai-realtime-console.sessions for OpenAI Realtime Console session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/entropy-research/Devon",
+    "descriptor_id": "known.devon.tasks",
+    "run_id": "agentic.devon-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devon-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devon-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devon.tasks for Devon task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mvanhorn/cli-printing-press",
+    "descriptor_id": "known.cli-printing-press.apis",
+    "run_id": "agentic.cli-printing-press-apis.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cli-printing-press-apis/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cli-printing-press-apis/expected.rows.json",
+    "variants": [
+      "api header row",
+      "secret row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cli-printing-press.apis for cli-printing-press API list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/archivy/archivy",
+    "descriptor_id": "known.archivy.documents",
+    "run_id": "agentic.archivy-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/archivy-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/archivy-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "tags row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.archivy.documents for Archivy document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jcubic/jquery.terminal",
+    "descriptor_id": "known.jquery-terminal.commands",
+    "run_id": "agentic.jquery-terminal-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jquery-terminal-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jquery-terminal-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "arity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jquery-terminal.commands for jQuery Terminal command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tuic-protocol/tuic",
+    "descriptor_id": "known.tuic.connections",
+    "run_id": "agentic.tuic-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tuic-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tuic-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "state row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.tuic.connections for TUIC connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/emersion/mako",
+    "descriptor_id": "known.mako.notifications",
+    "run_id": "agentic.mako-notifications.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mako-notifications/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mako-notifications/expected.rows.json",
+    "variants": [
+      "notification header row",
+      "urgency row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mako.notifications for mako notification list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dexpota/kitty-themes",
+    "descriptor_id": "known.kitty-themes.palettes",
+    "run_id": "agentic.kitty-themes-palettes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kitty-themes-palettes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kitty-themes-palettes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "variant row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kitty-themes.palettes for kitty-themes palette list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lxgr-linux/pokete",
+    "descriptor_id": "known.pokete.party",
+    "run_id": "agentic.pokete-party.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pokete-party/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pokete-party/expected.rows.json",
+    "variants": [
+      "pokete header row",
+      "level row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pokete.party for pokete party list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ddworken/hishtory",
+    "descriptor_id": "known.hishtory.entries",
+    "run_id": "agentic.hishtory-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hishtory-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hishtory-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "host row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hishtory.entries for hishtory entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
