@@ -1,6 +1,7 @@
 extern crate golden_magic;
 
-use golden_magic::cli::{parser_options_from_descriptors, reject_unknown_rules};
+use golden_magic::cli::{load_tool_packs, parser_options_from_descriptors, reject_unknown_rules};
+use golden_magic::tool_packs::LoadedToolPack;
 use golden_magic::{HeaderMode, ParseOptions, parse_with_options};
 use nu_plugin::{EvaluatedCall, JsonSerializer, Plugin, SimplePluginCommand, serve_plugin};
 use nu_protocol::{
@@ -79,6 +80,17 @@ impl SimplePluginCommand for FromGoldenMagic {
                 "Config file with descriptor_dirs overrides",
                 None,
             )
+            .named(
+                "tool-pack-dir",
+                SyntaxShape::List(Box::new(SyntaxShape::String)),
+                "Declarative tool-pack directories to load and validate",
+                None,
+            )
+            .switch(
+                "list-tool-packs",
+                "Return loaded declarative tool packs instead of parsing input rows",
+                None,
+            )
             .switch(
                 "no-default-descriptors",
                 "Disable XDG/default descriptor and config discovery",
@@ -105,6 +117,11 @@ impl SimplePluginCommand for FromGoldenMagic {
         let text = input
             .as_str()
             .map_err(|error| labeled_error(error, call.head))?;
+        let loaded_tool_packs = tool_packs_from_call(call)?;
+        if has_switch(call, "list-tool-packs") {
+            return Ok(tool_packs_to_value(&loaded_tool_packs, span));
+        }
+
         let options = options_from_call(call, text)?;
         let report = parse_with_options(text, &options);
         let rows = report
@@ -117,16 +134,36 @@ impl SimplePluginCommand for FromGoldenMagic {
     }
 }
 
+fn tool_packs_from_call(call: &EvaluatedCall) -> Result<Vec<LoadedToolPack>, LabeledError> {
+    let tool_pack_dirs = string_list_flag(call, "tool-pack-dir")?
+        .into_iter()
+        .map(PathBuf::from)
+        .collect::<Vec<_>>();
+    let descriptor_dirs = string_list_flag(call, "descriptor-dir")?
+        .into_iter()
+        .map(PathBuf::from)
+        .collect::<Vec<_>>();
+    let config_path = string_flag(call, "config")?.map(PathBuf::from);
+    let no_default_descriptors = has_switch(call, "no-default-descriptors");
+
+    load_tool_packs(
+        &tool_pack_dirs,
+        &descriptor_dirs,
+        config_path.as_deref(),
+        no_default_descriptors,
+    )
+    .map_err(|error| {
+        LabeledError::new("Golden Magic tool-pack error").with_label(error.to_string(), call.head)
+    })
+}
+
 fn options_from_call(call: &EvaluatedCall, input: &str) -> Result<ParseOptions, LabeledError> {
     let descriptor_dirs = string_list_flag(call, "descriptor-dir")?
         .into_iter()
         .map(PathBuf::from)
         .collect::<Vec<_>>();
     let config_path = string_flag(call, "config")?.map(PathBuf::from);
-    let no_default_descriptors = call
-        .named
-        .iter()
-        .any(|(name, value)| name.item == "no-default-descriptors" && value.is_none());
+    let no_default_descriptors = has_switch(call, "no-default-descriptors");
 
     let mut options = parser_options_from_descriptors(
         input,
@@ -173,6 +210,12 @@ fn options_from_call(call: &EvaluatedCall, input: &str) -> Result<ParseOptions, 
     Ok(options)
 }
 
+fn has_switch(call: &EvaluatedCall, name: &str) -> bool {
+    call.named
+        .iter()
+        .any(|(flag, value)| flag.item == name && value.is_none())
+}
+
 fn string_flag(call: &EvaluatedCall, name: &str) -> Result<Option<String>, LabeledError> {
     call.get_flag_value(name)
         .map(|value| {
@@ -206,6 +249,45 @@ fn row_to_value(row: std::collections::BTreeMap<String, String>, span: Span) -> 
         .map(|(column, value)| (column, Value::string(value, span)))
         .collect();
     Value::record(record, span)
+}
+
+fn tool_packs_to_value(packs: &[LoadedToolPack], span: Span) -> Value {
+    let rows = packs
+        .iter()
+        .map(|loaded| {
+            Value::record(
+                [
+                    ("id".to_string(), Value::string(&loaded.pack.id, span)),
+                    ("name".to_string(), Value::string(&loaded.pack.name, span)),
+                    (
+                        "version".to_string(),
+                        Value::string(&loaded.pack.version, span),
+                    ),
+                    (
+                        "path".to_string(),
+                        Value::string(loaded.path.display().to_string(), span),
+                    ),
+                    (
+                        "descriptors".to_string(),
+                        Value::list(
+                            loaded
+                                .pack
+                                .descriptor_refs()
+                                .into_iter()
+                                .map(|descriptor| Value::string(descriptor, span))
+                                .collect(),
+                            span,
+                        ),
+                    ),
+                ]
+                .into_iter()
+                .collect(),
+                span,
+            )
+        })
+        .collect();
+
+    Value::list(rows, span)
 }
 
 fn labeled_error(error: ShellError, span: Span) -> LabeledError {

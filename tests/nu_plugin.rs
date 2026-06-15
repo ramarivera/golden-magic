@@ -181,6 +181,128 @@ only_rules = ["detect.delimited.pipes"]
     assert_eq!(rows[0]["column1"], "beta");
 }
 
+#[test]
+fn native_nu_plugin_lists_tool_packs_with_descriptor_validation() {
+    let Some(nu) = find_on_path("nu") else {
+        eprintln!("skipping native Nu plugin tool-pack test; nu is not available on PATH");
+        return;
+    };
+
+    let plugin = cargo_bin("nu_plugin_golden_magic");
+    let temp = tempdir().expect("temp plugin config dir");
+    let plugin_config = temp.path().join("plugins.msgpackz");
+    let descriptor_dir = temp.path().join("descriptors");
+    let tool_pack_dir = temp.path().join("tool-packs");
+    fs::create_dir_all(&descriptor_dir).expect("create descriptor dir");
+    fs::create_dir_all(&tool_pack_dir).expect("create tool-pack dir");
+    fs::write(
+        descriptor_dir.join("git-branch.toml"),
+        r#"
+id = "known.git.branch-verbose"
+name = "Git Branch Verbose"
+[matches]
+required_substrings = ["branch"]
+"#,
+    )
+    .expect("write descriptor");
+    fs::write(
+        tool_pack_dir.join("tool.toml"),
+        r#"
+id = "tool.git"
+name = "git"
+version = "1"
+
+[[commands]]
+name = "branch"
+descriptor = "known.git.branch-verbose"
+"#,
+    )
+    .expect("write tool pack");
+
+    add_plugin(&nu, &plugin_config, &plugin);
+
+    let run = Command::new(&nu)
+        .arg("--plugin-config")
+        .arg(&plugin_config)
+        .arg("-c")
+        .arg(format!(
+            "plugin use golden_magic; '' | from golden-magic --no-default-descriptors --descriptor-dir [{}] --tool-pack-dir [{}] --list-tool-packs | to json -r",
+            nu_string(descriptor_dir.to_string_lossy().as_ref()),
+            nu_string(tool_pack_dir.to_string_lossy().as_ref())
+        ))
+        .stdin(Stdio::null())
+        .output()
+        .expect("nu plugin command starts");
+
+    assert!(
+        run.status.success(),
+        "plugin tool-pack command failed\nstdout: {}\nstderr: {}",
+        String::from_utf8_lossy(&run.stdout),
+        String::from_utf8_lossy(&run.stderr)
+    );
+
+    let rows: serde_json::Value =
+        serde_json::from_slice(&run.stdout).expect("plugin emits JSON-serializable Nu rows");
+    assert_eq!(rows[0]["id"], "tool.git");
+    assert_eq!(rows[0]["name"], "git");
+    assert_eq!(rows[0]["descriptors"][0], "known.git.branch-verbose");
+}
+
+#[test]
+fn native_nu_plugin_rejects_tool_packs_with_unknown_descriptors() {
+    let Some(nu) = find_on_path("nu") else {
+        eprintln!(
+            "skipping native Nu plugin tool-pack validation test; nu is not available on PATH"
+        );
+        return;
+    };
+
+    let plugin = cargo_bin("nu_plugin_golden_magic");
+    let temp = tempdir().expect("temp plugin config dir");
+    let plugin_config = temp.path().join("plugins.msgpackz");
+    let tool_pack_dir = temp.path().join("tool-packs");
+    fs::create_dir_all(&tool_pack_dir).expect("create tool-pack dir");
+    fs::write(
+        tool_pack_dir.join("tool.toml"),
+        r#"
+id = "tool.bad"
+name = "bad"
+version = "1"
+
+[[commands]]
+name = "bad"
+descriptor = "known.missing"
+"#,
+    )
+    .expect("write tool pack");
+
+    add_plugin(&nu, &plugin_config, &plugin);
+
+    let run = Command::new(&nu)
+        .arg("--plugin-config")
+        .arg(&plugin_config)
+        .arg("-c")
+        .arg(format!(
+            "plugin use golden_magic; '' | from golden-magic --no-default-descriptors --tool-pack-dir [{}] --list-tool-packs",
+            nu_string(tool_pack_dir.to_string_lossy().as_ref())
+        ))
+        .stdin(Stdio::null())
+        .output()
+        .expect("nu plugin command starts");
+
+    assert!(
+        !run.status.success(),
+        "plugin should reject unknown descriptor refs\nstdout: {}\nstderr: {}",
+        String::from_utf8_lossy(&run.stdout),
+        String::from_utf8_lossy(&run.stderr)
+    );
+    assert!(
+        String::from_utf8_lossy(&run.stderr).contains("known.missing"),
+        "stderr should mention missing descriptor\nstderr: {}",
+        String::from_utf8_lossy(&run.stderr)
+    );
+}
+
 fn find_on_path(binary: &str) -> Option<String> {
     std::env::var_os("PATH")?
         .to_string_lossy()

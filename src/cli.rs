@@ -253,7 +253,7 @@ fn config_home() -> Option<PathBuf> {
         .map(|home| home.join(".config"))
 }
 
-fn load_tool_packs(
+pub fn load_tool_packs(
     extra_tool_pack_dirs: &[PathBuf],
     extra_descriptor_dirs: &[PathBuf],
     config_path: Option<&Path>,
