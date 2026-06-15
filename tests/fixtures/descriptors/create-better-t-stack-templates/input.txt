@@ -1,0 +1,4 @@
+template	backend database
+web	hono postgres
+fullstack	elysia sqlite
+minimal	none none

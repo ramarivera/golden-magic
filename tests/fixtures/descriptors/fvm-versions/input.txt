@@ -1,0 +1,4 @@
+version	state channel
+3.22.0	installed stable
+3.24.0	available beta
+master	available master

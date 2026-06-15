@@ -1,0 +1,10 @@
+id = "known.shimmy.models"
+name = "shimmy model list"
+priority = 50
+
+[matches]
+required_substrings = ["model\tstate","llama\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

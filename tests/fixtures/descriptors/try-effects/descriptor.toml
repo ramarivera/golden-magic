@@ -1,0 +1,10 @@
+id = "known.try.effects"
+name = "try command effect list"
+priority = 50
+
+[matches]
+required_substrings = ["effect\tpath","write\t/tmp/demo"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

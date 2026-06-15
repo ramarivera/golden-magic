@@ -1,0 +1,4 @@
+action	branch state
+feature-start	feature/demo ready
+release-finish	release/1.0 blocked
+hotfix-start	hotfix/a queued

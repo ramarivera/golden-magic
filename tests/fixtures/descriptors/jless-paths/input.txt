@@ -1,0 +1,4 @@
+path	type children
+$.items[0]	object 3
+$.items[0].name	string 0
+$.total	number 0

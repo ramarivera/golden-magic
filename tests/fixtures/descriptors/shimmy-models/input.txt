@@ -1,0 +1,4 @@
+model	state backend
+llama	ready webgpu
+mistral	loading webgpu
+tiny	ready cpu

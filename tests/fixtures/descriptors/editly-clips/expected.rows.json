@@ -1,0 +1,18 @@
+[
+  {
+    "name": "clip",
+    "value": "duration type"
+  },
+  {
+    "name": "intro",
+    "value": "3.0 title"
+  },
+  {
+    "name": "scene1",
+    "value": "12.5 video"
+  },
+  {
+    "name": "outro",
+    "value": "4.0 title"
+  }
+]

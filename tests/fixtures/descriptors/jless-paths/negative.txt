@@ -1,0 +1,2 @@
+path type children
+$.items[0] object 3

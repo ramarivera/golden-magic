@@ -1,0 +1,10 @@
+id = "known.editly.clips"
+name = "editly clip list"
+priority = 50
+
+[matches]
+required_substrings = ["clip\tduration","intro\t3.0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

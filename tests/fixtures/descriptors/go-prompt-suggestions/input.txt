@@ -1,0 +1,4 @@
+suggestion	type score
+deploy	command 98
+dev	command 82
+--help	flag 70

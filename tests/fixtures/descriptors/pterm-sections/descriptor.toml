@@ -1,0 +1,10 @@
+id = "known.pterm.sections"
+name = "pterm section list"
+priority = 50
+
+[matches]
+required_substrings = ["section\tstyle","spinner\tcyan"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

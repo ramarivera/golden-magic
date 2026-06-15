@@ -1,0 +1,10 @@
+id = "known.jless.paths"
+name = "jless path list"
+priority = 50
+
+[matches]
+required_substrings = ["path\ttype","$.items[0]\tobject"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+effect	path state
+write	/tmp/demo captured
+read	/etc/hosts observed
+delete	/tmp/old blocked

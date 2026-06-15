@@ -1,0 +1,4 @@
+clip	duration type
+intro	3.0 title
+scene1	12.5 video
+outro	4.0 title

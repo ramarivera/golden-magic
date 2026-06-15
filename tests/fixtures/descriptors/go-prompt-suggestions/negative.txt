@@ -1,0 +1,2 @@
+suggestion type score
+deploy command 98

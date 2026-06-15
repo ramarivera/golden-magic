@@ -10528,5 +10528,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/pythonnet/pythonnet",
+    "descriptor_id": "known.pythonnet.runtimes",
+    "run_id": "agentic.pythonnet-runtimes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pythonnet-runtimes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pythonnet-runtimes/expected.rows.json",
+    "variants": [
+      "runtime header row",
+      "state row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.pythonnet.runtimes for pythonnet runtime list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/c-bata/go-prompt",
+    "descriptor_id": "known.go-prompt.suggestions",
+    "run_id": "agentic.go-prompt-suggestions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/go-prompt-suggestions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/go-prompt-suggestions/expected.rows.json",
+    "variants": [
+      "suggestion header row",
+      "type row",
+      "score field"
+    ],
+    "transcript": [
+      "selected descriptor known.go-prompt.suggestions for go-prompt suggestion list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pterm/pterm",
+    "descriptor_id": "known.pterm.sections",
+    "run_id": "agentic.pterm-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pterm-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pterm-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "style row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.pterm.sections for pterm section list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AmanVarshney01/create-better-t-stack",
+    "descriptor_id": "known.create-better-t-stack.templates",
+    "run_id": "agentic.create-better-t-stack-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-better-t-stack-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-better-t-stack-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "backend row",
+      "database field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-better-t-stack.templates for create-better-t-stack template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/petervanderdoes/gitflow-avh",
+    "descriptor_id": "known.gitflow-avh.actions",
+    "run_id": "agentic.gitflow-avh-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitflow-avh-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitflow-avh-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "branch row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitflow-avh.actions for gitflow-avh action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/leoafarias/fvm",
+    "descriptor_id": "known.fvm.versions",
+    "run_id": "agentic.fvm-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fvm-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fvm-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "state row",
+      "channel field"
+    ],
+    "transcript": [
+      "selected descriptor known.fvm.versions for fvm Flutter version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mifi/editly",
+    "descriptor_id": "known.editly.clips",
+    "run_id": "agentic.editly-clips.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/editly-clips/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/editly-clips/expected.rows.json",
+    "variants": [
+      "clip header row",
+      "duration row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.editly.clips for editly clip list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/binpash/try",
+    "descriptor_id": "known.try.effects",
+    "run_id": "agentic.try-effects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/try-effects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/try-effects/expected.rows.json",
+    "variants": [
+      "effect header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.try.effects for try command effect list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PaulJuliusMartinez/jless",
+    "descriptor_id": "known.jless.paths",
+    "run_id": "agentic.jless-paths.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jless-paths/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jless-paths/expected.rows.json",
+    "variants": [
+      "path header row",
+      "type row",
+      "children field"
+    ],
+    "transcript": [
+      "selected descriptor known.jless.paths for jless path list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Michael-A-Kuykendall/shimmy",
+    "descriptor_id": "known.shimmy.models",
+    "run_id": "agentic.shimmy-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shimmy-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shimmy-models/expected.rows.json",
+    "variants": [
+      "model header row",
+      "state row",
+      "backend field"
+    ],
+    "transcript": [
+      "selected descriptor known.shimmy.models for shimmy model list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

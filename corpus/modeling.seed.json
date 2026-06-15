@@ -4093,5 +4093,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/inngest-functions",
     "analysis_notes": "Modeled inngest function output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pythonnet/pythonnet",
+    "descriptor_id": "known.pythonnet.runtimes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pythonnet-runtimes",
+    "analysis_notes": "Modeled pythonnet runtime output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/c-bata/go-prompt",
+    "descriptor_id": "known.go-prompt.suggestions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/go-prompt-suggestions",
+    "analysis_notes": "Modeled go-prompt suggestion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pterm/pterm",
+    "descriptor_id": "known.pterm.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pterm-sections",
+    "analysis_notes": "Modeled pterm section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AmanVarshney01/create-better-t-stack",
+    "descriptor_id": "known.create-better-t-stack.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-better-t-stack-templates",
+    "analysis_notes": "Modeled create-better-t-stack template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/petervanderdoes/gitflow-avh",
+    "descriptor_id": "known.gitflow-avh.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitflow-avh-actions",
+    "analysis_notes": "Modeled gitflow-avh action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/leoafarias/fvm",
+    "descriptor_id": "known.fvm.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fvm-versions",
+    "analysis_notes": "Modeled fvm version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mifi/editly",
+    "descriptor_id": "known.editly.clips",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/editly-clips",
+    "analysis_notes": "Modeled editly clip output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/binpash/try",
+    "descriptor_id": "known.try.effects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/try-effects",
+    "analysis_notes": "Modeled try command effect output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PaulJuliusMartinez/jless",
+    "descriptor_id": "known.jless.paths",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jless-paths",
+    "analysis_notes": "Modeled jless path output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Michael-A-Kuykendall/shimmy",
+    "descriptor_id": "known.shimmy.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shimmy-models",
+    "analysis_notes": "Modeled shimmy model output with a generated executable-json parser plugin."
   }
 ]

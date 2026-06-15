@@ -1,0 +1,10 @@
+id = "known.go-prompt.suggestions"
+name = "go-prompt suggestion list"
+priority = 50
+
+[matches]
+required_substrings = ["suggestion\ttype","deploy\tcommand"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

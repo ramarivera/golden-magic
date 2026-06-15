@@ -1,0 +1,10 @@
+id = "known.create-better-t-stack.templates"
+name = "create-better-t-stack template list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tbackend","web\thono"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

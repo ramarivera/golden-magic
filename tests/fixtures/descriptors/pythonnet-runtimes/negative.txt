@@ -1,0 +1,2 @@
+runtime state version
+coreclr loaded 8.0

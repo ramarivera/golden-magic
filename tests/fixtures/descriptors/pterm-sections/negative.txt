@@ -1,0 +1,2 @@
+section style status
+spinner cyan active

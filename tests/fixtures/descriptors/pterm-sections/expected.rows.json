@@ -1,0 +1,18 @@
+[
+  {
+    "name": "section",
+    "value": "style status"
+  },
+  {
+    "name": "spinner",
+    "value": "cyan active"
+  },
+  {
+    "name": "table",
+    "value": "green ready"
+  },
+  {
+    "name": "chart",
+    "value": "magenta ready"
+  }
+]

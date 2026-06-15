@@ -1,0 +1,18 @@
+[
+  {
+    "name": "suggestion",
+    "value": "type score"
+  },
+  {
+    "name": "deploy",
+    "value": "command 98"
+  },
+  {
+    "name": "dev",
+    "value": "command 82"
+  },
+  {
+    "name": "--help",
+    "value": "flag 70"
+  }
+]

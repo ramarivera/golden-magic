@@ -1,0 +1,4 @@
+runtime	state version
+coreclr	loaded 8.0
+mono	available 6.12
+netfx	missing 4.8

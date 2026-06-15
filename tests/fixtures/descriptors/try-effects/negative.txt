@@ -1,0 +1,2 @@
+effect path state
+write /tmp/demo captured
