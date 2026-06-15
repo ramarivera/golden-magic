@@ -314,6 +314,10 @@ backend = "tree-sitter-rust"
     assert_eq!(rows[1]["name"], "run");
 }
 
+fn toml_string(value: String) -> String {
+    serde_json::to_string(&value).expect("path string serializes")
+}
+
 #[test]
 fn cli_rejects_unknown_descriptor_rule_ids() {
     let dir = tempdir().expect("temp dir");
@@ -391,6 +395,132 @@ only_rules = ["detect.nope"]
         .stderr(predicates::str::contains(
             "descriptor contains unknown rule id(s): detect.nope",
         ));
+}
+
+#[test]
+fn cli_validates_tool_pack_descriptor_references() {
+    let dir = tempdir().expect("temp dir");
+    let descriptor_dir = dir.path().join("descriptors");
+    let tool_pack_dir = dir.path().join("tool-packs/git");
+    fs::create_dir_all(&descriptor_dir).expect("create descriptor dir");
+    fs::create_dir_all(&tool_pack_dir).expect("create tool-pack dir");
+    fs::write(
+        descriptor_dir.join("branches.toml"),
+        r#"
+id = "known.git.branch-verbose"
+name = "Git branch verbose"
+"#,
+    )
+    .expect("write descriptor");
+    fs::write(
+        tool_pack_dir.join("tool.toml"),
+        r#"
+id = "tool.git"
+name = "git"
+version = "1"
+
+[[commands]]
+name = "branch"
+
+[[commands.subcommands]]
+name = "--verbose"
+descriptor = "known.git.branch-verbose"
+patterns = ["git branch -v"]
+"#,
+    )
+    .expect("write tool pack");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(&descriptor_dir)
+        .arg("--validate-tool-pack-dir")
+        .arg(dir.path().join("tool-packs"))
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("validated 1 tool pack(s)"))
+        .stdout(predicates::str::contains("validated 1 tool pack(s) total"));
+}
+
+#[test]
+fn cli_rejects_tool_pack_missing_descriptor_reference() {
+    let dir = tempdir().expect("temp dir");
+    let tool_pack_dir = dir.path().join("tool-packs/git");
+    fs::create_dir_all(&tool_pack_dir).expect("create tool-pack dir");
+    fs::write(
+        tool_pack_dir.join("tool.toml"),
+        r#"
+id = "tool.git"
+name = "git"
+version = "1"
+
+[[commands]]
+name = "branch"
+descriptor = "known.git.branch-verbose"
+"#,
+    )
+    .expect("write tool pack");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--validate-tool-pack-dir")
+        .arg(dir.path().join("tool-packs"))
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "tool.git references unknown descriptor known.git.branch-verbose",
+        ));
+}
+
+#[test]
+fn cli_lists_tool_packs_from_configured_dirs() {
+    let dir = tempdir().expect("temp dir");
+    let descriptor_dir = dir.path().join("descriptors");
+    let tool_pack_dir = dir.path().join("tool-packs/git");
+    let config_path = dir.path().join("config.toml");
+    fs::create_dir_all(&descriptor_dir).expect("create descriptor dir");
+    fs::create_dir_all(&tool_pack_dir).expect("create tool-pack dir");
+    fs::write(
+        descriptor_dir.join("branches.toml"),
+        r#"
+id = "known.git.branch-verbose"
+name = "Git branch verbose"
+"#,
+    )
+    .expect("write descriptor");
+    fs::write(
+        tool_pack_dir.join("tool.toml"),
+        r#"
+id = "tool.git"
+name = "git"
+version = "1"
+
+[[commands]]
+name = "branch"
+descriptor = "known.git.branch-verbose"
+"#,
+    )
+    .expect("write tool pack");
+    fs::write(
+        &config_path,
+        format!(
+            "descriptor_dirs = [{}]\ntool_pack_dirs = [{}]\n",
+            toml_string(descriptor_dir.display().to_string()),
+            toml_string(dir.path().join("tool-packs").display().to_string())
+        ),
+    )
+    .expect("write config");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--config")
+        .arg(config_path)
+        .arg("--list-tool-packs")
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("tool.git\tgit\t"));
 }
 
 #[test]

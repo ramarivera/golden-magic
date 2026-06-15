@@ -1,0 +1,23 @@
+[
+  {
+    "rank": 1,
+    "repo": "https://github.com/BurntSushi/ripgrep",
+    "stars": 65063,
+    "cli_evidence": "rg command-line interface",
+    "status": "seed"
+  },
+  {
+    "rank": 2,
+    "repo": "https://github.com/git/git",
+    "stars": 61503,
+    "cli_evidence": "git command-line interface",
+    "status": "seed"
+  },
+  {
+    "rank": 3,
+    "repo": "https://github.com/cli/cli",
+    "stars": 44827,
+    "cli_evidence": "gh command-line interface",
+    "status": "seed"
+  }
+]

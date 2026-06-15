@@ -8,6 +8,8 @@ use std::path::{Path, PathBuf};
 pub struct Config {
     #[serde(default)]
     pub descriptor_dirs: Vec<PathBuf>,
+    #[serde(default)]
+    pub tool_pack_dirs: Vec<PathBuf>,
 }
 
 pub fn load_config(path: impl AsRef<Path>) -> Result<Config, ConfigError> {
@@ -57,13 +59,14 @@ mod tests {
     use tempfile::tempdir;
 
     #[test]
-    fn loads_descriptor_dirs_from_toml() {
+    fn loads_config_dirs_from_toml() {
         let dir = tempdir().expect("temp dir");
         let config_path = dir.path().join("config.toml");
         fs::write(
             &config_path,
             r#"
 descriptor_dirs = ["/tmp/one", "/tmp/two"]
+tool_pack_dirs = ["/tmp/tools"]
 "#,
         )
         .expect("write config");
@@ -74,6 +77,7 @@ descriptor_dirs = ["/tmp/one", "/tmp/two"]
             config.descriptor_dirs,
             vec![PathBuf::from("/tmp/one"), PathBuf::from("/tmp/two")]
         );
+        assert_eq!(config.tool_pack_dirs, vec![PathBuf::from("/tmp/tools")]);
     }
 
     #[test]

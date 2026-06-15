@@ -56,13 +56,46 @@ Fields:
 
 ## Loading Rules
 
-- Tool packs are loaded only from explicit descriptor/config directories.
+- Tool packs are loaded from explicit `--tool-pack-dir` paths, `tool_pack_dirs` in config, or the default XDG path.
 - Unknown schema fields fail validation.
 - Descriptor ids referenced by `tool.toml` must exist in the same pack or a configured registry.
 - Tool packs do not execute code.
 - Tool packs do not read secrets.
 - Tool packs do not imply shell completion, command execution, or network access.
 - Every output shape still needs fixtures and expected rows.
+
+## CLI
+
+Validate a tool-pack directory against configured descriptors:
+
+```bash
+golden-magic \
+  --no-default-descriptors \
+  --descriptor-dir ./descriptors \
+  --validate-tool-pack-dir ./tool-packs
+```
+
+List discovered tool packs:
+
+```bash
+golden-magic \
+  --config ./config.toml \
+  --list-tool-packs
+```
+
+Config supports both descriptor and tool-pack roots:
+
+```toml
+descriptor_dirs = ["./descriptors"]
+tool_pack_dirs = ["./tool-packs"]
+```
+
+Default discovery uses:
+
+```text
+$XDG_CONFIG_HOME/golden-magic/descriptors
+$XDG_CONFIG_HOME/golden-magic/tool-packs
+```
 
 ## Relation To Executable Extensions
 

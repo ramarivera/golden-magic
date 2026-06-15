@@ -53,7 +53,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Include descriptor-selected parser backend support with `heuristic`, `sections`, and `tree-sitter-rust` backends.
 - [x] Include backend listing, validation, fixture coverage, malformed-input diagnostics, and property tests for current backend behavior.
 - [x] Evaluate tree-sitter before inventing a custom grammar DSL and implement the approved `tree-sitter-rust` backend.
-- [x] Implement declarative tool packs as the data-only plugin surface for tools, commands, subcommands, args, output patterns, and descriptor bindings.
+- [x] Implement declarative tool packs as the data-only plugin surface for tools, commands, subcommands, args, output patterns, descriptor bindings, CLI validation, config loading, and listing.
 - [x] Document debug instrumentation threat model and explicit no-hidden-channel default.
 - [x] Keep parser core independent from Nushell plugin APIs.
 

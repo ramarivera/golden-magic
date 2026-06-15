@@ -67,6 +67,15 @@ golden-magic --validate-descriptor-dir ./my-pack
 
 The validator checks TOML loading, duplicate descriptor ids, parser backend ids, and parser rule ids. A valid directory prints the number of descriptors loaded. Unknown rules fail with a message that points back to `--list-rules`.
 
+Validate and list declarative tool packs:
+
+```bash
+golden-magic --descriptor-dir ./descriptors --validate-tool-pack-dir ./tool-packs
+golden-magic --descriptor-dir ./descriptors --tool-pack-dir ./tool-packs --list-tool-packs
+```
+
+The tool-pack validator checks strict `tool.toml` loading and verifies that every referenced descriptor id exists in the configured descriptor registries.
+
 ## Schema
 
 Editor and CI tooling can use:
