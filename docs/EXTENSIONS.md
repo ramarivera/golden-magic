@@ -97,7 +97,7 @@ Until those answers exist, native loading is not a Golden Magic feature.
 ## Status
 
 - Descriptor packs: implemented substrate and fixture harness.
-- Descriptor-driven Nix manifests: implemented harness, live execution requires Nix.
+- Descriptor-driven Nix manifests: implemented and live-verified through `nixos/nix:latest`; host runs still require Nix on `PATH`.
 - Subprocess extensions: designed here, not implemented.
 - WASM/WASI extensions: design direction only, not implemented.
 - Native runtime loading: explicitly not implemented.

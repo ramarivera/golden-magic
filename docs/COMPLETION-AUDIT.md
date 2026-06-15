@@ -26,7 +26,7 @@ This audit validates the previously claimed completion list against current repo
 | Nu wrapper tests | `tests/nu_wrapper.rs`; `cargo test --test nu_wrapper -- --nocapture` passed. |
 | Native Nu plugin integration test | `tests/nu_plugin.rs`; `cargo test --features nu-plugin --test nu_plugin -- --nocapture` passed. |
 | Optional Nix-backed fixture test exists | `tests/nix_fixture.rs` exists and `cargo test --test nix_fixture -- --nocapture` passed the default skip path. |
-| Descriptor-driven Nix manifest harness exists | `tests/nix_fixture.rs` reads `nix.toml` manifests; `tests/fixtures/descriptors/generic-pipes/nix.toml` exists; default skip test passed. |
+| Descriptor-driven Nix manifest harness exists | `tests/nix_fixture.rs` reads `nix.toml` manifests; `tests/fixtures/descriptors/generic-pipes/nix.toml` exists; default skip test passed; opt-in live execution passed in a disposable `nixos/nix:latest` container with `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1`. |
 | Known-tool descriptor corpus | `tests/fixtures/descriptors/*` contains representative descriptor packs; `docs/KNOWN-TOOLS.md`; descriptor fixture tests passed. |
 | Extension-author SDK for descriptor packs | `docs/SDK.md`, `schemas/descriptor.schema.json`, `examples/descriptors/simple-pipes/*`, `--validate-descriptor-dir`; CLI tests and manual validation passed. |
 | Prior-art research artifact | `docs/PRIOR-ART.md` exists. It still needs tree-sitter/backend expansion for the remaining parser-backend work. |
@@ -41,7 +41,7 @@ This audit validates the previously claimed completion list against current repo
 | --- | --- |
 | Arbitrary Rust runtime extension/plugin loading | Not implemented by design. Current docs reject it until separate security and portability review. |
 | Tree-sitter backend | Not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding tree-sitter runtime and grammar packages. |
-| Full live Nix fixture execution | Not proven in this environment because `nix` is not available on `PATH`; bead `golden-magic-714` remains in progress. |
+| Full live Nix fixture execution | Proven through Docker-backed `nixos/nix:latest` run because host `nix` is not available on `PATH`; bead `golden-magic-714` can close with that evidence. |
 
 ## Weak Or Qualified Evidence
 
@@ -55,3 +55,4 @@ This audit validates the previously claimed completion list against current repo
 - Added a unit test for ignoring `nix.toml` in descriptor directories.
 - Criterion regression was investigated and recorded in [`docs/PERFORMANCE.md`](PERFORMANCE.md). No baseline was updated.
 - Descriptor parser backends now have explicit validation, `--list-backends` discovery, and core `ParseOptions` backend selection. `heuristic` and `sections` are implemented; `tree-sitter` remains a planned candidate and fails validation until implemented.
+- Descriptor-driven Nix manifest fixtures were verified in a disposable `nixos/nix:latest` container with the repository mounted read-only and Cargo outputs redirected to `/tmp`.

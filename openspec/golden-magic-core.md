@@ -60,7 +60,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/EXTENSIONS.md` explicitly rejects native runtime loading until a separate security and portability review; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
 - Tree-sitter backend is not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding the runtime and generated grammar package.
 - Native runtime extension SDK is not implemented. The current SDK is descriptor-pack authoring, validation, schema, examples, and fixture guidance.
-- Live execution of descriptor-driven Nix manifest fixtures is not verified in environments without `nix`; the harness skips unless `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` and `nix` is available.
+- Live execution of descriptor-driven Nix manifest fixtures is verified through a disposable `nixos/nix:latest` Docker run. Host-local runs still skip unless `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` and fail loudly if `nix` is not available.
 
 ## Evidence
 
@@ -71,4 +71,5 @@ cargo fmt --check
 cargo clippy -- -D warnings
 cargo test
 cargo bench --bench parser -- --sample-size 10
+docker run --rm -e GOLDEN_MAGIC_RUN_NIX_FIXTURES=1 -e CARGO_TARGET_DIR=/tmp/golden-magic-target -e CARGO_HOME=/tmp/cargo -v "$PWD":/work:ro -w /work nixos/nix:latest sh -lc 'nix --extra-experimental-features "nix-command flakes" shell nixpkgs#cargo nixpkgs#rustc nixpkgs#gcc -c cargo test --test nix_fixture -- --nocapture'
 ```

@@ -12,6 +12,19 @@ GOLDEN_MAGIC_RUN_NIX_FIXTURES=1 cargo test --test nix_fixture -- --nocapture
 
 If the environment variable is absent, the test skips itself. If `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` is set, `nix` must be on `PATH` and working; otherwise the test fails. This keeps normal local tests cheap while making opt-in live verification honest.
 
+On a host without Nix, the same opt-in path can be verified in a disposable Nix container without writing build outputs into the repository:
+
+```bash
+docker run --rm \
+  -e GOLDEN_MAGIC_RUN_NIX_FIXTURES=1 \
+  -e CARGO_TARGET_DIR=/tmp/golden-magic-target \
+  -e CARGO_HOME=/tmp/cargo \
+  -v "$PWD":/work:ro \
+  -w /work \
+  nixos/nix:latest \
+  sh -lc 'nix --extra-experimental-features "nix-command flakes" shell nixpkgs#cargo nixpkgs#rustc nixpkgs#gcc -c cargo test --test nix_fixture -- --nocapture'
+```
+
 ## Manifest Fixtures
 
 Descriptor-driven Nix fixtures live beside descriptor fixtures:
@@ -54,6 +67,7 @@ Nix can be slow on cold caches and can require network access. Hard-requiring it
 - core/unit/property/CLI tests run always
 - optional real-tool fixtures run when explicitly requested
 - opt-in real-tool fixture runs fail when `nix` is missing, rather than reporting a false pass
+- disposable container verification is supported for hosts that have Docker but no host Nix install
 - CI can choose a Nix-enabled job later
 
 ## Fixture Rules
