@@ -1,0 +1,4 @@
+success rate: 99.50%
+requests/sec: 1842.7
+latency avg: 12.4 ms
+latency p99: 31.8 ms

@@ -1,0 +1,10 @@
+id = "known.dufs.serve"
+name = "dufs serve status"
+priority = 50
+
+[matches]
+required_substrings = ["Serving:","Listen:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

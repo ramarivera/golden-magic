@@ -1,0 +1,10 @@
+id = "known.oha.summary"
+name = "oha benchmark summary"
+priority = 50
+
+[matches]
+required_substrings = ["success rate:","requests/sec:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

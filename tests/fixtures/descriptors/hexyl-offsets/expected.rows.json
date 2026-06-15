@@ -1,0 +1,18 @@
+[
+  {
+    "key": "offset",
+    "value": "00000010"
+  },
+  {
+    "key": "bytes",
+    "value": "48 65 6c 6c 6f"
+  },
+  {
+    "key": "ascii",
+    "value": "Hello"
+  },
+  {
+    "key": "color",
+    "value": "enabled"
+  }
+]

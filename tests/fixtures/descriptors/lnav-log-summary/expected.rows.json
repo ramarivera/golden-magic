@@ -1,0 +1,18 @@
+[
+  {
+    "key": "level",
+    "value": "error"
+  },
+  {
+    "key": "source",
+    "value": "app.log"
+  },
+  {
+    "key": "count",
+    "value": "17"
+  },
+  {
+    "key": "last_seen",
+    "value": "2026-06-15T10:30:00Z"
+  }
+]

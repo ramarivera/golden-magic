@@ -348,5 +348,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/xsv-stats",
     "analysis_notes": "Modeled xsv stats table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tstack/lnav",
+    "descriptor_id": "known.lnav.log-summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lnav-log-summary",
+    "analysis_notes": "Modeled lnav log-summary key-value output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/harelba/q",
+    "descriptor_id": "known.q.query-result",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/q-query-result",
+    "analysis_notes": "Modeled q tabular query result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hatoo/oha",
+    "descriptor_id": "known.oha.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oha-summary",
+    "analysis_notes": "Modeled oha HTTP benchmark summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sigoden/dufs",
+    "descriptor_id": "known.dufs.serve",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dufs-serve",
+    "analysis_notes": "Modeled dufs serve status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sharkdp/hexyl",
+    "descriptor_id": "known.hexyl.offsets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hexyl-offsets",
+    "analysis_notes": "Modeled hexyl offset/byte summary output with a generated executable-json parser plugin."
   }
 ]

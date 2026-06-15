@@ -1,0 +1,14 @@
+[
+  {
+    "name": "name",
+    "value": "count total"
+  },
+  {
+    "name": "rust",
+    "value": "42 98"
+  },
+  {
+    "name": "nushell",
+    "value": "13 21"
+  }
+]

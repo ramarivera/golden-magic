@@ -1,0 +1,10 @@
+id = "known.hexyl.offsets"
+name = "hexyl offset summary"
+priority = 50
+
+[matches]
+required_substrings = ["offset:","bytes:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

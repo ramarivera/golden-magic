@@ -1,0 +1,18 @@
+[
+  {
+    "key": "success rate",
+    "value": "99.50%"
+  },
+  {
+    "key": "requests/sec",
+    "value": "1842.7"
+  },
+  {
+    "key": "latency avg",
+    "value": "12.4 ms"
+  },
+  {
+    "key": "latency p99",
+    "value": "31.8 ms"
+  }
+]

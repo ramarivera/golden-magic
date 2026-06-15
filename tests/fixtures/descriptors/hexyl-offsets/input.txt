@@ -1,0 +1,4 @@
+offset: 00000010
+bytes: 48 65 6c 6c 6f
+ascii: Hello
+color: enabled

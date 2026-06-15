@@ -1,0 +1,3 @@
+name	count total
+rust	42 98
+nushell	13 21

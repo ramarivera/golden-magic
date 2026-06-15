@@ -1,0 +1,4 @@
+level: error
+source: app.log
+count: 17
+last_seen: 2026-06-15T10:30:00Z

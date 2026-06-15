@@ -358,5 +358,65 @@
     "negative": "field type sum min max\nage Integer 91 28 34\n",
     "analysis_notes": "Modeled xsv stats table output with a generated executable-json parser plugin.",
     "variants": ["header row", "integer field row", "unicode field row"]
+  },
+  {
+    "fixture": "lnav-log-summary",
+    "descriptor_id": "known.lnav.log-summary",
+    "name": "lnav log summary",
+    "repo": "https://github.com/tstack/lnav",
+    "required_substrings": ["level:", "source:"],
+    "parser": "colon-kv",
+    "input": "level: error\nsource: app.log\ncount: 17\nlast_seen: 2026-06-15T10:30:00Z\n",
+    "negative": "level error\nsource app.log\n",
+    "analysis_notes": "Modeled lnav log-summary key-value output with a generated executable-json parser plugin.",
+    "variants": ["log level row", "source row", "count row"]
+  },
+  {
+    "fixture": "q-query-result",
+    "descriptor_id": "known.q.query-result",
+    "name": "q query result",
+    "repo": "https://github.com/harelba/q",
+    "required_substrings": ["name\tcount", "rust\t42"],
+    "parser": "tab-pairs",
+    "input": "name\tcount total\nrust\t42 98\nnushell\t13 21\n",
+    "negative": "name count total\nrust 42 98\n",
+    "analysis_notes": "Modeled q tabular query result output with a generated executable-json parser plugin.",
+    "variants": ["header row", "language row", "numeric count value"]
+  },
+  {
+    "fixture": "oha-summary",
+    "descriptor_id": "known.oha.summary",
+    "name": "oha benchmark summary",
+    "repo": "https://github.com/hatoo/oha",
+    "required_substrings": ["success rate:", "requests/sec:"],
+    "parser": "colon-kv",
+    "input": "success rate: 99.50%\nrequests/sec: 1842.7\nlatency avg: 12.4 ms\nlatency p99: 31.8 ms\n",
+    "negative": "success rate 99.50%\nrequests/sec 1842.7\n",
+    "analysis_notes": "Modeled oha HTTP benchmark summary output with a generated executable-json parser plugin.",
+    "variants": ["percentage value", "requests per second row", "latency percentile row"]
+  },
+  {
+    "fixture": "dufs-serve",
+    "descriptor_id": "known.dufs.serve",
+    "name": "dufs serve status",
+    "repo": "https://github.com/sigoden/dufs",
+    "required_substrings": ["Serving:", "Listen:"],
+    "parser": "colon-kv",
+    "input": "Serving: /Users/ramiro/share\nListen: http://127.0.0.1:5000\nAuth: disabled\nTLS: false\n",
+    "negative": "Serving /Users/ramiro/share\nListen http://127.0.0.1:5000\n",
+    "analysis_notes": "Modeled dufs serve status output with a generated executable-json parser plugin.",
+    "variants": ["serving directory row", "listen URL row", "auth mode row"]
+  },
+  {
+    "fixture": "hexyl-offsets",
+    "descriptor_id": "known.hexyl.offsets",
+    "name": "hexyl offset summary",
+    "repo": "https://github.com/sharkdp/hexyl",
+    "required_substrings": ["offset:", "bytes:"],
+    "parser": "colon-kv",
+    "input": "offset: 00000010\nbytes: 48 65 6c 6c 6f\nascii: Hello\ncolor: enabled\n",
+    "negative": "offset 00000010\nbytes 48 65 6c 6c 6f\n",
+    "analysis_notes": "Modeled hexyl offset/byte summary output with a generated executable-json parser plugin.",
+    "variants": ["hex offset row", "byte sequence row", "ascii preview row"]
   }
 ]

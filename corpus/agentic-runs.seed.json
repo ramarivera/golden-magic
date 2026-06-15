@@ -898,5 +898,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/tstack/lnav",
+    "descriptor_id": "known.lnav.log-summary",
+    "run_id": "agentic.lnav-log-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lnav-log-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lnav-log-summary/expected.rows.json",
+    "variants": [
+      "log level row",
+      "source row",
+      "count row"
+    ],
+    "transcript": [
+      "selected descriptor known.lnav.log-summary for lnav log summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/harelba/q",
+    "descriptor_id": "known.q.query-result",
+    "run_id": "agentic.q-query-result.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/q-query-result/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/q-query-result/expected.rows.json",
+    "variants": [
+      "header row",
+      "language row",
+      "numeric count value"
+    ],
+    "transcript": [
+      "selected descriptor known.q.query-result for q query result output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hatoo/oha",
+    "descriptor_id": "known.oha.summary",
+    "run_id": "agentic.oha-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oha-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oha-summary/expected.rows.json",
+    "variants": [
+      "percentage value",
+      "requests per second row",
+      "latency percentile row"
+    ],
+    "transcript": [
+      "selected descriptor known.oha.summary for oha benchmark summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sigoden/dufs",
+    "descriptor_id": "known.dufs.serve",
+    "run_id": "agentic.dufs-serve.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dufs-serve/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dufs-serve/expected.rows.json",
+    "variants": [
+      "serving directory row",
+      "listen URL row",
+      "auth mode row"
+    ],
+    "transcript": [
+      "selected descriptor known.dufs.serve for dufs serve status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sharkdp/hexyl",
+    "descriptor_id": "known.hexyl.offsets",
+    "run_id": "agentic.hexyl-offsets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hexyl-offsets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hexyl-offsets/expected.rows.json",
+    "variants": [
+      "hex offset row",
+      "byte sequence row",
+      "ascii preview row"
+    ],
+    "transcript": [
+      "selected descriptor known.hexyl.offsets for hexyl offset summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

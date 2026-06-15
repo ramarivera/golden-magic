@@ -1,0 +1,2 @@
+success rate 99.50%
+requests/sec 1842.7

@@ -1,0 +1,10 @@
+id = "known.q.query-result"
+name = "q query result"
+priority = 50
+
+[matches]
+required_substrings = ["name\tcount","rust\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
