@@ -1,0 +1,10 @@
+id = "known.ngxtop.requests"
+name = "ngxtop request list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tcount","/api\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

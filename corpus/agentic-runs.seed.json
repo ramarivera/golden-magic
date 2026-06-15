@@ -9178,5 +9178,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/akopytov/sysbench",
+    "descriptor_id": "known.sysbench.results",
+    "run_id": "agentic.sysbench-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sysbench-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sysbench-results/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "unit field"
+    ],
+    "transcript": [
+      "selected descriptor known.sysbench.results for sysbench result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ogham/dog",
+    "descriptor_id": "known.dog.records",
+    "run_id": "agentic.dog-records.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dog-records/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dog-records/expected.rows.json",
+    "variants": [
+      "name header row",
+      "type row",
+      "value field"
+    ],
+    "transcript": [
+      "selected descriptor known.dog.records for dog DNS record list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jpbruinsslot/slack-term",
+    "descriptor_id": "known.slack-term.channels",
+    "run_id": "agentic.slack-term-channels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/slack-term-channels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/slack-term-channels/expected.rows.json",
+    "variants": [
+      "channel header row",
+      "unread row",
+      "topic field"
+    ],
+    "transcript": [
+      "selected descriptor known.slack-term.channels for slack-term channel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/busyloop/lolcat",
+    "descriptor_id": "known.lolcat.styles",
+    "run_id": "agentic.lolcat-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lolcat-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lolcat-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "state row",
+      "speed field"
+    ],
+    "transcript": [
+      "selected descriptor known.lolcat.styles for lolcat style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lebinh/ngxtop",
+    "descriptor_id": "known.ngxtop.requests",
+    "run_id": "agentic.ngxtop-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ngxtop-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ngxtop-requests/expected.rows.json",
+    "variants": [
+      "path header row",
+      "count row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.ngxtop.requests for ngxtop request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

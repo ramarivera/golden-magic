@@ -1,0 +1,2 @@
+name type value
+example.com A 93.184.216.34

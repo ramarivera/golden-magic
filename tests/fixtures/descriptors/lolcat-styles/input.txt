@@ -1,0 +1,4 @@
+style	state speed
+rainbow	active 1.0
+pulse	available 0.5
+stripe	active 0.8

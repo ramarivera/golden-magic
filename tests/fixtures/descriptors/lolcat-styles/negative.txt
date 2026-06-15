@@ -1,0 +1,2 @@
+style state speed
+rainbow active 1.0

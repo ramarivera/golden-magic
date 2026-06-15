@@ -1,0 +1,4 @@
+metric	value unit
+events	10000 count
+latency	2.3ms avg
+threads	8 count

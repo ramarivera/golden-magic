@@ -3568,5 +3568,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/blink-hosts",
     "analysis_notes": "Modeled blink shell host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/akopytov/sysbench",
+    "descriptor_id": "known.sysbench.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sysbench-results",
+    "analysis_notes": "Modeled sysbench benchmark result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ogham/dog",
+    "descriptor_id": "known.dog.records",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dog-records",
+    "analysis_notes": "Modeled dog DNS record output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jpbruinsslot/slack-term",
+    "descriptor_id": "known.slack-term.channels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/slack-term-channels",
+    "analysis_notes": "Modeled slack-term channel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/busyloop/lolcat",
+    "descriptor_id": "known.lolcat.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lolcat-styles",
+    "analysis_notes": "Modeled lolcat style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lebinh/ngxtop",
+    "descriptor_id": "known.ngxtop.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ngxtop-requests",
+    "analysis_notes": "Modeled ngxtop request output with a generated executable-json parser plugin."
   }
 ]

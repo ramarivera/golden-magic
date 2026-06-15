@@ -1,0 +1,10 @@
+id = "known.sysbench.results"
+name = "sysbench result list"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","events\t10000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

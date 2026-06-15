@@ -1,0 +1,18 @@
+[
+  {
+    "name": "style",
+    "value": "state speed"
+  },
+  {
+    "name": "rainbow",
+    "value": "active 1.0"
+  },
+  {
+    "name": "pulse",
+    "value": "available 0.5"
+  },
+  {
+    "name": "stripe",
+    "value": "active 0.8"
+  }
+]

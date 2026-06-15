@@ -1,0 +1,18 @@
+[
+  {
+    "name": "metric",
+    "value": "value unit"
+  },
+  {
+    "name": "events",
+    "value": "10000 count"
+  },
+  {
+    "name": "latency",
+    "value": "2.3ms avg"
+  },
+  {
+    "name": "threads",
+    "value": "8 count"
+  }
+]

@@ -5878,5 +5878,65 @@
     "negative": "host state user\nprod connected ramiro\n",
     "analysis_notes": "Modeled blink shell host output with a generated executable-json parser plugin.",
     "variants": ["host header row", "state row", "user field"]
+  },
+  {
+    "fixture": "sysbench-results",
+    "descriptor_id": "known.sysbench.results",
+    "name": "sysbench result list",
+    "repo": "https://github.com/akopytov/sysbench",
+    "required_substrings": ["metric\tvalue", "events\t10000"],
+    "parser": "tab-pairs",
+    "input": "metric\tvalue unit\nevents\t10000 count\nlatency\t2.3ms avg\nthreads\t8 count\n",
+    "negative": "metric value unit\nevents 10000 count\n",
+    "analysis_notes": "Modeled sysbench benchmark result output with a generated executable-json parser plugin.",
+    "variants": ["metric header row", "value row", "unit field"]
+  },
+  {
+    "fixture": "dog-records",
+    "descriptor_id": "known.dog.records",
+    "name": "dog DNS record list",
+    "repo": "https://github.com/ogham/dog",
+    "required_substrings": ["name\ttype", "example.com\tA"],
+    "parser": "tab-pairs",
+    "input": "name\ttype value\nexample.com\tA 93.184.216.34\nexample.com\tAAAA 2606:2800:220:1:248:1893:25c8:1946\nwww.example.com\tCNAME example.com\n",
+    "negative": "name type value\nexample.com A 93.184.216.34\n",
+    "analysis_notes": "Modeled dog DNS record output with a generated executable-json parser plugin.",
+    "variants": ["name header row", "type row", "value field"]
+  },
+  {
+    "fixture": "slack-term-channels",
+    "descriptor_id": "known.slack-term.channels",
+    "name": "slack-term channel list",
+    "repo": "https://github.com/jpbruinsslot/slack-term",
+    "required_substrings": ["channel\tunread", "general\t3"],
+    "parser": "tab-pairs",
+    "input": "channel\tunread topic\ngeneral\t3 team\nbuilds\t0 ci\nops\t8 incidents\n",
+    "negative": "channel unread topic\ngeneral 3 team\n",
+    "analysis_notes": "Modeled slack-term channel output with a generated executable-json parser plugin.",
+    "variants": ["channel header row", "unread row", "topic field"]
+  },
+  {
+    "fixture": "lolcat-styles",
+    "descriptor_id": "known.lolcat.styles",
+    "name": "lolcat style list",
+    "repo": "https://github.com/busyloop/lolcat",
+    "required_substrings": ["style\tstate", "rainbow\tactive"],
+    "parser": "tab-pairs",
+    "input": "style\tstate speed\nrainbow\tactive 1.0\npulse\tavailable 0.5\nstripe\tactive 0.8\n",
+    "negative": "style state speed\nrainbow active 1.0\n",
+    "analysis_notes": "Modeled lolcat style output with a generated executable-json parser plugin.",
+    "variants": ["style header row", "state row", "speed field"]
+  },
+  {
+    "fixture": "ngxtop-requests",
+    "descriptor_id": "known.ngxtop.requests",
+    "name": "ngxtop request list",
+    "repo": "https://github.com/lebinh/ngxtop",
+    "required_substrings": ["path\tcount", "/api\t120"],
+    "parser": "tab-pairs",
+    "input": "path\tcount status\n/api\t120 200\n/login\t32 302\n/error\t4 500\n",
+    "negative": "path count status\n/api 120 200\n",
+    "analysis_notes": "Modeled ngxtop request output with a generated executable-json parser plugin.",
+    "variants": ["path header row", "count row", "status field"]
   }
 ]

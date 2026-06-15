@@ -1,0 +1,4 @@
+path	count status
+/api	120 200
+/login	32 302
+/error	4 500

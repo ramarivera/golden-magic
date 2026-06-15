@@ -1,0 +1,10 @@
+id = "known.dog.records"
+name = "dog DNS record list"
+priority = 50
+
+[matches]
+required_substrings = ["name\ttype","example.com\tA"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+metric value unit
+events 10000 count

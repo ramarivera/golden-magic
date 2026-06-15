@@ -1,0 +1,18 @@
+[
+  {
+    "name": "name",
+    "value": "type value"
+  },
+  {
+    "name": "example.com",
+    "value": "A 93.184.216.34"
+  },
+  {
+    "name": "example.com",
+    "value": "AAAA 2606:2800:220:1:248:1893:25c8:1946"
+  },
+  {
+    "name": "www.example.com",
+    "value": "CNAME example.com"
+  }
+]
