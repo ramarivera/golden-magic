@@ -144,7 +144,7 @@ Implemented generic heuristics:
 
 Not implemented yet:
 
-- arbitrary Rust runtime extension/plugin loading; native runtime loading requires a security and portability design review first
+- arbitrary Rust runtime extension/plugin loading; current extension design explicitly prefers descriptor packs, subprocesses, and WASM/WASI before native loading
 - big known-tool descriptor corpus
 - grammar engine beyond the current heuristic parser
 - rich extension-author SDK beyond TOML descriptor and fixture conventions
@@ -160,6 +160,7 @@ See:
 - [`docs/NIX-FIXTURES.md`](docs/NIX-FIXTURES.md)
 - [`docs/DEBUG-INSTRUMENTATION.md`](docs/DEBUG-INSTRUMENTATION.md)
 - [`docs/PRIOR-ART.md`](docs/PRIOR-ART.md)
+- [`docs/EXTENSIONS.md`](docs/EXTENSIONS.md)
 - [`AGENTS.md`](AGENTS.md)
 
 ## Development

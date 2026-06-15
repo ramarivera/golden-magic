@@ -15,6 +15,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Completed native plugin descriptor/config parity: `golden-magic-9e1`
 - Completed descriptor-driven Nix manifest harness: `golden-magic-714`
 - Completed prior-art research artifact: `golden-magic-4re`
+- Completed safe runtime extension architecture design: `golden-magic-by0`
 
 ## Acceptance Criteria
 
@@ -49,7 +50,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 
 ## Deferred Criteria
 
-- `golden-magic-by0`: arbitrary Rust runtime extension/plugin loading is not implemented. Before any native runtime loading exists, Golden Magic needs a security and portability design review. Prefer declarative descriptor packs plus subprocess or WASM extension boundaries first.
+- Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/EXTENSIONS.md` explicitly rejects native runtime loading until a separate security and portability review; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
 - `golden-magic-9pu`: big known-tool descriptor corpus is not implemented. Current descriptor fixtures are representative harness coverage, not a broad tool catalog.
 - `golden-magic-2mf`: grammar engine is not implemented. Current parsing remains heuristic rule selection plus descriptor parser hints.
 - `golden-magic-euf`: rich extension-author SDK is not implemented. Current extension surface is TOML descriptors and fixture conventions.
