@@ -1,0 +1,10 @@
+id = "known.iterm2-color-schemes.schemes"
+name = "iTerm2 color scheme list"
+priority = 50
+
+[matches]
+required_substrings = ["scheme\tfamily","Solarized Dark\tsolarized"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

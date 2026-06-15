@@ -1,0 +1,10 @@
+id = "known.googleworkspace-cli.commands"
+name = "Google Workspace CLI command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tservice","drive-list\tdrive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

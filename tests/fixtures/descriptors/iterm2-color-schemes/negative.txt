@@ -1,0 +1,2 @@
+scheme family format
+Solarized Dark solarized itermcolors

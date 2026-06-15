@@ -1,0 +1,2 @@
+secret environment status
+DATABASE_URL prod synced

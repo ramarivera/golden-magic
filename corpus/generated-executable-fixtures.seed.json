@@ -2218,5 +2218,65 @@
     "negative": "font style file\nCascadiaCode Regular CascadiaCode.ttf\n",
     "analysis_notes": "Modeled Cascadia Code font listing output with a generated executable-json parser plugin.",
     "variants": ["font header row", "style row", "file field"]
+  },
+  {
+    "fixture": "infisical-secrets",
+    "descriptor_id": "known.infisical.secrets",
+    "name": "Infisical secret list",
+    "repo": "https://github.com/Infisical/infisical",
+    "required_substrings": ["secret\tenvironment", "DATABASE_URL\tprod"],
+    "parser": "tab-pairs",
+    "input": "secret\tenvironment status\nDATABASE_URL\tprod synced\nAPI_KEY\tstaging synced\nFEATURE_FLAG\tdev pending\n",
+    "negative": "secret environment status\nDATABASE_URL prod synced\n",
+    "analysis_notes": "Modeled Infisical secret listing output with a generated executable-json parser plugin.",
+    "variants": ["secret header row", "environment row", "status field"]
+  },
+  {
+    "fixture": "googleworkspace-cli-commands",
+    "descriptor_id": "known.googleworkspace-cli.commands",
+    "name": "Google Workspace CLI command list",
+    "repo": "https://github.com/googleworkspace/cli",
+    "required_substrings": ["command\tservice", "drive-list\tdrive"],
+    "parser": "tab-pairs",
+    "input": "command\tservice status\ndrive-list\tdrive ready\ngmail-send\tgmail ready\ncalendar-sync\tcalendar beta\n",
+    "negative": "command service status\ndrive-list drive ready\n",
+    "analysis_notes": "Modeled Google Workspace CLI command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "service row", "status field"]
+  },
+  {
+    "fixture": "angular-cli-projects",
+    "descriptor_id": "known.angular-cli.projects",
+    "name": "Angular CLI project list",
+    "repo": "https://github.com/angular/angular-cli",
+    "required_substrings": ["project\ttype", "admin-app\tapplication"],
+    "parser": "tab-pairs",
+    "input": "project\ttype builder\nadmin-app\tapplication browser\nshared-lib\tlibrary ng-packagr\ne2e-tests\tapplication protractor\n",
+    "negative": "project type builder\nadmin-app application browser\n",
+    "analysis_notes": "Modeled Angular CLI project output with a generated executable-json parser plugin.",
+    "variants": ["project header row", "application row", "builder field"]
+  },
+  {
+    "fixture": "iterm2-color-schemes",
+    "descriptor_id": "known.iterm2-color-schemes.schemes",
+    "name": "iTerm2 color scheme list",
+    "repo": "https://github.com/mbadolato/iTerm2-Color-Schemes",
+    "required_substrings": ["scheme\tfamily", "Solarized Dark\tsolarized"],
+    "parser": "tab-pairs",
+    "input": "scheme\tfamily format\nSolarized Dark\tsolarized itermcolors\nDracula\tdark itermcolors\nTomorrow Night\tdark itermcolors\n",
+    "negative": "scheme family format\nSolarized Dark solarized itermcolors\n",
+    "analysis_notes": "Modeled iTerm2 color scheme index output with a generated executable-json parser plugin.",
+    "variants": ["scheme header row", "family row", "format field"]
+  },
+  {
+    "fixture": "cmder-tasks",
+    "descriptor_id": "known.cmder.tasks",
+    "name": "Cmder task list",
+    "repo": "https://github.com/cmderdev/cmder",
+    "required_substrings": ["task\tshell", "PowerShell\tpowershell"],
+    "parser": "tab-pairs",
+    "input": "task\tshell status\nPowerShell\tpowershell ready\ncmd\tcmd ready\nbash\tbash optional\n",
+    "negative": "task shell status\nPowerShell powershell ready\n",
+    "analysis_notes": "Modeled Cmder task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "shell row", "status field"]
   }
 ]

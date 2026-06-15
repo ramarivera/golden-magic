@@ -1433,5 +1433,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cascadia-code-fonts",
     "analysis_notes": "Modeled Cascadia Code font listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Infisical/infisical",
+    "descriptor_id": "known.infisical.secrets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/infisical-secrets",
+    "analysis_notes": "Modeled Infisical secret listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/googleworkspace/cli",
+    "descriptor_id": "known.googleworkspace-cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/googleworkspace-cli-commands",
+    "analysis_notes": "Modeled Google Workspace CLI command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/angular/angular-cli",
+    "descriptor_id": "known.angular-cli.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/angular-cli-projects",
+    "analysis_notes": "Modeled Angular CLI project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mbadolato/iTerm2-Color-Schemes",
+    "descriptor_id": "known.iterm2-color-schemes.schemes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/iterm2-color-schemes",
+    "analysis_notes": "Modeled iTerm2 color scheme index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cmderdev/cmder",
+    "descriptor_id": "known.cmder.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cmder-tasks",
+    "analysis_notes": "Modeled Cmder task output with a generated executable-json parser plugin."
   }
 ]

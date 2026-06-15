@@ -1,0 +1,2 @@
+task shell status
+PowerShell powershell ready

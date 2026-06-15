@@ -1,0 +1,4 @@
+scheme	family format
+Solarized Dark	solarized itermcolors
+Dracula	dark itermcolors
+Tomorrow Night	dark itermcolors

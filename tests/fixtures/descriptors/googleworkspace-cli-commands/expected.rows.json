@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "service status"
+  },
+  {
+    "name": "drive-list",
+    "value": "drive ready"
+  },
+  {
+    "name": "gmail-send",
+    "value": "gmail ready"
+  },
+  {
+    "name": "calendar-sync",
+    "value": "calendar beta"
+  }
+]

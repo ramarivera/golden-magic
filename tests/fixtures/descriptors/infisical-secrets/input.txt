@@ -1,0 +1,4 @@
+secret	environment status
+DATABASE_URL	prod synced
+API_KEY	staging synced
+FEATURE_FLAG	dev pending

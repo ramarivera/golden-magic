@@ -1,0 +1,2 @@
+project type builder
+admin-app application browser

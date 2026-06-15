@@ -3688,5 +3688,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Infisical/infisical",
+    "descriptor_id": "known.infisical.secrets",
+    "run_id": "agentic.infisical-secrets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/infisical-secrets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/infisical-secrets/expected.rows.json",
+    "variants": [
+      "secret header row",
+      "environment row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.infisical.secrets for Infisical secret list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/googleworkspace/cli",
+    "descriptor_id": "known.googleworkspace-cli.commands",
+    "run_id": "agentic.googleworkspace-cli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/googleworkspace-cli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/googleworkspace-cli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "service row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.googleworkspace-cli.commands for Google Workspace CLI command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/angular/angular-cli",
+    "descriptor_id": "known.angular-cli.projects",
+    "run_id": "agentic.angular-cli-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/angular-cli-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/angular-cli-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "application row",
+      "builder field"
+    ],
+    "transcript": [
+      "selected descriptor known.angular-cli.projects for Angular CLI project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mbadolato/iTerm2-Color-Schemes",
+    "descriptor_id": "known.iterm2-color-schemes.schemes",
+    "run_id": "agentic.iterm2-color-schemes-schemes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/iterm2-color-schemes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/iterm2-color-schemes/expected.rows.json",
+    "variants": [
+      "scheme header row",
+      "family row",
+      "format field"
+    ],
+    "transcript": [
+      "selected descriptor known.iterm2-color-schemes.schemes for iTerm2 color scheme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cmderdev/cmder",
+    "descriptor_id": "known.cmder.tasks",
+    "run_id": "agentic.cmder-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cmder-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cmder-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "shell row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.cmder.tasks for Cmder task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

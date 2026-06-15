@@ -1,0 +1,10 @@
+id = "known.cmder.tasks"
+name = "Cmder task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tshell","PowerShell\tpowershell"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

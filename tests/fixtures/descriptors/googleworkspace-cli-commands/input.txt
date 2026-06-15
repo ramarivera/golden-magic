@@ -1,0 +1,4 @@
+command	service status
+drive-list	drive ready
+gmail-send	gmail ready
+calendar-sync	calendar beta

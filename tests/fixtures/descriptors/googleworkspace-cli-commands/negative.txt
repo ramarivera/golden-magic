@@ -1,0 +1,2 @@
+command service status
+drive-list drive ready

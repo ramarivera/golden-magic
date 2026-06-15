@@ -1,0 +1,10 @@
+id = "known.angular-cli.projects"
+name = "Angular CLI project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\ttype","admin-app\tapplication"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

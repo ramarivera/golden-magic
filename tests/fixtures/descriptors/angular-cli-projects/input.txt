@@ -1,0 +1,4 @@
+project	type builder
+admin-app	application browser
+shared-lib	library ng-packagr
+e2e-tests	application protractor

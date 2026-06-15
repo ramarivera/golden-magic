@@ -1,0 +1,4 @@
+task	shell status
+PowerShell	powershell ready
+cmd	cmd ready
+bash	bash optional
