@@ -1,0 +1,4 @@
+rule	mode state
+debugger	strict enabled
+console	warn enabled
+legacy	silent disabled

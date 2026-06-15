@@ -1,0 +1,4 @@
+controller	platform state
+dualshock4	ps4 paired
+wiimote	wii paired
+oldpad	unknown blocked

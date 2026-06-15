@@ -1,0 +1,2 @@
+item kind state
+prompt shell enabled

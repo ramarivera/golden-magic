@@ -1,0 +1,4 @@
+agent	role state
+planner	analysis ready
+coder	implementation ready
+old	legacy disabled

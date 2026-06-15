@@ -1,0 +1,2 @@
+request principal state
+read-s3 alice pending

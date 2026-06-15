@@ -1,0 +1,4 @@
+item	kind state
+prompt	shell enabled
+completion	plugin enabled
+oldtheme	theme disabled

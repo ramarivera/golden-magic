@@ -1,0 +1,10 @@
+id = "known.consoleme.requests"
+name = "ConsoleMe request list"
+priority = 50
+
+[matches]
+required_substrings = ["request\tprincipal","read-s3\talice"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

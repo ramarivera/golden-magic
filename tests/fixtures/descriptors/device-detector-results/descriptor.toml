@@ -1,0 +1,10 @@
+id = "known.device-detector.results"
+name = "device-detector result list"
+priority = 50
+
+[matches]
+required_substrings = ["result\tclient","ios\tsafari"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

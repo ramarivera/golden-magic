@@ -1,0 +1,4 @@
+file	operation state
+sample.png	clean queued
+banner.jpg	mask queued
+old.png	skip ignored

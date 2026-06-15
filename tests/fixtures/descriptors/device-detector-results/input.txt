@@ -1,0 +1,4 @@
+result	client state
+ios	safari detected
+android	chrome detected
+old	bot ignored

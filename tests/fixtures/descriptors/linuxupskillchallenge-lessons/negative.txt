@@ -1,0 +1,2 @@
+lesson day state
+permissions 7 ready

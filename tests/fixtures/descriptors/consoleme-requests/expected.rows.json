@@ -1,0 +1,18 @@
+[
+  {
+    "name": "request",
+    "value": "principal state"
+  },
+  {
+    "name": "read-s3",
+    "value": "alice pending"
+  },
+  {
+    "name": "admin-role",
+    "value": "bob approved"
+  },
+  {
+    "name": "old-role",
+    "value": "carol expired"
+  }
+]

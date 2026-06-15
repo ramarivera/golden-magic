@@ -1,0 +1,4 @@
+request	principal state
+read-s3	alice pending
+admin-role	bob approved
+old-role	carol expired

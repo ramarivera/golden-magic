@@ -6186,5 +6186,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/hishtory-entries",
     "analysis_notes": "Modeled hishtory synced shell-history output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/matomo-org/device-detector",
+    "descriptor_id": "known.device-detector.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/device-detector-results",
+    "analysis_notes": "Modeled device-detector user-agent result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bastillion-io/Bastillion",
+    "descriptor_id": "known.bastillion.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bastillion-sessions",
+    "analysis_notes": "Modeled Bastillion SSH session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/snori74/linuxupskillchallenge",
+    "descriptor_id": "known.linuxupskillchallenge.lessons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/linuxupskillchallenge-lessons",
+    "analysis_notes": "Modeled Linux Upskill Challenge lesson output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ndeadly/MissionControl",
+    "descriptor_id": "known.missioncontrol.controllers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/missioncontrol-controllers",
+    "analysis_notes": "Modeled MissionControl controller pairing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/theajack/disable-devtool",
+    "descriptor_id": "known.disable-devtool.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/disable-devtool-rules",
+    "analysis_notes": "Modeled disable-devtool detection rule output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/CommandCodeAI/command-code",
+    "descriptor_id": "known.command-code.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/command-code-agents",
+    "analysis_notes": "Modeled Command Code agent roster output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wiltodelta/remove-ai-watermarks",
+    "descriptor_id": "known.remove-ai-watermarks.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/remove-ai-watermarks-files",
+    "analysis_notes": "Modeled remove-ai-watermarks batch file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/std-microblock/breeze-shell",
+    "descriptor_id": "known.breeze-shell.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/breeze-shell-items",
+    "analysis_notes": "Modeled breeze-shell configured item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Netflix/consoleme",
+    "descriptor_id": "known.consoleme.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/consoleme-requests",
+    "analysis_notes": "Modeled ConsoleMe access request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/liamg/darktile",
+    "descriptor_id": "known.darktile.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/darktile-tabs",
+    "analysis_notes": "Modeled darktile terminal tab output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.command-code.agents"
+name = "Command Code agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\trole","planner\tanalysis"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

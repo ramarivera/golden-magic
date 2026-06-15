@@ -1,0 +1,10 @@
+id = "known.disable-devtool.rules"
+name = "disable-devtool rule list"
+priority = 50
+
+[matches]
+required_substrings = ["rule\tmode","debugger\tstrict"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

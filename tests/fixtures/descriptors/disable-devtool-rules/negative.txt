@@ -1,0 +1,2 @@
+rule mode state
+debugger strict enabled

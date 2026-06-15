@@ -1,0 +1,4 @@
+session	user state
+prod-shell	ramiro active
+jump-host	ops active
+old-shell	audit closed

@@ -1,0 +1,10 @@
+id = "known.remove-ai-watermarks.files"
+name = "remove-ai-watermarks file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\toperation","sample.png\tclean"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

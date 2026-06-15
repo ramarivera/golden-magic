@@ -1,0 +1,10 @@
+id = "known.linuxupskillchallenge.lessons"
+name = "Linux Upskill Challenge lesson list"
+priority = 50
+
+[matches]
+required_substrings = ["lesson\tday","permissions\t7"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

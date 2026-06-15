@@ -1,0 +1,4 @@
+tab	cwd state
+build	/work active
+logs	/var/log active
+old	/tmp closed

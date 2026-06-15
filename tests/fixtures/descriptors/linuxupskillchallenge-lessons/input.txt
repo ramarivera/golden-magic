@@ -1,0 +1,4 @@
+lesson	day state
+permissions	7 ready
+ssh	3 ready
+legacy	1 archived

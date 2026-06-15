@@ -15910,5 +15910,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/matomo-org/device-detector",
+    "descriptor_id": "known.device-detector.results",
+    "run_id": "agentic.device-detector-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/device-detector-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/device-detector-results/expected.rows.json",
+    "variants": [
+      "result header row",
+      "client row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.device-detector.results for device-detector result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bastillion-io/Bastillion",
+    "descriptor_id": "known.bastillion.sessions",
+    "run_id": "agentic.bastillion-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bastillion-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bastillion-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "user row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bastillion.sessions for Bastillion session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/snori74/linuxupskillchallenge",
+    "descriptor_id": "known.linuxupskillchallenge.lessons",
+    "run_id": "agentic.linuxupskillchallenge-lessons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/linuxupskillchallenge-lessons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/linuxupskillchallenge-lessons/expected.rows.json",
+    "variants": [
+      "lesson header row",
+      "day row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.linuxupskillchallenge.lessons for Linux Upskill Challenge lesson list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ndeadly/MissionControl",
+    "descriptor_id": "known.missioncontrol.controllers",
+    "run_id": "agentic.missioncontrol-controllers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/missioncontrol-controllers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/missioncontrol-controllers/expected.rows.json",
+    "variants": [
+      "controller header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.missioncontrol.controllers for MissionControl controller list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/theajack/disable-devtool",
+    "descriptor_id": "known.disable-devtool.rules",
+    "run_id": "agentic.disable-devtool-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/disable-devtool-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/disable-devtool-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.disable-devtool.rules for disable-devtool rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/CommandCodeAI/command-code",
+    "descriptor_id": "known.command-code.agents",
+    "run_id": "agentic.command-code-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/command-code-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/command-code-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "role row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.command-code.agents for Command Code agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wiltodelta/remove-ai-watermarks",
+    "descriptor_id": "known.remove-ai-watermarks.files",
+    "run_id": "agentic.remove-ai-watermarks-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/remove-ai-watermarks-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/remove-ai-watermarks-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "operation row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.remove-ai-watermarks.files for remove-ai-watermarks file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/std-microblock/breeze-shell",
+    "descriptor_id": "known.breeze-shell.items",
+    "run_id": "agentic.breeze-shell-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/breeze-shell-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/breeze-shell-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.breeze-shell.items for breeze-shell item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Netflix/consoleme",
+    "descriptor_id": "known.consoleme.requests",
+    "run_id": "agentic.consoleme-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/consoleme-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/consoleme-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "principal row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.consoleme.requests for ConsoleMe request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/liamg/darktile",
+    "descriptor_id": "known.darktile.tabs",
+    "run_id": "agentic.darktile-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/darktile-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/darktile-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "cwd row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.darktile.tabs for darktile tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
