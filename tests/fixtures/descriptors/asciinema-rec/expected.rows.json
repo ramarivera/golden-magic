@@ -1,0 +1,18 @@
+[
+  {
+    "key": "asciicast",
+    "value": "/tmp/demo.cast"
+  },
+  {
+    "key": "duration",
+    "value": "12.4s"
+  },
+  {
+    "key": "idle_time_limit",
+    "value": "2.0s"
+  },
+  {
+    "key": "command",
+    "value": "nu"
+  }
+]

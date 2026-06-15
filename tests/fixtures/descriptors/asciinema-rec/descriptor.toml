@@ -1,0 +1,10 @@
+id = "known.asciinema.rec"
+name = "asciinema rec summary"
+priority = 50
+
+[matches]
+required_substrings = ["asciicast:","duration:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

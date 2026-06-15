@@ -1,0 +1,18 @@
+[
+  {
+    "key": "service",
+    "value": "helloworld.Greeter"
+  },
+  {
+    "key": "method",
+    "value": "SayHello"
+  },
+  {
+    "key": "method",
+    "value": "SayGoodbye"
+  },
+  {
+    "key": "address",
+    "value": "localhost:50051"
+  }
+]

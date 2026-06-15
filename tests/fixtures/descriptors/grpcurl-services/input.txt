@@ -1,0 +1,4 @@
+service: helloworld.Greeter
+method: SayHello
+method: SayGoodbye
+address: localhost:50051

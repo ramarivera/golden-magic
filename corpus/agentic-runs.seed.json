@@ -718,5 +718,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/asciinema/asciinema",
+    "descriptor_id": "known.asciinema.rec",
+    "run_id": "agentic.asciinema-rec.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asciinema-rec/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asciinema-rec/expected.rows.json",
+    "variants": [
+      "cast path row",
+      "duration row",
+      "command row"
+    ],
+    "transcript": [
+      "selected descriptor known.asciinema.rec for asciinema rec summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pypa/pipx",
+    "descriptor_id": "known.pipx.list",
+    "run_id": "agentic.pipx-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pipx-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pipx-list/expected.rows.json",
+    "variants": [
+      "package row",
+      "version row",
+      "apps list row"
+    ],
+    "transcript": [
+      "selected descriptor known.pipx.list for pipx list package summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fullstorydev/grpcurl",
+    "descriptor_id": "known.grpcurl.services",
+    "run_id": "agentic.grpcurl-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/grpcurl-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/grpcurl-services/expected.rows.json",
+    "variants": [
+      "service row",
+      "repeated method rows",
+      "address row"
+    ],
+    "transcript": [
+      "selected descriptor known.grpcurl.services for grpcurl service listing output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mas-cli/mas",
+    "descriptor_id": "known.mas.list",
+    "run_id": "agentic.mas-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mas-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mas-list/expected.rows.json",
+    "variants": [
+      "numeric app id",
+      "app name",
+      "multiple installed apps"
+    ],
+    "transcript": [
+      "selected descriptor known.mas.list for mas list installed apps output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/simonw/llm",
+    "descriptor_id": "known.llm.models",
+    "run_id": "agentic.llm-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/llm-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/llm-models/expected.rows.json",
+    "variants": [
+      "provider model id",
+      "model description",
+      "local model row"
+    ],
+    "transcript": [
+      "selected descriptor known.llm.models for llm models list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

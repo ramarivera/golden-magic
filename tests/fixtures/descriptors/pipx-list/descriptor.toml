@@ -1,0 +1,10 @@
+id = "known.pipx.list"
+name = "pipx list package summary"
+priority = 50
+
+[matches]
+required_substrings = ["package:","apps:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

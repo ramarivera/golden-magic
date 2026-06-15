@@ -238,5 +238,65 @@
     "negative": "Project golden-magic\nLanguage Rust\n",
     "analysis_notes": "Modeled onefetch repository summary output with a generated executable-json parser plugin.",
     "variants": ["project row", "language row", "license row"]
+  },
+  {
+    "fixture": "asciinema-rec",
+    "descriptor_id": "known.asciinema.rec",
+    "name": "asciinema rec summary",
+    "repo": "https://github.com/asciinema/asciinema",
+    "required_substrings": ["asciicast:", "duration:"],
+    "parser": "colon-kv",
+    "input": "asciicast: /tmp/demo.cast\nduration: 12.4s\nidle_time_limit: 2.0s\ncommand: nu\n",
+    "negative": "asciicast /tmp/demo.cast\nduration 12.4s\n",
+    "analysis_notes": "Modeled asciinema recording summary output with a generated executable-json parser plugin.",
+    "variants": ["cast path row", "duration row", "command row"]
+  },
+  {
+    "fixture": "pipx-list",
+    "descriptor_id": "known.pipx.list",
+    "name": "pipx list package summary",
+    "repo": "https://github.com/pypa/pipx",
+    "required_substrings": ["package:", "apps:"],
+    "parser": "colon-kv",
+    "input": "package: black\nversion: 24.4.2\napps: black, blackd\nvenv: /Users/ramiro/.local/pipx/venvs/black\n",
+    "negative": "package black\napps black, blackd\n",
+    "analysis_notes": "Modeled pipx list package summary output with a generated executable-json parser plugin.",
+    "variants": ["package row", "version row", "apps list row"]
+  },
+  {
+    "fixture": "grpcurl-services",
+    "descriptor_id": "known.grpcurl.services",
+    "name": "grpcurl service listing",
+    "repo": "https://github.com/fullstorydev/grpcurl",
+    "required_substrings": ["service:", "method:"],
+    "parser": "colon-kv",
+    "input": "service: helloworld.Greeter\nmethod: SayHello\nmethod: SayGoodbye\naddress: localhost:50051\n",
+    "negative": "service helloworld.Greeter\nmethod SayHello\n",
+    "analysis_notes": "Modeled grpcurl service/method listing output with a generated executable-json parser plugin.",
+    "variants": ["service row", "repeated method rows", "address row"]
+  },
+  {
+    "fixture": "mas-list",
+    "descriptor_id": "known.mas.list",
+    "name": "mas list installed apps",
+    "repo": "https://github.com/mas-cli/mas",
+    "required_substrings": ["497799835\tXcode", "409183694\tKeynote"],
+    "parser": "tab-pairs",
+    "input": "497799835\tXcode\n409183694\tKeynote\n441258766\tMagnet\n",
+    "negative": "497799835 Xcode\n409183694 Keynote\n",
+    "analysis_notes": "Modeled mas installed-app list output with a generated executable-json parser plugin.",
+    "variants": ["numeric app id", "app name", "multiple installed apps"]
+  },
+  {
+    "fixture": "llm-models",
+    "descriptor_id": "known.llm.models",
+    "name": "llm models list",
+    "repo": "https://github.com/simonw/llm",
+    "required_substrings": ["gpt-5\tOpenAI flagship", "local-llama\tLocal model"],
+    "parser": "tab-pairs",
+    "input": "gpt-5\tOpenAI flagship\nclaude-sonnet-4.5\tAnthropic coding\nlocal-llama\tLocal model\n",
+    "negative": "gpt-5 OpenAI flagship\nlocal-llama Local model\n",
+    "analysis_notes": "Modeled llm model-list output with a generated executable-json parser plugin.",
+    "variants": ["provider model id", "model description", "local model row"]
   }
 ]

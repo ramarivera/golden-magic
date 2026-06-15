@@ -1,0 +1,3 @@
+gpt-5	OpenAI flagship
+claude-sonnet-4.5	Anthropic coding
+local-llama	Local model

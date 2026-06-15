@@ -278,5 +278,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/onefetch-summary",
     "analysis_notes": "Modeled onefetch repository summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/asciinema/asciinema",
+    "descriptor_id": "known.asciinema.rec",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asciinema-rec",
+    "analysis_notes": "Modeled asciinema recording summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pypa/pipx",
+    "descriptor_id": "known.pipx.list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pipx-list",
+    "analysis_notes": "Modeled pipx list package summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fullstorydev/grpcurl",
+    "descriptor_id": "known.grpcurl.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/grpcurl-services",
+    "analysis_notes": "Modeled grpcurl service/method listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mas-cli/mas",
+    "descriptor_id": "known.mas.list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mas-list",
+    "analysis_notes": "Modeled mas installed-app list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/simonw/llm",
+    "descriptor_id": "known.llm.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/llm-models",
+    "analysis_notes": "Modeled llm model-list output with a generated executable-json parser plugin."
   }
 ]

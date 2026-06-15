@@ -1,0 +1,14 @@
+[
+  {
+    "name": "gpt-5",
+    "value": "OpenAI flagship"
+  },
+  {
+    "name": "claude-sonnet-4.5",
+    "value": "Anthropic coding"
+  },
+  {
+    "name": "local-llama",
+    "value": "Local model"
+  }
+]

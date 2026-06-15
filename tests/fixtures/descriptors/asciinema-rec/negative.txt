@@ -1,0 +1,2 @@
+asciicast /tmp/demo.cast
+duration 12.4s

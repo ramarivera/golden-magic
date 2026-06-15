@@ -1,0 +1,4 @@
+asciicast: /tmp/demo.cast
+duration: 12.4s
+idle_time_limit: 2.0s
+command: nu

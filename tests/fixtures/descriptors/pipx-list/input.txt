@@ -1,0 +1,4 @@
+package: black
+version: 24.4.2
+apps: black, blackd
+venv: /Users/ramiro/.local/pipx/venvs/black

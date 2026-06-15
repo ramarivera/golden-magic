@@ -1,0 +1,10 @@
+id = "known.llm.models"
+name = "llm models list"
+priority = 50
+
+[matches]
+required_substrings = ["gpt-5\tOpenAI flagship","local-llama\tLocal model"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
