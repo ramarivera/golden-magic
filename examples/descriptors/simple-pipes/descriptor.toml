@@ -1,0 +1,9 @@
+id = "example.simple-pipes"
+name = "Example Simple Pipes"
+priority = 10
+
+[matches]
+required_substrings = ["NAME|STATUS"]
+
+[parser]
+only_rules = ["detect.delimited.pipes"]

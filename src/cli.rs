@@ -23,6 +23,9 @@ struct Args {
     #[arg(long = "descriptor-dir")]
     descriptor_dirs: Vec<PathBuf>,
 
+    #[arg(long = "validate-descriptor-dir")]
+    validate_descriptor_dirs: Vec<PathBuf>,
+
     #[arg(long)]
     config: Option<PathBuf>,
 
@@ -68,6 +71,11 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
         for rule_id in known_rule_ids() {
             println!("{rule_id}");
         }
+        return Ok(());
+    }
+
+    if !args.validate_descriptor_dirs.is_empty() {
+        validate_descriptor_dirs(&args.validate_descriptor_dirs)?;
         return Ok(());
     }
 
@@ -206,6 +214,21 @@ fn descriptor_options(
     }
 
     Ok(options)
+}
+
+fn validate_descriptor_dirs(dirs: &[PathBuf]) -> Result<(), Box<dyn std::error::Error>> {
+    let mut total = 0usize;
+
+    for dir in dirs {
+        let registry = DescriptorRegistry::load_dir(dir)?;
+        reject_unknown_descriptor_rules(&registry)?;
+        let count = registry.descriptors().len();
+        total += count;
+        println!("validated {count} descriptor(s) from {}", dir.display());
+    }
+
+    println!("validated {total} descriptor(s) total");
+    Ok(())
 }
 
 fn reject_unknown_descriptor_rules(

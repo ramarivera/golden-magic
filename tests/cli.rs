@@ -197,6 +197,58 @@ only_rules = ["detect.nope"]
 }
 
 #[test]
+fn cli_validates_descriptor_dir_without_stdin() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("pipes.toml"),
+        r#"
+id = "sdk.pipes"
+name = "SDK Pipes"
+priority = 10
+[matches]
+required_substrings = ["|"]
+[parser]
+only_rules = ["detect.delimited.pipes"]
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--validate-descriptor-dir")
+        .arg(dir.path())
+        .assert()
+        .success()
+        .stdout(predicates::str::contains("validated 1 descriptor(s)"))
+        .stdout(predicates::str::contains("validated 1 descriptor(s) total"));
+}
+
+#[test]
+fn cli_descriptor_validation_rejects_unknown_rule_ids() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("bad.toml"),
+        r#"
+id = "sdk.bad"
+name = "SDK Bad"
+[parser]
+only_rules = ["detect.nope"]
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--validate-descriptor-dir")
+        .arg(dir.path())
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "descriptor contains unknown rule id(s): detect.nope",
+        ));
+}
+
+#[test]
 fn cli_loads_default_xdg_descriptor_dir() {
     let config_home = tempdir().expect("temp config home");
     let descriptor_dir = config_home.path().join("golden-magic").join("descriptors");

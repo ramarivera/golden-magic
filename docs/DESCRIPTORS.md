@@ -46,6 +46,14 @@ CLI integration:
 golden-magic --descriptor-dir ./descriptors
 ```
 
+Author validation:
+
+```bash
+golden-magic --validate-descriptor-dir ./descriptors
+```
+
+The validation command loads descriptor TOML files, rejects duplicate descriptor ids, and checks parser rule ids without reading stdin.
+
 Default discovery:
 
 ```text
@@ -82,3 +90,9 @@ The harness verifies isolated descriptor selection, negative inputs, expected pa
 Not wired yet:
 
 - descriptor conflict diagnostics beyond duplicate ids
+
+See also:
+
+- [`docs/SDK.md`](SDK.md)
+- [`schemas/descriptor.schema.json`](../schemas/descriptor.schema.json)
+- [`examples/descriptors/simple-pipes/`](../examples/descriptors/simple-pipes/)

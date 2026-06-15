@@ -70,6 +70,12 @@ Inspect available heuristic rules:
 golden-magic --list-rules
 ```
 
+Validate descriptor packs without stdin:
+
+```bash
+golden-magic --validate-descriptor-dir ./descriptors
+```
+
 Explain parser selection without returning parsed rows:
 
 ```bash
@@ -137,17 +143,19 @@ Implemented generic heuristics:
 - Nushell wrapper commands `from golden-magic`, `from gold`, `from golden`, `from magic`, and `from magia` in `nu/golden-magic.nu`
 - optional native Nushell plugin binary `nu_plugin_golden_magic` exporting the same `from ...` aliases behind the `nu-plugin` Cargo feature
 - descriptor registry loading with `--descriptor-dir` in the CLI, wrapper, and native plugin paths
+- descriptor author validation with `--validate-descriptor-dir`
 - default descriptor discovery from XDG config with `--no-default-descriptors` opt-out
 - config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml` in the CLI and native plugin paths
 - optional descriptor-driven Nix manifest fixture harness for real CLI isolation
 - known-tool descriptor corpus with fixture coverage for representative CLI output shapes
+- extension-author SDK docs, descriptor schema, validation command, and example descriptor pack
 - Criterion benchmark harness and cargo-test parser performance gates
 
 Not implemented yet:
 
 - arbitrary Rust runtime extension/plugin loading; current extension design explicitly prefers descriptor packs, subprocesses, and WASM/WASI before native loading
 - grammar engine beyond the current heuristic parser
-- rich extension-author SDK beyond TOML descriptor and fixture conventions
+- native runtime extension SDK; the supported SDK surface today is descriptor authoring
 - guaranteed live Nix fixture execution on machines without `nix`; optional Nix fixtures skip when Nix is unavailable
 - hidden debug channel; current design explicitly rejects hidden channels by default
 
@@ -156,6 +164,7 @@ See:
 - [`docs/VISION.md`](docs/VISION.md)
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/DESCRIPTORS.md`](docs/DESCRIPTORS.md)
+- [`docs/SDK.md`](docs/SDK.md)
 - [`docs/KNOWN-TOOLS.md`](docs/KNOWN-TOOLS.md)
 - [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md)
 - [`docs/NIX-FIXTURES.md`](docs/NIX-FIXTURES.md)

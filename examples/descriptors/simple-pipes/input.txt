@@ -1,0 +1,3 @@
+NAME|STATUS
+alpha|ok
+beta|blocked

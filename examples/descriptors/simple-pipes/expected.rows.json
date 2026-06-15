@@ -1,0 +1,14 @@
+[
+  {
+    "column0": "NAME",
+    "column1": "STATUS"
+  },
+  {
+    "column0": "alpha",
+    "column1": "ok"
+  },
+  {
+    "column0": "beta",
+    "column1": "blocked"
+  }
+]
