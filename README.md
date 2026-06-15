@@ -2,10 +2,11 @@
 
 Golden Magic is an experimental parser for turning hostile, table-ish CLI text into structured data for Nushell-oriented workflows without requiring upstream JSON.
 
-It currently provides a Rust core, a small CLI adapter, a Nushell wrapper module, and a native Nushell plugin binary:
+It currently provides a Rust core, CLI binaries, a Nushell wrapper module, and an optional native Nushell plugin binary:
 
 ```bash
 printf 'alpha\tbeta\ngamma\tdelta\n' | golden-magic
+# aliases also work: gold, golden, magic, magia
 ```
 
 ```nu
@@ -13,12 +14,28 @@ use ./nu/golden-magic.nu *
 "name\tstatus\nalpha\tok\n" | from golden-magic --headers first-row
 ```
 
+Build the optional native plugin:
+
+```bash
+cargo build --features nu-plugin --bin nu_plugin_golden_magic
+```
+
 Native plugin smoke path:
 
 ```nu
 plugin add ./target/debug/nu_plugin_golden_magic
 plugin use golden_magic
-"name\tstatus\nalpha\tok\n" | from golden-magic --headers first-row
+"name\tstatus\nalpha\tok\n" | from gold --headers first-row
+```
+
+Nushell command aliases work in both the wrapper and native plugin paths:
+
+```nu
+from golden-magic
+from gold
+from golden
+from magic
+from magia
 ```
 
 By default, the output is a JSON `ParseReport` containing:
@@ -116,8 +133,9 @@ Implemented generic heuristics:
 - row-only output with `--output rows-json`
 - trace-only output with `--output trace-json` or `--explain`
 - generated or first-row header modes with `--headers generated|first-row`
-- Nushell wrapper command `from golden-magic` in `nu/golden-magic.nu`
-- native Nushell plugin binary `nu_plugin_golden_magic` exporting `from golden-magic`
+- CLI binaries `golden-magic`, `gold`, `golden`, `magic`, and `magia`
+- Nushell wrapper commands `from golden-magic`, `from gold`, `from golden`, `from magic`, and `from magia` in `nu/golden-magic.nu`
+- optional native Nushell plugin binary `nu_plugin_golden_magic` exporting the same `from ...` aliases behind the `nu-plugin` Cargo feature
 - descriptor registry loading with `--descriptor-dir`
 - default descriptor discovery from XDG config with `--no-default-descriptors` opt-out
 - config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml`
@@ -147,6 +165,8 @@ See:
 cargo fmt --check
 cargo clippy -- -D warnings
 cargo test
+cargo clippy --features nu-plugin -- -D warnings
+cargo test --features nu-plugin
 cargo bench --bench parser -- --sample-size 10
 ```
 

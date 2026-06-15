@@ -1,9 +1,11 @@
+#![cfg(feature = "nu-plugin")]
+
 use assert_cmd::cargo::cargo_bin;
 use std::process::{Command, Stdio};
 use tempfile::tempdir;
 
 #[test]
-fn native_nu_plugin_exports_from_golden_magic() {
+fn native_nu_plugin_exports_all_from_aliases() {
     let Some(nu) = find_on_path("nu") else {
         eprintln!("skipping native Nu plugin test; nu is not available on PATH");
         return;
@@ -31,26 +33,36 @@ fn native_nu_plugin_exports_from_golden_magic() {
         String::from_utf8_lossy(&add.stderr)
     );
 
-    let run = Command::new(&nu)
-        .arg("--plugin-config")
-        .arg(&plugin_config)
-        .arg("-c")
-        .arg("plugin use golden_magic; 'name\tstatus\nalpha\tok\n' | from golden-magic --headers first-row | to json -r")
-        .stdin(Stdio::null())
-        .output()
-        .expect("nu plugin command starts");
+    for command in [
+        "from golden-magic",
+        "from gold",
+        "from golden",
+        "from magic",
+        "from magia",
+    ] {
+        let run = Command::new(&nu)
+            .arg("--plugin-config")
+            .arg(&plugin_config)
+            .arg("-c")
+            .arg(format!(
+                "plugin use golden_magic; 'name\tstatus\nalpha\tok\n' | {command} --headers first-row | to json -r"
+            ))
+            .stdin(Stdio::null())
+            .output()
+            .expect("nu plugin command starts");
 
-    assert!(
-        run.status.success(),
-        "plugin command failed\nstdout: {}\nstderr: {}",
-        String::from_utf8_lossy(&run.stdout),
-        String::from_utf8_lossy(&run.stderr)
-    );
+        assert!(
+            run.status.success(),
+            "plugin command failed for {command}\nstdout: {}\nstderr: {}",
+            String::from_utf8_lossy(&run.stdout),
+            String::from_utf8_lossy(&run.stderr)
+        );
 
-    let rows: serde_json::Value =
-        serde_json::from_slice(&run.stdout).expect("plugin emits JSON-serializable Nu rows");
-    assert_eq!(rows[0]["name"], "alpha");
-    assert_eq!(rows[0]["status"], "ok");
+        let rows: serde_json::Value =
+            serde_json::from_slice(&run.stdout).expect("plugin emits JSON-serializable Nu rows");
+        assert_eq!(rows[0]["name"], "alpha", "plugin alias {command}");
+        assert_eq!(rows[0]["status"], "ok", "plugin alias {command}");
+    }
 }
 
 fn find_on_path(binary: &str) -> Option<String> {

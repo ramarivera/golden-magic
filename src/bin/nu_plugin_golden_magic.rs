@@ -5,7 +5,9 @@ use nu_protocol::{
 };
 
 struct GoldenMagicPlugin;
-struct FromGoldenMagic;
+struct FromGoldenMagic {
+    name: &'static str,
+}
 
 impl Plugin for GoldenMagicPlugin {
     fn version(&self) -> String {
@@ -13,7 +15,18 @@ impl Plugin for GoldenMagicPlugin {
     }
 
     fn commands(&self) -> Vec<Box<dyn nu_plugin::PluginCommand<Plugin = Self>>> {
-        vec![Box::new(FromGoldenMagic)]
+        [
+            "from golden-magic",
+            "from gold",
+            "from golden",
+            "from magic",
+            "from magia",
+        ]
+        .into_iter()
+        .map(|name| {
+            Box::new(FromGoldenMagic { name }) as Box<dyn nu_plugin::PluginCommand<Plugin = Self>>
+        })
+        .collect()
     }
 }
 
@@ -21,7 +34,7 @@ impl SimplePluginCommand for FromGoldenMagic {
     type Plugin = GoldenMagicPlugin;
 
     fn name(&self) -> &str {
-        "from golden-magic"
+        self.name
     }
 
     fn description(&self) -> &str {

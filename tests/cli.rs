@@ -4,6 +4,29 @@ use std::fs;
 use tempfile::tempdir;
 
 #[test]
+fn cli_alias_binaries_parse_rows() {
+    for binary in ["golden-magic", "gold", "golden", "magic", "magia"] {
+        let output = Command::cargo_bin(binary)
+            .expect("binary exists")
+            .arg("--no-default-descriptors")
+            .arg("--output")
+            .arg("rows-json")
+            .arg("--headers")
+            .arg("first-row")
+            .write_stdin("name\tstatus\nalpha\tok\n")
+            .assert()
+            .success()
+            .get_output()
+            .stdout
+            .clone();
+
+        let rows: Value = serde_json::from_slice(&output).expect("valid JSON rows");
+        assert_eq!(rows[0]["name"], "alpha", "binary alias {binary}");
+        assert_eq!(rows[0]["status"], "ok", "binary alias {binary}");
+    }
+}
+
+#[test]
 fn cli_parses_tabular_stdin_as_json_report() {
     let output = Command::cargo_bin("golden-magic")
         .expect("binary exists")
