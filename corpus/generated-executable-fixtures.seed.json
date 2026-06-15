@@ -2938,5 +2938,65 @@
     "negative": "section enabled order\ngit true 20\n",
     "analysis_notes": "Modeled Spaceship prompt section output with a generated executable-json parser plugin.",
     "variants": ["section header row", "enabled row", "order field"]
+  },
+  {
+    "fixture": "kilocode-agents",
+    "descriptor_id": "known.kilocode.agents",
+    "name": "Kilo Code agent list",
+    "repo": "https://github.com/Kilo-Org/kilocode",
+    "required_substrings": ["agent\tstatus", "coder\tready"],
+    "parser": "tab-pairs",
+    "input": "agent\tstatus tasks\ncoder\tready 4\nreviewer\tbusy 2\nplanner\tready 1\n",
+    "negative": "agent status tasks\ncoder ready 4\n",
+    "analysis_notes": "Modeled Kilo Code agent output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "status row", "tasks field"]
+  },
+  {
+    "fixture": "vhs-tapes",
+    "descriptor_id": "known.vhs.tapes",
+    "name": "VHS tape list",
+    "repo": "https://github.com/charmbracelet/vhs",
+    "required_substrings": ["tape\tstatus", "demo.tape\trendered"],
+    "parser": "tab-pairs",
+    "input": "tape\tstatus frames\ndemo.tape\trendered 240\ninstall.tape\tqueued 180\nerror.tape\tfailed 12\n",
+    "negative": "tape status frames\ndemo.tape rendered 240\n",
+    "analysis_notes": "Modeled VHS tape output with a generated executable-json parser plugin.",
+    "variants": ["tape header row", "status row", "frames field"]
+  },
+  {
+    "fixture": "peass-ng-checks",
+    "descriptor_id": "known.peass-ng.checks",
+    "name": "PEASS-ng check list",
+    "repo": "https://github.com/peass-ng/PEASS-ng",
+    "required_substrings": ["check\tseverity", "sudoers\thigh"],
+    "parser": "tab-pairs",
+    "input": "check\tseverity state\nsudoers\thigh found\nsuid\tmedium found\nkernel\tlow skipped\n",
+    "negative": "check severity state\nsudoers high found\n",
+    "analysis_notes": "Modeled PEASS-ng check output with a generated executable-json parser plugin.",
+    "variants": ["check header row", "severity row", "state field"]
+  },
+  {
+    "fixture": "ish-packages",
+    "descriptor_id": "known.ish.packages",
+    "name": "iSH package list",
+    "repo": "https://github.com/ish-app/ish",
+    "required_substrings": ["package\tstatus", "busybox\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "package\tstatus version\nbusybox\tinstalled 1.36\napk-tools\tinstalled 2.14\nvim\tavailable 9.1\n",
+    "negative": "package status version\nbusybox installed 1.36\n",
+    "analysis_notes": "Modeled iSH package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "status row", "version field"]
+  },
+  {
+    "fixture": "suna-workflows",
+    "descriptor_id": "known.suna.workflows",
+    "name": "Suna workflow list",
+    "repo": "https://github.com/kortix-ai/suna",
+    "required_substrings": ["workflow\tstate", "research\trunning"],
+    "parser": "tab-pairs",
+    "input": "workflow\tstate steps\nresearch\trunning 6\nbrowser-task\tqueued 3\nreport\tdone 8\n",
+    "negative": "workflow state steps\nresearch running 6\n",
+    "analysis_notes": "Modeled Suna workflow output with a generated executable-json parser plugin.",
+    "variants": ["workflow header row", "state row", "steps field"]
   }
 ]

@@ -1,0 +1,4 @@
+workflow	state steps
+research	running 6
+browser-task	queued 3
+report	done 8

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "status version"
+  },
+  {
+    "name": "busybox",
+    "value": "installed 1.36"
+  },
+  {
+    "name": "apk-tools",
+    "value": "installed 2.14"
+  },
+  {
+    "name": "vim",
+    "value": "available 9.1"
+  }
+]

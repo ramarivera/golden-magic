@@ -1,0 +1,4 @@
+agent	status tasks
+coder	ready 4
+reviewer	busy 2
+planner	ready 1

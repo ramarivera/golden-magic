@@ -1,0 +1,2 @@
+package status version
+busybox installed 1.36

@@ -4768,5 +4768,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Kilo-Org/kilocode",
+    "descriptor_id": "known.kilocode.agents",
+    "run_id": "agentic.kilocode-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kilocode-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kilocode-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "status row",
+      "tasks field"
+    ],
+    "transcript": [
+      "selected descriptor known.kilocode.agents for Kilo Code agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/vhs",
+    "descriptor_id": "known.vhs.tapes",
+    "run_id": "agentic.vhs-tapes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vhs-tapes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vhs-tapes/expected.rows.json",
+    "variants": [
+      "tape header row",
+      "status row",
+      "frames field"
+    ],
+    "transcript": [
+      "selected descriptor known.vhs.tapes for VHS tape list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/peass-ng/PEASS-ng",
+    "descriptor_id": "known.peass-ng.checks",
+    "run_id": "agentic.peass-ng-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/peass-ng-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/peass-ng-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "severity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.peass-ng.checks for PEASS-ng check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ish-app/ish",
+    "descriptor_id": "known.ish.packages",
+    "run_id": "agentic.ish-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ish-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ish-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "status row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.ish.packages for iSH package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kortix-ai/suna",
+    "descriptor_id": "known.suna.workflows",
+    "run_id": "agentic.suna-workflows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/suna-workflows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/suna-workflows/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "state row",
+      "steps field"
+    ],
+    "transcript": [
+      "selected descriptor known.suna.workflows for Suna workflow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

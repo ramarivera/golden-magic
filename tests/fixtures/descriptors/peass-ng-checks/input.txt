@@ -1,0 +1,4 @@
+check	severity state
+sudoers	high found
+suid	medium found
+kernel	low skipped

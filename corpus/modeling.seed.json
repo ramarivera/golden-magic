@@ -1853,5 +1853,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/spaceship-prompt-sections",
     "analysis_notes": "Modeled Spaceship prompt section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Kilo-Org/kilocode",
+    "descriptor_id": "known.kilocode.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kilocode-agents",
+    "analysis_notes": "Modeled Kilo Code agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/charmbracelet/vhs",
+    "descriptor_id": "known.vhs.tapes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vhs-tapes",
+    "analysis_notes": "Modeled VHS tape output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/peass-ng/PEASS-ng",
+    "descriptor_id": "known.peass-ng.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/peass-ng-checks",
+    "analysis_notes": "Modeled PEASS-ng check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ish-app/ish",
+    "descriptor_id": "known.ish.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ish-packages",
+    "analysis_notes": "Modeled iSH package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kortix-ai/suna",
+    "descriptor_id": "known.suna.workflows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/suna-workflows",
+    "analysis_notes": "Modeled Suna workflow output with a generated executable-json parser plugin."
   }
 ]

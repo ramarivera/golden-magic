@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tape",
+    "value": "status frames"
+  },
+  {
+    "name": "demo.tape",
+    "value": "rendered 240"
+  },
+  {
+    "name": "install.tape",
+    "value": "queued 180"
+  },
+  {
+    "name": "error.tape",
+    "value": "failed 12"
+  }
+]

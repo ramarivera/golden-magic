@@ -1,0 +1,10 @@
+id = "known.ish.packages"
+name = "iSH package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstatus","busybox\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

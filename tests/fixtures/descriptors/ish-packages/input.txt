@@ -1,0 +1,4 @@
+package	status version
+busybox	installed 1.36
+apk-tools	installed 2.14
+vim	available 9.1

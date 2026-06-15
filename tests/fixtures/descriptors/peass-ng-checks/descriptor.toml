@@ -1,0 +1,10 @@
+id = "known.peass-ng.checks"
+name = "PEASS-ng check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tseverity","sudoers\thigh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
