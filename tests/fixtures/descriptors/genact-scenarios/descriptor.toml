@@ -1,0 +1,10 @@
+id = "known.genact.scenarios"
+name = "genact scenario list"
+priority = 50
+
+[matches]
+required_substrings = ["scenario\tstate","cargo\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

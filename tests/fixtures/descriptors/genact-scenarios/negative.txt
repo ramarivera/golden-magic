@@ -1,0 +1,2 @@
+scenario state weight
+cargo available 10

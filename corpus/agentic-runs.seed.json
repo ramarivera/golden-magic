@@ -6658,5 +6658,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/TheR1D/shell_gpt",
+    "descriptor_id": "known.shell-gpt.chats",
+    "run_id": "agentic.shell-gpt-chats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shell-gpt-chats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shell-gpt-chats/expected.rows.json",
+    "variants": [
+      "chat header row",
+      "status row",
+      "messages field"
+    ],
+    "transcript": [
+      "selected descriptor known.shell-gpt.chats for shell_gpt chat list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/svenstaro/genact",
+    "descriptor_id": "known.genact.scenarios",
+    "run_id": "agentic.genact-scenarios.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/genact-scenarios/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/genact-scenarios/expected.rows.json",
+    "variants": [
+      "scenario header row",
+      "state row",
+      "weight field"
+    ],
+    "transcript": [
+      "selected descriptor known.genact.scenarios for genact scenario list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/icloud-photos-downloader/icloud_photos_downloader",
+    "descriptor_id": "known.icloud-photos.downloads",
+    "run_id": "agentic.icloud-photos-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/icloud-photos-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/icloud-photos-downloads/expected.rows.json",
+    "variants": [
+      "photo header row",
+      "status row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.icloud-photos.downloads for icloud photos download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/privatenumber/tsx",
+    "descriptor_id": "known.tsx.runs",
+    "run_id": "agentic.tsx-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tsx-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tsx-runs/expected.rows.json",
+    "variants": [
+      "script header row",
+      "mode row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.tsx.runs for tsx run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/adnanh/webhook",
+    "descriptor_id": "known.webhook.hooks",
+    "run_id": "agentic.webhook-hooks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/webhook-hooks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/webhook-hooks/expected.rows.json",
+    "variants": [
+      "hook header row",
+      "status row",
+      "calls field"
+    ],
+    "transcript": [
+      "selected descriptor known.webhook.hooks for webhook hook list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "photo",
+    "value": "status size"
+  },
+  {
+    "name": "IMG_0001.JPG",
+    "value": "downloaded 3.2MB"
+  },
+  {
+    "name": "IMG_0002.JPG",
+    "value": "skipped 2.8MB"
+  },
+  {
+    "name": "VID_0003.MOV",
+    "value": "queued 120MB"
+  }
+]

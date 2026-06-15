@@ -1,0 +1,4 @@
+hook	status calls
+deploy	enabled 42
+notify	enabled 11
+cleanup	disabled 0

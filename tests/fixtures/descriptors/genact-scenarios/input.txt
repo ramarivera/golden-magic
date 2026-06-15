@@ -1,0 +1,4 @@
+scenario	state weight
+cargo	available 10
+composer	available 8
+docker-build	disabled 5

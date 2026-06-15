@@ -1,0 +1,2 @@
+script mode duration
+index.ts watch 0.4s

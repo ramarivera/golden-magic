@@ -1,0 +1,4 @@
+chat	status messages
+default	active 12
+ops	archived 44
+scratch	active 3

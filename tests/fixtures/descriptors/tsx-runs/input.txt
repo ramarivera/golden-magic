@@ -1,0 +1,4 @@
+script	mode duration
+index.ts	watch 0.4s
+build.ts	run 1.2s
+test.ts	run 2.5s

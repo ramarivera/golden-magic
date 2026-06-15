@@ -1,0 +1,18 @@
+[
+  {
+    "name": "chat",
+    "value": "status messages"
+  },
+  {
+    "name": "default",
+    "value": "active 12"
+  },
+  {
+    "name": "ops",
+    "value": "archived 44"
+  },
+  {
+    "name": "scratch",
+    "value": "active 3"
+  }
+]

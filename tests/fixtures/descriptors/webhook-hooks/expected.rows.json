@@ -1,0 +1,18 @@
+[
+  {
+    "name": "hook",
+    "value": "status calls"
+  },
+  {
+    "name": "deploy",
+    "value": "enabled 42"
+  },
+  {
+    "name": "notify",
+    "value": "enabled 11"
+  },
+  {
+    "name": "cleanup",
+    "value": "disabled 0"
+  }
+]

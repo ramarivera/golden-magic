@@ -1,0 +1,4 @@
+photo	status size
+IMG_0001.JPG	downloaded 3.2MB
+IMG_0002.JPG	skipped 2.8MB
+VID_0003.MOV	queued 120MB

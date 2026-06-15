@@ -1,0 +1,10 @@
+id = "known.shell-gpt.chats"
+name = "shell_gpt chat list"
+priority = 50
+
+[matches]
+required_substrings = ["chat\tstatus","default\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

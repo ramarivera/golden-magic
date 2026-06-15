@@ -4198,5 +4198,65 @@
     "negative": "register value changed\nrip 0x401000 true\n",
     "analysis_notes": "Modeled gdb-dashboard register output with a generated executable-json parser plugin.",
     "variants": ["register header row", "value row", "changed field"]
+  },
+  {
+    "fixture": "shell-gpt-chats",
+    "descriptor_id": "known.shell-gpt.chats",
+    "name": "shell_gpt chat list",
+    "repo": "https://github.com/TheR1D/shell_gpt",
+    "required_substrings": ["chat\tstatus", "default\tactive"],
+    "parser": "tab-pairs",
+    "input": "chat\tstatus messages\ndefault\tactive 12\nops\tarchived 44\nscratch\tactive 3\n",
+    "negative": "chat status messages\ndefault active 12\n",
+    "analysis_notes": "Modeled shell_gpt chat output with a generated executable-json parser plugin.",
+    "variants": ["chat header row", "status row", "messages field"]
+  },
+  {
+    "fixture": "genact-scenarios",
+    "descriptor_id": "known.genact.scenarios",
+    "name": "genact scenario list",
+    "repo": "https://github.com/svenstaro/genact",
+    "required_substrings": ["scenario\tstate", "cargo\tavailable"],
+    "parser": "tab-pairs",
+    "input": "scenario\tstate weight\ncargo\tavailable 10\ncomposer\tavailable 8\ndocker-build\tdisabled 5\n",
+    "negative": "scenario state weight\ncargo available 10\n",
+    "analysis_notes": "Modeled genact scenario output with a generated executable-json parser plugin.",
+    "variants": ["scenario header row", "state row", "weight field"]
+  },
+  {
+    "fixture": "icloud-photos-downloads",
+    "descriptor_id": "known.icloud-photos.downloads",
+    "name": "icloud photos download list",
+    "repo": "https://github.com/icloud-photos-downloader/icloud_photos_downloader",
+    "required_substrings": ["photo\tstatus", "IMG_0001.JPG\tdownloaded"],
+    "parser": "tab-pairs",
+    "input": "photo\tstatus size\nIMG_0001.JPG\tdownloaded 3.2MB\nIMG_0002.JPG\tskipped 2.8MB\nVID_0003.MOV\tqueued 120MB\n",
+    "negative": "photo status size\nIMG_0001.JPG downloaded 3.2MB\n",
+    "analysis_notes": "Modeled icloud_photos_downloader output with a generated executable-json parser plugin.",
+    "variants": ["photo header row", "status row", "size field"]
+  },
+  {
+    "fixture": "tsx-runs",
+    "descriptor_id": "known.tsx.runs",
+    "name": "tsx run list",
+    "repo": "https://github.com/privatenumber/tsx",
+    "required_substrings": ["script\tmode", "index.ts\twatch"],
+    "parser": "tab-pairs",
+    "input": "script\tmode duration\nindex.ts\twatch 0.4s\nbuild.ts\trun 1.2s\ntest.ts\trun 2.5s\n",
+    "negative": "script mode duration\nindex.ts watch 0.4s\n",
+    "analysis_notes": "Modeled tsx run output with a generated executable-json parser plugin.",
+    "variants": ["script header row", "mode row", "duration field"]
+  },
+  {
+    "fixture": "webhook-hooks",
+    "descriptor_id": "known.webhook.hooks",
+    "name": "webhook hook list",
+    "repo": "https://github.com/adnanh/webhook",
+    "required_substrings": ["hook\tstatus", "deploy\tenabled"],
+    "parser": "tab-pairs",
+    "input": "hook\tstatus calls\ndeploy\tenabled 42\nnotify\tenabled 11\ncleanup\tdisabled 0\n",
+    "negative": "hook status calls\ndeploy enabled 42\n",
+    "analysis_notes": "Modeled webhook hook output with a generated executable-json parser plugin.",
+    "variants": ["hook header row", "status row", "calls field"]
   }
 ]

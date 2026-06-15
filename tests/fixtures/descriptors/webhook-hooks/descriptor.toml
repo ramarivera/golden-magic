@@ -1,0 +1,10 @@
+id = "known.webhook.hooks"
+name = "webhook hook list"
+priority = 50
+
+[matches]
+required_substrings = ["hook\tstatus","deploy\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

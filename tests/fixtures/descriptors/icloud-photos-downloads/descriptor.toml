@@ -1,0 +1,10 @@
+id = "known.icloud-photos.downloads"
+name = "icloud photos download list"
+priority = 50
+
+[matches]
+required_substrings = ["photo\tstatus","IMG_0001.JPG\tdownloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

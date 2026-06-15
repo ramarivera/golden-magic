@@ -2588,5 +2588,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/gdb-dashboard-registers",
     "analysis_notes": "Modeled gdb-dashboard register output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/TheR1D/shell_gpt",
+    "descriptor_id": "known.shell-gpt.chats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shell-gpt-chats",
+    "analysis_notes": "Modeled shell_gpt chat output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/svenstaro/genact",
+    "descriptor_id": "known.genact.scenarios",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/genact-scenarios",
+    "analysis_notes": "Modeled genact scenario output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/icloud-photos-downloader/icloud_photos_downloader",
+    "descriptor_id": "known.icloud-photos.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/icloud-photos-downloads",
+    "analysis_notes": "Modeled icloud_photos_downloader output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/privatenumber/tsx",
+    "descriptor_id": "known.tsx.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tsx-runs",
+    "analysis_notes": "Modeled tsx run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/adnanh/webhook",
+    "descriptor_id": "known.webhook.hooks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/webhook-hooks",
+    "analysis_notes": "Modeled webhook hook output with a generated executable-json parser plugin."
   }
 ]

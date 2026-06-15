@@ -1,0 +1,2 @@
+chat status messages
+default active 12

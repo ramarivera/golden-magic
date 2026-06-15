@@ -1,0 +1,18 @@
+[
+  {
+    "name": "script",
+    "value": "mode duration"
+  },
+  {
+    "name": "index.ts",
+    "value": "watch 0.4s"
+  },
+  {
+    "name": "build.ts",
+    "value": "run 1.2s"
+  },
+  {
+    "name": "test.ts",
+    "value": "run 2.5s"
+  }
+]
