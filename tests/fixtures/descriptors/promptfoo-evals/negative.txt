@@ -1,0 +1,2 @@
+eval status score
+smoke pass 0.94

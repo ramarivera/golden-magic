@@ -1713,5 +1713,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/archon-tasks",
     "analysis_notes": "Modeled Archon task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/promptfoo/promptfoo",
+    "descriptor_id": "known.promptfoo.evals",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/promptfoo-evals",
+    "analysis_notes": "Modeled promptfoo eval output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/esengine/DeepSeek-Reasonix",
+    "descriptor_id": "known.deepseek-reasonix.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/deepseek-reasonix-runs",
+    "analysis_notes": "Modeled DeepSeek-Reasonix run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gitui-org/gitui",
+    "descriptor_id": "known.gitui.status",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitui-status",
+    "analysis_notes": "Modeled gitui status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/manaflow-ai/cmux",
+    "descriptor_id": "known.cmux.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cmux-sessions",
+    "analysis_notes": "Modeled cmux session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Homebrew/homebrew-cask",
+    "descriptor_id": "known.homebrew-cask.tokens",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/homebrew-cask-tokens",
+    "analysis_notes": "Modeled Homebrew cask token output with a generated executable-json parser plugin."
   }
 ]

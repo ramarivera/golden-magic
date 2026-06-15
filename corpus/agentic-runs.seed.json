@@ -4408,5 +4408,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/promptfoo/promptfoo",
+    "descriptor_id": "known.promptfoo.evals",
+    "run_id": "agentic.promptfoo-evals.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/promptfoo-evals/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/promptfoo-evals/expected.rows.json",
+    "variants": [
+      "eval header row",
+      "status row",
+      "score field"
+    ],
+    "transcript": [
+      "selected descriptor known.promptfoo.evals for promptfoo eval results output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/esengine/DeepSeek-Reasonix",
+    "descriptor_id": "known.deepseek-reasonix.runs",
+    "run_id": "agentic.deepseek-reasonix-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/deepseek-reasonix-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/deepseek-reasonix-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "state row",
+      "tokens field"
+    ],
+    "transcript": [
+      "selected descriptor known.deepseek-reasonix.runs for DeepSeek-Reasonix run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gitui-org/gitui",
+    "descriptor_id": "known.gitui.status",
+    "run_id": "agentic.gitui-status.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitui-status/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitui-status/expected.rows.json",
+    "variants": [
+      "path header row",
+      "state row",
+      "staged field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitui.status for gitui repository status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/manaflow-ai/cmux",
+    "descriptor_id": "known.cmux.sessions",
+    "run_id": "agentic.cmux-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cmux-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cmux-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "panes field"
+    ],
+    "transcript": [
+      "selected descriptor known.cmux.sessions for cmux session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Homebrew/homebrew-cask",
+    "descriptor_id": "known.homebrew-cask.tokens",
+    "run_id": "agentic.homebrew-cask-tokens.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/homebrew-cask-tokens/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/homebrew-cask-tokens/expected.rows.json",
+    "variants": [
+      "token header row",
+      "version row",
+      "installed field"
+    ],
+    "transcript": [
+      "selected descriptor known.homebrew-cask.tokens for Homebrew cask token list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

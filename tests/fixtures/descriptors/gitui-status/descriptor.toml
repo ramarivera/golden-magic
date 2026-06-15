@@ -1,0 +1,10 @@
+id = "known.gitui.status"
+name = "gitui repository status"
+priority = 50
+
+[matches]
+required_substrings = ["path\tstate","src/main.rs\tmodified"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+run	state tokens
+math-bench	complete 4096
+code-bench	running 8192
+logic-bench	queued 2048

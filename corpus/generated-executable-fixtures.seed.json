@@ -2698,5 +2698,65 @@
     "negative": "task state owner\ncrawl-docs running agent\n",
     "analysis_notes": "Modeled Archon task output with a generated executable-json parser plugin.",
     "variants": ["task header row", "state row", "owner field"]
+  },
+  {
+    "fixture": "promptfoo-evals",
+    "descriptor_id": "known.promptfoo.evals",
+    "name": "promptfoo eval results",
+    "repo": "https://github.com/promptfoo/promptfoo",
+    "required_substrings": ["eval\tstatus", "smoke\tpass"],
+    "parser": "tab-pairs",
+    "input": "eval\tstatus score\nsmoke\tpass 0.94\nregression\tfail 0.41\nredteam\tpass 0.88\n",
+    "negative": "eval status score\nsmoke pass 0.94\n",
+    "analysis_notes": "Modeled promptfoo eval output with a generated executable-json parser plugin.",
+    "variants": ["eval header row", "status row", "score field"]
+  },
+  {
+    "fixture": "deepseek-reasonix-runs",
+    "descriptor_id": "known.deepseek-reasonix.runs",
+    "name": "DeepSeek-Reasonix run list",
+    "repo": "https://github.com/esengine/DeepSeek-Reasonix",
+    "required_substrings": ["run\tstate", "math-bench\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "run\tstate tokens\nmath-bench\tcomplete 4096\ncode-bench\trunning 8192\nlogic-bench\tqueued 2048\n",
+    "negative": "run state tokens\nmath-bench complete 4096\n",
+    "analysis_notes": "Modeled DeepSeek-Reasonix run output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "state row", "tokens field"]
+  },
+  {
+    "fixture": "gitui-status",
+    "descriptor_id": "known.gitui.status",
+    "name": "gitui repository status",
+    "repo": "https://github.com/gitui-org/gitui",
+    "required_substrings": ["path\tstate", "src/main.rs\tmodified"],
+    "parser": "tab-pairs",
+    "input": "path\tstate staged\nsrc/main.rs\tmodified false\nCargo.toml\tmodified true\nREADME.md\tuntracked false\n",
+    "negative": "path state staged\nsrc/main.rs modified false\n",
+    "analysis_notes": "Modeled gitui status output with a generated executable-json parser plugin.",
+    "variants": ["path header row", "state row", "staged field"]
+  },
+  {
+    "fixture": "cmux-sessions",
+    "descriptor_id": "known.cmux.sessions",
+    "name": "cmux session list",
+    "repo": "https://github.com/manaflow-ai/cmux",
+    "required_substrings": ["session\tstatus", "frontend\tattached"],
+    "parser": "tab-pairs",
+    "input": "session\tstatus panes\nfrontend\tattached 3\nworker\tdetached 2\nops\tattached 1\n",
+    "negative": "session status panes\nfrontend attached 3\n",
+    "analysis_notes": "Modeled cmux session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "status row", "panes field"]
+  },
+  {
+    "fixture": "homebrew-cask-tokens",
+    "descriptor_id": "known.homebrew-cask.tokens",
+    "name": "Homebrew cask token list",
+    "repo": "https://github.com/Homebrew/homebrew-cask",
+    "required_substrings": ["token\tversion", "firefox\tlatest"],
+    "parser": "tab-pairs",
+    "input": "token\tversion installed\nfirefox\tlatest true\nvisual-studio-code\tlatest true\nslack\t4.39 false\n",
+    "negative": "token version installed\nfirefox latest true\n",
+    "analysis_notes": "Modeled Homebrew cask token output with a generated executable-json parser plugin.",
+    "variants": ["token header row", "version row", "installed field"]
   }
 ]

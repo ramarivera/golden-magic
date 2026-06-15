@@ -1,0 +1,4 @@
+session	status panes
+frontend	attached 3
+worker	detached 2
+ops	attached 1

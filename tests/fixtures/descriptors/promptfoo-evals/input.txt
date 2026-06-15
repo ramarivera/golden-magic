@@ -1,0 +1,4 @@
+eval	status score
+smoke	pass 0.94
+regression	fail 0.41
+redteam	pass 0.88

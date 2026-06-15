@@ -1,0 +1,2 @@
+run state tokens
+math-bench complete 4096

@@ -1,0 +1,10 @@
+id = "known.cmux.sessions"
+name = "cmux session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","frontend\tattached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

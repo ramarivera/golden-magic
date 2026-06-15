@@ -1,0 +1,4 @@
+token	version installed
+firefox	latest true
+visual-studio-code	latest true
+slack	4.39 false

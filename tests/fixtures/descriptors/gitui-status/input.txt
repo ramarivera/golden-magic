@@ -1,0 +1,4 @@
+path	state staged
+src/main.rs	modified false
+Cargo.toml	modified true
+README.md	untracked false

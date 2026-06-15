@@ -1,0 +1,10 @@
+id = "known.promptfoo.evals"
+name = "promptfoo eval results"
+priority = 50
+
+[matches]
+required_substrings = ["eval\tstatus","smoke\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

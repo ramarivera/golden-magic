@@ -1,0 +1,18 @@
+[
+  {
+    "name": "eval",
+    "value": "status score"
+  },
+  {
+    "name": "smoke",
+    "value": "pass 0.94"
+  },
+  {
+    "name": "regression",
+    "value": "fail 0.41"
+  },
+  {
+    "name": "redteam",
+    "value": "pass 0.88"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.deepseek-reasonix.runs"
+name = "DeepSeek-Reasonix run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstate","math-bench\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

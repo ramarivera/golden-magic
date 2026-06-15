@@ -1,0 +1,2 @@
+session status panes
+frontend attached 3
