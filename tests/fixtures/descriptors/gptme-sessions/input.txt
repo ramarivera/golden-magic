@@ -1,0 +1,4 @@
+session	model state
+dev	gpt active
+notes	gpt archived
+ops	local active

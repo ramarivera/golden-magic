@@ -1,0 +1,10 @@
+id = "known.plow.targets"
+name = "plow target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\trps","api\t500"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

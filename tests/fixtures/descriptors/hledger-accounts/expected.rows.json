@@ -1,0 +1,18 @@
+[
+  {
+    "name": "account",
+    "value": "balance state"
+  },
+  {
+    "name": "assets:cash",
+    "value": "120.00 open"
+  },
+  {
+    "name": "expenses:food",
+    "value": "45.50 open"
+  },
+  {
+    "name": "income:salary",
+    "value": "-2000.00 open"
+  }
+]

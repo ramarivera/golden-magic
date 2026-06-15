@@ -1,0 +1,10 @@
+id = "known.zsh-vi-mode.bindings"
+name = "zsh-vi-mode binding list"
+priority = 50
+
+[matches]
+required_substrings = ["binding\tmode","jj\tinsert"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

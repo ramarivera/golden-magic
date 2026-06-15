@@ -1,0 +1,2 @@
+stream frames state
+party 120 playing

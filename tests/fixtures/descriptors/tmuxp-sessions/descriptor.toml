@@ -1,0 +1,10 @@
+id = "known.tmuxp.sessions"
+name = "tmuxp session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\twindows","dev\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

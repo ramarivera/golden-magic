@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "windows state"
+  },
+  {
+    "name": "dev",
+    "value": "3 running"
+  },
+  {
+    "name": "ops",
+    "value": "2 stopped"
+  },
+  {
+    "name": "notes",
+    "value": "1 running"
+  }
+]

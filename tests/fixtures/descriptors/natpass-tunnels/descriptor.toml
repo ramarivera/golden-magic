@@ -1,0 +1,10 @@
+id = "known.natpass.tunnels"
+name = "natpass tunnel list"
+priority = 50
+
+[matches]
+required_substrings = ["tunnel\tendpoint","ssh\t127.0.0.1:22"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

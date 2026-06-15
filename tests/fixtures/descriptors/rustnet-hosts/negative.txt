@@ -1,0 +1,2 @@
+host latency state
+router 1ms up

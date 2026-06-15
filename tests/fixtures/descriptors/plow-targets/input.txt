@@ -1,0 +1,4 @@
+target	rps state
+api	500 running
+web	250 queued
+db	50 skipped

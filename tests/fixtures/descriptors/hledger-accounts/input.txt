@@ -1,0 +1,4 @@
+account	balance state
+assets:cash	120.00 open
+expenses:food	45.50 open
+income:salary	-2000.00 open

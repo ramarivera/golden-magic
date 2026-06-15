@@ -1,0 +1,18 @@
+[
+  {
+    "name": "query",
+    "value": "matches state"
+  },
+  {
+    "name": "images",
+    "value": "42 complete"
+  },
+  {
+    "name": "large-files",
+    "value": "8 complete"
+  },
+  {
+    "name": "empty-dirs",
+    "value": "3 complete"
+  }
+]

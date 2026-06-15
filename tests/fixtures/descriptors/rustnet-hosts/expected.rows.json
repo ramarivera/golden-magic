@@ -1,0 +1,18 @@
+[
+  {
+    "name": "host",
+    "value": "latency state"
+  },
+  {
+    "name": "router",
+    "value": "1ms up"
+  },
+  {
+    "name": "server",
+    "value": "8ms up"
+  },
+  {
+    "name": "printer",
+    "value": "timeout down"
+  }
+]

@@ -1,0 +1,4 @@
+session	windows state
+dev	3 running
+ops	2 stopped
+notes	1 running

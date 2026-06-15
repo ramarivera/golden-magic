@@ -1,0 +1,2 @@
+domain category state
+example.com ads allowed

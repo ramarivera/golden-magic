@@ -12256,5 +12256,383 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/simonmichael/hledger",
+    "descriptor_id": "known.hledger.accounts",
+    "run_id": "agentic.hledger-accounts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hledger-accounts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hledger-accounts/expected.rows.json",
+    "variants": [
+      "account header row",
+      "balance row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hledger.accounts for hledger account list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tmux-python/tmuxp",
+    "descriptor_id": "known.tmuxp.sessions",
+    "run_id": "agentic.tmuxp-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tmuxp-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tmuxp-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "windows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tmuxp.sessions for tmuxp session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/six-ddc/plow",
+    "descriptor_id": "known.plow.targets",
+    "run_id": "agentic.plow-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/plow-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/plow-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "rps row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.plow.targets for plow target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Yomguithereal/react-blessed",
+    "descriptor_id": "known.react-blessed.widgets",
+    "run_id": "agentic.react-blessed-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-blessed-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-blessed-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-blessed.widgets for react-blessed widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/f3d-app/f3d",
+    "descriptor_id": "known.f3d.scenes",
+    "run_id": "agentic.f3d-scenes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/f3d-scenes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/f3d-scenes/expected.rows.json",
+    "variants": [
+      "scene header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.f3d.scenes for F3D scene list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nikolaydubina/go-recipes",
+    "descriptor_id": "known.go-recipes.recipes",
+    "run_id": "agentic.go-recipes-recipes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/go-recipes-recipes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/go-recipes-recipes/expected.rows.json",
+    "variants": [
+      "recipe header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.go-recipes.recipes for go-recipes recipe list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ktr0731/evans",
+    "descriptor_id": "known.evans.services",
+    "run_id": "agentic.evans-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/evans-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/evans-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "package row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.evans.services for Evans service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lwch/natpass",
+    "descriptor_id": "known.natpass.tunnels",
+    "run_id": "agentic.natpass-tunnels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/natpass-tunnels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/natpass-tunnels/expected.rows.json",
+    "variants": [
+      "tunnel header row",
+      "endpoint row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.natpass.tunnels for natpass tunnel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/perplexityai/bumblebee",
+    "descriptor_id": "known.bumblebee.agents",
+    "run_id": "agentic.bumblebee-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bumblebee-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bumblebee-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bumblebee.agents for Bumblebee agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jhspetersson/fselect",
+    "descriptor_id": "known.fselect.queries",
+    "run_id": "agentic.fselect-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fselect-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fselect-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "matches row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fselect.queries for fselect query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hugomd/parrot.live",
+    "descriptor_id": "known.parrot-live.streams",
+    "run_id": "agentic.parrot-live-streams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/parrot-live-streams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/parrot-live-streams/expected.rows.json",
+    "variants": [
+      "stream header row",
+      "frames row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.parrot-live.streams for parrot.live stream list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dvorka-oss/hstr",
+    "descriptor_id": "known.hstr.history",
+    "run_id": "agentic.hstr-history.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hstr-history/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hstr-history/expected.rows.json",
+    "variants": [
+      "command header row",
+      "uses row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hstr.history for hstr history list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/andreafrancia/trash-cli",
+    "descriptor_id": "known.trash-cli.items",
+    "run_id": "agentic.trash-cli-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/trash-cli-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/trash-cli-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "deleted row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.trash-cli.items for trash-cli item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/domcyrus/rustnet",
+    "descriptor_id": "known.rustnet.hosts",
+    "run_id": "agentic.rustnet-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rustnet-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rustnet-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "latency row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rustnet.hosts for rustnet host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cointop-sh/cointop",
+    "descriptor_id": "known.cointop.assets",
+    "run_id": "agentic.cointop-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cointop-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cointop-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "price row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cointop.assets for cointop asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wookayin/gpustat",
+    "descriptor_id": "known.gpustat.gpus",
+    "run_id": "agentic.gpustat-gpus.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gpustat-gpus/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gpustat-gpus/expected.rows.json",
+    "variants": [
+      "gpu header row",
+      "memory row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gpustat.gpus for gpustat GPU list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jeffreytse/zsh-vi-mode",
+    "descriptor_id": "known.zsh-vi-mode.bindings",
+    "run_id": "agentic.zsh-vi-mode-bindings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zsh-vi-mode-bindings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zsh-vi-mode-bindings/expected.rows.json",
+    "variants": [
+      "binding header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zsh-vi-mode.bindings for zsh-vi-mode binding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/anudeepND/whitelist",
+    "descriptor_id": "known.whitelist.domains",
+    "run_id": "agentic.whitelist-domains.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/whitelist-domains/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/whitelist-domains/expected.rows.json",
+    "variants": [
+      "domain header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.whitelist.domains for whitelist domain list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Gentleman-Programming/engram",
+    "descriptor_id": "known.engram.entries",
+    "run_id": "agentic.engram-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/engram-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/engram-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "score row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.engram.entries for engram entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/samsesh/SocialBox-Termux",
+    "descriptor_id": "known.socialbox-termux.modules",
+    "run_id": "agentic.socialbox-termux-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/socialbox-termux-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/socialbox-termux-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.socialbox-termux.modules for SocialBox-Termux module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gptme/gptme",
+    "descriptor_id": "known.gptme.sessions",
+    "run_id": "agentic.gptme-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gptme-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gptme-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gptme.sessions for gptme session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

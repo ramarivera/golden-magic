@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "uses state"
+  },
+  {
+    "name": "git status",
+    "value": "42 pinned"
+  },
+  {
+    "name": "cargo test",
+    "value": "12 recent"
+  },
+  {
+    "name": "nu",
+    "value": "8 recent"
+  }
+]

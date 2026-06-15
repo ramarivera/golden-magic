@@ -1,0 +1,10 @@
+id = "known.f3d.scenes"
+name = "F3D scene list"
+priority = 50
+
+[matches]
+required_substrings = ["scene\tformat","model.obj\tobj"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

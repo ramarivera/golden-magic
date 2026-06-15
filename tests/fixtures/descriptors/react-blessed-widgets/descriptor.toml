@@ -1,0 +1,10 @@
+id = "known.react-blessed.widgets"
+name = "react-blessed widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tkind","menu\tlist"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

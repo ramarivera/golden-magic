@@ -1,0 +1,4 @@
+scene	format state
+model.obj	obj loaded
+mesh.gltf	gltf loaded
+scan.ply	ply queued

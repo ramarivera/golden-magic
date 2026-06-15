@@ -1,0 +1,4 @@
+query	matches state
+images	42 complete
+large-files	8 complete
+empty-dirs	3 complete

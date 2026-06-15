@@ -1,0 +1,4 @@
+module	status state
+scanner	ready enabled
+lookup	ready enabled
+report	queued disabled

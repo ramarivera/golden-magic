@@ -1,0 +1,4 @@
+stream	frames state
+party	120 playing
+idle	30 paused
+retro	80 cached

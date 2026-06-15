@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tunnel",
+    "value": "endpoint state"
+  },
+  {
+    "name": "ssh",
+    "value": "127.0.0.1:22 open"
+  },
+  {
+    "name": "web",
+    "value": "127.0.0.1:8080 open"
+  },
+  {
+    "name": "db",
+    "value": "127.0.0.1:5432 closed"
+  }
+]

@@ -1,0 +1,4 @@
+entry	score state
+memory	0.92 recalled
+project	0.88 recalled
+note	0.75 indexed

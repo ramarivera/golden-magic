@@ -1,0 +1,18 @@
+[
+  {
+    "name": "target",
+    "value": "rps state"
+  },
+  {
+    "name": "api",
+    "value": "500 running"
+  },
+  {
+    "name": "web",
+    "value": "250 queued"
+  },
+  {
+    "name": "db",
+    "value": "50 skipped"
+  }
+]

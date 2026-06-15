@@ -1,0 +1,2 @@
+agent model state
+search sonar ready

@@ -1,0 +1,10 @@
+id = "known.whitelist.domains"
+name = "whitelist domain list"
+priority = 50
+
+[matches]
+required_substrings = ["domain\tcategory","example.com\tads"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

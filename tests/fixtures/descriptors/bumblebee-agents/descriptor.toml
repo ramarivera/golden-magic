@@ -1,0 +1,10 @@
+id = "known.bumblebee.agents"
+name = "Bumblebee agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\tmodel","search\tsonar"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

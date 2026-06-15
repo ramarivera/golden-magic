@@ -1,0 +1,2 @@
+service package state
+Greeter hello.v1 loaded

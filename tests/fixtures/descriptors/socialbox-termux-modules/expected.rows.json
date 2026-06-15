@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "status state"
+  },
+  {
+    "name": "scanner",
+    "value": "ready enabled"
+  },
+  {
+    "name": "lookup",
+    "value": "ready enabled"
+  },
+  {
+    "name": "report",
+    "value": "queued disabled"
+  }
+]

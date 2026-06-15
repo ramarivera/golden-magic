@@ -1,0 +1,4 @@
+widget	kind state
+menu	list focused
+status	box visible
+log	textarea scrolling

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "item",
+    "value": "deleted state"
+  },
+  {
+    "name": "old.log",
+    "value": "2026-06-01 trashed"
+  },
+  {
+    "name": "tmp.txt",
+    "value": "2026-06-02 trashed"
+  },
+  {
+    "name": "cache.bin",
+    "value": "2026-06-03 restored"
+  }
+]

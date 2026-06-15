@@ -1,0 +1,4 @@
+gpu	memory state
+0	8192MiB busy
+1	4096MiB idle
+2	16384MiB busy

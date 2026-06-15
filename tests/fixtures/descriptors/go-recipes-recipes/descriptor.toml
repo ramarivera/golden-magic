@@ -1,0 +1,10 @@
+id = "known.go-recipes.recipes"
+name = "go-recipes recipe list"
+priority = 50
+
+[matches]
+required_substrings = ["recipe\tcategory","http\tserver"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

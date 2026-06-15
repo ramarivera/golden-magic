@@ -1,0 +1,10 @@
+id = "known.parrot-live.streams"
+name = "parrot.live stream list"
+priority = 50
+
+[matches]
+required_substrings = ["stream\tframes","party\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

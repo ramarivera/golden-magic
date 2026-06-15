@@ -1,0 +1,2 @@
+account balance state
+assets:cash 120.00 open

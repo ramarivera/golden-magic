@@ -1,0 +1,4 @@
+domain	category state
+example.com	ads allowed
+cdn.example	tracking allowed
+api.example	service allowed

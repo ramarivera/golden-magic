@@ -1,0 +1,2 @@
+command uses state
+git status 42 pinned

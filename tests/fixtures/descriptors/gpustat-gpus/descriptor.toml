@@ -1,0 +1,10 @@
+id = "known.gpustat.gpus"
+name = "gpustat GPU list"
+priority = 50
+
+[matches]
+required_substrings = ["gpu\tmemory","0\t8192MiB"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

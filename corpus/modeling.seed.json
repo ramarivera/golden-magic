@@ -4765,5 +4765,152 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/vibetunnel-sessions",
     "analysis_notes": "Modeled VibeTunnel session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/simonmichael/hledger",
+    "descriptor_id": "known.hledger.accounts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hledger-accounts",
+    "analysis_notes": "Modeled hledger account output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tmux-python/tmuxp",
+    "descriptor_id": "known.tmuxp.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tmuxp-sessions",
+    "analysis_notes": "Modeled tmuxp session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/six-ddc/plow",
+    "descriptor_id": "known.plow.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/plow-targets",
+    "analysis_notes": "Modeled plow target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Yomguithereal/react-blessed",
+    "descriptor_id": "known.react-blessed.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-blessed-widgets",
+    "analysis_notes": "Modeled react-blessed widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/f3d-app/f3d",
+    "descriptor_id": "known.f3d.scenes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/f3d-scenes",
+    "analysis_notes": "Modeled F3D scene output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nikolaydubina/go-recipes",
+    "descriptor_id": "known.go-recipes.recipes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/go-recipes-recipes",
+    "analysis_notes": "Modeled go-recipes recipe output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ktr0731/evans",
+    "descriptor_id": "known.evans.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/evans-services",
+    "analysis_notes": "Modeled Evans service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lwch/natpass",
+    "descriptor_id": "known.natpass.tunnels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/natpass-tunnels",
+    "analysis_notes": "Modeled natpass tunnel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/perplexityai/bumblebee",
+    "descriptor_id": "known.bumblebee.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bumblebee-agents",
+    "analysis_notes": "Modeled Bumblebee agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jhspetersson/fselect",
+    "descriptor_id": "known.fselect.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fselect-queries",
+    "analysis_notes": "Modeled fselect query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hugomd/parrot.live",
+    "descriptor_id": "known.parrot-live.streams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/parrot-live-streams",
+    "analysis_notes": "Modeled parrot.live stream output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dvorka-oss/hstr",
+    "descriptor_id": "known.hstr.history",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hstr-history",
+    "analysis_notes": "Modeled hstr history output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/andreafrancia/trash-cli",
+    "descriptor_id": "known.trash-cli.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/trash-cli-items",
+    "analysis_notes": "Modeled trash-cli item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/domcyrus/rustnet",
+    "descriptor_id": "known.rustnet.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rustnet-hosts",
+    "analysis_notes": "Modeled rustnet host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cointop-sh/cointop",
+    "descriptor_id": "known.cointop.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cointop-assets",
+    "analysis_notes": "Modeled cointop asset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wookayin/gpustat",
+    "descriptor_id": "known.gpustat.gpus",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gpustat-gpus",
+    "analysis_notes": "Modeled gpustat GPU output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jeffreytse/zsh-vi-mode",
+    "descriptor_id": "known.zsh-vi-mode.bindings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zsh-vi-mode-bindings",
+    "analysis_notes": "Modeled zsh-vi-mode binding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/anudeepND/whitelist",
+    "descriptor_id": "known.whitelist.domains",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/whitelist-domains",
+    "analysis_notes": "Modeled whitelist domain output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Gentleman-Programming/engram",
+    "descriptor_id": "known.engram.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/engram-entries",
+    "analysis_notes": "Modeled engram entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/samsesh/SocialBox-Termux",
+    "descriptor_id": "known.socialbox-termux.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/socialbox-termux-modules",
+    "analysis_notes": "Modeled SocialBox-Termux module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gptme/gptme",
+    "descriptor_id": "known.gptme.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gptme-sessions",
+    "analysis_notes": "Modeled gptme session output with a generated executable-json parser plugin."
   }
 ]

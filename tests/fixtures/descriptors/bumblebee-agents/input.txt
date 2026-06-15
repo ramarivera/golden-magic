@@ -1,0 +1,4 @@
+agent	model state
+search	sonar ready
+summary	large ready
+research	pro queued

@@ -1,0 +1,4 @@
+host	latency state
+router	1ms up
+server	8ms up
+printer	timeout down

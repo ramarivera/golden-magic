@@ -1,0 +1,4 @@
+tunnel	endpoint state
+ssh	127.0.0.1:22 open
+web	127.0.0.1:8080 open
+db	127.0.0.1:5432 closed

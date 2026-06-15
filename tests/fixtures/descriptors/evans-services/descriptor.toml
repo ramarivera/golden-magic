@@ -1,0 +1,10 @@
+id = "known.evans.services"
+name = "Evans service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tpackage","Greeter\thello.v1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

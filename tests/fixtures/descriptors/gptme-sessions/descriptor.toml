@@ -1,0 +1,10 @@
+id = "known.gptme.sessions"
+name = "gptme session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tmodel","dev\tgpt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

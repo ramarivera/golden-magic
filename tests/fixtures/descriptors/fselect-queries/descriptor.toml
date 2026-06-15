@@ -1,0 +1,10 @@
+id = "known.fselect.queries"
+name = "fselect query list"
+priority = 50
+
+[matches]
+required_substrings = ["query\tmatches","images\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

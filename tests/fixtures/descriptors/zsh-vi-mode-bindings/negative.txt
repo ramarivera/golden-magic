@@ -1,0 +1,2 @@
+binding mode state
+jj insert enabled

@@ -1,0 +1,4 @@
+binding	mode state
+jj	insert enabled
+esc	normal enabled
+v	visual enabled

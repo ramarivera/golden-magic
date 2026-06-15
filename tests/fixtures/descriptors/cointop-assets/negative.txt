@@ -1,0 +1,2 @@
+asset price state
+BTC 65000 watch

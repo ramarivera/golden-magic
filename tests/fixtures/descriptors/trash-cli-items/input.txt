@@ -1,0 +1,4 @@
+item	deleted state
+old.log	2026-06-01 trashed
+tmp.txt	2026-06-02 trashed
+cache.bin	2026-06-03 restored
