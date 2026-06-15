@@ -1,0 +1,4 @@
+command	category status
+awk-sum	text listed
+find-large-files	filesystem listed
+curl-timing	network listed

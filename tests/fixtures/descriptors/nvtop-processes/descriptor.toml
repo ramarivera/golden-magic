@@ -1,0 +1,10 @@
+id = "known.nvtop.processes"
+name = "nvtop process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tgpu","python\t0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

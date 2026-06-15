@@ -1,0 +1,4 @@
+process	gpu memory
+python	0 2048MiB
+blender	1 8192MiB
+ollama	0 4096MiB

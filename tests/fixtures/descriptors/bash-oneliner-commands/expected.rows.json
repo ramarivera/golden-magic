@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "category status"
+  },
+  {
+    "name": "awk-sum",
+    "value": "text listed"
+  },
+  {
+    "name": "find-large-files",
+    "value": "filesystem listed"
+  },
+  {
+    "name": "curl-timing",
+    "value": "network listed"
+  }
+]

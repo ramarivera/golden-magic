@@ -2798,5 +2798,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/defi-roadmap-tools",
     "analysis_notes": "Modeled DeFi Developer Road Map tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/onceupon/Bash-Oneliner",
+    "descriptor_id": "known.bash-oneliner.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bash-oneliner-commands",
+    "analysis_notes": "Modeled Bash-Oneliner command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Syllo/nvtop",
+    "descriptor_id": "known.nvtop.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nvtop-processes",
+    "analysis_notes": "Modeled nvtop process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sirmalloc/ccstatusline",
+    "descriptor_id": "known.ccstatusline.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ccstatusline-segments",
+    "analysis_notes": "Modeled ccstatusline segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/asciimoo/wuzz",
+    "descriptor_id": "known.wuzz.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wuzz-requests",
+    "analysis_notes": "Modeled wuzz request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/webpro/awesome-dotfiles",
+    "descriptor_id": "known.awesome-dotfiles.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-dotfiles-resources",
+    "analysis_notes": "Modeled awesome-dotfiles resource output with a generated executable-json parser plugin."
   }
 ]

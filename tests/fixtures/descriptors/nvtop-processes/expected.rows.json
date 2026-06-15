@@ -1,0 +1,18 @@
+[
+  {
+    "name": "process",
+    "value": "gpu memory"
+  },
+  {
+    "name": "python",
+    "value": "0 2048MiB"
+  },
+  {
+    "name": "blender",
+    "value": "1 8192MiB"
+  },
+  {
+    "name": "ollama",
+    "value": "0 4096MiB"
+  }
+]

@@ -7198,5 +7198,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/onceupon/Bash-Oneliner",
+    "descriptor_id": "known.bash-oneliner.commands",
+    "run_id": "agentic.bash-oneliner-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bash-oneliner-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bash-oneliner-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.bash-oneliner.commands for Bash-Oneliner command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Syllo/nvtop",
+    "descriptor_id": "known.nvtop.processes",
+    "run_id": "agentic.nvtop-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nvtop-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nvtop-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "gpu row",
+      "memory field"
+    ],
+    "transcript": [
+      "selected descriptor known.nvtop.processes for nvtop process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sirmalloc/ccstatusline",
+    "descriptor_id": "known.ccstatusline.segments",
+    "run_id": "agentic.ccstatusline-segments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ccstatusline-segments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ccstatusline-segments/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "state row",
+      "theme field"
+    ],
+    "transcript": [
+      "selected descriptor known.ccstatusline.segments for ccstatusline segment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/asciimoo/wuzz",
+    "descriptor_id": "known.wuzz.requests",
+    "run_id": "agentic.wuzz-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wuzz-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wuzz-requests/expected.rows.json",
+    "variants": [
+      "method header row",
+      "status row",
+      "url field"
+    ],
+    "transcript": [
+      "selected descriptor known.wuzz.requests for wuzz request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/webpro/awesome-dotfiles",
+    "descriptor_id": "known.awesome-dotfiles.resources",
+    "run_id": "agentic.awesome-dotfiles-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-dotfiles-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-dotfiles-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "kind row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-dotfiles.resources for awesome-dotfiles resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -4558,5 +4558,65 @@
     "negative": "tool layer status\nhardhat development recommended\n",
     "analysis_notes": "Modeled DeFi Developer Road Map tool output with a generated executable-json parser plugin.",
     "variants": ["tool header row", "layer row", "status field"]
+  },
+  {
+    "fixture": "bash-oneliner-commands",
+    "descriptor_id": "known.bash-oneliner.commands",
+    "name": "Bash-Oneliner command list",
+    "repo": "https://github.com/onceupon/Bash-Oneliner",
+    "required_substrings": ["command\tcategory", "awk-sum\ttext"],
+    "parser": "tab-pairs",
+    "input": "command\tcategory status\nawk-sum\ttext listed\nfind-large-files\tfilesystem listed\ncurl-timing\tnetwork listed\n",
+    "negative": "command category status\nawk-sum text listed\n",
+    "analysis_notes": "Modeled Bash-Oneliner command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "category row", "status field"]
+  },
+  {
+    "fixture": "nvtop-processes",
+    "descriptor_id": "known.nvtop.processes",
+    "name": "nvtop process list",
+    "repo": "https://github.com/Syllo/nvtop",
+    "required_substrings": ["process\tgpu", "python\t0"],
+    "parser": "tab-pairs",
+    "input": "process\tgpu memory\npython\t0 2048MiB\nblender\t1 8192MiB\nollama\t0 4096MiB\n",
+    "negative": "process gpu memory\npython 0 2048MiB\n",
+    "analysis_notes": "Modeled nvtop process output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "gpu row", "memory field"]
+  },
+  {
+    "fixture": "ccstatusline-segments",
+    "descriptor_id": "known.ccstatusline.segments",
+    "name": "ccstatusline segment list",
+    "repo": "https://github.com/sirmalloc/ccstatusline",
+    "required_substrings": ["segment\tstate", "model\tvisible"],
+    "parser": "tab-pairs",
+    "input": "segment\tstate theme\nmodel\tvisible powerline\ntokens\tvisible compact\nbranch\thidden minimal\n",
+    "negative": "segment state theme\nmodel visible powerline\n",
+    "analysis_notes": "Modeled ccstatusline segment output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "state row", "theme field"]
+  },
+  {
+    "fixture": "wuzz-requests",
+    "descriptor_id": "known.wuzz.requests",
+    "name": "wuzz request list",
+    "repo": "https://github.com/asciimoo/wuzz",
+    "required_substrings": ["method\tstatus", "GET\t200"],
+    "parser": "tab-pairs",
+    "input": "method\tstatus url\nGET\t200 https://example.test\nPOST\t201 https://api.test/items\nDELETE\t404 https://api.test/missing\n",
+    "negative": "method status url\nGET 200 https://example.test\n",
+    "analysis_notes": "Modeled wuzz request output with a generated executable-json parser plugin.",
+    "variants": ["method header row", "status row", "url field"]
+  },
+  {
+    "fixture": "awesome-dotfiles-resources",
+    "descriptor_id": "known.awesome-dotfiles.resources",
+    "name": "awesome-dotfiles resource list",
+    "repo": "https://github.com/webpro/awesome-dotfiles",
+    "required_substrings": ["resource\tkind", "chezmoi\tmanager"],
+    "parser": "tab-pairs",
+    "input": "resource\tkind status\nchezmoi\tmanager listed\nyadm\tmanager listed\nstarship\tprompt listed\n",
+    "negative": "resource kind status\nchezmoi manager listed\n",
+    "analysis_notes": "Modeled awesome-dotfiles resource output with a generated executable-json parser plugin.",
+    "variants": ["resource header row", "kind row", "status field"]
   }
 ]

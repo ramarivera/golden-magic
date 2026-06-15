@@ -1,0 +1,2 @@
+resource kind status
+chezmoi manager listed

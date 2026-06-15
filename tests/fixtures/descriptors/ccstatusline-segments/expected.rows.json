@@ -1,0 +1,18 @@
+[
+  {
+    "name": "segment",
+    "value": "state theme"
+  },
+  {
+    "name": "model",
+    "value": "visible powerline"
+  },
+  {
+    "name": "tokens",
+    "value": "visible compact"
+  },
+  {
+    "name": "branch",
+    "value": "hidden minimal"
+  }
+]

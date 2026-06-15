@@ -1,0 +1,4 @@
+segment	state theme
+model	visible powerline
+tokens	visible compact
+branch	hidden minimal

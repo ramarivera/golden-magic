@@ -1,0 +1,4 @@
+resource	kind status
+chezmoi	manager listed
+yadm	manager listed
+starship	prompt listed

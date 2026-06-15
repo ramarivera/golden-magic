@@ -1,0 +1,18 @@
+[
+  {
+    "name": "method",
+    "value": "status url"
+  },
+  {
+    "name": "GET",
+    "value": "200 https://example.test"
+  },
+  {
+    "name": "POST",
+    "value": "201 https://api.test/items"
+  },
+  {
+    "name": "DELETE",
+    "value": "404 https://api.test/missing"
+  }
+]

@@ -1,0 +1,4 @@
+method	status url
+GET	200 https://example.test
+POST	201 https://api.test/items
+DELETE	404 https://api.test/missing

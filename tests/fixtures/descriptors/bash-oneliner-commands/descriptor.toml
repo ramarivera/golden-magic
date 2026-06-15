@@ -1,0 +1,10 @@
+id = "known.bash-oneliner.commands"
+name = "Bash-Oneliner command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcategory","awk-sum\ttext"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
