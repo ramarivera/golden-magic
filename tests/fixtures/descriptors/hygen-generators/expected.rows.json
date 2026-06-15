@@ -1,0 +1,18 @@
+[
+  {
+    "name": "generator",
+    "value": "action template"
+  },
+  {
+    "name": "component",
+    "value": "new react"
+  },
+  {
+    "name": "service",
+    "value": "new node"
+  },
+  {
+    "name": "route",
+    "value": "inject web"
+  }
+]

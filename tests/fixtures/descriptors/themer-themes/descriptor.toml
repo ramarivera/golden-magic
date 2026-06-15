@@ -1,0 +1,10 @@
+id = "known.themer.themes"
+name = "themer theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tstate","solarized\tbuilt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

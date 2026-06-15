@@ -1,0 +1,4 @@
+model	state backend
+local-small	ready metal
+local-large	loading metal
+chat	ready server

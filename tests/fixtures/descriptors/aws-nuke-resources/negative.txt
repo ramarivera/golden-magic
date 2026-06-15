@@ -1,0 +1,2 @@
+resource state region
+s3-bucket filtered us-east-1

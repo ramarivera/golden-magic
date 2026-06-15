@@ -1,0 +1,10 @@
+id = "known.aidlearning.environments"
+name = "AidLearning environment list"
+priority = 50
+
+[matches]
+required_substrings = ["environment\tstate","linux\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

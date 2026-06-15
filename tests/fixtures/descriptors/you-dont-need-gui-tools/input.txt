@@ -1,0 +1,4 @@
+tool	category status
+curl	http recommended
+jq	json recommended
+fzf	search optional

@@ -1,0 +1,2 @@
+slot type size
+0 text 42

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "resource",
+    "value": "state region"
+  },
+  {
+    "name": "s3-bucket",
+    "value": "filtered us-east-1"
+  },
+  {
+    "name": "ec2-instance",
+    "value": "deleted eu-west-1"
+  },
+  {
+    "name": "iam-role",
+    "value": "blocked global"
+  }
+]

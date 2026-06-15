@@ -1,0 +1,18 @@
+[
+  {
+    "name": "model",
+    "value": "state backend"
+  },
+  {
+    "name": "local-small",
+    "value": "ready metal"
+  },
+  {
+    "name": "local-large",
+    "value": "loading metal"
+  },
+  {
+    "name": "chat",
+    "value": "ready server"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.apfel.models"
+name = "apfel model list"
+priority = 50
+
+[matches]
+required_substrings = ["model\tstate","local-small\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

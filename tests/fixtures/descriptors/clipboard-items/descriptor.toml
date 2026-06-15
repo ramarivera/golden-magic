@@ -1,0 +1,10 @@
+id = "known.clipboard.items"
+name = "Clipboard item list"
+priority = 50
+
+[matches]
+required_substrings = ["slot\ttype","0\ttext"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -9988,5 +9988,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jondot/hygen",
+    "descriptor_id": "known.hygen.generators",
+    "run_id": "agentic.hygen-generators.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hygen-generators/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hygen-generators/expected.rows.json",
+    "variants": [
+      "generator header row",
+      "action row",
+      "template field"
+    ],
+    "transcript": [
+      "selected descriptor known.hygen.generators for hygen generator list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/you-dont-need/You-Dont-Need-GUI",
+    "descriptor_id": "known.you-dont-need-gui.tools",
+    "run_id": "agentic.you-dont-need-gui-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/you-dont-need-gui-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/you-dont-need-gui-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.you-dont-need-gui.tools for You-Dont-Need-GUI tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/square/PonyDebugger",
+    "descriptor_id": "known.ponydebugger.connections",
+    "run_id": "agentic.ponydebugger-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ponydebugger-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ponydebugger-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.ponydebugger.connections for PonyDebugger connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tensorchord/Awesome-LLMOps",
+    "descriptor_id": "known.awesome-llmops.tools",
+    "run_id": "agentic.awesome-llmops-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-llmops-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-llmops-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "area row",
+      "license field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-llmops.tools for Awesome-LLMOps tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mysticatea/npm-run-all",
+    "descriptor_id": "known.npm-run-all.tasks",
+    "run_id": "agentic.npm-run-all-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/npm-run-all-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/npm-run-all-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "mode field"
+    ],
+    "transcript": [
+      "selected descriptor known.npm-run-all.tasks for npm-run-all task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mjswensen/themer",
+    "descriptor_id": "known.themer.themes",
+    "run_id": "agentic.themer-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/themer-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/themer-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "state row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.themer.themes for themer theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Slackadays/Clipboard",
+    "descriptor_id": "known.clipboard.items",
+    "run_id": "agentic.clipboard-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clipboard-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clipboard-items/expected.rows.json",
+    "variants": [
+      "slot header row",
+      "type row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.clipboard.items for Clipboard item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rebuy-de/aws-nuke",
+    "descriptor_id": "known.aws-nuke.resources",
+    "run_id": "agentic.aws-nuke-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aws-nuke-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aws-nuke-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "state row",
+      "region field"
+    ],
+    "transcript": [
+      "selected descriptor known.aws-nuke.resources for aws-nuke resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Arthur-Ficial/apfel",
+    "descriptor_id": "known.apfel.models",
+    "run_id": "agentic.apfel-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/apfel-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/apfel-models/expected.rows.json",
+    "variants": [
+      "model header row",
+      "state row",
+      "backend field"
+    ],
+    "transcript": [
+      "selected descriptor known.apfel.models for apfel model list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aidlearning/AidLearning-FrameWork",
+    "descriptor_id": "known.aidlearning.environments",
+    "run_id": "agentic.aidlearning-environments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aidlearning-environments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aidlearning-environments/expected.rows.json",
+    "variants": [
+      "environment header row",
+      "state row",
+      "runtime field"
+    ],
+    "transcript": [
+      "selected descriptor known.aidlearning.environments for AidLearning environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

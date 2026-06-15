@@ -1,0 +1,4 @@
+task	state mode
+lint	ok parallel
+test	running sequential
+build	queued sequential

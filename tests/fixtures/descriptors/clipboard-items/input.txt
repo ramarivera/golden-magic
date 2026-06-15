@@ -1,0 +1,4 @@
+slot	type size
+0	text 42
+1	image 1204
+2	file 88

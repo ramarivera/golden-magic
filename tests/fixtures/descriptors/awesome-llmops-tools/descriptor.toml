@@ -1,0 +1,10 @@
+id = "known.awesome-llmops.tools"
+name = "Awesome-LLMOps tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tarea","langfuse\tobservability"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

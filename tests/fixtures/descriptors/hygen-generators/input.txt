@@ -1,0 +1,4 @@
+generator	action template
+component	new react
+service	new node
+route	inject web

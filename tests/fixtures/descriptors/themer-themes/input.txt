@@ -1,0 +1,4 @@
+theme	state target
+solarized	built terminal
+nord	queued editor
+gruvbox	built wallpaper

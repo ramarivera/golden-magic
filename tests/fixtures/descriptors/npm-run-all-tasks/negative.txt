@@ -1,0 +1,2 @@
+task state mode
+lint ok parallel

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "environment",
+    "value": "state runtime"
+  },
+  {
+    "name": "linux",
+    "value": "ready local"
+  },
+  {
+    "name": "notebook",
+    "value": "running python"
+  },
+  {
+    "name": "deep-learning",
+    "value": "queued gpu"
+  }
+]

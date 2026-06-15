@@ -1,0 +1,10 @@
+id = "known.aws-nuke.resources"
+name = "aws-nuke resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tstate","s3-bucket\tfiltered"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

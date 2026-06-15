@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "state mode"
+  },
+  {
+    "name": "lint",
+    "value": "ok parallel"
+  },
+  {
+    "name": "test",
+    "value": "running sequential"
+  },
+  {
+    "name": "build",
+    "value": "queued sequential"
+  }
+]

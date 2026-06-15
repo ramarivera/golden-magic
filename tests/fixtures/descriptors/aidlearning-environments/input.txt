@@ -1,0 +1,4 @@
+environment	state runtime
+linux	ready local
+notebook	running python
+deep-learning	queued gpu

@@ -3883,5 +3883,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/ledger-accounts",
     "analysis_notes": "Modeled ledger account output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jondot/hygen",
+    "descriptor_id": "known.hygen.generators",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hygen-generators",
+    "analysis_notes": "Modeled hygen generator output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/you-dont-need/You-Dont-Need-GUI",
+    "descriptor_id": "known.you-dont-need-gui.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/you-dont-need-gui-tools",
+    "analysis_notes": "Modeled You-Dont-Need-GUI tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/square/PonyDebugger",
+    "descriptor_id": "known.ponydebugger.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ponydebugger-connections",
+    "analysis_notes": "Modeled PonyDebugger connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tensorchord/Awesome-LLMOps",
+    "descriptor_id": "known.awesome-llmops.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-llmops-tools",
+    "analysis_notes": "Modeled Awesome-LLMOps tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mysticatea/npm-run-all",
+    "descriptor_id": "known.npm-run-all.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/npm-run-all-tasks",
+    "analysis_notes": "Modeled npm-run-all task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mjswensen/themer",
+    "descriptor_id": "known.themer.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/themer-themes",
+    "analysis_notes": "Modeled themer theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Slackadays/Clipboard",
+    "descriptor_id": "known.clipboard.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clipboard-items",
+    "analysis_notes": "Modeled Clipboard item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rebuy-de/aws-nuke",
+    "descriptor_id": "known.aws-nuke.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aws-nuke-resources",
+    "analysis_notes": "Modeled aws-nuke resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Arthur-Ficial/apfel",
+    "descriptor_id": "known.apfel.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/apfel-models",
+    "analysis_notes": "Modeled apfel model output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aidlearning/AidLearning-FrameWork",
+    "descriptor_id": "known.aidlearning.environments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aidlearning-environments",
+    "analysis_notes": "Modeled AidLearning environment output with a generated executable-json parser plugin."
   }
 ]

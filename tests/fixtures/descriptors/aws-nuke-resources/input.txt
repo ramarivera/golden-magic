@@ -1,0 +1,4 @@
+resource	state region
+s3-bucket	filtered us-east-1
+ec2-instance	deleted eu-west-1
+iam-role	blocked global

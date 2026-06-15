@@ -1,0 +1,2 @@
+generator action template
+component new react

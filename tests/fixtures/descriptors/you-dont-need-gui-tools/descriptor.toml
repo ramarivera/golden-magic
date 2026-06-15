@@ -1,0 +1,10 @@
+id = "known.you-dont-need-gui.tools"
+name = "You-Dont-Need-GUI tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tcategory","curl\thttp"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
