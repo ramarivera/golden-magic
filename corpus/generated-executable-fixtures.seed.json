@@ -958,5 +958,65 @@
     "negative": "session status model\nalpha active sonnet\n",
     "analysis_notes": "Modeled Claude Code session list output with a generated executable-json parser plugin.",
     "variants": ["session header row", "active session row", "model field"]
+  },
+  {
+    "fixture": "gemini-cli-prompts",
+    "descriptor_id": "known.gemini-cli.prompts",
+    "name": "Gemini CLI prompt history",
+    "repo": "https://github.com/google-gemini/gemini-cli",
+    "required_substrings": ["prompt\tstatus", "summarize\tcached"],
+    "parser": "tab-pairs",
+    "input": "prompt\tstatus model\nsummarize\tcached gemini-pro\nrefactor\trunning gemini-pro\nexplain\tdone gemini-flash\n",
+    "negative": "prompt status model\nsummarize cached gemini-pro\n",
+    "analysis_notes": "Modeled Gemini CLI prompt history output with a generated executable-json parser plugin.",
+    "variants": ["prompt header row", "cached prompt row", "model field"]
+  },
+  {
+    "fixture": "windows-terminal-profiles",
+    "descriptor_id": "known.windows-terminal.profiles",
+    "name": "Windows Terminal profile list",
+    "repo": "https://github.com/microsoft/terminal",
+    "required_substrings": ["profile\tcommand", "PowerShell\tpwsh.exe"],
+    "parser": "tab-pairs",
+    "input": "profile\tcommand source\nPowerShell\tpwsh.exe settings\nUbuntu\twsl.exe settings\nCommand Prompt\tcmd.exe settings\n",
+    "negative": "profile command source\nPowerShell pwsh.exe settings\n",
+    "analysis_notes": "Modeled Windows Terminal profile list output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "PowerShell command row", "source field"]
+  },
+  {
+    "fixture": "create-react-app-scripts",
+    "descriptor_id": "known.create-react-app.scripts",
+    "name": "Create React App script list",
+    "repo": "https://github.com/react/create-react-app",
+    "required_substrings": ["script\tcommand", "start\treact-scripts start"],
+    "parser": "tab-pairs",
+    "input": "script\tcommand env\nstart\treact-scripts start development\nbuild\treact-scripts build production\ntest\treact-scripts test test\n",
+    "negative": "script command env\nstart react-scripts start development\n",
+    "analysis_notes": "Modeled Create React App script list output with a generated executable-json parser plugin.",
+    "variants": ["script header row", "start script row", "environment field"]
+  },
+  {
+    "fixture": "cc-switch-targets",
+    "descriptor_id": "known.cc-switch.targets",
+    "name": "cc-switch target list",
+    "repo": "https://github.com/farion1231/cc-switch",
+    "required_substrings": ["target\tactive", "claude\ttrue"],
+    "parser": "tab-pairs",
+    "input": "target\tactive path\nclaude\ttrue ~/.claude\ncodex\tfalse ~/.codex\ngemini\tfalse ~/.gemini\n",
+    "negative": "target active path\nclaude true ~/.claude\n",
+    "analysis_notes": "Modeled cc-switch target list output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "active target row", "path field"]
+  },
+  {
+    "fixture": "thefuck-rules",
+    "descriptor_id": "known.thefuck.rules",
+    "name": "thefuck rule list",
+    "repo": "https://github.com/nvbn/thefuck",
+    "required_substrings": ["rule\tstate", "git_push\tenabled"],
+    "parser": "tab-pairs",
+    "input": "rule\tstate priority\ngit_push\tenabled 10\nsudo\tenabled 20\nno_command\tdisabled 90\n",
+    "negative": "rule state priority\ngit_push enabled 10\n",
+    "analysis_notes": "Modeled thefuck rule list output with a generated executable-json parser plugin.",
+    "variants": ["rule header row", "enabled rule row", "priority field"]
   }
 ]

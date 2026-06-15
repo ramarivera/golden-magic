@@ -1,0 +1,10 @@
+id = "known.cc-switch.targets"
+name = "cc-switch target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tactive","claude\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

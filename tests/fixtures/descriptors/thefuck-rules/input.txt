@@ -1,0 +1,4 @@
+rule	state priority
+git_push	enabled 10
+sudo	enabled 20
+no_command	disabled 90

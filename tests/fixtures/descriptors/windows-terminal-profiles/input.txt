@@ -1,0 +1,4 @@
+profile	command source
+PowerShell	pwsh.exe settings
+Ubuntu	wsl.exe settings
+Command Prompt	cmd.exe settings

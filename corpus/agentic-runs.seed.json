@@ -1798,5 +1798,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/google-gemini/gemini-cli",
+    "descriptor_id": "known.gemini-cli.prompts",
+    "run_id": "agentic.gemini-cli-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gemini-cli-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gemini-cli-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "cached prompt row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.gemini-cli.prompts for Gemini CLI prompt history output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/terminal",
+    "descriptor_id": "known.windows-terminal.profiles",
+    "run_id": "agentic.windows-terminal-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/windows-terminal-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/windows-terminal-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "PowerShell command row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.windows-terminal.profiles for Windows Terminal profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/react/create-react-app",
+    "descriptor_id": "known.create-react-app.scripts",
+    "run_id": "agentic.create-react-app-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-react-app-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-react-app-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "start script row",
+      "environment field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-react-app.scripts for Create React App script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/farion1231/cc-switch",
+    "descriptor_id": "known.cc-switch.targets",
+    "run_id": "agentic.cc-switch-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cc-switch-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cc-switch-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "active target row",
+      "path field"
+    ],
+    "transcript": [
+      "selected descriptor known.cc-switch.targets for cc-switch target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nvbn/thefuck",
+    "descriptor_id": "known.thefuck.rules",
+    "run_id": "agentic.thefuck-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/thefuck-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/thefuck-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "enabled rule row",
+      "priority field"
+    ],
+    "transcript": [
+      "selected descriptor known.thefuck.rules for thefuck rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

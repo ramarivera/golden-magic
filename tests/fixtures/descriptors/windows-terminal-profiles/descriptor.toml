@@ -1,0 +1,10 @@
+id = "known.windows-terminal.profiles"
+name = "Windows Terminal profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tcommand","PowerShell\tpwsh.exe"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

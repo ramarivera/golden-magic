@@ -1,0 +1,2 @@
+target active path
+claude true ~/.claude

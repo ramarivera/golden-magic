@@ -1,0 +1,2 @@
+rule state priority
+git_push enabled 10

@@ -1,0 +1,10 @@
+id = "known.thefuck.rules"
+name = "thefuck rule list"
+priority = 50
+
+[matches]
+required_substrings = ["rule\tstate","git_push\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

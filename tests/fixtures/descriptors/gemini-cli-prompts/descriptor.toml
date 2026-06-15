@@ -1,0 +1,10 @@
+id = "known.gemini-cli.prompts"
+name = "Gemini CLI prompt history"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\tstatus","summarize\tcached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

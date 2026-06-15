@@ -1,0 +1,10 @@
+id = "known.create-react-app.scripts"
+name = "Create React App script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tcommand","start\treact-scripts start"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+prompt	status model
+summarize	cached gemini-pro
+refactor	running gemini-pro
+explain	done gemini-flash

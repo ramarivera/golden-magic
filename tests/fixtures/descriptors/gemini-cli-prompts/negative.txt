@@ -1,0 +1,2 @@
+prompt status model
+summarize cached gemini-pro

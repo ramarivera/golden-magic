@@ -1,0 +1,2 @@
+profile command source
+PowerShell pwsh.exe settings

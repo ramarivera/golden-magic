@@ -1,0 +1,2 @@
+script command env
+start react-scripts start development

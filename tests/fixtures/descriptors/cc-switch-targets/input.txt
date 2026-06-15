@@ -1,0 +1,4 @@
+target	active path
+claude	true ~/.claude
+codex	false ~/.codex
+gemini	false ~/.gemini

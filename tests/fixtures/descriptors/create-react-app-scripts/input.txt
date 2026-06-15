@@ -1,0 +1,4 @@
+script	command env
+start	react-scripts start development
+build	react-scripts build production
+test	react-scripts test test

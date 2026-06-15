@@ -698,5 +698,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/claude-code-sessions",
     "analysis_notes": "Modeled Claude Code session list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google-gemini/gemini-cli",
+    "descriptor_id": "known.gemini-cli.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gemini-cli-prompts",
+    "analysis_notes": "Modeled Gemini CLI prompt history output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/terminal",
+    "descriptor_id": "known.windows-terminal.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/windows-terminal-profiles",
+    "analysis_notes": "Modeled Windows Terminal profile list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/react/create-react-app",
+    "descriptor_id": "known.create-react-app.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-react-app-scripts",
+    "analysis_notes": "Modeled Create React App script list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/farion1231/cc-switch",
+    "descriptor_id": "known.cc-switch.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cc-switch-targets",
+    "analysis_notes": "Modeled cc-switch target list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nvbn/thefuck",
+    "descriptor_id": "known.thefuck.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/thefuck-rules",
+    "analysis_notes": "Modeled thefuck rule list output with a generated executable-json parser plugin."
   }
 ]
