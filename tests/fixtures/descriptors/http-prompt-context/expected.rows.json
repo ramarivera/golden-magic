@@ -1,0 +1,18 @@
+[
+  {
+    "key": "base_url",
+    "value": "https://api.example.test"
+  },
+  {
+    "key": "method",
+    "value": "GET"
+  },
+  {
+    "key": "headers",
+    "value": "3"
+  },
+  {
+    "key": "body",
+    "value": "empty"
+  }
+]

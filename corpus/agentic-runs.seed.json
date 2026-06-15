@@ -1348,5 +1348,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/saulpw/visidata",
+    "descriptor_id": "known.visidata.sheet",
+    "run_id": "agentic.visidata-sheet.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/visidata-sheet/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/visidata-sheet/expected.rows.json",
+    "variants": [
+      "sheet row",
+      "row count",
+      "column count"
+    ],
+    "transcript": [
+      "selected descriptor known.visidata.sheet for visidata sheet summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/httpie/http-prompt",
+    "descriptor_id": "known.http-prompt.context",
+    "run_id": "agentic.http-prompt-context.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/http-prompt-context/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/http-prompt-context/expected.rows.json",
+    "variants": [
+      "base URL row",
+      "method row",
+      "headers count row"
+    ],
+    "transcript": [
+      "selected descriptor known.http-prompt.context for http-prompt context output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/99designs/aws-vault",
+    "descriptor_id": "known.aws-vault.list",
+    "run_id": "agentic.aws-vault-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aws-vault-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aws-vault-list/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "keychain profile row",
+      "file credential row"
+    ],
+    "transcript": [
+      "selected descriptor known.aws-vault.list for aws-vault profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/release-it/release-it",
+    "descriptor_id": "known.release-it.summary",
+    "run_id": "agentic.release-it-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/release-it-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/release-it-summary/expected.rows.json",
+    "variants": [
+      "version row",
+      "tag row",
+      "publish target row"
+    ],
+    "transcript": [
+      "selected descriptor known.release-it.summary for release-it release summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/checkstyle/checkstyle",
+    "descriptor_id": "known.checkstyle.violations",
+    "run_id": "agentic.checkstyle-violations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/checkstyle-violations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/checkstyle-violations/expected.rows.json",
+    "variants": [
+      "file row",
+      "line row",
+      "rule row"
+    ],
+    "transcript": [
+      "selected descriptor known.checkstyle.violations for checkstyle violation summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

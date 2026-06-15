@@ -1,0 +1,10 @@
+id = "known.http-prompt.context"
+name = "http-prompt context"
+priority = 50
+
+[matches]
+required_substrings = ["base_url:","method:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

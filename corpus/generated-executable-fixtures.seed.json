@@ -658,5 +658,65 @@
     "negative": "latitude 52.5200\nlongitude 13.4050\n",
     "analysis_notes": "Modeled mapscii location summary output with a generated executable-json parser plugin.",
     "variants": ["latitude row", "longitude row", "label row"]
+  },
+  {
+    "fixture": "visidata-sheet",
+    "descriptor_id": "known.visidata.sheet",
+    "name": "visidata sheet summary",
+    "repo": "https://github.com/saulpw/visidata",
+    "required_substrings": ["sheet:", "rows:"],
+    "parser": "colon-kv",
+    "input": "sheet: sales.csv\nrows: 128\ncolumns: 7\ncursor: amount\n",
+    "negative": "sheet sales.csv\nrows 128\n",
+    "analysis_notes": "Modeled visidata sheet summary output with a generated executable-json parser plugin.",
+    "variants": ["sheet row", "row count", "column count"]
+  },
+  {
+    "fixture": "http-prompt-context",
+    "descriptor_id": "known.http-prompt.context",
+    "name": "http-prompt context",
+    "repo": "https://github.com/httpie/http-prompt",
+    "required_substrings": ["base_url:", "method:"],
+    "parser": "colon-kv",
+    "input": "base_url: https://api.example.test\nmethod: GET\nheaders: 3\nbody: empty\n",
+    "negative": "base_url https://api.example.test\nmethod GET\n",
+    "analysis_notes": "Modeled http-prompt context output with a generated executable-json parser plugin.",
+    "variants": ["base URL row", "method row", "headers count row"]
+  },
+  {
+    "fixture": "aws-vault-list",
+    "descriptor_id": "known.aws-vault.list",
+    "name": "aws-vault profile list",
+    "repo": "https://github.com/99designs/aws-vault",
+    "required_substrings": ["profile\tcredential", "prod\tkeychain"],
+    "parser": "tab-pairs",
+    "input": "profile\tcredential sessions\nprod\tkeychain 2\ndev\tkeychain 1\nsandbox\tfile 0\n",
+    "negative": "profile credential sessions\nprod keychain 2\n",
+    "analysis_notes": "Modeled aws-vault profile list output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "keychain profile row", "file credential row"]
+  },
+  {
+    "fixture": "release-it-summary",
+    "descriptor_id": "known.release-it.summary",
+    "name": "release-it release summary",
+    "repo": "https://github.com/release-it/release-it",
+    "required_substrings": ["version:", "tag:"],
+    "parser": "colon-kv",
+    "input": "version: 1.2.3\ntag: v1.2.3\nchangelog: generated\npublish: npm\n",
+    "negative": "version 1.2.3\ntag v1.2.3\n",
+    "analysis_notes": "Modeled release-it release summary output with a generated executable-json parser plugin.",
+    "variants": ["version row", "tag row", "publish target row"]
+  },
+  {
+    "fixture": "checkstyle-violations",
+    "descriptor_id": "known.checkstyle.violations",
+    "name": "checkstyle violation summary",
+    "repo": "https://github.com/checkstyle/checkstyle",
+    "required_substrings": ["file:", "severity:"],
+    "parser": "colon-kv",
+    "input": "file: src/Main.java\nline: 17\nseverity: error\nrule: MissingJavadocMethod\n",
+    "negative": "file src/Main.java\nseverity error\n",
+    "analysis_notes": "Modeled checkstyle violation fields with a generated executable-json parser plugin.",
+    "variants": ["file row", "line row", "rule row"]
   }
 ]

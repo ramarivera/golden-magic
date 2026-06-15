@@ -1,0 +1,18 @@
+[
+  {
+    "key": "file",
+    "value": "src/Main.java"
+  },
+  {
+    "key": "line",
+    "value": "17"
+  },
+  {
+    "key": "severity",
+    "value": "error"
+  },
+  {
+    "key": "rule",
+    "value": "MissingJavadocMethod"
+  }
+]

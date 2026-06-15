@@ -1,0 +1,18 @@
+[
+  {
+    "name": "profile",
+    "value": "credential sessions"
+  },
+  {
+    "name": "prod",
+    "value": "keychain 2"
+  },
+  {
+    "name": "dev",
+    "value": "keychain 1"
+  },
+  {
+    "name": "sandbox",
+    "value": "file 0"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.checkstyle.violations"
+name = "checkstyle violation summary"
+priority = 50
+
+[matches]
+required_substrings = ["file:","severity:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.release-it.summary"
+name = "release-it release summary"
+priority = 50
+
+[matches]
+required_substrings = ["version:","tag:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

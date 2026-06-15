@@ -523,5 +523,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/mapscii-location",
     "analysis_notes": "Modeled mapscii location summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/saulpw/visidata",
+    "descriptor_id": "known.visidata.sheet",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/visidata-sheet",
+    "analysis_notes": "Modeled visidata sheet summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/httpie/http-prompt",
+    "descriptor_id": "known.http-prompt.context",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/http-prompt-context",
+    "analysis_notes": "Modeled http-prompt context output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/99designs/aws-vault",
+    "descriptor_id": "known.aws-vault.list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aws-vault-list",
+    "analysis_notes": "Modeled aws-vault profile list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/release-it/release-it",
+    "descriptor_id": "known.release-it.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/release-it-summary",
+    "analysis_notes": "Modeled release-it release summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/checkstyle/checkstyle",
+    "descriptor_id": "known.checkstyle.violations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/checkstyle-violations",
+    "analysis_notes": "Modeled checkstyle violation fields with a generated executable-json parser plugin."
   }
 ]

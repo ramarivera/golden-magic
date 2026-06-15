@@ -1,0 +1,4 @@
+sheet: sales.csv
+rows: 128
+columns: 7
+cursor: amount

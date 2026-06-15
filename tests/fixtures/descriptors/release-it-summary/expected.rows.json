@@ -1,0 +1,18 @@
+[
+  {
+    "key": "version",
+    "value": "1.2.3"
+  },
+  {
+    "key": "tag",
+    "value": "v1.2.3"
+  },
+  {
+    "key": "changelog",
+    "value": "generated"
+  },
+  {
+    "key": "publish",
+    "value": "npm"
+  }
+]

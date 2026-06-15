@@ -1,0 +1,4 @@
+file: src/Main.java
+line: 17
+severity: error
+rule: MissingJavadocMethod

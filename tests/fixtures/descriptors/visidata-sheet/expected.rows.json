@@ -1,0 +1,18 @@
+[
+  {
+    "key": "sheet",
+    "value": "sales.csv"
+  },
+  {
+    "key": "rows",
+    "value": "128"
+  },
+  {
+    "key": "columns",
+    "value": "7"
+  },
+  {
+    "key": "cursor",
+    "value": "amount"
+  }
+]
