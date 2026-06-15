@@ -1,0 +1,4 @@
+account	balance currency
+Assets:Cash	120.00 USD
+Expenses:Food	42.10 USD
+Income:Salary	-500.00 USD

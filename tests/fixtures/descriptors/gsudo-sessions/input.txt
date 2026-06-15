@@ -1,0 +1,4 @@
+session	state ttl
+admin	cached 300
+terminal	active 120
+expired	gone 0

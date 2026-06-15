@@ -1,0 +1,4 @@
+chapter	state pages
+variables	read 12
+functions	open 18
+arrays	queued 9

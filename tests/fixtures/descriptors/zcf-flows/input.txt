@@ -1,0 +1,4 @@
+flow	state agent
+codex	ready gpt
+claude	running opus
+review	queued local

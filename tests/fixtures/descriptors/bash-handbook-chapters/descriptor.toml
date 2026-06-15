@@ -1,0 +1,10 @@
+id = "known.bash-handbook.chapters"
+name = "bash-handbook chapter list"
+priority = 50
+
+[matches]
+required_substrings = ["chapter\tstate","variables\tread"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

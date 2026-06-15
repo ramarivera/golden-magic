@@ -1,0 +1,4 @@
+channel	items state
+files	120 ready
+git	42 ready
+commands	18 loading

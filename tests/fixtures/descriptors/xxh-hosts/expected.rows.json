@@ -1,0 +1,18 @@
+[
+  {
+    "name": "host",
+    "value": "shell state"
+  },
+  {
+    "name": "zeph",
+    "value": "zsh connected"
+  },
+  {
+    "name": "mini",
+    "value": "fish ready"
+  },
+  {
+    "name": "ci",
+    "value": "bash offline"
+  }
+]

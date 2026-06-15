@@ -1,0 +1,18 @@
+[
+  {
+    "name": "query",
+    "value": "rows status"
+  },
+  {
+    "name": "extract_titles",
+    "value": "8 ok"
+  },
+  {
+    "name": "crawl_links",
+    "value": "34 ok"
+  },
+  {
+    "name": "missing_selector",
+    "value": "0 empty"
+  }
+]

@@ -9808,5 +9808,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/denysdovhan/bash-handbook",
+    "descriptor_id": "known.bash-handbook.chapters",
+    "run_id": "agentic.bash-handbook-chapters.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bash-handbook-chapters/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bash-handbook-chapters/expected.rows.json",
+    "variants": [
+      "chapter header row",
+      "state row",
+      "pages field"
+    ],
+    "transcript": [
+      "selected descriptor known.bash-handbook.chapters for bash-handbook chapter list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ynqa/jnv",
+    "descriptor_id": "known.jnv.filters",
+    "run_id": "agentic.jnv-filters.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jnv-filters/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jnv-filters/expected.rows.json",
+    "variants": [
+      "filter header row",
+      "matches row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.jnv.filters for jnv filter history output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/UfoMiao/zcf",
+    "descriptor_id": "known.zcf.flows",
+    "run_id": "agentic.zcf-flows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zcf-flows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zcf-flows/expected.rows.json",
+    "variants": [
+      "flow header row",
+      "state row",
+      "agent field"
+    ],
+    "transcript": [
+      "selected descriptor known.zcf.flows for zcf flow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hyperupcall/autoenv",
+    "descriptor_id": "known.autoenv.envs",
+    "run_id": "agentic.autoenv-envs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/autoenv-envs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/autoenv-envs/expected.rows.json",
+    "variants": [
+      "env header row",
+      "status row",
+      "path field"
+    ],
+    "transcript": [
+      "selected descriptor known.autoenv.envs for autoenv environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mixn/carbon-now-cli",
+    "descriptor_id": "known.carbon-now-cli.renders",
+    "run_id": "agentic.carbon-now-cli-renders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/carbon-now-cli-renders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/carbon-now-cli-renders/expected.rows.json",
+    "variants": [
+      "render header row",
+      "state row",
+      "theme field"
+    ],
+    "transcript": [
+      "selected descriptor known.carbon-now-cli.renders for carbon-now-cli render list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xxh/xxh",
+    "descriptor_id": "known.xxh.hosts",
+    "run_id": "agentic.xxh-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xxh-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xxh-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "shell row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xxh.hosts for xxh host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/MontFerret/ferret",
+    "descriptor_id": "known.ferret.queries",
+    "run_id": "agentic.ferret-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ferret-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ferret-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "rows row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.ferret.queries for ferret query result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alexpasmantier/television",
+    "descriptor_id": "known.television.channels",
+    "run_id": "agentic.television-channels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/television-channels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/television-channels/expected.rows.json",
+    "variants": [
+      "channel header row",
+      "items row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.television.channels for television channel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gerardog/gsudo",
+    "descriptor_id": "known.gsudo.sessions",
+    "run_id": "agentic.gsudo-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gsudo-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gsudo-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "ttl field"
+    ],
+    "transcript": [
+      "selected descriptor known.gsudo.sessions for gsudo session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ledger/ledger",
+    "descriptor_id": "known.ledger.accounts",
+    "run_id": "agentic.ledger-accounts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ledger-accounts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ledger-accounts/expected.rows.json",
+    "variants": [
+      "account header row",
+      "balance row",
+      "currency field"
+    ],
+    "transcript": [
+      "selected descriptor known.ledger.accounts for ledger account balance list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

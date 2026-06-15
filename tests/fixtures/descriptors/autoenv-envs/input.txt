@@ -1,0 +1,4 @@
+env	status path
+project	allowed ./project
+secrets	blocked ./secrets
+tools	allowed ./tools

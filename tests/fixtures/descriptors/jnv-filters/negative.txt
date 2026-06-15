@@ -1,0 +1,2 @@
+filter matches status
+.items[] 12 valid

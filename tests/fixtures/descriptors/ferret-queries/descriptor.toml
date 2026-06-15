@@ -1,0 +1,10 @@
+id = "known.ferret.queries"
+name = "ferret query result list"
+priority = 50
+
+[matches]
+required_substrings = ["query\trows","extract_titles\t8"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

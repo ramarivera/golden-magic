@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "state ttl"
+  },
+  {
+    "name": "admin",
+    "value": "cached 300"
+  },
+  {
+    "name": "terminal",
+    "value": "active 120"
+  },
+  {
+    "name": "expired",
+    "value": "gone 0"
+  }
+]

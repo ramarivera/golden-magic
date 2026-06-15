@@ -1,0 +1,4 @@
+filter	matches status
+.items[]	12 valid
+.name	1 valid
+.missing	0 empty

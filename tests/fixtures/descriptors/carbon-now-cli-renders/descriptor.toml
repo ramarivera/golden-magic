@@ -1,0 +1,10 @@
+id = "known.carbon-now-cli.renders"
+name = "carbon-now-cli render list"
+priority = 50
+
+[matches]
+required_substrings = ["render\tstate","snippet.png\twritten"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "flow",
+    "value": "state agent"
+  },
+  {
+    "name": "codex",
+    "value": "ready gpt"
+  },
+  {
+    "name": "claude",
+    "value": "running opus"
+  },
+  {
+    "name": "review",
+    "value": "queued local"
+  }
+]

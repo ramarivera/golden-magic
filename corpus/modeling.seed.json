@@ -3813,5 +3813,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/bit-branches",
     "analysis_notes": "Modeled bit branch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/denysdovhan/bash-handbook",
+    "descriptor_id": "known.bash-handbook.chapters",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bash-handbook-chapters",
+    "analysis_notes": "Modeled bash-handbook chapter output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ynqa/jnv",
+    "descriptor_id": "known.jnv.filters",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jnv-filters",
+    "analysis_notes": "Modeled jnv filter output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/UfoMiao/zcf",
+    "descriptor_id": "known.zcf.flows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zcf-flows",
+    "analysis_notes": "Modeled zcf flow output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hyperupcall/autoenv",
+    "descriptor_id": "known.autoenv.envs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/autoenv-envs",
+    "analysis_notes": "Modeled autoenv environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mixn/carbon-now-cli",
+    "descriptor_id": "known.carbon-now-cli.renders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/carbon-now-cli-renders",
+    "analysis_notes": "Modeled carbon-now-cli render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xxh/xxh",
+    "descriptor_id": "known.xxh.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xxh-hosts",
+    "analysis_notes": "Modeled xxh host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MontFerret/ferret",
+    "descriptor_id": "known.ferret.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ferret-queries",
+    "analysis_notes": "Modeled ferret query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alexpasmantier/television",
+    "descriptor_id": "known.television.channels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/television-channels",
+    "analysis_notes": "Modeled television channel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gerardog/gsudo",
+    "descriptor_id": "known.gsudo.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gsudo-sessions",
+    "analysis_notes": "Modeled gsudo session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ledger/ledger",
+    "descriptor_id": "known.ledger.accounts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ledger-accounts",
+    "analysis_notes": "Modeled ledger account output with a generated executable-json parser plugin."
   }
 ]

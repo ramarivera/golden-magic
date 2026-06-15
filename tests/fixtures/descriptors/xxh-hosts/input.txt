@@ -1,0 +1,4 @@
+host	shell state
+zeph	zsh connected
+mini	fish ready
+ci	bash offline

@@ -1,0 +1,2 @@
+host shell state
+zeph zsh connected

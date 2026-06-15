@@ -1,0 +1,18 @@
+[
+  {
+    "name": "channel",
+    "value": "items state"
+  },
+  {
+    "name": "files",
+    "value": "120 ready"
+  },
+  {
+    "name": "git",
+    "value": "42 ready"
+  },
+  {
+    "name": "commands",
+    "value": "18 loading"
+  }
+]

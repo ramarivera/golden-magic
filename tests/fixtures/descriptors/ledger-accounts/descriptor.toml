@@ -1,0 +1,10 @@
+id = "known.ledger.accounts"
+name = "ledger account balance list"
+priority = 50
+
+[matches]
+required_substrings = ["account\tbalance","Assets:Cash\t120.00"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

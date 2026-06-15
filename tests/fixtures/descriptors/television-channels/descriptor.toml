@@ -1,0 +1,10 @@
+id = "known.television.channels"
+name = "television channel list"
+priority = 50
+
+[matches]
+required_substrings = ["channel\titems","files\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
