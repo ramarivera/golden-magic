@@ -1,0 +1,10 @@
+id = "known.ly.sessions"
+name = "ly session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","sway\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

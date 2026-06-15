@@ -1,0 +1,10 @@
+id = "known.code2prompt.files"
+name = "code2prompt file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\ttokens","src/main.rs\t420"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

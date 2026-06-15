@@ -1,0 +1,4 @@
+event	path handler
+modified	src/lib.rs rebuild
+created	tmp/out.log ignore
+deleted	old.txt cleanup

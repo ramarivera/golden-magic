@@ -5398,5 +5398,65 @@
     "negative": "source target language\nhello hola es\n",
     "analysis_notes": "Modeled translate-shell result output with a generated executable-json parser plugin.",
     "variants": ["source header row", "target row", "language field"]
+  },
+  {
+    "fixture": "code2prompt-files",
+    "descriptor_id": "known.code2prompt.files",
+    "name": "code2prompt file list",
+    "repo": "https://github.com/mufeedvh/code2prompt",
+    "required_substrings": ["file\ttokens", "src/main.rs\t420"],
+    "parser": "tab-pairs",
+    "input": "file\ttokens language\nsrc/main.rs\t420 Rust\nREADME.md\t180 Markdown\nCargo.toml\t76 TOML\n",
+    "negative": "file tokens language\nsrc/main.rs 420 Rust\n",
+    "analysis_notes": "Modeled code2prompt file output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "tokens row", "language field"]
+  },
+  {
+    "fixture": "forgecode-tasks",
+    "descriptor_id": "known.forgecode.tasks",
+    "name": "forgecode task list",
+    "repo": "https://github.com/tailcallhq/forgecode",
+    "required_substrings": ["task\tstate", "refactor\tqueued"],
+    "parser": "tab-pairs",
+    "input": "task\tstate model\nrefactor\tqueued gpt-4.1\nreview\trunning claude\npatch\tdone codex\n",
+    "negative": "task state model\nrefactor queued gpt-4.1\n",
+    "analysis_notes": "Modeled forgecode task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "state row", "model field"]
+  },
+  {
+    "fixture": "gotop-processes",
+    "descriptor_id": "known.gotop.processes",
+    "name": "gotop process list",
+    "repo": "https://github.com/cjbassi/gotop",
+    "required_substrings": ["process\tcpu", "cargo\t42.1"],
+    "parser": "tab-pairs",
+    "input": "process\tcpu mem\ncargo\t42.1 512M\nrustc\t35.4 1G\nnu\t4.2 90M\n",
+    "negative": "process cpu mem\ncargo 42.1 512M\n",
+    "analysis_notes": "Modeled gotop process output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "cpu row", "mem field"]
+  },
+  {
+    "fixture": "ly-sessions",
+    "descriptor_id": "known.ly.sessions",
+    "name": "ly session list",
+    "repo": "https://github.com/fairyglade/ly",
+    "required_substrings": ["session\tstate", "sway\tavailable"],
+    "parser": "tab-pairs",
+    "input": "session\tstate tty\nsway\tavailable tty1\nxmonad\tavailable tty2\nbash\tactive tty3\n",
+    "negative": "session state tty\nsway available tty1\n",
+    "analysis_notes": "Modeled ly session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "tty field"]
+  },
+  {
+    "fixture": "watchdog-events",
+    "descriptor_id": "known.watchdog.events",
+    "name": "watchdog event list",
+    "repo": "https://github.com/gorakhargosh/watchdog",
+    "required_substrings": ["event\tpath", "modified\tsrc/lib.rs"],
+    "parser": "tab-pairs",
+    "input": "event\tpath handler\nmodified\tsrc/lib.rs rebuild\ncreated\ttmp/out.log ignore\ndeleted\told.txt cleanup\n",
+    "negative": "event path handler\nmodified src/lib.rs rebuild\n",
+    "analysis_notes": "Modeled watchdog event output with a generated executable-json parser plugin.",
+    "variants": ["event header row", "path row", "handler field"]
   }
 ]

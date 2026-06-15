@@ -1,0 +1,4 @@
+session	state tty
+sway	available tty1
+xmonad	available tty2
+bash	active tty3

@@ -1,0 +1,10 @@
+id = "known.gotop.processes"
+name = "gotop process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tcpu","cargo\t42.1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

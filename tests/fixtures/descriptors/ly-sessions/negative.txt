@@ -1,0 +1,2 @@
+session state tty
+sway available tty1

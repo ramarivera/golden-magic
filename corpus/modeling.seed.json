@@ -3288,5 +3288,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/translate-shell-results",
     "analysis_notes": "Modeled translate-shell result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mufeedvh/code2prompt",
+    "descriptor_id": "known.code2prompt.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/code2prompt-files",
+    "analysis_notes": "Modeled code2prompt file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tailcallhq/forgecode",
+    "descriptor_id": "known.forgecode.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/forgecode-tasks",
+    "analysis_notes": "Modeled forgecode task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cjbassi/gotop",
+    "descriptor_id": "known.gotop.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gotop-processes",
+    "analysis_notes": "Modeled gotop process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fairyglade/ly",
+    "descriptor_id": "known.ly.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ly-sessions",
+    "analysis_notes": "Modeled ly session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gorakhargosh/watchdog",
+    "descriptor_id": "known.watchdog.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/watchdog-events",
+    "analysis_notes": "Modeled watchdog event output with a generated executable-json parser plugin."
   }
 ]

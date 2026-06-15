@@ -1,0 +1,10 @@
+id = "known.watchdog.events"
+name = "watchdog event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tpath","modified\tsrc/lib.rs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

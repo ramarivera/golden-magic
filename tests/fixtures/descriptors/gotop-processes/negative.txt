@@ -1,0 +1,2 @@
+process cpu mem
+cargo 42.1 512M

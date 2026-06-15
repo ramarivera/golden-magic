@@ -8458,5 +8458,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/mufeedvh/code2prompt",
+    "descriptor_id": "known.code2prompt.files",
+    "run_id": "agentic.code2prompt-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/code2prompt-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/code2prompt-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "tokens row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.code2prompt.files for code2prompt file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tailcallhq/forgecode",
+    "descriptor_id": "known.forgecode.tasks",
+    "run_id": "agentic.forgecode-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/forgecode-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/forgecode-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.forgecode.tasks for forgecode task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cjbassi/gotop",
+    "descriptor_id": "known.gotop.processes",
+    "run_id": "agentic.gotop-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gotop-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gotop-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "cpu row",
+      "mem field"
+    ],
+    "transcript": [
+      "selected descriptor known.gotop.processes for gotop process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fairyglade/ly",
+    "descriptor_id": "known.ly.sessions",
+    "run_id": "agentic.ly-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ly-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ly-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "tty field"
+    ],
+    "transcript": [
+      "selected descriptor known.ly.sessions for ly session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gorakhargosh/watchdog",
+    "descriptor_id": "known.watchdog.events",
+    "run_id": "agentic.watchdog-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/watchdog-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/watchdog-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "path row",
+      "handler field"
+    ],
+    "transcript": [
+      "selected descriptor known.watchdog.events for watchdog event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
