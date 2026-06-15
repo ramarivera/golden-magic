@@ -1,0 +1,18 @@
+[
+  {
+    "name": "function",
+    "value": "state runtime"
+  },
+  {
+    "name": "api",
+    "value": "online node18"
+  },
+  {
+    "name": "cron",
+    "value": "online node18"
+  },
+  {
+    "name": "worker",
+    "value": "deploying node20"
+  }
+]

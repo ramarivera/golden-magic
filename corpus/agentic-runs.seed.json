@@ -8278,5 +8278,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/nhn/tui.image-editor",
+    "descriptor_id": "known.tui-image-editor.filters",
+    "run_id": "agentic.tui-image-editor-filters.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-image-editor-filters/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-image-editor-filters/expected.rows.json",
+    "variants": [
+      "filter header row",
+      "state row",
+      "value field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui-image-editor.filters for tui.image-editor filter list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AdnanHodzic/auto-cpufreq",
+    "descriptor_id": "known.auto-cpufreq.profiles",
+    "run_id": "agentic.auto-cpufreq-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/auto-cpufreq-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/auto-cpufreq-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "governor row",
+      "turbo field"
+    ],
+    "transcript": [
+      "selected descriptor known.auto-cpufreq.profiles for auto-cpufreq profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/labring/laf",
+    "descriptor_id": "known.laf.functions",
+    "run_id": "agentic.laf-functions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/laf-functions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/laf-functions/expected.rows.json",
+    "variants": [
+      "function header row",
+      "state row",
+      "runtime field"
+    ],
+    "transcript": [
+      "selected descriptor known.laf.functions for laf function list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ohmybash/oh-my-bash",
+    "descriptor_id": "known.oh-my-bash.themes",
+    "run_id": "agentic.oh-my-bash-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oh-my-bash-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oh-my-bash-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "state row",
+      "file field"
+    ],
+    "transcript": [
+      "selected descriptor known.oh-my-bash.themes for oh-my-bash theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/YaoApp/yao",
+    "descriptor_id": "known.yao.processes",
+    "run_id": "agentic.yao-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yao-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yao-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.yao.processes for yao process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

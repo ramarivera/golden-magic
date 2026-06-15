@@ -1,0 +1,4 @@
+filter	state value
+blur	enabled 4
+sharpen	disabled 0
+grayscale	enabled 1

@@ -3218,5 +3218,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/miniserve-shares",
     "analysis_notes": "Modeled miniserve share output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nhn/tui.image-editor",
+    "descriptor_id": "known.tui-image-editor.filters",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-image-editor-filters",
+    "analysis_notes": "Modeled tui.image-editor filter output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AdnanHodzic/auto-cpufreq",
+    "descriptor_id": "known.auto-cpufreq.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/auto-cpufreq-profiles",
+    "analysis_notes": "Modeled auto-cpufreq profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/labring/laf",
+    "descriptor_id": "known.laf.functions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/laf-functions",
+    "analysis_notes": "Modeled laf cloud function output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ohmybash/oh-my-bash",
+    "descriptor_id": "known.oh-my-bash.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oh-my-bash-themes",
+    "analysis_notes": "Modeled oh-my-bash theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/YaoApp/yao",
+    "descriptor_id": "known.yao.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yao-processes",
+    "analysis_notes": "Modeled yao process output with a generated executable-json parser plugin."
   }
 ]

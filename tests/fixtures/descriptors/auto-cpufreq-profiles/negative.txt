@@ -1,0 +1,2 @@
+profile governor turbo
+battery powersave off

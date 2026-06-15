@@ -1,0 +1,4 @@
+profile	governor turbo
+battery	powersave off
+charger	performance on
+balanced	schedutil off

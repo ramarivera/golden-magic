@@ -1,0 +1,10 @@
+id = "known.tui-image-editor.filters"
+name = "tui.image-editor filter list"
+priority = 50
+
+[matches]
+required_substrings = ["filter\tstate","blur\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

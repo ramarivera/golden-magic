@@ -1,0 +1,4 @@
+theme	state file
+font	active font.theme.sh
+agnoster	available agnoster.theme.sh
+powerline	available powerline.theme.sh

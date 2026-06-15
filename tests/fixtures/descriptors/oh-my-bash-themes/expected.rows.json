@@ -1,0 +1,18 @@
+[
+  {
+    "name": "theme",
+    "value": "state file"
+  },
+  {
+    "name": "font",
+    "value": "active font.theme.sh"
+  },
+  {
+    "name": "agnoster",
+    "value": "available agnoster.theme.sh"
+  },
+  {
+    "name": "powerline",
+    "value": "available powerline.theme.sh"
+  }
+]

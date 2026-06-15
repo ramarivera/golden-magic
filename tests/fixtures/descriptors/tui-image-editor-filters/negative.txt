@@ -1,0 +1,2 @@
+filter state value
+blur enabled 4

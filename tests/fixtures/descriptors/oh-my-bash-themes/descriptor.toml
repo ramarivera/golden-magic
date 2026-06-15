@@ -1,0 +1,10 @@
+id = "known.oh-my-bash.themes"
+name = "oh-my-bash theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tstate","font\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

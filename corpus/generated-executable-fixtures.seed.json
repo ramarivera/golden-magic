@@ -5278,5 +5278,65 @@
     "negative": "path state port\n/tmp/site serving 8080\n",
     "analysis_notes": "Modeled miniserve share output with a generated executable-json parser plugin.",
     "variants": ["path header row", "state row", "port field"]
+  },
+  {
+    "fixture": "tui-image-editor-filters",
+    "descriptor_id": "known.tui-image-editor.filters",
+    "name": "tui.image-editor filter list",
+    "repo": "https://github.com/nhn/tui.image-editor",
+    "required_substrings": ["filter\tstate", "blur\tenabled"],
+    "parser": "tab-pairs",
+    "input": "filter\tstate value\nblur\tenabled 4\nsharpen\tdisabled 0\ngrayscale\tenabled 1\n",
+    "negative": "filter state value\nblur enabled 4\n",
+    "analysis_notes": "Modeled tui.image-editor filter output with a generated executable-json parser plugin.",
+    "variants": ["filter header row", "state row", "value field"]
+  },
+  {
+    "fixture": "auto-cpufreq-profiles",
+    "descriptor_id": "known.auto-cpufreq.profiles",
+    "name": "auto-cpufreq profile list",
+    "repo": "https://github.com/AdnanHodzic/auto-cpufreq",
+    "required_substrings": ["profile\tgovernor", "battery\tpowersave"],
+    "parser": "tab-pairs",
+    "input": "profile\tgovernor turbo\nbattery\tpowersave off\ncharger\tperformance on\nbalanced\tschedutil off\n",
+    "negative": "profile governor turbo\nbattery powersave off\n",
+    "analysis_notes": "Modeled auto-cpufreq profile output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "governor row", "turbo field"]
+  },
+  {
+    "fixture": "laf-functions",
+    "descriptor_id": "known.laf.functions",
+    "name": "laf function list",
+    "repo": "https://github.com/labring/laf",
+    "required_substrings": ["function\tstate", "api\tonline"],
+    "parser": "tab-pairs",
+    "input": "function\tstate runtime\napi\tonline node18\ncron\tonline node18\nworker\tdeploying node20\n",
+    "negative": "function state runtime\napi online node18\n",
+    "analysis_notes": "Modeled laf cloud function output with a generated executable-json parser plugin.",
+    "variants": ["function header row", "state row", "runtime field"]
+  },
+  {
+    "fixture": "oh-my-bash-themes",
+    "descriptor_id": "known.oh-my-bash.themes",
+    "name": "oh-my-bash theme list",
+    "repo": "https://github.com/ohmybash/oh-my-bash",
+    "required_substrings": ["theme\tstate", "font\tactive"],
+    "parser": "tab-pairs",
+    "input": "theme\tstate file\nfont\tactive font.theme.sh\nagnoster\tavailable agnoster.theme.sh\npowerline\tavailable powerline.theme.sh\n",
+    "negative": "theme state file\nfont active font.theme.sh\n",
+    "analysis_notes": "Modeled oh-my-bash theme output with a generated executable-json parser plugin.",
+    "variants": ["theme header row", "state row", "file field"]
+  },
+  {
+    "fixture": "yao-processes",
+    "descriptor_id": "known.yao.processes",
+    "name": "yao process list",
+    "repo": "https://github.com/YaoApp/yao",
+    "required_substrings": ["process\tstate", "admin\trunning"],
+    "parser": "tab-pairs",
+    "input": "process\tstate port\nadmin\trunning 5099\napi\trunning 5098\njob\tstopped 0\n",
+    "negative": "process state port\nadmin running 5099\n",
+    "analysis_notes": "Modeled yao process output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "state row", "port field"]
   }
 ]

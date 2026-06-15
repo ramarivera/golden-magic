@@ -1,0 +1,10 @@
+id = "known.yao.processes"
+name = "yao process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tstate","admin\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

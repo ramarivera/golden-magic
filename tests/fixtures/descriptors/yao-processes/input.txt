@@ -1,0 +1,4 @@
+process	state port
+admin	running 5099
+api	running 5098
+job	stopped 0
