@@ -1,0 +1,4 @@
+resource	region state
+instance	us-east-1 running
+bucket	global active
+volume	us-west-2 detached

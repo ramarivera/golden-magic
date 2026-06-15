@@ -1,0 +1,18 @@
+[
+  {
+    "name": "sensor",
+    "value": "value state"
+  },
+  {
+    "name": "cpu",
+    "value": "72C normal"
+  },
+  {
+    "name": "fan",
+    "value": "1800rpm normal"
+  },
+  {
+    "name": "power",
+    "value": "45W stress"
+  }
+]

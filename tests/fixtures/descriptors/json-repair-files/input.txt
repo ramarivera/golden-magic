@@ -1,0 +1,4 @@
+file	status fixes
+broken.json	repaired 3
+almost.json	repaired 1
+valid.json	unchanged 0

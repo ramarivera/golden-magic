@@ -1,0 +1,10 @@
+id = "known.docker-gc.objects"
+name = "docker-gc object list"
+priority = 50
+
+[matches]
+required_substrings = ["object\tstate","old-image\tremoved"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

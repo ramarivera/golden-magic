@@ -1,0 +1,10 @@
+id = "known.awless.resources"
+name = "awless resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tregion","instance\tus-east-1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

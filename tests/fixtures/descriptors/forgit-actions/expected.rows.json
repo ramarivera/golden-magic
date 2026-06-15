@@ -1,0 +1,18 @@
+[
+  {
+    "name": "action",
+    "value": "selector state"
+  },
+  {
+    "name": "log",
+    "value": "fzf ready"
+  },
+  {
+    "name": "diff",
+    "value": "fzf ready"
+  },
+  {
+    "name": "checkout",
+    "value": "fzf queued"
+  }
+]

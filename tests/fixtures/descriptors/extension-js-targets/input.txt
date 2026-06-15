@@ -1,0 +1,4 @@
+target	browser state
+chrome	chromium ready
+firefox	gecko ready
+safari	webkit queued

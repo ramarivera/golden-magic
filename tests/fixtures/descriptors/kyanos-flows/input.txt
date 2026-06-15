@@ -1,0 +1,4 @@
+flow	latency state
+http	12ms traced
+dns	3ms traced
+tls	20ms pending

@@ -1,0 +1,10 @@
+id = "known.s-tui.sensors"
+name = "s-tui sensor list"
+priority = 50
+
+[matches]
+required_substrings = ["sensor\tvalue","cpu\t72C"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+command	exit duration
+git	0 20ms
+cargo	0 120ms
+badcmd	127 1ms

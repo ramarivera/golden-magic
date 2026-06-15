@@ -1,0 +1,10 @@
+id = "known.cliwrap.commands"
+name = "CliWrap command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\texit","git\t0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

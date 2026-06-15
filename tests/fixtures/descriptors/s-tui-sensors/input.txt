@@ -1,0 +1,4 @@
+sensor	value state
+cpu	72C normal
+fan	1800rpm normal
+power	45W stress

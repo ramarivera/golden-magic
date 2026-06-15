@@ -1,0 +1,10 @@
+id = "known.forgit.actions"
+name = "forgit action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tselector","log\tfzf"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

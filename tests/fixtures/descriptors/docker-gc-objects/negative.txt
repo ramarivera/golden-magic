@@ -1,0 +1,2 @@
+object state size
+old-image removed 2G

@@ -1,0 +1,4 @@
+object	state size
+old-image	removed 2G
+stopped-container	removed 40M
+active-image	kept 800M

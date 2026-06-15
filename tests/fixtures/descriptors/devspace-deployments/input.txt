@@ -1,0 +1,4 @@
+deployment	namespace state
+api	dev synced
+worker	dev deployed
+db	infra pending

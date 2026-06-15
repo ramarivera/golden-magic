@@ -1,0 +1,2 @@
+resource region state
+instance us-east-1 running

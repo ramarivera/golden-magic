@@ -1,0 +1,4 @@
+action	selector state
+log	fzf ready
+diff	fzf ready
+checkout	fzf queued

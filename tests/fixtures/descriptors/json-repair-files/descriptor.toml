@@ -1,0 +1,10 @@
+id = "known.json-repair.files"
+name = "json_repair file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","broken.json\trepaired"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

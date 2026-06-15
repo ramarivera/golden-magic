@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "status fixes"
+  },
+  {
+    "name": "broken.json",
+    "value": "repaired 3"
+  },
+  {
+    "name": "almost.json",
+    "value": "repaired 1"
+  },
+  {
+    "name": "valid.json",
+    "value": "unchanged 0"
+  }
+]

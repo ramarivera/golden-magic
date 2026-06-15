@@ -4373,5 +4373,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/apk-mitm-patches",
     "analysis_notes": "Modeled apk-mitm patch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hengyoush/kyanos",
+    "descriptor_id": "known.kyanos.flows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kyanos-flows",
+    "analysis_notes": "Modeled Kyanos flow output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/amanusk/s-tui",
+    "descriptor_id": "known.s-tui.sensors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/s-tui-sensors",
+    "analysis_notes": "Modeled s-tui sensor output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wfxr/forgit",
+    "descriptor_id": "known.forgit.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/forgit-actions",
+    "analysis_notes": "Modeled forgit action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spotify/docker-gc",
+    "descriptor_id": "known.docker-gc.objects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/docker-gc-objects",
+    "analysis_notes": "Modeled docker-gc object output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/extension-js/extension.js",
+    "descriptor_id": "known.extension-js.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/extension-js-targets",
+    "analysis_notes": "Modeled extension.js target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/devspace-sh/devspace",
+    "descriptor_id": "known.devspace.deployments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devspace-deployments",
+    "analysis_notes": "Modeled DevSpace deployment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Tyrrrz/CliWrap",
+    "descriptor_id": "known.cliwrap.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cliwrap-commands",
+    "analysis_notes": "Modeled CliWrap command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mangiucugna/json_repair",
+    "descriptor_id": "known.json-repair.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/json-repair-files",
+    "analysis_notes": "Modeled json_repair file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wallix/awless",
+    "descriptor_id": "known.awless.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awless-resources",
+    "analysis_notes": "Modeled awless resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/stoplightio/prism",
+    "descriptor_id": "known.prism.mocks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/prism-mocks",
+    "analysis_notes": "Modeled Prism mock route output with a generated executable-json parser plugin."
   }
 ]

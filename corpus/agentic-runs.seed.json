@@ -11248,5 +11248,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/hengyoush/kyanos",
+    "descriptor_id": "known.kyanos.flows",
+    "run_id": "agentic.kyanos-flows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kyanos-flows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kyanos-flows/expected.rows.json",
+    "variants": [
+      "flow header row",
+      "latency row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kyanos.flows for Kyanos flow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/amanusk/s-tui",
+    "descriptor_id": "known.s-tui.sensors",
+    "run_id": "agentic.s-tui-sensors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/s-tui-sensors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/s-tui-sensors/expected.rows.json",
+    "variants": [
+      "sensor header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.s-tui.sensors for s-tui sensor list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wfxr/forgit",
+    "descriptor_id": "known.forgit.actions",
+    "run_id": "agentic.forgit-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/forgit-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/forgit-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "selector row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.forgit.actions for forgit action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/spotify/docker-gc",
+    "descriptor_id": "known.docker-gc.objects",
+    "run_id": "agentic.docker-gc-objects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/docker-gc-objects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/docker-gc-objects/expected.rows.json",
+    "variants": [
+      "object header row",
+      "state row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.docker-gc.objects for docker-gc object list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/extension-js/extension.js",
+    "descriptor_id": "known.extension-js.targets",
+    "run_id": "agentic.extension-js-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/extension-js-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/extension-js-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "browser row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.extension-js.targets for extension.js target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/devspace-sh/devspace",
+    "descriptor_id": "known.devspace.deployments",
+    "run_id": "agentic.devspace-deployments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devspace-deployments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devspace-deployments/expected.rows.json",
+    "variants": [
+      "deployment header row",
+      "namespace row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devspace.deployments for DevSpace deployment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Tyrrrz/CliWrap",
+    "descriptor_id": "known.cliwrap.commands",
+    "run_id": "agentic.cliwrap-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cliwrap-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cliwrap-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "exit row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.cliwrap.commands for CliWrap command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mangiucugna/json_repair",
+    "descriptor_id": "known.json-repair.files",
+    "run_id": "agentic.json-repair-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/json-repair-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/json-repair-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "fixes field"
+    ],
+    "transcript": [
+      "selected descriptor known.json-repair.files for json_repair file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wallix/awless",
+    "descriptor_id": "known.awless.resources",
+    "run_id": "agentic.awless-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awless-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awless-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "region row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.awless.resources for awless resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/stoplightio/prism",
+    "descriptor_id": "known.prism.mocks",
+    "run_id": "agentic.prism-mocks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/prism-mocks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/prism-mocks/expected.rows.json",
+    "variants": [
+      "route header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.prism.mocks for Prism mock route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

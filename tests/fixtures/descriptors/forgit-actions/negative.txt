@@ -1,0 +1,2 @@
+action selector state
+log fzf ready
