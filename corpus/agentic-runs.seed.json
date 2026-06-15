@@ -8728,5 +8728,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/pypa/hatch",
+    "descriptor_id": "known.hatch.environments",
+    "run_id": "agentic.hatch-environments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hatch-environments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hatch-environments/expected.rows.json",
+    "variants": [
+      "environment header row",
+      "state row",
+      "python field"
+    ],
+    "transcript": [
+      "selected descriptor known.hatch.environments for hatch environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jarun/buku",
+    "descriptor_id": "known.buku.bookmarks",
+    "run_id": "agentic.buku-bookmarks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/buku-bookmarks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/buku-bookmarks/expected.rows.json",
+    "variants": [
+      "id header row",
+      "title row",
+      "tags field"
+    ],
+    "transcript": [
+      "selected descriptor known.buku.bookmarks for buku bookmark list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/simeji/jid",
+    "descriptor_id": "known.jid.queries",
+    "run_id": "agentic.jid-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jid-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jid-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "matches row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.jid.queries for jid query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/crynta/terax-ai",
+    "descriptor_id": "known.terax-ai.agents",
+    "run_id": "agentic.terax-ai-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terax-ai-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terax-ai-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "state row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.terax-ai.agents for terax-ai agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/NVIDIA/OpenShell",
+    "descriptor_id": "known.openshell.plugins",
+    "run_id": "agentic.openshell-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openshell-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openshell-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "state row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.openshell.plugins for OpenShell plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

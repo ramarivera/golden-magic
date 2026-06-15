@@ -1,0 +1,10 @@
+id = "known.buku.bookmarks"
+name = "buku bookmark list"
+priority = 50
+
+[matches]
+required_substrings = ["id\ttitle","12\tGolden Magic"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

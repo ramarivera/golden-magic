@@ -1,0 +1,4 @@
+agent	state model
+coder	running qwen
+reviewer	idle llama
+planner	running gpt

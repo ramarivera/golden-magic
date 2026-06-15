@@ -1,0 +1,4 @@
+query	matches type
+.items[]	3 array
+.name	1 string
+.metadata.tags	2 array

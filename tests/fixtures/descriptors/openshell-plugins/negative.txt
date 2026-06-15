@@ -1,0 +1,2 @@
+plugin state version
+launcher loaded 1.0

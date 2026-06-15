@@ -1,0 +1,10 @@
+id = "known.jid.queries"
+name = "jid query list"
+priority = 50
+
+[matches]
+required_substrings = ["query\tmatches",".items[]\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

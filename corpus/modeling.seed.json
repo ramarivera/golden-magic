@@ -3393,5 +3393,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/sd-replacements",
     "analysis_notes": "Modeled sd replacement output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pypa/hatch",
+    "descriptor_id": "known.hatch.environments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hatch-environments",
+    "analysis_notes": "Modeled hatch environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jarun/buku",
+    "descriptor_id": "known.buku.bookmarks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/buku-bookmarks",
+    "analysis_notes": "Modeled buku bookmark output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/simeji/jid",
+    "descriptor_id": "known.jid.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jid-queries",
+    "analysis_notes": "Modeled jid query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/crynta/terax-ai",
+    "descriptor_id": "known.terax-ai.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terax-ai-agents",
+    "analysis_notes": "Modeled terax-ai agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NVIDIA/OpenShell",
+    "descriptor_id": "known.openshell.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openshell-plugins",
+    "analysis_notes": "Modeled OpenShell plugin output with a generated executable-json parser plugin."
   }
 ]

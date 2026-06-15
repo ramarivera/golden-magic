@@ -1,0 +1,2 @@
+query matches type
+.items[] 3 array

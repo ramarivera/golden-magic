@@ -1,0 +1,10 @@
+id = "known.hatch.environments"
+name = "hatch environment list"
+priority = 50
+
+[matches]
+required_substrings = ["environment\tstate","default\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

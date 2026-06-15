@@ -5578,5 +5578,65 @@
     "negative": "file matches replacement\nREADME.md 3 golden\n",
     "analysis_notes": "Modeled sd replacement output with a generated executable-json parser plugin.",
     "variants": ["file header row", "matches row", "replacement field"]
+  },
+  {
+    "fixture": "hatch-environments",
+    "descriptor_id": "known.hatch.environments",
+    "name": "hatch environment list",
+    "repo": "https://github.com/pypa/hatch",
+    "required_substrings": ["environment\tstate", "default\tready"],
+    "parser": "tab-pairs",
+    "input": "environment\tstate python\ndefault\tready 3.12\ntest\tcreated 3.11\ndocs\tmissing 3.12\n",
+    "negative": "environment state python\ndefault ready 3.12\n",
+    "analysis_notes": "Modeled hatch environment output with a generated executable-json parser plugin.",
+    "variants": ["environment header row", "state row", "python field"]
+  },
+  {
+    "fixture": "buku-bookmarks",
+    "descriptor_id": "known.buku.bookmarks",
+    "name": "buku bookmark list",
+    "repo": "https://github.com/jarun/buku",
+    "required_substrings": ["id\ttitle", "12\tGolden Magic"],
+    "parser": "tab-pairs",
+    "input": "id\ttitle tags\n12\tGolden Magic cli,parser\n13\tNushell shell,data\n14\tRust rust,tooling\n",
+    "negative": "id title tags\n12 Golden Magic cli,parser\n",
+    "analysis_notes": "Modeled buku bookmark output with a generated executable-json parser plugin.",
+    "variants": ["id header row", "title row", "tags field"]
+  },
+  {
+    "fixture": "jid-queries",
+    "descriptor_id": "known.jid.queries",
+    "name": "jid query list",
+    "repo": "https://github.com/simeji/jid",
+    "required_substrings": ["query\tmatches", ".items[]\t3"],
+    "parser": "tab-pairs",
+    "input": "query\tmatches type\n.items[]\t3 array\n.name\t1 string\n.metadata.tags\t2 array\n",
+    "negative": "query matches type\n.items[] 3 array\n",
+    "analysis_notes": "Modeled jid query output with a generated executable-json parser plugin.",
+    "variants": ["query header row", "matches row", "type field"]
+  },
+  {
+    "fixture": "terax-ai-agents",
+    "descriptor_id": "known.terax-ai.agents",
+    "name": "terax-ai agent list",
+    "repo": "https://github.com/crynta/terax-ai",
+    "required_substrings": ["agent\tstate", "coder\trunning"],
+    "parser": "tab-pairs",
+    "input": "agent\tstate model\ncoder\trunning qwen\nreviewer\tidle llama\nplanner\trunning gpt\n",
+    "negative": "agent state model\ncoder running qwen\n",
+    "analysis_notes": "Modeled terax-ai agent output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "state row", "model field"]
+  },
+  {
+    "fixture": "openshell-plugins",
+    "descriptor_id": "known.openshell.plugins",
+    "name": "OpenShell plugin list",
+    "repo": "https://github.com/NVIDIA/OpenShell",
+    "required_substrings": ["plugin\tstate", "launcher\tloaded"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstate version\nlauncher\tloaded 1.0\nterminal\tloaded 1.1\nmonitor\tdisabled 0.9\n",
+    "negative": "plugin state version\nlauncher loaded 1.0\n",
+    "analysis_notes": "Modeled OpenShell plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "state row", "version field"]
   }
 ]

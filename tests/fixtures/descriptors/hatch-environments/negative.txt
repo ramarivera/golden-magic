@@ -1,0 +1,2 @@
+environment state python
+default ready 3.12

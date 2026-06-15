@@ -1,0 +1,4 @@
+environment	state python
+default	ready 3.12
+test	created 3.11
+docs	missing 3.12

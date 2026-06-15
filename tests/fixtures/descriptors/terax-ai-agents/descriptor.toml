@@ -1,0 +1,10 @@
+id = "known.terax-ai.agents"
+name = "terax-ai agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\tstate","coder\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
