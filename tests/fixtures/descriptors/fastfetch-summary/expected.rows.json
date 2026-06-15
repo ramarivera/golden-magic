@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Host",
+    "value": "MacBookPro18,3"
+  },
+  {
+    "key": "CPU",
+    "value": "Apple M1 Pro"
+  },
+  {
+    "key": "Packages",
+    "value": "128 (brew)"
+  },
+  {
+    "key": "Shell",
+    "value": "nu 0.113.1"
+  }
+]

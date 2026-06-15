@@ -1,0 +1,4 @@
+Host: MacBookPro18,3
+CPU: Apple M1 Pro
+Packages: 128 (brew)
+Shell: nu 0.113.1

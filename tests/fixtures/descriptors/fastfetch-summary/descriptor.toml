@@ -1,0 +1,10 @@
+id = "known.fastfetch.summary"
+name = "fastfetch summary"
+priority = 50
+
+[matches]
+required_substrings = ["Host:","Packages:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

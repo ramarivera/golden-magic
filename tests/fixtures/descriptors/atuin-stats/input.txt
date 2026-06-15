@@ -1,0 +1,3 @@
+total commands: 128
+unique commands: 42
+most used: git status

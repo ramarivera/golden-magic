@@ -1,0 +1,62 @@
+[
+  {
+    "fixture": "atuin-stats",
+    "descriptor_id": "known.atuin.stats",
+    "name": "atuin stats",
+    "repo": "https://github.com/atuinsh/atuin",
+    "required_substrings": ["total commands:", "unique commands:"],
+    "parser": "colon-kv",
+    "input": "total commands: 128\nunique commands: 42\nmost used: git status\n",
+    "negative": "total commands 128\nunique commands 42\n",
+    "analysis_notes": "Modeled atuin stats key-value output with a generated executable-json parser plugin.",
+    "variants": ["integer value", "multi-word command value", "multiple key-value rows"]
+  },
+  {
+    "fixture": "glow-stash-list",
+    "descriptor_id": "known.glow.stash-list",
+    "name": "glow stash list",
+    "repo": "https://github.com/charmbracelet/glow",
+    "required_substrings": ["README.md\tProject notes", "ops.md\tRunbook"],
+    "parser": "tab-pairs",
+    "input": "README.md\tProject notes\nops.md\tRunbook\nideas.md\tDraft ideas\n",
+    "negative": "README.md Project notes\nops.md Runbook\n",
+    "analysis_notes": "Modeled glow stash/list two-column output with a generated executable-json parser plugin.",
+    "variants": ["markdown filename", "title with spaces", "multiple stash rows"]
+  },
+  {
+    "fixture": "neofetch-summary",
+    "descriptor_id": "known.neofetch.summary",
+    "name": "neofetch summary",
+    "repo": "https://github.com/dylanaraps/neofetch",
+    "required_substrings": ["OS:", "Kernel:"],
+    "parser": "colon-kv",
+    "input": "OS: macOS 15.5\nKernel: Darwin 24.5.0\nShell: zsh 5.9\nTerminal: Ghostty\n",
+    "negative": "OS macOS\nKernel Darwin\n",
+    "analysis_notes": "Modeled neofetch summary key-value output with a generated executable-json parser plugin.",
+    "variants": ["OS row", "kernel row", "terminal row"]
+  },
+  {
+    "fixture": "fastfetch-summary",
+    "descriptor_id": "known.fastfetch.summary",
+    "name": "fastfetch summary",
+    "repo": "https://github.com/fastfetch-cli/fastfetch",
+    "required_substrings": ["Host:", "Packages:"],
+    "parser": "colon-kv",
+    "input": "Host: MacBookPro18,3\nCPU: Apple M1 Pro\nPackages: 128 (brew)\nShell: nu 0.113.1\n",
+    "negative": "Host MacBookPro18,3\nPackages 128\n",
+    "analysis_notes": "Modeled fastfetch summary key-value output with a generated executable-json parser plugin.",
+    "variants": ["host row", "package count row", "shell version row"]
+  },
+  {
+    "fixture": "eza-long",
+    "descriptor_id": "known.eza.long",
+    "name": "eza --long",
+    "repo": "https://github.com/eza-community/eza",
+    "required_substrings": ["src/main.rs", "Cargo.toml"],
+    "parser": "ls-long",
+    "input": ".rw-r--r-- 1.2k ramiro 15 Jun 09:41 Cargo.toml\n.rw-r--r-- 4.8k ramiro 15 Jun 09:42 src/main.rs\ndrwxr-xr-x   96 ramiro 15 Jun 09:43 tests\n",
+    "negative": "Cargo.toml\nREADME.md\n",
+    "analysis_notes": "Modeled eza long listing output with a generated executable-json parser plugin.",
+    "variants": ["file row", "directory row", "size with unit"]
+  }
+]

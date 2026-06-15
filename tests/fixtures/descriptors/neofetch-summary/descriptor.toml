@@ -1,0 +1,10 @@
+id = "known.neofetch.summary"
+name = "neofetch summary"
+priority = 50
+
+[matches]
+required_substrings = ["OS:","Kernel:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

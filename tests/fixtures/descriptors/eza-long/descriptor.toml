@@ -1,0 +1,10 @@
+id = "known.eza.long"
+name = "eza --long"
+priority = 50
+
+[matches]
+required_substrings = ["src/main.rs","Cargo.toml"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

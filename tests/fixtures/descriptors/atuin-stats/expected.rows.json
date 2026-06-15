@@ -1,0 +1,14 @@
+[
+  {
+    "key": "total commands",
+    "value": "128"
+  },
+  {
+    "key": "unique commands",
+    "value": "42"
+  },
+  {
+    "key": "most used",
+    "value": "git status"
+  }
+]

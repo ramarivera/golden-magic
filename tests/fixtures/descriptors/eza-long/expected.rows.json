@@ -1,0 +1,29 @@
+[
+  {
+    "mode": ".rw-r--r--",
+    "size": "1.2k",
+    "owner": "ramiro",
+    "day": "15",
+    "month": "Jun",
+    "time": "09:41",
+    "path": "Cargo.toml"
+  },
+  {
+    "mode": ".rw-r--r--",
+    "size": "4.8k",
+    "owner": "ramiro",
+    "day": "15",
+    "month": "Jun",
+    "time": "09:42",
+    "path": "src/main.rs"
+  },
+  {
+    "mode": "drwxr-xr-x",
+    "size": "96",
+    "owner": "ramiro",
+    "day": "15",
+    "month": "Jun",
+    "time": "09:43",
+    "path": "tests"
+  }
+]

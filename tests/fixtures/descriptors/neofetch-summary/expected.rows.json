@@ -1,0 +1,18 @@
+[
+  {
+    "key": "OS",
+    "value": "macOS 15.5"
+  },
+  {
+    "key": "Kernel",
+    "value": "Darwin 24.5.0"
+  },
+  {
+    "key": "Shell",
+    "value": "zsh 5.9"
+  },
+  {
+    "key": "Terminal",
+    "value": "Ghostty"
+  }
+]

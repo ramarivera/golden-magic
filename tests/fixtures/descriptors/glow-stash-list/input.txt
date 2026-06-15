@@ -1,0 +1,3 @@
+README.md	Project notes
+ops.md	Runbook
+ideas.md	Draft ideas

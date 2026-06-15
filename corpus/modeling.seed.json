@@ -138,5 +138,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/ag-matches",
     "analysis_notes": "Modeled The Silver Searcher match output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/atuinsh/atuin",
+    "descriptor_id": "known.atuin.stats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/atuin-stats",
+    "analysis_notes": "Modeled atuin stats key-value output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/charmbracelet/glow",
+    "descriptor_id": "known.glow.stash-list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glow-stash-list",
+    "analysis_notes": "Modeled glow stash/list two-column output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dylanaraps/neofetch",
+    "descriptor_id": "known.neofetch.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/neofetch-summary",
+    "analysis_notes": "Modeled neofetch summary key-value output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fastfetch-cli/fastfetch",
+    "descriptor_id": "known.fastfetch.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fastfetch-summary",
+    "analysis_notes": "Modeled fastfetch summary key-value output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/eza-community/eza",
+    "descriptor_id": "known.eza.long",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/eza-long",
+    "analysis_notes": "Modeled eza long listing output with a generated executable-json parser plugin."
   }
 ]

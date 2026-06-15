@@ -358,5 +358,75 @@
       "ran golden-magic against fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/atuinsh/atuin",
+    "descriptor_id": "known.atuin.stats",
+    "run_id": "agentic.atuin.stats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/atuin-stats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/atuin-stats/expected.rows.json",
+    "variants": ["integer value", "multi-word command value", "multiple key-value rows"],
+    "transcript": [
+      "selected descriptor known.atuin.stats for atuin stats output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/glow",
+    "descriptor_id": "known.glow.stash-list",
+    "run_id": "agentic.glow.stash-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glow-stash-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glow-stash-list/expected.rows.json",
+    "variants": ["markdown filename", "title with spaces", "multiple stash rows"],
+    "transcript": [
+      "selected descriptor known.glow.stash-list for glow stash/list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dylanaraps/neofetch",
+    "descriptor_id": "known.neofetch.summary",
+    "run_id": "agentic.neofetch.summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/neofetch-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/neofetch-summary/expected.rows.json",
+    "variants": ["OS row", "kernel row", "terminal row"],
+    "transcript": [
+      "selected descriptor known.neofetch.summary for neofetch summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fastfetch-cli/fastfetch",
+    "descriptor_id": "known.fastfetch.summary",
+    "run_id": "agentic.fastfetch.summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fastfetch-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fastfetch-summary/expected.rows.json",
+    "variants": ["host row", "package count row", "shell version row"],
+    "transcript": [
+      "selected descriptor known.fastfetch.summary for fastfetch summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/eza-community/eza",
+    "descriptor_id": "known.eza.long",
+    "run_id": "agentic.eza.long.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/eza-long/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/eza-long/expected.rows.json",
+    "variants": ["file row", "directory row", "size with unit"],
+    "transcript": [
+      "selected descriptor known.eza.long for eza long listing output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

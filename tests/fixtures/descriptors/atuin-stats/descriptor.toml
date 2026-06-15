@@ -1,0 +1,10 @@
+id = "known.atuin.stats"
+name = "atuin stats"
+priority = 50
+
+[matches]
+required_substrings = ["total commands:","unique commands:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

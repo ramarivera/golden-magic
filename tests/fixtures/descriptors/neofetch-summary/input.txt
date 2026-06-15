@@ -1,0 +1,4 @@
+OS: macOS 15.5
+Kernel: Darwin 24.5.0
+Shell: zsh 5.9
+Terminal: Ghostty
