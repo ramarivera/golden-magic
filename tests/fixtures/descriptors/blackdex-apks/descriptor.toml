@@ -1,0 +1,10 @@
+id = "known.blackdex.apks"
+name = "BlackDex APK list"
+priority = 50
+
+[matches]
+required_substrings = ["apk\tstate","target.apk\tdumped"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

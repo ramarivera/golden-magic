@@ -1,0 +1,10 @@
+id = "known.pastel.colors"
+name = "pastel color list"
+priority = 50
+
+[matches]
+required_substrings = ["color\thex","sky\t#87ceeb"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.datree.policies"
+name = "datree policy list"
+priority = 50
+
+[matches]
+required_substrings = ["policy\tstatus","no-latest\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

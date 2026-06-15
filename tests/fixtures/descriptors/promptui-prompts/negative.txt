@@ -1,0 +1,2 @@
+prompt kind state
+select choice ready

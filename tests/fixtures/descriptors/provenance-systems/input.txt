@@ -1,0 +1,4 @@
+system	state cores
+snes	available 2
+gba	available 1
+psx	missing 0

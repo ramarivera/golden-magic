@@ -1,0 +1,10 @@
+id = "known.provenance.systems"
+name = "Provenance system list"
+priority = 50
+
+[matches]
+required_substrings = ["system\tstate","snes\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

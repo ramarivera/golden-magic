@@ -1,0 +1,2 @@
+policy status resource
+no-latest pass deployment

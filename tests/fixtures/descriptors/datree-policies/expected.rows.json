@@ -1,0 +1,18 @@
+[
+  {
+    "name": "policy",
+    "value": "status resource"
+  },
+  {
+    "name": "no-latest",
+    "value": "pass deployment"
+  },
+  {
+    "name": "limits",
+    "value": "fail pod"
+  },
+  {
+    "name": "labels",
+    "value": "pass service"
+  }
+]

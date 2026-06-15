@@ -5998,5 +5998,65 @@
     "negative": "mailbox unread total\ninbox 12 140\n",
     "analysis_notes": "Modeled himalaya message output with a generated executable-json parser plugin.",
     "variants": ["mailbox header row", "unread row", "total field"]
+  },
+  {
+    "fixture": "pastel-colors",
+    "descriptor_id": "known.pastel.colors",
+    "name": "pastel color list",
+    "repo": "https://github.com/sharkdp/pastel",
+    "required_substrings": ["color\thex", "sky\t#87ceeb"],
+    "parser": "tab-pairs",
+    "input": "color\thex space\nsky\t#87ceeb srgb\nmint\t#98ff98 srgb\nink\t#111111 srgb\n",
+    "negative": "color hex space\nsky #87ceeb srgb\n",
+    "analysis_notes": "Modeled pastel color output with a generated executable-json parser plugin.",
+    "variants": ["color header row", "hex row", "space field"]
+  },
+  {
+    "fixture": "promptui-prompts",
+    "descriptor_id": "known.promptui.prompts",
+    "name": "promptui prompt list",
+    "repo": "https://github.com/manifoldco/promptui",
+    "required_substrings": ["prompt\tkind", "select\tchoice"],
+    "parser": "tab-pairs",
+    "input": "prompt\tkind state\nselect\tchoice ready\nconfirm\tboolean ready\ninput\ttext active\n",
+    "negative": "prompt kind state\nselect choice ready\n",
+    "analysis_notes": "Modeled promptui prompt output with a generated executable-json parser plugin.",
+    "variants": ["prompt header row", "kind row", "state field"]
+  },
+  {
+    "fixture": "blackdex-apks",
+    "descriptor_id": "known.blackdex.apks",
+    "name": "BlackDex APK list",
+    "repo": "https://github.com/CodingGay/BlackDex",
+    "required_substrings": ["apk\tstate", "target.apk\tdumped"],
+    "parser": "tab-pairs",
+    "input": "apk\tstate classes\ntarget.apk\tdumped 42\nsample.apk\tqueued 8\napp.apk\trunning 21\n",
+    "negative": "apk state classes\ntarget.apk dumped 42\n",
+    "analysis_notes": "Modeled BlackDex APK output with a generated executable-json parser plugin.",
+    "variants": ["apk header row", "state row", "classes field"]
+  },
+  {
+    "fixture": "datree-policies",
+    "descriptor_id": "known.datree.policies",
+    "name": "datree policy list",
+    "repo": "https://github.com/datreeio/datree",
+    "required_substrings": ["policy\tstatus", "no-latest\tpass"],
+    "parser": "tab-pairs",
+    "input": "policy\tstatus resource\nno-latest\tpass deployment\nlimits\tfail pod\nlabels\tpass service\n",
+    "negative": "policy status resource\nno-latest pass deployment\n",
+    "analysis_notes": "Modeled datree policy output with a generated executable-json parser plugin.",
+    "variants": ["policy header row", "status row", "resource field"]
+  },
+  {
+    "fixture": "provenance-systems",
+    "descriptor_id": "known.provenance.systems",
+    "name": "Provenance system list",
+    "repo": "https://github.com/Provenance-Emu/Provenance",
+    "required_substrings": ["system\tstate", "snes\tavailable"],
+    "parser": "tab-pairs",
+    "input": "system\tstate cores\nsnes\tavailable 2\ngba\tavailable 1\npsx\tmissing 0\n",
+    "negative": "system state cores\nsnes available 2\n",
+    "analysis_notes": "Modeled Provenance system output with a generated executable-json parser plugin.",
+    "variants": ["system header row", "state row", "cores field"]
   }
 ]

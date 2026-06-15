@@ -9358,5 +9358,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/sharkdp/pastel",
+    "descriptor_id": "known.pastel.colors",
+    "run_id": "agentic.pastel-colors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pastel-colors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pastel-colors/expected.rows.json",
+    "variants": [
+      "color header row",
+      "hex row",
+      "space field"
+    ],
+    "transcript": [
+      "selected descriptor known.pastel.colors for pastel color list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/manifoldco/promptui",
+    "descriptor_id": "known.promptui.prompts",
+    "run_id": "agentic.promptui-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/promptui-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/promptui-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.promptui.prompts for promptui prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/CodingGay/BlackDex",
+    "descriptor_id": "known.blackdex.apks",
+    "run_id": "agentic.blackdex-apks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/blackdex-apks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/blackdex-apks/expected.rows.json",
+    "variants": [
+      "apk header row",
+      "state row",
+      "classes field"
+    ],
+    "transcript": [
+      "selected descriptor known.blackdex.apks for BlackDex APK list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/datreeio/datree",
+    "descriptor_id": "known.datree.policies",
+    "run_id": "agentic.datree-policies.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/datree-policies/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/datree-policies/expected.rows.json",
+    "variants": [
+      "policy header row",
+      "status row",
+      "resource field"
+    ],
+    "transcript": [
+      "selected descriptor known.datree.policies for datree policy list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Provenance-Emu/Provenance",
+    "descriptor_id": "known.provenance.systems",
+    "run_id": "agentic.provenance-systems.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/provenance-systems/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/provenance-systems/expected.rows.json",
+    "variants": [
+      "system header row",
+      "state row",
+      "cores field"
+    ],
+    "transcript": [
+      "selected descriptor known.provenance.systems for Provenance system list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

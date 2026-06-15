@@ -1,0 +1,4 @@
+apk	state classes
+target.apk	dumped 42
+sample.apk	queued 8
+app.apk	running 21

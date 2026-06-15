@@ -3638,5 +3638,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/himalaya-messages",
     "analysis_notes": "Modeled himalaya message output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sharkdp/pastel",
+    "descriptor_id": "known.pastel.colors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pastel-colors",
+    "analysis_notes": "Modeled pastel color output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/manifoldco/promptui",
+    "descriptor_id": "known.promptui.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/promptui-prompts",
+    "analysis_notes": "Modeled promptui prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/CodingGay/BlackDex",
+    "descriptor_id": "known.blackdex.apks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/blackdex-apks",
+    "analysis_notes": "Modeled BlackDex APK output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/datreeio/datree",
+    "descriptor_id": "known.datree.policies",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/datree-policies",
+    "analysis_notes": "Modeled datree policy output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Provenance-Emu/Provenance",
+    "descriptor_id": "known.provenance.systems",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/provenance-systems",
+    "analysis_notes": "Modeled Provenance system output with a generated executable-json parser plugin."
   }
 ]

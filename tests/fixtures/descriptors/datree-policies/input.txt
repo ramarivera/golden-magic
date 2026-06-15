@@ -1,0 +1,4 @@
+policy	status resource
+no-latest	pass deployment
+limits	fail pod
+labels	pass service

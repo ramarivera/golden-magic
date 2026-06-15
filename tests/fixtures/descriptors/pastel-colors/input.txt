@@ -1,0 +1,4 @@
+color	hex space
+sky	#87ceeb srgb
+mint	#98ff98 srgb
+ink	#111111 srgb
