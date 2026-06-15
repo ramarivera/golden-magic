@@ -178,5 +178,65 @@
     "negative": "name golden-magic\nversion 0.1.1\n",
     "analysis_notes": "Modeled yq scalar properties output with a generated executable-json parser plugin.",
     "variants": ["name scalar", "version scalar", "kind scalar"]
+  },
+  {
+    "fixture": "tokei-summary",
+    "descriptor_id": "known.tokei.summary",
+    "name": "tokei compact summary",
+    "repo": "https://github.com/XAMPPRocky/tokei",
+    "required_substrings": ["Language\tFiles", "Rust\t12"],
+    "parser": "tab-pairs",
+    "input": "Language\tFiles Lines Code Comments\nRust\t12 2048 1800 120\nMarkdown\t4 320 300 0\nTOML\t3 98 90 2\n",
+    "negative": "Language Files Lines Code Comments\nRust 12 2048 1800 120\n",
+    "analysis_notes": "Modeled tokei compact language summary output with a generated executable-json parser plugin.",
+    "variants": ["Rust language row", "Markdown language row", "TOML language row"]
+  },
+  {
+    "fixture": "ast-grep-lint",
+    "descriptor_id": "known.ast-grep.lint",
+    "name": "ast-grep lint diagnostics",
+    "repo": "https://github.com/ast-grep/ast-grep",
+    "required_substrings": ["file: src/main.rs", "severity: warning"],
+    "parser": "colon-kv",
+    "input": "file: src/main.rs\nline: 27\nseverity: warning\nrule: no-debug-print\n",
+    "negative": "file src/main.rs\nline 27\n",
+    "analysis_notes": "Modeled ast-grep lint diagnostic fields with a generated executable-json parser plugin.",
+    "variants": ["file row", "line row", "rule row"]
+  },
+  {
+    "fixture": "gron-lines",
+    "descriptor_id": "known.gron.lines",
+    "name": "gron assignment lines",
+    "repo": "https://github.com/tomnomnom/gron",
+    "required_substrings": ["json.name:", "json.version:"],
+    "parser": "colon-kv",
+    "input": "json.name: golden-magic\njson.version: 0.1.1\njson.enabled: true\n",
+    "negative": "json.name = golden-magic\njson.enabled = true\n",
+    "analysis_notes": "Modeled gron-style flattened JSON assignment output with a generated executable-json parser plugin.",
+    "variants": ["name field", "version field", "boolean field"]
+  },
+  {
+    "fixture": "fx-inspect",
+    "descriptor_id": "known.fx.inspect",
+    "name": "fx inspected scalar paths",
+    "repo": "https://github.com/antonmedv/fx",
+    "required_substrings": ["name:", "dependencies:"],
+    "parser": "colon-kv",
+    "input": "name: golden-magic\ndependencies: 4\nscripts.test: cargo test\n",
+    "negative": "name golden-magic\ndependencies 4\n",
+    "analysis_notes": "Modeled fx inspected scalar path output with a generated executable-json parser plugin.",
+    "variants": ["name scalar", "dependency count", "nested script path"]
+  },
+  {
+    "fixture": "onefetch-summary",
+    "descriptor_id": "known.onefetch.summary",
+    "name": "onefetch summary",
+    "repo": "https://github.com/o2sh/onefetch",
+    "required_substrings": ["Project:", "Language:"],
+    "parser": "colon-kv",
+    "input": "Project: golden-magic\nLanguage: Rust\nFiles: 42\nLicense: MIT\n",
+    "negative": "Project golden-magic\nLanguage Rust\n",
+    "analysis_notes": "Modeled onefetch repository summary output with a generated executable-json parser plugin.",
+    "variants": ["project row", "language row", "license row"]
   }
 ]

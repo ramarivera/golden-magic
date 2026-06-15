@@ -1,0 +1,14 @@
+[
+  {
+    "key": "json.name",
+    "value": "golden-magic"
+  },
+  {
+    "key": "json.version",
+    "value": "0.1.1"
+  },
+  {
+    "key": "json.enabled",
+    "value": "true"
+  }
+]

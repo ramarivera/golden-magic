@@ -1,0 +1,4 @@
+file: src/main.rs
+line: 27
+severity: warning
+rule: no-debug-print

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Project",
+    "value": "golden-magic"
+  },
+  {
+    "key": "Language",
+    "value": "Rust"
+  },
+  {
+    "key": "Files",
+    "value": "42"
+  },
+  {
+    "key": "License",
+    "value": "MIT"
+  }
+]

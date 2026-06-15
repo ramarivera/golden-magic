@@ -243,5 +243,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/yq-properties",
     "analysis_notes": "Modeled yq scalar properties output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/XAMPPRocky/tokei",
+    "descriptor_id": "known.tokei.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tokei-summary",
+    "analysis_notes": "Modeled tokei compact language summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ast-grep/ast-grep",
+    "descriptor_id": "known.ast-grep.lint",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ast-grep-lint",
+    "analysis_notes": "Modeled ast-grep lint diagnostic fields with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tomnomnom/gron",
+    "descriptor_id": "known.gron.lines",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gron-lines",
+    "analysis_notes": "Modeled gron-style flattened JSON assignment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/antonmedv/fx",
+    "descriptor_id": "known.fx.inspect",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fx-inspect",
+    "analysis_notes": "Modeled fx inspected scalar path output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/o2sh/onefetch",
+    "descriptor_id": "known.onefetch.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/onefetch-summary",
+    "analysis_notes": "Modeled onefetch repository summary output with a generated executable-json parser plugin."
   }
 ]

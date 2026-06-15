@@ -1,0 +1,10 @@
+id = "known.onefetch.summary"
+name = "onefetch summary"
+priority = 50
+
+[matches]
+required_substrings = ["Project:","Language:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

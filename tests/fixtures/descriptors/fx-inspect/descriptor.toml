@@ -1,0 +1,10 @@
+id = "known.fx.inspect"
+name = "fx inspected scalar paths"
+priority = 50
+
+[matches]
+required_substrings = ["name:","dependencies:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

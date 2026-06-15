@@ -1,0 +1,10 @@
+id = "known.tokei.summary"
+name = "tokei compact summary"
+priority = 50
+
+[matches]
+required_substrings = ["Language\tFiles","Rust\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

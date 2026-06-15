@@ -1,0 +1,10 @@
+id = "known.ast-grep.lint"
+name = "ast-grep lint diagnostics"
+priority = 50
+
+[matches]
+required_substrings = ["file: src/main.rs","severity: warning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

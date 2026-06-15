@@ -1,0 +1,4 @@
+Project: golden-magic
+Language: Rust
+Files: 42
+License: MIT

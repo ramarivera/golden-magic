@@ -1,0 +1,14 @@
+[
+  {
+    "key": "name",
+    "value": "golden-magic"
+  },
+  {
+    "key": "dependencies",
+    "value": "4"
+  },
+  {
+    "key": "scripts.test",
+    "value": "cargo test"
+  }
+]

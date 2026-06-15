@@ -1,0 +1,10 @@
+id = "known.gron.lines"
+name = "gron assignment lines"
+priority = 50
+
+[matches]
+required_substrings = ["json.name:","json.version:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -628,5 +628,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/XAMPPRocky/tokei",
+    "descriptor_id": "known.tokei.summary",
+    "run_id": "agentic.tokei-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tokei-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tokei-summary/expected.rows.json",
+    "variants": [
+      "Rust language row",
+      "Markdown language row",
+      "TOML language row"
+    ],
+    "transcript": [
+      "selected descriptor known.tokei.summary for tokei compact summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ast-grep/ast-grep",
+    "descriptor_id": "known.ast-grep.lint",
+    "run_id": "agentic.ast-grep-lint.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ast-grep-lint/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ast-grep-lint/expected.rows.json",
+    "variants": [
+      "file row",
+      "line row",
+      "rule row"
+    ],
+    "transcript": [
+      "selected descriptor known.ast-grep.lint for ast-grep lint diagnostics output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tomnomnom/gron",
+    "descriptor_id": "known.gron.lines",
+    "run_id": "agentic.gron-lines.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gron-lines/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gron-lines/expected.rows.json",
+    "variants": [
+      "name field",
+      "version field",
+      "boolean field"
+    ],
+    "transcript": [
+      "selected descriptor known.gron.lines for gron assignment lines output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/antonmedv/fx",
+    "descriptor_id": "known.fx.inspect",
+    "run_id": "agentic.fx-inspect.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fx-inspect/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fx-inspect/expected.rows.json",
+    "variants": [
+      "name scalar",
+      "dependency count",
+      "nested script path"
+    ],
+    "transcript": [
+      "selected descriptor known.fx.inspect for fx inspected scalar paths output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/o2sh/onefetch",
+    "descriptor_id": "known.onefetch.summary",
+    "run_id": "agentic.onefetch-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/onefetch-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/onefetch-summary/expected.rows.json",
+    "variants": [
+      "project row",
+      "language row",
+      "license row"
+    ],
+    "transcript": [
+      "selected descriptor known.onefetch.summary for onefetch summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
