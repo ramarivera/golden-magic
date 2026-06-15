@@ -1,0 +1,10 @@
+id = "known.csharp-repl.packages"
+name = "CSharpRepl package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tversion","Newtonsoft.Json\t13"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

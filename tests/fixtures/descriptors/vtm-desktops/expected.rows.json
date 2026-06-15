@@ -1,0 +1,18 @@
+[
+  {
+    "name": "desktop",
+    "value": "windows state"
+  },
+  {
+    "name": "main",
+    "value": "3 active"
+  },
+  {
+    "name": "logs",
+    "value": "2 active"
+  },
+  {
+    "name": "old",
+    "value": "0 closed"
+  }
+]

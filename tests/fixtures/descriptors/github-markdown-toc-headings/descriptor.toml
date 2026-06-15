@@ -1,0 +1,10 @@
+id = "known.github-markdown-toc.headings"
+name = "github-markdown-toc heading list"
+priority = 50
+
+[matches]
+required_substrings = ["heading\tlevel","Install\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

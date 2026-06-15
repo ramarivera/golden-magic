@@ -1,0 +1,4 @@
+connection	database state
+local	postgres connected
+stage	mysql saved
+old	sqlite archived

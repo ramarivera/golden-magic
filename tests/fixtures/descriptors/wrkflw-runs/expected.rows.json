@@ -1,0 +1,18 @@
+[
+  {
+    "name": "workflow",
+    "value": "status state"
+  },
+  {
+    "name": "ci",
+    "value": "passed complete"
+  },
+  {
+    "name": "release",
+    "value": "failed retry"
+  },
+  {
+    "name": "lint",
+    "value": "passed complete"
+  }
+]

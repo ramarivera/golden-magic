@@ -1,0 +1,10 @@
+id = "known.fzy.matches"
+name = "fzy match list"
+priority = 50
+
+[matches]
+required_substrings = ["match\tscore","src/main.rs\t92"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+package	version state
+Newtonsoft.Json	13 loaded
+Spectre.Console	1 loaded
+Old.Package	0 removed

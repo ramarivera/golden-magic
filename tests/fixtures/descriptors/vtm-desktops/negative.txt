@@ -1,0 +1,2 @@
+desktop windows state
+main 3 active

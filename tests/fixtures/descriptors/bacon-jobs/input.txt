@@ -1,0 +1,4 @@
+job	status state
+check	pass green
+test	pass green
+clippy	fail red

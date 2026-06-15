@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "version state"
+  },
+  {
+    "name": "Newtonsoft.Json",
+    "value": "13 loaded"
+  },
+  {
+    "name": "Spectre.Console",
+    "value": "1 loaded"
+  },
+  {
+    "name": "Old.Package",
+    "value": "0 removed"
+  }
+]

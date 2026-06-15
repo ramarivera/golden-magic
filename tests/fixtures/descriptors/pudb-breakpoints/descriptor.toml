@@ -1,0 +1,10 @@
+id = "known.pudb.breakpoints"
+name = "PuDB breakpoint list"
+priority = 50
+
+[matches]
+required_substrings = ["breakpoint\tfile","main\tsrc/app.py"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

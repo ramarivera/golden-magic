@@ -5766,5 +5766,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/ddgr-results",
     "analysis_notes": "Modeled ddgr search result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/curl/trurl",
+    "descriptor_id": "known.trurl.urls",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/trurl-urls",
+    "analysis_notes": "Modeled trurl URL parsing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/directvt/vtm",
+    "descriptor_id": "known.vtm.desktops",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vtm-desktops",
+    "analysis_notes": "Modeled vtm text desktop output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/waf/CSharpRepl",
+    "descriptor_id": "known.csharp-repl.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/csharp-repl-packages",
+    "analysis_notes": "Modeled CSharpRepl package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Canop/bacon",
+    "descriptor_id": "known.bacon.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bacon-jobs",
+    "analysis_notes": "Modeled bacon background checker output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/TaKO8Ki/gobang",
+    "descriptor_id": "known.gobang.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gobang-connections",
+    "analysis_notes": "Modeled gobang database connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ekalinin/github-markdown-toc",
+    "descriptor_id": "known.github-markdown-toc.headings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/github-markdown-toc-headings",
+    "analysis_notes": "Modeled github-markdown-toc heading output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jhawthorn/fzy",
+    "descriptor_id": "known.fzy.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fzy-matches",
+    "analysis_notes": "Modeled fzy fuzzy match output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/inducer/pudb",
+    "descriptor_id": "known.pudb.breakpoints",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pudb-breakpoints",
+    "analysis_notes": "Modeled PuDB debugger breakpoint output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/b3nj5m1n/xdg-ninja",
+    "descriptor_id": "known.xdg-ninja.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xdg-ninja-files",
+    "analysis_notes": "Modeled xdg-ninja home-directory finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bahdotsh/wrkflw",
+    "descriptor_id": "known.wrkflw.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wrkflw-runs",
+    "analysis_notes": "Modeled wrkflw local GitHub Actions run output with a generated executable-json parser plugin."
   }
 ]

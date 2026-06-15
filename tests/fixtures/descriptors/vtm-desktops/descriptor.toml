@@ -1,0 +1,10 @@
+id = "known.vtm.desktops"
+name = "vtm desktop list"
+priority = 50
+
+[matches]
+required_substrings = ["desktop\twindows","main\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+file status state
+.npmrc misplaced reported

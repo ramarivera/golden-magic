@@ -1,0 +1,4 @@
+file	status state
+.npmrc	misplaced reported
+.cache	ok ignored
+.gem	misplaced reported

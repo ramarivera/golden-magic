@@ -14830,5 +14830,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/curl/trurl",
+    "descriptor_id": "known.trurl.urls",
+    "run_id": "agentic.trurl-urls.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/trurl-urls/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/trurl-urls/expected.rows.json",
+    "variants": [
+      "url header row",
+      "scheme row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.trurl.urls for trurl URL list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/directvt/vtm",
+    "descriptor_id": "known.vtm.desktops",
+    "run_id": "agentic.vtm-desktops.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vtm-desktops/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vtm-desktops/expected.rows.json",
+    "variants": [
+      "desktop header row",
+      "windows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vtm.desktops for vtm desktop list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/waf/CSharpRepl",
+    "descriptor_id": "known.csharp-repl.packages",
+    "run_id": "agentic.csharp-repl-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/csharp-repl-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/csharp-repl-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.csharp-repl.packages for CSharpRepl package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Canop/bacon",
+    "descriptor_id": "known.bacon.jobs",
+    "run_id": "agentic.bacon-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bacon-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bacon-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bacon.jobs for bacon job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/TaKO8Ki/gobang",
+    "descriptor_id": "known.gobang.connections",
+    "run_id": "agentic.gobang-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gobang-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gobang-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "database row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gobang.connections for gobang connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ekalinin/github-markdown-toc",
+    "descriptor_id": "known.github-markdown-toc.headings",
+    "run_id": "agentic.github-markdown-toc-headings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/github-markdown-toc-headings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/github-markdown-toc-headings/expected.rows.json",
+    "variants": [
+      "heading header row",
+      "level row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.github-markdown-toc.headings for github-markdown-toc heading list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jhawthorn/fzy",
+    "descriptor_id": "known.fzy.matches",
+    "run_id": "agentic.fzy-matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fzy-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fzy-matches/expected.rows.json",
+    "variants": [
+      "match header row",
+      "score row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fzy.matches for fzy match list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/inducer/pudb",
+    "descriptor_id": "known.pudb.breakpoints",
+    "run_id": "agentic.pudb-breakpoints.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pudb-breakpoints/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pudb-breakpoints/expected.rows.json",
+    "variants": [
+      "breakpoint header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pudb.breakpoints for PuDB breakpoint list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/b3nj5m1n/xdg-ninja",
+    "descriptor_id": "known.xdg-ninja.files",
+    "run_id": "agentic.xdg-ninja-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xdg-ninja-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xdg-ninja-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xdg-ninja.files for xdg-ninja file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bahdotsh/wrkflw",
+    "descriptor_id": "known.wrkflw.runs",
+    "run_id": "agentic.wrkflw-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wrkflw-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wrkflw-runs/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wrkflw.runs for wrkflw run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

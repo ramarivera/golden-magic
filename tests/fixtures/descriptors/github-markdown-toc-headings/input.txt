@@ -1,0 +1,4 @@
+heading	level state
+Install	2 included
+Usage	2 included
+Hidden	4 skipped

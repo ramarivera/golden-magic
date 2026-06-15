@@ -1,0 +1,4 @@
+match	score state
+src/main.rs	92 selected
+README.md	60 visible
+old.txt	10 hidden

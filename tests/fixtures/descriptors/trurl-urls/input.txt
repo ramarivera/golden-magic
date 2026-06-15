@@ -1,0 +1,4 @@
+url	scheme state
+api	https parsed
+local	http parsed
+bad	unknown rejected

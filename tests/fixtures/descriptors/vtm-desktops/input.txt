@@ -1,0 +1,4 @@
+desktop	windows state
+main	3 active
+logs	2 active
+old	0 closed

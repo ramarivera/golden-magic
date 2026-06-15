@@ -1,0 +1,10 @@
+id = "known.xdg-ninja.files"
+name = "xdg-ninja file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus",".npmrc\tmisplaced"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

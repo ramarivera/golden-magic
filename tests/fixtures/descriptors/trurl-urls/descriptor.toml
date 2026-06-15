@@ -1,0 +1,10 @@
+id = "known.trurl.urls"
+name = "trurl URL list"
+priority = 50
+
+[matches]
+required_substrings = ["url\tscheme","api\thttps"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
