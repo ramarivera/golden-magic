@@ -1,0 +1,10 @@
+id = "known.go-zero.services"
+name = "go-zero service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\ttransport","user-api\thttp"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

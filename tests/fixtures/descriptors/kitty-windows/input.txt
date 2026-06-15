@@ -1,0 +1,4 @@
+window	title state
+1	shell active
+2	logs background
+3	editor background

@@ -1,0 +1,4 @@
+process	cpu memory
+python	12.5 256M
+postgres	8.2 512M
+kitty	2.1 180M

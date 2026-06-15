@@ -1,0 +1,18 @@
+[
+  {
+    "name": "process",
+    "value": "cpu memory"
+  },
+  {
+    "name": "python",
+    "value": "12.5 256M"
+  },
+  {
+    "name": "postgres",
+    "value": "8.2 512M"
+  },
+  {
+    "name": "kitty",
+    "value": "2.1 180M"
+  }
+]

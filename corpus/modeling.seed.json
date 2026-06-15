@@ -1258,5 +1258,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/zellij-sessions",
     "analysis_notes": "Modeled Zellij session listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kovidgoyal/kitty",
+    "descriptor_id": "known.kitty.windows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kitty-windows",
+    "analysis_notes": "Modeled kitty window listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zeromicro/go-zero",
+    "descriptor_id": "known.go-zero.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/go-zero-services",
+    "analysis_notes": "Modeled go-zero service listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/soxoj/maigret",
+    "descriptor_id": "known.maigret.sites",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/maigret-sites",
+    "analysis_notes": "Modeled Maigret username search output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ibraheemdev/modern-unix",
+    "descriptor_id": "known.modern-unix.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/modern-unix-tools",
+    "analysis_notes": "Modeled modern-unix tool index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nicolargo/glances",
+    "descriptor_id": "known.glances.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glances-processes",
+    "analysis_notes": "Modeled Glances process output with a generated executable-json parser plugin."
   }
 ]

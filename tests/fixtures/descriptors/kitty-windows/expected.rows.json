@@ -1,0 +1,18 @@
+[
+  {
+    "name": "window",
+    "value": "title state"
+  },
+  {
+    "name": "1",
+    "value": "shell active"
+  },
+  {
+    "name": "2",
+    "value": "logs background"
+  },
+  {
+    "name": "3",
+    "value": "editor background"
+  }
+]

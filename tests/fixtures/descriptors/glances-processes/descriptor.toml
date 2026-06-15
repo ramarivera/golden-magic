@@ -1,0 +1,10 @@
+id = "known.glances.processes"
+name = "Glances process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tcpu","python\t12.5"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

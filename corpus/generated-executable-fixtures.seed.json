@@ -1918,5 +1918,65 @@
     "negative": "session status panes\ndev attached 4\n",
     "analysis_notes": "Modeled Zellij session listing output with a generated executable-json parser plugin.",
     "variants": ["session header row", "attached session row", "panes count field"]
+  },
+  {
+    "fixture": "kitty-windows",
+    "descriptor_id": "known.kitty.windows",
+    "name": "kitty window list",
+    "repo": "https://github.com/kovidgoyal/kitty",
+    "required_substrings": ["window\ttitle", "1\tshell"],
+    "parser": "tab-pairs",
+    "input": "window\ttitle state\n1\tshell active\n2\tlogs background\n3\teditor background\n",
+    "negative": "window title state\n1 shell active\n",
+    "analysis_notes": "Modeled kitty window listing output with a generated executable-json parser plugin.",
+    "variants": ["window header row", "active window row", "state field"]
+  },
+  {
+    "fixture": "go-zero-services",
+    "descriptor_id": "known.go-zero.services",
+    "name": "go-zero service list",
+    "repo": "https://github.com/zeromicro/go-zero",
+    "required_substrings": ["service\ttransport", "user-api\thttp"],
+    "parser": "tab-pairs",
+    "input": "service\ttransport status\nuser-api\thttp running\norder-rpc\tgrpc running\njob-worker\tqueue idle\n",
+    "negative": "service transport status\nuser-api http running\n",
+    "analysis_notes": "Modeled go-zero service listing output with a generated executable-json parser plugin.",
+    "variants": ["service header row", "http service row", "status field"]
+  },
+  {
+    "fixture": "maigret-sites",
+    "descriptor_id": "known.maigret.sites",
+    "name": "Maigret site result list",
+    "repo": "https://github.com/soxoj/maigret",
+    "required_substrings": ["site\tstatus", "github\tfound"],
+    "parser": "tab-pairs",
+    "input": "site\tstatus username\ngithub\tfound ramiro\ntwitter\tmissing ramiro\nreddit\tfound ramiro\n",
+    "negative": "site status username\ngithub found ramiro\n",
+    "analysis_notes": "Modeled Maigret username search output with a generated executable-json parser plugin.",
+    "variants": ["site header row", "found site row", "username field"]
+  },
+  {
+    "fixture": "modern-unix-tools",
+    "descriptor_id": "known.modern-unix.tools",
+    "name": "modern-unix tool index",
+    "repo": "https://github.com/ibraheemdev/modern-unix",
+    "required_substrings": ["tool\treplaces", "bat\tcat"],
+    "parser": "tab-pairs",
+    "input": "tool\treplaces category\nbat\tcat viewer\nexa\tls listing\nripgrep\tgrep search\n",
+    "negative": "tool replaces category\nbat cat viewer\n",
+    "analysis_notes": "Modeled modern-unix tool index output with a generated executable-json parser plugin.",
+    "variants": ["tool header row", "replacement row", "category field"]
+  },
+  {
+    "fixture": "glances-processes",
+    "descriptor_id": "known.glances.processes",
+    "name": "Glances process list",
+    "repo": "https://github.com/nicolargo/glances",
+    "required_substrings": ["process\tcpu", "python\t12.5"],
+    "parser": "tab-pairs",
+    "input": "process\tcpu memory\npython\t12.5 256M\npostgres\t8.2 512M\nkitty\t2.1 180M\n",
+    "negative": "process cpu memory\npython 12.5 256M\n",
+    "analysis_notes": "Modeled Glances process output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "cpu usage row", "memory field"]
   }
 ]

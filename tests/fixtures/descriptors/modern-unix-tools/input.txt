@@ -1,0 +1,4 @@
+tool	replaces category
+bat	cat viewer
+exa	ls listing
+ripgrep	grep search

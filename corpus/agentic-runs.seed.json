@@ -3238,5 +3238,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/kovidgoyal/kitty",
+    "descriptor_id": "known.kitty.windows",
+    "run_id": "agentic.kitty-windows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kitty-windows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kitty-windows/expected.rows.json",
+    "variants": [
+      "window header row",
+      "active window row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kitty.windows for kitty window list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zeromicro/go-zero",
+    "descriptor_id": "known.go-zero.services",
+    "run_id": "agentic.go-zero-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/go-zero-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/go-zero-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "http service row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.go-zero.services for go-zero service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/soxoj/maigret",
+    "descriptor_id": "known.maigret.sites",
+    "run_id": "agentic.maigret-sites.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/maigret-sites/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/maigret-sites/expected.rows.json",
+    "variants": [
+      "site header row",
+      "found site row",
+      "username field"
+    ],
+    "transcript": [
+      "selected descriptor known.maigret.sites for Maigret site result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ibraheemdev/modern-unix",
+    "descriptor_id": "known.modern-unix.tools",
+    "run_id": "agentic.modern-unix-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/modern-unix-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/modern-unix-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "replacement row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.modern-unix.tools for modern-unix tool index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nicolargo/glances",
+    "descriptor_id": "known.glances.processes",
+    "run_id": "agentic.glances-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glances-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glances-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "cpu usage row",
+      "memory field"
+    ],
+    "transcript": [
+      "selected descriptor known.glances.processes for Glances process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

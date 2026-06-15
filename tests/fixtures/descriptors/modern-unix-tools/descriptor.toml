@@ -1,0 +1,10 @@
+id = "known.modern-unix.tools"
+name = "modern-unix tool index"
+priority = 50
+
+[matches]
+required_substrings = ["tool\treplaces","bat\tcat"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
