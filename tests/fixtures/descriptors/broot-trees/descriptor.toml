@@ -1,0 +1,10 @@
+id = "known.broot.trees"
+name = "broot tree list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tkind","src\tdir"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

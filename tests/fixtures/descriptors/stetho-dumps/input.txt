@@ -1,0 +1,4 @@
+dump	status rows
+network	ok 24
+database	ok 12
+heap	warning 3

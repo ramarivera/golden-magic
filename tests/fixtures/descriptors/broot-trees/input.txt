@@ -1,0 +1,4 @@
+path	kind size
+src	dir 12
+Cargo.toml	file 4KB
+README.md	file 9KB

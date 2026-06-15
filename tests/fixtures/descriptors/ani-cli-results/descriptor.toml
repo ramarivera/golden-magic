@@ -1,0 +1,10 @@
+id = "known.ani-cli.results"
+name = "ani-cli result list"
+priority = 50
+
+[matches]
+required_substrings = ["title\tepisode","Cowboy-Bebop\t01"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

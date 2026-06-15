@@ -2483,5 +2483,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/shellcrash-proxies",
     "analysis_notes": "Modeled ShellCrash proxy output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Canop/broot",
+    "descriptor_id": "known.broot.trees",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/broot-trees",
+    "analysis_notes": "Modeled broot tree output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dip/cmdk",
+    "descriptor_id": "known.cmdk.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cmdk-items",
+    "analysis_notes": "Modeled cmdk item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/facebook/stetho",
+    "descriptor_id": "known.stetho.dumps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/stetho-dumps",
+    "analysis_notes": "Modeled Stetho dump output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nhn/tui.calendar",
+    "descriptor_id": "known.tui-calendar.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-calendar-events",
+    "analysis_notes": "Modeled tui.calendar event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pystardust/ani-cli",
+    "descriptor_id": "known.ani-cli.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ani-cli-results",
+    "analysis_notes": "Modeled ani-cli result output with a generated executable-json parser plugin."
   }
 ]

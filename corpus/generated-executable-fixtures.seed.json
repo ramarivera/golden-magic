@@ -4018,5 +4018,65 @@
     "negative": "proxy state latency\nauto selected 42ms\n",
     "analysis_notes": "Modeled ShellCrash proxy output with a generated executable-json parser plugin.",
     "variants": ["proxy header row", "state row", "latency field"]
+  },
+  {
+    "fixture": "broot-trees",
+    "descriptor_id": "known.broot.trees",
+    "name": "broot tree list",
+    "repo": "https://github.com/Canop/broot",
+    "required_substrings": ["path\tkind", "src\tdir"],
+    "parser": "tab-pairs",
+    "input": "path\tkind size\nsrc\tdir 12\nCargo.toml\tfile 4KB\nREADME.md\tfile 9KB\n",
+    "negative": "path kind size\nsrc dir 12\n",
+    "analysis_notes": "Modeled broot tree output with a generated executable-json parser plugin.",
+    "variants": ["path header row", "kind row", "size field"]
+  },
+  {
+    "fixture": "cmdk-items",
+    "descriptor_id": "known.cmdk.items",
+    "name": "cmdk item list",
+    "repo": "https://github.com/dip/cmdk",
+    "required_substrings": ["item\tgroup", "open-file\tactions"],
+    "parser": "tab-pairs",
+    "input": "item\tgroup shortcut\nopen-file\tactions ctrl-o\nsearch\tglobal ctrl-k\nsettings\tpreferences ctrl-comma\n",
+    "negative": "item group shortcut\nopen-file actions ctrl-o\n",
+    "analysis_notes": "Modeled cmdk item output with a generated executable-json parser plugin.",
+    "variants": ["item header row", "group row", "shortcut field"]
+  },
+  {
+    "fixture": "stetho-dumps",
+    "descriptor_id": "known.stetho.dumps",
+    "name": "Stetho dump list",
+    "repo": "https://github.com/facebook/stetho",
+    "required_substrings": ["dump\tstatus", "network\tok"],
+    "parser": "tab-pairs",
+    "input": "dump\tstatus rows\nnetwork\tok 24\ndatabase\tok 12\nheap\twarning 3\n",
+    "negative": "dump status rows\nnetwork ok 24\n",
+    "analysis_notes": "Modeled Stetho dump output with a generated executable-json parser plugin.",
+    "variants": ["dump header row", "status row", "rows field"]
+  },
+  {
+    "fixture": "tui-calendar-events",
+    "descriptor_id": "known.tui-calendar.events",
+    "name": "tui.calendar event list",
+    "repo": "https://github.com/nhn/tui.calendar",
+    "required_substrings": ["event\tcalendar", "release\twork"],
+    "parser": "tab-pairs",
+    "input": "event\tcalendar hour\nrelease\twork 10:00\nstandup\twork 09:30\nfamily\tpersonal 18:00\n",
+    "negative": "event calendar hour\nrelease work 10:00\n",
+    "analysis_notes": "Modeled tui.calendar event output with a generated executable-json parser plugin.",
+    "variants": ["event header row", "calendar row", "hour field"]
+  },
+  {
+    "fixture": "ani-cli-results",
+    "descriptor_id": "known.ani-cli.results",
+    "name": "ani-cli result list",
+    "repo": "https://github.com/pystardust/ani-cli",
+    "required_substrings": ["title\tepisode", "Cowboy-Bebop\t01"],
+    "parser": "tab-pairs",
+    "input": "title\tepisode source\nCowboy-Bebop\t01 gogo\nFrieren\t12 allanime\nTrigun\t04 gogo\n",
+    "negative": "title episode source\nCowboy-Bebop 01 gogo\n",
+    "analysis_notes": "Modeled ani-cli result output with a generated executable-json parser plugin.",
+    "variants": ["title header row", "episode row", "source field"]
   }
 ]

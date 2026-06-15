@@ -1,0 +1,4 @@
+event	calendar hour
+release	work 10:00
+standup	work 09:30
+family	personal 18:00

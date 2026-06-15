@@ -6388,5 +6388,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Canop/broot",
+    "descriptor_id": "known.broot.trees",
+    "run_id": "agentic.broot-trees.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/broot-trees/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/broot-trees/expected.rows.json",
+    "variants": [
+      "path header row",
+      "kind row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.broot.trees for broot tree list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dip/cmdk",
+    "descriptor_id": "known.cmdk.items",
+    "run_id": "agentic.cmdk-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cmdk-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cmdk-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "group row",
+      "shortcut field"
+    ],
+    "transcript": [
+      "selected descriptor known.cmdk.items for cmdk item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/facebook/stetho",
+    "descriptor_id": "known.stetho.dumps",
+    "run_id": "agentic.stetho-dumps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/stetho-dumps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/stetho-dumps/expected.rows.json",
+    "variants": [
+      "dump header row",
+      "status row",
+      "rows field"
+    ],
+    "transcript": [
+      "selected descriptor known.stetho.dumps for Stetho dump list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nhn/tui.calendar",
+    "descriptor_id": "known.tui-calendar.events",
+    "run_id": "agentic.tui-calendar-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-calendar-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-calendar-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "calendar row",
+      "hour field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui-calendar.events for tui.calendar event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pystardust/ani-cli",
+    "descriptor_id": "known.ani-cli.results",
+    "run_id": "agentic.ani-cli-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ani-cli-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ani-cli-results/expected.rows.json",
+    "variants": [
+      "title header row",
+      "episode row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.ani-cli.results for ani-cli result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

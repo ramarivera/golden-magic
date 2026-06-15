@@ -1,0 +1,4 @@
+item	group shortcut
+open-file	actions ctrl-o
+search	global ctrl-k
+settings	preferences ctrl-comma

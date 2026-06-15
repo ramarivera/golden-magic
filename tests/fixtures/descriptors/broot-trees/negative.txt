@@ -1,0 +1,2 @@
+path kind size
+src dir 12

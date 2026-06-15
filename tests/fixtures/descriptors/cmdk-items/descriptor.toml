@@ -1,0 +1,10 @@
+id = "known.cmdk.items"
+name = "cmdk item list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tgroup","open-file\tactions"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

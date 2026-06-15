@@ -1,0 +1,10 @@
+id = "known.tui-calendar.events"
+name = "tui.calendar event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tcalendar","release\twork"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
