@@ -1,0 +1,4 @@
+function	runtime state
+handler	provided.al2 deployed
+worker	provided.al2 deployed
+cron	provided.al2023 queued

@@ -1,0 +1,2 @@
+file lines state
+app.log 1200 open

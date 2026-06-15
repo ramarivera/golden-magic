@@ -1,0 +1,10 @@
+id = "known.fast-agent.agents"
+name = "fast-agent agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\tstatus","planner\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

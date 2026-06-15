@@ -1,0 +1,4 @@
+setting	value state
+theme	dark active
+font	JetBrainsMono active
+opacity	0.95 active

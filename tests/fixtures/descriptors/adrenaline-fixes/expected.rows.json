@@ -1,0 +1,18 @@
+[
+  {
+    "name": "fix",
+    "value": "file state"
+  },
+  {
+    "name": "NameError",
+    "value": "app.py suggested"
+  },
+  {
+    "name": "ImportError",
+    "value": "main.py suggested"
+  },
+  {
+    "name": "SyntaxError",
+    "value": "bad.py rejected"
+  }
+]

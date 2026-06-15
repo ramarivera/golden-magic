@@ -1,0 +1,4 @@
+definition	version state
+react	18 installed
+lodash	4 installed
+jest	29 available

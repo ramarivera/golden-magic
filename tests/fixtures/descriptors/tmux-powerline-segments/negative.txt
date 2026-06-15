@@ -1,0 +1,2 @@
+segment status state
+cwd enabled active

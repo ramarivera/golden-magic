@@ -1,0 +1,18 @@
+[
+  {
+    "name": "event",
+    "value": "date state"
+  },
+  {
+    "name": "standup",
+    "value": "2026-06-15 accepted"
+  },
+  {
+    "name": "review",
+    "value": "2026-06-16 tentative"
+  },
+  {
+    "name": "release",
+    "value": "2026-06-17 accepted"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.xiki.menus"
+name = "xiki menu list"
+priority = 50
+
+[matches]
+required_substrings = ["menu\titems","files\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

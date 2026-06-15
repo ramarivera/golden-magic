@@ -1,0 +1,18 @@
+[
+  {
+    "name": "segment",
+    "value": "status state"
+  },
+  {
+    "name": "cwd",
+    "value": "enabled active"
+  },
+  {
+    "name": "git",
+    "value": "enabled active"
+  },
+  {
+    "name": "battery",
+    "value": "disabled hidden"
+  }
+]

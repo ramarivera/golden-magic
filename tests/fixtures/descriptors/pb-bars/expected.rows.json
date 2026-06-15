@@ -1,0 +1,18 @@
+[
+  {
+    "name": "bar",
+    "value": "percent state"
+  },
+  {
+    "name": "download",
+    "value": "50 running"
+  },
+  {
+    "name": "upload",
+    "value": "20 running"
+  },
+  {
+    "name": "verify",
+    "value": "100 complete"
+  }
+]

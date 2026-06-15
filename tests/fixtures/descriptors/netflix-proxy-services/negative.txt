@@ -1,0 +1,2 @@
+service status state
+dns running active

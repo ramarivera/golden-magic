@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "address state"
+  },
+  {
+    "name": "living-room",
+    "value": "192.168.1.20 ready"
+  },
+  {
+    "name": "bedroom",
+    "value": "192.168.1.21 ready"
+  },
+  {
+    "name": "kitchen",
+    "value": "192.168.1.22 offline"
+  }
+]

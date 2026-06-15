@@ -1,0 +1,10 @@
+id = "known.nexphisher.modules"
+name = "NexPhisher module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tstatus","login\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

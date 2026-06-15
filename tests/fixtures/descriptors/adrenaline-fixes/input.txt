@@ -1,0 +1,4 @@
+fix	file state
+NameError	app.py suggested
+ImportError	main.py suggested
+SyntaxError	bad.py rejected

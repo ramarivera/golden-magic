@@ -1,0 +1,4 @@
+module	status state
+login	ready enabled
+report	ready enabled
+cleanup	queued disabled

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "palette",
+    "value": "variant state"
+  },
+  {
+    "name": "aura",
+    "value": "dark active"
+  },
+  {
+    "name": "soft",
+    "value": "light available"
+  },
+  {
+    "name": "classic",
+    "value": "dark available"
+  }
+]

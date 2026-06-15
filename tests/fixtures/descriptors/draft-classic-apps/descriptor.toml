@@ -1,0 +1,10 @@
+id = "known.draft-classic.apps"
+name = "draft-classic app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tchart","web\tstable/web"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

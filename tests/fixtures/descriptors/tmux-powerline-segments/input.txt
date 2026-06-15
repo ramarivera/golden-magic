@@ -1,0 +1,4 @@
+segment	status state
+cwd	enabled active
+git	enabled active
+battery	disabled hidden

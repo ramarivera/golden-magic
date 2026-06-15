@@ -1,0 +1,10 @@
+id = "known.vfox.plugins"
+name = "vfox plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tversion","nodejs\t20"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

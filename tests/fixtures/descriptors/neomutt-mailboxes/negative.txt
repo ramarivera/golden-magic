@@ -1,0 +1,2 @@
+mailbox unread state
+inbox 5 open

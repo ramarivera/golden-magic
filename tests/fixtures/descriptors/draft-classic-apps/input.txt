@@ -1,0 +1,4 @@
+app	chart state
+web	stable/web generated
+api	stable/api generated
+worker	stable/worker queued

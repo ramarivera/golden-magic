@@ -1,0 +1,2 @@
+device address state
+living-room 192.168.1.20 ready

@@ -1,0 +1,10 @@
+id = "known.eternalterminal.connections"
+name = "EternalTerminal connection list"
+priority = 50
+
+[matches]
+required_substrings = ["connection\thost","dev\tserver"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

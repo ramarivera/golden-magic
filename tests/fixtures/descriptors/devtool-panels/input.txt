@@ -1,0 +1,4 @@
+panel	status state
+console	open visible
+network	closed hidden
+source	open visible

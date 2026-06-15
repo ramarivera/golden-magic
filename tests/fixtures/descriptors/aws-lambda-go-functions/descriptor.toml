@@ -1,0 +1,10 @@
+id = "known.aws-lambda-go.functions"
+name = "aws-lambda-go function list"
+priority = 50
+
+[matches]
+required_substrings = ["function\truntime","handler\tprovided.al2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

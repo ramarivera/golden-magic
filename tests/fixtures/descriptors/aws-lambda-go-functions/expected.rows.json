@@ -1,0 +1,18 @@
+[
+  {
+    "name": "function",
+    "value": "runtime state"
+  },
+  {
+    "name": "handler",
+    "value": "provided.al2 deployed"
+  },
+  {
+    "name": "worker",
+    "value": "provided.al2 deployed"
+  },
+  {
+    "name": "cron",
+    "value": "provided.al2023 queued"
+  }
+]

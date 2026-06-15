@@ -1,0 +1,4 @@
+connection	host state
+dev	server connected
+prod	gateway connected
+old	lab disconnected

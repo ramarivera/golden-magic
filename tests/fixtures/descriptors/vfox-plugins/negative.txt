@@ -1,0 +1,2 @@
+plugin version state
+nodejs 20 installed

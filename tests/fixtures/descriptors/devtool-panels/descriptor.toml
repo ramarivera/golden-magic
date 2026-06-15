@@ -1,0 +1,10 @@
+id = "known.devtool.panels"
+name = "devtool panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tstatus","console\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+tool	category state
+codex	agent listed
+ollama	model listed
+langfuse	observability listed

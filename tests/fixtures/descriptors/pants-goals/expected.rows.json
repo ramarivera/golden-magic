@@ -1,0 +1,18 @@
+[
+  {
+    "name": "goal",
+    "value": "status state"
+  },
+  {
+    "name": "test",
+    "value": "ready enabled"
+  },
+  {
+    "name": "lint",
+    "value": "ready enabled"
+  },
+  {
+    "name": "package",
+    "value": "ready enabled"
+  }
+]

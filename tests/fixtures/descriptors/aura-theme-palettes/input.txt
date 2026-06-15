@@ -1,0 +1,4 @@
+palette	variant state
+aura	dark active
+soft	light available
+classic	dark available

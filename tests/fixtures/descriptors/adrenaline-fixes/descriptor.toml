@@ -1,0 +1,10 @@
+id = "known.adrenaline.fixes"
+name = "adrenaline fix list"
+priority = 50
+
+[matches]
+required_substrings = ["fix\tfile","NameError\tapp.py"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

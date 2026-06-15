@@ -1,0 +1,4 @@
+menu	items state
+files	12 open
+commands	8 open
+notes	4 closed

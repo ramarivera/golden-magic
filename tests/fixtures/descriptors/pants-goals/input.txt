@@ -1,0 +1,4 @@
+goal	status state
+test	ready enabled
+lint	ready enabled
+package	ready enabled

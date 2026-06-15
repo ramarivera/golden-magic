@@ -1,0 +1,10 @@
+id = "known.vim-anywhere.drafts"
+name = "vim-anywhere draft list"
+priority = 50
+
+[matches]
+required_substrings = ["draft\tstatus","reply\tsaved"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

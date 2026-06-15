@@ -1,0 +1,10 @@
+id = "known.castnow.devices"
+name = "castnow device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\taddress","living-room\t192.168.1.20"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

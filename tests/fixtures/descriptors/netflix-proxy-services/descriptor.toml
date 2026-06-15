@@ -1,0 +1,10 @@
+id = "known.netflix-proxy.services"
+name = "netflix-proxy service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tstatus","dns\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

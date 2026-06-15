@@ -1,0 +1,4 @@
+bar	percent state
+download	50 running
+upload	20 running
+verify	100 complete

@@ -1,0 +1,10 @@
+id = "known.gcalcli.events"
+name = "gcalcli event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tdate","standup\t2026-06-15"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

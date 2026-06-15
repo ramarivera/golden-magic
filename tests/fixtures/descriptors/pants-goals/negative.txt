@@ -1,0 +1,2 @@
+goal status state
+test ready enabled

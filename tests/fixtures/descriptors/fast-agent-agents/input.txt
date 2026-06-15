@@ -1,0 +1,4 @@
+agent	status state
+planner	ready idle
+worker	ready running
+reviewer	queued pending

@@ -1,0 +1,4 @@
+service	status state
+dns	running active
+proxy	running active
+certbot	stopped idle

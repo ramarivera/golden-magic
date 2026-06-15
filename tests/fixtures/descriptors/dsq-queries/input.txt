@@ -1,0 +1,4 @@
+query	rows state
+select	42 complete
+join	12 complete
+aggregate	3 complete

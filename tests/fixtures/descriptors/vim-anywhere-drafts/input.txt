@@ -1,0 +1,4 @@
+draft	status state
+reply	saved active
+note	saved active
+old	discarded archived

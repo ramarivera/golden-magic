@@ -1,0 +1,2 @@
+agent status state
+planner ready idle

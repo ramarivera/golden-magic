@@ -1,0 +1,4 @@
+mailbox	unread state
+inbox	5 open
+sent	0 open
+archive	1 closed

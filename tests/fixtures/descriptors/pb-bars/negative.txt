@@ -1,0 +1,2 @@
+bar percent state
+download 50 running

@@ -1,0 +1,10 @@
+id = "known.flow-typed.definitions"
+name = "flow-typed definition list"
+priority = 50
+
+[matches]
+required_substrings = ["definition\tversion","react\t18"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

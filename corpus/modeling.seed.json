@@ -5241,5 +5241,180 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/tox-envs",
     "analysis_notes": "Modeled tox environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Textualize/toolong",
+    "descriptor_id": "known.toolong.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/toolong-files",
+    "analysis_notes": "Modeled toolong file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/version-fox/vfox",
+    "descriptor_id": "known.vfox.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vfox-plugins",
+    "analysis_notes": "Modeled vfox plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Azure/draft-classic",
+    "descriptor_id": "known.draft-classic.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/draft-classic-apps",
+    "analysis_notes": "Modeled draft-classic app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/multiprocessio/dsq",
+    "descriptor_id": "known.dsq.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dsq-queries",
+    "analysis_notes": "Modeled dsq query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zerebos/ghostty-config",
+    "descriptor_id": "known.ghostty-config.settings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ghostty-config-settings",
+    "analysis_notes": "Modeled ghostty-config setting output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jamesmurdza/awesome-ai-devtools",
+    "descriptor_id": "known.awesome-ai-devtools.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-ai-devtools-tools",
+    "analysis_notes": "Modeled awesome-ai-devtools tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/htr-tech/nexphisher",
+    "descriptor_id": "known.nexphisher.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nexphisher-modules",
+    "analysis_notes": "Modeled NexPhisher module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/evalstate/fast-agent",
+    "descriptor_id": "known.fast-agent.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fast-agent-agents",
+    "analysis_notes": "Modeled fast-agent agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xat/castnow",
+    "descriptor_id": "known.castnow.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/castnow-devices",
+    "analysis_notes": "Modeled castnow device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/erikw/tmux-powerline",
+    "descriptor_id": "known.tmux-powerline.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tmux-powerline-segments",
+    "analysis_notes": "Modeled tmux-powerline segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aws/aws-lambda-go",
+    "descriptor_id": "known.aws-lambda-go.functions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aws-lambda-go-functions",
+    "analysis_notes": "Modeled aws-lambda-go function output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/daltonmenezes/aura-theme",
+    "descriptor_id": "known.aura-theme.palettes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aura-theme-palettes",
+    "analysis_notes": "Modeled aura-theme palette output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pantsbuild/pants",
+    "descriptor_id": "known.pants.goals",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pants-goals",
+    "analysis_notes": "Modeled Pants goal output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/flow-typed/flow-typed",
+    "descriptor_id": "known.flow-typed.definitions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/flow-typed-definitions",
+    "analysis_notes": "Modeled flow-typed definition output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trogdoro/xiki",
+    "descriptor_id": "known.xiki.menus",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xiki-menus",
+    "analysis_notes": "Modeled xiki menu output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cknadler/vim-anywhere",
+    "descriptor_id": "known.vim-anywhere.drafts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vim-anywhere-drafts",
+    "analysis_notes": "Modeled vim-anywhere draft output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wslutilities/wslu",
+    "descriptor_id": "known.wslu.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wslu-commands",
+    "analysis_notes": "Modeled wslu command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/shobrook/adrenaline",
+    "descriptor_id": "known.adrenaline.fixes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/adrenaline-fixes",
+    "analysis_notes": "Modeled adrenaline fix output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Experience-Monks/devtool",
+    "descriptor_id": "known.devtool.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtool-panels",
+    "analysis_notes": "Modeled devtool panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/neomutt/neomutt",
+    "descriptor_id": "known.neomutt.mailboxes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/neomutt-mailboxes",
+    "analysis_notes": "Modeled NeoMutt mailbox output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ab77/netflix-proxy",
+    "descriptor_id": "known.netflix-proxy.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/netflix-proxy-services",
+    "analysis_notes": "Modeled netflix-proxy service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/insanum/gcalcli",
+    "descriptor_id": "known.gcalcli.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gcalcli-events",
+    "analysis_notes": "Modeled gcalcli event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/apple/swift-argument-parser",
+    "descriptor_id": "known.swift-argument-parser.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/swift-argument-parser-commands",
+    "analysis_notes": "Modeled swift-argument-parser command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MisterTea/EternalTerminal",
+    "descriptor_id": "known.eternalterminal.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/eternalterminal-connections",
+    "analysis_notes": "Modeled EternalTerminal connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cheggaaa/pb",
+    "descriptor_id": "known.pb.bars",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pb-bars",
+    "analysis_notes": "Modeled pb progress bar output with a generated executable-json parser plugin."
   }
 ]

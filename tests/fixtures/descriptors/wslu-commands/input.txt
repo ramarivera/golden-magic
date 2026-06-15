@@ -1,0 +1,4 @@
+command	status state
+wslview	ready installed
+wslpath	ready installed
+wslfetch	ready installed

@@ -1,0 +1,4 @@
+plugin	version state
+nodejs	20 installed
+golang	1.22 installed
+python	3.12 available

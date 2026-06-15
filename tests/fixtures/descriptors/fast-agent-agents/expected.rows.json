@@ -1,0 +1,18 @@
+[
+  {
+    "name": "agent",
+    "value": "status state"
+  },
+  {
+    "name": "planner",
+    "value": "ready idle"
+  },
+  {
+    "name": "worker",
+    "value": "ready running"
+  },
+  {
+    "name": "reviewer",
+    "value": "queued pending"
+  }
+]

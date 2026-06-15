@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "status state"
+  },
+  {
+    "name": "login",
+    "value": "ready enabled"
+  },
+  {
+    "name": "report",
+    "value": "ready enabled"
+  },
+  {
+    "name": "cleanup",
+    "value": "queued disabled"
+  }
+]

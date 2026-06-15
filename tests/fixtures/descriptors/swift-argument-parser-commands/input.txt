@@ -1,0 +1,4 @@
+command	arguments state
+run	2 registered
+build	1 registered
+clean	0 registered
