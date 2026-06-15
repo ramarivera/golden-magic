@@ -1,0 +1,4 @@
+phase	seconds percent
+dns	0.012 4
+connect	0.081 26
+total	0.312 100

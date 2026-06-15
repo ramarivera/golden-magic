@@ -1,0 +1,2 @@
+result title url
+1 Nushell https://www.nushell.sh

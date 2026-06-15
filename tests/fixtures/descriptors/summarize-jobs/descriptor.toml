@@ -1,0 +1,10 @@
+id = "known.summarize.jobs"
+name = "summarize job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstate","podcast\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

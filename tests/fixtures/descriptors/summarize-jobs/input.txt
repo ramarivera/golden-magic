@@ -1,0 +1,4 @@
+job	state source
+podcast	complete audio
+article	running url
+video	queued youtube

@@ -1,0 +1,10 @@
+id = "known.httpstat.phases"
+name = "httpstat phase timing"
+priority = 50
+
+[matches]
+required_substrings = ["phase\tseconds","dns\t0.012"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.pueue.tasks"
+name = "pueue task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstate","backup\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "job",
+    "value": "state source"
+  },
+  {
+    "name": "podcast",
+    "value": "complete audio"
+  },
+  {
+    "name": "article",
+    "value": "running url"
+  },
+  {
+    "name": "video",
+    "value": "queued youtube"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.googler.results"
+name = "googler result list"
+priority = 50
+
+[matches]
+required_substrings = ["result\ttitle","1\tNushell"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

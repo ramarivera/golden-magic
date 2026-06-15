@@ -1,0 +1,18 @@
+[
+  {
+    "name": "phase",
+    "value": "seconds percent"
+  },
+  {
+    "name": "dns",
+    "value": "0.012 4"
+  },
+  {
+    "name": "connect",
+    "value": "0.081 26"
+  },
+  {
+    "name": "total",
+    "value": "0.312 100"
+  }
+]

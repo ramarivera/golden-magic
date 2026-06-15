@@ -1,0 +1,4 @@
+result	title url
+1	Nushell https://www.nushell.sh
+2	Golden Magic https://example.test/golden
+3	CLI Parsing https://example.test/cli

@@ -3708,5 +3708,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/dev-setup-steps",
     "analysis_notes": "Modeled dev-setup step output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Nukesor/pueue",
+    "descriptor_id": "known.pueue.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pueue-tasks",
+    "analysis_notes": "Modeled pueue task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/reorx/httpstat",
+    "descriptor_id": "known.httpstat.phases",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/httpstat-phases",
+    "analysis_notes": "Modeled httpstat timing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dehydrated-io/dehydrated",
+    "descriptor_id": "known.dehydrated.domains",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dehydrated-domains",
+    "analysis_notes": "Modeled dehydrated domain output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jarun/googler",
+    "descriptor_id": "known.googler.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/googler-results",
+    "analysis_notes": "Modeled googler search result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/steipete/summarize",
+    "descriptor_id": "known.summarize.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/summarize-jobs",
+    "analysis_notes": "Modeled summarize job output with a generated executable-json parser plugin."
   }
 ]

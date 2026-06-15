@@ -6118,5 +6118,65 @@
     "negative": "step state script\nbrew done brew.sh\n",
     "analysis_notes": "Modeled dev-setup step output with a generated executable-json parser plugin.",
     "variants": ["step header row", "state row", "script field"]
+  },
+  {
+    "fixture": "pueue-tasks",
+    "descriptor_id": "known.pueue.tasks",
+    "name": "pueue task list",
+    "repo": "https://github.com/Nukesor/pueue",
+    "required_substrings": ["task\tstate", "backup\trunning"],
+    "parser": "tab-pairs",
+    "input": "task\tstate group\nbackup\trunning default\nbuild\tqueued ci\nsync\tdone default\n",
+    "negative": "task state group\nbackup running default\n",
+    "analysis_notes": "Modeled pueue task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "state row", "group field"]
+  },
+  {
+    "fixture": "httpstat-phases",
+    "descriptor_id": "known.httpstat.phases",
+    "name": "httpstat phase timing",
+    "repo": "https://github.com/reorx/httpstat",
+    "required_substrings": ["phase\tseconds", "dns\t0.012"],
+    "parser": "tab-pairs",
+    "input": "phase\tseconds percent\ndns\t0.012 4\nconnect\t0.081 26\ntotal\t0.312 100\n",
+    "negative": "phase seconds percent\ndns 0.012 4\n",
+    "analysis_notes": "Modeled httpstat timing output with a generated executable-json parser plugin.",
+    "variants": ["phase header row", "seconds row", "percent field"]
+  },
+  {
+    "fixture": "dehydrated-domains",
+    "descriptor_id": "known.dehydrated.domains",
+    "name": "dehydrated domain status",
+    "repo": "https://github.com/dehydrated-io/dehydrated",
+    "required_substrings": ["domain\tstatus", "example.com\tvalid"],
+    "parser": "tab-pairs",
+    "input": "domain\tstatus expires\nexample.com\tvalid 2026-08-01\napi.example.com\trenewing 2026-06-20\nold.example.com\texpired 2026-05-01\n",
+    "negative": "domain status expires\nexample.com valid 2026-08-01\n",
+    "analysis_notes": "Modeled dehydrated domain output with a generated executable-json parser plugin.",
+    "variants": ["domain header row", "status row", "expires field"]
+  },
+  {
+    "fixture": "googler-results",
+    "descriptor_id": "known.googler.results",
+    "name": "googler result list",
+    "repo": "https://github.com/jarun/googler",
+    "required_substrings": ["result\ttitle", "1\tNushell"],
+    "parser": "tab-pairs",
+    "input": "result\ttitle url\n1\tNushell https://www.nushell.sh\n2\tGolden Magic https://example.test/golden\n3\tCLI Parsing https://example.test/cli\n",
+    "negative": "result title url\n1 Nushell https://www.nushell.sh\n",
+    "analysis_notes": "Modeled googler search result output with a generated executable-json parser plugin.",
+    "variants": ["result header row", "title row", "url field"]
+  },
+  {
+    "fixture": "summarize-jobs",
+    "descriptor_id": "known.summarize.jobs",
+    "name": "summarize job list",
+    "repo": "https://github.com/steipete/summarize",
+    "required_substrings": ["job\tstate", "podcast\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "job\tstate source\npodcast\tcomplete audio\narticle\trunning url\nvideo\tqueued youtube\n",
+    "negative": "job state source\npodcast complete audio\n",
+    "analysis_notes": "Modeled summarize job output with a generated executable-json parser plugin.",
+    "variants": ["job header row", "state row", "source field"]
   }
 ]

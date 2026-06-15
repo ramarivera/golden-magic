@@ -1,0 +1,4 @@
+domain	status expires
+example.com	valid 2026-08-01
+api.example.com	renewing 2026-06-20
+old.example.com	expired 2026-05-01

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "result",
+    "value": "title url"
+  },
+  {
+    "name": "1",
+    "value": "Nushell https://www.nushell.sh"
+  },
+  {
+    "name": "2",
+    "value": "Golden Magic https://example.test/golden"
+  },
+  {
+    "name": "3",
+    "value": "CLI Parsing https://example.test/cli"
+  }
+]

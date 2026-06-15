@@ -1,0 +1,10 @@
+id = "known.dehydrated.domains"
+name = "dehydrated domain status"
+priority = 50
+
+[matches]
+required_substrings = ["domain\tstatus","example.com\tvalid"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

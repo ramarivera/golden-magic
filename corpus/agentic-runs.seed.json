@@ -9538,5 +9538,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Nukesor/pueue",
+    "descriptor_id": "known.pueue.tasks",
+    "run_id": "agentic.pueue-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pueue-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pueue-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "group field"
+    ],
+    "transcript": [
+      "selected descriptor known.pueue.tasks for pueue task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/reorx/httpstat",
+    "descriptor_id": "known.httpstat.phases",
+    "run_id": "agentic.httpstat-phases.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/httpstat-phases/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/httpstat-phases/expected.rows.json",
+    "variants": [
+      "phase header row",
+      "seconds row",
+      "percent field"
+    ],
+    "transcript": [
+      "selected descriptor known.httpstat.phases for httpstat phase timing output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dehydrated-io/dehydrated",
+    "descriptor_id": "known.dehydrated.domains",
+    "run_id": "agentic.dehydrated-domains.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dehydrated-domains/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dehydrated-domains/expected.rows.json",
+    "variants": [
+      "domain header row",
+      "status row",
+      "expires field"
+    ],
+    "transcript": [
+      "selected descriptor known.dehydrated.domains for dehydrated domain status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jarun/googler",
+    "descriptor_id": "known.googler.results",
+    "run_id": "agentic.googler-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/googler-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/googler-results/expected.rows.json",
+    "variants": [
+      "result header row",
+      "title row",
+      "url field"
+    ],
+    "transcript": [
+      "selected descriptor known.googler.results for googler result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/steipete/summarize",
+    "descriptor_id": "known.summarize.jobs",
+    "run_id": "agentic.summarize-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/summarize-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/summarize-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "state row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.summarize.jobs for summarize job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
