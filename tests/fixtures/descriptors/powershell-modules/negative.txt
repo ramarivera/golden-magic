@@ -1,0 +1,2 @@
+module version source
+Microsoft.PowerShell.Management 7.5 bundled

@@ -943,5 +943,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/gpt-engineer-steps",
     "analysis_notes": "Modeled gpt-engineer step list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wagoodman/dive",
+    "descriptor_id": "known.dive.layers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dive-layers",
+    "analysis_notes": "Modeled dive image layer list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PowerShell/PowerShell",
+    "descriptor_id": "known.powershell.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/powershell-modules",
+    "analysis_notes": "Modeled PowerShell module list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/santifer/career-ops",
+    "descriptor_id": "known.career-ops.roles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/career-ops-roles",
+    "analysis_notes": "Modeled career-ops role tracker output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tw93/Pake",
+    "descriptor_id": "known.pake.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pake-apps",
+    "analysis_notes": "Modeled Pake app list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ClickHouse/ClickHouse",
+    "descriptor_id": "known.clickhouse.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clickhouse-queries",
+    "analysis_notes": "Modeled ClickHouse query log summary output with a generated executable-json parser plugin."
   }
 ]

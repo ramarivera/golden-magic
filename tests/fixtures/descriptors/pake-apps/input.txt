@@ -1,0 +1,4 @@
+app	status target
+docs	built macos
+chat	building windows
+notes	queued linux

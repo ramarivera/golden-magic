@@ -1,0 +1,2 @@
+query state rows
+select-count finished 1200

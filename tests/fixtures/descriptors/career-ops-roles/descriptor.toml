@@ -1,0 +1,10 @@
+id = "known.career-ops.roles"
+name = "career-ops role tracker"
+priority = 50
+
+[matches]
+required_substrings = ["role\tstatus","backend\tapplied"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

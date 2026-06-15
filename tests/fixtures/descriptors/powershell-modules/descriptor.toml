@@ -1,0 +1,10 @@
+id = "known.powershell.modules"
+name = "PowerShell module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tversion","Microsoft.PowerShell.Management\t7.5"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

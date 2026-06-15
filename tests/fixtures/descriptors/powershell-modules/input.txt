@@ -1,0 +1,4 @@
+module	version source
+Microsoft.PowerShell.Management	7.5 bundled
+PSReadLine	2.3 gallery
+PackageManagement	1.4 gallery

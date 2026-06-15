@@ -1,0 +1,18 @@
+[
+  {
+    "name": "query",
+    "value": "state rows"
+  },
+  {
+    "name": "select-count",
+    "value": "finished 1200"
+  },
+  {
+    "name": "insert-events",
+    "value": "running 8000"
+  },
+  {
+    "name": "optimize",
+    "value": "queued 0"
+  }
+]

@@ -2428,5 +2428,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/wagoodman/dive",
+    "descriptor_id": "known.dive.layers",
+    "run_id": "agentic.dive-layers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dive-layers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dive-layers/expected.rows.json",
+    "variants": [
+      "layer header row",
+      "base layer row",
+      "efficiency field"
+    ],
+    "transcript": [
+      "selected descriptor known.dive.layers for dive image layer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PowerShell/PowerShell",
+    "descriptor_id": "known.powershell.modules",
+    "run_id": "agentic.powershell-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/powershell-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/powershell-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "bundled module row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.powershell.modules for PowerShell module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/santifer/career-ops",
+    "descriptor_id": "known.career-ops.roles",
+    "run_id": "agentic.career-ops-roles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/career-ops-roles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/career-ops-roles/expected.rows.json",
+    "variants": [
+      "role header row",
+      "applied role row",
+      "company field"
+    ],
+    "transcript": [
+      "selected descriptor known.career-ops.roles for career-ops role tracker output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tw93/Pake",
+    "descriptor_id": "known.pake.apps",
+    "run_id": "agentic.pake-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pake-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pake-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "built app row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.pake.apps for Pake app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ClickHouse/ClickHouse",
+    "descriptor_id": "known.clickhouse.queries",
+    "run_id": "agentic.clickhouse-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clickhouse-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clickhouse-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "finished query row",
+      "rows field"
+    ],
+    "transcript": [
+      "selected descriptor known.clickhouse.queries for ClickHouse query log summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

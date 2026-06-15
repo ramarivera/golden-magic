@@ -1,0 +1,18 @@
+[
+  {
+    "name": "role",
+    "value": "status company"
+  },
+  {
+    "name": "backend",
+    "value": "applied acme"
+  },
+  {
+    "name": "frontend",
+    "value": "interview beta"
+  },
+  {
+    "name": "data",
+    "value": "watching gamma"
+  }
+]

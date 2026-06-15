@@ -1,0 +1,18 @@
+[
+  {
+    "name": "layer",
+    "value": "size efficiency"
+  },
+  {
+    "name": "base",
+    "value": "42MB 0.91"
+  },
+  {
+    "name": "app",
+    "value": "18MB 0.78"
+  },
+  {
+    "name": "cache",
+    "value": "120MB 0.22"
+  }
+]

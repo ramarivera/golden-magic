@@ -1,0 +1,4 @@
+layer	size efficiency
+base	42MB 0.91
+app	18MB 0.78
+cache	120MB 0.22

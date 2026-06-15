@@ -1378,5 +1378,65 @@
     "negative": "step state files\nplan complete 1\n",
     "analysis_notes": "Modeled gpt-engineer step list output with a generated executable-json parser plugin.",
     "variants": ["step header row", "complete step row", "file count field"]
+  },
+  {
+    "fixture": "dive-layers",
+    "descriptor_id": "known.dive.layers",
+    "name": "dive image layer list",
+    "repo": "https://github.com/wagoodman/dive",
+    "required_substrings": ["layer\tsize", "base\t42MB"],
+    "parser": "tab-pairs",
+    "input": "layer\tsize efficiency\nbase\t42MB 0.91\napp\t18MB 0.78\ncache\t120MB 0.22\n",
+    "negative": "layer size efficiency\nbase 42MB 0.91\n",
+    "analysis_notes": "Modeled dive image layer list output with a generated executable-json parser plugin.",
+    "variants": ["layer header row", "base layer row", "efficiency field"]
+  },
+  {
+    "fixture": "powershell-modules",
+    "descriptor_id": "known.powershell.modules",
+    "name": "PowerShell module list",
+    "repo": "https://github.com/PowerShell/PowerShell",
+    "required_substrings": ["module\tversion", "Microsoft.PowerShell.Management\t7.5"],
+    "parser": "tab-pairs",
+    "input": "module\tversion source\nMicrosoft.PowerShell.Management\t7.5 bundled\nPSReadLine\t2.3 gallery\nPackageManagement\t1.4 gallery\n",
+    "negative": "module version source\nMicrosoft.PowerShell.Management 7.5 bundled\n",
+    "analysis_notes": "Modeled PowerShell module list output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "bundled module row", "source field"]
+  },
+  {
+    "fixture": "career-ops-roles",
+    "descriptor_id": "known.career-ops.roles",
+    "name": "career-ops role tracker",
+    "repo": "https://github.com/santifer/career-ops",
+    "required_substrings": ["role\tstatus", "backend\tapplied"],
+    "parser": "tab-pairs",
+    "input": "role\tstatus company\nbackend\tapplied acme\nfrontend\tinterview beta\ndata\twatching gamma\n",
+    "negative": "role status company\nbackend applied acme\n",
+    "analysis_notes": "Modeled career-ops role tracker output with a generated executable-json parser plugin.",
+    "variants": ["role header row", "applied role row", "company field"]
+  },
+  {
+    "fixture": "pake-apps",
+    "descriptor_id": "known.pake.apps",
+    "name": "Pake app list",
+    "repo": "https://github.com/tw93/Pake",
+    "required_substrings": ["app\tstatus", "docs\tbuilt"],
+    "parser": "tab-pairs",
+    "input": "app\tstatus target\ndocs\tbuilt macos\nchat\tbuilding windows\nnotes\tqueued linux\n",
+    "negative": "app status target\ndocs built macos\n",
+    "analysis_notes": "Modeled Pake app list output with a generated executable-json parser plugin.",
+    "variants": ["app header row", "built app row", "target field"]
+  },
+  {
+    "fixture": "clickhouse-queries",
+    "descriptor_id": "known.clickhouse.queries",
+    "name": "ClickHouse query log summary",
+    "repo": "https://github.com/ClickHouse/ClickHouse",
+    "required_substrings": ["query\tstate", "select-count\tfinished"],
+    "parser": "tab-pairs",
+    "input": "query\tstate rows\nselect-count\tfinished 1200\ninsert-events\trunning 8000\noptimize\tqueued 0\n",
+    "negative": "query state rows\nselect-count finished 1200\n",
+    "analysis_notes": "Modeled ClickHouse query log summary output with a generated executable-json parser plugin.",
+    "variants": ["query header row", "finished query row", "rows field"]
   }
 ]

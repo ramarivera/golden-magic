@@ -1,0 +1,4 @@
+query	state rows
+select-count	finished 1200
+insert-events	running 8000
+optimize	queued 0
