@@ -47,9 +47,10 @@ This audit validates the previously claimed completion list against current repo
 
 | Claim | Qualification |
 | --- | --- |
-| Performance benchmark + hard perf gate | The hard perf gate passed with `cargo test --test performance_gate -- --nocapture`. The Criterion benchmark harness runs, but `cargo bench --bench parser -- --sample-size 10` reported local baseline regressions. Do not claim benchmark performance is clean until this is investigated or baselines are intentionally updated with a tradeoff note. |
+| Performance benchmark + hard perf gate | The hard perf gate passed with `cargo test --test performance_gate -- --nocapture`. Criterion exits successfully, but `cargo bench --bench parser -- --sample-size 10` reported a small medium-TSV regression against untracked local `target/criterion` baseline data while large TSV and first-row headers improved. Treat Criterion comparison output as advisory until a checked-in baseline policy exists. |
 
 ## Audit Fixes Applied
 
 - Descriptor loading now ignores reserved `nix.toml` fixture manifests, so a descriptor directory can contain optional Nix fixture metadata without breaking `--descriptor-dir` or `--validate-descriptor-dir`.
 - Added a unit test for ignoring `nix.toml` in descriptor directories.
+- Criterion regression was investigated and recorded in [`docs/PERFORMANCE.md`](PERFORMANCE.md). No baseline was updated.
