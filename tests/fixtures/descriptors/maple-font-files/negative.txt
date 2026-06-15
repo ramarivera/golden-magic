@@ -1,0 +1,2 @@
+font variant file
+MapleMono Regular MapleMono-Regular.ttf

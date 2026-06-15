@@ -1,0 +1,2 @@
+package version source
+Microsoft.PowerShell 7.5 winget

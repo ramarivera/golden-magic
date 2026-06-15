@@ -1,0 +1,10 @@
+id = "known.winget.packages"
+name = "winget package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tversion","Microsoft.PowerShell\t7.5"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

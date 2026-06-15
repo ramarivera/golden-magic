@@ -2278,5 +2278,65 @@
     "negative": "task shell status\nPowerShell powershell ready\n",
     "analysis_notes": "Modeled Cmder task output with a generated executable-json parser plugin.",
     "variants": ["task header row", "shell row", "status field"]
+  },
+  {
+    "fixture": "finceptterminal-orders",
+    "descriptor_id": "known.finceptterminal.orders",
+    "name": "FinceptTerminal order list",
+    "repo": "https://github.com/Fincept-Corporation/FinceptTerminal",
+    "required_substrings": ["order\tstatus", "buy-001\topen"],
+    "parser": "tab-pairs",
+    "input": "order\tstatus symbol\nbuy-001\topen AAPL\nsell-002\tfilled MSFT\nbuy-003\tcancelled NVDA\n",
+    "negative": "order status symbol\nbuy-001 open AAPL\n",
+    "analysis_notes": "Modeled FinceptTerminal order output with a generated executable-json parser plugin.",
+    "variants": ["order header row", "open order row", "symbol field"]
+  },
+  {
+    "fixture": "wezterm-tabs",
+    "descriptor_id": "known.wezterm.tabs",
+    "name": "WezTerm tab list",
+    "repo": "https://github.com/wezterm/wezterm",
+    "required_substrings": ["tab\ttitle", "1\tshell"],
+    "parser": "tab-pairs",
+    "input": "tab\ttitle panes\n1\tshell 2\n2\teditor 1\n3\tlogs 3\n",
+    "negative": "tab title panes\n1 shell 2\n",
+    "analysis_notes": "Modeled WezTerm tab listing output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "title row", "panes field"]
+  },
+  {
+    "fixture": "qmd-docs",
+    "descriptor_id": "known.qmd.docs",
+    "name": "qmd document list",
+    "repo": "https://github.com/tobi/qmd",
+    "required_substrings": ["doc\tformat", "readme\tqmd"],
+    "parser": "tab-pairs",
+    "input": "doc\tformat status\nreadme\tqmd rendered\nreport\thtml rendered\nnotes\tqmd draft\n",
+    "negative": "doc format status\nreadme qmd rendered\n",
+    "analysis_notes": "Modeled qmd document output with a generated executable-json parser plugin.",
+    "variants": ["doc header row", "format row", "status field"]
+  },
+  {
+    "fixture": "maple-font-files",
+    "descriptor_id": "known.maple-font.files",
+    "name": "Maple Font file list",
+    "repo": "https://github.com/subframe7536/maple-font",
+    "required_substrings": ["font\tvariant", "MapleMono\tRegular"],
+    "parser": "tab-pairs",
+    "input": "font\tvariant file\nMapleMono\tRegular MapleMono-Regular.ttf\nMapleMono\tBold MapleMono-Bold.ttf\nMapleMonoNF\tRegular MapleMonoNF-Regular.ttf\n",
+    "negative": "font variant file\nMapleMono Regular MapleMono-Regular.ttf\n",
+    "analysis_notes": "Modeled Maple Font file listing output with a generated executable-json parser plugin.",
+    "variants": ["font header row", "variant row", "file field"]
+  },
+  {
+    "fixture": "winget-packages",
+    "descriptor_id": "known.winget.packages",
+    "name": "winget package list",
+    "repo": "https://github.com/microsoft/winget-cli",
+    "required_substrings": ["package\tversion", "Microsoft.PowerShell\t7.5"],
+    "parser": "tab-pairs",
+    "input": "package\tversion source\nMicrosoft.PowerShell\t7.5 winget\nGit.Git\t2.49 winget\nMicrosoft.VisualStudioCode\t1.100 winget\n",
+    "negative": "package version source\nMicrosoft.PowerShell 7.5 winget\n",
+    "analysis_notes": "Modeled winget package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "version row", "source field"]
   }
 ]

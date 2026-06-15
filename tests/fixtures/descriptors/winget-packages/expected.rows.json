@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "version source"
+  },
+  {
+    "name": "Microsoft.PowerShell",
+    "value": "7.5 winget"
+  },
+  {
+    "name": "Git.Git",
+    "value": "2.49 winget"
+  },
+  {
+    "name": "Microsoft.VisualStudioCode",
+    "value": "1.100 winget"
+  }
+]

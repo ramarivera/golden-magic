@@ -1,0 +1,4 @@
+package	version source
+Microsoft.PowerShell	7.5 winget
+Git.Git	2.49 winget
+Microsoft.VisualStudioCode	1.100 winget

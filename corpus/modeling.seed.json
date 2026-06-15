@@ -1468,5 +1468,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cmder-tasks",
     "analysis_notes": "Modeled Cmder task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Fincept-Corporation/FinceptTerminal",
+    "descriptor_id": "known.finceptterminal.orders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/finceptterminal-orders",
+    "analysis_notes": "Modeled FinceptTerminal order output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wezterm/wezterm",
+    "descriptor_id": "known.wezterm.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wezterm-tabs",
+    "analysis_notes": "Modeled WezTerm tab listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tobi/qmd",
+    "descriptor_id": "known.qmd.docs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qmd-docs",
+    "analysis_notes": "Modeled qmd document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/subframe7536/maple-font",
+    "descriptor_id": "known.maple-font.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/maple-font-files",
+    "analysis_notes": "Modeled Maple Font file listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/winget-cli",
+    "descriptor_id": "known.winget.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/winget-packages",
+    "analysis_notes": "Modeled winget package output with a generated executable-json parser plugin."
   }
 ]

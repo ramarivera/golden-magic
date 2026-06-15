@@ -1,0 +1,18 @@
+[
+  {
+    "name": "doc",
+    "value": "format status"
+  },
+  {
+    "name": "readme",
+    "value": "qmd rendered"
+  },
+  {
+    "name": "report",
+    "value": "html rendered"
+  },
+  {
+    "name": "notes",
+    "value": "qmd draft"
+  }
+]

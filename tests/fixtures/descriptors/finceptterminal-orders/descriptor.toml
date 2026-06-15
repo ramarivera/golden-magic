@@ -1,0 +1,10 @@
+id = "known.finceptterminal.orders"
+name = "FinceptTerminal order list"
+priority = 50
+
+[matches]
+required_substrings = ["order\tstatus","buy-001\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

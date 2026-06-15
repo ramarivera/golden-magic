@@ -1,0 +1,10 @@
+id = "known.maple-font.files"
+name = "Maple Font file list"
+priority = 50
+
+[matches]
+required_substrings = ["font\tvariant","MapleMono\tRegular"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

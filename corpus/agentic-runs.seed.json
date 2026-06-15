@@ -3778,5 +3778,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Fincept-Corporation/FinceptTerminal",
+    "descriptor_id": "known.finceptterminal.orders",
+    "run_id": "agentic.finceptterminal-orders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/finceptterminal-orders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/finceptterminal-orders/expected.rows.json",
+    "variants": [
+      "order header row",
+      "open order row",
+      "symbol field"
+    ],
+    "transcript": [
+      "selected descriptor known.finceptterminal.orders for FinceptTerminal order list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wezterm/wezterm",
+    "descriptor_id": "known.wezterm.tabs",
+    "run_id": "agentic.wezterm-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wezterm-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wezterm-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "title row",
+      "panes field"
+    ],
+    "transcript": [
+      "selected descriptor known.wezterm.tabs for WezTerm tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tobi/qmd",
+    "descriptor_id": "known.qmd.docs",
+    "run_id": "agentic.qmd-docs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qmd-docs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qmd-docs/expected.rows.json",
+    "variants": [
+      "doc header row",
+      "format row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.qmd.docs for qmd document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/subframe7536/maple-font",
+    "descriptor_id": "known.maple-font.files",
+    "run_id": "agentic.maple-font-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/maple-font-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/maple-font-files/expected.rows.json",
+    "variants": [
+      "font header row",
+      "variant row",
+      "file field"
+    ],
+    "transcript": [
+      "selected descriptor known.maple-font.files for Maple Font file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/winget-cli",
+    "descriptor_id": "known.winget.packages",
+    "run_id": "agentic.winget-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/winget-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/winget-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "version row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.winget.packages for winget package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

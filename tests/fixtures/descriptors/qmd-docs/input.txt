@@ -1,0 +1,4 @@
+doc	format status
+readme	qmd rendered
+report	html rendered
+notes	qmd draft

@@ -1,0 +1,4 @@
+order	status symbol
+buy-001	open AAPL
+sell-002	filled MSFT
+buy-003	cancelled NVDA
