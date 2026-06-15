@@ -1,0 +1,2 @@
+plugin-row: alpha ok
+plugin-row: beta degraded

@@ -5,6 +5,9 @@ pub mod tool_packs;
 
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
+use std::io::Write;
+use std::path::PathBuf;
+use std::process::{Command, Stdio};
 
 pub type Row = BTreeMap<String, String>;
 
@@ -18,11 +21,14 @@ const FALLBACK_LINES: &str = "fallback.lines";
 const BACKEND_HEURISTIC: &str = "heuristic";
 const BACKEND_SECTIONS: &str = "sections";
 const BACKEND_TREE_SITTER_RUST: &str = "tree-sitter-rust";
+const BACKEND_EXECUTABLE_JSON: &str = "executable-json";
 const BACKEND_SECTIONS_SELECTED: &str = "backend.sections";
 const BACKEND_SECTIONS_PARSED: &str = "backend.sections.parsed";
 const BACKEND_SECTIONS_MALFORMED: &str = "backend.sections.malformed";
 const BACKEND_TREE_SITTER_RUST_PARSED: &str = "backend.tree-sitter-rust.parsed";
 const BACKEND_TREE_SITTER_RUST_ERROR: &str = "backend.tree-sitter-rust.error";
+const BACKEND_EXECUTABLE_JSON_PARSED: &str = "backend.executable-json.parsed";
+const BACKEND_EXECUTABLE_JSON_ERROR: &str = "backend.executable-json.error";
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct ParseReport {
@@ -41,6 +47,7 @@ pub enum ParseKind {
     Lines,
     Sections,
     TreeSitter,
+    Plugin,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
@@ -63,6 +70,7 @@ pub struct ParseOptions {
     only_rules: Vec<String>,
     header_mode: HeaderMode,
     backend: ParserBackendSelection,
+    executable_plugin: Option<PathBuf>,
     trace_events: Vec<TraceEvent>,
 }
 
@@ -109,6 +117,11 @@ impl ParseOptions {
         self
     }
 
+    pub fn executable_plugin(mut self, path: impl Into<PathBuf>) -> Self {
+        self.executable_plugin = Some(path.into());
+        self
+    }
+
     pub fn trace_event(mut self, rule_id: &'static str, message: impl Into<String>) -> Self {
         self.trace_events.push(event(rule_id, message));
         self
@@ -128,6 +141,10 @@ impl ParseOptions {
 
     pub fn selected_backend(&self) -> &str {
         &self.backend.id
+    }
+
+    pub fn selected_executable_plugin(&self) -> Option<&PathBuf> {
+        self.executable_plugin.as_ref()
     }
 
     pub fn configured_trace_events(&self) -> &[TraceEvent] {
@@ -163,6 +180,7 @@ pub fn parse_with_options(input: &str, options: &ParseOptions) -> ParseReport {
         BACKEND_HEURISTIC => parse_with_heuristic_backend(input, options),
         BACKEND_SECTIONS => parse_with_sections_backend(input, options),
         BACKEND_TREE_SITTER_RUST => parse_with_tree_sitter_rust_backend(input, options),
+        BACKEND_EXECUTABLE_JSON => parse_with_executable_json_backend(input, options),
         other => unsupported_backend_report(other, options),
     }
 }
@@ -244,6 +262,7 @@ pub fn known_backend_ids() -> &'static [&'static str] {
         BACKEND_HEURISTIC,
         BACKEND_SECTIONS,
         BACKEND_TREE_SITTER_RUST,
+        BACKEND_EXECUTABLE_JSON,
     ]
 }
 
@@ -279,6 +298,7 @@ fn backend_rule_id(backend: &str) -> &'static str {
         BACKEND_HEURISTIC => "backend.heuristic",
         BACKEND_SECTIONS => BACKEND_SECTIONS_SELECTED,
         BACKEND_TREE_SITTER_RUST => "backend.tree-sitter-rust",
+        BACKEND_EXECUTABLE_JSON => "backend.executable-json",
         _ => "backend.unsupported",
     }
 }
@@ -393,6 +413,118 @@ fn parse_with_tree_sitter_rust_backend(input: &str, options: &ParseOptions) -> P
         kind: ParseKind::TreeSitter,
         confidence: if root.has_error() { 0.45 } else { 0.88 },
         columns: tree_sitter_declaration_columns(),
+        rows,
+        trace,
+    }
+}
+
+fn parse_with_executable_json_backend(input: &str, options: &ParseOptions) -> ParseReport {
+    let mut trace = options_trace(options);
+    let Some(path) = options.selected_executable_plugin() else {
+        trace.push(event(
+            BACKEND_EXECUTABLE_JSON_ERROR,
+            "executable-json backend requires a descriptor parser.executable path",
+        ));
+        return plugin_report(Vec::new(), 0.0, trace);
+    };
+
+    let mut child = match Command::new(path)
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::piped())
+        .spawn()
+    {
+        Ok(child) => child,
+        Err(error) => {
+            trace.push(event(
+                BACKEND_EXECUTABLE_JSON_ERROR,
+                format!(
+                    "failed to start executable parser {}: {error}",
+                    path.display()
+                ),
+            ));
+            return plugin_report(Vec::new(), 0.0, trace);
+        }
+    };
+
+    if let Some(mut stdin) = child.stdin.take()
+        && let Err(error) = stdin.write_all(input.as_bytes())
+    {
+        trace.push(event(
+            BACKEND_EXECUTABLE_JSON_ERROR,
+            format!(
+                "failed to send input to executable parser {}: {error}",
+                path.display()
+            ),
+        ));
+        return plugin_report(Vec::new(), 0.0, trace);
+    }
+
+    let output = match child.wait_with_output() {
+        Ok(output) => output,
+        Err(error) => {
+            trace.push(event(
+                BACKEND_EXECUTABLE_JSON_ERROR,
+                format!(
+                    "failed to wait for executable parser {}: {error}",
+                    path.display()
+                ),
+            ));
+            return plugin_report(Vec::new(), 0.0, trace);
+        }
+    };
+
+    if !output.status.success() {
+        trace.push(event(
+            BACKEND_EXECUTABLE_JSON_ERROR,
+            format!(
+                "executable parser {} exited with {}; stderr: {}",
+                path.display(),
+                output.status,
+                String::from_utf8_lossy(&output.stderr).trim()
+            ),
+        ));
+        return plugin_report(Vec::new(), 0.0, trace);
+    }
+
+    let rows = match serde_json::from_slice::<Vec<Row>>(&output.stdout) {
+        Ok(rows) => rows,
+        Err(error) => {
+            trace.push(event(
+                BACKEND_EXECUTABLE_JSON_ERROR,
+                format!(
+                    "executable parser {} did not emit a JSON array of row objects: {error}",
+                    path.display()
+                ),
+            ));
+            return plugin_report(Vec::new(), 0.0, trace);
+        }
+    };
+
+    trace.push(event(
+        BACKEND_EXECUTABLE_JSON_PARSED,
+        format!(
+            "executable parser {} emitted {} row(s)",
+            path.display(),
+            rows.len()
+        ),
+    ));
+
+    plugin_report(rows, 0.78, trace)
+}
+
+fn plugin_report(rows: Vec<Row>, confidence: f32, trace: Vec<TraceEvent>) -> ParseReport {
+    let columns = rows
+        .iter()
+        .flat_map(|row| row.keys().cloned())
+        .collect::<BTreeSet<_>>()
+        .into_iter()
+        .collect();
+
+    ParseReport {
+        kind: ParseKind::Plugin,
+        confidence,
+        columns,
         rows,
         trace,
     }

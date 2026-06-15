@@ -1,0 +1,10 @@
+id = "known.executable-json.demo"
+name = "Executable JSON demo"
+priority = 70
+
+[matches]
+required_substrings = ["plugin-row:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

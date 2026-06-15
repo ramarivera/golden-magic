@@ -1,4 +1,8 @@
-use golden_magic::descriptors::{Descriptor, DescriptorRegistry};
+#![allow(dead_code)]
+
+use golden_magic::descriptors::{
+    Descriptor, DescriptorRegistry, LoadedDescriptor, load_descriptor_file,
+};
 use golden_magic::{ParseOptions, ParseReport, parse_with_options};
 use serde::de::DeserializeOwned;
 use serde_json::Value;
@@ -74,11 +78,50 @@ impl DescriptorFixture {
 
     pub fn isolated_registry(&self) -> IsolatedDescriptorRegistry {
         let dir = tempdir().expect("temp descriptor dir");
-        fs::copy(
-            self.path.join("descriptor.toml"),
-            dir.path().join("descriptor.toml"),
-        )
-        .unwrap_or_else(|error| panic!("fixture {:?} descriptor copy failed: {error}", self.path));
+        let source_descriptor = self.path.join("descriptor.toml");
+        let target_descriptor = dir.path().join("descriptor.toml");
+        fs::copy(&source_descriptor, &target_descriptor).unwrap_or_else(|error| {
+            panic!("fixture {:?} descriptor copy failed: {error}", self.path)
+        });
+        let loaded = load_descriptor_file(&source_descriptor).unwrap_or_else(|error| {
+            panic!("fixture {:?} descriptor load failed: {error}", self.path)
+        });
+        if let Some(executable) = &loaded.descriptor.parser.executable
+            && executable.is_relative()
+        {
+            let source_executable = self.path.join(executable);
+            let target_executable = dir.path().join(executable);
+            if let Some(parent) = target_executable.parent() {
+                fs::create_dir_all(parent).unwrap_or_else(|error| {
+                    panic!(
+                        "fixture {:?} executable parent copy failed: {error}",
+                        self.path
+                    )
+                });
+            }
+            fs::copy(&source_executable, &target_executable).unwrap_or_else(|error| {
+                panic!(
+                    "fixture {:?} executable copy failed from {} to {}: {error}",
+                    self.path,
+                    source_executable.display(),
+                    target_executable.display()
+                )
+            });
+            let permissions = fs::metadata(&source_executable)
+                .unwrap_or_else(|error| {
+                    panic!(
+                        "fixture {:?} executable metadata failed: {error}",
+                        self.path
+                    )
+                })
+                .permissions();
+            fs::set_permissions(&target_executable, permissions).unwrap_or_else(|error| {
+                panic!(
+                    "fixture {:?} executable permissions copy failed: {error}",
+                    self.path
+                )
+            });
+        }
         let registry = DescriptorRegistry::load_dir(dir.path())
             .unwrap_or_else(|error| panic!("fixture {:?} registry failed: {error}", self.path));
 
@@ -100,8 +143,15 @@ impl DescriptorFixture {
 
     pub fn parse_report(&self) -> ParseReport {
         let input = self.input();
-        let descriptor = self.selected_descriptor();
-        parse_with_options(&input, &parse_options_from_descriptor(&descriptor))
+        let isolated = self.isolated_registry();
+        let selected = isolated.registry.select(&input);
+        assert_eq!(
+            selected.len(),
+            1,
+            "fixture {:?} should match exactly once",
+            self.path
+        );
+        parse_with_options(&input, &parse_options_from_loaded_descriptor(selected[0]))
     }
 
     pub fn assert_rows_match(&self) {
@@ -135,11 +185,31 @@ pub fn parse_options_from_descriptor(descriptor: &Descriptor) -> ParseOptions {
     if let Some(backend) = &descriptor.parser.backend {
         options = options.backend(backend);
     }
+    if let Some(executable) = &descriptor.parser.executable {
+        options = options.executable_plugin(executable);
+    }
     for rule in &descriptor.parser.only_rules {
         options = options.only_rule(rule);
     }
     for rule in &descriptor.parser.disable_rules {
         options = options.disable_rule(rule);
+    }
+
+    options
+}
+
+pub fn parse_options_from_loaded_descriptor(loaded: &LoadedDescriptor) -> ParseOptions {
+    let mut options = parse_options_from_descriptor(&loaded.descriptor);
+    if let Some(executable) = &loaded.descriptor.parser.executable
+        && executable.is_relative()
+    {
+        options = options.executable_plugin(
+            loaded
+                .path
+                .parent()
+                .unwrap_or_else(|| Path::new("."))
+                .join(executable),
+        );
     }
 
     options

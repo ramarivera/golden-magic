@@ -37,7 +37,26 @@ Descriptors cannot:
 
 ## Next Boundary: Subprocess Extensions
 
-If descriptors cannot express a tool, the next extension boundary should be a subprocess protocol, not native dynamic loading.
+If descriptors cannot express a tool, the next extension boundary is a
+subprocess protocol, not native dynamic loading. Golden Magic implements this
+first as the descriptor-selected `executable-json` backend.
+
+```toml
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin"
+```
+
+Golden Magic writes the raw input to stdin and expects stdout to be a JSON array
+of row objects:
+
+```json
+[
+  {"name": "alpha", "status": "ok"}
+]
+```
+
+Relative executable paths resolve beside `descriptor.toml`.
 
 Subprocess extensions should:
 
@@ -45,7 +64,7 @@ Subprocess extensions should:
 - receive input on stdin
 - emit rows/report/trace JSON on stdout
 - emit diagnostics on stderr
-- use a versioned JSON protocol
+- use a versioned JSON protocol as this surface evolves
 - have timeouts, output-size limits, and clear failure reporting
 - be opt-in per descriptor or config file
 
@@ -66,7 +85,9 @@ A WASM extension design must specify:
 - how descriptors bind to WASM modules
 - test fixtures and compatibility gates
 
-WASM is not implemented yet. It is the preferred executable-plugin research direction because it offers a clearer sandbox story than loading native dylibs.
+WASM is not implemented yet. It remains the preferred sandboxable executable
+plugin research direction because it offers a clearer sandbox story than loading
+native dylibs.
 
 ## Forbidden Until Review: Native Runtime Loading
 

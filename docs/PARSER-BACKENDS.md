@@ -100,12 +100,27 @@ backend = "tree-sitter-rust"
 
 `tree-sitter-rust` parses Rust syntax with tree-sitter and emits one row per supported declaration with `kind`, `name`, `start_line`, and `end_line`. It currently extracts modules, structs, and functions.
 
+and:
+
+```toml
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin"
+```
+
+`executable-json` launches an explicit parser executable, writes the input text
+to stdin, and expects stdout to be a JSON array of row objects. Relative
+executable paths resolve beside the descriptor file.
+
 Direct core use can also select the implemented backend:
 
 ```rust
 ParseOptions::new().backend("heuristic")
 ParseOptions::new().backend("sections")
 ParseOptions::new().backend("tree-sitter-rust")
+ParseOptions::new()
+    .backend("executable-json")
+    .executable_plugin("./parser-plugin")
 ```
 
 Inspect implemented backend ids with:

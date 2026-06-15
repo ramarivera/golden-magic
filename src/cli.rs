@@ -423,7 +423,27 @@ fn apply_descriptor_backend(
     };
 
     if known_backend_ids().iter().any(|known| known == &backend) {
-        Ok(options.backend(backend))
+        let mut options = options.backend(backend);
+        if backend == "executable-json" {
+            let Some(executable) = &loaded.descriptor.parser.executable else {
+                return Err(format!(
+                    "descriptor {} uses executable-json backend but parser.executable is missing",
+                    loaded.descriptor.id
+                )
+                .into());
+            };
+            let executable = if executable.is_absolute() {
+                executable.clone()
+            } else {
+                loaded
+                    .path
+                    .parent()
+                    .unwrap_or_else(|| Path::new("."))
+                    .join(executable)
+            };
+            options = options.executable_plugin(executable);
+        }
+        Ok(options)
     } else {
         Err(format!(
             "descriptor {} requests parser backend {backend}, but only {} is implemented. See docs/PARSER-BACKENDS.md.",

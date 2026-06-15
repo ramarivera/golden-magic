@@ -42,8 +42,13 @@
       "properties": {
         "backend": {
           "type": "string",
-          "enum": ["heuristic", "sections", "tree-sitter-rust"],
+          "enum": ["heuristic", "sections", "tree-sitter-rust", "executable-json"],
           "description": "Parser backend id."
+        },
+        "executable": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Path to an explicit executable parser plugin for executable-json backends. Relative paths resolve beside descriptor.toml."
         },
         "only_rules": {
           "type": "array",

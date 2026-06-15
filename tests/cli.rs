@@ -663,5 +663,62 @@ fn cli_lists_known_backend_ids() {
         .assert()
         .success()
         .stdout(predicates::str::contains("heuristic"))
-        .stdout(predicates::str::contains("sections"));
+        .stdout(predicates::str::contains("sections"))
+        .stdout(predicates::str::contains("executable-json"));
+}
+
+#[test]
+fn cli_runs_descriptor_selected_executable_json_backend() {
+    let fixture = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+        .join("tests/fixtures/descriptors/executable-json");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(&fixture)
+        .arg("--output")
+        .arg("rows-json")
+        .write_stdin(fs::read_to_string(fixture.join("input.txt")).expect("fixture input"))
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let rows: Value = serde_json::from_slice(&output).expect("valid JSON rows");
+    assert_eq!(rows[0]["name"], "alpha");
+    assert_eq!(rows[0]["status"], "ok");
+    assert_eq!(rows[1]["name"], "beta");
+    assert_eq!(rows[1]["status"], "degraded");
+}
+
+#[test]
+fn cli_rejects_executable_json_descriptor_without_executable() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("missing-executable.toml"),
+        r#"
+id = "plugin.missing-executable"
+name = "Missing Executable"
+priority = 10
+[matches]
+required_substrings = ["plugin-row:"]
+[parser]
+backend = "executable-json"
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(dir.path())
+        .write_stdin("plugin-row: alpha ok\n")
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "uses executable-json backend but parser.executable is missing",
+        ));
 }
