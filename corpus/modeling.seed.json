@@ -663,5 +663,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/dasel-query",
     "analysis_notes": "Modeled dasel query result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trimstray/the-book-of-secret-knowledge",
+    "descriptor_id": "known.secret-knowledge.links",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/secret-knowledge-links",
+    "analysis_notes": "Modeled a CLI-adjacent curated link index from the-book-of-secret-knowledge as tabular section output through a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/n8n-io/n8n",
+    "descriptor_id": "known.n8n.executions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/n8n-executions",
+    "analysis_notes": "Modeled n8n CLI-style execution list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ohmyzsh/ohmyzsh",
+    "descriptor_id": "known.ohmyzsh.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ohmyzsh-plugins",
+    "analysis_notes": "Modeled oh-my-zsh plugin listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jlevy/the-art-of-command-line",
+    "descriptor_id": "known.art-command-line.topics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/art-commandline-topics",
+    "analysis_notes": "Modeled the-art-of-command-line guide sections as CLI-adjacent topic table output through a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/anthropics/claude-code",
+    "descriptor_id": "known.claude-code.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-sessions",
+    "analysis_notes": "Modeled Claude Code session list output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.n8n.executions"
+name = "n8n execution list"
+priority = 50
+
+[matches]
+required_substrings = ["id\tstatus","101\tsuccess"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

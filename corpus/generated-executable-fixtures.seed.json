@@ -898,5 +898,65 @@
     "negative": "selector .package.version\nvalue 1.2.3\n",
     "analysis_notes": "Modeled dasel query result output with a generated executable-json parser plugin.",
     "variants": ["selector row", "value row", "format row"]
+  },
+  {
+    "fixture": "secret-knowledge-links",
+    "descriptor_id": "known.secret-knowledge.links",
+    "name": "the-book-of-secret-knowledge link index",
+    "repo": "https://github.com/trimstray/the-book-of-secret-knowledge",
+    "required_substrings": ["section\tcount", "cli-tools\t42"],
+    "parser": "tab-pairs",
+    "input": "section\tcount source\ncli-tools\t42 markdown\nnetworking\t18 markdown\none-liners\t27 markdown\n",
+    "negative": "section count source\ncli-tools 42 markdown\n",
+    "analysis_notes": "Modeled a CLI-adjacent curated link index from the-book-of-secret-knowledge as tabular section output through a generated executable-json parser plugin.",
+    "variants": ["section header row", "cli tools count row", "markdown source field"]
+  },
+  {
+    "fixture": "n8n-executions",
+    "descriptor_id": "known.n8n.executions",
+    "name": "n8n execution list",
+    "repo": "https://github.com/n8n-io/n8n",
+    "required_substrings": ["id\tstatus", "101\tsuccess"],
+    "parser": "tab-pairs",
+    "input": "id\tstatus workflow\n101\tsuccess deploy\n102\terror import\n103\twaiting sync\n",
+    "negative": "id status workflow\n101 success deploy\n",
+    "analysis_notes": "Modeled n8n CLI-style execution list output with a generated executable-json parser plugin.",
+    "variants": ["execution header row", "success status row", "workflow field"]
+  },
+  {
+    "fixture": "ohmyzsh-plugins",
+    "descriptor_id": "known.ohmyzsh.plugins",
+    "name": "oh-my-zsh plugin list",
+    "repo": "https://github.com/ohmyzsh/ohmyzsh",
+    "required_substrings": ["plugin\tstatus", "git\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstatus source\ngit\tenabled bundled\ndocker\tenabled bundled\nkubectl\tdisabled bundled\n",
+    "negative": "plugin status source\ngit enabled bundled\n",
+    "analysis_notes": "Modeled oh-my-zsh plugin listing output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "enabled plugin row", "disabled plugin row"]
+  },
+  {
+    "fixture": "art-commandline-topics",
+    "descriptor_id": "known.art-command-line.topics",
+    "name": "the-art-of-command-line topic index",
+    "repo": "https://github.com/jlevy/the-art-of-command-line",
+    "required_substrings": ["topic\titems", "basics\t12"],
+    "parser": "tab-pairs",
+    "input": "topic\titems level\nbasics\t12 intro\nprocessing\t19 intermediate\ndebugging\t8 advanced\n",
+    "negative": "topic items level\nbasics 12 intro\n",
+    "analysis_notes": "Modeled the-art-of-command-line guide sections as CLI-adjacent topic table output through a generated executable-json parser plugin.",
+    "variants": ["topic header row", "basics count row", "level field"]
+  },
+  {
+    "fixture": "claude-code-sessions",
+    "descriptor_id": "known.claude-code.sessions",
+    "name": "Claude Code session list",
+    "repo": "https://github.com/anthropics/claude-code",
+    "required_substrings": ["session\tstatus", "alpha\tactive"],
+    "parser": "tab-pairs",
+    "input": "session\tstatus model\nalpha\tactive sonnet\nbeta\tidle opus\ngamma\tdone sonnet\n",
+    "negative": "session status model\nalpha active sonnet\n",
+    "analysis_notes": "Modeled Claude Code session list output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "active session row", "model field"]
   }
 ]

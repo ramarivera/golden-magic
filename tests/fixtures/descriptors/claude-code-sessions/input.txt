@@ -1,0 +1,4 @@
+session	status model
+alpha	active sonnet
+beta	idle opus
+gamma	done sonnet

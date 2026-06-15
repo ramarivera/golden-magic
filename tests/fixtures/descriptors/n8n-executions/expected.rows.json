@@ -1,0 +1,18 @@
+[
+  {
+    "name": "id",
+    "value": "status workflow"
+  },
+  {
+    "name": "101",
+    "value": "success deploy"
+  },
+  {
+    "name": "102",
+    "value": "error import"
+  },
+  {
+    "name": "103",
+    "value": "waiting sync"
+  }
+]

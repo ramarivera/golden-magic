@@ -1708,5 +1708,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/trimstray/the-book-of-secret-knowledge",
+    "descriptor_id": "known.secret-knowledge.links",
+    "run_id": "agentic.secret-knowledge-links.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/secret-knowledge-links/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/secret-knowledge-links/expected.rows.json",
+    "variants": [
+      "section header row",
+      "cli tools count row",
+      "markdown source field"
+    ],
+    "transcript": [
+      "selected descriptor known.secret-knowledge.links for the-book-of-secret-knowledge link index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/n8n-io/n8n",
+    "descriptor_id": "known.n8n.executions",
+    "run_id": "agentic.n8n-executions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/n8n-executions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/n8n-executions/expected.rows.json",
+    "variants": [
+      "execution header row",
+      "success status row",
+      "workflow field"
+    ],
+    "transcript": [
+      "selected descriptor known.n8n.executions for n8n execution list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ohmyzsh/ohmyzsh",
+    "descriptor_id": "known.ohmyzsh.plugins",
+    "run_id": "agentic.ohmyzsh-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ohmyzsh-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ohmyzsh-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "enabled plugin row",
+      "disabled plugin row"
+    ],
+    "transcript": [
+      "selected descriptor known.ohmyzsh.plugins for oh-my-zsh plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jlevy/the-art-of-command-line",
+    "descriptor_id": "known.art-command-line.topics",
+    "run_id": "agentic.art-command-line-topics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/art-commandline-topics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/art-commandline-topics/expected.rows.json",
+    "variants": [
+      "topic header row",
+      "basics count row",
+      "level field"
+    ],
+    "transcript": [
+      "selected descriptor known.art-command-line.topics for the-art-of-command-line topic index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/anthropics/claude-code",
+    "descriptor_id": "known.claude-code.sessions",
+    "run_id": "agentic.claude-code-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "active session row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-code.sessions for Claude Code session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.art-command-line.topics"
+name = "the-art-of-command-line topic index"
+priority = 50
+
+[matches]
+required_substrings = ["topic\titems","basics\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

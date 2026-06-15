@@ -1,0 +1,4 @@
+plugin	status source
+git	enabled bundled
+docker	enabled bundled
+kubectl	disabled bundled

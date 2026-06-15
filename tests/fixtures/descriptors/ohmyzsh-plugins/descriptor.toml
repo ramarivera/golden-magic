@@ -1,0 +1,10 @@
+id = "known.ohmyzsh.plugins"
+name = "oh-my-zsh plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tstatus","git\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

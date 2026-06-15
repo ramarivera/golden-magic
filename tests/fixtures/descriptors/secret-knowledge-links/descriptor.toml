@@ -1,0 +1,10 @@
+id = "known.secret-knowledge.links"
+name = "the-book-of-secret-knowledge link index"
+priority = 50
+
+[matches]
+required_substrings = ["section\tcount","cli-tools\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
