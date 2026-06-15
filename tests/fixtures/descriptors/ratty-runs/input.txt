@@ -1,0 +1,4 @@
+run	terminal state
+baseline	xterm complete
+fast	kitty complete
+old	vt100 ignored

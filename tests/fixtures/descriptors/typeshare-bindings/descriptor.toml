@@ -1,0 +1,10 @@
+id = "known.typeshare.bindings"
+name = "Typeshare binding list"
+priority = 50
+
+[matches]
+required_substrings = ["binding\tlanguage","User\ttypescript"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

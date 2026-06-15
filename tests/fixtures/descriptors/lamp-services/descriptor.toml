@@ -1,0 +1,10 @@
+id = "known.lamp.services"
+name = "LAMP service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tversion","nginx\tstable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+service version state
+nginx stable installed

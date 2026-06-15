@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "environment state"
+  },
+  {
+    "name": "browser",
+    "value": "linux queued"
+  },
+  {
+    "name": "files",
+    "value": "ubuntu queued"
+  },
+  {
+    "name": "old",
+    "value": "windows skipped"
+  }
+]

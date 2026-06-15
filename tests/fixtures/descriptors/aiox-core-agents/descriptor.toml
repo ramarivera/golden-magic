@@ -1,0 +1,10 @@
+id = "known.aiox-core.agents"
+name = "aiox-core agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\tcapability","planner\treasoning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

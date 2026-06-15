@@ -1,0 +1,2 @@
+run terminal state
+baseline xterm complete

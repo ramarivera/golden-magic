@@ -1,0 +1,10 @@
+id = "known.ratty.runs"
+name = "ratty benchmark run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tterminal","baseline\txterm"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

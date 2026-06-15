@@ -1,0 +1,4 @@
+frame	palette state
+0001	ansi rendered
+0002	ansi rendered
+old	mono skipped

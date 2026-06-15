@@ -1,0 +1,18 @@
+[
+  {
+    "name": "service",
+    "value": "version state"
+  },
+  {
+    "name": "nginx",
+    "value": "stable installed"
+  },
+  {
+    "name": "mysql",
+    "value": "8 installed"
+  },
+  {
+    "name": "oldphp",
+    "value": "5 removed"
+  }
+]

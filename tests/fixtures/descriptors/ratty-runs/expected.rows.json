@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "terminal state"
+  },
+  {
+    "name": "baseline",
+    "value": "xterm complete"
+  },
+  {
+    "name": "fast",
+    "value": "kitty complete"
+  },
+  {
+    "name": "old",
+    "value": "vt100 ignored"
+  }
+]

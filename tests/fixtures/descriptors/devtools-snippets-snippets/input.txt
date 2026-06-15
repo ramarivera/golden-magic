@@ -1,0 +1,4 @@
+snippet	category state
+dom-inspect	debug enabled
+perf-mark	profile enabled
+old-hack	legacy disabled

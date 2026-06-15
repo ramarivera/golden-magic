@@ -1,0 +1,4 @@
+service	version state
+nginx	stable installed
+mysql	8 installed
+oldphp	5 removed

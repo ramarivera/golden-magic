@@ -1,0 +1,4 @@
+profile	shell state
+work	zsh active
+home	fish active
+old	bash archived

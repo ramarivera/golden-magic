@@ -1,0 +1,18 @@
+[
+  {
+    "name": "profile",
+    "value": "font state"
+  },
+  {
+    "name": "default",
+    "value": "monospace active"
+  },
+  {
+    "name": "presentation",
+    "value": "large active"
+  },
+  {
+    "name": "old",
+    "value": "bitmap disabled"
+  }
+]

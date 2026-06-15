@@ -1,0 +1,18 @@
+[
+  {
+    "name": "binding",
+    "value": "language state"
+  },
+  {
+    "name": "User",
+    "value": "typescript generated"
+  },
+  {
+    "name": "Vault",
+    "value": "swift generated"
+  },
+  {
+    "name": "Old",
+    "value": "kotlin skipped"
+  }
+]

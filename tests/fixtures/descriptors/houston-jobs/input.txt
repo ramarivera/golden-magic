@@ -1,0 +1,4 @@
+job	queue state
+deploy	default running
+backup	ops queued
+old	legacy failed

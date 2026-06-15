@@ -6396,5 +6396,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/clikt-commands",
     "analysis_notes": "Modeled Clikt command registry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bgrins/devtools-snippets",
+    "descriptor_id": "known.devtools-snippets.snippets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtools-snippets-snippets",
+    "analysis_notes": "Modeled DevTools snippets catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nicknisi/dotfiles",
+    "descriptor_id": "known.nicknisi-dotfiles.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nicknisi-dotfiles-profiles",
+    "analysis_notes": "Modeled dotfiles profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SynkraAI/aiox-core",
+    "descriptor_id": "known.aiox-core.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aiox-core-agents",
+    "analysis_notes": "Modeled aiox-core agent registry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nomad-cli/houston",
+    "descriptor_id": "known.houston.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/houston-jobs",
+    "analysis_notes": "Modeled Houston CLI job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google/gif-for-cli",
+    "descriptor_id": "known.gif-for-cli.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gif-for-cli-frames",
+    "analysis_notes": "Modeled gif-for-cli rendered frame output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/1Password/typeshare",
+    "descriptor_id": "known.typeshare.bindings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/typeshare-bindings",
+    "analysis_notes": "Modeled Typeshare generated binding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/contour-terminal/contour",
+    "descriptor_id": "known.contour-terminal.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/contour-terminal-profiles",
+    "analysis_notes": "Modeled Contour terminal profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/orhun/ratty",
+    "descriptor_id": "known.ratty.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ratty-runs",
+    "analysis_notes": "Modeled ratty terminal benchmark output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xlang-ai/OSWorld",
+    "descriptor_id": "known.osworld.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/osworld-tasks",
+    "analysis_notes": "Modeled OSWorld task queue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/teddysun/lamp",
+    "descriptor_id": "known.lamp.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lamp-services",
+    "analysis_notes": "Modeled LAMP installer service output with a generated executable-json parser plugin."
   }
 ]

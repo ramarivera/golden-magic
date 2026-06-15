@@ -1,0 +1,2 @@
+profile font state
+default monospace active

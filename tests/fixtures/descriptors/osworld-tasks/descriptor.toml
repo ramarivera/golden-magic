@@ -1,0 +1,10 @@
+id = "known.osworld.tasks"
+name = "OSWorld task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tenvironment","browser\tlinux"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

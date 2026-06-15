@@ -1,0 +1,4 @@
+agent	capability state
+planner	reasoning ready
+executor	tools ready
+legacy	prompt disabled

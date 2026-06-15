@@ -1,0 +1,10 @@
+id = "known.houston.jobs"
+name = "Houston job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tqueue","deploy\tdefault"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

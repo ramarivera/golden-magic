@@ -1,0 +1,2 @@
+agent capability state
+planner reasoning ready

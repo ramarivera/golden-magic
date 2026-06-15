@@ -16450,5 +16450,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/bgrins/devtools-snippets",
+    "descriptor_id": "known.devtools-snippets.snippets",
+    "run_id": "agentic.devtools-snippets-snippets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devtools-snippets-snippets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devtools-snippets-snippets/expected.rows.json",
+    "variants": [
+      "snippet header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devtools-snippets.snippets for DevTools snippets list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nicknisi/dotfiles",
+    "descriptor_id": "known.nicknisi-dotfiles.profiles",
+    "run_id": "agentic.nicknisi-dotfiles-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nicknisi-dotfiles-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nicknisi-dotfiles-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "shell row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nicknisi-dotfiles.profiles for Nick Nisi dotfiles profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/SynkraAI/aiox-core",
+    "descriptor_id": "known.aiox-core.agents",
+    "run_id": "agentic.aiox-core-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aiox-core-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aiox-core-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "capability row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.aiox-core.agents for aiox-core agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nomad-cli/houston",
+    "descriptor_id": "known.houston.jobs",
+    "run_id": "agentic.houston-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/houston-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/houston-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "queue row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.houston.jobs for Houston job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/google/gif-for-cli",
+    "descriptor_id": "known.gif-for-cli.frames",
+    "run_id": "agentic.gif-for-cli-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gif-for-cli-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gif-for-cli-frames/expected.rows.json",
+    "variants": [
+      "frame header row",
+      "palette row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gif-for-cli.frames for gif-for-cli frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/1Password/typeshare",
+    "descriptor_id": "known.typeshare.bindings",
+    "run_id": "agentic.typeshare-bindings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/typeshare-bindings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/typeshare-bindings/expected.rows.json",
+    "variants": [
+      "binding header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.typeshare.bindings for Typeshare binding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/contour-terminal/contour",
+    "descriptor_id": "known.contour-terminal.profiles",
+    "run_id": "agentic.contour-terminal-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/contour-terminal-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/contour-terminal-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "font row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.contour-terminal.profiles for Contour terminal profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/orhun/ratty",
+    "descriptor_id": "known.ratty.runs",
+    "run_id": "agentic.ratty-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ratty-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ratty-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "terminal row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ratty.runs for ratty benchmark run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xlang-ai/OSWorld",
+    "descriptor_id": "known.osworld.tasks",
+    "run_id": "agentic.osworld-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/osworld-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/osworld-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "environment row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.osworld.tasks for OSWorld task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/teddysun/lamp",
+    "descriptor_id": "known.lamp.services",
+    "run_id": "agentic.lamp-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lamp-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lamp-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lamp.services for LAMP service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
