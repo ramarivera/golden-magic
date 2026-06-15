@@ -2,6 +2,13 @@
 name = "golden-magic"
 version = "0.1.0"
 edition = "2024"
+description = "Parse hostile CLI table-ish text into structured rows for Nushell workflows."
+license = "MIT"
+repository = "https://github.com/ramarivera/golden-magic"
+homepage = "https://github.com/ramarivera/golden-magic"
+readme = "README.md"
+keywords = ["nushell", "parser", "cli", "tables", "plugin"]
+categories = ["command-line-utilities", "parser-implementations"]
 
 [dependencies]
 clap = { version = "4.5.40", features = ["derive"] }
