@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "state host"
+  },
+  {
+    "name": "pairing",
+    "value": "open devbox"
+  },
+  {
+    "name": "review",
+    "value": "closed laptop"
+  },
+  {
+    "name": "ops",
+    "value": "open server"
+  }
+]

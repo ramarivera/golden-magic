@@ -3118,5 +3118,65 @@
     "negative": "tab state url\n1 active https://example.com\n",
     "analysis_notes": "Modeled Carbonyl tab output with a generated executable-json parser plugin.",
     "variants": ["tab header row", "state row", "url field"]
+  },
+  {
+    "fixture": "upterm-sessions",
+    "descriptor_id": "known.upterm.sessions",
+    "name": "Upterm session list",
+    "repo": "https://github.com/railsware/upterm",
+    "required_substrings": ["session\tstate", "pairing\topen"],
+    "parser": "tab-pairs",
+    "input": "session\tstate host\npairing\topen devbox\nreview\tclosed laptop\nops\topen server\n",
+    "negative": "session state host\npairing open devbox\n",
+    "analysis_notes": "Modeled Upterm session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "host field"]
+  },
+  {
+    "fixture": "cocos2d-x-targets",
+    "descriptor_id": "known.cocos2d-x.targets",
+    "name": "cocos2d-x build target list",
+    "repo": "https://github.com/cocos2d/cocos2d-x",
+    "required_substrings": ["target\tplatform", "helloworld\tandroid"],
+    "parser": "tab-pairs",
+    "input": "target\tplatform status\nhelloworld\tandroid ready\ncpp-tests\tios ready\nlua-tests\tlinux beta\n",
+    "negative": "target platform status\nhelloworld android ready\n",
+    "analysis_notes": "Modeled cocos2d-x target output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "platform row", "status field"]
+  },
+  {
+    "fixture": "hurl-requests",
+    "descriptor_id": "known.hurl.requests",
+    "name": "Hurl request result list",
+    "repo": "https://github.com/Orange-OpenSource/hurl",
+    "required_substrings": ["request\tstatus", "health\t200"],
+    "parser": "tab-pairs",
+    "input": "request\tstatus duration\nhealth\t200 12ms\nlogin\t302 35ms\nmissing\t404 7ms\n",
+    "negative": "request status duration\nhealth 200 12ms\n",
+    "analysis_notes": "Modeled Hurl request output with a generated executable-json parser plugin.",
+    "variants": ["request header row", "status row", "duration field"]
+  },
+  {
+    "fixture": "gallery-dl-downloads",
+    "descriptor_id": "known.gallery-dl.downloads",
+    "name": "gallery-dl download list",
+    "repo": "https://github.com/mikf/gallery-dl",
+    "required_substrings": ["item\tstatus", "image-001\tdone"],
+    "parser": "tab-pairs",
+    "input": "item\tstatus bytes\nimage-001\tdone 204800\nimage-002\tdone 198400\nvideo-001\tqueued 0\n",
+    "negative": "item status bytes\nimage-001 done 204800\n",
+    "analysis_notes": "Modeled gallery-dl download output with a generated executable-json parser plugin.",
+    "variants": ["item header row", "status row", "bytes field"]
+  },
+  {
+    "fixture": "wasp-actions",
+    "descriptor_id": "known.wasp.actions",
+    "name": "Wasp action list",
+    "repo": "https://github.com/wasp-lang/wasp",
+    "required_substrings": ["action\tstate", "db-migrate\tready"],
+    "parser": "tab-pairs",
+    "input": "action\tstate scope\ndb-migrate\tready server\nstart\tready fullstack\ngenerate\tbeta client\n",
+    "negative": "action state scope\ndb-migrate ready server\n",
+    "analysis_notes": "Modeled Wasp action output with a generated executable-json parser plugin.",
+    "variants": ["action header row", "state row", "scope field"]
   }
 ]

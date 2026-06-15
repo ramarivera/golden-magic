@@ -1958,5 +1958,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/carbonyl-tabs",
     "analysis_notes": "Modeled Carbonyl tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/railsware/upterm",
+    "descriptor_id": "known.upterm.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/upterm-sessions",
+    "analysis_notes": "Modeled Upterm session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cocos2d/cocos2d-x",
+    "descriptor_id": "known.cocos2d-x.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cocos2d-x-targets",
+    "analysis_notes": "Modeled cocos2d-x target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Orange-OpenSource/hurl",
+    "descriptor_id": "known.hurl.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hurl-requests",
+    "analysis_notes": "Modeled Hurl request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mikf/gallery-dl",
+    "descriptor_id": "known.gallery-dl.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gallery-dl-downloads",
+    "analysis_notes": "Modeled gallery-dl download output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wasp-lang/wasp",
+    "descriptor_id": "known.wasp.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wasp-actions",
+    "analysis_notes": "Modeled Wasp action output with a generated executable-json parser plugin."
   }
 ]

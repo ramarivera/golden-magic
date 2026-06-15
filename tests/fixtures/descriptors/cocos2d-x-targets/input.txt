@@ -1,0 +1,4 @@
+target	platform status
+helloworld	android ready
+cpp-tests	ios ready
+lua-tests	linux beta

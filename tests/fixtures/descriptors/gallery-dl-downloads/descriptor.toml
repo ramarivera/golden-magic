@@ -1,0 +1,10 @@
+id = "known.gallery-dl.downloads"
+name = "gallery-dl download list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tstatus","image-001\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

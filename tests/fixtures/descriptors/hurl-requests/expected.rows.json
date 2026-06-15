@@ -1,0 +1,18 @@
+[
+  {
+    "name": "request",
+    "value": "status duration"
+  },
+  {
+    "name": "health",
+    "value": "200 12ms"
+  },
+  {
+    "name": "login",
+    "value": "302 35ms"
+  },
+  {
+    "name": "missing",
+    "value": "404 7ms"
+  }
+]

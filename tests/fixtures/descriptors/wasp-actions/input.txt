@@ -1,0 +1,4 @@
+action	state scope
+db-migrate	ready server
+start	ready fullstack
+generate	beta client

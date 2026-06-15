@@ -1,0 +1,4 @@
+request	status duration
+health	200 12ms
+login	302 35ms
+missing	404 7ms

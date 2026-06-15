@@ -1,0 +1,10 @@
+id = "known.upterm.sessions"
+name = "Upterm session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","pairing\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

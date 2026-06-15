@@ -1,0 +1,10 @@
+id = "known.wasp.actions"
+name = "Wasp action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tstate","db-migrate\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

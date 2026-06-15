@@ -1,0 +1,4 @@
+item	status bytes
+image-001	done 204800
+image-002	done 198400
+video-001	queued 0

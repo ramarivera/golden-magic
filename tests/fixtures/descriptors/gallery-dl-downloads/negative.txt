@@ -1,0 +1,2 @@
+item status bytes
+image-001 done 204800

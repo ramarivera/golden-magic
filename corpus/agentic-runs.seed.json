@@ -5038,5 +5038,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/railsware/upterm",
+    "descriptor_id": "known.upterm.sessions",
+    "run_id": "agentic.upterm-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/upterm-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/upterm-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "host field"
+    ],
+    "transcript": [
+      "selected descriptor known.upterm.sessions for Upterm session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cocos2d/cocos2d-x",
+    "descriptor_id": "known.cocos2d-x.targets",
+    "run_id": "agentic.cocos2d-x-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cocos2d-x-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cocos2d-x-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "platform row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.cocos2d-x.targets for cocos2d-x build target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Orange-OpenSource/hurl",
+    "descriptor_id": "known.hurl.requests",
+    "run_id": "agentic.hurl-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hurl-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hurl-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "status row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.hurl.requests for Hurl request result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mikf/gallery-dl",
+    "descriptor_id": "known.gallery-dl.downloads",
+    "run_id": "agentic.gallery-dl-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gallery-dl-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gallery-dl-downloads/expected.rows.json",
+    "variants": [
+      "item header row",
+      "status row",
+      "bytes field"
+    ],
+    "transcript": [
+      "selected descriptor known.gallery-dl.downloads for gallery-dl download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wasp-lang/wasp",
+    "descriptor_id": "known.wasp.actions",
+    "run_id": "agentic.wasp-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wasp-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wasp-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "state row",
+      "scope field"
+    ],
+    "transcript": [
+      "selected descriptor known.wasp.actions for Wasp action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,4 @@
+session	state host
+pairing	open devbox
+review	closed laptop
+ops	open server

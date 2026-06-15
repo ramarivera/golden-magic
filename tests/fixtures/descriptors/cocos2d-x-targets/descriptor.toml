@@ -1,0 +1,10 @@
+id = "known.cocos2d-x.targets"
+name = "cocos2d-x build target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tplatform","helloworld\tandroid"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
