@@ -61,8 +61,15 @@ found -> analyzed -> modeled -> deterministic-tested -> agentic-tested
 
 The manifest tests reject status drift, modeled entries without descriptor and
 backend ids, deterministic claims without case counts, agentic claims without
-run counts, and analyzed entries without notes. The current seed is intentionally
-only `found`; GitHub discovery alone must not claim analysis or modeling.
+run counts, and analyzed entries without notes. GitHub discovery alone must not
+claim analysis or modeling.
+
+Current modeled entries:
+
+| Repo | Descriptor | Backend | Deterministic cases | Agentic runs |
+| --- | --- | --- | ---: | ---: |
+| `BurntSushi/ripgrep` | `known.ripgrep.matches` | `executable-json` | 1 | 0 |
+| `git/git` | `known.git.branch-verbose` | `heuristic` | 1 | 0 |
 
 Run the manifest checks with:
 

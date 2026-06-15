@@ -1,0 +1,10 @@
+id = "known.ripgrep.matches"
+name = "ripgrep match lines"
+priority = 60
+
+[matches]
+required_substrings = [":", "src/"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

@@ -149,11 +149,11 @@ fn seed_corpus_lifecycle_counts_are_explicitly_incomplete() {
         .count();
 
     assert_eq!(found, entries.len(), "every seed entry is at least found");
-    assert_eq!(analyzed, 0, "seed fetch alone must not claim analysis");
-    assert_eq!(modeled, 0, "seed fetch alone must not claim modeling");
+    assert_eq!(analyzed, 2, "only explicitly analyzed entries may advance");
+    assert_eq!(modeled, 2, "only explicitly modeled entries may advance");
     assert_eq!(
-        deterministic, 0,
-        "seed fetch alone must not claim deterministic tool tests"
+        deterministic, 2,
+        "only explicitly fixture-backed entries may claim deterministic tests"
     );
     assert_eq!(
         agentic, 0,

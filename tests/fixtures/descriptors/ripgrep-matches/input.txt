@@ -1,0 +1,3 @@
+src/lib.rs:42:9:pub fn parse(input: &str) -> ParseReport {
+src/cli.rs:118:17:let report = parse_with_options(&input, &options);
+tests/cli.rs:700:5:fn cli_runs_descriptor_selected_executable_json_backend() {

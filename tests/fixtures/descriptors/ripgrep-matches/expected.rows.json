@@ -1,0 +1,20 @@
+[
+  {
+    "path": "src/lib.rs",
+    "line": "42",
+    "column": "9",
+    "match": "pub fn parse(input: &str) -> ParseReport {"
+  },
+  {
+    "path": "src/cli.rs",
+    "line": "118",
+    "column": "17",
+    "match": "let report = parse_with_options(&input, &options);"
+  },
+  {
+    "path": "tests/cli.rs",
+    "line": "700",
+    "column": "5",
+    "match": "fn cli_runs_descriptor_selected_executable_json_backend() {"
+  }
+]
