@@ -1,0 +1,10 @@
+id = "known.bat.list-languages"
+name = "bat --list-languages"
+priority = 50
+
+[matches]
+required_substrings = ["Bourne Again Shell", "*.bash", "Rust"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

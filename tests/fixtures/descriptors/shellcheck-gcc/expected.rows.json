@@ -1,0 +1,18 @@
+[
+  {
+    "path": "script.sh",
+    "line": "3",
+    "column": "7",
+    "severity": "warning",
+    "message": "Double quote to prevent globbing and word splitting.",
+    "code": "SC2086"
+  },
+  {
+    "path": "script.sh",
+    "line": "8",
+    "column": "1",
+    "severity": "error",
+    "message": "Couldn't parse this if expression.",
+    "code": "SC1073"
+  }
+]

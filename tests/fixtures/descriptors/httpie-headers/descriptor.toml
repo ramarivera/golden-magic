@@ -1,0 +1,10 @@
+id = "known.httpie.headers"
+name = "HTTPie response headers"
+priority = 50
+
+[matches]
+required_substrings = ["HTTP/1.1 200 OK", "Content-Type:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

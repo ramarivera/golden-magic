@@ -1,0 +1,3 @@
+-rw-r--r--  1 ramiro  staff   1240 Jun 15 09:41 src/main.rs
+drwxr-xr-x  3 ramiro  staff     96 Jun 15 09:42 tests/fixtures
+-rwxr-xr-x  1 ramiro  staff    512 Jun 15 09:43 scripts/run.sh

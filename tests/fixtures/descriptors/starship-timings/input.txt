@@ -1,0 +1,4 @@
+module        duration
+git_branch    2ms
+nodejs        12ms
+directory     1ms

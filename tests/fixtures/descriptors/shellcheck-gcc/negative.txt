@@ -1,0 +1,2 @@
+In script.sh line 3:
+echo $name

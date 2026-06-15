@@ -1,0 +1,35 @@
+[
+  {
+    "mode": "-rw-r--r--",
+    "links": "1",
+    "owner": "ramiro",
+    "group": "staff",
+    "size": "1240",
+    "month": "Jun",
+    "day": "15",
+    "time": "09:41",
+    "path": "src/main.rs"
+  },
+  {
+    "mode": "drwxr-xr-x",
+    "links": "3",
+    "owner": "ramiro",
+    "group": "staff",
+    "size": "96",
+    "month": "Jun",
+    "day": "15",
+    "time": "09:42",
+    "path": "tests/fixtures"
+  },
+  {
+    "mode": "-rwxr-xr-x",
+    "links": "1",
+    "owner": "ramiro",
+    "group": "staff",
+    "size": "512",
+    "month": "Jun",
+    "day": "15",
+    "time": "09:43",
+    "path": "scripts/run.sh"
+  }
+]

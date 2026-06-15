@@ -1,0 +1,18 @@
+[
+  {
+    "column0": "module",
+    "column1": "duration"
+  },
+  {
+    "column0": "git_branch",
+    "column1": "2ms"
+  },
+  {
+    "column0": "nodejs",
+    "column1": "12ms"
+  },
+  {
+    "column0": "directory",
+    "column1": "1ms"
+  }
+]

@@ -1,0 +1,9 @@
+id = "known.starship.timings"
+name = "starship timings"
+priority = 50
+
+[matches]
+required_substrings = ["module", "duration", "git_branch"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

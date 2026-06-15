@@ -160,5 +160,113 @@
       "ran golden-magic against fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/sharkdp/bat",
+    "descriptor_id": "known.bat.list-languages",
+    "run_id": "agentic.bat.list-languages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bat-list-languages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bat-list-languages/expected.rows.json",
+    "variants": [
+      "language with spaces",
+      "multiple extension globs",
+      "single extension glob"
+    ],
+    "transcript": [
+      "selected descriptor known.bat.list-languages for bat --list-languages output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/starship/starship",
+    "descriptor_id": "known.starship.timings",
+    "run_id": "agentic.starship.timings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/starship-timings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/starship-timings/expected.rows.json",
+    "variants": [
+      "git_branch module",
+      "two-digit millisecond duration",
+      "single-digit millisecond duration"
+    ],
+    "transcript": [
+      "selected descriptor known.starship.timings for starship timings output",
+      "ran golden-magic against fixture input through fixed-width heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sharkdp/fd",
+    "descriptor_id": "known.fd.list-details",
+    "run_id": "agentic.fd.list-details.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fd-list-details/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fd-list-details/expected.rows.json",
+    "variants": [
+      "regular file row",
+      "directory row",
+      "executable file row"
+    ],
+    "transcript": [
+      "selected descriptor known.fd.list-details for fd --list-details output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/koalaman/shellcheck",
+    "descriptor_id": "known.shellcheck.gcc",
+    "run_id": "agentic.shellcheck.gcc.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shellcheck-gcc/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shellcheck-gcc/expected.rows.json",
+    "variants": [
+      "warning diagnostic",
+      "error diagnostic",
+      "ShellCheck code extraction"
+    ],
+    "transcript": [
+      "selected descriptor known.shellcheck.gcc for ShellCheck GCC-format output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/httpie/cli",
+    "descriptor_id": "known.httpie.headers",
+    "run_id": "agentic.httpie.headers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/httpie-headers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/httpie-headers/expected.rows.json",
+    "variants": [
+      "HTTP status line",
+      "content type header",
+      "custom request id header"
+    ],
+    "transcript": [
+      "selected descriptor known.httpie.headers for HTTPie header output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jqlang/jq",
+    "descriptor_id": "known.jq.compile-error",
+    "run_id": "agentic.jq.compile-error.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jq-compile-error/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jq-compile-error/expected.rows.json",
+    "variants": [
+      "detailed compiler diagnostic",
+      "source snippet line",
+      "compile-error summary"
+    ],
+    "transcript": [
+      "selected descriptor known.jq.compile-error for jq compile-error output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

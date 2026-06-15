@@ -1,0 +1,14 @@
+[
+  {
+    "language": "Bourne Again Shell",
+    "extensions": "*.bash, *.bats"
+  },
+  {
+    "language": "JSON",
+    "extensions": "*.json, *.jsonl"
+  },
+  {
+    "language": "Rust",
+    "extensions": "*.rs"
+  }
+]

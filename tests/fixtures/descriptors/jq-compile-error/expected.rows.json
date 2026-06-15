@@ -1,0 +1,13 @@
+[
+  {
+    "kind": "error",
+    "message": "syntax error, unexpected INVALID_CHARACTER, expecting $end (Unix shell quoting issues?)",
+    "location": "<top-level>",
+    "line": "1"
+  },
+  {
+    "kind": "summary",
+    "count": "1",
+    "message": "compile error"
+  }
+]

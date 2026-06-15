@@ -1,0 +1,2 @@
+script.sh:3:7: warning: Double quote to prevent globbing and word splitting. [SC2086]
+script.sh:8:1: error: Couldn't parse this if expression. [SC1073]

@@ -1,0 +1,10 @@
+id = "known.fd.list-details"
+name = "fd --list-details"
+priority = 50
+
+[matches]
+required_substrings = ["rw-r--r--", "src/main.rs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

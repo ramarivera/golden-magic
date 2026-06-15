@@ -1,0 +1,10 @@
+id = "known.shellcheck.gcc"
+name = "ShellCheck GCC output"
+priority = 50
+
+[matches]
+required_substrings = ["script.sh:3:7:", "SC2086"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

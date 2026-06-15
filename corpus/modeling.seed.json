@@ -61,5 +61,47 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/just-list",
     "analysis_notes": "Modeled just --list recipe output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sharkdp/bat",
+    "descriptor_id": "known.bat.list-languages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bat-list-languages",
+    "analysis_notes": "Modeled bat --list-languages output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/starship/starship",
+    "descriptor_id": "known.starship.timings",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/starship-timings",
+    "analysis_notes": "Modeled starship timings output with fixed-width heuristic parsing."
+  },
+  {
+    "repo": "https://github.com/sharkdp/fd",
+    "descriptor_id": "known.fd.list-details",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fd-list-details",
+    "analysis_notes": "Modeled fd --list-details output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/koalaman/shellcheck",
+    "descriptor_id": "known.shellcheck.gcc",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shellcheck-gcc",
+    "analysis_notes": "Modeled ShellCheck GCC-format diagnostics with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/httpie/cli",
+    "descriptor_id": "known.httpie.headers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/httpie-headers",
+    "analysis_notes": "Modeled HTTPie response-header output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jqlang/jq",
+    "descriptor_id": "known.jq.compile-error",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jq-compile-error",
+    "analysis_notes": "Modeled jq compile-error diagnostics with an executable-json parser plugin."
   }
 ]

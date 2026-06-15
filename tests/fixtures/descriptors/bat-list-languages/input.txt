@@ -1,0 +1,8 @@
+Bourne Again Shell
+*.bash, *.bats
+
+JSON
+*.json, *.jsonl
+
+Rust
+*.rs

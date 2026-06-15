@@ -1,0 +1,10 @@
+id = "known.jq.compile-error"
+name = "jq compile error"
+priority = 50
+
+[matches]
+required_substrings = ["jq: error:", "compile error"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"
