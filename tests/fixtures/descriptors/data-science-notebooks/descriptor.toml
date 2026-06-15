@@ -1,0 +1,10 @@
+id = "known.data-science-ipython-notebooks.notebooks"
+name = "data-science-ipython-notebooks index"
+priority = 50
+
+[matches]
+required_substrings = ["notebook\tcategory","numpy-basics\tpython"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

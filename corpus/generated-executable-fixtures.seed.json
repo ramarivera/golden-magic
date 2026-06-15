@@ -2038,5 +2038,65 @@
     "negative": "section count source\nsystem 21 markdown\n",
     "analysis_notes": "Modeled awesome-macos-command-line section output with a generated executable-json parser plugin.",
     "variants": ["section header row", "count row", "source field"]
+  },
+  {
+    "fixture": "jumpserver-assets",
+    "descriptor_id": "known.jumpserver.assets",
+    "name": "JumpServer asset list",
+    "repo": "https://github.com/jumpserver/jumpserver",
+    "required_substrings": ["asset\tprotocol", "prod-db\tssh"],
+    "parser": "tab-pairs",
+    "input": "asset\tprotocol status\nprod-db\tssh online\nbastion\trdp online\nrouter\tssh offline\n",
+    "negative": "asset protocol status\nprod-db ssh online\n",
+    "analysis_notes": "Modeled JumpServer asset listing output with a generated executable-json parser plugin.",
+    "variants": ["asset header row", "protocol row", "status field"]
+  },
+  {
+    "fixture": "vue-cli-projects",
+    "descriptor_id": "known.vue-cli.projects",
+    "name": "vue-cli project list",
+    "repo": "https://github.com/vuejs/vue-cli",
+    "required_substrings": ["project\tpreset", "admin\tdefault"],
+    "parser": "tab-pairs",
+    "input": "project\tpreset status\nadmin\tdefault ready\nshop\tvue3 building\ndocs\tminimal ready\n",
+    "negative": "project preset status\nadmin default ready\n",
+    "analysis_notes": "Modeled vue-cli project listing output with a generated executable-json parser plugin.",
+    "variants": ["project header row", "preset row", "status field"]
+  },
+  {
+    "fixture": "agent-reach-runs",
+    "descriptor_id": "known.agent-reach.runs",
+    "name": "Agent-Reach run list",
+    "repo": "https://github.com/Panniantong/Agent-Reach",
+    "required_substrings": ["run\tstatus", "crawl-001\trunning"],
+    "parser": "tab-pairs",
+    "input": "run\tstatus target\ncrawl-001\trunning github\nresearch-002\tqueued docs\nextract-003\tcomplete web\n",
+    "negative": "run status target\ncrawl-001 running github\n",
+    "analysis_notes": "Modeled Agent-Reach run output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "running run row", "target field"]
+  },
+  {
+    "fixture": "data-science-notebooks",
+    "descriptor_id": "known.data-science-ipython-notebooks.notebooks",
+    "name": "data-science-ipython-notebooks index",
+    "repo": "https://github.com/donnemartin/data-science-ipython-notebooks",
+    "required_substrings": ["notebook\tcategory", "numpy-basics\tpython"],
+    "parser": "tab-pairs",
+    "input": "notebook\tcategory status\nnumpy-basics\tpython ready\npandas-intro\tanalysis ready\nspark-demo\tbig-data archived\n",
+    "negative": "notebook category status\nnumpy-basics python ready\n",
+    "analysis_notes": "Modeled data-science-ipython-notebooks index output with a generated executable-json parser plugin.",
+    "variants": ["notebook header row", "category row", "status field"]
+  },
+  {
+    "fixture": "create-t3-app-options",
+    "descriptor_id": "known.create-t3-app.options",
+    "name": "create-t3-app option list",
+    "repo": "https://github.com/t3-oss/create-t3-app",
+    "required_substrings": ["option\tselected", "trpc\ttrue"],
+    "parser": "tab-pairs",
+    "input": "option\tselected package\ntrpc\ttrue @trpc/server\nprisma\tfalse prisma\ntailwind\ttrue tailwindcss\n",
+    "negative": "option selected package\ntrpc true @trpc/server\n",
+    "analysis_notes": "Modeled create-t3-app option output with a generated executable-json parser plugin.",
+    "variants": ["option header row", "selected row", "package field"]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.vue-cli.projects"
+name = "vue-cli project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\tpreset","admin\tdefault"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

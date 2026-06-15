@@ -1,0 +1,4 @@
+asset	protocol status
+prod-db	ssh online
+bastion	rdp online
+router	ssh offline

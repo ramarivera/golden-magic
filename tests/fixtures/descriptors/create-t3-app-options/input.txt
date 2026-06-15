@@ -1,0 +1,4 @@
+option	selected package
+trpc	true @trpc/server
+prisma	false prisma
+tailwind	true tailwindcss

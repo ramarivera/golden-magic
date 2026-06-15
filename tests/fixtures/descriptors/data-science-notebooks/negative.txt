@@ -1,0 +1,2 @@
+notebook category status
+numpy-basics python ready

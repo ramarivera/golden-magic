@@ -3418,5 +3418,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jumpserver/jumpserver",
+    "descriptor_id": "known.jumpserver.assets",
+    "run_id": "agentic.jumpserver-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jumpserver-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jumpserver-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "protocol row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.jumpserver.assets for JumpServer asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vuejs/vue-cli",
+    "descriptor_id": "known.vue-cli.projects",
+    "run_id": "agentic.vue-cli-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vue-cli-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vue-cli-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "preset row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.vue-cli.projects for vue-cli project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Panniantong/Agent-Reach",
+    "descriptor_id": "known.agent-reach.runs",
+    "run_id": "agentic.agent-reach-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/agent-reach-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/agent-reach-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "running run row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.agent-reach.runs for Agent-Reach run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/donnemartin/data-science-ipython-notebooks",
+    "descriptor_id": "known.data-science-ipython-notebooks.notebooks",
+    "run_id": "agentic.data-science-ipython-notebooks-notebooks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/data-science-notebooks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/data-science-notebooks/expected.rows.json",
+    "variants": [
+      "notebook header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.data-science-ipython-notebooks.notebooks for data-science-ipython-notebooks index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/t3-oss/create-t3-app",
+    "descriptor_id": "known.create-t3-app.options",
+    "run_id": "agentic.create-t3-app-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-t3-app-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-t3-app-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "selected row",
+      "package field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-t3-app.options for create-t3-app option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

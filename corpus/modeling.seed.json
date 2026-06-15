@@ -1328,5 +1328,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/awesome-macos-command-line-sections",
     "analysis_notes": "Modeled awesome-macos-command-line section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jumpserver/jumpserver",
+    "descriptor_id": "known.jumpserver.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jumpserver-assets",
+    "analysis_notes": "Modeled JumpServer asset listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vuejs/vue-cli",
+    "descriptor_id": "known.vue-cli.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vue-cli-projects",
+    "analysis_notes": "Modeled vue-cli project listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Panniantong/Agent-Reach",
+    "descriptor_id": "known.agent-reach.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/agent-reach-runs",
+    "analysis_notes": "Modeled Agent-Reach run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/donnemartin/data-science-ipython-notebooks",
+    "descriptor_id": "known.data-science-ipython-notebooks.notebooks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/data-science-notebooks",
+    "analysis_notes": "Modeled data-science-ipython-notebooks index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/t3-oss/create-t3-app",
+    "descriptor_id": "known.create-t3-app.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-t3-app-options",
+    "analysis_notes": "Modeled create-t3-app option output with a generated executable-json parser plugin."
   }
 ]

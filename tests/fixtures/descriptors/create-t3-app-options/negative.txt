@@ -1,0 +1,2 @@
+option selected package
+trpc true @trpc/server

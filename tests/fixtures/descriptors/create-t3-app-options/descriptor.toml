@@ -1,0 +1,10 @@
+id = "known.create-t3-app.options"
+name = "create-t3-app option list"
+priority = 50
+
+[matches]
+required_substrings = ["option\tselected","trpc\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

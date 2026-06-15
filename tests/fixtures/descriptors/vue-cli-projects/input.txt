@@ -1,0 +1,4 @@
+project	preset status
+admin	default ready
+shop	vue3 building
+docs	minimal ready
