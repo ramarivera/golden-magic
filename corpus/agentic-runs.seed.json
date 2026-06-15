@@ -5488,5 +5488,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/faressoft/terminalizer",
+    "descriptor_id": "known.terminalizer.recordings",
+    "run_id": "agentic.terminalizer-recordings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminalizer-recordings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminalizer-recordings/expected.rows.json",
+    "variants": [
+      "recording header row",
+      "status row",
+      "frames field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminalizer.recordings for terminalizer recording list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cvat-ai/cvat",
+    "descriptor_id": "known.cvat.tasks",
+    "run_id": "agentic.cvat-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cvat-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cvat-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "labels field"
+    ],
+    "transcript": [
+      "selected descriptor known.cvat.tasks for CVAT task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/altercation/solarized",
+    "descriptor_id": "known.solarized.palettes",
+    "run_id": "agentic.solarized-palettes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/solarized-palettes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/solarized-palettes/expected.rows.json",
+    "variants": [
+      "color header row",
+      "role row",
+      "hex field"
+    ],
+    "transcript": [
+      "selected descriptor known.solarized.palettes for Solarized palette list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nilaoda/N_m3u8DL-CLI",
+    "descriptor_id": "known.n-m3u8dl.downloads",
+    "run_id": "agentic.n-m3u8dl-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/n-m3u8dl-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/n-m3u8dl-downloads/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "status row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.n-m3u8dl.downloads for N_m3u8DL-CLI download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dutchcoders/transfer.sh",
+    "descriptor_id": "known.transfer-sh.uploads",
+    "run_id": "agentic.transfer-sh-uploads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/transfer-sh-uploads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/transfer-sh-uploads/expected.rows.json",
+    "variants": [
+      "file header row",
+      "url row",
+      "expires field"
+    ],
+    "transcript": [
+      "selected descriptor known.transfer-sh.uploads for transfer.sh upload list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

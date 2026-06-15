@@ -1,0 +1,18 @@
+[
+  {
+    "name": "recording",
+    "value": "status frames"
+  },
+  {
+    "name": "demo",
+    "value": "ready 240"
+  },
+  {
+    "name": "install",
+    "value": "capturing 96"
+  },
+  {
+    "name": "release",
+    "value": "exported 180"
+  }
+]

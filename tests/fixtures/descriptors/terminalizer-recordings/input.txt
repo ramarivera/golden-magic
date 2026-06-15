@@ -1,0 +1,4 @@
+recording	status frames
+demo	ready 240
+install	capturing 96
+release	exported 180

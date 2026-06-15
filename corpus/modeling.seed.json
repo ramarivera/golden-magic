@@ -2133,5 +2133,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/clap-commands",
     "analysis_notes": "Modeled clap command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/faressoft/terminalizer",
+    "descriptor_id": "known.terminalizer.recordings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminalizer-recordings",
+    "analysis_notes": "Modeled terminalizer recording output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cvat-ai/cvat",
+    "descriptor_id": "known.cvat.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cvat-tasks",
+    "analysis_notes": "Modeled CVAT task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/altercation/solarized",
+    "descriptor_id": "known.solarized.palettes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/solarized-palettes",
+    "analysis_notes": "Modeled Solarized palette output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nilaoda/N_m3u8DL-CLI",
+    "descriptor_id": "known.n-m3u8dl.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/n-m3u8dl-downloads",
+    "analysis_notes": "Modeled N_m3u8DL-CLI download output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dutchcoders/transfer.sh",
+    "descriptor_id": "known.transfer-sh.uploads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/transfer-sh-uploads",
+    "analysis_notes": "Modeled transfer.sh upload output with a generated executable-json parser plugin."
   }
 ]

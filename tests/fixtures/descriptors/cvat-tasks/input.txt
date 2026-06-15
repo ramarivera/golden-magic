@@ -1,0 +1,4 @@
+task	state labels
+road-scenes	annotation 12
+warehouse	validation 8
+faces	completed 4

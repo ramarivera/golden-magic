@@ -1,0 +1,2 @@
+color role hex
+base03 background #002b36

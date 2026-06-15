@@ -1,0 +1,4 @@
+color	role hex
+base03	background #002b36
+base0	foreground #839496
+yellow	accent #b58900

@@ -1,0 +1,10 @@
+id = "known.n-m3u8dl.downloads"
+name = "N_m3u8DL-CLI download list"
+priority = 50
+
+[matches]
+required_substrings = ["segment\tstatus","0001.ts\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -3418,5 +3418,65 @@
     "negative": "command arg help\nbuild --release optimized\n",
     "analysis_notes": "Modeled clap command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "arg row", "help field"]
+  },
+  {
+    "fixture": "terminalizer-recordings",
+    "descriptor_id": "known.terminalizer.recordings",
+    "name": "terminalizer recording list",
+    "repo": "https://github.com/faressoft/terminalizer",
+    "required_substrings": ["recording\tstatus", "demo\tready"],
+    "parser": "tab-pairs",
+    "input": "recording\tstatus frames\ndemo\tready 240\ninstall\tcapturing 96\nrelease\texported 180\n",
+    "negative": "recording status frames\ndemo ready 240\n",
+    "analysis_notes": "Modeled terminalizer recording output with a generated executable-json parser plugin.",
+    "variants": ["recording header row", "status row", "frames field"]
+  },
+  {
+    "fixture": "cvat-tasks",
+    "descriptor_id": "known.cvat.tasks",
+    "name": "CVAT task list",
+    "repo": "https://github.com/cvat-ai/cvat",
+    "required_substrings": ["task\tstate", "road-scenes\tannotation"],
+    "parser": "tab-pairs",
+    "input": "task\tstate labels\nroad-scenes\tannotation 12\nwarehouse\tvalidation 8\nfaces\tcompleted 4\n",
+    "negative": "task state labels\nroad-scenes annotation 12\n",
+    "analysis_notes": "Modeled CVAT task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "state row", "labels field"]
+  },
+  {
+    "fixture": "solarized-palettes",
+    "descriptor_id": "known.solarized.palettes",
+    "name": "Solarized palette list",
+    "repo": "https://github.com/altercation/solarized",
+    "required_substrings": ["color\trole", "base03\tbackground"],
+    "parser": "tab-pairs",
+    "input": "color\trole hex\nbase03\tbackground #002b36\nbase0\tforeground #839496\nyellow\taccent #b58900\n",
+    "negative": "color role hex\nbase03 background #002b36\n",
+    "analysis_notes": "Modeled Solarized palette output with a generated executable-json parser plugin.",
+    "variants": ["color header row", "role row", "hex field"]
+  },
+  {
+    "fixture": "n-m3u8dl-downloads",
+    "descriptor_id": "known.n-m3u8dl.downloads",
+    "name": "N_m3u8DL-CLI download list",
+    "repo": "https://github.com/nilaoda/N_m3u8DL-CLI",
+    "required_substrings": ["segment\tstatus", "0001.ts\tdone"],
+    "parser": "tab-pairs",
+    "input": "segment\tstatus size\n0001.ts\tdone 2.1MB\n0002.ts\tdone 2.4MB\n0003.ts\tdownloading 1.8MB\n",
+    "negative": "segment status size\n0001.ts done 2.1MB\n",
+    "analysis_notes": "Modeled N_m3u8DL-CLI download output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "status row", "size field"]
+  },
+  {
+    "fixture": "transfer-sh-uploads",
+    "descriptor_id": "known.transfer-sh.uploads",
+    "name": "transfer.sh upload list",
+    "repo": "https://github.com/dutchcoders/transfer.sh",
+    "required_substrings": ["file\turl", "report.txt\thttps://transfer.sh"],
+    "parser": "tab-pairs",
+    "input": "file\turl expires\nreport.txt\thttps://transfer.sh/report 14d\nbuild.log\thttps://transfer.sh/build 7d\nimage.png\thttps://transfer.sh/image 3d\n",
+    "negative": "file url expires\nreport.txt https://transfer.sh/report 14d\n",
+    "analysis_notes": "Modeled transfer.sh upload output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "url row", "expires field"]
   }
 ]

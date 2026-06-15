@@ -1,0 +1,4 @@
+file	url expires
+report.txt	https://transfer.sh/report 14d
+build.log	https://transfer.sh/build 7d
+image.png	https://transfer.sh/image 3d

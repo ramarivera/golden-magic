@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "state labels"
+  },
+  {
+    "name": "road-scenes",
+    "value": "annotation 12"
+  },
+  {
+    "name": "warehouse",
+    "value": "validation 8"
+  },
+  {
+    "name": "faces",
+    "value": "completed 4"
+  }
+]

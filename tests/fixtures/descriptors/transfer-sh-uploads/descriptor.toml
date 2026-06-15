@@ -1,0 +1,10 @@
+id = "known.transfer-sh.uploads"
+name = "transfer.sh upload list"
+priority = 50
+
+[matches]
+required_substrings = ["file\turl","report.txt\thttps://transfer.sh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

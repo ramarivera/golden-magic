@@ -1,0 +1,18 @@
+[
+  {
+    "name": "segment",
+    "value": "status size"
+  },
+  {
+    "name": "0001.ts",
+    "value": "done 2.1MB"
+  },
+  {
+    "name": "0002.ts",
+    "value": "done 2.4MB"
+  },
+  {
+    "name": "0003.ts",
+    "value": "downloading 1.8MB"
+  }
+]

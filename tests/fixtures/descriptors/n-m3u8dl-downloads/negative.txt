@@ -1,0 +1,2 @@
+segment status size
+0001.ts done 2.1MB

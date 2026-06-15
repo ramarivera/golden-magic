@@ -1,0 +1,10 @@
+id = "known.solarized.palettes"
+name = "Solarized palette list"
+priority = 50
+
+[matches]
+required_substrings = ["color\trole","base03\tbackground"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

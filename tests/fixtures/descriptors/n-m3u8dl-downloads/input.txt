@@ -1,0 +1,4 @@
+segment	status size
+0001.ts	done 2.1MB
+0002.ts	done 2.4MB
+0003.ts	downloading 1.8MB
