@@ -1,0 +1,4 @@
+asset	state path
+app	included Demo.app
+background	included background.png
+license	missing LICENSE.txt

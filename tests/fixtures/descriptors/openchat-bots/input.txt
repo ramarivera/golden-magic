@@ -1,0 +1,4 @@
+bot	state model
+support	ready gpt
+sales	training local
+ops	ready llama

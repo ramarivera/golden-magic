@@ -1,0 +1,18 @@
+[
+  {
+    "name": "shader",
+    "value": "status uniforms"
+  },
+  {
+    "name": "main.frag",
+    "value": "compiled 4"
+  },
+  {
+    "name": "post.frag",
+    "value": "compiled 2"
+  },
+  {
+    "name": "broken.frag",
+    "value": "failed 0"
+  }
+]

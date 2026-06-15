@@ -10888,5 +10888,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/create-dmg",
+    "descriptor_id": "known.create-dmg.assets",
+    "run_id": "agentic.create-dmg-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-dmg-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-dmg-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "state row",
+      "path field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-dmg.assets for create-dmg asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/donnemartin/saws",
+    "descriptor_id": "known.saws.profiles",
+    "run_id": "agentic.saws-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/saws-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/saws-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "region row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.saws.profiles for saws profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/butlerx/wetty",
+    "descriptor_id": "known.wetty.sessions",
+    "run_id": "agentic.wetty-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wetty-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wetty-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "shell field"
+    ],
+    "transcript": [
+      "selected descriptor known.wetty.sessions for wetty session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/patriciogonzalezvivo/glslViewer",
+    "descriptor_id": "known.glslviewer.shaders",
+    "run_id": "agentic.glslviewer-shaders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glslviewer-shaders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glslviewer-shaders/expected.rows.json",
+    "variants": [
+      "shader header row",
+      "status row",
+      "uniforms field"
+    ],
+    "transcript": [
+      "selected descriptor known.glslviewer.shaders for glslViewer shader list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/visit1985/mdp",
+    "descriptor_id": "known.mdp.slides",
+    "run_id": "agentic.mdp-slides.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mdp-slides/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mdp-slides/expected.rows.json",
+    "variants": [
+      "slide header row",
+      "title row",
+      "bullets field"
+    ],
+    "transcript": [
+      "selected descriptor known.mdp.slides for mdp slide list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/knqyf263/pet",
+    "descriptor_id": "known.pet.snippets",
+    "run_id": "agentic.pet-snippets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pet-snippets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pet-snippets/expected.rows.json",
+    "variants": [
+      "snippet header row",
+      "tag row",
+      "command field"
+    ],
+    "transcript": [
+      "selected descriptor known.pet.snippets for pet snippet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rails/thor",
+    "descriptor_id": "known.thor.tasks",
+    "run_id": "agentic.thor-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/thor-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/thor-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "namespace row",
+      "args field"
+    ],
+    "transcript": [
+      "selected descriptor known.thor.tasks for thor task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cube2222/octosql",
+    "descriptor_id": "known.octosql.queries",
+    "run_id": "agentic.octosql-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/octosql-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/octosql-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "rows row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.octosql.queries for OctoSQL query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/opencx-labs/OpenChat",
+    "descriptor_id": "known.openchat.bots",
+    "run_id": "agentic.openchat-bots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openchat-bots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openchat-bots/expected.rows.json",
+    "variants": [
+      "bot header row",
+      "state row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.openchat.bots for OpenChat bot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/HelixDB/helix-db",
+    "descriptor_id": "known.helix-db.graphs",
+    "run_id": "agentic.helix-db-graphs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/helix-db-graphs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/helix-db-graphs/expected.rows.json",
+    "variants": [
+      "graph header row",
+      "nodes row",
+      "vectors field"
+    ],
+    "transcript": [
+      "selected descriptor known.helix-db.graphs for HelixDB graph list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

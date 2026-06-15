@@ -1,0 +1,10 @@
+id = "known.saws.profiles"
+name = "saws profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tregion","prod\tus-east-1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

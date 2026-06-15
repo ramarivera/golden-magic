@@ -1,0 +1,4 @@
+task	namespace args
+build	app 1
+deploy	app 2
+help	thor 0

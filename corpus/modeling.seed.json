@@ -4233,5 +4233,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/gotests-generated",
     "analysis_notes": "Modeled gotests generated output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/create-dmg",
+    "descriptor_id": "known.create-dmg.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-dmg-assets",
+    "analysis_notes": "Modeled create-dmg asset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/donnemartin/saws",
+    "descriptor_id": "known.saws.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/saws-profiles",
+    "analysis_notes": "Modeled saws profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/butlerx/wetty",
+    "descriptor_id": "known.wetty.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wetty-sessions",
+    "analysis_notes": "Modeled wetty session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/patriciogonzalezvivo/glslViewer",
+    "descriptor_id": "known.glslviewer.shaders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glslviewer-shaders",
+    "analysis_notes": "Modeled glslViewer shader output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/visit1985/mdp",
+    "descriptor_id": "known.mdp.slides",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mdp-slides",
+    "analysis_notes": "Modeled mdp slide output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/knqyf263/pet",
+    "descriptor_id": "known.pet.snippets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pet-snippets",
+    "analysis_notes": "Modeled pet snippet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rails/thor",
+    "descriptor_id": "known.thor.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/thor-tasks",
+    "analysis_notes": "Modeled thor task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cube2222/octosql",
+    "descriptor_id": "known.octosql.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/octosql-queries",
+    "analysis_notes": "Modeled OctoSQL query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/opencx-labs/OpenChat",
+    "descriptor_id": "known.openchat.bots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openchat-bots",
+    "analysis_notes": "Modeled OpenChat bot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/HelixDB/helix-db",
+    "descriptor_id": "known.helix-db.graphs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/helix-db-graphs",
+    "analysis_notes": "Modeled HelixDB graph output with a generated executable-json parser plugin."
   }
 ]

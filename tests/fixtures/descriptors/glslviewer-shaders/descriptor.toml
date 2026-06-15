@@ -1,0 +1,10 @@
+id = "known.glslviewer.shaders"
+name = "glslViewer shader list"
+priority = 50
+
+[matches]
+required_substrings = ["shader\tstatus","main.frag\tcompiled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

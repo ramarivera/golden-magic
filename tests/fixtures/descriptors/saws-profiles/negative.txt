@@ -1,0 +1,2 @@
+profile region state
+prod us-east-1 active

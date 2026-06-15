@@ -1,0 +1,4 @@
+graph	nodes vectors
+main	120 80
+agents	42 42
+test	8 0

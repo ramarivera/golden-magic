@@ -1,0 +1,10 @@
+id = "known.openchat.bots"
+name = "OpenChat bot list"
+priority = 50
+
+[matches]
+required_substrings = ["bot\tstate","support\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

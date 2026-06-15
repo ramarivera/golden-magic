@@ -1,0 +1,2 @@
+shader status uniforms
+main.frag compiled 4

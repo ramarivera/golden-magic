@@ -1,0 +1,10 @@
+id = "known.thor.tasks"
+name = "thor task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tnamespace","build\tapp"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

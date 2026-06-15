@@ -1,0 +1,4 @@
+query	rows source
+join_logs	42 csv
+count_users	12 postgres
+scan_json	7 json

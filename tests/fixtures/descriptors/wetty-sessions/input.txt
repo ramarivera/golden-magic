@@ -1,0 +1,4 @@
+session	state shell
+browser-1	open bash
+browser-2	open zsh
+old	closed sh

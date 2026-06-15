@@ -1,0 +1,2 @@
+query rows source
+join_logs 42 csv

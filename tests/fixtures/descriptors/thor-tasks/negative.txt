@@ -1,0 +1,2 @@
+task namespace args
+build app 1

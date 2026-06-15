@@ -1,0 +1,4 @@
+snippet	tag command
+deploy	ops make-deploy
+search	git git-grep
+backup	fs rsync

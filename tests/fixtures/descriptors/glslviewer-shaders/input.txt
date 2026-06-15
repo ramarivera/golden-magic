@@ -1,0 +1,4 @@
+shader	status uniforms
+main.frag	compiled 4
+post.frag	compiled 2
+broken.frag	failed 0

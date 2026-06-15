@@ -1,0 +1,10 @@
+id = "known.helix-db.graphs"
+name = "HelixDB graph list"
+priority = 50
+
+[matches]
+required_substrings = ["graph\tnodes","main\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

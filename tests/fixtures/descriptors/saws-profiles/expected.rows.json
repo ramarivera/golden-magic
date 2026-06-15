@@ -1,0 +1,18 @@
+[
+  {
+    "name": "profile",
+    "value": "region state"
+  },
+  {
+    "name": "prod",
+    "value": "us-east-1 active"
+  },
+  {
+    "name": "stage",
+    "value": "us-west-2 active"
+  },
+  {
+    "name": "sandbox",
+    "value": "eu-west-1 idle"
+  }
+]

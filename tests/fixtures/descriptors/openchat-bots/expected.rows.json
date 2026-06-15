@@ -1,0 +1,18 @@
+[
+  {
+    "name": "bot",
+    "value": "state model"
+  },
+  {
+    "name": "support",
+    "value": "ready gpt"
+  },
+  {
+    "name": "sales",
+    "value": "training local"
+  },
+  {
+    "name": "ops",
+    "value": "ready llama"
+  }
+]

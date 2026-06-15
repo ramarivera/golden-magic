@@ -1,0 +1,2 @@
+session state shell
+browser-1 open bash

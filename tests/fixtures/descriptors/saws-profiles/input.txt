@@ -1,0 +1,4 @@
+profile	region state
+prod	us-east-1 active
+stage	us-west-2 active
+sandbox	eu-west-1 idle

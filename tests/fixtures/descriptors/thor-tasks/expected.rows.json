@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "namespace args"
+  },
+  {
+    "name": "build",
+    "value": "app 1"
+  },
+  {
+    "name": "deploy",
+    "value": "app 2"
+  },
+  {
+    "name": "help",
+    "value": "thor 0"
+  }
+]
