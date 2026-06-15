@@ -1,0 +1,10 @@
+id = "known.frps-onekey.services"
+name = "frps-onekey service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tport","frps\t7000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

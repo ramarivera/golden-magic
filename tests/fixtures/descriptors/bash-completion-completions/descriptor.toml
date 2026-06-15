@@ -1,0 +1,10 @@
+id = "known.bash-completion.completions"
+name = "bash-completion completion list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcompletion","git\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

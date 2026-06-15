@@ -14470,5 +14470,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/mergestat/mergestat-lite",
+    "descriptor_id": "known.mergestat-lite.reports",
+    "run_id": "agentic.mergestat-lite-reports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mergestat-lite-reports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mergestat-lite-reports/expected.rows.json",
+    "variants": [
+      "report header row",
+      "rows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mergestat-lite.reports for mergestat-lite report list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yasasbanukaofficial/claude-code",
+    "descriptor_id": "known.claude-code.tasks",
+    "run_id": "agentic.claude-code-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-code.tasks for claude-code task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mvscode/frps-onekey",
+    "descriptor_id": "known.frps-onekey.services",
+    "run_id": "agentic.frps-onekey-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/frps-onekey-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/frps-onekey-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "port row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.frps-onekey.services for frps-onekey service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/deepjyoti30/ytmdl",
+    "descriptor_id": "known.ytmdl.downloads",
+    "run_id": "agentic.ytmdl-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ytmdl-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ytmdl-downloads/expected.rows.json",
+    "variants": [
+      "track header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ytmdl.downloads for ytmdl download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Winetricks/winetricks",
+    "descriptor_id": "known.winetricks.packages",
+    "run_id": "agentic.winetricks-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/winetricks-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/winetricks-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.winetricks.packages for winetricks package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mayuki/Cocona",
+    "descriptor_id": "known.cocona.commands",
+    "run_id": "agentic.cocona-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cocona-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cocona-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "arguments row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cocona.commands for Cocona command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/scop/bash-completion",
+    "descriptor_id": "known.bash-completion.completions",
+    "run_id": "agentic.bash-completion-completions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bash-completion-completions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bash-completion-completions/expected.rows.json",
+    "variants": [
+      "command header row",
+      "completion row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bash-completion.completions for bash-completion completion list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mattallty/Caporal.js",
+    "descriptor_id": "known.caporal.commands",
+    "run_id": "agentic.caporal-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/caporal-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/caporal-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "options row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.caporal.commands for Caporal.js command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/paulirish/git-open",
+    "descriptor_id": "known.git-open.targets",
+    "run_id": "agentic.git-open-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-open-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-open-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "remote row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-open.targets for git-open target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/qawolf/cli",
+    "descriptor_id": "known.qawolf.runs",
+    "run_id": "agentic.qawolf-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qawolf-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qawolf-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.qawolf.runs for QA Wolf run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,2 @@
+package status state
+vcrun2019 installed present

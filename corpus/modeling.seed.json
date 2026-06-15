@@ -5626,5 +5626,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/nixpacks-builds",
     "analysis_notes": "Modeled Nixpacks provider/build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mergestat/mergestat-lite",
+    "descriptor_id": "known.mergestat-lite.reports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mergestat-lite-reports",
+    "analysis_notes": "Modeled mergestat-lite query report output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yasasbanukaofficial/claude-code",
+    "descriptor_id": "known.claude-code.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-tasks",
+    "analysis_notes": "Modeled claude-code task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mvscode/frps-onekey",
+    "descriptor_id": "known.frps-onekey.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/frps-onekey-services",
+    "analysis_notes": "Modeled frps-onekey service status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/deepjyoti30/ytmdl",
+    "descriptor_id": "known.ytmdl.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ytmdl-downloads",
+    "analysis_notes": "Modeled ytmdl music download output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Winetricks/winetricks",
+    "descriptor_id": "known.winetricks.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/winetricks-packages",
+    "analysis_notes": "Modeled winetricks package verb output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mayuki/Cocona",
+    "descriptor_id": "known.cocona.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cocona-commands",
+    "analysis_notes": "Modeled Cocona command metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/scop/bash-completion",
+    "descriptor_id": "known.bash-completion.completions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bash-completion-completions",
+    "analysis_notes": "Modeled bash-completion loaded completion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mattallty/Caporal.js",
+    "descriptor_id": "known.caporal.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/caporal-commands",
+    "analysis_notes": "Modeled Caporal.js command metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/paulirish/git-open",
+    "descriptor_id": "known.git-open.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-open-targets",
+    "analysis_notes": "Modeled git-open remote target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/qawolf/cli",
+    "descriptor_id": "known.qawolf.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qawolf-runs",
+    "analysis_notes": "Modeled QA Wolf CLI run output with a generated executable-json parser plugin."
   }
 ]

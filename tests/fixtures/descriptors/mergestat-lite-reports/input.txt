@@ -1,0 +1,4 @@
+report	rows state
+commits	42 complete
+authors	8 complete
+files	120 queued

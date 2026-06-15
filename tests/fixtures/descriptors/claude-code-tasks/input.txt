@@ -1,0 +1,4 @@
+task	status state
+edit	running active
+review	queued pending
+test	passed complete

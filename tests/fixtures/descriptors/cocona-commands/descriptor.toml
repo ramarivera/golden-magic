@@ -1,0 +1,10 @@
+id = "known.cocona.commands"
+name = "Cocona command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\targuments","serve\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

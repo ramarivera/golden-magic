@@ -1,0 +1,4 @@
+target	remote state
+repo	origin opened
+branch	origin opened
+issue	upstream skipped

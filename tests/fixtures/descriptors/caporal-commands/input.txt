@@ -1,0 +1,4 @@
+command	options state
+deploy	4 registered
+build	2 registered
+help	1 built-in

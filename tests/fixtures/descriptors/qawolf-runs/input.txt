@@ -1,0 +1,4 @@
+run	status state
+checkout	passed complete
+login	failed retry
+search	passed complete

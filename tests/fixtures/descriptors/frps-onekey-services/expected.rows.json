@@ -1,0 +1,18 @@
+[
+  {
+    "name": "service",
+    "value": "port state"
+  },
+  {
+    "name": "frps",
+    "value": "7000 running"
+  },
+  {
+    "name": "dashboard",
+    "value": "7500 running"
+  },
+  {
+    "name": "old",
+    "value": "6000 stopped"
+  }
+]

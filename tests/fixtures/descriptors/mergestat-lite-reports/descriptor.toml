@@ -1,0 +1,10 @@
+id = "known.mergestat-lite.reports"
+name = "mergestat-lite report list"
+priority = 50
+
+[matches]
+required_substrings = ["report\trows","commits\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

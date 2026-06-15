@@ -1,0 +1,4 @@
+command	completion state
+git	loaded active
+ssh	loaded active
+old	missing skipped

@@ -1,0 +1,10 @@
+id = "known.qawolf.runs"
+name = "QA Wolf run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstatus","checkout\tpassed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

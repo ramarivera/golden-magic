@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "options state"
+  },
+  {
+    "name": "deploy",
+    "value": "4 registered"
+  },
+  {
+    "name": "build",
+    "value": "2 registered"
+  },
+  {
+    "name": "help",
+    "value": "1 built-in"
+  }
+]

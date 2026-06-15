@@ -1,0 +1,10 @@
+id = "known.winetricks.packages"
+name = "winetricks package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstatus","vcrun2019\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

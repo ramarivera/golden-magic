@@ -1,0 +1,2 @@
+service port state
+frps 7000 running

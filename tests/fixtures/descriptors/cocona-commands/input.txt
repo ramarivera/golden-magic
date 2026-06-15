@@ -1,0 +1,4 @@
+command	arguments state
+serve	2 registered
+migrate	1 registered
+help	0 built-in

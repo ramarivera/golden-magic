@@ -1,0 +1,4 @@
+service	port state
+frps	7000 running
+dashboard	7500 running
+old	6000 stopped

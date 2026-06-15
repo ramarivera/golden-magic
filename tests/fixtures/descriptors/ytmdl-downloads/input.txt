@@ -1,0 +1,4 @@
+track	status state
+song.mp3	done tagged
+mix.mp3	done tagged
+bad.mp3	failed retry
