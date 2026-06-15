@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "update status"
+  },
+  {
+    "name": "typescript",
+    "value": "minor pending"
+  },
+  {
+    "name": "eslint",
+    "value": "patch ready"
+  },
+  {
+    "name": "node",
+    "value": "major blocked"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.nnn.bookmarks"
+name = "nnn bookmark list"
+priority = 50
+
+[matches]
+required_substrings = ["key\tpath","d\t~/Downloads"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

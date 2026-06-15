@@ -1,0 +1,4 @@
+widget	type required
+input	TextField true
+output	FileChooser false
+verbose	CheckBox false

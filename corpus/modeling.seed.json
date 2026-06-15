@@ -1748,5 +1748,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/homebrew-cask-tokens",
     "analysis_notes": "Modeled Homebrew cask token output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chriskiehl/Gooey",
+    "descriptor_id": "known.gooey.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gooey-widgets",
+    "analysis_notes": "Modeled Gooey widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/renovatebot/renovate",
+    "descriptor_id": "known.renovate.updates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/renovate-updates",
+    "analysis_notes": "Modeled Renovate update output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jarun/nnn",
+    "descriptor_id": "known.nnn.bookmarks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nnn-bookmarks",
+    "analysis_notes": "Modeled nnn bookmark output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SBoudrias/Inquirer.js",
+    "descriptor_id": "known.inquirer.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inquirer-prompts",
+    "analysis_notes": "Modeled Inquirer prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gildas-lormeau/SingleFile",
+    "descriptor_id": "known.singlefile.saves",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/singlefile-saves",
+    "analysis_notes": "Modeled SingleFile save output with a generated executable-json parser plugin."
   }
 ]

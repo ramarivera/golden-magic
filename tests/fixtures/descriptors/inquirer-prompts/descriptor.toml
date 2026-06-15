@@ -1,0 +1,10 @@
+id = "known.inquirer.prompts"
+name = "Inquirer prompt list"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\ttype","project\tinput"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

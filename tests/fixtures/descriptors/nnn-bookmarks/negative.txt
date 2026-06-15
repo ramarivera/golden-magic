@@ -1,0 +1,2 @@
+key path type
+d ~/Downloads dir

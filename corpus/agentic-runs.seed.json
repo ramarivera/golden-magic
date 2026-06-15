@@ -4498,5 +4498,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/chriskiehl/Gooey",
+    "descriptor_id": "known.gooey.widgets",
+    "run_id": "agentic.gooey-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gooey-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gooey-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "type row",
+      "required field"
+    ],
+    "transcript": [
+      "selected descriptor known.gooey.widgets for Gooey widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/renovatebot/renovate",
+    "descriptor_id": "known.renovate.updates",
+    "run_id": "agentic.renovate-updates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/renovate-updates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/renovate-updates/expected.rows.json",
+    "variants": [
+      "package header row",
+      "update row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.renovate.updates for Renovate update list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jarun/nnn",
+    "descriptor_id": "known.nnn.bookmarks",
+    "run_id": "agentic.nnn-bookmarks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nnn-bookmarks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nnn-bookmarks/expected.rows.json",
+    "variants": [
+      "key header row",
+      "path row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.nnn.bookmarks for nnn bookmark list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/SBoudrias/Inquirer.js",
+    "descriptor_id": "known.inquirer.prompts",
+    "run_id": "agentic.inquirer-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inquirer-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inquirer-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "type row",
+      "default field"
+    ],
+    "transcript": [
+      "selected descriptor known.inquirer.prompts for Inquirer prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gildas-lormeau/SingleFile",
+    "descriptor_id": "known.singlefile.saves",
+    "run_id": "agentic.singlefile-saves.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/singlefile-saves/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/singlefile-saves/expected.rows.json",
+    "variants": [
+      "url header row",
+      "status row",
+      "bytes field"
+    ],
+    "transcript": [
+      "selected descriptor known.singlefile.saves for SingleFile save list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

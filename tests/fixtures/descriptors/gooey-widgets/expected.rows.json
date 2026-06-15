@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "type required"
+  },
+  {
+    "name": "input",
+    "value": "TextField true"
+  },
+  {
+    "name": "output",
+    "value": "FileChooser false"
+  },
+  {
+    "name": "verbose",
+    "value": "CheckBox false"
+  }
+]

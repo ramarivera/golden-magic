@@ -1,0 +1,10 @@
+id = "known.singlefile.saves"
+name = "SingleFile save list"
+priority = 50
+
+[matches]
+required_substrings = ["url\tstatus","https://example.com\tsaved"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

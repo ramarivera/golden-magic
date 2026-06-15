@@ -1,0 +1,10 @@
+id = "known.gooey.widgets"
+name = "Gooey widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\ttype","input\tTextField"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

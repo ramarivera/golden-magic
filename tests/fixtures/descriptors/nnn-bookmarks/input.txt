@@ -1,0 +1,4 @@
+key	path type
+d	~/Downloads dir
+p	~/Projects dir
+c	~/.config dir

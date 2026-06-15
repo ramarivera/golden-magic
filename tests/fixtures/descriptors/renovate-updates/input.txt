@@ -1,0 +1,4 @@
+package	update status
+typescript	minor pending
+eslint	patch ready
+node	major blocked

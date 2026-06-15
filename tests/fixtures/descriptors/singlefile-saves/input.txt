@@ -1,0 +1,4 @@
+url	status bytes
+https://example.com	saved 40960
+https://docs.example.com	saved 81920
+https://bad.example.com	failed 0

@@ -1,0 +1,10 @@
+id = "known.renovate.updates"
+name = "Renovate update list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tupdate","typescript\tminor"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

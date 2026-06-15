@@ -1,0 +1,4 @@
+prompt	type default
+project	input golden-magic
+confirm	confirm true
+choices	list parser

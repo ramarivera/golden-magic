@@ -2758,5 +2758,65 @@
     "negative": "token version installed\nfirefox latest true\n",
     "analysis_notes": "Modeled Homebrew cask token output with a generated executable-json parser plugin.",
     "variants": ["token header row", "version row", "installed field"]
+  },
+  {
+    "fixture": "gooey-widgets",
+    "descriptor_id": "known.gooey.widgets",
+    "name": "Gooey widget list",
+    "repo": "https://github.com/chriskiehl/Gooey",
+    "required_substrings": ["widget\ttype", "input\tTextField"],
+    "parser": "tab-pairs",
+    "input": "widget\ttype required\ninput\tTextField true\noutput\tFileChooser false\nverbose\tCheckBox false\n",
+    "negative": "widget type required\ninput TextField true\n",
+    "analysis_notes": "Modeled Gooey widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "type row", "required field"]
+  },
+  {
+    "fixture": "renovate-updates",
+    "descriptor_id": "known.renovate.updates",
+    "name": "Renovate update list",
+    "repo": "https://github.com/renovatebot/renovate",
+    "required_substrings": ["package\tupdate", "typescript\tminor"],
+    "parser": "tab-pairs",
+    "input": "package\tupdate status\ntypescript\tminor pending\neslint\tpatch ready\nnode\tmajor blocked\n",
+    "negative": "package update status\ntypescript minor pending\n",
+    "analysis_notes": "Modeled Renovate update output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "update row", "status field"]
+  },
+  {
+    "fixture": "nnn-bookmarks",
+    "descriptor_id": "known.nnn.bookmarks",
+    "name": "nnn bookmark list",
+    "repo": "https://github.com/jarun/nnn",
+    "required_substrings": ["key\tpath", "d\t~/Downloads"],
+    "parser": "tab-pairs",
+    "input": "key\tpath type\nd\t~/Downloads dir\np\t~/Projects dir\nc\t~/.config dir\n",
+    "negative": "key path type\nd ~/Downloads dir\n",
+    "analysis_notes": "Modeled nnn bookmark output with a generated executable-json parser plugin.",
+    "variants": ["key header row", "path row", "type field"]
+  },
+  {
+    "fixture": "inquirer-prompts",
+    "descriptor_id": "known.inquirer.prompts",
+    "name": "Inquirer prompt list",
+    "repo": "https://github.com/SBoudrias/Inquirer.js",
+    "required_substrings": ["prompt\ttype", "project\tinput"],
+    "parser": "tab-pairs",
+    "input": "prompt\ttype default\nproject\tinput golden-magic\nconfirm\tconfirm true\nchoices\tlist parser\n",
+    "negative": "prompt type default\nproject input golden-magic\n",
+    "analysis_notes": "Modeled Inquirer prompt output with a generated executable-json parser plugin.",
+    "variants": ["prompt header row", "type row", "default field"]
+  },
+  {
+    "fixture": "singlefile-saves",
+    "descriptor_id": "known.singlefile.saves",
+    "name": "SingleFile save list",
+    "repo": "https://github.com/gildas-lormeau/SingleFile",
+    "required_substrings": ["url\tstatus", "https://example.com\tsaved"],
+    "parser": "tab-pairs",
+    "input": "url\tstatus bytes\nhttps://example.com\tsaved 40960\nhttps://docs.example.com\tsaved 81920\nhttps://bad.example.com\tfailed 0\n",
+    "negative": "url status bytes\nhttps://example.com saved 40960\n",
+    "analysis_notes": "Modeled SingleFile save output with a generated executable-json parser plugin.",
+    "variants": ["url header row", "status row", "bytes field"]
   }
 ]

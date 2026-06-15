@@ -1,0 +1,18 @@
+[
+  {
+    "name": "url",
+    "value": "status bytes"
+  },
+  {
+    "name": "https://example.com",
+    "value": "saved 40960"
+  },
+  {
+    "name": "https://docs.example.com",
+    "value": "saved 81920"
+  },
+  {
+    "name": "https://bad.example.com",
+    "value": "failed 0"
+  }
+]

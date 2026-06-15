@@ -1,0 +1,18 @@
+[
+  {
+    "name": "prompt",
+    "value": "type default"
+  },
+  {
+    "name": "project",
+    "value": "input golden-magic"
+  },
+  {
+    "name": "confirm",
+    "value": "confirm true"
+  },
+  {
+    "name": "choices",
+    "value": "list parser"
+  }
+]
