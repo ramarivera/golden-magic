@@ -1,0 +1,4 @@
+command	namespace status
+cache:clear	cache available
+app:import	app available
+debug:router	debug available

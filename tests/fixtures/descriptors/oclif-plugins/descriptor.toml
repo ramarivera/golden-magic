@@ -1,0 +1,10 @@
+id = "known.oclif.plugins"
+name = "oclif plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tversion","help\t1.0.0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

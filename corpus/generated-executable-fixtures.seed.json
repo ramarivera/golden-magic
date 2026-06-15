@@ -4798,5 +4798,65 @@
     "negative": "command kind status\nshow introspection enabled\n",
     "analysis_notes": "Modeled PsySH command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "kind row", "status field"]
+  },
+  {
+    "fixture": "symfony-console-commands",
+    "descriptor_id": "known.symfony-console.commands",
+    "name": "Symfony Console command list",
+    "repo": "https://github.com/symfony/console",
+    "required_substrings": ["command\tnamespace", "cache:clear\tcache"],
+    "parser": "tab-pairs",
+    "input": "command\tnamespace status\ncache:clear\tcache available\napp:import\tapp available\ndebug:router\tdebug available\n",
+    "negative": "command namespace status\ncache:clear cache available\n",
+    "analysis_notes": "Modeled Symfony Console command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "namespace row", "status field"]
+  },
+  {
+    "fixture": "claurst-agents",
+    "descriptor_id": "known.claurst.agents",
+    "name": "Claurst agent list",
+    "repo": "https://github.com/Kuberwastaken/claurst",
+    "required_substrings": ["agent\tstate", "builder\tactive"],
+    "parser": "tab-pairs",
+    "input": "agent\tstate model\nbuilder\tactive claude\nreviewer\tidle gpt\nshipper\tactive local\n",
+    "negative": "agent state model\nbuilder active claude\n",
+    "analysis_notes": "Modeled Claurst agent output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "state row", "model field"]
+  },
+  {
+    "fixture": "oclif-plugins",
+    "descriptor_id": "known.oclif.plugins",
+    "name": "oclif plugin list",
+    "repo": "https://github.com/oclif/oclif",
+    "required_substrings": ["plugin\tversion", "help\t1.0.0"],
+    "parser": "tab-pairs",
+    "input": "plugin\tversion status\nhelp\t1.0.0 installed\ncommands\t2.1.0 installed\nupdate\t3.0.0 available\n",
+    "negative": "plugin version status\nhelp 1.0.0 installed\n",
+    "analysis_notes": "Modeled oclif plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "version row", "status field"]
+  },
+  {
+    "fixture": "conemu-tabs",
+    "descriptor_id": "known.conemu.tabs",
+    "name": "ConEmu tab list",
+    "repo": "https://github.com/ConEmu/ConEmu",
+    "required_substrings": ["tab\tshell", "1\tcmd"],
+    "parser": "tab-pairs",
+    "input": "tab\tshell state\n1\tcmd active\n2\tpowershell idle\n3\twsl active\n",
+    "negative": "tab shell state\n1 cmd active\n",
+    "analysis_notes": "Modeled ConEmu tab output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "shell row", "state field"]
+  },
+  {
+    "fixture": "mac-cli-commands",
+    "descriptor_id": "known.mac-cli.commands",
+    "name": "Mac-CLI command list",
+    "repo": "https://github.com/guarinogabriel/Mac-CLI",
+    "required_substrings": ["command\tcategory", "wifi\tcontrol"],
+    "parser": "tab-pairs",
+    "input": "command\tcategory status\nwifi\tcontrol available\ncleanup\tmaintenance available\nupdate\tsoftware available\n",
+    "negative": "command category status\nwifi control available\n",
+    "analysis_notes": "Modeled Mac-CLI command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "category row", "status field"]
   }
 ]

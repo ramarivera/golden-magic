@@ -1,0 +1,4 @@
+agent	state model
+builder	active claude
+reviewer	idle gpt
+shipper	active local

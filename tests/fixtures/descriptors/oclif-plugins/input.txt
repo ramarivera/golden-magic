@@ -1,0 +1,4 @@
+plugin	version status
+help	1.0.0 installed
+commands	2.1.0 installed
+update	3.0.0 available

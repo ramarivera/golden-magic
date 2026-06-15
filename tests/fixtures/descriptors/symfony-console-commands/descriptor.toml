@@ -1,0 +1,10 @@
+id = "known.symfony-console.commands"
+name = "Symfony Console command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tnamespace","cache:clear\tcache"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

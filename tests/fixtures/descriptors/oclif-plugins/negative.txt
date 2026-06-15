@@ -1,0 +1,2 @@
+plugin version status
+help 1.0.0 installed

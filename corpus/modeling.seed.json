@@ -2938,5 +2938,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/psysh-commands",
     "analysis_notes": "Modeled PsySH command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/symfony/console",
+    "descriptor_id": "known.symfony-console.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/symfony-console-commands",
+    "analysis_notes": "Modeled Symfony Console command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Kuberwastaken/claurst",
+    "descriptor_id": "known.claurst.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claurst-agents",
+    "analysis_notes": "Modeled Claurst agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/oclif/oclif",
+    "descriptor_id": "known.oclif.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oclif-plugins",
+    "analysis_notes": "Modeled oclif plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ConEmu/ConEmu",
+    "descriptor_id": "known.conemu.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/conemu-tabs",
+    "analysis_notes": "Modeled ConEmu tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/guarinogabriel/Mac-CLI",
+    "descriptor_id": "known.mac-cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mac-cli-commands",
+    "analysis_notes": "Modeled Mac-CLI command output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+tab	shell state
+1	cmd active
+2	powershell idle
+3	wsl active

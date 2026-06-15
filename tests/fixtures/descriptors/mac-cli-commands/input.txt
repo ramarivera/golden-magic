@@ -1,0 +1,4 @@
+command	category status
+wifi	control available
+cleanup	maintenance available
+update	software available

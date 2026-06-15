@@ -1,0 +1,10 @@
+id = "known.mac-cli.commands"
+name = "Mac-CLI command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcategory","wifi\tcontrol"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
