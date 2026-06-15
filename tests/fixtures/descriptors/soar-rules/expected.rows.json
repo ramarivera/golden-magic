@@ -1,0 +1,18 @@
+[
+  {
+    "name": "rule",
+    "value": "severity status"
+  },
+  {
+    "name": "IDX.001",
+    "value": "warning enabled"
+  },
+  {
+    "name": "SQL.003",
+    "value": "error enabled"
+  },
+  {
+    "name": "SEC.002",
+    "value": "info disabled"
+  }
+]

@@ -1,0 +1,2 @@
+rule severity status
+IDX.001 warning enabled

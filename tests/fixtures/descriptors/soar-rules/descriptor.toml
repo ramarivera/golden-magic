@@ -1,0 +1,10 @@
+id = "known.soar.rules"
+name = "SOAR rule list"
+priority = 50
+
+[matches]
+required_substrings = ["rule\tseverity","IDX.001\twarning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

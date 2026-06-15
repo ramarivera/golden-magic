@@ -1,0 +1,10 @@
+id = "known.awesome-data-engineering.tools"
+name = "awesome-data-engineering tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tcategory","airflow\torchestration"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

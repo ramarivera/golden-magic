@@ -1,0 +1,10 @@
+id = "known.google-images-download.jobs"
+name = "google-images-download job list"
+priority = 50
+
+[matches]
+required_substrings = ["query\tstate","sunsets\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

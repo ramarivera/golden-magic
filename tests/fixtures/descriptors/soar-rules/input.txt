@@ -1,0 +1,4 @@
+rule	severity status
+IDX.001	warning enabled
+SQL.003	error enabled
+SEC.002	info disabled

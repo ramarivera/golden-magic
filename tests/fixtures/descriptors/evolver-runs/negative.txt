@@ -1,0 +1,2 @@
+run state score
+gene-17 mutating 0.82

@@ -4858,5 +4858,65 @@
     "negative": "command category status\nwifi control available\n",
     "analysis_notes": "Modeled Mac-CLI command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "category row", "status field"]
+  },
+  {
+    "fixture": "pupy-sessions",
+    "descriptor_id": "known.pupy.sessions",
+    "name": "Pupy session list",
+    "repo": "https://github.com/n1nj4sec/pupy",
+    "required_substrings": ["session\tplatform", "alpha\tlinux"],
+    "parser": "tab-pairs",
+    "input": "session\tplatform state\nalpha\tlinux active\nbravo\twindows idle\ncharlie\tandroid active\n",
+    "negative": "session platform state\nalpha linux active\n",
+    "analysis_notes": "Modeled Pupy session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "platform row", "state field"]
+  },
+  {
+    "fixture": "soar-rules",
+    "descriptor_id": "known.soar.rules",
+    "name": "SOAR rule list",
+    "repo": "https://github.com/XiaoMi/soar",
+    "required_substrings": ["rule\tseverity", "IDX.001\twarning"],
+    "parser": "tab-pairs",
+    "input": "rule\tseverity status\nIDX.001\twarning enabled\nSQL.003\terror enabled\nSEC.002\tinfo disabled\n",
+    "negative": "rule severity status\nIDX.001 warning enabled\n",
+    "analysis_notes": "Modeled SOAR rule output with a generated executable-json parser plugin.",
+    "variants": ["rule header row", "severity row", "status field"]
+  },
+  {
+    "fixture": "awesome-data-engineering-tools",
+    "descriptor_id": "known.awesome-data-engineering.tools",
+    "name": "awesome-data-engineering tool list",
+    "repo": "https://github.com/igorbarinov/awesome-data-engineering",
+    "required_substrings": ["tool\tcategory", "airflow\torchestration"],
+    "parser": "tab-pairs",
+    "input": "tool\tcategory status\nairflow\torchestration listed\nspark\tprocessing listed\ndbt\ttransformation listed\n",
+    "negative": "tool category status\nairflow orchestration listed\n",
+    "analysis_notes": "Modeled awesome-data-engineering tool output with a generated executable-json parser plugin.",
+    "variants": ["tool header row", "category row", "status field"]
+  },
+  {
+    "fixture": "evolver-runs",
+    "descriptor_id": "known.evolver.runs",
+    "name": "Evolver run list",
+    "repo": "https://github.com/EvoMap/evolver",
+    "required_substrings": ["run\tstate", "gene-17\tmutating"],
+    "parser": "tab-pairs",
+    "input": "run\tstate score\ngene-17\tmutating 0.82\ncapsule-4\tvalidated 0.91\nevent-22\tqueued 0.00\n",
+    "negative": "run state score\ngene-17 mutating 0.82\n",
+    "analysis_notes": "Modeled Evolver run output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "state row", "score field"]
+  },
+  {
+    "fixture": "google-images-download-jobs",
+    "descriptor_id": "known.google-images-download.jobs",
+    "name": "google-images-download job list",
+    "repo": "https://github.com/hardikvasa/google-images-download",
+    "required_substrings": ["query\tstate", "sunsets\tdone"],
+    "parser": "tab-pairs",
+    "input": "query\tstate count\nsunsets\tdone 100\nterminals\trunning 48\nicons\tqueued 0\n",
+    "negative": "query state count\nsunsets done 100\n",
+    "analysis_notes": "Modeled google-images-download job output with a generated executable-json parser plugin.",
+    "variants": ["query header row", "state row", "count field"]
   }
 ]

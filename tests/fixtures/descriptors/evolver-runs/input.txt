@@ -1,0 +1,4 @@
+run	state score
+gene-17	mutating 0.82
+capsule-4	validated 0.91
+event-22	queued 0.00

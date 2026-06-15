@@ -1,0 +1,4 @@
+query	state count
+sunsets	done 100
+terminals	running 48
+icons	queued 0

@@ -1,0 +1,4 @@
+session	platform state
+alpha	linux active
+bravo	windows idle
+charlie	android active

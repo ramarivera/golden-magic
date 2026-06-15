@@ -1,0 +1,4 @@
+tool	category status
+airflow	orchestration listed
+spark	processing listed
+dbt	transformation listed

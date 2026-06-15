@@ -2973,5 +2973,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/mac-cli-commands",
     "analysis_notes": "Modeled Mac-CLI command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/n1nj4sec/pupy",
+    "descriptor_id": "known.pupy.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pupy-sessions",
+    "analysis_notes": "Modeled Pupy session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/XiaoMi/soar",
+    "descriptor_id": "known.soar.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/soar-rules",
+    "analysis_notes": "Modeled SOAR rule output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/igorbarinov/awesome-data-engineering",
+    "descriptor_id": "known.awesome-data-engineering.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-data-engineering-tools",
+    "analysis_notes": "Modeled awesome-data-engineering tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/EvoMap/evolver",
+    "descriptor_id": "known.evolver.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/evolver-runs",
+    "analysis_notes": "Modeled Evolver run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hardikvasa/google-images-download",
+    "descriptor_id": "known.google-images-download.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/google-images-download-jobs",
+    "analysis_notes": "Modeled google-images-download job output with a generated executable-json parser plugin."
   }
 ]

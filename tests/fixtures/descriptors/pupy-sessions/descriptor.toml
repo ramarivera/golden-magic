@@ -1,0 +1,10 @@
+id = "known.pupy.sessions"
+name = "Pupy session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tplatform","alpha\tlinux"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

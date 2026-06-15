@@ -7648,5 +7648,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/n1nj4sec/pupy",
+    "descriptor_id": "known.pupy.sessions",
+    "run_id": "agentic.pupy-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pupy-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pupy-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pupy.sessions for Pupy session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/XiaoMi/soar",
+    "descriptor_id": "known.soar.rules",
+    "run_id": "agentic.soar-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/soar-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/soar-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "severity row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.soar.rules for SOAR rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/igorbarinov/awesome-data-engineering",
+    "descriptor_id": "known.awesome-data-engineering.tools",
+    "run_id": "agentic.awesome-data-engineering-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-data-engineering-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-data-engineering-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-data-engineering.tools for awesome-data-engineering tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/EvoMap/evolver",
+    "descriptor_id": "known.evolver.runs",
+    "run_id": "agentic.evolver-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/evolver-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/evolver-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "state row",
+      "score field"
+    ],
+    "transcript": [
+      "selected descriptor known.evolver.runs for Evolver run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hardikvasa/google-images-download",
+    "descriptor_id": "known.google-images-download.jobs",
+    "run_id": "agentic.google-images-download-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/google-images-download-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/google-images-download-jobs/expected.rows.json",
+    "variants": [
+      "query header row",
+      "state row",
+      "count field"
+    ],
+    "transcript": [
+      "selected descriptor known.google-images-download.jobs for google-images-download job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
