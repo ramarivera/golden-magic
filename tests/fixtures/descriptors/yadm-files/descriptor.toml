@@ -1,0 +1,10 @@
+id = "known.yadm.files"
+name = "yadm managed file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstate",".zshrc\ttracked"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

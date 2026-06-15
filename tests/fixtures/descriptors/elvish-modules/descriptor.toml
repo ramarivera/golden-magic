@@ -1,0 +1,10 @@
+id = "known.elvish.modules"
+name = "elvish module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tstate","str\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+segment	state color
+cwd	active blue
+git	active green
+jobs	inactive gray

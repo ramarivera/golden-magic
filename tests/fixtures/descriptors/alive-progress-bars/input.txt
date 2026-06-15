@@ -1,0 +1,4 @@
+bar	state percent
+download	running 42
+build	finished 100
+test	queued 0

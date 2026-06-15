@@ -1,0 +1,10 @@
+id = "known.dev-setup.steps"
+name = "dev-setup step list"
+priority = 50
+
+[matches]
+required_substrings = ["step\tstate","brew\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

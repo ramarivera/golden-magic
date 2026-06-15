@@ -1,0 +1,2 @@
+segment state color
+cwd active blue

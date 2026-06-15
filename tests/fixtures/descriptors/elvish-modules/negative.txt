@@ -1,0 +1,2 @@
+module state exports
+str loaded 12

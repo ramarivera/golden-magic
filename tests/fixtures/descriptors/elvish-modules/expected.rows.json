@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "state exports"
+  },
+  {
+    "name": "str",
+    "value": "loaded 12"
+  },
+  {
+    "name": "math",
+    "value": "loaded 8"
+  },
+  {
+    "name": "edit",
+    "value": "available 20"
+  }
+]

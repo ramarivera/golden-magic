@@ -1,0 +1,4 @@
+step	state script
+brew	done brew.sh
+shell	running shell.sh
+apps	queued apps.sh

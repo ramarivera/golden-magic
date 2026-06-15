@@ -3673,5 +3673,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/provenance-systems",
     "analysis_notes": "Modeled Provenance system output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yadm-dev/yadm",
+    "descriptor_id": "known.yadm.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yadm-files",
+    "analysis_notes": "Modeled yadm managed file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/elves/elvish",
+    "descriptor_id": "known.elvish.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/elvish-modules",
+    "analysis_notes": "Modeled elvish module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/b-ryan/powerline-shell",
+    "descriptor_id": "known.powerline-shell.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/powerline-shell-segments",
+    "analysis_notes": "Modeled powerline-shell segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rsalmei/alive-progress",
+    "descriptor_id": "known.alive-progress.bars",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/alive-progress-bars",
+    "analysis_notes": "Modeled alive-progress bar output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/donnemartin/dev-setup",
+    "descriptor_id": "known.dev-setup.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dev-setup-steps",
+    "analysis_notes": "Modeled dev-setup step output with a generated executable-json parser plugin."
   }
 ]

@@ -6058,5 +6058,65 @@
     "negative": "system state cores\nsnes available 2\n",
     "analysis_notes": "Modeled Provenance system output with a generated executable-json parser plugin.",
     "variants": ["system header row", "state row", "cores field"]
+  },
+  {
+    "fixture": "yadm-files",
+    "descriptor_id": "known.yadm.files",
+    "name": "yadm managed file list",
+    "repo": "https://github.com/yadm-dev/yadm",
+    "required_substrings": ["file\tstate", ".zshrc\ttracked"],
+    "parser": "tab-pairs",
+    "input": "file\tstate target\n.zshrc\ttracked ~/.zshrc\n.gitconfig\ttracked ~/.gitconfig\nvimrc\tmodified ~/.vimrc\n",
+    "negative": "file state target\n.zshrc tracked ~/.zshrc\n",
+    "analysis_notes": "Modeled yadm managed file output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "state row", "target field"]
+  },
+  {
+    "fixture": "elvish-modules",
+    "descriptor_id": "known.elvish.modules",
+    "name": "elvish module list",
+    "repo": "https://github.com/elves/elvish",
+    "required_substrings": ["module\tstate", "str\tloaded"],
+    "parser": "tab-pairs",
+    "input": "module\tstate exports\nstr\tloaded 12\nmath\tloaded 8\nedit\tavailable 20\n",
+    "negative": "module state exports\nstr loaded 12\n",
+    "analysis_notes": "Modeled elvish module output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "state row", "exports field"]
+  },
+  {
+    "fixture": "powerline-shell-segments",
+    "descriptor_id": "known.powerline-shell.segments",
+    "name": "powerline-shell segment list",
+    "repo": "https://github.com/b-ryan/powerline-shell",
+    "required_substrings": ["segment\tstate", "cwd\tactive"],
+    "parser": "tab-pairs",
+    "input": "segment\tstate color\ncwd\tactive blue\ngit\tactive green\njobs\tinactive gray\n",
+    "negative": "segment state color\ncwd active blue\n",
+    "analysis_notes": "Modeled powerline-shell segment output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "state row", "color field"]
+  },
+  {
+    "fixture": "alive-progress-bars",
+    "descriptor_id": "known.alive-progress.bars",
+    "name": "alive-progress bar list",
+    "repo": "https://github.com/rsalmei/alive-progress",
+    "required_substrings": ["bar\tstate", "download\trunning"],
+    "parser": "tab-pairs",
+    "input": "bar\tstate percent\ndownload\trunning 42\nbuild\tfinished 100\ntest\tqueued 0\n",
+    "negative": "bar state percent\ndownload running 42\n",
+    "analysis_notes": "Modeled alive-progress bar output with a generated executable-json parser plugin.",
+    "variants": ["bar header row", "state row", "percent field"]
+  },
+  {
+    "fixture": "dev-setup-steps",
+    "descriptor_id": "known.dev-setup.steps",
+    "name": "dev-setup step list",
+    "repo": "https://github.com/donnemartin/dev-setup",
+    "required_substrings": ["step\tstate", "brew\tdone"],
+    "parser": "tab-pairs",
+    "input": "step\tstate script\nbrew\tdone brew.sh\nshell\trunning shell.sh\napps\tqueued apps.sh\n",
+    "negative": "step state script\nbrew done brew.sh\n",
+    "analysis_notes": "Modeled dev-setup step output with a generated executable-json parser plugin.",
+    "variants": ["step header row", "state row", "script field"]
   }
 ]

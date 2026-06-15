@@ -9448,5 +9448,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/yadm-dev/yadm",
+    "descriptor_id": "known.yadm.files",
+    "run_id": "agentic.yadm-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yadm-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yadm-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "state row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.yadm.files for yadm managed file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/elves/elvish",
+    "descriptor_id": "known.elvish.modules",
+    "run_id": "agentic.elvish-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/elvish-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/elvish-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "state row",
+      "exports field"
+    ],
+    "transcript": [
+      "selected descriptor known.elvish.modules for elvish module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/b-ryan/powerline-shell",
+    "descriptor_id": "known.powerline-shell.segments",
+    "run_id": "agentic.powerline-shell-segments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/powerline-shell-segments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/powerline-shell-segments/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "state row",
+      "color field"
+    ],
+    "transcript": [
+      "selected descriptor known.powerline-shell.segments for powerline-shell segment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rsalmei/alive-progress",
+    "descriptor_id": "known.alive-progress.bars",
+    "run_id": "agentic.alive-progress-bars.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/alive-progress-bars/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/alive-progress-bars/expected.rows.json",
+    "variants": [
+      "bar header row",
+      "state row",
+      "percent field"
+    ],
+    "transcript": [
+      "selected descriptor known.alive-progress.bars for alive-progress bar list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/donnemartin/dev-setup",
+    "descriptor_id": "known.dev-setup.steps",
+    "run_id": "agentic.dev-setup-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dev-setup-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dev-setup-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "state row",
+      "script field"
+    ],
+    "transcript": [
+      "selected descriptor known.dev-setup.steps for dev-setup step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
