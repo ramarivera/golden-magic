@@ -1,0 +1,4 @@
+device	platform state
+ios-sim	ios booted
+pixel	android connected
+old	android offline

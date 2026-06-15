@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "platform state"
+  },
+  {
+    "name": "ios-sim",
+    "value": "ios booted"
+  },
+  {
+    "name": "pixel",
+    "value": "android connected"
+  },
+  {
+    "name": "old",
+    "value": "android offline"
+  }
+]

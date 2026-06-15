@@ -6046,5 +6046,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/tio-sessions",
     "analysis_notes": "Modeled tio serial session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/veeso/termscp",
+    "descriptor_id": "known.termscp.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termscp-connections",
+    "analysis_notes": "Modeled termscp connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/uncover",
+    "descriptor_id": "known.uncover.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/uncover-hosts",
+    "analysis_notes": "Modeled uncover exposed-host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cortesi/modd",
+    "descriptor_id": "known.modd.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/modd-processes",
+    "analysis_notes": "Modeled modd watched-process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kislyuk/yq",
+    "descriptor_id": "known.yq.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yq-documents",
+    "analysis_notes": "Modeled yq document conversion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/altdesktop/playerctl",
+    "descriptor_id": "known.playerctl.players",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/playerctl-players",
+    "analysis_notes": "Modeled playerctl media-player output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/oppiliappan/dijo",
+    "descriptor_id": "known.dijo.habits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dijo-habits",
+    "analysis_notes": "Modeled dijo habit tracker output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lastpass/lastpass-cli",
+    "descriptor_id": "known.lastpass-cli.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lastpass-cli-entries",
+    "analysis_notes": "Modeled lastpass-cli vault entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/orhun/kmon",
+    "descriptor_id": "known.kmon.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kmon-modules",
+    "analysis_notes": "Modeled kmon kernel module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dooit-org/dooit",
+    "descriptor_id": "known.dooit.todos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dooit-todos",
+    "analysis_notes": "Modeled dooit TUI todo output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/react-native-community/cli",
+    "descriptor_id": "known.react-native-cli.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-native-cli-devices",
+    "analysis_notes": "Modeled React Native CLI device output with a generated executable-json parser plugin."
   }
 ]

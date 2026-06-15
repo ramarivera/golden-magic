@@ -1,0 +1,4 @@
+player	status state
+spotify	Playing active
+vlc	Paused visible
+mpv	Stopped idle

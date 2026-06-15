@@ -1,0 +1,10 @@
+id = "known.uncover.hosts"
+name = "uncover host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tsource","api.example.com\tshodan"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

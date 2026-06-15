@@ -1,0 +1,10 @@
+id = "known.lastpass-cli.entries"
+name = "lastpass-cli entry list"
+priority = 50
+
+[matches]
+required_substrings = ["entry\tgroup","github\tdev"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

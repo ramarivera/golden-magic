@@ -1,0 +1,10 @@
+id = "known.dijo.habits"
+name = "dijo habit list"
+priority = 50
+
+[matches]
+required_substrings = ["habit\tstreak","write\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

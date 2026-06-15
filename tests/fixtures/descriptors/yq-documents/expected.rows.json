@@ -1,0 +1,18 @@
+[
+  {
+    "name": "document",
+    "value": "format state"
+  },
+  {
+    "name": "config.yml",
+    "value": "yaml parsed"
+  },
+  {
+    "name": "feed.xml",
+    "value": "xml parsed"
+  },
+  {
+    "name": "settings.toml",
+    "value": "toml parsed"
+  }
+]

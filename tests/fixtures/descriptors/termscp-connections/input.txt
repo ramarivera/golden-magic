@@ -1,0 +1,4 @@
+connection	protocol state
+prod	sftp connected
+backup	s3 saved
+old	ftp archived

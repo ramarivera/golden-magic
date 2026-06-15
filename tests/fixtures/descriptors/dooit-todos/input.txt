@@ -1,0 +1,4 @@
+todo	status state
+ship	open active
+test	done complete
+old	archived hidden

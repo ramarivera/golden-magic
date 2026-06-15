@@ -1,0 +1,18 @@
+[
+  {
+    "name": "process",
+    "value": "status state"
+  },
+  {
+    "name": "server",
+    "value": "running watched"
+  },
+  {
+    "name": "test",
+    "value": "waiting watched"
+  },
+  {
+    "name": "old",
+    "value": "stopped disabled"
+  }
+]

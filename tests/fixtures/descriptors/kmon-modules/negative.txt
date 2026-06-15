@@ -1,0 +1,2 @@
+module status state
+kvm loaded active

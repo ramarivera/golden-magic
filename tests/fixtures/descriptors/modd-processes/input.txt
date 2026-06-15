@@ -1,0 +1,4 @@
+process	status state
+server	running watched
+test	waiting watched
+old	stopped disabled

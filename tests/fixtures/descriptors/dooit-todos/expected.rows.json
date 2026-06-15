@@ -1,0 +1,18 @@
+[
+  {
+    "name": "todo",
+    "value": "status state"
+  },
+  {
+    "name": "ship",
+    "value": "open active"
+  },
+  {
+    "name": "test",
+    "value": "done complete"
+  },
+  {
+    "name": "old",
+    "value": "archived hidden"
+  }
+]

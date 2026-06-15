@@ -1,0 +1,4 @@
+module	status state
+kvm	loaded active
+zfs	loaded active
+old	unloaded inactive

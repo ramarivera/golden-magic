@@ -3,11 +3,21 @@ mod support;
 use golden_magic::descriptors::DescriptorRegistry;
 use std::fs;
 use std::path::Path;
+use std::sync::{Mutex, OnceLock};
 use support::DescriptorFixture;
 use tempfile::tempdir;
 
+fn descriptor_fixture_test_lock() -> std::sync::MutexGuard<'static, ()> {
+    static LOCK: OnceLock<Mutex<()>> = OnceLock::new();
+    LOCK.get_or_init(|| Mutex::new(()))
+        .lock()
+        .expect("descriptor fixture test lock is not poisoned")
+}
+
 #[test]
 fn descriptor_fixtures_match_expected_rows() {
+    let _guard = descriptor_fixture_test_lock();
+
     for fixture in DescriptorFixture::all() {
         fixture.assert_rows_match();
     }
@@ -15,6 +25,8 @@ fn descriptor_fixtures_match_expected_rows() {
 
 #[test]
 fn descriptor_fixtures_apply_parser_backend_hints() {
+    let _guard = descriptor_fixture_test_lock();
+
     let fixture = DescriptorFixture::all()
         .into_iter()
         .find(|fixture| fixture.path().ends_with("generic-pipes"))
@@ -32,6 +44,8 @@ fn descriptor_fixtures_apply_parser_backend_hints() {
 
 #[test]
 fn descriptor_fixtures_include_negative_inputs() {
+    let _guard = descriptor_fixture_test_lock();
+
     for fixture in DescriptorFixture::all() {
         fixture.assert_negative_does_not_match();
     }
@@ -39,6 +53,8 @@ fn descriptor_fixtures_include_negative_inputs() {
 
 #[test]
 fn descriptor_fixture_utility_loads_each_fixture_in_isolation() {
+    let _guard = descriptor_fixture_test_lock();
+
     for fixture in DescriptorFixture::all() {
         let descriptor = fixture.selected_descriptor();
         assert!(
@@ -52,6 +68,8 @@ fn descriptor_fixture_utility_loads_each_fixture_in_isolation() {
 
 #[test]
 fn full_registry_rejects_duplicate_fixture_ids() {
+    let _guard = descriptor_fixture_test_lock();
+
     let registry_dir = tempdir().expect("temp registry dir");
     let first = registry_dir.path().join("first.toml");
     let second = registry_dir.path().join("second.toml");

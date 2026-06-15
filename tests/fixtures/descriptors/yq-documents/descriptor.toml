@@ -1,0 +1,10 @@
+id = "known.yq.documents"
+name = "yq document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tformat","config.yml\tyaml"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

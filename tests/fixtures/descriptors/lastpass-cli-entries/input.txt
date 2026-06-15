@@ -1,0 +1,4 @@
+entry	group state
+github	dev visible
+bank	personal visible
+old	archive hidden

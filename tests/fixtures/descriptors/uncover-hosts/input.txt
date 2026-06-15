@@ -1,0 +1,4 @@
+host	source state
+api.example.com	shodan found
+web.example.com	censys found
+old.example.com	fofa stale

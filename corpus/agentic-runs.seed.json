@@ -15550,5 +15550,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/veeso/termscp",
+    "descriptor_id": "known.termscp.connections",
+    "run_id": "agentic.termscp-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termscp-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termscp-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "protocol row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termscp.connections for termscp connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/uncover",
+    "descriptor_id": "known.uncover.hosts",
+    "run_id": "agentic.uncover-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/uncover-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/uncover-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "source row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.uncover.hosts for uncover host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cortesi/modd",
+    "descriptor_id": "known.modd.processes",
+    "run_id": "agentic.modd-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/modd-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/modd-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.modd.processes for modd process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kislyuk/yq",
+    "descriptor_id": "known.yq.documents",
+    "run_id": "agentic.yq-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yq-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yq-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.yq.documents for yq document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/altdesktop/playerctl",
+    "descriptor_id": "known.playerctl.players",
+    "run_id": "agentic.playerctl-players.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/playerctl-players/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/playerctl-players/expected.rows.json",
+    "variants": [
+      "player header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.playerctl.players for playerctl player list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/oppiliappan/dijo",
+    "descriptor_id": "known.dijo.habits",
+    "run_id": "agentic.dijo-habits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dijo-habits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dijo-habits/expected.rows.json",
+    "variants": [
+      "habit header row",
+      "streak row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dijo.habits for dijo habit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lastpass/lastpass-cli",
+    "descriptor_id": "known.lastpass-cli.entries",
+    "run_id": "agentic.lastpass-cli-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lastpass-cli-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lastpass-cli-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "group row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lastpass-cli.entries for lastpass-cli entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/orhun/kmon",
+    "descriptor_id": "known.kmon.modules",
+    "run_id": "agentic.kmon-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kmon-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kmon-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kmon.modules for kmon module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dooit-org/dooit",
+    "descriptor_id": "known.dooit.todos",
+    "run_id": "agentic.dooit-todos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dooit-todos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dooit-todos/expected.rows.json",
+    "variants": [
+      "todo header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dooit.todos for dooit todo list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/react-native-community/cli",
+    "descriptor_id": "known.react-native-cli.devices",
+    "run_id": "agentic.react-native-cli-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-native-cli-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-native-cli-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-native-cli.devices for React Native CLI device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

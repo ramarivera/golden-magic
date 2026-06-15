@@ -1,0 +1,4 @@
+document	format state
+config.yml	yaml parsed
+feed.xml	xml parsed
+settings.toml	toml parsed

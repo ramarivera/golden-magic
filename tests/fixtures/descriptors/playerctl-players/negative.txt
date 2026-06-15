@@ -1,0 +1,2 @@
+player status state
+spotify Playing active

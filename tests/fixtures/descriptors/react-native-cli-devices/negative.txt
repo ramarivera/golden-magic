@@ -1,0 +1,2 @@
+device platform state
+ios-sim ios booted

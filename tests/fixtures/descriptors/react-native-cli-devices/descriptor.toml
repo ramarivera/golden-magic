@@ -1,0 +1,10 @@
+id = "known.react-native-cli.devices"
+name = "React Native CLI device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tplatform","ios-sim\tios"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
