@@ -14,6 +14,7 @@ fn generated_parser_matrix_runs_more_than_two_thousand_cases() {
     cases += fallback_line_cases();
     cases += sections_backend_cases();
     cases += tree_sitter_rust_cases();
+    cases += wasm_json_cases();
     cases += tool_pack_loader_cases();
 
     eprintln!("generated parser matrix ran {cases} deterministic cases");
@@ -139,6 +140,48 @@ fn tree_sitter_rust_cases() -> usize {
         assert_eq!(report.rows[0]["name"], format!("module_{case_id}"));
         assert_eq!(report.rows[1]["kind"], "struct");
         assert_eq!(report.rows[2]["kind"], "function");
+        cases += 1;
+    }
+
+    cases
+}
+
+fn wasm_json_cases() -> usize {
+    let dir = tempdir().expect("temp dir");
+    let module = dir.path().join("parser-plugin.wat");
+    fs::write(
+        &module,
+        r#"(module
+  (memory (export "memory") 1)
+  (data (i32.const 2048) "{\"protocol\":\"golden-magic.wasm-json.v1\",\"rows\":[{\"name\":\"matrix\",\"status\":\"ok\"}]}")
+  (func (export "golden_magic_parse") (param $ptr i32) (param $len i32) (result i64)
+    (i64.or
+      (i64.shl (i64.const 2048) (i64.const 32))
+      (i64.const 81)
+    )
+  )
+)"#,
+    )
+    .expect("write wasm matrix module");
+
+    let mut cases = 0usize;
+    for case_id in 0..200 {
+        let options = ParseOptions::new()
+            .backend("wasm-json")
+            .wasm_module(&module);
+        let report = parse_with_options(&format!("wasm-row: matrix {case_id}\n"), &options);
+
+        assert_eq!(report.kind, ParseKind::Plugin, "case {case_id}");
+        assert_eq!(report.rows.len(), 1, "case {case_id}");
+        assert_eq!(report.rows[0]["name"], "matrix");
+        assert_eq!(report.rows[0]["status"], "ok");
+        assert!(
+            report
+                .trace
+                .iter()
+                .any(|event| event.rule_id == "backend.wasm-json.parsed"),
+            "case {case_id} should trace wasm-json parse"
+        );
         cases += 1;
     }
 

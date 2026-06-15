@@ -4,7 +4,7 @@ use golden_magic::descriptors::DescriptorRegistry;
 use std::fs;
 use std::path::Path;
 use std::sync::{Mutex, OnceLock};
-use support::DescriptorFixture;
+use support::{DescriptorFixture, DescriptorFixtureMatrix};
 use tempfile::tempdir;
 
 fn descriptor_fixture_test_lock() -> std::sync::MutexGuard<'static, ()> {
@@ -20,6 +20,82 @@ fn descriptor_fixtures_match_expected_rows() {
 
     for fixture in DescriptorFixture::all() {
         fixture.assert_rows_match();
+    }
+}
+
+#[test]
+fn descriptor_fixture_matrix_reports_measurable_coverage() {
+    let _guard = descriptor_fixture_test_lock();
+
+    let matrix = DescriptorFixtureMatrix::all();
+    let stats = matrix.stats();
+
+    assert!(
+        stats.fixtures >= 887,
+        "expected at least 887 descriptor fixtures, got {}",
+        stats.fixtures
+    );
+    assert_eq!(stats.expected_row_assertions, stats.fixtures);
+    assert_eq!(stats.negative_match_assertions, stats.fixtures);
+    assert_eq!(stats.isolation_assertions, stats.fixtures);
+    assert!(
+        matrix.total_assertion_cases() >= 2_661,
+        "descriptor fixture matrix should expose at least 2,661 countable assertion cases"
+    );
+}
+
+#[test]
+fn descriptor_fixture_matrix_tracks_plugin_backend_coverage() {
+    let _guard = descriptor_fixture_test_lock();
+
+    let matrix = DescriptorFixtureMatrix::all();
+    let backend_counts = matrix.backend_counts();
+
+    assert!(
+        backend_counts
+            .get("executable-json")
+            .copied()
+            .unwrap_or_default()
+            > 0,
+        "fixture matrix should include executable-json plugin coverage"
+    );
+    assert!(
+        backend_counts.get("wasm-json").copied().unwrap_or_default() > 0,
+        "fixture matrix should include wasm-json plugin coverage"
+    );
+    assert!(
+        backend_counts
+            .get("tree-sitter")
+            .copied()
+            .unwrap_or_default()
+            > 0
+            || backend_counts
+                .get("tree-sitter-rust")
+                .copied()
+                .unwrap_or_default()
+                > 0,
+        "fixture matrix should include tree-sitter coverage"
+    );
+}
+
+#[test]
+fn descriptor_fixture_matrix_requires_core_fixture_files() {
+    let _guard = descriptor_fixture_test_lock();
+
+    let matrix = DescriptorFixtureMatrix::all();
+    for fixture in matrix.fixtures() {
+        for file_name in [
+            "descriptor.toml",
+            "input.txt",
+            "negative.txt",
+            "expected.rows.json",
+        ] {
+            assert!(
+                fixture.path().join(file_name).is_file(),
+                "fixture {:?} should include {file_name}",
+                fixture.path()
+            );
+        }
     }
 }
 

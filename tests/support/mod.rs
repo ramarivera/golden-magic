@@ -11,6 +11,59 @@ use std::path::{Path, PathBuf};
 use tempfile::{TempDir, tempdir};
 
 #[derive(Debug, Clone)]
+pub struct DescriptorFixtureMatrix {
+    fixtures: Vec<DescriptorFixture>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct DescriptorFixtureMatrixStats {
+    pub fixtures: usize,
+    pub expected_row_assertions: usize,
+    pub negative_match_assertions: usize,
+    pub isolation_assertions: usize,
+}
+
+impl DescriptorFixtureMatrix {
+    pub fn all() -> Self {
+        Self {
+            fixtures: DescriptorFixture::all(),
+        }
+    }
+
+    pub fn fixtures(&self) -> &[DescriptorFixture] {
+        &self.fixtures
+    }
+
+    pub fn stats(&self) -> DescriptorFixtureMatrixStats {
+        let fixtures = self.fixtures.len();
+        DescriptorFixtureMatrixStats {
+            fixtures,
+            expected_row_assertions: fixtures,
+            negative_match_assertions: fixtures,
+            isolation_assertions: fixtures,
+        }
+    }
+
+    pub fn total_assertion_cases(&self) -> usize {
+        let stats = self.stats();
+        stats.expected_row_assertions + stats.negative_match_assertions + stats.isolation_assertions
+    }
+
+    pub fn backend_counts(&self) -> std::collections::BTreeMap<String, usize> {
+        let mut counts = std::collections::BTreeMap::new();
+        for fixture in &self.fixtures {
+            let descriptor = fixture.selected_descriptor();
+            let backend = descriptor
+                .parser
+                .backend
+                .unwrap_or_else(|| "heuristic".to_string());
+            *counts.entry(backend).or_insert(0) += 1;
+        }
+        counts
+    }
+}
+
+#[derive(Debug, Clone)]
 pub struct DescriptorFixture {
     path: PathBuf,
 }
