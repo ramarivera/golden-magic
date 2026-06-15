@@ -1,0 +1,4 @@
+connection	driver state
+local	sqlite open
+prod	postgres closed
+warehouse	mysql open

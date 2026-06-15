@@ -1,0 +1,10 @@
+id = "known.xan.columns"
+name = "xan column list"
+priority = 50
+
+[matches]
+required_substrings = ["column\ttype","name\tstring"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+window effect state
+Explorer mica active

@@ -1,0 +1,4 @@
+service	endpoint state
+greeter	http://localhost ready
+payments	http://payments ready
+orders	http://orders pending

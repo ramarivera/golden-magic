@@ -13066,5 +13066,419 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jmacdonald/amp",
+    "descriptor_id": "known.amp.buffers",
+    "run_id": "agentic.amp-buffers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/amp-buffers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/amp-buffers/expected.rows.json",
+    "variants": [
+      "buffer header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.amp.buffers for amp buffer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/arxanas/git-branchless",
+    "descriptor_id": "known.git-branchless.stacks",
+    "run_id": "agentic.git-branchless-stacks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-branchless-stacks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-branchless-stacks/expected.rows.json",
+    "variants": [
+      "branch header row",
+      "commit row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-branchless.stacks for git-branchless stack list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/peak/s5cmd",
+    "descriptor_id": "known.s5cmd.operations",
+    "run_id": "agentic.s5cmd-operations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/s5cmd-operations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/s5cmd-operations/expected.rows.json",
+    "variants": [
+      "operation header row",
+      "object row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.s5cmd.operations for s5cmd operation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/donnemartin/haxor-news",
+    "descriptor_id": "known.haxor-news.stories",
+    "run_id": "agentic.haxor-news-stories.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/haxor-news-stories/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/haxor-news-stories/expected.rows.json",
+    "variants": [
+      "story header row",
+      "points row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.haxor-news.stories for haxor-news story list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/react-native-community/upgrade-helper",
+    "descriptor_id": "known.react-native-upgrade-helper.files",
+    "run_id": "agentic.react-native-upgrade-helper-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-native-upgrade-helper-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-native-upgrade-helper-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-native-upgrade-helper.files for React Native upgrade-helper file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/KittyKatt/screenFetch",
+    "descriptor_id": "known.screenfetch.summary",
+    "run_id": "agentic.screenfetch-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/screenfetch-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/screenfetch-summary/expected.rows.json",
+    "variants": [
+      "field header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.screenfetch.summary for screenFetch summary list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/medialab/xan",
+    "descriptor_id": "known.xan.columns",
+    "run_id": "agentic.xan-columns.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xan-columns/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xan-columns/expected.rows.json",
+    "variants": [
+      "column header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xan.columns for xan column list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Maplespe/ExplorerBlurMica",
+    "descriptor_id": "known.explorerblurmica.windows",
+    "run_id": "agentic.explorerblurmica-windows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/explorerblurmica-windows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/explorerblurmica-windows/expected.rows.json",
+    "variants": [
+      "window header row",
+      "effect row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.explorerblurmica.windows for ExplorerBlurMica window list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lirantal/dockly",
+    "descriptor_id": "known.dockly.containers",
+    "run_id": "agentic.dockly-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dockly-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dockly-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "image row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dockly.containers for dockly container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/icholy/ttygif",
+    "descriptor_id": "known.ttygif.frames",
+    "run_id": "agentic.ttygif-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ttygif-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ttygif-frames/expected.rows.json",
+    "variants": [
+      "frame header row",
+      "delay row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ttygif.frames for ttygif frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/restatedev/restate",
+    "descriptor_id": "known.restate.services",
+    "run_id": "agentic.restate-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/restate-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/restate-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "endpoint row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.restate.services for Restate service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yosriady/awesome-api-devtools",
+    "descriptor_id": "known.awesome-api-devtools.tools",
+    "run_id": "agentic.awesome-api-devtools-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-api-devtools-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-api-devtools-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-api-devtools.tools for awesome-api-devtools tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+    "descriptor_id": "known.nodejs-cli-apps-best-practices.checks",
+    "run_id": "agentic.nodejs-cli-apps-best-practices-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nodejs-cli-best-practices-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nodejs-cli-best-practices-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nodejs-cli-apps-best-practices.checks for nodejs-cli-apps-best-practices check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/crate-ci/typos",
+    "descriptor_id": "known.typos.findings",
+    "run_id": "agentic.typos-findings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/typos-findings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/typos-findings/expected.rows.json",
+    "variants": [
+      "file header row",
+      "correction row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.typos.findings for typos finding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/genuinetools/img",
+    "descriptor_id": "known.img.images",
+    "run_id": "agentic.img-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/img-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/img-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "digest row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.img.images for img image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/DaveWoodCom/XCGLogger",
+    "descriptor_id": "known.xcglogger.logs",
+    "run_id": "agentic.xcglogger-logs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xcglogger-logs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xcglogger-logs/expected.rows.json",
+    "variants": [
+      "level header row",
+      "message row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xcglogger.logs for XCGLogger log list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/laravel-zero/laravel-zero",
+    "descriptor_id": "known.laravel-zero.commands",
+    "run_id": "agentic.laravel-zero-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/laravel-zero-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/laravel-zero-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "signature row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.laravel-zero.commands for Laravel Zero command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/area17/twill",
+    "descriptor_id": "known.twill.modules",
+    "run_id": "agentic.twill-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/twill-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/twill-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.twill.modules for Twill module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/speed-test",
+    "descriptor_id": "known.speed-test.results",
+    "run_id": "agentic.speed-test-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/speed-test-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/speed-test-results/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.speed-test.results for speed-test result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jorgerojas26/lazysql",
+    "descriptor_id": "known.lazysql.connections",
+    "run_id": "agentic.lazysql-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lazysql-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lazysql-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "driver row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lazysql.connections for lazysql connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nakabonne/ali",
+    "descriptor_id": "known.ali.targets",
+    "run_id": "agentic.ali-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ali-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ali-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "latency row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ali.targets for ali target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/devtools-frontend",
+    "descriptor_id": "known.devtools-frontend.panels",
+    "run_id": "agentic.devtools-frontend-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devtools-frontend-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devtools-frontend-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devtools-frontend.panels for DevTools frontend panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tox-dev/tox",
+    "descriptor_id": "known.tox.envs",
+    "run_id": "agentic.tox-envs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tox-envs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tox-envs/expected.rows.json",
+    "variants": [
+      "env header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tox.envs for tox environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

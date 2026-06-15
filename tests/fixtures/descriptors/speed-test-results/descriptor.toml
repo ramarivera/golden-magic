@@ -1,0 +1,10 @@
+id = "known.speed-test.results"
+name = "speed-test result list"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","download\t120Mbps"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

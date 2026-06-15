@@ -1,0 +1,4 @@
+operation	object state
+cp	s3://bucket/a done
+sync	s3://bucket/b running
+rm	s3://bucket/c queued

@@ -1,0 +1,10 @@
+id = "known.typos.findings"
+name = "typos finding list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tcorrection","README.md\tthe"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

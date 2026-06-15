@@ -1,0 +1,10 @@
+id = "known.tox.envs"
+name = "tox environment list"
+priority = 50
+
+[matches]
+required_substrings = ["env\tstatus","py311\tpassed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

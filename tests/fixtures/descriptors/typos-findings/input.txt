@@ -1,0 +1,4 @@
+file	correction state
+README.md	the fixed
+src/lib.rs	receive fixed
+docs/api.md	separate pending

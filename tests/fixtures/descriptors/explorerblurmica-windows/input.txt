@@ -1,0 +1,4 @@
+window	effect state
+Explorer	mica active
+Settings	blur active
+Terminal	acrylic inactive

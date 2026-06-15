@@ -1,0 +1,18 @@
+[
+  {
+    "name": "field",
+    "value": "value state"
+  },
+  {
+    "name": "OS",
+    "value": "Linux detected"
+  },
+  {
+    "name": "Kernel",
+    "value": "6.8 detected"
+  },
+  {
+    "name": "Shell",
+    "value": "zsh detected"
+  }
+]

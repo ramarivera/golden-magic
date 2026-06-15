@@ -1,0 +1,2 @@
+service endpoint state
+greeter http://localhost ready

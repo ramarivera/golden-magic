@@ -1,0 +1,4 @@
+module	status state
+pages	enabled ready
+media	enabled ready
+blocks	disabled hidden

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "connection",
+    "value": "driver state"
+  },
+  {
+    "name": "local",
+    "value": "sqlite open"
+  },
+  {
+    "name": "prod",
+    "value": "postgres closed"
+  },
+  {
+    "name": "warehouse",
+    "value": "mysql open"
+  }
+]

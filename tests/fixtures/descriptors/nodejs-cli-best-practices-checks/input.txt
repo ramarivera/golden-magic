@@ -1,0 +1,4 @@
+check	status state
+help	pass documented
+exit-code	pass tested
+colors	warn optional

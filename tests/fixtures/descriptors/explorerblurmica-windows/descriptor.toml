@@ -1,0 +1,10 @@
+id = "known.explorerblurmica.windows"
+name = "ExplorerBlurMica window list"
+priority = 50
+
+[matches]
+required_substrings = ["window\teffect","Explorer\tmica"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

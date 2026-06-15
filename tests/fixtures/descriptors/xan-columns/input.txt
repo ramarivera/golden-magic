@@ -1,0 +1,4 @@
+column	type state
+name	string selected
+count	integer selected
+ratio	float selected

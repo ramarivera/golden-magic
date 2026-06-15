@@ -1,0 +1,18 @@
+[
+  {
+    "name": "metric",
+    "value": "value state"
+  },
+  {
+    "name": "download",
+    "value": "120Mbps complete"
+  },
+  {
+    "name": "upload",
+    "value": "40Mbps complete"
+  },
+  {
+    "name": "ping",
+    "value": "12ms complete"
+  }
+]

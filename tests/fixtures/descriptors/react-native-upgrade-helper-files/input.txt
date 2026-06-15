@@ -1,0 +1,4 @@
+file	status state
+package.json	changed review
+android/build.gradle	changed review
+ios/Podfile	unchanged skip

@@ -1,0 +1,4 @@
+metric	value state
+download	120Mbps complete
+upload	40Mbps complete
+ping	12ms complete

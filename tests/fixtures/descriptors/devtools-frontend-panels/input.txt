@@ -1,0 +1,4 @@
+panel	status state
+elements	loaded visible
+network	loaded hidden
+console	loaded visible

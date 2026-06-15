@@ -1,0 +1,18 @@
+[
+  {
+    "name": "level",
+    "value": "message state"
+  },
+  {
+    "name": "info",
+    "value": "started emitted"
+  },
+  {
+    "name": "warning",
+    "value": "cache emitted"
+  },
+  {
+    "name": "error",
+    "value": "failed emitted"
+  }
+]

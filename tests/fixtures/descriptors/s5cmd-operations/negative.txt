@@ -1,0 +1,2 @@
+operation object state
+cp s3://bucket/a done

@@ -1,0 +1,4 @@
+container	image state
+api	node running
+db	postgres running
+cache	redis stopped

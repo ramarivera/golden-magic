@@ -1,0 +1,4 @@
+tool	category state
+curl	client listed
+httpie	client listed
+prism	mock listed

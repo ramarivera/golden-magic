@@ -1,0 +1,10 @@
+id = "known.awesome-api-devtools.tools"
+name = "awesome-api-devtools tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tcategory","curl\tclient"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

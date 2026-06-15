@@ -1,0 +1,10 @@
+id = "known.react-native-upgrade-helper.files"
+name = "React Native upgrade-helper file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","package.json\tchanged"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

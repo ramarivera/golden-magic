@@ -1,0 +1,18 @@
+[
+  {
+    "name": "image",
+    "value": "digest state"
+  },
+  {
+    "name": "app",
+    "value": "sha256:aaa built"
+  },
+  {
+    "name": "base",
+    "value": "sha256:bbb pulled"
+  },
+  {
+    "name": "test",
+    "value": "sha256:ccc pushed"
+  }
+]

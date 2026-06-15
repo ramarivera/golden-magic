@@ -1,0 +1,4 @@
+image	digest state
+app	sha256:aaa built
+base	sha256:bbb pulled
+test	sha256:ccc pushed

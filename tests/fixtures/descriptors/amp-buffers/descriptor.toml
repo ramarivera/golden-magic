@@ -1,0 +1,10 @@
+id = "known.amp.buffers"
+name = "amp buffer list"
+priority = 50
+
+[matches]
+required_substrings = ["buffer\tpath","main\tsrc/main.rs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

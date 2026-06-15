@@ -1,0 +1,10 @@
+id = "known.haxor-news.stories"
+name = "haxor-news story list"
+priority = 50
+
+[matches]
+required_substrings = ["story\tpoints","launch\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

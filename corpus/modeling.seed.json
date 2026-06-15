@@ -5080,5 +5080,166 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/vue-cli-plugin-electron-builder-targets",
     "analysis_notes": "Modeled vue-cli-plugin-electron-builder target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jmacdonald/amp",
+    "descriptor_id": "known.amp.buffers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/amp-buffers",
+    "analysis_notes": "Modeled amp buffer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/arxanas/git-branchless",
+    "descriptor_id": "known.git-branchless.stacks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-branchless-stacks",
+    "analysis_notes": "Modeled git-branchless stack output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/peak/s5cmd",
+    "descriptor_id": "known.s5cmd.operations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/s5cmd-operations",
+    "analysis_notes": "Modeled s5cmd operation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/donnemartin/haxor-news",
+    "descriptor_id": "known.haxor-news.stories",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/haxor-news-stories",
+    "analysis_notes": "Modeled haxor-news story output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/react-native-community/upgrade-helper",
+    "descriptor_id": "known.react-native-upgrade-helper.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-native-upgrade-helper-files",
+    "analysis_notes": "Modeled React Native upgrade-helper file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/KittyKatt/screenFetch",
+    "descriptor_id": "known.screenfetch.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/screenfetch-summary",
+    "analysis_notes": "Modeled screenFetch summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/medialab/xan",
+    "descriptor_id": "known.xan.columns",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xan-columns",
+    "analysis_notes": "Modeled xan column output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Maplespe/ExplorerBlurMica",
+    "descriptor_id": "known.explorerblurmica.windows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/explorerblurmica-windows",
+    "analysis_notes": "Modeled ExplorerBlurMica window output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lirantal/dockly",
+    "descriptor_id": "known.dockly.containers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dockly-containers",
+    "analysis_notes": "Modeled dockly container output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/icholy/ttygif",
+    "descriptor_id": "known.ttygif.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ttygif-frames",
+    "analysis_notes": "Modeled ttygif frame output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/restatedev/restate",
+    "descriptor_id": "known.restate.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/restate-services",
+    "analysis_notes": "Modeled Restate service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yosriady/awesome-api-devtools",
+    "descriptor_id": "known.awesome-api-devtools.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-api-devtools-tools",
+    "analysis_notes": "Modeled awesome-api-devtools tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lirantal/nodejs-cli-apps-best-practices",
+    "descriptor_id": "known.nodejs-cli-apps-best-practices.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nodejs-cli-best-practices-checks",
+    "analysis_notes": "Modeled nodejs-cli-apps-best-practices check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/crate-ci/typos",
+    "descriptor_id": "known.typos.findings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/typos-findings",
+    "analysis_notes": "Modeled typos finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/genuinetools/img",
+    "descriptor_id": "known.img.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/img-images",
+    "analysis_notes": "Modeled img image output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/DaveWoodCom/XCGLogger",
+    "descriptor_id": "known.xcglogger.logs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xcglogger-logs",
+    "analysis_notes": "Modeled XCGLogger log output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/laravel-zero/laravel-zero",
+    "descriptor_id": "known.laravel-zero.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/laravel-zero-commands",
+    "analysis_notes": "Modeled Laravel Zero command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/area17/twill",
+    "descriptor_id": "known.twill.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/twill-modules",
+    "analysis_notes": "Modeled Twill module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/speed-test",
+    "descriptor_id": "known.speed-test.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/speed-test-results",
+    "analysis_notes": "Modeled speed-test result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jorgerojas26/lazysql",
+    "descriptor_id": "known.lazysql.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lazysql-connections",
+    "analysis_notes": "Modeled lazysql connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nakabonne/ali",
+    "descriptor_id": "known.ali.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ali-targets",
+    "analysis_notes": "Modeled ali target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/devtools-frontend",
+    "descriptor_id": "known.devtools-frontend.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtools-frontend-panels",
+    "analysis_notes": "Modeled DevTools frontend panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tox-dev/tox",
+    "descriptor_id": "known.tox.envs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tox-envs",
+    "analysis_notes": "Modeled tox environment output with a generated executable-json parser plugin."
   }
 ]

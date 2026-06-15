@@ -1,0 +1,10 @@
+id = "known.nodejs-cli-apps-best-practices.checks"
+name = "nodejs-cli-apps-best-practices check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tstatus","help\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

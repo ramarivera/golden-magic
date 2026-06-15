@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "status state"
+  },
+  {
+    "name": "pages",
+    "value": "enabled ready"
+  },
+  {
+    "name": "media",
+    "value": "enabled ready"
+  },
+  {
+    "name": "blocks",
+    "value": "disabled hidden"
+  }
+]

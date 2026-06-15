@@ -1,0 +1,2 @@
+frame delay state
+001 40ms captured

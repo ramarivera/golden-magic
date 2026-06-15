@@ -1,0 +1,10 @@
+id = "known.s5cmd.operations"
+name = "s5cmd operation list"
+priority = 50
+
+[matches]
+required_substrings = ["operation\tobject","cp\ts3://bucket/a"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

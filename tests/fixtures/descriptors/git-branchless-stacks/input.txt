@@ -1,0 +1,4 @@
+branch	commit state
+feature	a1b2c3 active
+review	d4e5f6 stacked
+main	f7a8b9 base

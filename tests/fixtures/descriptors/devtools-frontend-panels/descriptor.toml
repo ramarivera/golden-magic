@@ -1,0 +1,10 @@
+id = "known.devtools-frontend.panels"
+name = "DevTools frontend panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tstatus","elements\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

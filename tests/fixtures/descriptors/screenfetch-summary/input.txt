@@ -1,0 +1,4 @@
+field	value state
+OS	Linux detected
+Kernel	6.8 detected
+Shell	zsh detected

@@ -1,0 +1,10 @@
+id = "known.restate.services"
+name = "Restate service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tendpoint","greeter\thttp://localhost"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

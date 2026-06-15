@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "correction state"
+  },
+  {
+    "name": "README.md",
+    "value": "the fixed"
+  },
+  {
+    "name": "src/lib.rs",
+    "value": "receive fixed"
+  },
+  {
+    "name": "docs/api.md",
+    "value": "separate pending"
+  }
+]

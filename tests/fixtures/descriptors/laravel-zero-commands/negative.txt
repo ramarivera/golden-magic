@@ -1,0 +1,2 @@
+command signature state
+build app:build registered

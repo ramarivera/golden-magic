@@ -1,0 +1,4 @@
+command	signature state
+build	app:build registered
+install	app:install registered
+make	make:command registered

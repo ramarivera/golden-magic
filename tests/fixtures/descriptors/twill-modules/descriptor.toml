@@ -1,0 +1,10 @@
+id = "known.twill.modules"
+name = "Twill module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tstatus","pages\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

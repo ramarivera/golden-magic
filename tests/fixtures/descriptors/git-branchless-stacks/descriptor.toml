@@ -1,0 +1,10 @@
+id = "known.git-branchless.stacks"
+name = "git-branchless stack list"
+priority = 50
+
+[matches]
+required_substrings = ["branch\tcommit","feature\ta1b2c3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
