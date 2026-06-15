@@ -1,0 +1,4 @@
+route	method upstream
+/v1/chat	POST openai
+/v1/models	GET openai
+/health	GET local

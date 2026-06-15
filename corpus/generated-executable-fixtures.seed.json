@@ -1678,5 +1678,65 @@
     "negative": "file type size\nsrc dir 4K\n",
     "analysis_notes": "Modeled yazi file list output with a generated executable-json parser plugin.",
     "variants": ["file header row", "directory row", "size field"]
+  },
+  {
+    "fixture": "it-tools-utilities",
+    "descriptor_id": "known.it-tools.utilities",
+    "name": "it-tools utility list",
+    "repo": "https://github.com/CorentinTh/it-tools",
+    "required_substrings": ["utility\tcategory", "json-format\tdeveloper"],
+    "parser": "tab-pairs",
+    "input": "utility\tcategory status\njson-format\tdeveloper ready\nhash-text\tcrypto ready\nqr-code\timage ready\n",
+    "negative": "utility category status\njson-format developer ready\n",
+    "analysis_notes": "Modeled it-tools utility list output with a generated executable-json parser plugin.",
+    "variants": ["utility header row", "developer utility row", "status field"]
+  },
+  {
+    "fixture": "ink-components",
+    "descriptor_id": "known.ink.components",
+    "name": "Ink component list",
+    "repo": "https://github.com/vadimdemedes/ink",
+    "required_substrings": ["component\tstate", "Box\tmounted"],
+    "parser": "tab-pairs",
+    "input": "component\tstate props\nBox\tmounted 3\nText\tmounted 2\nSpinner\tunmounted 1\n",
+    "negative": "component state props\nBox mounted 3\n",
+    "analysis_notes": "Modeled Ink component list output with a generated executable-json parser plugin.",
+    "variants": ["component header row", "mounted component row", "props count field"]
+  },
+  {
+    "fixture": "codewhale-sessions",
+    "descriptor_id": "known.codewhale.sessions",
+    "name": "CodeWhale session list",
+    "repo": "https://github.com/Hmbown/CodeWhale",
+    "required_substrings": ["session\tstatus", "analysis\trunning"],
+    "parser": "tab-pairs",
+    "input": "session\tstatus language\nanalysis\trunning rust\nreview\tqueued typescript\nfix\tcomplete python\n",
+    "negative": "session status language\nanalysis running rust\n",
+    "analysis_notes": "Modeled CodeWhale session list output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "running session row", "language field"]
+  },
+  {
+    "fixture": "cliproxyapi-routes",
+    "descriptor_id": "known.cliproxyapi.routes",
+    "name": "CLIProxyAPI route list",
+    "repo": "https://github.com/router-for-me/CLIProxyAPI",
+    "required_substrings": ["route\tmethod", "/v1/chat\tPOST"],
+    "parser": "tab-pairs",
+    "input": "route\tmethod upstream\n/v1/chat\tPOST openai\n/v1/models\tGET openai\n/health\tGET local\n",
+    "negative": "route method upstream\n/v1/chat POST openai\n",
+    "analysis_notes": "Modeled CLIProxyAPI route list output with a generated executable-json parser plugin.",
+    "variants": ["route header row", "POST route row", "upstream field"]
+  },
+  {
+    "fixture": "awesome-shell-sections",
+    "descriptor_id": "known.awesome-shell.sections",
+    "name": "awesome-shell section index",
+    "repo": "https://github.com/alebcay/awesome-shell",
+    "required_substrings": ["section\tcount", "command-line\t32"],
+    "parser": "tab-pairs",
+    "input": "section\tcount source\ncommand-line\t32 markdown\ncustomization\t24 markdown\nshells\t9 markdown\n",
+    "negative": "section count source\ncommand-line 32 markdown\n",
+    "analysis_notes": "Modeled awesome-shell section index output with a generated executable-json parser plugin.",
+    "variants": ["section header row", "count row", "source field"]
   }
 ]

@@ -1,0 +1,2 @@
+session status language
+analysis running rust

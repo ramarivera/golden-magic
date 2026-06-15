@@ -1118,5 +1118,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/yazi-files",
     "analysis_notes": "Modeled yazi file list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/CorentinTh/it-tools",
+    "descriptor_id": "known.it-tools.utilities",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/it-tools-utilities",
+    "analysis_notes": "Modeled it-tools utility list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vadimdemedes/ink",
+    "descriptor_id": "known.ink.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ink-components",
+    "analysis_notes": "Modeled Ink component list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Hmbown/CodeWhale",
+    "descriptor_id": "known.codewhale.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/codewhale-sessions",
+    "analysis_notes": "Modeled CodeWhale session list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/router-for-me/CLIProxyAPI",
+    "descriptor_id": "known.cliproxyapi.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cliproxyapi-routes",
+    "analysis_notes": "Modeled CLIProxyAPI route list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alebcay/awesome-shell",
+    "descriptor_id": "known.awesome-shell.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-shell-sections",
+    "analysis_notes": "Modeled awesome-shell section index output with a generated executable-json parser plugin."
   }
 ]

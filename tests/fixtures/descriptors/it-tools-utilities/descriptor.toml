@@ -1,0 +1,10 @@
+id = "known.it-tools.utilities"
+name = "it-tools utility list"
+priority = 50
+
+[matches]
+required_substrings = ["utility\tcategory","json-format\tdeveloper"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

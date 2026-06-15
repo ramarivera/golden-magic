@@ -1,0 +1,10 @@
+id = "known.awesome-shell.sections"
+name = "awesome-shell section index"
+priority = 50
+
+[matches]
+required_substrings = ["section\tcount","command-line\t32"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

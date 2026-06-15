@@ -1,0 +1,4 @@
+component	state props
+Box	mounted 3
+Text	mounted 2
+Spinner	unmounted 1

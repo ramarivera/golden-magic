@@ -1,0 +1,4 @@
+utility	category status
+json-format	developer ready
+hash-text	crypto ready
+qr-code	image ready

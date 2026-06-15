@@ -1,0 +1,10 @@
+id = "known.ink.components"
+name = "Ink component list"
+priority = 50
+
+[matches]
+required_substrings = ["component\tstate","Box\tmounted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

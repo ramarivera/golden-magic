@@ -1,0 +1,18 @@
+[
+  {
+    "name": "utility",
+    "value": "category status"
+  },
+  {
+    "name": "json-format",
+    "value": "developer ready"
+  },
+  {
+    "name": "hash-text",
+    "value": "crypto ready"
+  },
+  {
+    "name": "qr-code",
+    "value": "image ready"
+  }
+]

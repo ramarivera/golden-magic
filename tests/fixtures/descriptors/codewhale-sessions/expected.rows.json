@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "status language"
+  },
+  {
+    "name": "analysis",
+    "value": "running rust"
+  },
+  {
+    "name": "review",
+    "value": "queued typescript"
+  },
+  {
+    "name": "fix",
+    "value": "complete python"
+  }
+]

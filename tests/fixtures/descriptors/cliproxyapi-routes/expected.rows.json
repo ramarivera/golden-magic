@@ -1,0 +1,18 @@
+[
+  {
+    "name": "route",
+    "value": "method upstream"
+  },
+  {
+    "name": "/v1/chat",
+    "value": "POST openai"
+  },
+  {
+    "name": "/v1/models",
+    "value": "GET openai"
+  },
+  {
+    "name": "/health",
+    "value": "GET local"
+  }
+]

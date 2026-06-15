@@ -1,0 +1,18 @@
+[
+  {
+    "name": "component",
+    "value": "state props"
+  },
+  {
+    "name": "Box",
+    "value": "mounted 3"
+  },
+  {
+    "name": "Text",
+    "value": "mounted 2"
+  },
+  {
+    "name": "Spinner",
+    "value": "unmounted 1"
+  }
+]

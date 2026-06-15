@@ -2878,5 +2878,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/CorentinTh/it-tools",
+    "descriptor_id": "known.it-tools.utilities",
+    "run_id": "agentic.it-tools-utilities.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/it-tools-utilities/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/it-tools-utilities/expected.rows.json",
+    "variants": [
+      "utility header row",
+      "developer utility row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.it-tools.utilities for it-tools utility list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vadimdemedes/ink",
+    "descriptor_id": "known.ink.components",
+    "run_id": "agentic.ink-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ink-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ink-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "mounted component row",
+      "props count field"
+    ],
+    "transcript": [
+      "selected descriptor known.ink.components for Ink component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Hmbown/CodeWhale",
+    "descriptor_id": "known.codewhale.sessions",
+    "run_id": "agentic.codewhale-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/codewhale-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/codewhale-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "running session row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.codewhale.sessions for CodeWhale session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/router-for-me/CLIProxyAPI",
+    "descriptor_id": "known.cliproxyapi.routes",
+    "run_id": "agentic.cliproxyapi-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cliproxyapi-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cliproxyapi-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "POST route row",
+      "upstream field"
+    ],
+    "transcript": [
+      "selected descriptor known.cliproxyapi.routes for CLIProxyAPI route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alebcay/awesome-shell",
+    "descriptor_id": "known.awesome-shell.sections",
+    "run_id": "agentic.awesome-shell-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-shell-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-shell-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "count row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-shell.sections for awesome-shell section index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
