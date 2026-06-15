@@ -1,0 +1,10 @@
+id = "known.sd.replacements"
+name = "sd replacement list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tmatches","README.md\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

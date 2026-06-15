@@ -1,0 +1,4 @@
+file	matches replacement
+README.md	3 golden
+src/lib.rs	8 parser
+docs/usage.md	2 magic

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "workspace",
+    "value": "state windows"
+  },
+  {
+    "name": "dev",
+    "value": "active 5"
+  },
+  {
+    "name": "chat",
+    "value": "idle 2"
+  },
+  {
+    "name": "media",
+    "value": "visible 1"
+  }
+]

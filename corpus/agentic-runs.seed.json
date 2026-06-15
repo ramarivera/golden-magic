@@ -8638,5 +8638,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/material-shell/material-shell",
+    "descriptor_id": "known.material-shell.workspaces",
+    "run_id": "agentic.material-shell-workspaces.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/material-shell-workspaces/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/material-shell-workspaces/expected.rows.json",
+    "variants": [
+      "workspace header row",
+      "state row",
+      "windows field"
+    ],
+    "transcript": [
+      "selected descriptor known.material-shell.workspaces for material-shell workspace list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jrnl-org/jrnl",
+    "descriptor_id": "known.jrnl.entries",
+    "run_id": "agentic.jrnl-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jrnl-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jrnl-entries/expected.rows.json",
+    "variants": [
+      "date header row",
+      "tags row",
+      "words field"
+    ],
+    "transcript": [
+      "selected descriptor known.jrnl.entries for jrnl entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/julienXX/terminal-notifier",
+    "descriptor_id": "known.terminal-notifier.notifications",
+    "run_id": "agentic.terminal-notifier-notifications.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminal-notifier-notifications/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminal-notifier-notifications/expected.rows.json",
+    "variants": [
+      "title header row",
+      "state row",
+      "group field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminal-notifier.notifications for terminal-notifier notification list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wasm-bindgen/wasm-pack",
+    "descriptor_id": "known.wasm-pack.builds",
+    "run_id": "agentic.wasm-pack-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wasm-pack-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wasm-pack-builds/expected.rows.json",
+    "variants": [
+      "target header row",
+      "state row",
+      "pkg field"
+    ],
+    "transcript": [
+      "selected descriptor known.wasm-pack.builds for wasm-pack build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chmln/sd",
+    "descriptor_id": "known.sd.replacements",
+    "run_id": "agentic.sd-replacements.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sd-replacements/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sd-replacements/expected.rows.json",
+    "variants": [
+      "file header row",
+      "matches row",
+      "replacement field"
+    ],
+    "transcript": [
+      "selected descriptor known.sd.replacements for sd replacement list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

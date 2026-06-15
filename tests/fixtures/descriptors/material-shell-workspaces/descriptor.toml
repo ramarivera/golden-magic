@@ -1,0 +1,10 @@
+id = "known.material-shell.workspaces"
+name = "material-shell workspace list"
+priority = 50
+
+[matches]
+required_substrings = ["workspace\tstate","dev\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

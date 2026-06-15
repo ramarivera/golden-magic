@@ -1,0 +1,4 @@
+title	state group
+Build	shown ci
+Deploy	queued ops
+Alert	shown monitor

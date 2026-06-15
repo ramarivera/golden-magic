@@ -1,0 +1,4 @@
+workspace	state windows
+dev	active 5
+chat	idle 2
+media	visible 1

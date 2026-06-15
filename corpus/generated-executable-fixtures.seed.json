@@ -5518,5 +5518,65 @@
     "negative": "image state size\nalpine ready 8M\n",
     "analysis_notes": "Modeled inkos image output with a generated executable-json parser plugin.",
     "variants": ["image header row", "state row", "size field"]
+  },
+  {
+    "fixture": "material-shell-workspaces",
+    "descriptor_id": "known.material-shell.workspaces",
+    "name": "material-shell workspace list",
+    "repo": "https://github.com/material-shell/material-shell",
+    "required_substrings": ["workspace\tstate", "dev\tactive"],
+    "parser": "tab-pairs",
+    "input": "workspace\tstate windows\ndev\tactive 5\nchat\tidle 2\nmedia\tvisible 1\n",
+    "negative": "workspace state windows\ndev active 5\n",
+    "analysis_notes": "Modeled material-shell workspace output with a generated executable-json parser plugin.",
+    "variants": ["workspace header row", "state row", "windows field"]
+  },
+  {
+    "fixture": "jrnl-entries",
+    "descriptor_id": "known.jrnl.entries",
+    "name": "jrnl entry list",
+    "repo": "https://github.com/jrnl-org/jrnl",
+    "required_substrings": ["date\ttags", "2026-06-15\twork"],
+    "parser": "tab-pairs",
+    "input": "date\ttags words\n2026-06-15\twork 120\n2026-06-14\tpersonal 80\n2026-06-13\tideas 45\n",
+    "negative": "date tags words\n2026-06-15 work 120\n",
+    "analysis_notes": "Modeled jrnl entry output with a generated executable-json parser plugin.",
+    "variants": ["date header row", "tags row", "words field"]
+  },
+  {
+    "fixture": "terminal-notifier-notifications",
+    "descriptor_id": "known.terminal-notifier.notifications",
+    "name": "terminal-notifier notification list",
+    "repo": "https://github.com/julienXX/terminal-notifier",
+    "required_substrings": ["title\tstate", "Build\tshown"],
+    "parser": "tab-pairs",
+    "input": "title\tstate group\nBuild\tshown ci\nDeploy\tqueued ops\nAlert\tshown monitor\n",
+    "negative": "title state group\nBuild shown ci\n",
+    "analysis_notes": "Modeled terminal-notifier notification output with a generated executable-json parser plugin.",
+    "variants": ["title header row", "state row", "group field"]
+  },
+  {
+    "fixture": "wasm-pack-builds",
+    "descriptor_id": "known.wasm-pack.builds",
+    "name": "wasm-pack build list",
+    "repo": "https://github.com/wasm-bindgen/wasm-pack",
+    "required_substrings": ["target\tstate", "web\tfinished"],
+    "parser": "tab-pairs",
+    "input": "target\tstate pkg\nweb\tfinished pkg-web\nnodejs\tbuilding pkg-node\nbundler\tfinished pkg-bundler\n",
+    "negative": "target state pkg\nweb finished pkg-web\n",
+    "analysis_notes": "Modeled wasm-pack build output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "state row", "pkg field"]
+  },
+  {
+    "fixture": "sd-replacements",
+    "descriptor_id": "known.sd.replacements",
+    "name": "sd replacement list",
+    "repo": "https://github.com/chmln/sd",
+    "required_substrings": ["file\tmatches", "README.md\t3"],
+    "parser": "tab-pairs",
+    "input": "file\tmatches replacement\nREADME.md\t3 golden\nsrc/lib.rs\t8 parser\ndocs/usage.md\t2 magic\n",
+    "negative": "file matches replacement\nREADME.md 3 golden\n",
+    "analysis_notes": "Modeled sd replacement output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "matches row", "replacement field"]
   }
 ]

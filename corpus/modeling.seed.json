@@ -3358,5 +3358,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/inkos-images",
     "analysis_notes": "Modeled inkos image output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/material-shell/material-shell",
+    "descriptor_id": "known.material-shell.workspaces",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/material-shell-workspaces",
+    "analysis_notes": "Modeled material-shell workspace output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jrnl-org/jrnl",
+    "descriptor_id": "known.jrnl.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jrnl-entries",
+    "analysis_notes": "Modeled jrnl entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/julienXX/terminal-notifier",
+    "descriptor_id": "known.terminal-notifier.notifications",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminal-notifier-notifications",
+    "analysis_notes": "Modeled terminal-notifier notification output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wasm-bindgen/wasm-pack",
+    "descriptor_id": "known.wasm-pack.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wasm-pack-builds",
+    "analysis_notes": "Modeled wasm-pack build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chmln/sd",
+    "descriptor_id": "known.sd.replacements",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sd-replacements",
+    "analysis_notes": "Modeled sd replacement output with a generated executable-json parser plugin."
   }
 ]
