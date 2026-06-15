@@ -1,0 +1,10 @@
+id = "known.oh-my-pi.plugins"
+name = "oh-my-pi plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tstate","gpio\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

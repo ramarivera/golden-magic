@@ -1,0 +1,18 @@
+[
+  {
+    "name": "plugin",
+    "value": "state pins"
+  },
+  {
+    "name": "gpio",
+    "value": "enabled 12"
+  },
+  {
+    "name": "camera",
+    "value": "disabled 2"
+  },
+  {
+    "name": "wifi",
+    "value": "enabled 1"
+  }
+]

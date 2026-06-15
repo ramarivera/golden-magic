@@ -1,0 +1,2 @@
+container status image
+fedora-dev running fedora:latest

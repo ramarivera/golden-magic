@@ -1,0 +1,10 @@
+id = "known.gping.hosts"
+name = "gping host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tlatency","example.com\t24ms"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

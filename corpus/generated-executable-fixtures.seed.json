@@ -4078,5 +4078,65 @@
     "negative": "title episode source\nCowboy-Bebop 01 gogo\n",
     "analysis_notes": "Modeled ani-cli result output with a generated executable-json parser plugin.",
     "variants": ["title header row", "episode row", "source field"]
+  },
+  {
+    "fixture": "node-inspector-sessions",
+    "descriptor_id": "known.node-inspector.sessions",
+    "name": "node-inspector session list",
+    "repo": "https://github.com/node-inspector/node-inspector",
+    "required_substrings": ["session\tstate", "app.js\tattached"],
+    "parser": "tab-pairs",
+    "input": "session\tstate port\napp.js\tattached 9229\nworker.js\tpaused 9230\nlegacy.js\tdetached 0\n",
+    "negative": "session state port\napp.js attached 9229\n",
+    "analysis_notes": "Modeled node-inspector session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "port field"]
+  },
+  {
+    "fixture": "distrobox-containers",
+    "descriptor_id": "known.distrobox.containers",
+    "name": "distrobox container list",
+    "repo": "https://github.com/89luca89/distrobox",
+    "required_substrings": ["container\tstatus", "fedora-dev\trunning"],
+    "parser": "tab-pairs",
+    "input": "container\tstatus image\nfedora-dev\trunning fedora:latest\nubuntu-tools\tstopped ubuntu:24.04\narch-build\trunning archlinux:latest\n",
+    "negative": "container status image\nfedora-dev running fedora:latest\n",
+    "analysis_notes": "Modeled distrobox container output with a generated executable-json parser plugin.",
+    "variants": ["container header row", "status row", "image field"]
+  },
+  {
+    "fixture": "gping-hosts",
+    "descriptor_id": "known.gping.hosts",
+    "name": "gping host list",
+    "repo": "https://github.com/orf/gping",
+    "required_substrings": ["host\tlatency", "example.com\t24ms"],
+    "parser": "tab-pairs",
+    "input": "host\tlatency loss\nexample.com\t24ms 0%\ngithub.com\t42ms 0%\nrouter.local\t3ms 0%\n",
+    "negative": "host latency loss\nexample.com 24ms 0%\n",
+    "analysis_notes": "Modeled gping host output with a generated executable-json parser plugin.",
+    "variants": ["host header row", "latency row", "loss field"]
+  },
+  {
+    "fixture": "oh-my-pi-plugins",
+    "descriptor_id": "known.oh-my-pi.plugins",
+    "name": "oh-my-pi plugin list",
+    "repo": "https://github.com/can1357/oh-my-pi",
+    "required_substrings": ["plugin\tstate", "gpio\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstate pins\ngpio\tenabled 12\ncamera\tdisabled 2\nwifi\tenabled 1\n",
+    "negative": "plugin state pins\ngpio enabled 12\n",
+    "analysis_notes": "Modeled oh-my-pi plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "state row", "pins field"]
+  },
+  {
+    "fixture": "reddit-video-maker-renders",
+    "descriptor_id": "known.reddit-video-maker.renders",
+    "name": "RedditVideoMakerBot render list",
+    "repo": "https://github.com/elebumm/RedditVideoMakerBot",
+    "required_substrings": ["render\tstate", "askreddit-001\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "render\tstate seconds\naskreddit-001\tcomplete 92\nstories-002\trendering 44\nmemes-003\tqueued 0\n",
+    "negative": "render state seconds\naskreddit-001 complete 92\n",
+    "analysis_notes": "Modeled RedditVideoMakerBot render output with a generated executable-json parser plugin.",
+    "variants": ["render header row", "state row", "seconds field"]
   }
 ]

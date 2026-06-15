@@ -2518,5 +2518,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/ani-cli-results",
     "analysis_notes": "Modeled ani-cli result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/node-inspector/node-inspector",
+    "descriptor_id": "known.node-inspector.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/node-inspector-sessions",
+    "analysis_notes": "Modeled node-inspector session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/89luca89/distrobox",
+    "descriptor_id": "known.distrobox.containers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/distrobox-containers",
+    "analysis_notes": "Modeled distrobox container output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/orf/gping",
+    "descriptor_id": "known.gping.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gping-hosts",
+    "analysis_notes": "Modeled gping host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/can1357/oh-my-pi",
+    "descriptor_id": "known.oh-my-pi.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oh-my-pi-plugins",
+    "analysis_notes": "Modeled oh-my-pi plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/elebumm/RedditVideoMakerBot",
+    "descriptor_id": "known.reddit-video-maker.renders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/reddit-video-maker-renders",
+    "analysis_notes": "Modeled RedditVideoMakerBot render output with a generated executable-json parser plugin."
   }
 ]

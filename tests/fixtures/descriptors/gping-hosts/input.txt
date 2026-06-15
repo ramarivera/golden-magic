@@ -1,0 +1,4 @@
+host	latency loss
+example.com	24ms 0%
+github.com	42ms 0%
+router.local	3ms 0%

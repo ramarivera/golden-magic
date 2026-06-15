@@ -6478,5 +6478,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/node-inspector/node-inspector",
+    "descriptor_id": "known.node-inspector.sessions",
+    "run_id": "agentic.node-inspector-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/node-inspector-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/node-inspector-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.node-inspector.sessions for node-inspector session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/89luca89/distrobox",
+    "descriptor_id": "known.distrobox.containers",
+    "run_id": "agentic.distrobox-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/distrobox-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/distrobox-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "status row",
+      "image field"
+    ],
+    "transcript": [
+      "selected descriptor known.distrobox.containers for distrobox container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/orf/gping",
+    "descriptor_id": "known.gping.hosts",
+    "run_id": "agentic.gping-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gping-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gping-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "latency row",
+      "loss field"
+    ],
+    "transcript": [
+      "selected descriptor known.gping.hosts for gping host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/can1357/oh-my-pi",
+    "descriptor_id": "known.oh-my-pi.plugins",
+    "run_id": "agentic.oh-my-pi-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oh-my-pi-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oh-my-pi-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "state row",
+      "pins field"
+    ],
+    "transcript": [
+      "selected descriptor known.oh-my-pi.plugins for oh-my-pi plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/elebumm/RedditVideoMakerBot",
+    "descriptor_id": "known.reddit-video-maker.renders",
+    "run_id": "agentic.reddit-video-maker-renders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/reddit-video-maker-renders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/reddit-video-maker-renders/expected.rows.json",
+    "variants": [
+      "render header row",
+      "state row",
+      "seconds field"
+    ],
+    "transcript": [
+      "selected descriptor known.reddit-video-maker.renders for RedditVideoMakerBot render list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

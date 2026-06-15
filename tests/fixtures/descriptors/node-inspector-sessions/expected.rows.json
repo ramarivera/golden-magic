@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "state port"
+  },
+  {
+    "name": "app.js",
+    "value": "attached 9229"
+  },
+  {
+    "name": "worker.js",
+    "value": "paused 9230"
+  },
+  {
+    "name": "legacy.js",
+    "value": "detached 0"
+  }
+]

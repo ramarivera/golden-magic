@@ -1,0 +1,10 @@
+id = "known.distrobox.containers"
+name = "distrobox container list"
+priority = 50
+
+[matches]
+required_substrings = ["container\tstatus","fedora-dev\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

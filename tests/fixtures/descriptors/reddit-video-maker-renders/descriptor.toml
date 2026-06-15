@@ -1,0 +1,10 @@
+id = "known.reddit-video-maker.renders"
+name = "RedditVideoMakerBot render list"
+priority = 50
+
+[matches]
+required_substrings = ["render\tstate","askreddit-001\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

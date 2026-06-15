@@ -1,0 +1,2 @@
+plugin state pins
+gpio enabled 12

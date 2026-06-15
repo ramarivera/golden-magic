@@ -1,0 +1,10 @@
+id = "known.node-inspector.sessions"
+name = "node-inspector session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","app.js\tattached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+container	status image
+fedora-dev	running fedora:latest
+ubuntu-tools	stopped ubuntu:24.04
+arch-build	running archlinux:latest
