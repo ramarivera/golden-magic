@@ -44,7 +44,19 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
             language: (.value.language // ""),
             description: (.value.description // ""),
             cli_evidence: (if ((.value.description // "") | length) > 0 then .value.description else .value.fullName end),
-            status: "seed",
+            lifecycle: {
+              found: true,
+              analyzed: false,
+              modeled: false,
+              deterministic_tested: false,
+              agentic_tested: false
+            },
+            status: "found",
+            descriptor_id: null,
+            backend: null,
+            deterministic_cases: 0,
+            agentic_runs: 0,
+            analysis_notes: "",
             source_query: $query,
             source_queries: [$query],
             fetched_at: $fetched_at

@@ -10,10 +10,25 @@ struct CorpusEntry {
     language: String,
     description: String,
     cli_evidence: String,
+    lifecycle: CorpusLifecycle,
     status: String,
+    descriptor_id: Option<String>,
+    backend: Option<String>,
+    deterministic_cases: usize,
+    agentic_runs: usize,
+    analysis_notes: String,
     source_query: String,
     source_queries: Vec<String>,
     fetched_at: String,
+}
+
+#[derive(Debug, Deserialize)]
+struct CorpusLifecycle {
+    found: bool,
+    analyzed: bool,
+    modeled: bool,
+    deterministic_tested: bool,
+    agentic_tested: bool,
 }
 
 fn is_cli_oriented_query(query: &str) -> bool {
@@ -72,12 +87,7 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
             "cli evidence is required for {}",
             entry.repo
         );
-        assert!(
-            matches!(entry.status.as_str(), "seed" | "modeled" | "tested"),
-            "unexpected corpus status for {}: {}",
-            entry.repo,
-            entry.status
-        );
+        assert_lifecycle_is_consistent(entry);
         assert!(
             entry.stars <= previous_stars,
             "corpus must be sorted by descending stars"
@@ -115,6 +125,43 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
 }
 
 #[test]
+fn seed_corpus_lifecycle_counts_are_explicitly_incomplete() {
+    let entries: Vec<CorpusEntry> =
+        serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
+            .expect("seed corpus parses");
+
+    let found = entries.iter().filter(|entry| entry.lifecycle.found).count();
+    let analyzed = entries
+        .iter()
+        .filter(|entry| entry.lifecycle.analyzed)
+        .count();
+    let modeled = entries
+        .iter()
+        .filter(|entry| entry.lifecycle.modeled)
+        .count();
+    let deterministic = entries
+        .iter()
+        .filter(|entry| entry.lifecycle.deterministic_tested)
+        .count();
+    let agentic = entries
+        .iter()
+        .filter(|entry| entry.lifecycle.agentic_tested)
+        .count();
+
+    assert_eq!(found, entries.len(), "every seed entry is at least found");
+    assert_eq!(analyzed, 0, "seed fetch alone must not claim analysis");
+    assert_eq!(modeled, 0, "seed fetch alone must not claim modeling");
+    assert_eq!(
+        deterministic, 0,
+        "seed fetch alone must not claim deterministic tool tests"
+    );
+    assert_eq!(
+        agentic, 0,
+        "seed fetch alone must not claim agentic tool tests"
+    );
+}
+
+#[test]
 fn full_corpus_completion_requires_ten_thousand_entries() {
     let entries: Vec<CorpusEntry> =
         serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
@@ -124,4 +171,92 @@ fn full_corpus_completion_requires_ten_thousand_entries() {
         entries.len() < 10_000,
         "rename this test when corpus/cli-tools.seed.json becomes the full 10k corpus"
     );
+}
+
+fn assert_lifecycle_is_consistent(entry: &CorpusEntry) {
+    assert!(entry.lifecycle.found, "{} must be marked found", entry.repo);
+
+    let expected_status = if entry.lifecycle.agentic_tested {
+        "agentic-tested"
+    } else if entry.lifecycle.deterministic_tested {
+        "deterministic-tested"
+    } else if entry.lifecycle.modeled {
+        "modeled"
+    } else if entry.lifecycle.analyzed {
+        "analyzed"
+    } else {
+        "found"
+    };
+    assert_eq!(
+        entry.status, expected_status,
+        "{} status must match lifecycle",
+        entry.repo
+    );
+
+    assert!(
+        !entry.lifecycle.modeled || entry.lifecycle.analyzed,
+        "{} cannot be modeled before analysis",
+        entry.repo
+    );
+    assert!(
+        !entry.lifecycle.deterministic_tested || entry.lifecycle.modeled,
+        "{} cannot be deterministically tested before modeling",
+        entry.repo
+    );
+    assert!(
+        !entry.lifecycle.agentic_tested || entry.lifecycle.deterministic_tested,
+        "{} cannot be agentic-tested before deterministic tests",
+        entry.repo
+    );
+
+    if entry.lifecycle.modeled {
+        assert!(
+            entry
+                .descriptor_id
+                .as_deref()
+                .is_some_and(|id| !id.is_empty()),
+            "{} modeled entries need descriptor_id",
+            entry.repo
+        );
+        assert!(
+            entry
+                .backend
+                .as_deref()
+                .is_some_and(|backend| !backend.is_empty()),
+            "{} modeled entries need backend",
+            entry.repo
+        );
+    } else {
+        assert!(
+            entry.descriptor_id.is_none(),
+            "{} unmodeled entries must not claim descriptor_id",
+            entry.repo
+        );
+        assert!(
+            entry.backend.is_none(),
+            "{} unmodeled entries must not claim backend",
+            entry.repo
+        );
+    }
+
+    assert_eq!(
+        entry.deterministic_cases > 0,
+        entry.lifecycle.deterministic_tested,
+        "{} deterministic_cases must match deterministic_tested",
+        entry.repo
+    );
+    assert_eq!(
+        entry.agentic_runs > 0,
+        entry.lifecycle.agentic_tested,
+        "{} agentic_runs must match agentic_tested",
+        entry.repo
+    );
+
+    if entry.lifecycle.analyzed {
+        assert!(
+            !entry.analysis_notes.trim().is_empty(),
+            "{} analyzed entries need notes",
+            entry.repo
+        );
+    }
 }

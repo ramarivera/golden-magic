@@ -33,6 +33,37 @@ Override `GOLDEN_MAGIC_CORPUS_QUERIES` to use a different query-partition file.
 Any checked-in seed must preserve `source_query`, `source_queries`, `fetched_at`,
 `stars`, and descending rank order.
 
+Every entry also carries explicit lifecycle state:
+
+```json
+{
+  "lifecycle": {
+    "found": true,
+    "analyzed": false,
+    "modeled": false,
+    "deterministic_tested": false,
+    "agentic_tested": false
+  },
+  "status": "found",
+  "descriptor_id": null,
+  "backend": null,
+  "deterministic_cases": 0,
+  "agentic_runs": 0,
+  "analysis_notes": ""
+}
+```
+
+The only valid forward progression is:
+
+```text
+found -> analyzed -> modeled -> deterministic-tested -> agentic-tested
+```
+
+The manifest tests reject status drift, modeled entries without descriptor and
+backend ids, deterministic claims without case counts, agentic claims without
+run counts, and analyzed entries without notes. The current seed is intentionally
+only `found`; GitHub discovery alone must not claim analysis or modeling.
+
 Run the manifest checks with:
 
 ```bash
