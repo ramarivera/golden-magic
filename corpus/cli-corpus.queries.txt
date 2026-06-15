@@ -26,3 +26,40 @@ topic:command-line language:Python stars:>500
 topic:terminal language:Rust stars:>500
 topic:terminal language:Go stars:>500
 topic:tui language:Rust stars:>500
+topic:cli stars:250..500
+topic:command-line stars:250..500
+topic:terminal stars:250..500
+topic:tui stars:250..500
+topic:shell stars:250..500
+topic:command-line-tool stars:250..500
+topic:cli stars:100..250
+topic:command-line stars:100..250
+topic:terminal stars:100..250
+topic:tui stars:100..250
+topic:shell stars:100..250
+topic:command-line-tool stars:100..250
+topic:cli language:C stars:>100
+topic:cli language:C++ stars:>100
+topic:cli language:Objective-C stars:>100
+topic:cli language:Java stars:>100
+topic:cli language:PHP stars:>100
+topic:cli language:Ruby stars:>100
+topic:cli language:Lua stars:>100
+topic:cli language:Zig stars:>100
+topic:cli language:Haskell stars:>100
+topic:cli language:Elixir stars:>100
+topic:command-line language:Shell stars:>100
+topic:command-line language:JavaScript stars:>100
+topic:command-line language:TypeScript stars:>100
+topic:command-line language:C stars:>100
+topic:command-line language:C++ stars:>100
+topic:command-line language:Objective-C stars:>100
+topic:command-line language:Java stars:>100
+topic:terminal language:Python stars:>100
+topic:terminal language:Shell stars:>100
+topic:terminal language:JavaScript stars:>100
+topic:terminal language:TypeScript stars:>100
+topic:tui language:Go stars:>100
+topic:tui language:Python stars:>100
+topic:tui language:JavaScript stars:>100
+topic:tui language:TypeScript stars:>100

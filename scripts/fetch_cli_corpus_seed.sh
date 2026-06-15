@@ -32,8 +32,8 @@ fi
 
 query_count=0
 while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
-  query="${raw_query%%#*}"
-  query="${query#"${query%%[![:space:]]*}"}"
+  query="${raw_query#"${raw_query%%[![:space:]]*}"}"
+  [[ "$query" == \#* ]] && continue
   query="${query%"${query##*[![:space:]]}"}"
   [[ -z "$query" ]] && continue
 
