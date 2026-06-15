@@ -57,7 +57,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 
 ## Deferred Criteria
 
-- Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/EXTENSIONS.md` explicitly rejects native runtime loading until a separate security and portability review; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
+- Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/NATIVE-RUNTIME-REVIEW.md` explicitly rejects native runtime loading until separate approval plus ABI, security, portability, and test gates are satisfied; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
 - Tree-sitter backend is not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding the runtime and generated grammar package.
 - Native runtime extension SDK is not implemented. The current SDK is descriptor-pack authoring, validation, schema, examples, and fixture guidance.
 

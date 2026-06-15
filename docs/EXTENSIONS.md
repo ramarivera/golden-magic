@@ -72,7 +72,7 @@ WASM is not implemented yet. It is the preferred executable-plugin research dire
 
 Native runtime loading means loading `.so`, `.dylib`, or `.dll` code into the Golden Magic process with APIs such as `dlopen`, `LoadLibrary`, or Rust wrappers around them.
 
-This is forbidden until a separate security and portability review answers:
+This is forbidden until the security and portability gates in [`docs/NATIVE-RUNTIME-REVIEW.md`](NATIVE-RUNTIME-REVIEW.md) are satisfied. In short, any native-loading design must answer:
 
 - What is the trust model for plugin authors and plugin distribution?
 - How are ABI and Rust compiler/version compatibility handled?
@@ -83,7 +83,7 @@ This is forbidden until a separate security and portability review answers:
 - How are plugins pinned, signed, hashed, or otherwise verified?
 - How does a user audit which native code will run?
 
-Until those answers exist, native loading is not a Golden Magic feature.
+Until those answers exist in implemented, tested form, native loading is not a Golden Magic feature.
 
 ## Implementation Implications
 
@@ -100,4 +100,4 @@ Until those answers exist, native loading is not a Golden Magic feature.
 - Descriptor-driven Nix manifests: implemented and live-verified through `nixos/nix:latest`; host runs still require Nix on `PATH`.
 - Subprocess extensions: designed here, not implemented.
 - WASM/WASI extensions: design direction only, not implemented.
-- Native runtime loading: explicitly not implemented.
+- Native runtime loading: explicitly rejected by [`docs/NATIVE-RUNTIME-REVIEW.md`](NATIVE-RUNTIME-REVIEW.md) until separate approval and acceptance gates are satisfied.

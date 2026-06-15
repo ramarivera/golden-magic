@@ -30,7 +30,7 @@ This audit validates the previously claimed completion list against current repo
 | Known-tool descriptor corpus | `tests/fixtures/descriptors/*` contains representative descriptor packs; `docs/KNOWN-TOOLS.md`; descriptor fixture tests passed. |
 | Extension-author SDK for descriptor packs | `docs/SDK.md`, `schemas/descriptor.schema.json`, `examples/descriptors/simple-pipes/*`, `--validate-descriptor-dir`; CLI tests and manual validation passed. |
 | Prior-art research artifact | `docs/PRIOR-ART.md` and `docs/PARSER-BACKENDS.md` cover Nushell, descriptors, tree-sitter, dynamic native loading, subprocesses, WASM/WASI, and the chosen parser-backend boundary. |
-| Safe native runtime extension stance | `docs/EXTENSIONS.md` explicitly rejects arbitrary native runtime loading until separate review. |
+| Safe native runtime extension stance | `docs/EXTENSIONS.md` and `docs/NATIVE-RUNTIME-REVIEW.md` explicitly reject arbitrary native runtime loading until separate approval, ABI, security, portability, and test gates are satisfied. |
 | Docs, OpenSpec, beads, AGENTS/CLAUDE setup | `docs/*`, `openspec/golden-magic-core.md`, `.beads/issues.jsonl`, `AGENTS.md`, `CLAUDE.md` exist. |
 | Public GitHub repo metadata | `git remote -v` points to `git@github.com:ramarivera/golden-magic.git`; `Cargo.toml` contains repository/homepage metadata. |
 | crates.io metadata fixed | `Cargo.toml` contains description, license, repository, homepage, readme, keywords, and categories. |
@@ -39,7 +39,7 @@ This audit validates the previously claimed completion list against current repo
 
 | Claim | Status |
 | --- | --- |
-| Arbitrary Rust runtime extension/plugin loading | Not implemented by design. Current docs reject it until separate security and portability review. |
+| Arbitrary Rust runtime extension/plugin loading | Not implemented by design. `docs/NATIVE-RUNTIME-REVIEW.md` rejects it until explicit approval and concrete ABI/security/portability/test gates are satisfied. |
 | Tree-sitter backend | Not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding tree-sitter runtime and grammar packages. |
 
 ## Weak Or Qualified Evidence
@@ -55,3 +55,4 @@ This audit validates the previously claimed completion list against current repo
 - Criterion regression was investigated and recorded in [`docs/PERFORMANCE.md`](PERFORMANCE.md). No baseline was updated.
 - Descriptor parser backends now have explicit validation, `--list-backends` discovery, and core `ParseOptions` backend selection. `heuristic` and `sections` are implemented; `tree-sitter` remains a planned candidate and fails validation until implemented.
 - Descriptor-driven Nix manifest fixtures were verified in a disposable `nixos/nix:latest` container with the repository mounted read-only and Cargo outputs redirected to `/tmp`.
+- Native runtime loading now has a formal security and portability review artifact in [`docs/NATIVE-RUNTIME-REVIEW.md`](NATIVE-RUNTIME-REVIEW.md); the feature remains rejected until those gates are met.
