@@ -1,0 +1,10 @@
+id = "known.rtk.gains"
+name = "rtk gain summary"
+priority = 50
+
+[matches]
+required_substrings = ["metric:","tokens_saved:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

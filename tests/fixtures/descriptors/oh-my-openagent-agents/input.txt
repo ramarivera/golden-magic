@@ -1,0 +1,4 @@
+agent	status source
+planner	installed registry
+coder	installed registry
+researcher	available registry

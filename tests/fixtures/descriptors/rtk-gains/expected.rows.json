@@ -1,0 +1,18 @@
+[
+  {
+    "key": "metric",
+    "value": "command-output"
+  },
+  {
+    "key": "raw_tokens",
+    "value": "12000"
+  },
+  {
+    "key": "tokens_saved",
+    "value": "8400"
+  },
+  {
+    "key": "ratio",
+    "value": "0.70"
+  }
+]

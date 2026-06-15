@@ -1,0 +1,10 @@
+id = "known.pi.workflows"
+name = "Pi workflow list"
+priority = 50
+
+[matches]
+required_substrings = ["workflow\tstate","agent\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

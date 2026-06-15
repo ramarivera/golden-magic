@@ -1198,5 +1198,65 @@
     "negative": "family patched glyphs\nFiraCode true 12000\n",
     "analysis_notes": "Modeled Nerd Fonts family list output with a generated executable-json parser plugin.",
     "variants": ["family header row", "patched family row", "glyph count field"]
+  },
+  {
+    "fixture": "cline-tasks",
+    "descriptor_id": "known.cline.tasks",
+    "name": "Cline task list",
+    "repo": "https://github.com/cline/cline",
+    "required_substrings": ["task\tstatus", "implement\tactive"],
+    "parser": "tab-pairs",
+    "input": "task\tstatus provider\nimplement\tactive anthropic\nreview\tqueued openai\nsummarize\tdone local\n",
+    "negative": "task status provider\nimplement active anthropic\n",
+    "analysis_notes": "Modeled Cline task list output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "active task row", "provider field"]
+  },
+  {
+    "fixture": "tldr-pages-index",
+    "descriptor_id": "known.tldr.pages",
+    "name": "tldr page index",
+    "repo": "https://github.com/tldr-pages/tldr",
+    "required_substrings": ["page\tplatform", "tar\tcommon"],
+    "parser": "tab-pairs",
+    "input": "page\tplatform examples\ntar\tcommon 12\ngit\tcommon 42\nbrew\tosx 18\n",
+    "negative": "page platform examples\ntar common 12\n",
+    "analysis_notes": "Modeled tldr page index output with a generated executable-json parser plugin.",
+    "variants": ["page header row", "common page row", "example count field"]
+  },
+  {
+    "fixture": "pi-workflows",
+    "descriptor_id": "known.pi.workflows",
+    "name": "Pi workflow list",
+    "repo": "https://github.com/earendil-works/pi",
+    "required_substrings": ["workflow\tstate", "agent\tready"],
+    "parser": "tab-pairs",
+    "input": "workflow\tstate runtime\nagent\tready node\nstudio\trunning electron\nsync\tidle worker\n",
+    "negative": "workflow state runtime\nagent ready node\n",
+    "analysis_notes": "Modeled Pi workflow list output with a generated executable-json parser plugin.",
+    "variants": ["workflow header row", "ready workflow row", "runtime field"]
+  },
+  {
+    "fixture": "rtk-gains",
+    "descriptor_id": "known.rtk.gains",
+    "name": "rtk gain summary",
+    "repo": "https://github.com/rtk-ai/rtk",
+    "required_substrings": ["metric:", "tokens_saved:"],
+    "parser": "colon-kv",
+    "input": "metric: command-output\nraw_tokens: 12000\ntokens_saved: 8400\nratio: 0.70\n",
+    "negative": "metric command-output\ntokens_saved 8400\n",
+    "analysis_notes": "Modeled rtk gain summary output with a generated executable-json parser plugin.",
+    "variants": ["metric row", "tokens saved row", "ratio row"]
+  },
+  {
+    "fixture": "oh-my-openagent-agents",
+    "descriptor_id": "known.oh-my-openagent.agents",
+    "name": "oh-my-openagent agent list",
+    "repo": "https://github.com/code-yeongyu/oh-my-openagent",
+    "required_substrings": ["agent\tstatus", "planner\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "agent\tstatus source\nplanner\tinstalled registry\ncoder\tinstalled registry\nresearcher\tavailable registry\n",
+    "negative": "agent status source\nplanner installed registry\n",
+    "analysis_notes": "Modeled oh-my-openagent agent list output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "installed agent row", "source field"]
   }
 ]

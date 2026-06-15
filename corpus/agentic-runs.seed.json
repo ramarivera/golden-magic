@@ -2158,5 +2158,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/cline/cline",
+    "descriptor_id": "known.cline.tasks",
+    "run_id": "agentic.cline-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cline-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cline-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "active task row",
+      "provider field"
+    ],
+    "transcript": [
+      "selected descriptor known.cline.tasks for Cline task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tldr-pages/tldr",
+    "descriptor_id": "known.tldr.pages",
+    "run_id": "agentic.tldr-pages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tldr-pages-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tldr-pages-index/expected.rows.json",
+    "variants": [
+      "page header row",
+      "common page row",
+      "example count field"
+    ],
+    "transcript": [
+      "selected descriptor known.tldr.pages for tldr page index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/earendil-works/pi",
+    "descriptor_id": "known.pi.workflows",
+    "run_id": "agentic.pi-workflows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pi-workflows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pi-workflows/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "ready workflow row",
+      "runtime field"
+    ],
+    "transcript": [
+      "selected descriptor known.pi.workflows for Pi workflow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rtk-ai/rtk",
+    "descriptor_id": "known.rtk.gains",
+    "run_id": "agentic.rtk-gains.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rtk-gains/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rtk-gains/expected.rows.json",
+    "variants": [
+      "metric row",
+      "tokens saved row",
+      "ratio row"
+    ],
+    "transcript": [
+      "selected descriptor known.rtk.gains for rtk gain summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/code-yeongyu/oh-my-openagent",
+    "descriptor_id": "known.oh-my-openagent.agents",
+    "run_id": "agentic.oh-my-openagent-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oh-my-openagent-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oh-my-openagent-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "installed agent row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.oh-my-openagent.agents for oh-my-openagent agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

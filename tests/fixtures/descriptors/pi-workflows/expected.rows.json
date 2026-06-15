@@ -1,0 +1,18 @@
+[
+  {
+    "name": "workflow",
+    "value": "state runtime"
+  },
+  {
+    "name": "agent",
+    "value": "ready node"
+  },
+  {
+    "name": "studio",
+    "value": "running electron"
+  },
+  {
+    "name": "sync",
+    "value": "idle worker"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "agent",
+    "value": "status source"
+  },
+  {
+    "name": "planner",
+    "value": "installed registry"
+  },
+  {
+    "name": "coder",
+    "value": "installed registry"
+  },
+  {
+    "name": "researcher",
+    "value": "available registry"
+  }
+]

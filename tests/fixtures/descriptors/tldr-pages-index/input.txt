@@ -1,0 +1,4 @@
+page	platform examples
+tar	common 12
+git	common 42
+brew	osx 18

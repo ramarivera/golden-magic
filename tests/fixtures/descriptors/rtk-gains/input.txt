@@ -1,0 +1,4 @@
+metric: command-output
+raw_tokens: 12000
+tokens_saved: 8400
+ratio: 0.70

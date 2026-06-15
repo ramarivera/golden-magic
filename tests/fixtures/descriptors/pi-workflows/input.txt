@@ -1,0 +1,4 @@
+workflow	state runtime
+agent	ready node
+studio	running electron
+sync	idle worker
