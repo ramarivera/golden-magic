@@ -1,0 +1,4 @@
+command	state file
+docker	loaded _docker
+kubectl	loaded _kubectl
+mise	available _mise

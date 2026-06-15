@@ -1,0 +1,18 @@
+[
+  {
+    "name": "effect",
+    "value": "state frames"
+  },
+  {
+    "name": "decrypt",
+    "value": "ready 42"
+  },
+  {
+    "name": "sneakers",
+    "value": "ready 60"
+  },
+  {
+    "name": "matrix",
+    "value": "queued 80"
+  }
+]

@@ -1,0 +1,4 @@
+agent	state backend
+alpha	active claude
+bravo	idle codex
+charlie	active opencode

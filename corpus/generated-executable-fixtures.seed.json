@@ -5098,5 +5098,65 @@
     "negative": "method status endpoint\nGET 200 /health\n",
     "analysis_notes": "Modeled xh request output with a generated executable-json parser plugin.",
     "variants": ["method header row", "status row", "endpoint field"]
+  },
+  {
+    "fixture": "clack-prompts",
+    "descriptor_id": "known.clack.prompts",
+    "name": "clack prompt list",
+    "repo": "https://github.com/bombshell-dev/clack",
+    "required_substrings": ["prompt\tstate", "intro\tready"],
+    "parser": "tab-pairs",
+    "input": "prompt\tstate kind\nintro\tready text\nselect\tready choice\nconfirm\tready boolean\n",
+    "negative": "prompt state kind\nintro ready text\n",
+    "analysis_notes": "Modeled clack prompt output with a generated executable-json parser plugin.",
+    "variants": ["prompt header row", "state row", "kind field"]
+  },
+  {
+    "fixture": "claude-squad-agents",
+    "descriptor_id": "known.claude-squad.agents",
+    "name": "claude-squad agent list",
+    "repo": "https://github.com/smtg-ai/claude-squad",
+    "required_substrings": ["agent\tstate", "alpha\tactive"],
+    "parser": "tab-pairs",
+    "input": "agent\tstate backend\nalpha\tactive claude\nbravo\tidle codex\ncharlie\tactive opencode\n",
+    "negative": "agent state backend\nalpha active claude\n",
+    "analysis_notes": "Modeled claude-squad agent output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "state row", "backend field"]
+  },
+  {
+    "fixture": "zsh-completions-definitions",
+    "descriptor_id": "known.zsh-completions.definitions",
+    "name": "zsh-completions definition list",
+    "repo": "https://github.com/zsh-users/zsh-completions",
+    "required_substrings": ["command\tstate", "docker\tloaded"],
+    "parser": "tab-pairs",
+    "input": "command\tstate file\ndocker\tloaded _docker\nkubectl\tloaded _kubectl\nmise\tavailable _mise\n",
+    "negative": "command state file\ndocker loaded _docker\n",
+    "analysis_notes": "Modeled zsh-completions definition output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "state row", "file field"]
+  },
+  {
+    "fixture": "no-more-secrets-effects",
+    "descriptor_id": "known.no-more-secrets.effects",
+    "name": "no-more-secrets effect list",
+    "repo": "https://github.com/bartobri/no-more-secrets",
+    "required_substrings": ["effect\tstate", "decrypt\tready"],
+    "parser": "tab-pairs",
+    "input": "effect\tstate frames\ndecrypt\tready 42\nsneakers\tready 60\nmatrix\tqueued 80\n",
+    "negative": "effect state frames\ndecrypt ready 42\n",
+    "analysis_notes": "Modeled no-more-secrets effect output with a generated executable-json parser plugin.",
+    "variants": ["effect header row", "state row", "frames field"]
+  },
+  {
+    "fixture": "concurrently-commands",
+    "descriptor_id": "known.concurrently.commands",
+    "name": "concurrently command list",
+    "repo": "https://github.com/open-cli-tools/concurrently",
+    "required_substrings": ["command\tstate", "web\trunning"],
+    "parser": "tab-pairs",
+    "input": "command\tstate pid\nweb\trunning 1201\ncss\trunning 1202\ntest\texited 0\n",
+    "negative": "command state pid\nweb running 1201\n",
+    "analysis_notes": "Modeled concurrently command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "state row", "pid field"]
   }
 ]

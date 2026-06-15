@@ -8008,5 +8008,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/bombshell-dev/clack",
+    "descriptor_id": "known.clack.prompts",
+    "run_id": "agentic.clack-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clack-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clack-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "state row",
+      "kind field"
+    ],
+    "transcript": [
+      "selected descriptor known.clack.prompts for clack prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/smtg-ai/claude-squad",
+    "descriptor_id": "known.claude-squad.agents",
+    "run_id": "agentic.claude-squad-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-squad-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-squad-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "state row",
+      "backend field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-squad.agents for claude-squad agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zsh-users/zsh-completions",
+    "descriptor_id": "known.zsh-completions.definitions",
+    "run_id": "agentic.zsh-completions-definitions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zsh-completions-definitions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zsh-completions-definitions/expected.rows.json",
+    "variants": [
+      "command header row",
+      "state row",
+      "file field"
+    ],
+    "transcript": [
+      "selected descriptor known.zsh-completions.definitions for zsh-completions definition list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bartobri/no-more-secrets",
+    "descriptor_id": "known.no-more-secrets.effects",
+    "run_id": "agentic.no-more-secrets-effects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/no-more-secrets-effects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/no-more-secrets-effects/expected.rows.json",
+    "variants": [
+      "effect header row",
+      "state row",
+      "frames field"
+    ],
+    "transcript": [
+      "selected descriptor known.no-more-secrets.effects for no-more-secrets effect list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-cli-tools/concurrently",
+    "descriptor_id": "known.concurrently.commands",
+    "run_id": "agentic.concurrently-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/concurrently-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/concurrently-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "state row",
+      "pid field"
+    ],
+    "transcript": [
+      "selected descriptor known.concurrently.commands for concurrently command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

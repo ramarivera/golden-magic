@@ -1,0 +1,4 @@
+command	state pid
+web	running 1201
+css	running 1202
+test	exited 0

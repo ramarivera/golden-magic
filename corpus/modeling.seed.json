@@ -3113,5 +3113,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/xh-requests",
     "analysis_notes": "Modeled xh request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bombshell-dev/clack",
+    "descriptor_id": "known.clack.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clack-prompts",
+    "analysis_notes": "Modeled clack prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/smtg-ai/claude-squad",
+    "descriptor_id": "known.claude-squad.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-squad-agents",
+    "analysis_notes": "Modeled claude-squad agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zsh-users/zsh-completions",
+    "descriptor_id": "known.zsh-completions.definitions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zsh-completions-definitions",
+    "analysis_notes": "Modeled zsh-completions definition output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bartobri/no-more-secrets",
+    "descriptor_id": "known.no-more-secrets.effects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/no-more-secrets-effects",
+    "analysis_notes": "Modeled no-more-secrets effect output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/open-cli-tools/concurrently",
+    "descriptor_id": "known.concurrently.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/concurrently-commands",
+    "analysis_notes": "Modeled concurrently command output with a generated executable-json parser plugin."
   }
 ]

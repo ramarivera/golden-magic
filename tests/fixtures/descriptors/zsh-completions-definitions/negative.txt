@@ -1,0 +1,2 @@
+command state file
+docker loaded _docker

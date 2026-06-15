@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "state file"
+  },
+  {
+    "name": "docker",
+    "value": "loaded _docker"
+  },
+  {
+    "name": "kubectl",
+    "value": "loaded _kubectl"
+  },
+  {
+    "name": "mise",
+    "value": "available _mise"
+  }
+]

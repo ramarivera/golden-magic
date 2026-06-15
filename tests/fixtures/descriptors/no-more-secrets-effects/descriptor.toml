@@ -1,0 +1,10 @@
+id = "known.no-more-secrets.effects"
+name = "no-more-secrets effect list"
+priority = 50
+
+[matches]
+required_substrings = ["effect\tstate","decrypt\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

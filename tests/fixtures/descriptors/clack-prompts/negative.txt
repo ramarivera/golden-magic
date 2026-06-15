@@ -1,0 +1,2 @@
+prompt state kind
+intro ready text
