@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tool",
+    "value": "status scope"
+  },
+  {
+    "name": "edit_file",
+    "value": "enabled workspace"
+  },
+  {
+    "name": "run_command",
+    "value": "enabled shell"
+  },
+  {
+    "name": "web_search",
+    "value": "disabled network"
+  }
+]

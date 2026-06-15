@@ -1,0 +1,2 @@
+widget style status
+table bordered stable

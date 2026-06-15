@@ -1,0 +1,2 @@
+style color width
+title #ff79c6 40

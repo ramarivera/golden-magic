@@ -1,0 +1,10 @@
+id = "known.claude-engineer.tools"
+name = "Claude Engineer tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tstatus","edit_file\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

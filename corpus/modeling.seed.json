@@ -2693,5 +2693,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/shiori-bookmarks",
     "analysis_notes": "Modeled Shiori bookmark output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spectreconsole/spectre.console",
+    "descriptor_id": "known.spectre-console.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spectre-console-widgets",
+    "analysis_notes": "Modeled Spectre.Console widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PipedreamHQ/pipedream",
+    "descriptor_id": "known.pipedream.workflows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pipedream-workflows",
+    "analysis_notes": "Modeled Pipedream workflow output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/charmbracelet/lipgloss",
+    "descriptor_id": "known.lipgloss.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lipgloss-styles",
+    "analysis_notes": "Modeled Lip Gloss style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/oh-my-fish/oh-my-fish",
+    "descriptor_id": "known.oh-my-fish.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oh-my-fish-packages",
+    "analysis_notes": "Modeled Oh My Fish package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Doriandarko/claude-engineer",
+    "descriptor_id": "known.claude-engineer.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-engineer-tools",
+    "analysis_notes": "Modeled Claude Engineer tool output with a generated executable-json parser plugin."
   }
 ]

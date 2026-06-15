@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "style status"
+  },
+  {
+    "name": "table",
+    "value": "bordered stable"
+  },
+  {
+    "name": "progress",
+    "value": "animated stable"
+  },
+  {
+    "name": "prompt",
+    "value": "interactive beta"
+  }
+]

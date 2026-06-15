@@ -1,0 +1,2 @@
+tool status scope
+edit_file enabled workspace

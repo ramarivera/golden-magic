@@ -4378,5 +4378,65 @@
     "negative": "bookmark tags status\ndocs cli saved\n",
     "analysis_notes": "Modeled Shiori bookmark output with a generated executable-json parser plugin.",
     "variants": ["bookmark header row", "tags row", "status field"]
+  },
+  {
+    "fixture": "spectre-console-widgets",
+    "descriptor_id": "known.spectre-console.widgets",
+    "name": "Spectre.Console widget list",
+    "repo": "https://github.com/spectreconsole/spectre.console",
+    "required_substrings": ["widget\tstyle", "table\tbordered"],
+    "parser": "tab-pairs",
+    "input": "widget\tstyle status\ntable\tbordered stable\nprogress\tanimated stable\nprompt\tinteractive beta\n",
+    "negative": "widget style status\ntable bordered stable\n",
+    "analysis_notes": "Modeled Spectre.Console widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "style row", "status field"]
+  },
+  {
+    "fixture": "pipedream-workflows",
+    "descriptor_id": "known.pipedream.workflows",
+    "name": "Pipedream workflow list",
+    "repo": "https://github.com/PipedreamHQ/pipedream",
+    "required_substrings": ["workflow\tstate", "github-sync\tdeployed"],
+    "parser": "tab-pairs",
+    "input": "workflow\tstate trigger\ngithub-sync\tdeployed webhook\nslack-alert\tpaused schedule\nstripe-ingest\tdeployed http\n",
+    "negative": "workflow state trigger\ngithub-sync deployed webhook\n",
+    "analysis_notes": "Modeled Pipedream workflow output with a generated executable-json parser plugin.",
+    "variants": ["workflow header row", "state row", "trigger field"]
+  },
+  {
+    "fixture": "lipgloss-styles",
+    "descriptor_id": "known.lipgloss.styles",
+    "name": "Lip Gloss style list",
+    "repo": "https://github.com/charmbracelet/lipgloss",
+    "required_substrings": ["style\tcolor", "title\t#ff79c6"],
+    "parser": "tab-pairs",
+    "input": "style\tcolor width\ntitle\t#ff79c6 40\nbody\t#f8f8f2 80\nmuted\t#6272a4 60\n",
+    "negative": "style color width\ntitle #ff79c6 40\n",
+    "analysis_notes": "Modeled Lip Gloss style output with a generated executable-json parser plugin.",
+    "variants": ["style header row", "color row", "width field"]
+  },
+  {
+    "fixture": "oh-my-fish-packages",
+    "descriptor_id": "known.oh-my-fish.packages",
+    "name": "Oh My Fish package list",
+    "repo": "https://github.com/oh-my-fish/oh-my-fish",
+    "required_substrings": ["package\tstate", "bobthefish\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "package\tstate version\nbobthefish\tinstalled 2.15.0\nforeign-env\tinstalled 1.6.0\nz\tavailable 1.0.0\n",
+    "negative": "package state version\nbobthefish installed 2.15.0\n",
+    "analysis_notes": "Modeled Oh My Fish package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "state row", "version field"]
+  },
+  {
+    "fixture": "claude-engineer-tools",
+    "descriptor_id": "known.claude-engineer.tools",
+    "name": "Claude Engineer tool list",
+    "repo": "https://github.com/Doriandarko/claude-engineer",
+    "required_substrings": ["tool\tstatus", "edit_file\tenabled"],
+    "parser": "tab-pairs",
+    "input": "tool\tstatus scope\nedit_file\tenabled workspace\nrun_command\tenabled shell\nweb_search\tdisabled network\n",
+    "negative": "tool status scope\nedit_file enabled workspace\n",
+    "analysis_notes": "Modeled Claude Engineer tool output with a generated executable-json parser plugin.",
+    "variants": ["tool header row", "status row", "scope field"]
   }
 ]

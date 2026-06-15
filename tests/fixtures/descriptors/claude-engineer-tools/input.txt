@@ -1,0 +1,4 @@
+tool	status scope
+edit_file	enabled workspace
+run_command	enabled shell
+web_search	disabled network

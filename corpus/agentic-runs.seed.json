@@ -6928,5 +6928,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/spectreconsole/spectre.console",
+    "descriptor_id": "known.spectre-console.widgets",
+    "run_id": "agentic.spectre-console-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spectre-console-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spectre-console-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "style row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.spectre-console.widgets for Spectre.Console widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PipedreamHQ/pipedream",
+    "descriptor_id": "known.pipedream.workflows",
+    "run_id": "agentic.pipedream-workflows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pipedream-workflows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pipedream-workflows/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "state row",
+      "trigger field"
+    ],
+    "transcript": [
+      "selected descriptor known.pipedream.workflows for Pipedream workflow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/lipgloss",
+    "descriptor_id": "known.lipgloss.styles",
+    "run_id": "agentic.lipgloss-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lipgloss-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lipgloss-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "color row",
+      "width field"
+    ],
+    "transcript": [
+      "selected descriptor known.lipgloss.styles for Lip Gloss style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/oh-my-fish/oh-my-fish",
+    "descriptor_id": "known.oh-my-fish.packages",
+    "run_id": "agentic.oh-my-fish-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oh-my-fish-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oh-my-fish-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "state row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.oh-my-fish.packages for Oh My Fish package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Doriandarko/claude-engineer",
+    "descriptor_id": "known.claude-engineer.tools",
+    "run_id": "agentic.claude-engineer-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-engineer-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-engineer-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "status row",
+      "scope field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-engineer.tools for Claude Engineer tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

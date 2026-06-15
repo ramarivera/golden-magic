@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "state version"
+  },
+  {
+    "name": "bobthefish",
+    "value": "installed 2.15.0"
+  },
+  {
+    "name": "foreign-env",
+    "value": "installed 1.6.0"
+  },
+  {
+    "name": "z",
+    "value": "available 1.0.0"
+  }
+]

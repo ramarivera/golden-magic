@@ -1,0 +1,10 @@
+id = "known.lipgloss.styles"
+name = "Lip Gloss style list"
+priority = 50
+
+[matches]
+required_substrings = ["style\tcolor","title\t#ff79c6"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

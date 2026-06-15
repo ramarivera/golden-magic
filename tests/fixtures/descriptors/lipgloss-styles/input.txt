@@ -1,0 +1,4 @@
+style	color width
+title	#ff79c6 40
+body	#f8f8f2 80
+muted	#6272a4 60

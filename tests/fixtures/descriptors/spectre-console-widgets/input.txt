@@ -1,0 +1,4 @@
+widget	style status
+table	bordered stable
+progress	animated stable
+prompt	interactive beta

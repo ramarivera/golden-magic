@@ -1,0 +1,4 @@
+package	state version
+bobthefish	installed 2.15.0
+foreign-env	installed 1.6.0
+z	available 1.0.0

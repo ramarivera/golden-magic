@@ -1,0 +1,10 @@
+id = "known.oh-my-fish.packages"
+name = "Oh My Fish package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstate","bobthefish\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
