@@ -1,0 +1,4 @@
+provider	status model
+openrouter	active claude
+proxy	active sonnet
+local	inactive mock

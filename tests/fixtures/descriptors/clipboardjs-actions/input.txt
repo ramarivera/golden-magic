@@ -1,0 +1,4 @@
+action	selector target
+copy	.copy-btn #snippet
+cut	.cut-btn #field
+copy	.icon-btn data-clipboard-text

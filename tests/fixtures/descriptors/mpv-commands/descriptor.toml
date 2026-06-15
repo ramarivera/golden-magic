@@ -1,0 +1,10 @@
+id = "known.mpv.commands"
+name = "mpv command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\targ","loadfile\tpath"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

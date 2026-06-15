@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "arg mode"
+  },
+  {
+    "name": "loadfile",
+    "value": "path replace"
+  },
+  {
+    "name": "seek",
+    "value": "seconds relative"
+  },
+  {
+    "name": "screenshot",
+    "value": "flags single"
+  }
+]

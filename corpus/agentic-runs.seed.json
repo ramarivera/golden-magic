@@ -3058,5 +3058,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/kepano/obsidian-skills",
+    "descriptor_id": "known.obsidian-skills.index",
+    "run_id": "agentic.obsidian-skills-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/obsidian-skills-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/obsidian-skills-index/expected.rows.json",
+    "variants": [
+      "skill header row",
+      "notes skill row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.obsidian-skills.index for obsidian-skills skill index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mpv-player/mpv",
+    "descriptor_id": "known.mpv.commands",
+    "run_id": "agentic.mpv-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mpv-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mpv-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "loadfile command row",
+      "mode field"
+    ],
+    "transcript": [
+      "selected descriptor known.mpv.commands for mpv command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "descriptor_id": "known.pdfmathtranslate.jobs",
+    "run_id": "agentic.pdfmathtranslate-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pdfmathtranslate-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pdfmathtranslate-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "translated job row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.pdfmathtranslate.jobs for PDFMathTranslate job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Alishahryar1/free-claude-code",
+    "descriptor_id": "known.free-claude-code.providers",
+    "run_id": "agentic.free-claude-code-providers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/free-claude-code-providers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/free-claude-code-providers/expected.rows.json",
+    "variants": [
+      "provider header row",
+      "active provider row",
+      "model field"
+    ],
+    "transcript": [
+      "selected descriptor known.free-claude-code.providers for free-claude-code provider list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zenorocha/clipboard.js",
+    "descriptor_id": "known.clipboardjs.actions",
+    "run_id": "agentic.clipboardjs-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clipboardjs-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clipboardjs-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "copy action row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.clipboardjs.actions for clipboard.js action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

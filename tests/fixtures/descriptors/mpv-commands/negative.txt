@@ -1,0 +1,2 @@
+command arg mode
+loadfile path replace

@@ -1,0 +1,4 @@
+skill	category status
+summarize	notes ready
+link-audit	vault ready
+capture	inbox ready

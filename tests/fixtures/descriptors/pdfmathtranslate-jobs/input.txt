@@ -1,0 +1,4 @@
+job	status language
+paper.pdf	translated en
+slides.pdf	queued es
+report.pdf	failed fr

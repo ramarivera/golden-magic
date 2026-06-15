@@ -1,0 +1,10 @@
+id = "known.obsidian-skills.index"
+name = "obsidian-skills skill index"
+priority = 50
+
+[matches]
+required_substrings = ["skill\tcategory","summarize\tnotes"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

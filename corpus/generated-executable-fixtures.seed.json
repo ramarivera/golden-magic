@@ -1798,5 +1798,65 @@
     "negative": "strategy enabled source\nhistory true shell\n",
     "analysis_notes": "Modeled zsh-autosuggestions strategy output with a generated executable-json parser plugin.",
     "variants": ["strategy header row", "enabled strategy row", "source field"]
+  },
+  {
+    "fixture": "obsidian-skills-index",
+    "descriptor_id": "known.obsidian-skills.index",
+    "name": "obsidian-skills skill index",
+    "repo": "https://github.com/kepano/obsidian-skills",
+    "required_substrings": ["skill\tcategory", "summarize\tnotes"],
+    "parser": "tab-pairs",
+    "input": "skill\tcategory status\nsummarize\tnotes ready\nlink-audit\tvault ready\ncapture\tinbox ready\n",
+    "negative": "skill category status\nsummarize notes ready\n",
+    "analysis_notes": "Modeled obsidian-skills catalog output with a generated executable-json parser plugin.",
+    "variants": ["skill header row", "notes skill row", "status field"]
+  },
+  {
+    "fixture": "mpv-commands",
+    "descriptor_id": "known.mpv.commands",
+    "name": "mpv command list",
+    "repo": "https://github.com/mpv-player/mpv",
+    "required_substrings": ["command\targ", "loadfile\tpath"],
+    "parser": "tab-pairs",
+    "input": "command\targ mode\nloadfile\tpath replace\nseek\tseconds relative\nscreenshot\tflags single\n",
+    "negative": "command arg mode\nloadfile path replace\n",
+    "analysis_notes": "Modeled mpv command listing output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "loadfile command row", "mode field"]
+  },
+  {
+    "fixture": "pdfmathtranslate-jobs",
+    "descriptor_id": "known.pdfmathtranslate.jobs",
+    "name": "PDFMathTranslate job list",
+    "repo": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "required_substrings": ["job\tstatus", "paper.pdf\ttranslated"],
+    "parser": "tab-pairs",
+    "input": "job\tstatus language\npaper.pdf\ttranslated en\nslides.pdf\tqueued es\nreport.pdf\tfailed fr\n",
+    "negative": "job status language\npaper.pdf translated en\n",
+    "analysis_notes": "Modeled PDFMathTranslate job output with a generated executable-json parser plugin.",
+    "variants": ["job header row", "translated job row", "language field"]
+  },
+  {
+    "fixture": "free-claude-code-providers",
+    "descriptor_id": "known.free-claude-code.providers",
+    "name": "free-claude-code provider list",
+    "repo": "https://github.com/Alishahryar1/free-claude-code",
+    "required_substrings": ["provider\tstatus", "openrouter\tactive"],
+    "parser": "tab-pairs",
+    "input": "provider\tstatus model\nopenrouter\tactive claude\nproxy\tactive sonnet\nlocal\tinactive mock\n",
+    "negative": "provider status model\nopenrouter active claude\n",
+    "analysis_notes": "Modeled free-claude-code provider output with a generated executable-json parser plugin.",
+    "variants": ["provider header row", "active provider row", "model field"]
+  },
+  {
+    "fixture": "clipboardjs-actions",
+    "descriptor_id": "known.clipboardjs.actions",
+    "name": "clipboard.js action list",
+    "repo": "https://github.com/zenorocha/clipboard.js",
+    "required_substrings": ["action\tselector", "copy\t.copy-btn"],
+    "parser": "tab-pairs",
+    "input": "action\tselector target\ncopy\t.copy-btn #snippet\ncut\t.cut-btn #field\ncopy\t.icon-btn data-clipboard-text\n",
+    "negative": "action selector target\ncopy .copy-btn #snippet\n",
+    "analysis_notes": "Modeled clipboard.js action output with a generated executable-json parser plugin.",
+    "variants": ["action header row", "copy action row", "target field"]
   }
 ]

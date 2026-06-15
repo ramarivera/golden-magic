@@ -1,0 +1,10 @@
+id = "known.clipboardjs.actions"
+name = "clipboard.js action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tselector","copy\t.copy-btn"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

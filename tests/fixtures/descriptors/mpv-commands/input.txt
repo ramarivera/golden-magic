@@ -1,0 +1,4 @@
+command	arg mode
+loadfile	path replace
+seek	seconds relative
+screenshot	flags single

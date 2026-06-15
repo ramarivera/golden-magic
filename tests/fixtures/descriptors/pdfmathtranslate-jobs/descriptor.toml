@@ -1,0 +1,10 @@
+id = "known.pdfmathtranslate.jobs"
+name = "PDFMathTranslate job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","paper.pdf\ttranslated"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

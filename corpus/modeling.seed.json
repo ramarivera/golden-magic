@@ -1188,5 +1188,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/zsh-autosuggestions-strategies",
     "analysis_notes": "Modeled zsh-autosuggestions strategy output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kepano/obsidian-skills",
+    "descriptor_id": "known.obsidian-skills.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/obsidian-skills-index",
+    "analysis_notes": "Modeled obsidian-skills catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mpv-player/mpv",
+    "descriptor_id": "known.mpv.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mpv-commands",
+    "analysis_notes": "Modeled mpv command listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "descriptor_id": "known.pdfmathtranslate.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pdfmathtranslate-jobs",
+    "analysis_notes": "Modeled PDFMathTranslate job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Alishahryar1/free-claude-code",
+    "descriptor_id": "known.free-claude-code.providers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/free-claude-code-providers",
+    "analysis_notes": "Modeled free-claude-code provider output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zenorocha/clipboard.js",
+    "descriptor_id": "known.clipboardjs.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clipboardjs-actions",
+    "analysis_notes": "Modeled clipboard.js action output with a generated executable-json parser plugin."
   }
 ]
