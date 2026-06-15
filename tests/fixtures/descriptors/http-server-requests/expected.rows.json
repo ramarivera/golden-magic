@@ -1,0 +1,18 @@
+[
+  {
+    "name": "method",
+    "value": "path status"
+  },
+  {
+    "name": "GET",
+    "value": "/index.html 200"
+  },
+  {
+    "name": "GET",
+    "value": "/app.js 200"
+  },
+  {
+    "name": "HEAD",
+    "value": "/missing 404"
+  }
+]

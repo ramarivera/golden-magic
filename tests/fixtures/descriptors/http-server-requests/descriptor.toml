@@ -1,0 +1,10 @@
+id = "known.http-server.requests"
+name = "http-server request list"
+priority = 50
+
+[matches]
+required_substrings = ["method\tpath","GET\t/index.html"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

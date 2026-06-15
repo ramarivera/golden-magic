@@ -1,0 +1,4 @@
+command	scope args
+app	workspace 3
+login	account 1
+deploy	project 4

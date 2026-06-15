@@ -1,0 +1,4 @@
+host	protocol status
+devbox	ssh connected
+staging	sftp saved
+prod	ssh locked

@@ -1,0 +1,4 @@
+segment	state priority
+git	visible 10
+prompt	visible 20
+elapsed	hidden 30

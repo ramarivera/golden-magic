@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "scope args"
+  },
+  {
+    "name": "app",
+    "value": "workspace 3"
+  },
+  {
+    "name": "login",
+    "value": "account 1"
+  },
+  {
+    "name": "deploy",
+    "value": "project 4"
+  }
+]

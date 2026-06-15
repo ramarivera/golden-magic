@@ -1,0 +1,18 @@
+[
+  {
+    "name": "host",
+    "value": "protocol status"
+  },
+  {
+    "name": "devbox",
+    "value": "ssh connected"
+  },
+  {
+    "name": "staging",
+    "value": "sftp saved"
+  },
+  {
+    "name": "prod",
+    "value": "ssh locked"
+  }
+]

@@ -1,0 +1,4 @@
+method	path status
+GET	/index.html 200
+GET	/app.js 200
+HEAD	/missing 404

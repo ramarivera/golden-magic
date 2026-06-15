@@ -1,0 +1,10 @@
+id = "known.edit.files"
+name = "Microsoft Edit file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstate","README.md\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

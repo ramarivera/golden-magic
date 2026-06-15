@@ -5848,5 +5848,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/microsoft/edit",
+    "descriptor_id": "known.edit.files",
+    "run_id": "agentic.edit-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/edit-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/edit-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "state row",
+      "cursor field"
+    ],
+    "transcript": [
+      "selected descriptor known.edit.files for Microsoft Edit file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/pure",
+    "descriptor_id": "known.pure.prompt-segments",
+    "run_id": "agentic.pure-prompt-segments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pure-prompt-segments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pure-prompt-segments/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "state row",
+      "priority field"
+    ],
+    "transcript": [
+      "selected descriptor known.pure.prompt-segments for pure prompt segment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/electerm/electerm",
+    "descriptor_id": "known.electerm.hosts",
+    "run_id": "agentic.electerm-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/electerm-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/electerm-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "protocol row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.electerm.hosts for electerm host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/http-party/http-server",
+    "descriptor_id": "known.http-server.requests",
+    "run_id": "agentic.http-server-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/http-server-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/http-server-requests/expected.rows.json",
+    "variants": [
+      "method header row",
+      "path row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.http-server.requests for http-server request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/larksuite/cli",
+    "descriptor_id": "known.larksuite.commands",
+    "run_id": "agentic.larksuite-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/larksuite-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/larksuite-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "scope row",
+      "args field"
+    ],
+    "transcript": [
+      "selected descriptor known.larksuite.commands for LarkSuite CLI command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

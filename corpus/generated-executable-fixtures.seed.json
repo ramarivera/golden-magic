@@ -3658,5 +3658,65 @@
     "negative": "instance state actions\ntodo-app connected 42\n",
     "analysis_notes": "Modeled Redux DevTools instance output with a generated executable-json parser plugin.",
     "variants": ["instance header row", "state row", "actions field"]
+  },
+  {
+    "fixture": "edit-files",
+    "descriptor_id": "known.edit.files",
+    "name": "Microsoft Edit file list",
+    "repo": "https://github.com/microsoft/edit",
+    "required_substrings": ["file\tstate", "README.md\topen"],
+    "parser": "tab-pairs",
+    "input": "file\tstate cursor\nREADME.md\topen 12:4\nsrc/main.rs\tmodified 88:2\nnotes.txt\treadonly 1:1\n",
+    "negative": "file state cursor\nREADME.md open 12:4\n",
+    "analysis_notes": "Modeled Microsoft Edit file output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "state row", "cursor field"]
+  },
+  {
+    "fixture": "pure-prompt-segments",
+    "descriptor_id": "known.pure.prompt-segments",
+    "name": "pure prompt segment list",
+    "repo": "https://github.com/sindresorhus/pure",
+    "required_substrings": ["segment\tstate", "git\tvisible"],
+    "parser": "tab-pairs",
+    "input": "segment\tstate priority\ngit\tvisible 10\nprompt\tvisible 20\nelapsed\thidden 30\n",
+    "negative": "segment state priority\ngit visible 10\n",
+    "analysis_notes": "Modeled pure prompt segment output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "state row", "priority field"]
+  },
+  {
+    "fixture": "electerm-hosts",
+    "descriptor_id": "known.electerm.hosts",
+    "name": "electerm host list",
+    "repo": "https://github.com/electerm/electerm",
+    "required_substrings": ["host\tprotocol", "devbox\tssh"],
+    "parser": "tab-pairs",
+    "input": "host\tprotocol status\ndevbox\tssh connected\nstaging\tsftp saved\nprod\tssh locked\n",
+    "negative": "host protocol status\ndevbox ssh connected\n",
+    "analysis_notes": "Modeled electerm host output with a generated executable-json parser plugin.",
+    "variants": ["host header row", "protocol row", "status field"]
+  },
+  {
+    "fixture": "http-server-requests",
+    "descriptor_id": "known.http-server.requests",
+    "name": "http-server request list",
+    "repo": "https://github.com/http-party/http-server",
+    "required_substrings": ["method\tpath", "GET\t/index.html"],
+    "parser": "tab-pairs",
+    "input": "method\tpath status\nGET\t/index.html 200\nGET\t/app.js 200\nHEAD\t/missing 404\n",
+    "negative": "method path status\nGET /index.html 200\n",
+    "analysis_notes": "Modeled http-server request output with a generated executable-json parser plugin.",
+    "variants": ["method header row", "path row", "status field"]
+  },
+  {
+    "fixture": "larksuite-commands",
+    "descriptor_id": "known.larksuite.commands",
+    "name": "LarkSuite CLI command list",
+    "repo": "https://github.com/larksuite/cli",
+    "required_substrings": ["command\tscope", "app\tworkspace"],
+    "parser": "tab-pairs",
+    "input": "command\tscope args\napp\tworkspace 3\nlogin\taccount 1\ndeploy\tproject 4\n",
+    "negative": "command scope args\napp workspace 3\n",
+    "analysis_notes": "Modeled LarkSuite CLI command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "scope row", "args field"]
   }
 ]

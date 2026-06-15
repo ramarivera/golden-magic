@@ -1,0 +1,10 @@
+id = "known.electerm.hosts"
+name = "electerm host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tprotocol","devbox\tssh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

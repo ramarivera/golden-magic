@@ -2273,5 +2273,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/redux-devtools-instances",
     "analysis_notes": "Modeled Redux DevTools instance output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/edit",
+    "descriptor_id": "known.edit.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/edit-files",
+    "analysis_notes": "Modeled Microsoft Edit file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/pure",
+    "descriptor_id": "known.pure.prompt-segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pure-prompt-segments",
+    "analysis_notes": "Modeled pure prompt segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/electerm/electerm",
+    "descriptor_id": "known.electerm.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/electerm-hosts",
+    "analysis_notes": "Modeled electerm host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/http-party/http-server",
+    "descriptor_id": "known.http-server.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/http-server-requests",
+    "analysis_notes": "Modeled http-server request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/larksuite/cli",
+    "descriptor_id": "known.larksuite.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/larksuite-commands",
+    "analysis_notes": "Modeled LarkSuite CLI command output with a generated executable-json parser plugin."
   }
 ]

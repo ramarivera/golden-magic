@@ -1,0 +1,4 @@
+file	state cursor
+README.md	open 12:4
+src/main.rs	modified 88:2
+notes.txt	readonly 1:1

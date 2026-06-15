@@ -1,0 +1,10 @@
+id = "known.larksuite.commands"
+name = "LarkSuite CLI command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tscope","app\tworkspace"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
