@@ -1,0 +1,6 @@
+section: api
+  status: ok
+  owner: platform
+section: worker
+  status: degraded
+  owner: jobs

@@ -1,0 +1,9 @@
+id = "known.sectioned.services"
+name = "Sectioned service status"
+priority = 50
+
+[matches]
+required_substrings = ["section:", "status:"]
+
+[parser]
+backend = "sections"

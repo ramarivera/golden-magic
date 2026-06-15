@@ -3,7 +3,7 @@ pub mod config;
 pub mod descriptors;
 
 use serde::{Deserialize, Serialize};
-use std::collections::BTreeMap;
+use std::collections::{BTreeMap, BTreeSet};
 
 pub type Row = BTreeMap<String, String>;
 
@@ -15,6 +15,10 @@ const FIXED_WIDTH_GAPS: &str = "detect.fixed-width.gaps";
 const FALLBACK_EMPTY: &str = "fallback.empty";
 const FALLBACK_LINES: &str = "fallback.lines";
 const BACKEND_HEURISTIC: &str = "heuristic";
+const BACKEND_SECTIONS: &str = "sections";
+const BACKEND_SECTIONS_SELECTED: &str = "backend.sections";
+const BACKEND_SECTIONS_PARSED: &str = "backend.sections.parsed";
+const BACKEND_SECTIONS_MALFORMED: &str = "backend.sections.malformed";
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct ParseReport {
@@ -31,6 +35,7 @@ pub enum ParseKind {
     Delimited,
     FixedWidth,
     Lines,
+    Sections,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
@@ -151,6 +156,7 @@ pub fn parse(input: &str) -> ParseReport {
 pub fn parse_with_options(input: &str, options: &ParseOptions) -> ParseReport {
     match options.selected_backend() {
         BACKEND_HEURISTIC => parse_with_heuristic_backend(input, options),
+        BACKEND_SECTIONS => parse_with_sections_backend(input, options),
         other => unsupported_backend_report(other, options),
     }
 }
@@ -228,7 +234,7 @@ pub fn known_rule_ids() -> &'static [&'static str] {
 }
 
 pub fn known_backend_ids() -> &'static [&'static str] {
-    &[BACKEND_HEURISTIC]
+    &[BACKEND_HEURISTIC, BACKEND_SECTIONS]
 }
 
 fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
@@ -236,7 +242,7 @@ fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
 
     if options.backend.explicit {
         trace.push(event(
-            "backend.heuristic",
+            backend_rule_id(options.selected_backend()),
             format!("selected {} parser backend", options.selected_backend()),
         ));
     }
@@ -258,6 +264,14 @@ fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
     trace
 }
 
+fn backend_rule_id(backend: &str) -> &'static str {
+    match backend {
+        BACKEND_HEURISTIC => "backend.heuristic",
+        BACKEND_SECTIONS => BACKEND_SECTIONS_SELECTED,
+        _ => "backend.unsupported",
+    }
+}
+
 fn unsupported_backend_report(backend: &str, options: &ParseOptions) -> ParseReport {
     let mut trace = options.trace_events.clone();
     trace.push(event(
@@ -275,6 +289,133 @@ fn unsupported_backend_report(backend: &str, options: &ParseOptions) -> ParseRep
         rows: Vec::new(),
         trace,
     }
+}
+
+fn parse_with_sections_backend(input: &str, options: &ParseOptions) -> ParseReport {
+    let lines = significant_lines(input);
+    let mut trace = options_trace(options);
+
+    if lines.is_empty() {
+        trace.push(event(FALLBACK_EMPTY, "input had no non-empty lines"));
+        return ParseReport {
+            kind: ParseKind::Sections,
+            confidence: 1.0,
+            columns: vec!["section".to_string()],
+            rows: Vec::new(),
+            trace,
+        };
+    }
+
+    let Some((columns, rows)) = parse_sections(&lines, &mut trace) else {
+        trace.push(event(
+            FALLBACK_LINES,
+            "section backend could not parse every non-empty line",
+        ));
+        return lines_report(lines, trace);
+    };
+
+    trace.push(event(
+        BACKEND_SECTIONS_PARSED,
+        format!("selected sections backend with {} row(s)", rows.len()),
+    ));
+
+    ParseReport {
+        kind: ParseKind::Sections,
+        confidence: 0.82,
+        columns,
+        rows,
+        trace,
+    }
+}
+
+fn parse_sections(
+    lines: &[String],
+    trace: &mut Vec<TraceEvent>,
+) -> Option<(Vec<String>, Vec<Row>)> {
+    let mut rows = Vec::new();
+    let mut current: Option<Row> = None;
+    let mut field_order = Vec::new();
+    let mut seen_fields = BTreeSet::new();
+
+    for line in lines {
+        let trimmed = line.trim();
+        if let Some(section) = trimmed.strip_prefix("section:") {
+            if let Some(row) = current.take() {
+                rows.push(row);
+            }
+            let section = section.trim();
+            if section.is_empty() {
+                trace.push(event(
+                    BACKEND_SECTIONS_MALFORMED,
+                    "section header did not include a section name",
+                ));
+                return None;
+            }
+            current = Some(BTreeMap::from([(
+                "section".to_string(),
+                section.to_string(),
+            )]));
+            continue;
+        }
+
+        let Some(row) = current.as_mut() else {
+            trace.push(event(
+                BACKEND_SECTIONS_MALFORMED,
+                format!("field appeared before a section header: {trimmed}"),
+            ));
+            return None;
+        };
+        let Some((key, value)) = trimmed.split_once(':') else {
+            trace.push(event(
+                BACKEND_SECTIONS_MALFORMED,
+                format!("line was neither a section header nor key-value field: {trimmed}"),
+            ));
+            return None;
+        };
+
+        let key = normalize_key(key);
+        if key.is_empty() {
+            trace.push(event(
+                BACKEND_SECTIONS_MALFORMED,
+                format!("field did not include a key: {trimmed}"),
+            ));
+            return None;
+        }
+        if seen_fields.insert(key.clone()) {
+            field_order.push(key.clone());
+        }
+        row.insert(key, value.trim().to_string());
+    }
+
+    if let Some(row) = current {
+        rows.push(row);
+    }
+
+    if rows.is_empty() {
+        trace.push(event(
+            BACKEND_SECTIONS_MALFORMED,
+            "input did not include any section headers",
+        ));
+        return None;
+    }
+
+    let mut columns = vec!["section".to_string()];
+    columns.extend(field_order);
+    for row in &mut rows {
+        for column in &columns {
+            row.entry(column.clone()).or_default();
+        }
+    }
+
+    Some((columns, rows))
+}
+
+fn normalize_key(key: &str) -> String {
+    key.trim()
+        .to_lowercase()
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join("-")
 }
 
 fn significant_lines(input: &str) -> Vec<String> {
@@ -611,6 +752,43 @@ mod tests {
         assert_eq!(report.trace[0].rule_id, "backend.unsupported");
     }
 
+    #[test]
+    fn sections_backend_parses_sectioned_key_values() {
+        let options = ParseOptions::new().backend(BACKEND_SECTIONS);
+        let report = parse_with_options(
+            "section: api\n  status: ok\n  owner: platform\nsection: worker\n  status: degraded\n",
+            &options,
+        );
+
+        assert_eq!(report.kind, ParseKind::Sections);
+        assert_eq!(report.columns, vec!["section", "status", "owner"]);
+        assert_eq!(report.rows[0]["section"], "api");
+        assert_eq!(report.rows[0]["status"], "ok");
+        assert_eq!(report.rows[0]["owner"], "platform");
+        assert_eq!(report.rows[1]["section"], "worker");
+        assert_eq!(report.rows[1]["owner"], "");
+        assert!(
+            report
+                .trace
+                .iter()
+                .any(|event| event.rule_id == BACKEND_SECTIONS_PARSED)
+        );
+    }
+
+    #[test]
+    fn sections_backend_reports_malformed_input() {
+        let options = ParseOptions::new().backend(BACKEND_SECTIONS);
+        let report = parse_with_options("status: ok\nsection: api\n", &options);
+
+        assert_eq!(report.kind, ParseKind::Lines);
+        assert!(
+            report
+                .trace
+                .iter()
+                .any(|event| event.rule_id == BACKEND_SECTIONS_MALFORMED)
+        );
+    }
+
     proptest! {
         #[test]
         fn tabular_rows_preserve_rectangular_shape(rows in prop::collection::vec(prop::collection::vec("[a-z]{1,8}", 2..6), 1..20)) {
@@ -624,6 +802,23 @@ mod tests {
             prop_assert_eq!(report.kind, ParseKind::Delimited);
             prop_assert_eq!(report.columns.len(), width);
             prop_assert!(report.rows.iter().all(|row| row.len() == width));
+        }
+
+        #[test]
+        fn sections_backend_preserves_section_count(names in prop::collection::vec("[a-z]{1,8}", 1..20)) {
+            let input = names
+                .iter()
+                .map(|name| format!("section: {name}\n  status: ok"))
+                .collect::<Vec<_>>()
+                .join("\n");
+            let options = ParseOptions::new().backend(BACKEND_SECTIONS);
+
+            let report = parse_with_options(&input, &options);
+
+            prop_assert_eq!(report.kind, ParseKind::Sections);
+            prop_assert_eq!(report.rows.len(), names.len());
+            prop_assert!(report.rows.iter().all(|row| row.contains_key("section")));
+            prop_assert!(report.rows.iter().all(|row| row.contains_key("status")));
         }
     }
 }

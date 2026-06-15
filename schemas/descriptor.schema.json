@@ -42,8 +42,8 @@
       "properties": {
         "backend": {
           "type": "string",
-          "enum": ["heuristic"],
-          "description": "Parser backend id. Only heuristic is implemented today."
+          "enum": ["heuristic", "sections"],
+          "description": "Parser backend id."
         },
         "only_rules": {
           "type": "array",

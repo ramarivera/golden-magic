@@ -238,6 +238,45 @@ backend = "tree-sitter"
 }
 
 #[test]
+fn cli_applies_sections_descriptor_backend() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("sections.toml"),
+        r#"
+id = "backend.sections"
+name = "Backend Sections"
+priority = 10
+[matches]
+required_substrings = ["section:", "status:"]
+[parser]
+backend = "sections"
+"#,
+    )
+    .expect("write descriptor");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(dir.path())
+        .arg("--output")
+        .arg("rows-json")
+        .write_stdin("section: api\n  status: ok\nsection: worker\n  status: degraded\n")
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let rows: Value = serde_json::from_slice(&output).expect("valid JSON rows");
+
+    assert_eq!(rows[0]["section"], "api");
+    assert_eq!(rows[0]["status"], "ok");
+    assert_eq!(rows[1]["section"], "worker");
+    assert_eq!(rows[1]["status"], "degraded");
+}
+
+#[test]
 fn cli_rejects_unknown_descriptor_rule_ids() {
     let dir = tempdir().expect("temp dir");
     fs::write(
@@ -455,5 +494,6 @@ fn cli_lists_known_backend_ids() {
         .arg("--list-backends")
         .assert()
         .success()
-        .stdout(predicates::str::contains("heuristic"));
+        .stdout(predicates::str::contains("heuristic"))
+        .stdout(predicates::str::contains("sections"));
 }

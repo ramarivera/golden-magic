@@ -21,7 +21,7 @@ The next implementation slice should be a narrow backend experiment, not a gener
 3. Prototype one structured output family whose shape is awkward for delimiter or repeated-space parsing.
 4. Keep fallback heuristics as the default path for ordinary CLI tables.
 
-Status: the core now has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic` backend. Tree-sitter remains unimplemented.
+Status: the core now has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic` and `sections` backends. Tree-sitter remains unimplemented.
 
 ## Why Tree-sitter Fits Some Cases
 
@@ -64,11 +64,18 @@ query = "rows.scm"
 
 This TOML shape is a design target, not implemented API yet.
 
-The implemented descriptor surface currently accepts only:
+The implemented descriptor surface currently accepts:
 
 ```toml
 [parser]
 backend = "heuristic"
+```
+
+and:
+
+```toml
+[parser]
+backend = "sections"
 ```
 
 Descriptors that request `tree-sitter` fail validation until the backend exists.
@@ -77,6 +84,7 @@ Direct core use can also select the implemented backend:
 
 ```rust
 ParseOptions::new().backend("heuristic")
+ParseOptions::new().backend("sections")
 ```
 
 Inspect implemented backend ids with:

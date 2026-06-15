@@ -252,14 +252,15 @@ fn apply_descriptor_backend(
         return Ok(options);
     };
 
-    match backend {
-        "heuristic" => Ok(options.backend(backend)),
-        other => Err(format!(
-            "descriptor {} requests parser backend {other}, but only {} is implemented. See docs/PARSER-BACKENDS.md.",
+    if known_backend_ids().iter().any(|known| known == &backend) {
+        Ok(options.backend(backend))
+    } else {
+        Err(format!(
+            "descriptor {} requests parser backend {backend}, but only {} is implemented. See docs/PARSER-BACKENDS.md.",
             loaded.descriptor.id,
             known_backend_ids().join(", ")
         )
-        .into()),
+        .into())
     }
 }
 

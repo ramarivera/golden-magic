@@ -43,7 +43,7 @@ Optional fields:
 
 - `priority`: higher priority wins when multiple descriptors match.
 - `matches.required_substrings`: every listed string must appear in the input.
-- `parser.backend`: parser backend id. Only `heuristic` is implemented today.
+- `parser.backend`: parser backend id. Implemented ids are `heuristic` and `sections`.
 - `parser.only_rules`: restrict parser selection to specific stable rule ids.
 - `parser.disable_rules`: disable specific stable rule ids.
 
@@ -94,6 +94,7 @@ Descriptor authors should treat these as stable:
 - descriptor ids
 - parser rule ids returned by `--list-rules`
 - parser backend id `heuristic`
+- parser backend id `sections`
 - `matches.required_substrings`
 - `parser.only_rules`
 - `parser.disable_rules`
@@ -102,6 +103,7 @@ Descriptor authors should treat these as stable:
 Adding new matcher fields or parser engines is allowed in future releases, but existing descriptor fields should remain backwards compatible unless a spec explicitly breaks them. `tree-sitter` is reserved as a candidate backend in [`docs/PARSER-BACKENDS.md`](PARSER-BACKENDS.md), but descriptors cannot use it until the backend is implemented.
 
 When a descriptor selects `backend = "heuristic"`, Golden Magic records `backend.heuristic` in trace output before heuristic rule events.
+When a descriptor selects `backend = "sections"`, Golden Magic parses repeated `section: <name>` blocks followed by `key: value` fields into one row per section.
 
 ## Publishing
 

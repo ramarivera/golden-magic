@@ -1,0 +1,12 @@
+[
+  {
+    "owner": "platform",
+    "section": "api",
+    "status": "ok"
+  },
+  {
+    "owner": "jobs",
+    "section": "worker",
+    "status": "degraded"
+  }
+]

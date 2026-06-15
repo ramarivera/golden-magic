@@ -142,6 +142,7 @@ Implemented generic heuristics:
 - safe fallback to one-column lines
 - rule listing with `--list-rules`
 - parser backend listing with `--list-backends`
+- descriptor-selectable `sections` backend for repeated `section: <name>` key-value blocks
 - rule toggles with `--disable-rule` and `--only-rule`
 - row-only output with `--output rows-json`
 - trace-only output with `--output trace-json` or `--explain`

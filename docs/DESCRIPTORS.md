@@ -28,7 +28,7 @@ disable_rules = []
 - `name`: human-readable descriptor name.
 - `priority`: higher values are selected first when multiple descriptors match.
 - `matches.required_substrings`: all listed strings must appear in the input.
-- `parser.backend`: parser backend id. Only `heuristic` is implemented today.
+- `parser.backend`: parser backend id. Implemented ids are `heuristic` and `sections`.
 - `parser.only_rules`: heuristic rule ids to restrict parser selection.
 - `parser.disable_rules`: heuristic rule ids to disable.
 
@@ -42,6 +42,7 @@ Implemented:
 - select descriptors whose required substrings all match
 - expose descriptor parser rule ids for validation/wiring
 - validate descriptor parser backend ids
+- parse sectioned key-value blocks through the `sections` backend
 
 CLI integration:
 
