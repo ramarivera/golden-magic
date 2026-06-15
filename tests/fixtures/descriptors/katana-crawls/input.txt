@@ -1,0 +1,4 @@
+url	status depth
+https://example.com	200 0
+https://example.com/docs	200 1
+https://example.com/missing	404 1

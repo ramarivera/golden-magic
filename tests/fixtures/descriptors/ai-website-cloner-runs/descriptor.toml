@@ -1,0 +1,10 @@
+id = "known.ai-website-cloner.runs"
+name = "ai-website-cloner run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstate","landing-page\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

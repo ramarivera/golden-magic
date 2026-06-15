@@ -2063,5 +2063,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cz-cli-adapters",
     "analysis_notes": "Modeled Commitizen adapter output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/denisidoro/navi",
+    "descriptor_id": "known.navi.cheats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/navi-cheats",
+    "analysis_notes": "Modeled navi cheat output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ranger/ranger",
+    "descriptor_id": "known.ranger.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ranger-files",
+    "analysis_notes": "Modeled ranger file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/katana",
+    "descriptor_id": "known.katana.crawls",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/katana-crawls",
+    "analysis_notes": "Modeled katana crawl output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "descriptor_id": "known.ai-website-cloner.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ai-website-cloner-runs",
+    "analysis_notes": "Modeled ai-website-cloner run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wtfutil/wtf",
+    "descriptor_id": "known.wtf.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wtf-widgets",
+    "analysis_notes": "Modeled wtfutil widget output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.katana.crawls"
+name = "katana crawl result list"
+priority = 50
+
+[matches]
+required_substrings = ["url\tstatus","https://example.com\t200"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

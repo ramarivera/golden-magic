@@ -3298,5 +3298,65 @@
     "negative": "adapter status prompts\ncz-conventional-changelog active 5\n",
     "analysis_notes": "Modeled Commitizen adapter output with a generated executable-json parser plugin.",
     "variants": ["adapter header row", "status row", "prompts field"]
+  },
+  {
+    "fixture": "navi-cheats",
+    "descriptor_id": "known.navi.cheats",
+    "name": "navi cheat list",
+    "repo": "https://github.com/denisidoro/navi",
+    "required_substrings": ["cheat\tcategory", "git-status\tgit"],
+    "parser": "tab-pairs",
+    "input": "cheat\tcategory tags\ngit-status\tgit status\nkubectl-pods\tkubernetes pods\nfind-file\tfilesystem find\n",
+    "negative": "cheat category tags\ngit-status git status\n",
+    "analysis_notes": "Modeled navi cheat output with a generated executable-json parser plugin.",
+    "variants": ["cheat header row", "category row", "tags field"]
+  },
+  {
+    "fixture": "ranger-files",
+    "descriptor_id": "known.ranger.files",
+    "name": "ranger file list",
+    "repo": "https://github.com/ranger/ranger",
+    "required_substrings": ["name\ttype", "src\tdir"],
+    "parser": "tab-pairs",
+    "input": "name\ttype permissions\nsrc\tdir drwxr-xr-x\nREADME.md\tfile -rw-r--r--\nsetup.py\tfile -rw-r--r--\n",
+    "negative": "name type permissions\nsrc dir drwxr-xr-x\n",
+    "analysis_notes": "Modeled ranger file output with a generated executable-json parser plugin.",
+    "variants": ["name header row", "type row", "permissions field"]
+  },
+  {
+    "fixture": "katana-crawls",
+    "descriptor_id": "known.katana.crawls",
+    "name": "katana crawl result list",
+    "repo": "https://github.com/projectdiscovery/katana",
+    "required_substrings": ["url\tstatus", "https://example.com\t200"],
+    "parser": "tab-pairs",
+    "input": "url\tstatus depth\nhttps://example.com\t200 0\nhttps://example.com/docs\t200 1\nhttps://example.com/missing\t404 1\n",
+    "negative": "url status depth\nhttps://example.com 200 0\n",
+    "analysis_notes": "Modeled katana crawl output with a generated executable-json parser plugin.",
+    "variants": ["url header row", "status row", "depth field"]
+  },
+  {
+    "fixture": "ai-website-cloner-runs",
+    "descriptor_id": "known.ai-website-cloner.runs",
+    "name": "ai-website-cloner run list",
+    "repo": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "required_substrings": ["run\tstate", "landing-page\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "run\tstate assets\nlanding-page\tcomplete 14\ndashboard\tqueued 8\ncheckout\trunning 11\n",
+    "negative": "run state assets\nlanding-page complete 14\n",
+    "analysis_notes": "Modeled ai-website-cloner run output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "state row", "assets field"]
+  },
+  {
+    "fixture": "wtf-widgets",
+    "descriptor_id": "known.wtf.widgets",
+    "name": "wtfutil widget list",
+    "repo": "https://github.com/wtfutil/wtf",
+    "required_substrings": ["widget\tstatus", "clocks\tenabled"],
+    "parser": "tab-pairs",
+    "input": "widget\tstatus position\nclocks\tenabled left\ngithub\tenabled center\njira\tdisabled right\n",
+    "negative": "widget status position\nclocks enabled left\n",
+    "analysis_notes": "Modeled wtfutil widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "status row", "position field"]
   }
 ]

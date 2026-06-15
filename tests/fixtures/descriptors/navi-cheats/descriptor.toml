@@ -1,0 +1,10 @@
+id = "known.navi.cheats"
+name = "navi cheat list"
+priority = 50
+
+[matches]
+required_substrings = ["cheat\tcategory","git-status\tgit"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

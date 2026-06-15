@@ -1,0 +1,4 @@
+widget	status position
+clocks	enabled left
+github	enabled center
+jira	disabled right

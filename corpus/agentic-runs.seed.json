@@ -5308,5 +5308,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/denisidoro/navi",
+    "descriptor_id": "known.navi.cheats",
+    "run_id": "agentic.navi-cheats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/navi-cheats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/navi-cheats/expected.rows.json",
+    "variants": [
+      "cheat header row",
+      "category row",
+      "tags field"
+    ],
+    "transcript": [
+      "selected descriptor known.navi.cheats for navi cheat list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ranger/ranger",
+    "descriptor_id": "known.ranger.files",
+    "run_id": "agentic.ranger-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ranger-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ranger-files/expected.rows.json",
+    "variants": [
+      "name header row",
+      "type row",
+      "permissions field"
+    ],
+    "transcript": [
+      "selected descriptor known.ranger.files for ranger file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/katana",
+    "descriptor_id": "known.katana.crawls",
+    "run_id": "agentic.katana-crawls.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/katana-crawls/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/katana-crawls/expected.rows.json",
+    "variants": [
+      "url header row",
+      "status row",
+      "depth field"
+    ],
+    "transcript": [
+      "selected descriptor known.katana.crawls for katana crawl result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "descriptor_id": "known.ai-website-cloner.runs",
+    "run_id": "agentic.ai-website-cloner-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ai-website-cloner-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ai-website-cloner-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "state row",
+      "assets field"
+    ],
+    "transcript": [
+      "selected descriptor known.ai-website-cloner.runs for ai-website-cloner run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wtfutil/wtf",
+    "descriptor_id": "known.wtf.widgets",
+    "run_id": "agentic.wtf-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wtf-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wtf-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "status row",
+      "position field"
+    ],
+    "transcript": [
+      "selected descriptor known.wtf.widgets for wtfutil widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

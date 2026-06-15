@@ -1,0 +1,10 @@
+id = "known.ranger.files"
+name = "ranger file list"
+priority = 50
+
+[matches]
+required_substrings = ["name\ttype","src\tdir"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

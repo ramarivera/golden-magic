@@ -1,0 +1,4 @@
+name	type permissions
+src	dir drwxr-xr-x
+README.md	file -rw-r--r--
+setup.py	file -rw-r--r--

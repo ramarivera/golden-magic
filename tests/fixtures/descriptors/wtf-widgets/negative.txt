@@ -1,0 +1,2 @@
+widget status position
+clocks enabled left

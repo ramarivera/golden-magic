@@ -1,0 +1,4 @@
+cheat	category tags
+git-status	git status
+kubectl-pods	kubernetes pods
+find-file	filesystem find

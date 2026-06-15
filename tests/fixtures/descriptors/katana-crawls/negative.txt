@@ -1,0 +1,2 @@
+url status depth
+https://example.com 200 0
