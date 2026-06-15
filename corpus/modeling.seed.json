@@ -1153,5 +1153,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/awesome-shell-sections",
     "analysis_notes": "Modeled awesome-shell section index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wshobson/agents",
+    "descriptor_id": "known.wshobson-agents.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wshobson-agents",
+    "analysis_notes": "Modeled wshobson/agents catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jaywcjlove/linux-command",
+    "descriptor_id": "known.linux-command.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/linux-command-index",
+    "analysis_notes": "Modeled linux-command index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Textualize/textual",
+    "descriptor_id": "known.textual.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/textual-widgets",
+    "analysis_notes": "Modeled Textual widget listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel-labs/agent-browser",
+    "descriptor_id": "known.agent-browser.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/agent-browser-targets",
+    "analysis_notes": "Modeled agent-browser target listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zsh-users/zsh-autosuggestions",
+    "descriptor_id": "known.zsh-autosuggestions.strategies",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zsh-autosuggestions-strategies",
+    "analysis_notes": "Modeled zsh-autosuggestions strategy output with a generated executable-json parser plugin."
   }
 ]

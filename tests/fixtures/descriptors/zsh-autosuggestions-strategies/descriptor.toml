@@ -1,0 +1,10 @@
+id = "known.zsh-autosuggestions.strategies"
+name = "zsh-autosuggestions strategy list"
+priority = 50
+
+[matches]
+required_substrings = ["strategy\tenabled","history\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

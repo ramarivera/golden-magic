@@ -1,0 +1,18 @@
+[
+  {
+    "name": "strategy",
+    "value": "enabled source"
+  },
+  {
+    "name": "history",
+    "value": "true shell"
+  },
+  {
+    "name": "completion",
+    "value": "true shell"
+  },
+  {
+    "name": "match_prev_cmd",
+    "value": "false shell"
+  }
+]

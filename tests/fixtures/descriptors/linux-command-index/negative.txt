@@ -1,0 +1,2 @@
+command category examples
+grep text 12

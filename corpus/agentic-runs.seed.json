@@ -2968,5 +2968,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/wshobson/agents",
+    "descriptor_id": "known.wshobson-agents.agents",
+    "run_id": "agentic.wshobson-agents-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wshobson-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wshobson-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "system design agent row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.wshobson-agents.agents for wshobson/agents agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jaywcjlove/linux-command",
+    "descriptor_id": "known.linux-command.index",
+    "run_id": "agentic.linux-command-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/linux-command-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/linux-command-index/expected.rows.json",
+    "variants": [
+      "command header row",
+      "text command row",
+      "examples count field"
+    ],
+    "transcript": [
+      "selected descriptor known.linux-command.index for linux-command command index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Textualize/textual",
+    "descriptor_id": "known.textual.widgets",
+    "run_id": "agentic.textual-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/textual-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/textual-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "available widget row",
+      "module field"
+    ],
+    "transcript": [
+      "selected descriptor known.textual.widgets for Textual widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel-labs/agent-browser",
+    "descriptor_id": "known.agent-browser.targets",
+    "run_id": "agentic.agent-browser-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/agent-browser-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/agent-browser-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "attached target row",
+      "browser field"
+    ],
+    "transcript": [
+      "selected descriptor known.agent-browser.targets for agent-browser target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zsh-users/zsh-autosuggestions",
+    "descriptor_id": "known.zsh-autosuggestions.strategies",
+    "run_id": "agentic.zsh-autosuggestions-strategies.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zsh-autosuggestions-strategies/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zsh-autosuggestions-strategies/expected.rows.json",
+    "variants": [
+      "strategy header row",
+      "enabled strategy row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.zsh-autosuggestions.strategies for zsh-autosuggestions strategy list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

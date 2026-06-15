@@ -1,0 +1,18 @@
+[
+  {
+    "name": "agent",
+    "value": "role status"
+  },
+  {
+    "name": "backend-architect",
+    "value": "system-design ready"
+  },
+  {
+    "name": "code-reviewer",
+    "value": "quality ready"
+  },
+  {
+    "name": "debugger",
+    "value": "triage ready"
+  }
+]

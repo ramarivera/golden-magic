@@ -1,0 +1,4 @@
+agent	role status
+backend-architect	system-design ready
+code-reviewer	quality ready
+debugger	triage ready

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "category examples"
+  },
+  {
+    "name": "grep",
+    "value": "text 12"
+  },
+  {
+    "name": "find",
+    "value": "filesystem 9"
+  },
+  {
+    "name": "tar",
+    "value": "archive 6"
+  }
+]

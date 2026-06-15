@@ -1,0 +1,10 @@
+id = "known.linux-command.index"
+name = "linux-command command index"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcategory","grep\ttext"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

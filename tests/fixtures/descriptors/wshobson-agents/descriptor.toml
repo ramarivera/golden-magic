@@ -1,0 +1,10 @@
+id = "known.wshobson-agents.agents"
+name = "wshobson/agents agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\trole","backend-architect\tsystem-design"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

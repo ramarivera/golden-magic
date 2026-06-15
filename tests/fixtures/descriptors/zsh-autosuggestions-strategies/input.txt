@@ -1,0 +1,4 @@
+strategy	enabled source
+history	true shell
+completion	true shell
+match_prev_cmd	false shell

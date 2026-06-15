@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "state module"
+  },
+  {
+    "name": "DataTable",
+    "value": "available textual.widgets"
+  },
+  {
+    "name": "Tree",
+    "value": "available textual.widgets"
+  },
+  {
+    "name": "Log",
+    "value": "available textual.widgets"
+  }
+]

@@ -1,0 +1,4 @@
+target	status browser
+localhost:3000	attached chromium
+localhost:5173	idle chromium
+example.com	detached chromium

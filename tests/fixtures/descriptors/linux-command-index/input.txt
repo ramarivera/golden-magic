@@ -1,0 +1,4 @@
+command	category examples
+grep	text 12
+find	filesystem 9
+tar	archive 6
