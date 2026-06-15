@@ -1,5 +1,6 @@
 use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
+use std::process::Command;
 
 #[derive(Debug, Deserialize)]
 struct CorpusEntry {
@@ -51,6 +52,8 @@ fn is_cli_oriented_query(query: &str) -> bool {
         "topic:tui",
         "topic:shell",
         "topic:command-line-tool",
+        "topic:console",
+        "topic:commandline",
     ]
     .iter()
     .any(|needle| query.contains(needle))
@@ -81,6 +84,28 @@ fn corpus_query_partitions_are_broad_enough_to_scale_discovery() {
 }
 
 #[test]
+fn corpus_query_partitions_match_generator() {
+    let manifest_dir = std::path::Path::new(env!("CARGO_MANIFEST_DIR"));
+    let output = Command::new("bash")
+        .arg(manifest_dir.join("scripts/generate_cli_corpus_queries.sh"))
+        .output()
+        .expect("query generator runs");
+
+    assert!(
+        output.status.success(),
+        "query generator failed: {}",
+        String::from_utf8_lossy(&output.stderr)
+    );
+
+    let generated = String::from_utf8(output.stdout).expect("query generator emits utf8");
+    assert_eq!(
+        generated,
+        include_str!("../corpus/cli-corpus.queries.txt"),
+        "checked-in corpus query file must be generated from the objective grid"
+    );
+}
+
+#[test]
 fn corpus_fetcher_has_resumable_partition_cache_controls() {
     let script = include_str!("../scripts/fetch_cli_corpus_seed.sh");
 
@@ -91,6 +116,14 @@ fn corpus_fetcher_has_resumable_partition_cache_controls() {
     assert!(
         script.contains("GOLDEN_MAGIC_CORPUS_CACHE_REFRESH"),
         "fetcher should expose a forced refresh toggle"
+    );
+    assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_CACHE_ONLY"),
+        "fetcher should support materializing from cache without live GitHub calls"
+    );
+    assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_CACHE"),
+        "fetcher should support partial cache materialization for rate-limit recovery"
     );
     assert!(
         script.contains("using cached partition"),

@@ -8,6 +8,8 @@ fetch_sleep_seconds="${GOLDEN_MAGIC_CORPUS_FETCH_SLEEP_SECONDS:-2}"
 fetch_retries="${GOLDEN_MAGIC_CORPUS_FETCH_RETRIES:-2}"
 cache_dir="${GOLDEN_MAGIC_CORPUS_CACHE_DIR:-corpus/.cache/github-search}"
 cache_refresh="${GOLDEN_MAGIC_CORPUS_CACHE_REFRESH:-0}"
+cache_only="${GOLDEN_MAGIC_CORPUS_CACHE_ONLY:-0}"
+allow_partial_cache="${GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_CACHE:-0}"
 fetched_at="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 tmpdir="$(mktemp -d)"
 existing="$tmpdir/existing.json"
@@ -31,6 +33,7 @@ if [[ ! -f "$queries_file" ]]; then
 fi
 
 query_count=0
+materialized_count=0
 while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
   query="${raw_query#"${raw_query%%[![:space:]]*}"}"
   [[ "$query" == \#* ]] && continue
@@ -47,6 +50,13 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
   if [[ "$cache_refresh" != "1" && -f "$cache_raw" ]]; then
     echo "using cached partition $query_count: $query" >&2
     cp "$cache_raw" "$query_out.raw"
+  elif [[ "$cache_only" == "1" ]]; then
+    if [[ "$allow_partial_cache" == "1" ]]; then
+      echo "skipping uncached partition $query_count: $query" >&2
+      continue
+    fi
+    echo "missing cached partition $query_count: $query" >&2
+    exit 1
   else
     echo "fetching partition $query_count: $query" >&2
     attempt=0
@@ -68,6 +78,7 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
     printf 'limit=%s\nquery=%s\n' "$per_query_limit" "$query" > "$cache_meta"
   fi
 
+  materialized_count=$((materialized_count + 1))
   jq --arg query "$query" --arg fetched_at "$fetched_at" '
         to_entries
         | map({
@@ -99,6 +110,10 @@ done < "$queries_file"
 
 if [[ "$query_count" -eq 0 ]]; then
   echo "no usable corpus queries found in $queries_file" >&2
+  exit 1
+fi
+if [[ "$materialized_count" -eq 0 ]]; then
+  echo "no corpus partitions materialized from $queries_file" >&2
   exit 1
 fi
 
@@ -135,4 +150,4 @@ jq -s --slurpfile existing "$existing" '
   | map(.value + {rank: (.key + 1)})
 ' "$tmpdir"/query-*.json > "$out"
 
-echo "wrote $(jq length "$out") corpus entries from $query_count partitions to $out"
+echo "wrote $(jq length "$out") corpus entries from $materialized_count/$query_count partitions to $out"

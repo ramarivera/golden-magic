@@ -45,6 +45,19 @@ The fetcher preserves existing lifecycle/modeling evidence for repositories
 already present in `corpus/cli-tools.seed.json`; refreshing discovery must not
 erase analyzed, modeled, deterministic, or agentic evidence.
 
+For large generated grids, GitHub can rate-limit before every partition has
+been fetched. Successful partitions are cached under `corpus/.cache/` by
+default. To materialize a seed from whatever partitions are already cached
+without making live GitHub calls, run:
+
+```bash
+GOLDEN_MAGIC_CORPUS_CACHE_ONLY=1 GOLDEN_MAGIC_CORPUS_ALLOW_PARTIAL_CACHE=1 scripts/fetch_cli_corpus_seed.sh 100
+```
+
+This is an explicit partial corpus mode: the command reports
+`materialized/total` partition counts and must not be used as evidence that the
+full 10k corpus has been found.
+
 Every entry also carries explicit lifecycle state:
 
 ```json
