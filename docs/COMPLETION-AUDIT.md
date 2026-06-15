@@ -29,7 +29,7 @@ This audit validates the previously claimed completion list against current repo
 | Descriptor-driven Nix manifest harness exists | `tests/nix_fixture.rs` reads `nix.toml` manifests; `tests/fixtures/descriptors/generic-pipes/nix.toml` exists; default skip test passed; opt-in live execution passed in a disposable `nixos/nix:latest` container with `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1`. |
 | Known-tool descriptor corpus | `tests/fixtures/descriptors/*` contains representative descriptor packs; `docs/KNOWN-TOOLS.md`; descriptor fixture tests passed. |
 | Extension-author SDK for descriptor packs | `docs/SDK.md`, `schemas/descriptor.schema.json`, `examples/descriptors/simple-pipes/*`, `--validate-descriptor-dir`; CLI tests and manual validation passed. |
-| Prior-art research artifact | `docs/PRIOR-ART.md` exists. It still needs tree-sitter/backend expansion for the remaining parser-backend work. |
+| Prior-art research artifact | `docs/PRIOR-ART.md` and `docs/PARSER-BACKENDS.md` cover Nushell, descriptors, tree-sitter, dynamic native loading, subprocesses, WASM/WASI, and the chosen parser-backend boundary. |
 | Safe native runtime extension stance | `docs/EXTENSIONS.md` explicitly rejects arbitrary native runtime loading until separate review. |
 | Docs, OpenSpec, beads, AGENTS/CLAUDE setup | `docs/*`, `openspec/golden-magic-core.md`, `.beads/issues.jsonl`, `AGENTS.md`, `CLAUDE.md` exist. |
 | Public GitHub repo metadata | `git remote -v` points to `git@github.com:ramarivera/golden-magic.git`; `Cargo.toml` contains repository/homepage metadata. |
