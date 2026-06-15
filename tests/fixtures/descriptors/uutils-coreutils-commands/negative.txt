@@ -1,0 +1,2 @@
+command status category
+ls implemented filesystem

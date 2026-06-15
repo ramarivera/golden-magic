@@ -1,0 +1,4 @@
+command	flag usage
+serve	--port listen
+migrate	--dry-run preview
+backup	--output path

@@ -4138,5 +4138,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/dotnet-architecture/eShopOnContainers",
+    "descriptor_id": "known.eshoponcontainers.services",
+    "run_id": "agentic.eshoponcontainers-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/eshoponcontainers-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/eshoponcontainers-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "running service row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.eshoponcontainers.services for eShopOnContainers service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ScoopInstaller/Scoop",
+    "descriptor_id": "known.scoop.buckets",
+    "run_id": "agentic.scoop-buckets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/scoop-buckets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/scoop-buckets/expected.rows.json",
+    "variants": [
+      "bucket header row",
+      "active bucket row",
+      "url field"
+    ],
+    "transcript": [
+      "selected descriptor known.scoop.buckets for Scoop bucket list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/urfave/cli",
+    "descriptor_id": "known.urfave-cli.commands",
+    "run_id": "agentic.urfave-cli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/urfave-cli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/urfave-cli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "flag row",
+      "usage field"
+    ],
+    "transcript": [
+      "selected descriptor known.urfave-cli.commands for urfave/cli command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/radareorg/radare2",
+    "descriptor_id": "known.radare2.functions",
+    "run_id": "agentic.radare2-functions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/radare2-functions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/radare2-functions/expected.rows.json",
+    "variants": [
+      "function header row",
+      "address row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.radare2.functions for radare2 function list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/uutils/coreutils",
+    "descriptor_id": "known.uutils-coreutils.commands",
+    "run_id": "agentic.uutils-coreutils-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/uutils-coreutils-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/uutils-coreutils-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "implemented command row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.uutils-coreutils.commands for uutils coreutils command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

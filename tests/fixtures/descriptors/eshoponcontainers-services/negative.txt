@@ -1,0 +1,2 @@
+service status port
+catalog-api running 5101

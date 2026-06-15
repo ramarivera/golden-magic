@@ -1,0 +1,10 @@
+id = "known.radare2.functions"
+name = "radare2 function list"
+priority = 50
+
+[matches]
+required_substrings = ["function\taddress","main\t0x1000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

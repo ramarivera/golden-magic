@@ -1,0 +1,4 @@
+service	status port
+catalog-api	running 5101
+basket-api	running 5103
+ordering-api	stopped 5102

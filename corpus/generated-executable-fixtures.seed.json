@@ -2518,5 +2518,65 @@
     "negative": "target platform arch\nnode18-linux-x64 linux x64\n",
     "analysis_notes": "Modeled pkg target output with a generated executable-json parser plugin.",
     "variants": ["target header row", "platform row", "arch field"]
+  },
+  {
+    "fixture": "eshoponcontainers-services",
+    "descriptor_id": "known.eshoponcontainers.services",
+    "name": "eShopOnContainers service list",
+    "repo": "https://github.com/dotnet-architecture/eShopOnContainers",
+    "required_substrings": ["service\tstatus", "catalog-api\trunning"],
+    "parser": "tab-pairs",
+    "input": "service\tstatus port\ncatalog-api\trunning 5101\nbasket-api\trunning 5103\nordering-api\tstopped 5102\n",
+    "negative": "service status port\ncatalog-api running 5101\n",
+    "analysis_notes": "Modeled eShopOnContainers service output with a generated executable-json parser plugin.",
+    "variants": ["service header row", "running service row", "port field"]
+  },
+  {
+    "fixture": "scoop-buckets",
+    "descriptor_id": "known.scoop.buckets",
+    "name": "Scoop bucket list",
+    "repo": "https://github.com/ScoopInstaller/Scoop",
+    "required_substrings": ["bucket\tstatus", "main\tactive"],
+    "parser": "tab-pairs",
+    "input": "bucket\tstatus url\nmain\tactive github\nextras\tactive github\nversions\tinactive github\n",
+    "negative": "bucket status url\nmain active github\n",
+    "analysis_notes": "Modeled Scoop bucket output with a generated executable-json parser plugin.",
+    "variants": ["bucket header row", "active bucket row", "url field"]
+  },
+  {
+    "fixture": "urfave-cli-commands",
+    "descriptor_id": "known.urfave-cli.commands",
+    "name": "urfave/cli command list",
+    "repo": "https://github.com/urfave/cli",
+    "required_substrings": ["command\tflag", "serve\t--port"],
+    "parser": "tab-pairs",
+    "input": "command\tflag usage\nserve\t--port listen\nmigrate\t--dry-run preview\nbackup\t--output path\n",
+    "negative": "command flag usage\nserve --port listen\n",
+    "analysis_notes": "Modeled urfave/cli command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "flag row", "usage field"]
+  },
+  {
+    "fixture": "radare2-functions",
+    "descriptor_id": "known.radare2.functions",
+    "name": "radare2 function list",
+    "repo": "https://github.com/radareorg/radare2",
+    "required_substrings": ["function\taddress", "main\t0x1000"],
+    "parser": "tab-pairs",
+    "input": "function\taddress size\nmain\t0x1000 96\nsym.init\t0x1060 32\nsym.exit\t0x1080 24\n",
+    "negative": "function address size\nmain 0x1000 96\n",
+    "analysis_notes": "Modeled radare2 function listing output with a generated executable-json parser plugin.",
+    "variants": ["function header row", "address row", "size field"]
+  },
+  {
+    "fixture": "uutils-coreutils-commands",
+    "descriptor_id": "known.uutils-coreutils.commands",
+    "name": "uutils coreutils command list",
+    "repo": "https://github.com/uutils/coreutils",
+    "required_substrings": ["command\tstatus", "ls\timplemented"],
+    "parser": "tab-pairs",
+    "input": "command\tstatus category\nls\timplemented filesystem\ncp\timplemented filesystem\nsort\timplemented text\n",
+    "negative": "command status category\nls implemented filesystem\n",
+    "analysis_notes": "Modeled uutils coreutils command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "implemented command row", "category field"]
   }
 ]

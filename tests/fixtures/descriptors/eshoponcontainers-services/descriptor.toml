@@ -1,0 +1,10 @@
+id = "known.eshoponcontainers.services"
+name = "eShopOnContainers service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tstatus","catalog-api\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.urfave-cli.commands"
+name = "urfave/cli command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tflag","serve\t--port"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

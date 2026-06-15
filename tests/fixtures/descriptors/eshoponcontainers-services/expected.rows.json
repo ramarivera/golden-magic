@@ -1,0 +1,18 @@
+[
+  {
+    "name": "service",
+    "value": "status port"
+  },
+  {
+    "name": "catalog-api",
+    "value": "running 5101"
+  },
+  {
+    "name": "basket-api",
+    "value": "running 5103"
+  },
+  {
+    "name": "ordering-api",
+    "value": "stopped 5102"
+  }
+]

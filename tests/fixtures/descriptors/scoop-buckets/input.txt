@@ -1,0 +1,4 @@
+bucket	status url
+main	active github
+extras	active github
+versions	inactive github

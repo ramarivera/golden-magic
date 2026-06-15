@@ -1,0 +1,4 @@
+function	address size
+main	0x1000 96
+sym.init	0x1060 32
+sym.exit	0x1080 24

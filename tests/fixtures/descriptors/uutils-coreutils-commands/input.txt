@@ -1,0 +1,4 @@
+command	status category
+ls	implemented filesystem
+cp	implemented filesystem
+sort	implemented text

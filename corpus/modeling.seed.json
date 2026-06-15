@@ -1608,5 +1608,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/pkg-targets",
     "analysis_notes": "Modeled pkg target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dotnet-architecture/eShopOnContainers",
+    "descriptor_id": "known.eshoponcontainers.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/eshoponcontainers-services",
+    "analysis_notes": "Modeled eShopOnContainers service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ScoopInstaller/Scoop",
+    "descriptor_id": "known.scoop.buckets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/scoop-buckets",
+    "analysis_notes": "Modeled Scoop bucket output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/urfave/cli",
+    "descriptor_id": "known.urfave-cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/urfave-cli-commands",
+    "analysis_notes": "Modeled urfave/cli command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/radareorg/radare2",
+    "descriptor_id": "known.radare2.functions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/radare2-functions",
+    "analysis_notes": "Modeled radare2 function listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/uutils/coreutils",
+    "descriptor_id": "known.uutils-coreutils.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/uutils-coreutils-commands",
+    "analysis_notes": "Modeled uutils coreutils command output with a generated executable-json parser plugin."
   }
 ]
