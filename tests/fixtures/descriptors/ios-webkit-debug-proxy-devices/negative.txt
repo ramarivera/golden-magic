@@ -1,0 +1,2 @@
+device state port
+iphone-12 connected 9221

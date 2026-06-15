@@ -3743,5 +3743,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/summarize-jobs",
     "analysis_notes": "Modeled summarize job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google/ios-webkit-debug-proxy",
+    "descriptor_id": "known.ios-webkit-debug-proxy.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ios-webkit-debug-proxy-devices",
+    "analysis_notes": "Modeled ios-webkit-debug-proxy device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JakubOnderka/PHP-Console-Highlighter",
+    "descriptor_id": "known.php-console-highlighter.tokens",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/php-console-highlighter-tokens",
+    "analysis_notes": "Modeled PHP-Console-Highlighter token output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cmus/cmus",
+    "descriptor_id": "known.cmus.library",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cmus-library",
+    "analysis_notes": "Modeled cmus library output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/todotxt/todo.txt-cli",
+    "descriptor_id": "known.todo-txt.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/todo-txt-tasks",
+    "analysis_notes": "Modeled todo.txt-cli task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JakubOnderka/PHP-Console-Color",
+    "descriptor_id": "known.php-console-color.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/php-console-color-styles",
+    "analysis_notes": "Modeled PHP-Console-Color style output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+token	style count
+keyword	blue 12
+string	green 8
+comment	gray 3

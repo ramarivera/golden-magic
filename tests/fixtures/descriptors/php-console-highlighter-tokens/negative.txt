@@ -1,0 +1,2 @@
+token style count
+keyword blue 12

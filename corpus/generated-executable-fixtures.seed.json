@@ -6178,5 +6178,65 @@
     "negative": "job state source\npodcast complete audio\n",
     "analysis_notes": "Modeled summarize job output with a generated executable-json parser plugin.",
     "variants": ["job header row", "state row", "source field"]
+  },
+  {
+    "fixture": "ios-webkit-debug-proxy-devices",
+    "descriptor_id": "known.ios-webkit-debug-proxy.devices",
+    "name": "ios-webkit-debug-proxy device list",
+    "repo": "https://github.com/google/ios-webkit-debug-proxy",
+    "required_substrings": ["device\tstate", "iphone-12\tconnected"],
+    "parser": "tab-pairs",
+    "input": "device\tstate port\niphone-12\tconnected 9221\nipad-pro\tconnected 9222\nsimulator\tdisconnected 0\n",
+    "negative": "device state port\niphone-12 connected 9221\n",
+    "analysis_notes": "Modeled ios-webkit-debug-proxy device output with a generated executable-json parser plugin.",
+    "variants": ["device header row", "state row", "port field"]
+  },
+  {
+    "fixture": "php-console-highlighter-tokens",
+    "descriptor_id": "known.php-console-highlighter.tokens",
+    "name": "PHP-Console-Highlighter token list",
+    "repo": "https://github.com/JakubOnderka/PHP-Console-Highlighter",
+    "required_substrings": ["token\tstyle", "keyword\tblue"],
+    "parser": "tab-pairs",
+    "input": "token\tstyle count\nkeyword\tblue 12\nstring\tgreen 8\ncomment\tgray 3\n",
+    "negative": "token style count\nkeyword blue 12\n",
+    "analysis_notes": "Modeled PHP-Console-Highlighter token output with a generated executable-json parser plugin.",
+    "variants": ["token header row", "style row", "count field"]
+  },
+  {
+    "fixture": "cmus-library",
+    "descriptor_id": "known.cmus.library",
+    "name": "cmus library track list",
+    "repo": "https://github.com/cmus/cmus",
+    "required_substrings": ["track\tartist", "Intro\tBoards"],
+    "parser": "tab-pairs",
+    "input": "track\tartist duration\nIntro\tBoards 01:44\nPulse\tTycho 04:12\nNight\tCom Truise 03:58\n",
+    "negative": "track artist duration\nIntro Boards 01:44\n",
+    "analysis_notes": "Modeled cmus library output with a generated executable-json parser plugin.",
+    "variants": ["track header row", "artist row", "duration field"]
+  },
+  {
+    "fixture": "todo-txt-tasks",
+    "descriptor_id": "known.todo-txt.tasks",
+    "name": "todo.txt task list",
+    "repo": "https://github.com/todotxt/todo.txt-cli",
+    "required_substrings": ["task\tstatus", "ship\topen"],
+    "parser": "tab-pairs",
+    "input": "task\tstatus context\nship\topen @work\nreview\tdone @desk\nbackup\topen @home\n",
+    "negative": "task status context\nship open @work\n",
+    "analysis_notes": "Modeled todo.txt-cli task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "status row", "context field"]
+  },
+  {
+    "fixture": "php-console-color-styles",
+    "descriptor_id": "known.php-console-color.styles",
+    "name": "PHP-Console-Color style list",
+    "repo": "https://github.com/JakubOnderka/PHP-Console-Color",
+    "required_substrings": ["style\tansi", "error\t31"],
+    "parser": "tab-pairs",
+    "input": "style\tansi example\nerror\t31 failed\nsuccess\t32 passed\nwarning\t33 caution\n",
+    "negative": "style ansi example\nerror 31 failed\n",
+    "analysis_notes": "Modeled PHP-Console-Color style output with a generated executable-json parser plugin.",
+    "variants": ["style header row", "ansi row", "example field"]
   }
 ]

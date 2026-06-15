@@ -1,0 +1,4 @@
+style	ansi example
+error	31 failed
+success	32 passed
+warning	33 caution

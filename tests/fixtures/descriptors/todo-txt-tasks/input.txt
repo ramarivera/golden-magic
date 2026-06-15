@@ -1,0 +1,4 @@
+task	status context
+ship	open @work
+review	done @desk
+backup	open @home

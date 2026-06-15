@@ -1,0 +1,10 @@
+id = "known.cmus.library"
+name = "cmus library track list"
+priority = 50
+
+[matches]
+required_substrings = ["track\tartist","Intro\tBoards"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

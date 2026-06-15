@@ -1,0 +1,10 @@
+id = "known.ios-webkit-debug-proxy.devices"
+name = "ios-webkit-debug-proxy device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tstate","iphone-12\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

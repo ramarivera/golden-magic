@@ -9628,5 +9628,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/google/ios-webkit-debug-proxy",
+    "descriptor_id": "known.ios-webkit-debug-proxy.devices",
+    "run_id": "agentic.ios-webkit-debug-proxy-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ios-webkit-debug-proxy-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ios-webkit-debug-proxy-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.ios-webkit-debug-proxy.devices for ios-webkit-debug-proxy device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JakubOnderka/PHP-Console-Highlighter",
+    "descriptor_id": "known.php-console-highlighter.tokens",
+    "run_id": "agentic.php-console-highlighter-tokens.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/php-console-highlighter-tokens/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/php-console-highlighter-tokens/expected.rows.json",
+    "variants": [
+      "token header row",
+      "style row",
+      "count field"
+    ],
+    "transcript": [
+      "selected descriptor known.php-console-highlighter.tokens for PHP-Console-Highlighter token list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cmus/cmus",
+    "descriptor_id": "known.cmus.library",
+    "run_id": "agentic.cmus-library.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cmus-library/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cmus-library/expected.rows.json",
+    "variants": [
+      "track header row",
+      "artist row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.cmus.library for cmus library track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/todotxt/todo.txt-cli",
+    "descriptor_id": "known.todo-txt.tasks",
+    "run_id": "agentic.todo-txt-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/todo-txt-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/todo-txt-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "context field"
+    ],
+    "transcript": [
+      "selected descriptor known.todo-txt.tasks for todo.txt task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JakubOnderka/PHP-Console-Color",
+    "descriptor_id": "known.php-console-color.styles",
+    "run_id": "agentic.php-console-color-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/php-console-color-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/php-console-color-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "ansi row",
+      "example field"
+    ],
+    "transcript": [
+      "selected descriptor known.php-console-color.styles for PHP-Console-Color style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

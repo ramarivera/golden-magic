@@ -1,0 +1,10 @@
+id = "known.todo-txt.tasks"
+name = "todo.txt task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","ship\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

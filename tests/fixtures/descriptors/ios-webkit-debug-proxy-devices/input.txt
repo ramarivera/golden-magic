@@ -1,0 +1,4 @@
+device	state port
+iphone-12	connected 9221
+ipad-pro	connected 9222
+simulator	disconnected 0

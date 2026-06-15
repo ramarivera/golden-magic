@@ -1,0 +1,18 @@
+[
+  {
+    "name": "token",
+    "value": "style count"
+  },
+  {
+    "name": "keyword",
+    "value": "blue 12"
+  },
+  {
+    "name": "string",
+    "value": "green 8"
+  },
+  {
+    "name": "comment",
+    "value": "gray 3"
+  }
+]
