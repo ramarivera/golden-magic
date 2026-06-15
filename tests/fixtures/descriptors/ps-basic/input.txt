@@ -1,0 +1,4 @@
+PID     TTY          TIME CMD
+1024    ttys001      0:00 zsh
+2048    ttys001      0:03 cargo
+4096    ttys002      1:22 nu

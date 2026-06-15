@@ -1,0 +1,4 @@
+NAME                       READY   STATUS    RESTARTS   AGE
+api-7f8d9c4d5b-k2n7s       1/1     Running   0          3h
+worker-6c86f77f95-9m4nd    1/1     Running   2          2h
+db-migrate-28419912-vt9lh  0/1     Completed  0          12m

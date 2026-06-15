@@ -1,0 +1,30 @@
+[
+  {
+    "column0": "NAME",
+    "column1": "READY",
+    "column2": "STATUS",
+    "column3": "RESTARTS",
+    "column4": "AGE"
+  },
+  {
+    "column0": "api-7f8d9c4d5b-k2n7s",
+    "column1": "1/1",
+    "column2": "Running",
+    "column3": "0",
+    "column4": "3h"
+  },
+  {
+    "column0": "worker-6c86f77f95-9m4nd",
+    "column1": "1/1",
+    "column2": "Running",
+    "column3": "2",
+    "column4": "2h"
+  },
+  {
+    "column0": "db-migrate-28419912-vt9lh",
+    "column1": "0/1",
+    "column2": "Completed",
+    "column3": "0",
+    "column4": "12m"
+  }
+]

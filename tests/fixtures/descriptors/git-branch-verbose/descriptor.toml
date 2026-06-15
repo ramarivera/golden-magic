@@ -1,0 +1,9 @@
+id = "known.git.branch-verbose"
+name = "git branch --verbose"
+priority = 50
+
+[matches]
+required_substrings = ["* main", "origin/main"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

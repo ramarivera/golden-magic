@@ -1,0 +1,3 @@
+#123  OPEN    feat: add parser registry        ramiro     feature/parser
+#124  MERGED  docs: explain extension model    ramiro     docs/extensions
+#125  DRAFT   test: add descriptor fixtures    ramiro     test/descriptors

@@ -1,0 +1,4 @@
+package|version|source
+syn|2.0.104|crates.io
+syn|1.0.109|crates.io
+windows-sys|0.59.0|crates.io

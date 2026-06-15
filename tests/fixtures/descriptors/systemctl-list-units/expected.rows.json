@@ -1,0 +1,30 @@
+[
+  {
+    "column0": "UNIT",
+    "column1": "LOAD",
+    "column2": "ACTIVE",
+    "column3": "SUB",
+    "column4": "DESCRIPTION"
+  },
+  {
+    "column0": "ssh.service",
+    "column1": "loaded",
+    "column2": "active",
+    "column3": "running",
+    "column4": "OpenSSH-server-daemon"
+  },
+  {
+    "column0": "postgresql.service",
+    "column1": "loaded",
+    "column2": "active",
+    "column3": "running",
+    "column4": "PostgreSQL-database-server"
+  },
+  {
+    "column0": "golden-magic-worker.service",
+    "column1": "loaded",
+    "column2": "failed",
+    "column3": "failed",
+    "column4": "Golden-Magic-worker"
+  }
+]

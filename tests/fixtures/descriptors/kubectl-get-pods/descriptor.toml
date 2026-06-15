@@ -1,0 +1,9 @@
+id = "known.kubectl.get-pods"
+name = "kubectl get pods"
+priority = 50
+
+[matches]
+required_substrings = ["NAME", "READY", "STATUS", "RESTARTS", "AGE"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

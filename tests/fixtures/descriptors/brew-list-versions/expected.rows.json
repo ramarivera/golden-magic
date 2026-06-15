@@ -1,0 +1,18 @@
+[
+  {
+    "column0": "openssl@3",
+    "column1": "3.5.0"
+  },
+  {
+    "column0": "ripgrep",
+    "column1": "14.1.1"
+  },
+  {
+    "column0": "nushell",
+    "column1": "0.113.1"
+  },
+  {
+    "column0": "git",
+    "column1": "2.50.0"
+  }
+]

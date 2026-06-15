@@ -1,0 +1,26 @@
+[
+  {
+    "column0": "Package",
+    "column1": "Current",
+    "column2": "Latest",
+    "column3": "Depended by"
+  },
+  {
+    "column0": "vite",
+    "column1": "6.3.5",
+    "column2": "7.1.0",
+    "column3": "web"
+  },
+  {
+    "column0": "typescript",
+    "column1": "5.8.3",
+    "column2": "5.9.2",
+    "column3": "root"
+  },
+  {
+    "column0": "vitest",
+    "column1": "3.2.4",
+    "column2": "3.2.4",
+    "column3": "tests"
+  }
+]

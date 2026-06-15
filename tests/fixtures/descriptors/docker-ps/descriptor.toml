@@ -1,0 +1,9 @@
+id = "known.docker.ps"
+name = "docker ps compact table"
+priority = 50
+
+[matches]
+required_substrings = ["CONTAINER ID", "IMAGE", "STATUS", "PORTS", "NAMES"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

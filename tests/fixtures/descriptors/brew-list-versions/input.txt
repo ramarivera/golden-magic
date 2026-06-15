@@ -1,0 +1,4 @@
+openssl@3       3.5.0
+ripgrep         14.1.1
+nushell         0.113.1
+git             2.50.0

@@ -1,0 +1,23 @@
+[
+  {
+    "column0": "#123",
+    "column1": "OPEN",
+    "column2": "feat: add parser registry",
+    "column3": "ramiro",
+    "column4": "feature/parser"
+  },
+  {
+    "column0": "#124",
+    "column1": "MERGED",
+    "column2": "docs: explain extension model",
+    "column3": "ramiro",
+    "column4": "docs/extensions"
+  },
+  {
+    "column0": "#125",
+    "column1": "DRAFT",
+    "column2": "test: add descriptor fixtures",
+    "column3": "ramiro",
+    "column4": "test/descriptors"
+  }
+]

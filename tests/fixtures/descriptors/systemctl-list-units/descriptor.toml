@@ -1,0 +1,9 @@
+id = "known.systemctl.list-units"
+name = "systemctl list-units service table"
+priority = 50
+
+[matches]
+required_substrings = ["UNIT", "LOAD", "ACTIVE", "SUB", "DESCRIPTION"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

@@ -140,12 +140,12 @@ Implemented generic heuristics:
 - default descriptor discovery from XDG config with `--no-default-descriptors` opt-out
 - config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml` in the CLI and native plugin paths
 - optional descriptor-driven Nix manifest fixture harness for real CLI isolation
+- known-tool descriptor corpus with fixture coverage for representative CLI output shapes
 - Criterion benchmark harness and cargo-test parser performance gates
 
 Not implemented yet:
 
 - arbitrary Rust runtime extension/plugin loading; current extension design explicitly prefers descriptor packs, subprocesses, and WASM/WASI before native loading
-- big known-tool descriptor corpus
 - grammar engine beyond the current heuristic parser
 - rich extension-author SDK beyond TOML descriptor and fixture conventions
 - guaranteed live Nix fixture execution on machines without `nix`; optional Nix fixtures skip when Nix is unavailable
@@ -156,6 +156,7 @@ See:
 - [`docs/VISION.md`](docs/VISION.md)
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
 - [`docs/DESCRIPTORS.md`](docs/DESCRIPTORS.md)
+- [`docs/KNOWN-TOOLS.md`](docs/KNOWN-TOOLS.md)
 - [`docs/PERFORMANCE.md`](docs/PERFORMANCE.md)
 - [`docs/NIX-FIXTURES.md`](docs/NIX-FIXTURES.md)
 - [`docs/DEBUG-INSTRUMENTATION.md`](docs/DEBUG-INSTRUMENTATION.md)

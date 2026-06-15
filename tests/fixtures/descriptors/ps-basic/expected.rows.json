@@ -1,0 +1,22 @@
+[
+  {
+    "column0": "PID",
+    "column1": "TTY",
+    "column2": "TIME CMD"
+  },
+  {
+    "column0": "1024",
+    "column1": "ttys001",
+    "column2": "0:00 zsh"
+  },
+  {
+    "column0": "2048",
+    "column1": "ttys001",
+    "column2": "0:03 cargo"
+  },
+  {
+    "column0": "4096",
+    "column1": "ttys002",
+    "column2": "1:22 nu"
+  }
+]

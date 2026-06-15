@@ -1,0 +1,23 @@
+[
+  {
+    "column0": "CONTAINER ID",
+    "column1": "IMAGE",
+    "column2": "STATUS",
+    "column3": "PORTS",
+    "column4": "NAMES"
+  },
+  {
+    "column0": "abc123def456",
+    "column1": "postgres:16",
+    "column2": "Up 3 hours",
+    "column3": "0.0.0.0:5432->5432/tcp",
+    "column4": "golden-db"
+  },
+  {
+    "column0": "fed987cba654",
+    "column1": "redis:7",
+    "column2": "Up 3 hours",
+    "column3": "0.0.0.0:6379->6379/tcp",
+    "column4": "golden-cache"
+  }
+]

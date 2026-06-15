@@ -1,0 +1,9 @@
+id = "known.gh.pr-list"
+name = "GitHub CLI PR list compact table"
+priority = 50
+
+[matches]
+required_substrings = ["#123", "OPEN", "feat:"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

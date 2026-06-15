@@ -1,0 +1,22 @@
+[
+  {
+    "column0": "package",
+    "column1": "version",
+    "column2": "source"
+  },
+  {
+    "column0": "syn",
+    "column1": "2.0.104",
+    "column2": "crates.io"
+  },
+  {
+    "column0": "syn",
+    "column1": "1.0.109",
+    "column2": "crates.io"
+  },
+  {
+    "column0": "windows-sys",
+    "column1": "0.59.0",
+    "column2": "crates.io"
+  }
+]

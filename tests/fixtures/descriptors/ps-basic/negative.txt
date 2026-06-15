@@ -1,0 +1,1 @@
+pid=1024 tty=ttys001 time=0:00 cmd=zsh

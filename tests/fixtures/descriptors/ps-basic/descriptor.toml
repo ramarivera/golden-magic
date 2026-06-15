@@ -1,0 +1,10 @@
+id = "known.ps.basic"
+name = "ps basic process table"
+priority = 50
+
+[matches]
+required_substrings = ["PID", "TTY", "TIME", "CMD"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]
+disable_rules = ["detect.delimited.commas"]

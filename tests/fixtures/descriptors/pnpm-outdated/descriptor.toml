@@ -1,0 +1,9 @@
+id = "known.pnpm.outdated"
+name = "pnpm outdated table"
+priority = 50
+
+[matches]
+required_substrings = ["Package", "Current", "Latest", "vite"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

@@ -1,0 +1,9 @@
+id = "known.aws.s3-ls"
+name = "aws s3 ls bucket listing"
+priority = 50
+
+[matches]
+required_substrings = ["2026-06-15", "artifact.json"]
+
+[parser]
+only_rules = ["detect.fixed-width.gaps"]

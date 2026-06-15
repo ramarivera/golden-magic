@@ -1,0 +1,14 @@
+[
+  {
+    "column0": "* main",
+    "column1": "8059814 [origin/main] feat(nu-plugin): load descriptors and config"
+  },
+  {
+    "column0": "feature/parser",
+    "column1": "4b509c2 [origin/feature/parser] test(nix): add descriptor manifest harness"
+  },
+  {
+    "column0": "docs/prior-art",
+    "column1": "bbb5890 docs(research): add prior art analysis"
+  }
+]

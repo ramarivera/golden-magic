@@ -1,0 +1,4 @@
+UNIT                         LOAD    ACTIVE  SUB      DESCRIPTION
+ssh.service                  loaded  active  running  OpenSSH-server-daemon
+postgresql.service           loaded  active  running  PostgreSQL-database-server
+golden-magic-worker.service  loaded  failed  failed   Golden-Magic-worker
