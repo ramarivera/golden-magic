@@ -1,0 +1,10 @@
+id = "known.design-extract.tokens"
+name = "design-extract token list"
+priority = 50
+
+[matches]
+required_substrings = ["token\tkind","color.primary\tcolor"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

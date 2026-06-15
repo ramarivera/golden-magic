@@ -1,0 +1,4 @@
+chat	model state
+default	gpt active
+shell	gpt active
+old	bard archived

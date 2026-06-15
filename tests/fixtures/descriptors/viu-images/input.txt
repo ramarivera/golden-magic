@@ -1,0 +1,4 @@
+image	mode state
+logo.png	kitty rendered
+photo.jpg	iterm rendered
+bad.svg	unsupported skipped

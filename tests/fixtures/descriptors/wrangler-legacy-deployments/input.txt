@@ -1,0 +1,4 @@
+deployment	status state
+worker	published active
+preview	uploaded active
+old	failed retry

@@ -5836,5 +5836,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/wrkflw-runs",
     "analysis_notes": "Modeled wrkflw local GitHub Actions run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SurgeDM/Surge",
+    "descriptor_id": "known.surge.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/surge-downloads",
+    "analysis_notes": "Modeled Surge TUI download-manager output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/carthage-software/mago",
+    "descriptor_id": "known.mago.issues",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mago-issues",
+    "analysis_notes": "Modeled mago PHP toolchain issue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Manavarya09/design-extract",
+    "descriptor_id": "known.design-extract.tokens",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/design-extract-tokens",
+    "analysis_notes": "Modeled design-extract design-token output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/batrachianai/toad",
+    "descriptor_id": "known.toad.providers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/toad-providers",
+    "analysis_notes": "Modeled toad terminal AI provider output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/atanunq/viu",
+    "descriptor_id": "known.viu.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/viu-images",
+    "analysis_notes": "Modeled viu terminal image render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Textualize/frogmouth",
+    "descriptor_id": "known.frogmouth.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/frogmouth-documents",
+    "analysis_notes": "Modeled frogmouth Markdown browser document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cloudflare/wrangler-legacy",
+    "descriptor_id": "known.wrangler-legacy.deployments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wrangler-legacy-deployments",
+    "analysis_notes": "Modeled wrangler-legacy worker deployment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aandrew-me/tgpt",
+    "descriptor_id": "known.tgpt.chats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tgpt-chats",
+    "analysis_notes": "Modeled tgpt terminal chat session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Genivia/ugrep",
+    "descriptor_id": "known.ugrep.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ugrep-matches",
+    "analysis_notes": "Modeled ugrep search match output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pamburus/hl",
+    "descriptor_id": "known.hl.streams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hl-streams",
+    "analysis_notes": "Modeled hl log stream output with a generated executable-json parser plugin."
   }
 ]

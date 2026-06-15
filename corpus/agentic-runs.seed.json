@@ -15010,5 +15010,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/SurgeDM/Surge",
+    "descriptor_id": "known.surge.downloads",
+    "run_id": "agentic.surge-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/surge-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/surge-downloads/expected.rows.json",
+    "variants": [
+      "download header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.surge.downloads for Surge download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/carthage-software/mago",
+    "descriptor_id": "known.mago.issues",
+    "run_id": "agentic.mago-issues.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mago-issues/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mago-issues/expected.rows.json",
+    "variants": [
+      "issue header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mago.issues for mago issue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Manavarya09/design-extract",
+    "descriptor_id": "known.design-extract.tokens",
+    "run_id": "agentic.design-extract-tokens.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/design-extract-tokens/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/design-extract-tokens/expected.rows.json",
+    "variants": [
+      "token header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.design-extract.tokens for design-extract token list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/batrachianai/toad",
+    "descriptor_id": "known.toad.providers",
+    "run_id": "agentic.toad-providers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/toad-providers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/toad-providers/expected.rows.json",
+    "variants": [
+      "provider header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.toad.providers for toad provider list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/atanunq/viu",
+    "descriptor_id": "known.viu.images",
+    "run_id": "agentic.viu-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/viu-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/viu-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.viu.images for viu image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Textualize/frogmouth",
+    "descriptor_id": "known.frogmouth.documents",
+    "run_id": "agentic.frogmouth-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/frogmouth-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/frogmouth-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "section row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.frogmouth.documents for frogmouth document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cloudflare/wrangler-legacy",
+    "descriptor_id": "known.wrangler-legacy.deployments",
+    "run_id": "agentic.wrangler-legacy-deployments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wrangler-legacy-deployments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wrangler-legacy-deployments/expected.rows.json",
+    "variants": [
+      "deployment header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wrangler-legacy.deployments for wrangler-legacy deployment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aandrew-me/tgpt",
+    "descriptor_id": "known.tgpt.chats",
+    "run_id": "agentic.tgpt-chats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tgpt-chats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tgpt-chats/expected.rows.json",
+    "variants": [
+      "chat header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tgpt.chats for tgpt chat list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Genivia/ugrep",
+    "descriptor_id": "known.ugrep.matches",
+    "run_id": "agentic.ugrep-matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ugrep-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ugrep-matches/expected.rows.json",
+    "variants": [
+      "match header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ugrep.matches for ugrep match list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pamburus/hl",
+    "descriptor_id": "known.hl.streams",
+    "run_id": "agentic.hl-streams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hl-streams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hl-streams/expected.rows.json",
+    "variants": [
+      "stream header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hl.streams for hl stream list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

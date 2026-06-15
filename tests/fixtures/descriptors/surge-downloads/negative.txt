@@ -1,0 +1,2 @@
+download status state
+image.iso running active

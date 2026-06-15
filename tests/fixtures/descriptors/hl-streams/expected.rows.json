@@ -1,0 +1,18 @@
+[
+  {
+    "name": "stream",
+    "value": "format state"
+  },
+  {
+    "name": "app",
+    "value": "json rendered"
+  },
+  {
+    "name": "api",
+    "value": "logfmt rendered"
+  },
+  {
+    "name": "old",
+    "value": "plain hidden"
+  }
+]

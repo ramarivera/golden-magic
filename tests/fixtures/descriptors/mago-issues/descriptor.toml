@@ -1,0 +1,10 @@
+id = "known.mago.issues"
+name = "mago issue list"
+priority = 50
+
+[matches]
+required_substrings = ["issue\tfile","lint\tsrc/App.php"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

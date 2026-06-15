@@ -1,0 +1,4 @@
+stream	format state
+app	json rendered
+api	logfmt rendered
+old	plain hidden

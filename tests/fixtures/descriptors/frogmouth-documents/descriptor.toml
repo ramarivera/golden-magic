@@ -1,0 +1,10 @@
+id = "known.frogmouth.documents"
+name = "frogmouth document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tsection","README.md\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.surge.downloads"
+name = "Surge download list"
+priority = 50
+
+[matches]
+required_substrings = ["download\tstatus","image.iso\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

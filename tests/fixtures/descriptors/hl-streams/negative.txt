@@ -1,0 +1,2 @@
+stream format state
+app json rendered

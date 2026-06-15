@@ -1,0 +1,4 @@
+download	status state
+image.iso	running active
+video.mp4	complete done
+old.zip	paused waiting

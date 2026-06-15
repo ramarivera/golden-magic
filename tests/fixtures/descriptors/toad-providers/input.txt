@@ -1,0 +1,4 @@
+provider	status state
+openai	ready configured
+local	ready configured
+old	missing disabled

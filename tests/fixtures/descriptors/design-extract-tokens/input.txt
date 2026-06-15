@@ -1,0 +1,4 @@
+token	kind state
+color.primary	color extracted
+space.md	spacing extracted
+old.shadow	shadow skipped

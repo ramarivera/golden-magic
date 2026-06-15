@@ -1,0 +1,18 @@
+[
+  {
+    "name": "document",
+    "value": "section state"
+  },
+  {
+    "name": "README.md",
+    "value": "3 open"
+  },
+  {
+    "name": "CHANGELOG.md",
+    "value": "5 open"
+  },
+  {
+    "name": "old.md",
+    "value": "1 closed"
+  }
+]

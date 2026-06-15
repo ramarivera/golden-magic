@@ -1,0 +1,10 @@
+id = "known.wrangler-legacy.deployments"
+name = "wrangler-legacy deployment list"
+priority = 50
+
+[matches]
+required_substrings = ["deployment\tstatus","worker\tpublished"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

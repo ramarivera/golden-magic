@@ -1,0 +1,10 @@
+id = "known.viu.images"
+name = "viu image list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tmode","logo.png\tkitty"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
