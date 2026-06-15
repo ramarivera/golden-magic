@@ -15190,5 +15190,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/hairyhenderson/gomplate",
+    "descriptor_id": "known.gomplate.renders",
+    "run_id": "agentic.gomplate-renders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gomplate-renders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gomplate-renders/expected.rows.json",
+    "variants": [
+      "template header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gomplate.renders for gomplate render list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/superagent-ai/grok-cli",
+    "descriptor_id": "known.grok-cli.prompts",
+    "run_id": "agentic.grok-cli-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/grok-cli-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/grok-cli-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.grok-cli.prompts for grok-cli prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/danvergara/dblab",
+    "descriptor_id": "known.dblab.connections",
+    "run_id": "agentic.dblab-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dblab-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dblab-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "driver row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dblab.connections for dblab connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/infinitered/gluegun",
+    "descriptor_id": "known.gluegun.commands",
+    "run_id": "agentic.gluegun-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gluegun-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gluegun-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gluegun.commands for gluegun command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/amalshaji/portr",
+    "descriptor_id": "known.portr.tunnels",
+    "run_id": "agentic.portr-tunnels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/portr-tunnels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/portr-tunnels/expected.rows.json",
+    "variants": [
+      "tunnel header row",
+      "port row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.portr.tunnels for portr tunnel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sdushantha/wifi-password",
+    "descriptor_id": "known.wifi-password.networks",
+    "run_id": "agentic.wifi-password-networks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wifi-password-networks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wifi-password-networks/expected.rows.json",
+    "variants": [
+      "network header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wifi-password.networks for wifi-password network list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/skywind3000/z.lua",
+    "descriptor_id": "known.z-lua.paths",
+    "run_id": "agentic.z-lua-paths.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/z-lua-paths/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/z-lua-paths/expected.rows.json",
+    "variants": [
+      "path header row",
+      "score row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.z-lua.paths for z.lua path list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/laravel-shift/blueprint",
+    "descriptor_id": "known.blueprint.generators",
+    "run_id": "agentic.blueprint-generators.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/blueprint-generators/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/blueprint-generators/expected.rows.json",
+    "variants": [
+      "generator header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.blueprint.generators for blueprint generator list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alecthomas/kong",
+    "descriptor_id": "known.kong.commands",
+    "run_id": "agentic.kong-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kong-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kong-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "flags row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kong.commands for kong command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cacjs/cac",
+    "descriptor_id": "known.cac.commands",
+    "run_id": "agentic.cac-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cac-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cac-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "options row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cac.commands for cac command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

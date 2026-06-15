@@ -1,0 +1,10 @@
+id = "known.gomplate.renders"
+name = "gomplate render list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tstatus","config.tmpl\trendered"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

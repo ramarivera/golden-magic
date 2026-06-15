@@ -5906,5 +5906,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/hl-streams",
     "analysis_notes": "Modeled hl log stream output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hairyhenderson/gomplate",
+    "descriptor_id": "known.gomplate.renders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gomplate-renders",
+    "analysis_notes": "Modeled gomplate template render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/superagent-ai/grok-cli",
+    "descriptor_id": "known.grok-cli.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/grok-cli-prompts",
+    "analysis_notes": "Modeled grok-cli prompt/task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/danvergara/dblab",
+    "descriptor_id": "known.dblab.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dblab-connections",
+    "analysis_notes": "Modeled dblab database connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/infinitered/gluegun",
+    "descriptor_id": "known.gluegun.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gluegun-commands",
+    "analysis_notes": "Modeled gluegun command metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/amalshaji/portr",
+    "descriptor_id": "known.portr.tunnels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/portr-tunnels",
+    "analysis_notes": "Modeled portr local tunnel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sdushantha/wifi-password",
+    "descriptor_id": "known.wifi-password.networks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wifi-password-networks",
+    "analysis_notes": "Modeled wifi-password network output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/skywind3000/z.lua",
+    "descriptor_id": "known.z-lua.paths",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/z-lua-paths",
+    "analysis_notes": "Modeled z.lua frecent path output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/laravel-shift/blueprint",
+    "descriptor_id": "known.blueprint.generators",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/blueprint-generators",
+    "analysis_notes": "Modeled Laravel Blueprint generator output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alecthomas/kong",
+    "descriptor_id": "known.kong.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kong-commands",
+    "analysis_notes": "Modeled kong command metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cacjs/cac",
+    "descriptor_id": "known.cac.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cac-commands",
+    "analysis_notes": "Modeled cac command metadata output with a generated executable-json parser plugin."
   }
 ]

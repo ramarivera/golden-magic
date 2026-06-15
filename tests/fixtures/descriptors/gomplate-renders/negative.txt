@@ -1,0 +1,2 @@
+template status state
+config.tmpl rendered complete

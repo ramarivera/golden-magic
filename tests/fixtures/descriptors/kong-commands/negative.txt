@@ -1,0 +1,2 @@
+command flags state
+serve 3 registered

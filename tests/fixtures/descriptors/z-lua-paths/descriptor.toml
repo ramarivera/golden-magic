@@ -1,0 +1,10 @@
+id = "known.z-lua.paths"
+name = "z.lua path list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tscore","/repo\t90"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

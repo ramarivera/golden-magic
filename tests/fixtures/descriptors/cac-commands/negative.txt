@@ -1,0 +1,2 @@
+command options state
+dev 4 registered

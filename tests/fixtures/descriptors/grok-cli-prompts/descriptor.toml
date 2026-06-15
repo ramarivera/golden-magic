@@ -1,0 +1,10 @@
+id = "known.grok-cli.prompts"
+name = "grok-cli prompt list"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\tmodel","fix\tgrok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.wifi-password.networks"
+name = "wifi-password network list"
+priority = 50
+
+[matches]
+required_substrings = ["network\tstatus","HomeWiFi\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

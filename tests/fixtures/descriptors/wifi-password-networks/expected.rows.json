@@ -1,0 +1,18 @@
+[
+  {
+    "name": "network",
+    "value": "status state"
+  },
+  {
+    "name": "HomeWiFi",
+    "value": "found visible"
+  },
+  {
+    "name": "Office",
+    "value": "found visible"
+  },
+  {
+    "name": "Old",
+    "value": "missing hidden"
+  }
+]

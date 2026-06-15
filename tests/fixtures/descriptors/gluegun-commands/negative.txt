@@ -1,0 +1,2 @@
+command kind state
+generate plugin registered

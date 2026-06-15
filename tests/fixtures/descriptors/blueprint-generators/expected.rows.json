@@ -1,0 +1,18 @@
+[
+  {
+    "name": "generator",
+    "value": "status state"
+  },
+  {
+    "name": "model",
+    "value": "done complete"
+  },
+  {
+    "name": "controller",
+    "value": "done complete"
+  },
+  {
+    "name": "migration",
+    "value": "queued pending"
+  }
+]

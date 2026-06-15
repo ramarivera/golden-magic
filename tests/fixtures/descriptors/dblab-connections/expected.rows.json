@@ -1,0 +1,18 @@
+[
+  {
+    "name": "connection",
+    "value": "driver state"
+  },
+  {
+    "name": "local",
+    "value": "postgres connected"
+  },
+  {
+    "name": "stage",
+    "value": "mysql saved"
+  },
+  {
+    "name": "old",
+    "value": "sqlite archived"
+  }
+]

@@ -1,0 +1,4 @@
+command	flags state
+serve	3 registered
+config	2 registered
+help	1 builtin

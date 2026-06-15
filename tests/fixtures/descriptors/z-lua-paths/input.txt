@@ -1,0 +1,4 @@
+path	score state
+/repo	90 ranked
+/tmp	20 ranked
+/old	1 ignored

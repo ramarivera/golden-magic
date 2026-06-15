@@ -1,0 +1,4 @@
+network	status state
+HomeWiFi	found visible
+Office	found visible
+Old	missing hidden

@@ -1,0 +1,10 @@
+id = "known.portr.tunnels"
+name = "portr tunnel list"
+priority = 50
+
+[matches]
+required_substrings = ["tunnel\tport","web\t3000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

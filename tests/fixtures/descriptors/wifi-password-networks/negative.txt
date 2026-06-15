@@ -1,0 +1,2 @@
+network status state
+HomeWiFi found visible

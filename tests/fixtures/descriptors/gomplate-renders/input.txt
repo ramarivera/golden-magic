@@ -1,0 +1,4 @@
+template	status state
+config.tmpl	rendered complete
+secret.tmpl	rendered complete
+bad.tmpl	failed retry

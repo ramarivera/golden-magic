@@ -1,0 +1,4 @@
+command	kind state
+generate	plugin registered
+build	core registered
+help	builtin registered

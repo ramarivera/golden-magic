@@ -1,0 +1,4 @@
+command	options state
+dev	4 registered
+build	3 registered
+help	1 builtin

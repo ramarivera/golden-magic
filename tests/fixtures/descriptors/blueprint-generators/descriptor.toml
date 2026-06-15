@@ -1,0 +1,10 @@
+id = "known.blueprint.generators"
+name = "blueprint generator list"
+priority = 50
+
+[matches]
+required_substrings = ["generator\tstatus","model\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
