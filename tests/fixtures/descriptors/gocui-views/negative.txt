@@ -1,0 +1,2 @@
+view state size
+main focused 80x24

@@ -1,0 +1,2 @@
+decoder format status
+mp4 binary enabled

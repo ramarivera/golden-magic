@@ -2833,5 +2833,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/awesome-dotfiles-resources",
     "analysis_notes": "Modeled awesome-dotfiles resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jroimartin/gocui",
+    "descriptor_id": "known.gocui.views",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gocui-views",
+    "analysis_notes": "Modeled gocui view output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wader/fq",
+    "descriptor_id": "known.fq.decoders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fq-decoders",
+    "analysis_notes": "Modeled fq decoder output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/prompt-toolkit/python-prompt-toolkit",
+    "descriptor_id": "known.python-prompt-toolkit.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/python-prompt-toolkit-prompts",
+    "analysis_notes": "Modeled python-prompt-toolkit prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/claudiodangelis/qrcp",
+    "descriptor_id": "known.qrcp.transfers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qrcp-transfers",
+    "analysis_notes": "Modeled qrcp transfer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jhen0409/react-native-debugger",
+    "descriptor_id": "known.react-native-debugger.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-native-debugger-sessions",
+    "analysis_notes": "Modeled React Native Debugger session output with a generated executable-json parser plugin."
   }
 ]

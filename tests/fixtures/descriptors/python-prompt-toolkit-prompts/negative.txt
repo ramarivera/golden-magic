@@ -1,0 +1,2 @@
+prompt mode status
+search vi active

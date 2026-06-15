@@ -7288,5 +7288,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jroimartin/gocui",
+    "descriptor_id": "known.gocui.views",
+    "run_id": "agentic.gocui-views.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gocui-views/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gocui-views/expected.rows.json",
+    "variants": [
+      "view header row",
+      "state row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.gocui.views for gocui view list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wader/fq",
+    "descriptor_id": "known.fq.decoders",
+    "run_id": "agentic.fq-decoders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fq-decoders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fq-decoders/expected.rows.json",
+    "variants": [
+      "decoder header row",
+      "format row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.fq.decoders for fq decoder list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/prompt-toolkit/python-prompt-toolkit",
+    "descriptor_id": "known.python-prompt-toolkit.prompts",
+    "run_id": "agentic.python-prompt-toolkit-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/python-prompt-toolkit-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/python-prompt-toolkit-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "mode row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.python-prompt-toolkit.prompts for python-prompt-toolkit prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/claudiodangelis/qrcp",
+    "descriptor_id": "known.qrcp.transfers",
+    "run_id": "agentic.qrcp-transfers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qrcp-transfers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qrcp-transfers/expected.rows.json",
+    "variants": [
+      "file header row",
+      "state row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.qrcp.transfers for qrcp transfer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jhen0409/react-native-debugger",
+    "descriptor_id": "known.react-native-debugger.sessions",
+    "run_id": "agentic.react-native-debugger-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-native-debugger-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-native-debugger-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-native-debugger.sessions for React Native Debugger session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

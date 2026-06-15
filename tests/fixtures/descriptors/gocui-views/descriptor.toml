@@ -1,0 +1,10 @@
+id = "known.gocui.views"
+name = "gocui view list"
+priority = 50
+
+[matches]
+required_substrings = ["view\tstate","main\tfocused"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

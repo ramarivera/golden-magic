@@ -1,0 +1,18 @@
+[
+  {
+    "name": "decoder",
+    "value": "format status"
+  },
+  {
+    "name": "mp4",
+    "value": "binary enabled"
+  },
+  {
+    "name": "json",
+    "value": "text enabled"
+  },
+  {
+    "name": "pcap",
+    "value": "binary enabled"
+  }
+]

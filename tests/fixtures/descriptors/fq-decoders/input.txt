@@ -1,0 +1,4 @@
+decoder	format status
+mp4	binary enabled
+json	text enabled
+pcap	binary enabled

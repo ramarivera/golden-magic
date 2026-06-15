@@ -1,0 +1,4 @@
+view	state size
+main	focused 80x24
+help	visible 80x5
+log	hidden 80x10

@@ -1,0 +1,4 @@
+file	state size
+photo.jpg	sent 3.2MB
+archive.zip	pending 44MB
+notes.txt	sent 12KB

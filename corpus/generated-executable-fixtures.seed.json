@@ -4618,5 +4618,65 @@
     "negative": "resource kind status\nchezmoi manager listed\n",
     "analysis_notes": "Modeled awesome-dotfiles resource output with a generated executable-json parser plugin.",
     "variants": ["resource header row", "kind row", "status field"]
+  },
+  {
+    "fixture": "gocui-views",
+    "descriptor_id": "known.gocui.views",
+    "name": "gocui view list",
+    "repo": "https://github.com/jroimartin/gocui",
+    "required_substrings": ["view\tstate", "main\tfocused"],
+    "parser": "tab-pairs",
+    "input": "view\tstate size\nmain\tfocused 80x24\nhelp\tvisible 80x5\nlog\thidden 80x10\n",
+    "negative": "view state size\nmain focused 80x24\n",
+    "analysis_notes": "Modeled gocui view output with a generated executable-json parser plugin.",
+    "variants": ["view header row", "state row", "size field"]
+  },
+  {
+    "fixture": "fq-decoders",
+    "descriptor_id": "known.fq.decoders",
+    "name": "fq decoder list",
+    "repo": "https://github.com/wader/fq",
+    "required_substrings": ["decoder\tformat", "mp4\tbinary"],
+    "parser": "tab-pairs",
+    "input": "decoder\tformat status\nmp4\tbinary enabled\njson\ttext enabled\npcap\tbinary enabled\n",
+    "negative": "decoder format status\nmp4 binary enabled\n",
+    "analysis_notes": "Modeled fq decoder output with a generated executable-json parser plugin.",
+    "variants": ["decoder header row", "format row", "status field"]
+  },
+  {
+    "fixture": "python-prompt-toolkit-prompts",
+    "descriptor_id": "known.python-prompt-toolkit.prompts",
+    "name": "python-prompt-toolkit prompt list",
+    "repo": "https://github.com/prompt-toolkit/python-prompt-toolkit",
+    "required_substrings": ["prompt\tmode", "search\tvi"],
+    "parser": "tab-pairs",
+    "input": "prompt\tmode status\nsearch\tvi active\nshell\temacs active\ncompletion\tmenu active\n",
+    "negative": "prompt mode status\nsearch vi active\n",
+    "analysis_notes": "Modeled python-prompt-toolkit prompt output with a generated executable-json parser plugin.",
+    "variants": ["prompt header row", "mode row", "status field"]
+  },
+  {
+    "fixture": "qrcp-transfers",
+    "descriptor_id": "known.qrcp.transfers",
+    "name": "qrcp transfer list",
+    "repo": "https://github.com/claudiodangelis/qrcp",
+    "required_substrings": ["file\tstate", "photo.jpg\tsent"],
+    "parser": "tab-pairs",
+    "input": "file\tstate size\nphoto.jpg\tsent 3.2MB\narchive.zip\tpending 44MB\nnotes.txt\tsent 12KB\n",
+    "negative": "file state size\nphoto.jpg sent 3.2MB\n",
+    "analysis_notes": "Modeled qrcp transfer output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "state row", "size field"]
+  },
+  {
+    "fixture": "react-native-debugger-sessions",
+    "descriptor_id": "known.react-native-debugger.sessions",
+    "name": "React Native Debugger session list",
+    "repo": "https://github.com/jhen0409/react-native-debugger",
+    "required_substrings": ["session\tstate", "ios-sim\tattached"],
+    "parser": "tab-pairs",
+    "input": "session\tstate target\nios-sim\tattached localhost:8081\nandroid-emu\twaiting localhost:8082\nredux\tattached store\n",
+    "negative": "session state target\nios-sim attached localhost:8081\n",
+    "analysis_notes": "Modeled React Native Debugger session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "target field"]
   }
 ]

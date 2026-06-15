@@ -1,0 +1,4 @@
+session	state target
+ios-sim	attached localhost:8081
+android-emu	waiting localhost:8082
+redux	attached store

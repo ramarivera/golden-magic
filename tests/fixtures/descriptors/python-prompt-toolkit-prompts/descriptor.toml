@@ -1,0 +1,10 @@
+id = "known.python-prompt-toolkit.prompts"
+name = "python-prompt-toolkit prompt list"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\tmode","search\tvi"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

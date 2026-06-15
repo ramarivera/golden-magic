@@ -1,0 +1,10 @@
+id = "known.react-native-debugger.sessions"
+name = "React Native Debugger session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","ios-sim\tattached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

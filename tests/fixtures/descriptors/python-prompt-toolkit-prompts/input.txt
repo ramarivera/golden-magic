@@ -1,0 +1,4 @@
+prompt	mode status
+search	vi active
+shell	emacs active
+completion	menu active
