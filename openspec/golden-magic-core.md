@@ -13,6 +13,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Completed performance gates: `golden-magic-bz6`
 - Completed debug instrumentation design: `golden-magic-f4n`
 - Completed native plugin descriptor/config parity: `golden-magic-9e1`
+- Completed descriptor-driven Nix manifest harness: `golden-magic-714`
 
 ## Acceptance Criteria
 
@@ -41,13 +42,18 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Support config-file descriptor directory overrides.
 - [x] Support descriptor/config loading inside the native Nushell plugin path.
 - [x] Include descriptor fixture harness tests for isolated matching, negative inputs, expected rows, and duplicate registry ids.
-- [x] Include optional Nix-backed CLI fixture isolation pattern and docs.
+- [x] Include optional descriptor-driven Nix manifest fixture harness and docs.
 - [x] Document debug instrumentation threat model and explicit no-hidden-channel default.
 - [x] Keep parser core independent from Nushell plugin APIs.
 
 ## Deferred Criteria
 
-No core spec criteria currently deferred.
+- `golden-magic-by0`: arbitrary Rust runtime extension/plugin loading is not implemented. Before any native runtime loading exists, Golden Magic needs a security and portability design review. Prefer declarative descriptor packs plus subprocess or WASM extension boundaries first.
+- `golden-magic-9pu`: big known-tool descriptor corpus is not implemented. Current descriptor fixtures are representative harness coverage, not a broad tool catalog.
+- `golden-magic-2mf`: grammar engine is not implemented. Current parsing remains heuristic rule selection plus descriptor parser hints.
+- `golden-magic-euf`: rich extension-author SDK is not implemented. Current extension surface is TOML descriptors and fixture conventions.
+- `golden-magic-4re`: deep prior-art research artifact is not implemented.
+- Live execution of descriptor-driven Nix manifest fixtures is not verified in environments without `nix`; the harness skips unless `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` and `nix` is available.
 
 ## Evidence
 
