@@ -1,0 +1,2 @@
+stream quality bitrate
+best 1080p 6000k

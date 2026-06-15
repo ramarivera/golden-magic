@@ -1,0 +1,10 @@
+id = "known.gitoxide.refs"
+name = "gitoxide reference list"
+priority = 50
+
+[matches]
+required_substrings = ["ref\tobject","main\t9fceb02"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

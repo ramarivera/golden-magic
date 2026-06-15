@@ -1,0 +1,10 @@
+id = "known.slides.decks"
+name = "slides deck list"
+priority = 50
+
+[matches]
+required_substrings = ["deck\tslides","demo.md\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

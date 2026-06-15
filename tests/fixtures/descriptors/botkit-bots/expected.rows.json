@@ -1,0 +1,18 @@
+[
+  {
+    "name": "bot",
+    "value": "platform status"
+  },
+  {
+    "name": "support",
+    "value": "slack online"
+  },
+  {
+    "name": "sales",
+    "value": "teams idle"
+  },
+  {
+    "name": "alerts",
+    "value": "webex online"
+  }
+]

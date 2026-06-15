@@ -1,0 +1,10 @@
+id = "known.shiori.bookmarks"
+name = "Shiori bookmark list"
+priority = 50
+
+[matches]
+required_substrings = ["bookmark\ttags","docs\tcli"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "stream",
+    "value": "quality bitrate"
+  },
+  {
+    "name": "best",
+    "value": "1080p 6000k"
+  },
+  {
+    "name": "high",
+    "value": "720p 3000k"
+  },
+  {
+    "name": "audio",
+    "value": "160k 160k"
+  }
+]

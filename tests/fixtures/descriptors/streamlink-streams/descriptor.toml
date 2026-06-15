@@ -1,0 +1,10 @@
+id = "known.streamlink.streams"
+name = "Streamlink stream list"
+priority = 50
+
+[matches]
+required_substrings = ["stream\tquality","best\t1080p"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

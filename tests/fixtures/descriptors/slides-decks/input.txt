@@ -1,0 +1,4 @@
+deck	slides theme
+demo.md	12 dracula
+pitch.md	18 nord
+notes.md	6 plain

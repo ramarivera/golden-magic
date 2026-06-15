@@ -1,0 +1,4 @@
+stream	quality bitrate
+best	1080p 6000k
+high	720p 3000k
+audio	160k 160k

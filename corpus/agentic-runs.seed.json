@@ -6838,5 +6838,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/howdyai/botkit",
+    "descriptor_id": "known.botkit.bots",
+    "run_id": "agentic.botkit-bots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/botkit-bots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/botkit-bots/expected.rows.json",
+    "variants": [
+      "bot header row",
+      "platform row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.botkit.bots for Botkit bot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GitoxideLabs/gitoxide",
+    "descriptor_id": "known.gitoxide.refs",
+    "run_id": "agentic.gitoxide-refs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitoxide-refs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitoxide-refs/expected.rows.json",
+    "variants": [
+      "ref header row",
+      "object row",
+      "kind field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitoxide.refs for gitoxide reference list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/streamlink/streamlink",
+    "descriptor_id": "known.streamlink.streams",
+    "run_id": "agentic.streamlink-streams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/streamlink-streams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/streamlink-streams/expected.rows.json",
+    "variants": [
+      "stream header row",
+      "quality row",
+      "bitrate field"
+    ],
+    "transcript": [
+      "selected descriptor known.streamlink.streams for Streamlink stream list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/maaslalani/slides",
+    "descriptor_id": "known.slides.decks",
+    "run_id": "agentic.slides-decks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/slides-decks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/slides-decks/expected.rows.json",
+    "variants": [
+      "deck header row",
+      "slides row",
+      "theme field"
+    ],
+    "transcript": [
+      "selected descriptor known.slides.decks for slides deck list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/go-shiori/shiori",
+    "descriptor_id": "known.shiori.bookmarks",
+    "run_id": "agentic.shiori-bookmarks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shiori-bookmarks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shiori-bookmarks/expected.rows.json",
+    "variants": [
+      "bookmark header row",
+      "tags row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.shiori.bookmarks for Shiori bookmark list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

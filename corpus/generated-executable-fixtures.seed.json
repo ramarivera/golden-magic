@@ -4318,5 +4318,65 @@
     "negative": "process rate remote\nfirefox 1.2MB/s 151.101.1.69\n",
     "analysis_notes": "Modeled bandwhich connection output with a generated executable-json parser plugin.",
     "variants": ["process header row", "rate row", "remote field"]
+  },
+  {
+    "fixture": "botkit-bots",
+    "descriptor_id": "known.botkit.bots",
+    "name": "Botkit bot list",
+    "repo": "https://github.com/howdyai/botkit",
+    "required_substrings": ["bot\tplatform", "support\tslack"],
+    "parser": "tab-pairs",
+    "input": "bot\tplatform status\nsupport\tslack online\nsales\tteams idle\nalerts\twebex online\n",
+    "negative": "bot platform status\nsupport slack online\n",
+    "analysis_notes": "Modeled Botkit bot output with a generated executable-json parser plugin.",
+    "variants": ["bot header row", "platform row", "status field"]
+  },
+  {
+    "fixture": "gitoxide-refs",
+    "descriptor_id": "known.gitoxide.refs",
+    "name": "gitoxide reference list",
+    "repo": "https://github.com/GitoxideLabs/gitoxide",
+    "required_substrings": ["ref\tobject", "main\t9fceb02"],
+    "parser": "tab-pairs",
+    "input": "ref\tobject kind\nmain\t9fceb02 branch\nrelease\t1b3c7aa tag\nHEAD\t9fceb02 symbolic\n",
+    "negative": "ref object kind\nmain 9fceb02 branch\n",
+    "analysis_notes": "Modeled gitoxide reference output with a generated executable-json parser plugin.",
+    "variants": ["ref header row", "object row", "kind field"]
+  },
+  {
+    "fixture": "streamlink-streams",
+    "descriptor_id": "known.streamlink.streams",
+    "name": "Streamlink stream list",
+    "repo": "https://github.com/streamlink/streamlink",
+    "required_substrings": ["stream\tquality", "best\t1080p"],
+    "parser": "tab-pairs",
+    "input": "stream\tquality bitrate\nbest\t1080p 6000k\nhigh\t720p 3000k\naudio\t160k 160k\n",
+    "negative": "stream quality bitrate\nbest 1080p 6000k\n",
+    "analysis_notes": "Modeled Streamlink stream output with a generated executable-json parser plugin.",
+    "variants": ["stream header row", "quality row", "bitrate field"]
+  },
+  {
+    "fixture": "slides-decks",
+    "descriptor_id": "known.slides.decks",
+    "name": "slides deck list",
+    "repo": "https://github.com/maaslalani/slides",
+    "required_substrings": ["deck\tslides", "demo.md\t12"],
+    "parser": "tab-pairs",
+    "input": "deck\tslides theme\ndemo.md\t12 dracula\npitch.md\t18 nord\nnotes.md\t6 plain\n",
+    "negative": "deck slides theme\ndemo.md 12 dracula\n",
+    "analysis_notes": "Modeled slides deck output with a generated executable-json parser plugin.",
+    "variants": ["deck header row", "slides row", "theme field"]
+  },
+  {
+    "fixture": "shiori-bookmarks",
+    "descriptor_id": "known.shiori.bookmarks",
+    "name": "Shiori bookmark list",
+    "repo": "https://github.com/go-shiori/shiori",
+    "required_substrings": ["bookmark\ttags", "docs\tcli"],
+    "parser": "tab-pairs",
+    "input": "bookmark\ttags status\ndocs\tcli saved\nblog\tgo archived\nissue\tparser saved\n",
+    "negative": "bookmark tags status\ndocs cli saved\n",
+    "analysis_notes": "Modeled Shiori bookmark output with a generated executable-json parser plugin.",
+    "variants": ["bookmark header row", "tags row", "status field"]
   }
 ]

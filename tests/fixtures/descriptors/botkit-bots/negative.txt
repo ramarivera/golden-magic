@@ -1,0 +1,2 @@
+bot platform status
+support slack online

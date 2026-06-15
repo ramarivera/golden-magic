@@ -1,0 +1,4 @@
+bot	platform status
+support	slack online
+sales	teams idle
+alerts	webex online

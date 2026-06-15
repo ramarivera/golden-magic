@@ -2658,5 +2658,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/bandwhich-connections",
     "analysis_notes": "Modeled bandwhich connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/howdyai/botkit",
+    "descriptor_id": "known.botkit.bots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/botkit-bots",
+    "analysis_notes": "Modeled Botkit bot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GitoxideLabs/gitoxide",
+    "descriptor_id": "known.gitoxide.refs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitoxide-refs",
+    "analysis_notes": "Modeled gitoxide reference output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/streamlink/streamlink",
+    "descriptor_id": "known.streamlink.streams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/streamlink-streams",
+    "analysis_notes": "Modeled Streamlink stream output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/maaslalani/slides",
+    "descriptor_id": "known.slides.decks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/slides-decks",
+    "analysis_notes": "Modeled slides deck output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/go-shiori/shiori",
+    "descriptor_id": "known.shiori.bookmarks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shiori-bookmarks",
+    "analysis_notes": "Modeled Shiori bookmark output with a generated executable-json parser plugin."
   }
 ]
