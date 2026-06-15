@@ -1,0 +1,3 @@
+src/main.rs:12:fn main() {
+src/lib.rs:48:pub fn parse(input: &str) {
+tests/parser.rs:7:fn parses_rows() {

@@ -1,0 +1,20 @@
+[
+  {
+    "column0": "RuleID",
+    "column1": "Description",
+    "column2": "File",
+    "column3": "StartLine"
+  },
+  {
+    "column0": "generic-api-key",
+    "column1": "Generic API Key",
+    "column2": ".env.example",
+    "column3": "3"
+  },
+  {
+    "column0": "private-key",
+    "column1": "Private Key",
+    "column2": "fixtures/key.pem",
+    "column3": "1"
+  }
+]

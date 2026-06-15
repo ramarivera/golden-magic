@@ -1,0 +1,18 @@
+[
+  {
+    "kind": "query",
+    "value": "parser"
+  },
+  {
+    "kind": "key",
+    "value": "enter"
+  },
+  {
+    "kind": "selected",
+    "value": "src/parser.rs"
+  },
+  {
+    "kind": "selected",
+    "value": "tests/parser.rs"
+  }
+]

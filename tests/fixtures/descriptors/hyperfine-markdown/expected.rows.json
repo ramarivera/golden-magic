@@ -1,0 +1,34 @@
+[
+  {
+    "column0": "",
+    "column1": "Command",
+    "column2": "Mean [ms]",
+    "column3": "Min [ms]",
+    "column4": "Max [ms]",
+    "column5": ""
+  },
+  {
+    "column0": "",
+    "column1": ":---",
+    "column2": "---:",
+    "column3": "---:",
+    "column4": "---:",
+    "column5": ""
+  },
+  {
+    "column0": "",
+    "column1": "`cargo test`",
+    "column2": "125.4",
+    "column3": "120.1",
+    "column4": "140.8",
+    "column5": ""
+  },
+  {
+    "column0": "",
+    "column1": "`cargo clippy`",
+    "column2": "88.2",
+    "column3": "84.0",
+    "column4": "95.3",
+    "column5": ""
+  }
+]

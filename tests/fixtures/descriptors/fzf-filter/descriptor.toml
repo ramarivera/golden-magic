@@ -1,0 +1,10 @@
+id = "known.fzf.filter"
+name = "fzf --filter selection output"
+priority = 50
+
+[matches]
+required_substrings = ["query:", "selected:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

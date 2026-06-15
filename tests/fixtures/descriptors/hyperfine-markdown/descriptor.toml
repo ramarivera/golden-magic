@@ -1,0 +1,9 @@
+id = "known.hyperfine.markdown"
+name = "hyperfine --export-markdown"
+priority = 50
+
+[matches]
+required_substrings = ["| Command | Mean", "cargo test"]
+
+[parser]
+only_rules = ["detect.delimited.pipes"]

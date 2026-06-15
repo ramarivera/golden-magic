@@ -1,0 +1,3 @@
+RuleID,Description,File,StartLine
+generic-api-key,Generic API Key,.env.example,3
+private-key,Private Key,fixtures/key.pem,1

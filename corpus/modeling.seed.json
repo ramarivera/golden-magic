@@ -103,5 +103,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/jq-compile-error",
     "analysis_notes": "Modeled jq compile-error diagnostics with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/junegunn/fzf",
+    "descriptor_id": "known.fzf.filter",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fzf-filter",
+    "analysis_notes": "Modeled fzf filter/selection output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ajeetdsouza/zoxide",
+    "descriptor_id": "known.zoxide.query-list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zoxide-query-list",
+    "analysis_notes": "Modeled zoxide query-list path output with an executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sharkdp/hyperfine",
+    "descriptor_id": "known.hyperfine.markdown",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/hyperfine-markdown",
+    "analysis_notes": "Modeled hyperfine markdown benchmark output with pipe-delimited heuristic parsing."
+  },
+  {
+    "repo": "https://github.com/gitleaks/gitleaks",
+    "descriptor_id": "known.gitleaks.csv",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/gitleaks-csv",
+    "analysis_notes": "Modeled gitleaks CSV report output with comma-delimited heuristic parsing."
+  },
+  {
+    "repo": "https://github.com/ggreer/the_silver_searcher",
+    "descriptor_id": "known.ag.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ag-matches",
+    "analysis_notes": "Modeled The Silver Searcher match output with an executable-json parser plugin."
   }
 ]

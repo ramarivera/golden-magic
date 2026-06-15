@@ -1,0 +1,9 @@
+id = "known.gitleaks.csv"
+name = "gitleaks CSV report"
+priority = 50
+
+[matches]
+required_substrings = ["RuleID,Description,File,StartLine", "generic-api-key"]
+
+[parser]
+only_rules = ["detect.delimited.commas"]

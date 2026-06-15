@@ -1,0 +1,10 @@
+id = "known.zoxide.query-list"
+name = "zoxide query --list"
+priority = 50
+
+[matches]
+required_substrings = ["/Users/ramiro/dev", "/tmp/build"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

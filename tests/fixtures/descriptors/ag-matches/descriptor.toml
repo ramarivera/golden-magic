@@ -1,0 +1,10 @@
+id = "known.ag.matches"
+name = "The Silver Searcher match lines"
+priority = 50
+
+[matches]
+required_substrings = ["src/main.rs:", "fn main"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.sh"

@@ -1,0 +1,3 @@
+/Users/ramiro/dev/golden-magic
+/Users/ramiro/dev/toolbox
+/tmp/build

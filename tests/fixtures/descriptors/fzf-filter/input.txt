@@ -1,0 +1,4 @@
+query: parser
+key: enter
+selected: src/parser.rs
+selected: tests/parser.rs

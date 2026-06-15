@@ -1,0 +1,4 @@
+| Command | Mean [ms] | Min [ms] | Max [ms] |
+|:---|---:|---:|---:|
+| `cargo test` | 125.4 | 120.1 | 140.8 |
+| `cargo clippy` | 88.2 | 84.0 | 95.3 |

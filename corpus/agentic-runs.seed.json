@@ -268,5 +268,95 @@
       "ran golden-magic against fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/junegunn/fzf",
+    "descriptor_id": "known.fzf.filter",
+    "run_id": "agentic.fzf.filter.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fzf-filter/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fzf-filter/expected.rows.json",
+    "variants": [
+      "query row",
+      "key row",
+      "multiple selected rows"
+    ],
+    "transcript": [
+      "selected descriptor known.fzf.filter for fzf filter selection output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ajeetdsouza/zoxide",
+    "descriptor_id": "known.zoxide.query-list",
+    "run_id": "agentic.zoxide.query-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zoxide-query-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zoxide-query-list/expected.rows.json",
+    "variants": [
+      "home directory path",
+      "project directory path",
+      "temporary directory path"
+    ],
+    "transcript": [
+      "selected descriptor known.zoxide.query-list for zoxide query-list output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sharkdp/hyperfine",
+    "descriptor_id": "known.hyperfine.markdown",
+    "run_id": "agentic.hyperfine.markdown.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hyperfine-markdown/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hyperfine-markdown/expected.rows.json",
+    "variants": [
+      "markdown header row",
+      "alignment separator row",
+      "multiple benchmark command rows"
+    ],
+    "transcript": [
+      "selected descriptor known.hyperfine.markdown for hyperfine markdown benchmark output",
+      "ran golden-magic against fixture input through pipe-delimited heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gitleaks/gitleaks",
+    "descriptor_id": "known.gitleaks.csv",
+    "run_id": "agentic.gitleaks.csv.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitleaks-csv/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitleaks-csv/expected.rows.json",
+    "variants": [
+      "generic API key finding",
+      "private key finding",
+      "line-number column"
+    ],
+    "transcript": [
+      "selected descriptor known.gitleaks.csv for gitleaks CSV report output",
+      "ran golden-magic against fixture input through comma-delimited heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ggreer/the_silver_searcher",
+    "descriptor_id": "known.ag.matches",
+    "run_id": "agentic.ag.matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ag-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ag-matches/expected.rows.json",
+    "variants": [
+      "source file match",
+      "library file match",
+      "test file match"
+    ],
+    "transcript": [
+      "selected descriptor known.ag.matches for The Silver Searcher path:line:match output",
+      "ran golden-magic against fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

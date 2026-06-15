@@ -1,0 +1,17 @@
+[
+  {
+    "path": "src/main.rs",
+    "line": "12",
+    "match": "fn main() {"
+  },
+  {
+    "path": "src/lib.rs",
+    "line": "48",
+    "match": "pub fn parse(input: &str) {"
+  },
+  {
+    "path": "tests/parser.rs",
+    "line": "7",
+    "match": "fn parses_rows() {"
+  }
+]
