@@ -11068,5 +11068,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Marak/colors.js",
+    "descriptor_id": "known.colors-js.styles",
+    "run_id": "agentic.colors-js-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/colors-js-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/colors-js-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "ansi row",
+      "sample field"
+    ],
+    "transcript": [
+      "selected descriptor known.colors-js.styles for colors.js style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AAswordman/Operit",
+    "descriptor_id": "known.operit.agents",
+    "run_id": "agentic.operit-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/operit-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/operit-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "state row",
+      "mode field"
+    ],
+    "transcript": [
+      "selected descriptor known.operit.agents for Operit agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/facebook/idb",
+    "descriptor_id": "known.idb.targets",
+    "run_id": "agentic.idb-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/idb-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/idb-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "state row",
+      "udid field"
+    ],
+    "transcript": [
+      "selected descriptor known.idb.targets for idb target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mpvnet-player/mpv.net",
+    "descriptor_id": "known.mpvnet.playlist",
+    "run_id": "agentic.mpvnet-playlist.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mpvnet-playlist/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mpvnet-playlist/expected.rows.json",
+    "variants": [
+      "item header row",
+      "state row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.mpvnet.playlist for mpv.net playlist list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/metalbear-co/mirrord",
+    "descriptor_id": "known.mirrord.sessions",
+    "run_id": "agentic.mirrord-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mirrord-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mirrord-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "pod row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mirrord.sessions for mirrord session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/agent-infra/sandbox",
+    "descriptor_id": "known.agent-sandbox.resources",
+    "run_id": "agentic.agent-sandbox-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/agent-sandbox-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/agent-sandbox-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.agent-sandbox.resources for agent-infra sandbox resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/athityakumar/colorls",
+    "descriptor_id": "known.colorls.files",
+    "run_id": "agentic.colorls-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/colorls-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/colorls-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "icon row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.colorls.files for colorls file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/achristmascarl/rainfrog",
+    "descriptor_id": "known.rainfrog.connections",
+    "run_id": "agentic.rainfrog-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rainfrog-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rainfrog-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "database row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rainfrog.connections for rainfrog connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wp-cli/wp-cli",
+    "descriptor_id": "known.wp-cli.commands",
+    "run_id": "agentic.wp-cli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wp-cli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wp-cli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "namespace row",
+      "args field"
+    ],
+    "transcript": [
+      "selected descriptor known.wp-cli.commands for WP-CLI command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/niklashigi/apk-mitm",
+    "descriptor_id": "known.apk-mitm.patches",
+    "run_id": "agentic.apk-mitm-patches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/apk-mitm-patches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/apk-mitm-patches/expected.rows.json",
+    "variants": [
+      "patch header row",
+      "status row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.apk-mitm.patches for apk-mitm patch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

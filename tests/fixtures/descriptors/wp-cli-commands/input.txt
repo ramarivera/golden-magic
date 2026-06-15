@@ -1,0 +1,4 @@
+command	namespace args
+plugin	wp 2
+theme	wp 2
+site	wp 3

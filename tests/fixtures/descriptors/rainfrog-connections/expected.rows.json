@@ -1,0 +1,18 @@
+[
+  {
+    "name": "connection",
+    "value": "database state"
+  },
+  {
+    "name": "local",
+    "value": "postgres open"
+  },
+  {
+    "name": "warehouse",
+    "value": "mysql open"
+  },
+  {
+    "name": "archive",
+    "value": "sqlite closed"
+  }
+]

@@ -4303,5 +4303,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/helix-db-graphs",
     "analysis_notes": "Modeled HelixDB graph output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Marak/colors.js",
+    "descriptor_id": "known.colors-js.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/colors-js-styles",
+    "analysis_notes": "Modeled colors.js style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AAswordman/Operit",
+    "descriptor_id": "known.operit.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/operit-agents",
+    "analysis_notes": "Modeled Operit agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/facebook/idb",
+    "descriptor_id": "known.idb.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/idb-targets",
+    "analysis_notes": "Modeled idb target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mpvnet-player/mpv.net",
+    "descriptor_id": "known.mpvnet.playlist",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mpvnet-playlist",
+    "analysis_notes": "Modeled mpv.net playlist output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/metalbear-co/mirrord",
+    "descriptor_id": "known.mirrord.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mirrord-sessions",
+    "analysis_notes": "Modeled mirrord session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/agent-infra/sandbox",
+    "descriptor_id": "known.agent-sandbox.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/agent-sandbox-resources",
+    "analysis_notes": "Modeled agent-infra sandbox resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/athityakumar/colorls",
+    "descriptor_id": "known.colorls.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/colorls-files",
+    "analysis_notes": "Modeled colorls file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/achristmascarl/rainfrog",
+    "descriptor_id": "known.rainfrog.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rainfrog-connections",
+    "analysis_notes": "Modeled rainfrog connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wp-cli/wp-cli",
+    "descriptor_id": "known.wp-cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wp-cli-commands",
+    "analysis_notes": "Modeled WP-CLI command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/niklashigi/apk-mitm",
+    "descriptor_id": "known.apk-mitm.patches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/apk-mitm-patches",
+    "analysis_notes": "Modeled apk-mitm patch output with a generated executable-json parser plugin."
   }
 ]

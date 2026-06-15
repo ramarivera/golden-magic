@@ -1,0 +1,2 @@
+style ansi sample
+red 31 error

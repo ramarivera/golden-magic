@@ -1,0 +1,4 @@
+agent	state mode
+android	ready local
+planner	running ai
+browser	queued tool

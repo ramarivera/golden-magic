@@ -1,0 +1,2 @@
+command namespace args
+plugin wp 2

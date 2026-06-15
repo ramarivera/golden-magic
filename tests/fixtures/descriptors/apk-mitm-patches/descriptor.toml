@@ -1,0 +1,10 @@
+id = "known.apk-mitm.patches"
+name = "apk-mitm patch list"
+priority = 50
+
+[matches]
+required_substrings = ["patch\tstatus","network-security\tapplied"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

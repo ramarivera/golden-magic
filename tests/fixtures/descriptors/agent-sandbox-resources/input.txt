@@ -1,0 +1,4 @@
+resource	state port
+browser	ready 3000
+shell	ready 22
+vscode	starting 8080

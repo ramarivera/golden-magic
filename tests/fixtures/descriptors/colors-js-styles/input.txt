@@ -1,0 +1,4 @@
+style	ansi sample
+red	31 error
+green	32 ok
+rainbow	multi demo

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "item",
+    "value": "state duration"
+  },
+  {
+    "name": "intro.mp4",
+    "value": "playing 00:30"
+  },
+  {
+    "name": "movie.mkv",
+    "value": "queued 90:00"
+  },
+  {
+    "name": "clip.webm",
+    "value": "queued 01:12"
+  }
+]

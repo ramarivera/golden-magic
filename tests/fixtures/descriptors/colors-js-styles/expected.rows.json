@@ -1,0 +1,18 @@
+[
+  {
+    "name": "style",
+    "value": "ansi sample"
+  },
+  {
+    "name": "red",
+    "value": "31 error"
+  },
+  {
+    "name": "green",
+    "value": "32 ok"
+  },
+  {
+    "name": "rainbow",
+    "value": "multi demo"
+  }
+]

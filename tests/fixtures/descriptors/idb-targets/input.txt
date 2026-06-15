@@ -1,0 +1,4 @@
+target	state udid
+simulator	booted ABC123
+iphone	connected DEF456
+ipad	shutdown GHI789

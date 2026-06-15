@@ -1,0 +1,10 @@
+id = "known.rainfrog.connections"
+name = "rainfrog connection list"
+priority = 50
+
+[matches]
+required_substrings = ["connection\tdatabase","local\tpostgres"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

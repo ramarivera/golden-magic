@@ -1,0 +1,10 @@
+id = "known.idb.targets"
+name = "idb target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstate","simulator\tbooted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

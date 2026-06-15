@@ -1,0 +1,2 @@
+resource state port
+browser ready 3000

@@ -1,0 +1,10 @@
+id = "known.colors-js.styles"
+name = "colors.js style list"
+priority = 50
+
+[matches]
+required_substrings = ["style\tansi","red\t31"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

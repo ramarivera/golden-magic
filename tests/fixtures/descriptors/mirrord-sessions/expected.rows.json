@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "pod state"
+  },
+  {
+    "name": "api",
+    "value": "api-123 mirrored"
+  },
+  {
+    "name": "worker",
+    "value": "worker-7 active"
+  },
+  {
+    "name": "old",
+    "value": "pod-0 closed"
+  }
+]

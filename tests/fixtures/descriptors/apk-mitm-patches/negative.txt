@@ -1,0 +1,2 @@
+patch status target
+network-security applied AndroidManifest.xml

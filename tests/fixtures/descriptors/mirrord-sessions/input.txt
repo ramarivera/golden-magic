@@ -1,0 +1,4 @@
+session	pod state
+api	api-123 mirrored
+worker	worker-7 active
+old	pod-0 closed

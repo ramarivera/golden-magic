@@ -1,0 +1,4 @@
+connection	database state
+local	postgres open
+warehouse	mysql open
+archive	sqlite closed

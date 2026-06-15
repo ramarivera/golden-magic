@@ -1,0 +1,4 @@
+patch	status target
+network-security	applied AndroidManifest.xml
+cert-pinning	applied classes.dex
+backup	queued app.apk

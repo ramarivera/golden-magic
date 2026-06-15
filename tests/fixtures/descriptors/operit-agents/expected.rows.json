@@ -1,0 +1,18 @@
+[
+  {
+    "name": "agent",
+    "value": "state mode"
+  },
+  {
+    "name": "android",
+    "value": "ready local"
+  },
+  {
+    "name": "planner",
+    "value": "running ai"
+  },
+  {
+    "name": "browser",
+    "value": "queued tool"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.agent-sandbox.resources"
+name = "agent-infra sandbox resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tstate","browser\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

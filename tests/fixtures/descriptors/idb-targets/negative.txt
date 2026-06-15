@@ -1,0 +1,2 @@
+target state udid
+simulator booted ABC123

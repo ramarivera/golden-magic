@@ -1,0 +1,10 @@
+id = "known.mpvnet.playlist"
+name = "mpv.net playlist list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tstate","intro.mp4\tplaying"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

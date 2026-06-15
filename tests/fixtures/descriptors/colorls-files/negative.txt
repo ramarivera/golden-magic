@@ -1,0 +1,2 @@
+file icon type
+src folder dir

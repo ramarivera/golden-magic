@@ -1,0 +1,10 @@
+id = "known.colorls.files"
+name = "colorls file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\ticon","src\tfolder"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
