@@ -1438,5 +1438,65 @@
     "negative": "query state rows\nselect-count finished 1200\n",
     "analysis_notes": "Modeled ClickHouse query log summary output with a generated executable-json parser plugin.",
     "variants": ["query header row", "finished query row", "rows field"]
+  },
+  {
+    "fixture": "win11debloat-actions",
+    "descriptor_id": "known.win11debloat.actions",
+    "name": "Win11Debloat action list",
+    "repo": "https://github.com/Raphire/Win11Debloat",
+    "required_substrings": ["action\tstatus", "remove-bloat\tready"],
+    "parser": "tab-pairs",
+    "input": "action\tstatus target\nremove-bloat\tready apps\ndisable-telemetry\tready registry\nrestore-point\tdone system\n",
+    "negative": "action status target\nremove-bloat ready apps\n",
+    "analysis_notes": "Modeled Win11Debloat action list output with a generated executable-json parser plugin.",
+    "variants": ["action header row", "ready action row", "target field"]
+  },
+  {
+    "fixture": "acmesh-certs",
+    "descriptor_id": "known.acmesh.certs",
+    "name": "acme.sh certificate list",
+    "repo": "https://github.com/acmesh-official/acme.sh",
+    "required_substrings": ["domain\texpires", "example.com\t2026-09-01"],
+    "parser": "tab-pairs",
+    "input": "domain\texpires issuer\nexample.com\t2026-09-01 letsencrypt\napi.example.com\t2026-08-14 zerossl\ninternal.test\t2026-07-20 letsencrypt\n",
+    "negative": "domain expires issuer\nexample.com 2026-09-01 letsencrypt\n",
+    "analysis_notes": "Modeled acme.sh certificate list output with a generated executable-json parser plugin.",
+    "variants": ["domain header row", "expiry row", "issuer field"]
+  },
+  {
+    "fixture": "jeecgboot-modules",
+    "descriptor_id": "known.jeecgboot.modules",
+    "name": "JeecgBoot module list",
+    "repo": "https://github.com/jeecgboot/JeecgBoot",
+    "required_substrings": ["module\tstatus", "system\tenabled"],
+    "parser": "tab-pairs",
+    "input": "module\tstatus port\nsystem\tenabled 8080\nworkflow\tenabled 8081\nreport\tdisabled 8082\n",
+    "negative": "module status port\nsystem enabled 8080\n",
+    "analysis_notes": "Modeled JeecgBoot module list output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "enabled module row", "port field"]
+  },
+  {
+    "fixture": "awesome-claude-code-links",
+    "descriptor_id": "known.awesome-claude-code.links",
+    "name": "awesome-claude-code link index",
+    "repo": "https://github.com/hesreallyhim/awesome-claude-code",
+    "required_substrings": ["section\tcount", "workflows\t18"],
+    "parser": "tab-pairs",
+    "input": "section\tcount source\nworkflows\t18 markdown\ncommands\t42 markdown\nhooks\t12 markdown\n",
+    "negative": "section count source\nworkflows 18 markdown\n",
+    "analysis_notes": "Modeled awesome-claude-code link index output with a generated executable-json parser plugin.",
+    "variants": ["section header row", "workflow count row", "source field"]
+  },
+  {
+    "fixture": "aider-files",
+    "descriptor_id": "known.aider.files",
+    "name": "Aider edited file list",
+    "repo": "https://github.com/Aider-AI/aider",
+    "required_substrings": ["file\tstatus", "main.py\tedited"],
+    "parser": "tab-pairs",
+    "input": "file\tstatus tokens\nmain.py\tedited 1200\ntests.py\tcreated 900\nREADME.md\tunchanged 300\n",
+    "negative": "file status tokens\nmain.py edited 1200\n",
+    "analysis_notes": "Modeled Aider edited file list output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "edited file row", "token count field"]
   }
 ]

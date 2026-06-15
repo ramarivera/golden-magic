@@ -1,0 +1,10 @@
+id = "known.win11debloat.actions"
+name = "Win11Debloat action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tstatus","remove-bloat\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

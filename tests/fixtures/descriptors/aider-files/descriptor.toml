@@ -1,0 +1,10 @@
+id = "known.aider.files"
+name = "Aider edited file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","main.py\tedited"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+action status target
+remove-bloat ready apps

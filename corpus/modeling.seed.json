@@ -978,5 +978,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/clickhouse-queries",
     "analysis_notes": "Modeled ClickHouse query log summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Raphire/Win11Debloat",
+    "descriptor_id": "known.win11debloat.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/win11debloat-actions",
+    "analysis_notes": "Modeled Win11Debloat action list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/acmesh-official/acme.sh",
+    "descriptor_id": "known.acmesh.certs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/acmesh-certs",
+    "analysis_notes": "Modeled acme.sh certificate list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jeecgboot/JeecgBoot",
+    "descriptor_id": "known.jeecgboot.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jeecgboot-modules",
+    "analysis_notes": "Modeled JeecgBoot module list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hesreallyhim/awesome-claude-code",
+    "descriptor_id": "known.awesome-claude-code.links",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-claude-code-links",
+    "analysis_notes": "Modeled awesome-claude-code link index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Aider-AI/aider",
+    "descriptor_id": "known.aider.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aider-files",
+    "analysis_notes": "Modeled Aider edited file list output with a generated executable-json parser plugin."
   }
 ]

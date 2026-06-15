@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "status tokens"
+  },
+  {
+    "name": "main.py",
+    "value": "edited 1200"
+  },
+  {
+    "name": "tests.py",
+    "value": "created 900"
+  },
+  {
+    "name": "README.md",
+    "value": "unchanged 300"
+  }
+]

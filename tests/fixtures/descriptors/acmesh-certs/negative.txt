@@ -1,0 +1,2 @@
+domain expires issuer
+example.com 2026-09-01 letsencrypt

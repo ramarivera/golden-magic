@@ -1,0 +1,4 @@
+domain	expires issuer
+example.com	2026-09-01 letsencrypt
+api.example.com	2026-08-14 zerossl
+internal.test	2026-07-20 letsencrypt

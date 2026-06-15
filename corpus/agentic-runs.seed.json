@@ -2518,5 +2518,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Raphire/Win11Debloat",
+    "descriptor_id": "known.win11debloat.actions",
+    "run_id": "agentic.win11debloat-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/win11debloat-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/win11debloat-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "ready action row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.win11debloat.actions for Win11Debloat action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/acmesh-official/acme.sh",
+    "descriptor_id": "known.acmesh.certs",
+    "run_id": "agentic.acmesh-certs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/acmesh-certs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/acmesh-certs/expected.rows.json",
+    "variants": [
+      "domain header row",
+      "expiry row",
+      "issuer field"
+    ],
+    "transcript": [
+      "selected descriptor known.acmesh.certs for acme.sh certificate list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jeecgboot/JeecgBoot",
+    "descriptor_id": "known.jeecgboot.modules",
+    "run_id": "agentic.jeecgboot-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jeecgboot-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jeecgboot-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "enabled module row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.jeecgboot.modules for JeecgBoot module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hesreallyhim/awesome-claude-code",
+    "descriptor_id": "known.awesome-claude-code.links",
+    "run_id": "agentic.awesome-claude-code-links.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-claude-code-links/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-claude-code-links/expected.rows.json",
+    "variants": [
+      "section header row",
+      "workflow count row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-claude-code.links for awesome-claude-code link index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Aider-AI/aider",
+    "descriptor_id": "known.aider.files",
+    "run_id": "agentic.aider-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aider-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aider-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "edited file row",
+      "token count field"
+    ],
+    "transcript": [
+      "selected descriptor known.aider.files for Aider edited file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

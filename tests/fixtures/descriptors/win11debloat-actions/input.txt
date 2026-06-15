@@ -1,0 +1,4 @@
+action	status target
+remove-bloat	ready apps
+disable-telemetry	ready registry
+restore-point	done system
