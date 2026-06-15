@@ -1,0 +1,4 @@
+session	protocol status
+prod-ssh	ssh connected
+logs-sftp	sftp idle
+serial-lab	serial disconnected

@@ -1,0 +1,10 @@
+id = "known.moneyprinterv2.jobs"
+name = "MoneyPrinterV2 job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","shorts-001\trendering"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

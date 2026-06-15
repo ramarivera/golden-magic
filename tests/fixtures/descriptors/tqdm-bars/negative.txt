@@ -1,0 +1,2 @@
+task percent rate
+download 75 1.2MB/s

@@ -1,0 +1,10 @@
+id = "known.next-ai-draw-io.diagrams"
+name = "next-ai-draw-io diagram list"
+priority = 50
+
+[matches]
+required_substrings = ["diagram\tstatus","architecture\tgenerated"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.awesome-macos-command-line.sections"
+name = "awesome-macos-command-line section index"
+priority = 50
+
+[matches]
+required_substrings = ["section\tcount","system\t21"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

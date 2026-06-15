@@ -3328,5 +3328,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/DayuanJiang/next-ai-draw-io",
+    "descriptor_id": "known.next-ai-draw-io.diagrams",
+    "run_id": "agentic.next-ai-draw-io-diagrams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/next-ai-draw-io-diagrams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/next-ai-draw-io-diagrams/expected.rows.json",
+    "variants": [
+      "diagram header row",
+      "generated diagram row",
+      "format field"
+    ],
+    "transcript": [
+      "selected descriptor known.next-ai-draw-io.diagrams for next-ai-draw-io diagram list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kingToolbox/WindTerm",
+    "descriptor_id": "known.windterm.sessions",
+    "run_id": "agentic.windterm-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/windterm-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/windterm-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "ssh protocol row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.windterm.sessions for WindTerm session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tqdm/tqdm",
+    "descriptor_id": "known.tqdm.bars",
+    "run_id": "agentic.tqdm-bars.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tqdm-bars/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tqdm-bars/expected.rows.json",
+    "variants": [
+      "task header row",
+      "percent row",
+      "rate field"
+    ],
+    "transcript": [
+      "selected descriptor known.tqdm.bars for tqdm progress bar list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+    "descriptor_id": "known.moneyprinterv2.jobs",
+    "run_id": "agentic.moneyprinterv2-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/moneyprinterv2-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/moneyprinterv2-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "rendering job row",
+      "platform field"
+    ],
+    "transcript": [
+      "selected descriptor known.moneyprinterv2.jobs for MoneyPrinterV2 job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/herrbischoff/awesome-macos-command-line",
+    "descriptor_id": "known.awesome-macos-command-line.sections",
+    "run_id": "agentic.awesome-macos-command-line-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-macos-command-line-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-macos-command-line-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "count row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-macos-command-line.sections for awesome-macos-command-line section index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

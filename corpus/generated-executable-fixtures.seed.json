@@ -1978,5 +1978,65 @@
     "negative": "process cpu memory\npython 12.5 256M\n",
     "analysis_notes": "Modeled Glances process output with a generated executable-json parser plugin.",
     "variants": ["process header row", "cpu usage row", "memory field"]
+  },
+  {
+    "fixture": "next-ai-draw-io-diagrams",
+    "descriptor_id": "known.next-ai-draw-io.diagrams",
+    "name": "next-ai-draw-io diagram list",
+    "repo": "https://github.com/DayuanJiang/next-ai-draw-io",
+    "required_substrings": ["diagram\tstatus", "architecture\tgenerated"],
+    "parser": "tab-pairs",
+    "input": "diagram\tstatus format\narchitecture\tgenerated drawio\nsequence\tqueued mermaid\nflowchart\tgenerated svg\n",
+    "negative": "diagram status format\narchitecture generated drawio\n",
+    "analysis_notes": "Modeled next-ai-draw-io diagram output with a generated executable-json parser plugin.",
+    "variants": ["diagram header row", "generated diagram row", "format field"]
+  },
+  {
+    "fixture": "windterm-sessions",
+    "descriptor_id": "known.windterm.sessions",
+    "name": "WindTerm session list",
+    "repo": "https://github.com/kingToolbox/WindTerm",
+    "required_substrings": ["session\tprotocol", "prod-ssh\tssh"],
+    "parser": "tab-pairs",
+    "input": "session\tprotocol status\nprod-ssh\tssh connected\nlogs-sftp\tsftp idle\nserial-lab\tserial disconnected\n",
+    "negative": "session protocol status\nprod-ssh ssh connected\n",
+    "analysis_notes": "Modeled WindTerm session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "ssh protocol row", "status field"]
+  },
+  {
+    "fixture": "tqdm-bars",
+    "descriptor_id": "known.tqdm.bars",
+    "name": "tqdm progress bar list",
+    "repo": "https://github.com/tqdm/tqdm",
+    "required_substrings": ["task\tpercent", "download\t75"],
+    "parser": "tab-pairs",
+    "input": "task\tpercent rate\ndownload\t75 1.2MB/s\nencode\t42 8it/s\nupload\t100 3.0MB/s\n",
+    "negative": "task percent rate\ndownload 75 1.2MB/s\n",
+    "analysis_notes": "Modeled tqdm progress output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "percent row", "rate field"]
+  },
+  {
+    "fixture": "moneyprinterv2-jobs",
+    "descriptor_id": "known.moneyprinterv2.jobs",
+    "name": "MoneyPrinterV2 job list",
+    "repo": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+    "required_substrings": ["job\tstatus", "shorts-001\trendering"],
+    "parser": "tab-pairs",
+    "input": "job\tstatus platform\nshorts-001\trendering youtube\nclip-002\tqueued tiktok\nvoice-003\tcomplete instagram\n",
+    "negative": "job status platform\nshorts-001 rendering youtube\n",
+    "analysis_notes": "Modeled MoneyPrinterV2 job output with a generated executable-json parser plugin.",
+    "variants": ["job header row", "rendering job row", "platform field"]
+  },
+  {
+    "fixture": "awesome-macos-command-line-sections",
+    "descriptor_id": "known.awesome-macos-command-line.sections",
+    "name": "awesome-macos-command-line section index",
+    "repo": "https://github.com/herrbischoff/awesome-macos-command-line",
+    "required_substrings": ["section\tcount", "system\t21"],
+    "parser": "tab-pairs",
+    "input": "section\tcount source\nsystem\t21 markdown\nnetwork\t17 markdown\nfinder\t12 markdown\n",
+    "negative": "section count source\nsystem 21 markdown\n",
+    "analysis_notes": "Modeled awesome-macos-command-line section output with a generated executable-json parser plugin.",
+    "variants": ["section header row", "count row", "source field"]
   }
 ]

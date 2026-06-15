@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "protocol status"
+  },
+  {
+    "name": "prod-ssh",
+    "value": "ssh connected"
+  },
+  {
+    "name": "logs-sftp",
+    "value": "sftp idle"
+  },
+  {
+    "name": "serial-lab",
+    "value": "serial disconnected"
+  }
+]

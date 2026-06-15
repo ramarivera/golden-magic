@@ -1,0 +1,4 @@
+task	percent rate
+download	75 1.2MB/s
+encode	42 8it/s
+upload	100 3.0MB/s

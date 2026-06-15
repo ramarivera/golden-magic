@@ -1,0 +1,10 @@
+id = "known.windterm.sessions"
+name = "WindTerm session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tprotocol","prod-ssh\tssh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

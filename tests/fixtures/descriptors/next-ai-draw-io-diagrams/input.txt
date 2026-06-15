@@ -1,0 +1,4 @@
+diagram	status format
+architecture	generated drawio
+sequence	queued mermaid
+flowchart	generated svg

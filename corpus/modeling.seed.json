@@ -1293,5 +1293,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/glances-processes",
     "analysis_notes": "Modeled Glances process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/DayuanJiang/next-ai-draw-io",
+    "descriptor_id": "known.next-ai-draw-io.diagrams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/next-ai-draw-io-diagrams",
+    "analysis_notes": "Modeled next-ai-draw-io diagram output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kingToolbox/WindTerm",
+    "descriptor_id": "known.windterm.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/windterm-sessions",
+    "analysis_notes": "Modeled WindTerm session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tqdm/tqdm",
+    "descriptor_id": "known.tqdm.bars",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tqdm-bars",
+    "analysis_notes": "Modeled tqdm progress output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/FujiwaraChoki/MoneyPrinterV2",
+    "descriptor_id": "known.moneyprinterv2.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/moneyprinterv2-jobs",
+    "analysis_notes": "Modeled MoneyPrinterV2 job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/herrbischoff/awesome-macos-command-line",
+    "descriptor_id": "known.awesome-macos-command-line.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-macos-command-line-sections",
+    "analysis_notes": "Modeled awesome-macos-command-line section output with a generated executable-json parser plugin."
   }
 ]

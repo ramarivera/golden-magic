@@ -1,0 +1,2 @@
+diagram status format
+architecture generated drawio
