@@ -453,5 +453,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/terragrunt-plan",
     "analysis_notes": "Modeled terragrunt plan summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/axllent/mailpit",
+    "descriptor_id": "known.mailpit.message-list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mailpit-message-list",
+    "analysis_notes": "Modeled mailpit message-list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xonsh/xonsh",
+    "descriptor_id": "known.xonsh.env",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xonsh-env",
+    "analysis_notes": "Modeled xonsh environment summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/majd/ipatool",
+    "descriptor_id": "known.ipatool.search",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ipatool-search",
+    "analysis_notes": "Modeled ipatool search result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/reviewdog/reviewdog",
+    "descriptor_id": "known.reviewdog.diagnostics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/reviewdog-diagnostics",
+    "analysis_notes": "Modeled reviewdog diagnostic fields with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gokcehan/lf",
+    "descriptor_id": "known.lf.selection",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lf-selection",
+    "analysis_notes": "Modeled lf selected-file summary output with a generated executable-json parser plugin."
   }
 ]

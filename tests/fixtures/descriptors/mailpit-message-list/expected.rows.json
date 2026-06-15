@@ -1,0 +1,14 @@
+[
+  {
+    "name": "subject",
+    "value": "from date"
+  },
+  {
+    "name": "Build passed",
+    "value": "ci@example.test 2026-06-15"
+  },
+  {
+    "name": "Reset password",
+    "value": "support@example.test 2026-06-15"
+  }
+]

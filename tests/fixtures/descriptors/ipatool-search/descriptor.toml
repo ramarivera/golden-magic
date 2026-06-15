@@ -1,0 +1,10 @@
+id = "known.ipatool.search"
+name = "ipatool search results"
+priority = 50
+
+[matches]
+required_substrings = ["497799835\tXcode","409183694\tKeynote"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

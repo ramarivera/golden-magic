@@ -1,0 +1,2 @@
+subject from date
+Build passed ci@example.test 2026-06-15

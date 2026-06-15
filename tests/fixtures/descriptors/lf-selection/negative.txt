@@ -1,0 +1,2 @@
+selected README.md
+path /Users/ramiro/dev/golden-magic/README.md

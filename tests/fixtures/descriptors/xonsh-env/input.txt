@@ -1,0 +1,4 @@
+SHELL: /usr/bin/xonsh
+XONSH_VERSION: 0.18.0
+PYTHON_VERSION: 3.12.4
+PWD: /Users/ramiro/dev

@@ -1168,5 +1168,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/axllent/mailpit",
+    "descriptor_id": "known.mailpit.message-list",
+    "run_id": "agentic.mailpit-message-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mailpit-message-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mailpit-message-list/expected.rows.json",
+    "variants": [
+      "message header row",
+      "sender row",
+      "date value"
+    ],
+    "transcript": [
+      "selected descriptor known.mailpit.message-list for mailpit message list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xonsh/xonsh",
+    "descriptor_id": "known.xonsh.env",
+    "run_id": "agentic.xonsh-env.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xonsh-env/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xonsh-env/expected.rows.json",
+    "variants": [
+      "shell row",
+      "xonsh version row",
+      "current directory row"
+    ],
+    "transcript": [
+      "selected descriptor known.xonsh.env for xonsh environment summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/majd/ipatool",
+    "descriptor_id": "known.ipatool.search",
+    "run_id": "agentic.ipatool-search.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ipatool-search/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ipatool-search/expected.rows.json",
+    "variants": [
+      "app id",
+      "app title",
+      "category value"
+    ],
+    "transcript": [
+      "selected descriptor known.ipatool.search for ipatool search results output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/reviewdog/reviewdog",
+    "descriptor_id": "known.reviewdog.diagnostics",
+    "run_id": "agentic.reviewdog-diagnostics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/reviewdog-diagnostics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/reviewdog-diagnostics/expected.rows.json",
+    "variants": [
+      "file row",
+      "line row",
+      "severity row"
+    ],
+    "transcript": [
+      "selected descriptor known.reviewdog.diagnostics for reviewdog diagnostics output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gokcehan/lf",
+    "descriptor_id": "known.lf.selection",
+    "run_id": "agentic.lf-selection.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lf-selection/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lf-selection/expected.rows.json",
+    "variants": [
+      "selected filename row",
+      "path row",
+      "size row"
+    ],
+    "transcript": [
+      "selected descriptor known.lf.selection for lf selected file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "file",
+    "value": "src/main.rs"
+  },
+  {
+    "key": "line",
+    "value": "42"
+  },
+  {
+    "key": "severity",
+    "value": "warning"
+  },
+  {
+    "key": "message",
+    "value": "unused variable"
+  }
+]

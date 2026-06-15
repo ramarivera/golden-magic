@@ -1,0 +1,4 @@
+selected: README.md
+path: /Users/ramiro/dev/golden-magic/README.md
+size: 4210
+mode: file

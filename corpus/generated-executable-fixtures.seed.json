@@ -538,5 +538,65 @@
     "negative": "module prod/us-east-1/app\nchanges 2 to add\n",
     "analysis_notes": "Modeled terragrunt plan summary output with a generated executable-json parser plugin.",
     "variants": ["module path row", "plan changes row", "workspace row"]
+  },
+  {
+    "fixture": "mailpit-message-list",
+    "descriptor_id": "known.mailpit.message-list",
+    "name": "mailpit message list",
+    "repo": "https://github.com/axllent/mailpit",
+    "required_substrings": ["subject\tfrom", "Build passed\tci@example.test"],
+    "parser": "tab-pairs",
+    "input": "subject\tfrom date\nBuild passed\tci@example.test 2026-06-15\nReset password\tsupport@example.test 2026-06-15\n",
+    "negative": "subject from date\nBuild passed ci@example.test 2026-06-15\n",
+    "analysis_notes": "Modeled mailpit message-list output with a generated executable-json parser plugin.",
+    "variants": ["message header row", "sender row", "date value"]
+  },
+  {
+    "fixture": "xonsh-env",
+    "descriptor_id": "known.xonsh.env",
+    "name": "xonsh environment summary",
+    "repo": "https://github.com/xonsh/xonsh",
+    "required_substrings": ["SHELL:", "XONSH_VERSION:"],
+    "parser": "colon-kv",
+    "input": "SHELL: /usr/bin/xonsh\nXONSH_VERSION: 0.18.0\nPYTHON_VERSION: 3.12.4\nPWD: /Users/ramiro/dev\n",
+    "negative": "SHELL /usr/bin/xonsh\nXONSH_VERSION 0.18.0\n",
+    "analysis_notes": "Modeled xonsh environment summary output with a generated executable-json parser plugin.",
+    "variants": ["shell row", "xonsh version row", "current directory row"]
+  },
+  {
+    "fixture": "ipatool-search",
+    "descriptor_id": "known.ipatool.search",
+    "name": "ipatool search results",
+    "repo": "https://github.com/majd/ipatool",
+    "required_substrings": ["497799835\tXcode", "409183694\tKeynote"],
+    "parser": "tab-pairs",
+    "input": "497799835\tXcode Developer Tools\n409183694\tKeynote Productivity\n441258766\tMagnet Utilities\n",
+    "negative": "497799835 Xcode Developer Tools\n409183694 Keynote Productivity\n",
+    "analysis_notes": "Modeled ipatool search result output with a generated executable-json parser plugin.",
+    "variants": ["app id", "app title", "category value"]
+  },
+  {
+    "fixture": "reviewdog-diagnostics",
+    "descriptor_id": "known.reviewdog.diagnostics",
+    "name": "reviewdog diagnostics",
+    "repo": "https://github.com/reviewdog/reviewdog",
+    "required_substrings": ["file:", "severity:"],
+    "parser": "colon-kv",
+    "input": "file: src/main.rs\nline: 42\nseverity: warning\nmessage: unused variable\n",
+    "negative": "file src/main.rs\nseverity warning\n",
+    "analysis_notes": "Modeled reviewdog diagnostic fields with a generated executable-json parser plugin.",
+    "variants": ["file row", "line row", "severity row"]
+  },
+  {
+    "fixture": "lf-selection",
+    "descriptor_id": "known.lf.selection",
+    "name": "lf selected file list",
+    "repo": "https://github.com/gokcehan/lf",
+    "required_substrings": ["selected:", "path:"],
+    "parser": "colon-kv",
+    "input": "selected: README.md\npath: /Users/ramiro/dev/golden-magic/README.md\nsize: 4210\nmode: file\n",
+    "negative": "selected README.md\npath /Users/ramiro/dev/golden-magic/README.md\n",
+    "analysis_notes": "Modeled lf selected-file summary output with a generated executable-json parser plugin.",
+    "variants": ["selected filename row", "path row", "size row"]
   }
 ]

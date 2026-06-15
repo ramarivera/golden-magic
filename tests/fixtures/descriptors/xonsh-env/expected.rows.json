@@ -1,0 +1,18 @@
+[
+  {
+    "key": "SHELL",
+    "value": "/usr/bin/xonsh"
+  },
+  {
+    "key": "XONSH_VERSION",
+    "value": "0.18.0"
+  },
+  {
+    "key": "PYTHON_VERSION",
+    "value": "3.12.4"
+  },
+  {
+    "key": "PWD",
+    "value": "/Users/ramiro/dev"
+  }
+]

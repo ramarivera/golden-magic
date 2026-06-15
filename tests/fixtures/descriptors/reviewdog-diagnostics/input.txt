@@ -1,0 +1,4 @@
+file: src/main.rs
+line: 42
+severity: warning
+message: unused variable
