@@ -1,0 +1,10 @@
+id = "known.openvpn-install.profiles"
+name = "openvpn-install profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tstatus","laptop\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

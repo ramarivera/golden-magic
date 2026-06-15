@@ -2878,5 +2878,65 @@
     "negative": "panel status entries\nconsole visible 42\n",
     "analysis_notes": "Modeled eruda panel output with a generated executable-json parser plugin.",
     "variants": ["panel header row", "status row", "entries field"]
+  },
+  {
+    "fixture": "ava-tests",
+    "descriptor_id": "known.ava.tests",
+    "name": "AVA test result list",
+    "repo": "https://github.com/avajs/ava",
+    "required_substrings": ["test\tstatus", "parser smoke\tpassed"],
+    "parser": "tab-pairs",
+    "input": "test\tstatus duration\nparser smoke\tpassed 12ms\nfixture negative\tpassed 8ms\nintegration cli\tfailed 34ms\n",
+    "negative": "test status duration\nparser smoke passed 12ms\n",
+    "analysis_notes": "Modeled AVA test output with a generated executable-json parser plugin.",
+    "variants": ["test header row", "status row", "duration field"]
+  },
+  {
+    "fixture": "xtermjs-addons",
+    "descriptor_id": "known.xtermjs.addons",
+    "name": "xterm.js addon list",
+    "repo": "https://github.com/xtermjs/xterm.js",
+    "required_substrings": ["addon\tstate", "fit\tloaded"],
+    "parser": "tab-pairs",
+    "input": "addon\tstate version\nfit\tloaded 0.10\nweb-links\tloaded 0.11\nserialize\tidle 0.13\n",
+    "negative": "addon state version\nfit loaded 0.10\n",
+    "analysis_notes": "Modeled xterm.js addon output with a generated executable-json parser plugin.",
+    "variants": ["addon header row", "state row", "version field"]
+  },
+  {
+    "fixture": "goaccess-reports",
+    "descriptor_id": "known.goaccess.reports",
+    "name": "GoAccess report list",
+    "repo": "https://github.com/allinurl/goaccess",
+    "required_substrings": ["report\tstatus", "visitors\tready"],
+    "parser": "tab-pairs",
+    "input": "report\tstatus rows\nvisitors\tready 120\nrequests\tready 512\nnot-found\twarning 7\n",
+    "negative": "report status rows\nvisitors ready 120\n",
+    "analysis_notes": "Modeled GoAccess report output with a generated executable-json parser plugin.",
+    "variants": ["report header row", "status row", "rows field"]
+  },
+  {
+    "fixture": "openvpn-install-profiles",
+    "descriptor_id": "known.openvpn-install.profiles",
+    "name": "openvpn-install profile list",
+    "repo": "https://github.com/Nyr/openvpn-install",
+    "required_substrings": ["profile\tstatus", "laptop\tactive"],
+    "parser": "tab-pairs",
+    "input": "profile\tstatus subnet\nlaptop\tactive 10.8.0.2\nphone\tactive 10.8.0.3\nold-tablet\trevoked 10.8.0.4\n",
+    "negative": "profile status subnet\nlaptop active 10.8.0.2\n",
+    "analysis_notes": "Modeled openvpn-install profile output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "status row", "subnet field"]
+  },
+  {
+    "fixture": "spaceship-prompt-sections",
+    "descriptor_id": "known.spaceship-prompt.sections",
+    "name": "Spaceship prompt section list",
+    "repo": "https://github.com/spaceship-prompt/spaceship-prompt",
+    "required_substrings": ["section\tenabled", "git\ttrue"],
+    "parser": "tab-pairs",
+    "input": "section\tenabled order\ngit\ttrue 20\nnode\ttrue 30\naws\tfalse 70\n",
+    "negative": "section enabled order\ngit true 20\n",
+    "analysis_notes": "Modeled Spaceship prompt section output with a generated executable-json parser plugin.",
+    "variants": ["section header row", "enabled row", "order field"]
   }
 ]

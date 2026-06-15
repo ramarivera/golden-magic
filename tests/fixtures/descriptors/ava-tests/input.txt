@@ -1,0 +1,4 @@
+test	status duration
+parser smoke	passed 12ms
+fixture negative	passed 8ms
+integration cli	failed 34ms

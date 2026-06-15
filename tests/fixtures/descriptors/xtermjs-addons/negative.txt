@@ -1,0 +1,2 @@
+addon state version
+fit loaded 0.10

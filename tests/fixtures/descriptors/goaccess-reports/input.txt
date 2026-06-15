@@ -1,0 +1,4 @@
+report	status rows
+visitors	ready 120
+requests	ready 512
+not-found	warning 7

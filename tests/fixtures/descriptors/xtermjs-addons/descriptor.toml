@@ -1,0 +1,10 @@
+id = "known.xtermjs.addons"
+name = "xterm.js addon list"
+priority = 50
+
+[matches]
+required_substrings = ["addon\tstate","fit\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

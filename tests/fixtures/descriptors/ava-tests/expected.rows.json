@@ -1,0 +1,18 @@
+[
+  {
+    "name": "test",
+    "value": "status duration"
+  },
+  {
+    "name": "parser smoke",
+    "value": "passed 12ms"
+  },
+  {
+    "name": "fixture negative",
+    "value": "passed 8ms"
+  },
+  {
+    "name": "integration cli",
+    "value": "failed 34ms"
+  }
+]

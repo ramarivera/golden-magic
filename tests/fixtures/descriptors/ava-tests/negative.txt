@@ -1,0 +1,2 @@
+test status duration
+parser smoke passed 12ms

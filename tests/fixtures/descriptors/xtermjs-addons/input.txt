@@ -1,0 +1,4 @@
+addon	state version
+fit	loaded 0.10
+web-links	loaded 0.11
+serialize	idle 0.13

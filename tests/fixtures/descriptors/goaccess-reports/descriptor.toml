@@ -1,0 +1,10 @@
+id = "known.goaccess.reports"
+name = "GoAccess report list"
+priority = 50
+
+[matches]
+required_substrings = ["report\tstatus","visitors\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

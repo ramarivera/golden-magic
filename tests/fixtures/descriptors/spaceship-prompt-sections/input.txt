@@ -1,0 +1,4 @@
+section	enabled order
+git	true 20
+node	true 30
+aws	false 70

@@ -1818,5 +1818,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/eruda-panels",
     "analysis_notes": "Modeled eruda panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/avajs/ava",
+    "descriptor_id": "known.ava.tests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ava-tests",
+    "analysis_notes": "Modeled AVA test output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xtermjs/xterm.js",
+    "descriptor_id": "known.xtermjs.addons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xtermjs-addons",
+    "analysis_notes": "Modeled xterm.js addon output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/allinurl/goaccess",
+    "descriptor_id": "known.goaccess.reports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/goaccess-reports",
+    "analysis_notes": "Modeled GoAccess report output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Nyr/openvpn-install",
+    "descriptor_id": "known.openvpn-install.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openvpn-install-profiles",
+    "analysis_notes": "Modeled openvpn-install profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spaceship-prompt/spaceship-prompt",
+    "descriptor_id": "known.spaceship-prompt.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spaceship-prompt-sections",
+    "analysis_notes": "Modeled Spaceship prompt section output with a generated executable-json parser plugin."
   }
 ]

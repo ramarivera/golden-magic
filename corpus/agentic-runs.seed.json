@@ -4678,5 +4678,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/avajs/ava",
+    "descriptor_id": "known.ava.tests",
+    "run_id": "agentic.ava-tests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ava-tests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ava-tests/expected.rows.json",
+    "variants": [
+      "test header row",
+      "status row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.ava.tests for AVA test result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xtermjs/xterm.js",
+    "descriptor_id": "known.xtermjs.addons",
+    "run_id": "agentic.xtermjs-addons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xtermjs-addons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xtermjs-addons/expected.rows.json",
+    "variants": [
+      "addon header row",
+      "state row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.xtermjs.addons for xterm.js addon list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/allinurl/goaccess",
+    "descriptor_id": "known.goaccess.reports",
+    "run_id": "agentic.goaccess-reports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/goaccess-reports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/goaccess-reports/expected.rows.json",
+    "variants": [
+      "report header row",
+      "status row",
+      "rows field"
+    ],
+    "transcript": [
+      "selected descriptor known.goaccess.reports for GoAccess report list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Nyr/openvpn-install",
+    "descriptor_id": "known.openvpn-install.profiles",
+    "run_id": "agentic.openvpn-install-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openvpn-install-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openvpn-install-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "status row",
+      "subnet field"
+    ],
+    "transcript": [
+      "selected descriptor known.openvpn-install.profiles for openvpn-install profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/spaceship-prompt/spaceship-prompt",
+    "descriptor_id": "known.spaceship-prompt.sections",
+    "run_id": "agentic.spaceship-prompt-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spaceship-prompt-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spaceship-prompt-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "enabled row",
+      "order field"
+    ],
+    "transcript": [
+      "selected descriptor known.spaceship-prompt.sections for Spaceship prompt section list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

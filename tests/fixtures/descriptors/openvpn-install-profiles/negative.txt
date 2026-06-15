@@ -1,0 +1,2 @@
+profile status subnet
+laptop active 10.8.0.2

@@ -1,0 +1,10 @@
+id = "known.ava.tests"
+name = "AVA test result list"
+priority = 50
+
+[matches]
+required_substrings = ["test\tstatus","parser smoke\tpassed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

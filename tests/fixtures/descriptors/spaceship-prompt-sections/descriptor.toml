@@ -1,0 +1,10 @@
+id = "known.spaceship-prompt.sections"
+name = "Spaceship prompt section list"
+priority = 50
+
+[matches]
+required_substrings = ["section\tenabled","git\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
