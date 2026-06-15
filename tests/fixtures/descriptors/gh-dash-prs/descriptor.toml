@@ -1,0 +1,10 @@
+id = "known.gh-dash.prs"
+name = "gh-dash pull request list"
+priority = 50
+
+[matches]
+required_substrings = ["pr\tstate","123\treview"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

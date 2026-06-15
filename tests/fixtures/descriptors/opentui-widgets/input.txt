@@ -1,0 +1,4 @@
+widget	state cells
+table	mounted 24
+input	focused 1
+log	mounted 80

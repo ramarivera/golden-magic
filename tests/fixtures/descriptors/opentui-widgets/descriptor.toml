@@ -1,0 +1,10 @@
+id = "known.opentui.widgets"
+name = "OpenTUI widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tstate","table\tmounted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

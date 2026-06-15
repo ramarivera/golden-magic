@@ -2623,5 +2623,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/webhook-hooks",
     "analysis_notes": "Modeled webhook hook output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dlvhdr/gh-dash",
+    "descriptor_id": "known.gh-dash.prs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gh-dash-prs",
+    "analysis_notes": "Modeled gh-dash pull request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tsl0922/ttyd",
+    "descriptor_id": "known.ttyd.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ttyd-sessions",
+    "analysis_notes": "Modeled ttyd session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/superset-sh/superset",
+    "descriptor_id": "known.superset.dashboards",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/superset-dashboards",
+    "analysis_notes": "Modeled Superset dashboard output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/anomalyco/opentui",
+    "descriptor_id": "known.opentui.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/opentui-widgets",
+    "analysis_notes": "Modeled OpenTUI widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/imsnif/bandwhich",
+    "descriptor_id": "known.bandwhich.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bandwhich-connections",
+    "analysis_notes": "Modeled bandwhich connection output with a generated executable-json parser plugin."
   }
 ]

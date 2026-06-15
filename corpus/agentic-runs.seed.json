@@ -6748,5 +6748,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/dlvhdr/gh-dash",
+    "descriptor_id": "known.gh-dash.prs",
+    "run_id": "agentic.gh-dash-prs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gh-dash-prs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gh-dash-prs/expected.rows.json",
+    "variants": [
+      "pr header row",
+      "state row",
+      "repo field"
+    ],
+    "transcript": [
+      "selected descriptor known.gh-dash.prs for gh-dash pull request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tsl0922/ttyd",
+    "descriptor_id": "known.ttyd.sessions",
+    "run_id": "agentic.ttyd-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ttyd-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ttyd-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "client field"
+    ],
+    "transcript": [
+      "selected descriptor known.ttyd.sessions for ttyd session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/superset-sh/superset",
+    "descriptor_id": "known.superset.dashboards",
+    "run_id": "agentic.superset-dashboards.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/superset-dashboards/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/superset-dashboards/expected.rows.json",
+    "variants": [
+      "dashboard header row",
+      "status row",
+      "charts field"
+    ],
+    "transcript": [
+      "selected descriptor known.superset.dashboards for Superset dashboard list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/anomalyco/opentui",
+    "descriptor_id": "known.opentui.widgets",
+    "run_id": "agentic.opentui-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/opentui-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/opentui-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "state row",
+      "cells field"
+    ],
+    "transcript": [
+      "selected descriptor known.opentui.widgets for OpenTUI widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/imsnif/bandwhich",
+    "descriptor_id": "known.bandwhich.connections",
+    "run_id": "agentic.bandwhich-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bandwhich-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bandwhich-connections/expected.rows.json",
+    "variants": [
+      "process header row",
+      "rate row",
+      "remote field"
+    ],
+    "transcript": [
+      "selected descriptor known.bandwhich.connections for bandwhich connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

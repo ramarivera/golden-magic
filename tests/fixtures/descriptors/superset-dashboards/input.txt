@@ -1,0 +1,4 @@
+dashboard	status charts
+sales	published 9
+ops	draft 5
+finance	published 7

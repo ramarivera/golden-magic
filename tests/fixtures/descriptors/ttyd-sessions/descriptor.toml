@@ -1,0 +1,10 @@
+id = "known.ttyd.sessions"
+name = "ttyd session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","tty-1\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
