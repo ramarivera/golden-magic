@@ -1,0 +1,4 @@
+bundle	platform state
+main	ios built
+main	android built
+vendor	web queued

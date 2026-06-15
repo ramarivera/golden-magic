@@ -1,0 +1,4 @@
+option	type state
+--help	boolean built-in
+--version	boolean built-in
+--config	string custom

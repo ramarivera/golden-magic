@@ -1,0 +1,10 @@
+id = "known.curlie.requests"
+name = "curlie request list"
+priority = 50
+
+[matches]
+required_substrings = ["request\tstatus","GET /api\t200"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

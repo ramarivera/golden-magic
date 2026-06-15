@@ -1,0 +1,4 @@
+render	theme state
+table	monokai complete
+markdown	github complete
+traceback	dracula complete

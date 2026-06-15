@@ -1,0 +1,10 @@
+id = "known.nba-go.games"
+name = "nba-go game list"
+priority = 50
+
+[matches]
+required_substrings = ["game\tscore","LAL-BOS\t102-98"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

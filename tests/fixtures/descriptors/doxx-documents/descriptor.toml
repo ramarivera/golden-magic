@@ -1,0 +1,10 @@
+id = "known.doxx.documents"
+name = "doxx document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tpages","report.docx\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

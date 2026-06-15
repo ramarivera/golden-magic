@@ -13930,5 +13930,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/homerchen19/nba-go",
+    "descriptor_id": "known.nba-go.games",
+    "run_id": "agentic.nba-go-games.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nba-go-games/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nba-go-games/expected.rows.json",
+    "variants": [
+      "game header row",
+      "score row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nba-go.games for nba-go game list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kamiyaa/joshuto",
+    "descriptor_id": "known.joshuto.entries",
+    "run_id": "agentic.joshuto-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/joshuto-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/joshuto-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.joshuto.entries for joshuto entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/meow",
+    "descriptor_id": "known.meow.options",
+    "run_id": "agentic.meow-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/meow-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/meow-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.meow.options for meow option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/curlpipe/ox",
+    "descriptor_id": "known.ox.buffers",
+    "run_id": "agentic.ox-buffers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ox-buffers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ox-buffers/expected.rows.json",
+    "variants": [
+      "buffer header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ox.buffers for ox buffer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bgreenwell/doxx",
+    "descriptor_id": "known.doxx.documents",
+    "run_id": "agentic.doxx-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/doxx-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/doxx-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "pages row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.doxx.documents for doxx document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JohannesKaufmann/html-to-markdown",
+    "descriptor_id": "known.html-to-markdown.pages",
+    "run_id": "agentic.html-to-markdown-pages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/html-to-markdown-pages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/html-to-markdown-pages/expected.rows.json",
+    "variants": [
+      "page header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.html-to-markdown.pages for html-to-markdown page list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Textualize/rich-cli",
+    "descriptor_id": "known.rich-cli.renders",
+    "run_id": "agentic.rich-cli-renders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rich-cli-renders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rich-cli-renders/expected.rows.json",
+    "variants": [
+      "render header row",
+      "theme row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rich-cli.renders for rich-cli render list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/callstack/haul",
+    "descriptor_id": "known.haul.bundles",
+    "run_id": "agentic.haul-bundles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/haul-bundles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/haul-bundles/expected.rows.json",
+    "variants": [
+      "bundle header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.haul.bundles for Haul bundle list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/golutra/golutra",
+    "descriptor_id": "known.golutra.transfers",
+    "run_id": "agentic.golutra-transfers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/golutra-transfers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/golutra-transfers/expected.rows.json",
+    "variants": [
+      "transfer header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.golutra.transfers for golutra transfer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rs/curlie",
+    "descriptor_id": "known.curlie.requests",
+    "run_id": "agentic.curlie-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/curlie-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/curlie-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.curlie.requests for curlie request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

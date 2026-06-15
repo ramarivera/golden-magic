@@ -1,0 +1,4 @@
+entry	kind state
+src	dir selected
+README.md	file visible
+target	dir hidden

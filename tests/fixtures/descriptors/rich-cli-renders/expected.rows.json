@@ -1,0 +1,18 @@
+[
+  {
+    "name": "render",
+    "value": "theme state"
+  },
+  {
+    "name": "table",
+    "value": "monokai complete"
+  },
+  {
+    "name": "markdown",
+    "value": "github complete"
+  },
+  {
+    "name": "traceback",
+    "value": "dracula complete"
+  }
+]

@@ -1,0 +1,2 @@
+option type state
+--help boolean built-in

@@ -1,0 +1,4 @@
+request	status state
+GET /api	200 ok
+POST /login	302 ok
+GET /missing	404 failed

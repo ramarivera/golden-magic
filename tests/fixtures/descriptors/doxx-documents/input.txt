@@ -1,0 +1,4 @@
+document	pages state
+report.docx	12 parsed
+notes.docx	4 parsed
+draft.docx	8 queued

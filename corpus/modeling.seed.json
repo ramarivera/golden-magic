@@ -5416,5 +5416,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/pb-bars",
     "analysis_notes": "Modeled pb progress bar output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/homerchen19/nba-go",
+    "descriptor_id": "known.nba-go.games",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nba-go-games",
+    "analysis_notes": "Modeled nba-go game output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kamiyaa/joshuto",
+    "descriptor_id": "known.joshuto.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/joshuto-entries",
+    "analysis_notes": "Modeled joshuto entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/meow",
+    "descriptor_id": "known.meow.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/meow-options",
+    "analysis_notes": "Modeled meow option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/curlpipe/ox",
+    "descriptor_id": "known.ox.buffers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ox-buffers",
+    "analysis_notes": "Modeled ox buffer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bgreenwell/doxx",
+    "descriptor_id": "known.doxx.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/doxx-documents",
+    "analysis_notes": "Modeled doxx document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JohannesKaufmann/html-to-markdown",
+    "descriptor_id": "known.html-to-markdown.pages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/html-to-markdown-pages",
+    "analysis_notes": "Modeled html-to-markdown page output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Textualize/rich-cli",
+    "descriptor_id": "known.rich-cli.renders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rich-cli-renders",
+    "analysis_notes": "Modeled rich-cli render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/callstack/haul",
+    "descriptor_id": "known.haul.bundles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/haul-bundles",
+    "analysis_notes": "Modeled Haul bundle output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/golutra/golutra",
+    "descriptor_id": "known.golutra.transfers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/golutra-transfers",
+    "analysis_notes": "Modeled golutra transfer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rs/curlie",
+    "descriptor_id": "known.curlie.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/curlie-requests",
+    "analysis_notes": "Modeled curlie request output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "request",
+    "value": "status state"
+  },
+  {
+    "name": "GET /api",
+    "value": "200 ok"
+  },
+  {
+    "name": "POST /login",
+    "value": "302 ok"
+  },
+  {
+    "name": "GET /missing",
+    "value": "404 failed"
+  }
+]

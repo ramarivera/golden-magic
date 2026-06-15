@@ -1,0 +1,4 @@
+buffer	path state
+main	main.rs active
+config	config.toml dirty
+notes	notes.md clean

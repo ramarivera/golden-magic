@@ -1,0 +1,4 @@
+transfer	size state
+backup	2GB running
+logs	400MB complete
+media	8GB queued

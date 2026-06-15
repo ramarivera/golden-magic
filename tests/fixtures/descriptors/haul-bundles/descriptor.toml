@@ -1,0 +1,10 @@
+id = "known.haul.bundles"
+name = "Haul bundle list"
+priority = 50
+
+[matches]
+required_substrings = ["bundle\tplatform","main\tios"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
