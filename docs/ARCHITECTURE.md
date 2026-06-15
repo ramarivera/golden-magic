@@ -64,8 +64,8 @@ Debug channels must not interfere with stdout/stderr pipeline semantics. Prefer 
 Golden Magic has two Nushell adapters:
 
 - `nu/golden-magic.nu`: wrapper module exporting `from golden-magic` over the CLI, including descriptor/config support.
-- `src/bin/nu_plugin_golden_magic.rs`: native plugin binary named `nu_plugin_golden_magic`, exporting `from golden-magic` over Nu plugin protocol.
+- `src/bin/nu_plugin_golden_magic.rs`: native plugin binary named `nu_plugin_golden_magic`, exporting `from golden-magic` over Nu plugin protocol with descriptor/config loading parity for parser hints.
 
 The native plugin returns Nu records directly rather than JSON text. The parser core remains the stable boundary shared by both adapters.
 
-Current limitation: descriptor/config loading is implemented in the CLI adapter path, not yet in the native plugin path.
+Descriptor/config parser-hint loading is shared by the CLI adapter and native Nu plugin path. The native plugin still returns native Nu rows directly; use the CLI wrapper when JSON report or trace output is needed.

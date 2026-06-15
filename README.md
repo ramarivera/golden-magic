@@ -136,15 +136,14 @@ Implemented generic heuristics:
 - CLI binaries `golden-magic`, `gold`, `golden`, `magic`, and `magia`
 - Nushell wrapper commands `from golden-magic`, `from gold`, `from golden`, `from magic`, and `from magia` in `nu/golden-magic.nu`
 - optional native Nushell plugin binary `nu_plugin_golden_magic` exporting the same `from ...` aliases behind the `nu-plugin` Cargo feature
-- descriptor registry loading with `--descriptor-dir`
+- descriptor registry loading with `--descriptor-dir` in the CLI, wrapper, and native plugin paths
 - default descriptor discovery from XDG config with `--no-default-descriptors` opt-out
-- config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml`
+- config-file descriptor directory overrides via `--config` or `$XDG_CONFIG_HOME/golden-magic/config.toml` in the CLI and native plugin paths
 - optional Nix-backed fixture test pattern for real CLI isolation
 - Criterion benchmark harness and cargo-test parser performance gates
 
 Not implemented yet:
 
-- descriptor/config loading inside the native Nu plugin; use the CLI wrapper when descriptor packs are needed
 - broader extension loading beyond TOML descriptors
 - full descriptor-driven Nix fixture manifest harness
 - implemented hidden debug channel; current design explicitly rejects hidden channels by default

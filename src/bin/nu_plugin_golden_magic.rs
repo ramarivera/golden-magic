@@ -1,10 +1,12 @@
 extern crate golden_magic;
 
+use golden_magic::cli::{parser_options_from_descriptors, reject_unknown_rules};
 use golden_magic::{HeaderMode, ParseOptions, parse_with_options};
 use nu_plugin::{EvaluatedCall, JsonSerializer, Plugin, SimplePluginCommand, serve_plugin};
 use nu_protocol::{
     Category, Example, LabeledError, ShellError, Signature, Span, SyntaxShape, Type, Value,
 };
+use std::path::PathBuf;
 
 struct GoldenMagicPlugin;
 struct FromGoldenMagic {
@@ -55,14 +57,31 @@ impl SimplePluginCommand for FromGoldenMagic {
             )
             .named(
                 "disable-rule",
-                SyntaxShape::String,
-                "Disable a heuristic rule id; repeat by using the CLI wrapper for now",
+                SyntaxShape::List(Box::new(SyntaxShape::String)),
+                "Disable heuristic rule ids",
                 None,
             )
             .named(
                 "only-rule",
-                SyntaxShape::String,
-                "Run only one heuristic rule id; repeat by using the CLI wrapper for now",
+                SyntaxShape::List(Box::new(SyntaxShape::String)),
+                "Run only these heuristic rule ids",
+                None,
+            )
+            .named(
+                "descriptor-dir",
+                SyntaxShape::List(Box::new(SyntaxShape::String)),
+                "Descriptor directories to load after default/config descriptors",
+                None,
+            )
+            .named(
+                "config",
+                SyntaxShape::Filepath,
+                "Config file with descriptor_dirs overrides",
+                None,
+            )
+            .switch(
+                "no-default-descriptors",
+                "Disable XDG/default descriptor and config discovery",
                 None,
             )
     }
@@ -86,7 +105,7 @@ impl SimplePluginCommand for FromGoldenMagic {
         let text = input
             .as_str()
             .map_err(|error| labeled_error(error, call.head))?;
-        let options = options_from_call(call)?;
+        let options = options_from_call(call, text)?;
         let report = parse_with_options(text, &options);
         let rows = report
             .rows
@@ -98,8 +117,26 @@ impl SimplePluginCommand for FromGoldenMagic {
     }
 }
 
-fn options_from_call(call: &EvaluatedCall) -> Result<ParseOptions, LabeledError> {
-    let mut options = ParseOptions::new();
+fn options_from_call(call: &EvaluatedCall, input: &str) -> Result<ParseOptions, LabeledError> {
+    let descriptor_dirs = string_list_flag(call, "descriptor-dir")?
+        .into_iter()
+        .map(PathBuf::from)
+        .collect::<Vec<_>>();
+    let config_path = string_flag(call, "config")?.map(PathBuf::from);
+    let no_default_descriptors = call
+        .named
+        .iter()
+        .any(|(name, value)| name.item == "no-default-descriptors" && value.is_none());
+
+    let mut options = parser_options_from_descriptors(
+        input,
+        &descriptor_dirs,
+        config_path.as_deref(),
+        no_default_descriptors,
+    )
+    .map_err(|error| {
+        LabeledError::new("Golden Magic descriptor error").with_label(error.to_string(), call.head)
+    })?;
 
     if let Some(headers) = call.get_flag_value("headers") {
         let mode = headers
@@ -117,21 +154,50 @@ fn options_from_call(call: &EvaluatedCall) -> Result<ParseOptions, LabeledError>
         };
     }
 
-    if let Some(rule) = call.get_flag_value("disable-rule") {
-        options = options.disable_rule(
-            rule.as_str()
-                .map_err(|error| labeled_error(error, call.head))?,
-        );
+    let disabled_rules = string_list_flag(call, "disable-rule")?;
+    reject_unknown_rules(&disabled_rules).map_err(|error| {
+        LabeledError::new("Golden Magic rule error").with_label(error.to_string(), call.head)
+    })?;
+    for rule in disabled_rules {
+        options = options.disable_rule(rule);
     }
 
-    if let Some(rule) = call.get_flag_value("only-rule") {
-        options = options.only_rule(
-            rule.as_str()
-                .map_err(|error| labeled_error(error, call.head))?,
-        );
+    let only_rules = string_list_flag(call, "only-rule")?;
+    reject_unknown_rules(&only_rules).map_err(|error| {
+        LabeledError::new("Golden Magic rule error").with_label(error.to_string(), call.head)
+    })?;
+    for rule in only_rules {
+        options = options.only_rule(rule);
     }
 
     Ok(options)
+}
+
+fn string_flag(call: &EvaluatedCall, name: &str) -> Result<Option<String>, LabeledError> {
+    call.get_flag_value(name)
+        .map(|value| {
+            value
+                .coerce_string()
+                .map_err(|error| labeled_error(error, call.head))
+        })
+        .transpose()
+}
+
+fn string_list_flag(call: &EvaluatedCall, name: &str) -> Result<Vec<String>, LabeledError> {
+    let Some(value) = call.get_flag_value(name) else {
+        return Ok(Vec::new());
+    };
+
+    value
+        .as_list()
+        .map_err(|error| labeled_error(error, call.head))?
+        .iter()
+        .map(|value| {
+            value
+                .coerce_string()
+                .map_err(|error| labeled_error(error, call.head))
+        })
+        .collect()
 }
 
 fn row_to_value(row: std::collections::BTreeMap<String, String>, span: Span) -> Value {

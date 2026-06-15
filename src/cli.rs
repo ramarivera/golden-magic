@@ -3,7 +3,7 @@ use crate::descriptors::{DescriptorRegistry, descriptor_rule_ids};
 use crate::{HeaderMode, ParseOptions, known_rule_ids, parse_with_options};
 use clap::{Parser, ValueEnum};
 use std::io::{self, Read};
-use std::path::PathBuf;
+use std::path::{Path, PathBuf};
 
 #[derive(Debug, Parser)]
 #[command(version, about = "Infer structured data from hostile CLI text")]
@@ -77,8 +77,12 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
     let mut input = String::new();
     io::stdin().read_to_string(&mut input)?;
 
-    let descriptor_dirs = descriptor_dirs(&args)?;
-    let mut options = descriptor_options(&descriptor_dirs, &input)?;
+    let mut options = parser_options_from_descriptors(
+        &input,
+        &args.descriptor_dirs,
+        args.config.as_deref(),
+        args.no_default_descriptors,
+    )?;
     for rule in &args.disable_rules {
         options = options.disable_rule(rule);
     }
@@ -103,11 +107,26 @@ pub fn run() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-fn descriptor_dirs(args: &Args) -> Result<Vec<PathBuf>, Box<dyn std::error::Error>> {
+pub fn parser_options_from_descriptors(
+    input: &str,
+    extra_descriptor_dirs: &[PathBuf],
+    config_path: Option<&Path>,
+    no_default_descriptors: bool,
+) -> Result<ParseOptions, Box<dyn std::error::Error>> {
+    let descriptor_dirs =
+        descriptor_dirs(extra_descriptor_dirs, config_path, no_default_descriptors)?;
+    descriptor_options(&descriptor_dirs, input)
+}
+
+fn descriptor_dirs(
+    extra_descriptor_dirs: &[PathBuf],
+    config_path: Option<&Path>,
+    no_default_descriptors: bool,
+) -> Result<Vec<PathBuf>, Box<dyn std::error::Error>> {
     let mut dirs = Vec::new();
 
-    if !args.no_default_descriptors {
-        let config = load_cli_config(args)?;
+    if !no_default_descriptors {
+        let config = load_cli_config(config_path)?;
         if config.descriptor_dirs.is_empty() {
             dirs.extend(default_descriptor_dirs());
         } else {
@@ -115,12 +134,12 @@ fn descriptor_dirs(args: &Args) -> Result<Vec<PathBuf>, Box<dyn std::error::Erro
         }
     }
 
-    dirs.extend(args.descriptor_dirs.iter().cloned());
+    dirs.extend(extra_descriptor_dirs.iter().cloned());
     Ok(dirs)
 }
 
-fn load_cli_config(args: &Args) -> Result<Config, Box<dyn std::error::Error>> {
-    if let Some(path) = &args.config {
+fn load_cli_config(config_path: Option<&Path>) -> Result<Config, Box<dyn std::error::Error>> {
+    if let Some(path) = config_path {
         return Ok(load_config(path)?);
     }
 
@@ -212,7 +231,7 @@ fn reject_unknown_descriptor_rules(
     .into())
 }
 
-fn reject_unknown_rules(rules: &[String]) -> Result<(), Box<dyn std::error::Error>> {
+pub fn reject_unknown_rules(rules: &[String]) -> Result<(), Box<dyn std::error::Error>> {
     let known = known_rule_ids();
     let unknown: Vec<&String> = rules
         .iter()
