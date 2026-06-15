@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "status panel"
+  },
+  {
+    "name": "terminal",
+    "value": "visible main"
+  },
+  {
+    "name": "network",
+    "value": "visible side"
+  },
+  {
+    "name": "filesystem",
+    "value": "hidden side"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "parent flags"
+  },
+  {
+    "name": "serve",
+    "value": "root 4"
+  },
+  {
+    "name": "completion",
+    "value": "root 2"
+  },
+  {
+    "name": "init",
+    "value": "project 3"
+  }
+]

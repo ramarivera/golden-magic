@@ -1,0 +1,4 @@
+plugin	state source
+hyper-search	enabled npm
+hyper-pane	enabled npm
+hyper-theme	disabled local

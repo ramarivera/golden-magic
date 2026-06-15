@@ -1498,5 +1498,65 @@
     "negative": "file status tokens\nmain.py edited 1200\n",
     "analysis_notes": "Modeled Aider edited file list output with a generated executable-json parser plugin.",
     "variants": ["file header row", "edited file row", "token count field"]
+  },
+  {
+    "fixture": "zx-scripts",
+    "descriptor_id": "known.zx.scripts",
+    "name": "zx script list",
+    "repo": "https://github.com/google/zx",
+    "required_substrings": ["script\tstatus", "deploy\tready"],
+    "parser": "tab-pairs",
+    "input": "script\tstatus runtime\ndeploy\tready node\nrelease\trunning node\ncleanup\tdone bash\n",
+    "negative": "script status runtime\ndeploy ready node\n",
+    "analysis_notes": "Modeled zx script list output with a generated executable-json parser plugin.",
+    "variants": ["script header row", "ready script row", "runtime field"]
+  },
+  {
+    "fixture": "pyenv-versions",
+    "descriptor_id": "known.pyenv.versions",
+    "name": "pyenv version list",
+    "repo": "https://github.com/pyenv/pyenv",
+    "required_substrings": ["version\tstate", "3.12.4\tglobal"],
+    "parser": "tab-pairs",
+    "input": "version\tstate path\n3.11.9\tinstalled ~/.pyenv\n3.12.4\tglobal ~/.pyenv\n3.13.0\tavailable remote\n",
+    "negative": "version state path\n3.12.4 global ~/.pyenv\n",
+    "analysis_notes": "Modeled pyenv version list output with a generated executable-json parser plugin.",
+    "variants": ["version header row", "global version row", "path field"]
+  },
+  {
+    "fixture": "edex-ui-widgets",
+    "descriptor_id": "known.edex-ui.widgets",
+    "name": "eDEX-UI widget list",
+    "repo": "https://github.com/GitSquared/edex-ui",
+    "required_substrings": ["widget\tstatus", "terminal\tvisible"],
+    "parser": "tab-pairs",
+    "input": "widget\tstatus panel\nterminal\tvisible main\nnetwork\tvisible side\nfilesystem\thidden side\n",
+    "negative": "widget status panel\nterminal visible main\n",
+    "analysis_notes": "Modeled eDEX-UI widget list output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "visible widget row", "panel field"]
+  },
+  {
+    "fixture": "hyper-plugins",
+    "descriptor_id": "known.hyper.plugins",
+    "name": "Hyper plugin list",
+    "repo": "https://github.com/vercel/hyper",
+    "required_substrings": ["plugin\tstate", "hyper-search\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstate source\nhyper-search\tenabled npm\nhyper-pane\tenabled npm\nhyper-theme\tdisabled local\n",
+    "negative": "plugin state source\nhyper-search enabled npm\n",
+    "analysis_notes": "Modeled Hyper plugin list output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "enabled plugin row", "source field"]
+  },
+  {
+    "fixture": "cobra-commands",
+    "descriptor_id": "known.cobra.commands",
+    "name": "Cobra command tree",
+    "repo": "https://github.com/spf13/cobra",
+    "required_substrings": ["command\tparent", "serve\troot"],
+    "parser": "tab-pairs",
+    "input": "command\tparent flags\nserve\troot 4\ncompletion\troot 2\ninit\tproject 3\n",
+    "negative": "command parent flags\nserve root 4\n",
+    "analysis_notes": "Modeled Cobra command tree output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "root command row", "flags field"]
   }
 ]

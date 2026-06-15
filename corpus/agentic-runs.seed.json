@@ -2608,5 +2608,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/google/zx",
+    "descriptor_id": "known.zx.scripts",
+    "run_id": "agentic.zx-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zx-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zx-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "ready script row",
+      "runtime field"
+    ],
+    "transcript": [
+      "selected descriptor known.zx.scripts for zx script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pyenv/pyenv",
+    "descriptor_id": "known.pyenv.versions",
+    "run_id": "agentic.pyenv-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pyenv-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pyenv-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "global version row",
+      "path field"
+    ],
+    "transcript": [
+      "selected descriptor known.pyenv.versions for pyenv version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GitSquared/edex-ui",
+    "descriptor_id": "known.edex-ui.widgets",
+    "run_id": "agentic.edex-ui-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/edex-ui-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/edex-ui-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "visible widget row",
+      "panel field"
+    ],
+    "transcript": [
+      "selected descriptor known.edex-ui.widgets for eDEX-UI widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel/hyper",
+    "descriptor_id": "known.hyper.plugins",
+    "run_id": "agentic.hyper-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hyper-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hyper-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "enabled plugin row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.hyper.plugins for Hyper plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/spf13/cobra",
+    "descriptor_id": "known.cobra.commands",
+    "run_id": "agentic.cobra-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cobra-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cobra-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "root command row",
+      "flags field"
+    ],
+    "transcript": [
+      "selected descriptor known.cobra.commands for Cobra command tree output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

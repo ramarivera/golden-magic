@@ -1,0 +1,4 @@
+version	state path
+3.11.9	installed ~/.pyenv
+3.12.4	global ~/.pyenv
+3.13.0	available remote

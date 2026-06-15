@@ -1,0 +1,10 @@
+id = "known.edex-ui.widgets"
+name = "eDEX-UI widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tstatus","terminal\tvisible"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

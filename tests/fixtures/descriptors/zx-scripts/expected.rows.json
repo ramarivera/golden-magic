@@ -1,0 +1,18 @@
+[
+  {
+    "name": "script",
+    "value": "status runtime"
+  },
+  {
+    "name": "deploy",
+    "value": "ready node"
+  },
+  {
+    "name": "release",
+    "value": "running node"
+  },
+  {
+    "name": "cleanup",
+    "value": "done bash"
+  }
+]

@@ -1,0 +1,4 @@
+command	parent flags
+serve	root 4
+completion	root 2
+init	project 3

@@ -1,0 +1,10 @@
+id = "known.pyenv.versions"
+name = "pyenv version list"
+priority = 50
+
+[matches]
+required_substrings = ["version\tstate","3.12.4\tglobal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

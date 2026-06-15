@@ -1,0 +1,10 @@
+id = "known.cobra.commands"
+name = "Cobra command tree"
+priority = 50
+
+[matches]
+required_substrings = ["command\tparent","serve\troot"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

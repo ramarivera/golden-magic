@@ -1,0 +1,4 @@
+widget	status panel
+terminal	visible main
+network	visible side
+filesystem	hidden side

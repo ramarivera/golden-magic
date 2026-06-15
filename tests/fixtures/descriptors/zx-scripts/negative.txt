@@ -1,0 +1,2 @@
+script status runtime
+deploy ready node

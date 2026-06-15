@@ -1013,5 +1013,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/aider-files",
     "analysis_notes": "Modeled Aider edited file list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google/zx",
+    "descriptor_id": "known.zx.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zx-scripts",
+    "analysis_notes": "Modeled zx script list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pyenv/pyenv",
+    "descriptor_id": "known.pyenv.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pyenv-versions",
+    "analysis_notes": "Modeled pyenv version list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GitSquared/edex-ui",
+    "descriptor_id": "known.edex-ui.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/edex-ui-widgets",
+    "analysis_notes": "Modeled eDEX-UI widget list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel/hyper",
+    "descriptor_id": "known.hyper.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hyper-plugins",
+    "analysis_notes": "Modeled Hyper plugin list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spf13/cobra",
+    "descriptor_id": "known.cobra.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cobra-commands",
+    "analysis_notes": "Modeled Cobra command tree output with a generated executable-json parser plugin."
   }
 ]

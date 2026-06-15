@@ -1,0 +1,4 @@
+script	status runtime
+deploy	ready node
+release	running node
+cleanup	done bash
