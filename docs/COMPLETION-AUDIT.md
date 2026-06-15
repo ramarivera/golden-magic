@@ -41,7 +41,6 @@ This audit validates the previously claimed completion list against current repo
 | --- | --- |
 | Arbitrary Rust runtime extension/plugin loading | Not implemented by design. Current docs reject it until separate security and portability review. |
 | Tree-sitter backend | Not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding tree-sitter runtime and grammar packages. |
-| Full live Nix fixture execution | Proven through Docker-backed `nixos/nix:latest` run because host `nix` is not available on `PATH`; bead `golden-magic-714` can close with that evidence. |
 
 ## Weak Or Qualified Evidence
 
