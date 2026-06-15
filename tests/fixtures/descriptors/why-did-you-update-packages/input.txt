@@ -1,0 +1,4 @@
+package	reason count
+react	props 3
+redux	state 2
+router	context 1

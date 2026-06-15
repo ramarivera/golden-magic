@@ -4443,5 +4443,82 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/prism-mocks",
     "analysis_notes": "Modeled Prism mock route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alecthomas/chroma",
+    "descriptor_id": "known.chroma.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chroma-styles",
+    "analysis_notes": "Modeled Chroma style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/emqx/MQTTX",
+    "descriptor_id": "known.mqttx.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mqttx-connections",
+    "analysis_notes": "Modeled MQTTX connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/arduino/arduino-cli",
+    "descriptor_id": "known.arduino-cli.boards",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/arduino-cli-boards",
+    "analysis_notes": "Modeled arduino-cli board output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/garbles/why-did-you-update",
+    "descriptor_id": "known.why-did-you-update.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/why-did-you-update-packages",
+    "analysis_notes": "Modeled why-did-you-update package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hpjansson/chafa",
+    "descriptor_id": "known.chafa.outputs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chafa-outputs",
+    "analysis_notes": "Modeled Chafa output mode output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/s3tools/s3cmd",
+    "descriptor_id": "known.s3cmd.buckets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/s3cmd-buckets",
+    "analysis_notes": "Modeled s3cmd bucket output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jacob-bd/notebooklm-mcp-cli",
+    "descriptor_id": "known.notebooklm-mcp-cli.sources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/notebooklm-mcp-cli-sources",
+    "analysis_notes": "Modeled NotebookLM MCP CLI source output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Nyr/wireguard-install",
+    "descriptor_id": "known.wireguard-install.peers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wireguard-install-peers",
+    "analysis_notes": "Modeled wireguard-install peer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/productdevbook/port-killer",
+    "descriptor_id": "known.port-killer.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/port-killer-processes",
+    "analysis_notes": "Modeled port-killer process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/generalaction/emdash",
+    "descriptor_id": "known.emdash.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/emdash-documents",
+    "analysis_notes": "Modeled emdash document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/campfirein/byterover-cli",
+    "descriptor_id": "known.byterover-cli.memories",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/byterover-cli-memories",
+    "analysis_notes": "Modeled Byterover CLI memory output with a generated executable-json parser plugin."
   }
 ]

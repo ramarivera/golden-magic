@@ -1,0 +1,18 @@
+[
+  {
+    "name": "board",
+    "value": "fqbn state"
+  },
+  {
+    "name": "uno",
+    "value": "arduino:avr:uno installed"
+  },
+  {
+    "name": "nano",
+    "value": "arduino:avr:nano installed"
+  },
+  {
+    "name": "esp32",
+    "value": "esp32:esp32:esp32 available"
+  }
+]

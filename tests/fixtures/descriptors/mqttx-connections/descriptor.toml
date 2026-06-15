@@ -1,0 +1,10 @@
+id = "known.mqttx.connections"
+name = "MQTTX connection list"
+priority = 50
+
+[matches]
+required_substrings = ["connection\tbroker","local\tmqtt://localhost"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.s3cmd.buckets"
+name = "s3cmd bucket list"
+priority = 50
+
+[matches]
+required_substrings = ["bucket\tregion","logs\tus-east-1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

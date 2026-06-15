@@ -1,0 +1,10 @@
+id = "known.wireguard-install.peers"
+name = "wireguard-install peer list"
+priority = 50
+
+[matches]
+required_substrings = ["peer\taddress","phone\t10.7.0.2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.chroma.styles"
+name = "Chroma style list"
+priority = 50
+
+[matches]
+required_substrings = ["style\tcategory","monokai\tdark"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

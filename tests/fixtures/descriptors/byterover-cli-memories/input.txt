@@ -1,0 +1,4 @@
+memory	scope state
+project	local synced
+team	remote synced
+scratch	local draft

@@ -1,0 +1,4 @@
+style	category state
+monokai	dark bundled
+github	light bundled
+solarized-dark	dark bundled

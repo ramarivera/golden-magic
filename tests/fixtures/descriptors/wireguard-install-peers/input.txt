@@ -1,0 +1,4 @@
+peer	address state
+phone	10.7.0.2 active
+laptop	10.7.0.3 active
+tablet	10.7.0.4 revoked

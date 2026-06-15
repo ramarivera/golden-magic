@@ -1,0 +1,2 @@
+output format state
+terminal symbols ready

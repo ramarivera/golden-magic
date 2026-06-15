@@ -1,0 +1,2 @@
+connection broker state
+local mqtt://localhost connected

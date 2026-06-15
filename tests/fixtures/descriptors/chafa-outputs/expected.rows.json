@@ -1,0 +1,18 @@
+[
+  {
+    "name": "output",
+    "value": "format state"
+  },
+  {
+    "name": "terminal",
+    "value": "symbols ready"
+  },
+  {
+    "name": "kitty",
+    "value": "graphics ready"
+  },
+  {
+    "name": "sixel",
+    "value": "graphics available"
+  }
+]

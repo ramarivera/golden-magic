@@ -11428,5 +11428,203 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/alecthomas/chroma",
+    "descriptor_id": "known.chroma.styles",
+    "run_id": "agentic.chroma-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chroma-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chroma-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chroma.styles for Chroma style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/emqx/MQTTX",
+    "descriptor_id": "known.mqttx.connections",
+    "run_id": "agentic.mqttx-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mqttx-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mqttx-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "broker row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mqttx.connections for MQTTX connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/arduino/arduino-cli",
+    "descriptor_id": "known.arduino-cli.boards",
+    "run_id": "agentic.arduino-cli-boards.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/arduino-cli-boards/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/arduino-cli-boards/expected.rows.json",
+    "variants": [
+      "board header row",
+      "fqbn row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.arduino-cli.boards for arduino-cli board list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/garbles/why-did-you-update",
+    "descriptor_id": "known.why-did-you-update.packages",
+    "run_id": "agentic.why-did-you-update-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/why-did-you-update-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/why-did-you-update-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "reason row",
+      "count field"
+    ],
+    "transcript": [
+      "selected descriptor known.why-did-you-update.packages for why-did-you-update package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hpjansson/chafa",
+    "descriptor_id": "known.chafa.outputs",
+    "run_id": "agentic.chafa-outputs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chafa-outputs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chafa-outputs/expected.rows.json",
+    "variants": [
+      "output header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chafa.outputs for Chafa output mode list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/s3tools/s3cmd",
+    "descriptor_id": "known.s3cmd.buckets",
+    "run_id": "agentic.s3cmd-buckets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/s3cmd-buckets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/s3cmd-buckets/expected.rows.json",
+    "variants": [
+      "bucket header row",
+      "region row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.s3cmd.buckets for s3cmd bucket list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jacob-bd/notebooklm-mcp-cli",
+    "descriptor_id": "known.notebooklm-mcp-cli.sources",
+    "run_id": "agentic.notebooklm-mcp-cli-sources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/notebooklm-mcp-cli-sources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/notebooklm-mcp-cli-sources/expected.rows.json",
+    "variants": [
+      "source header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.notebooklm-mcp-cli.sources for NotebookLM MCP CLI source list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Nyr/wireguard-install",
+    "descriptor_id": "known.wireguard-install.peers",
+    "run_id": "agentic.wireguard-install-peers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wireguard-install-peers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wireguard-install-peers/expected.rows.json",
+    "variants": [
+      "peer header row",
+      "address row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wireguard-install.peers for wireguard-install peer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/productdevbook/port-killer",
+    "descriptor_id": "known.port-killer.processes",
+    "run_id": "agentic.port-killer-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/port-killer-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/port-killer-processes/expected.rows.json",
+    "variants": [
+      "port header row",
+      "process row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.port-killer.processes for port-killer process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/generalaction/emdash",
+    "descriptor_id": "known.emdash.documents",
+    "run_id": "agentic.emdash-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/emdash-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/emdash-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "status row",
+      "words field"
+    ],
+    "transcript": [
+      "selected descriptor known.emdash.documents for emdash document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/campfirein/byterover-cli",
+    "descriptor_id": "known.byterover-cli.memories",
+    "run_id": "agentic.byterover-cli-memories.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/byterover-cli-memories/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/byterover-cli-memories/expected.rows.json",
+    "variants": [
+      "memory header row",
+      "scope row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.byterover-cli.memories for Byterover CLI memory list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

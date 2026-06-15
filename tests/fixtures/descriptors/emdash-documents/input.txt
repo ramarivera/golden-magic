@@ -1,0 +1,4 @@
+document	status words
+essay.md	indexed 1200
+notes.md	indexed 400
+draft.md	queued 900

@@ -1,0 +1,4 @@
+source	kind state
+notes.md	markdown indexed
+paper.pdf	pdf indexed
+brief.txt	text queued

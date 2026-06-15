@@ -1,0 +1,4 @@
+bucket	region state
+logs	us-east-1 active
+backups	us-west-2 active
+archive	eu-central-1 cold

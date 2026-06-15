@@ -1,0 +1,10 @@
+id = "known.why-did-you-update.packages"
+name = "why-did-you-update package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\treason","react\tprops"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

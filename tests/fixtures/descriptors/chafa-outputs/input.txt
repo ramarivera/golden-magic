@@ -1,0 +1,4 @@
+output	format state
+terminal	symbols ready
+kitty	graphics ready
+sixel	graphics available

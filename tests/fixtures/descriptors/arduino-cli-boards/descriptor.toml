@@ -1,0 +1,10 @@
+id = "known.arduino-cli.boards"
+name = "arduino-cli board list"
+priority = 50
+
+[matches]
+required_substrings = ["board\tfqbn","uno\tarduino:avr:uno"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

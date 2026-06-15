@@ -1,0 +1,10 @@
+id = "known.notebooklm-mcp-cli.sources"
+name = "NotebookLM MCP CLI source list"
+priority = 50
+
+[matches]
+required_substrings = ["source\tkind","notes.md\tmarkdown"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

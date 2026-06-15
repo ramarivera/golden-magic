@@ -1,0 +1,4 @@
+connection	broker state
+local	mqtt://localhost connected
+staging	mqtts://staging queued
+prod	mqtts://prod disconnected

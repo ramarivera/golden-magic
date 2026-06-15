@@ -1,0 +1,10 @@
+id = "known.emdash.documents"
+name = "emdash document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tstatus","essay.md\tindexed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+board fqbn state
+uno arduino:avr:uno installed

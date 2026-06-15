@@ -1,0 +1,2 @@
+bucket region state
+logs us-east-1 active

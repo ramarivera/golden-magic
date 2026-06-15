@@ -1,0 +1,18 @@
+[
+  {
+    "name": "memory",
+    "value": "scope state"
+  },
+  {
+    "name": "project",
+    "value": "local synced"
+  },
+  {
+    "name": "team",
+    "value": "remote synced"
+  },
+  {
+    "name": "scratch",
+    "value": "local draft"
+  }
+]

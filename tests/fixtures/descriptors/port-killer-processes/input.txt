@@ -1,0 +1,4 @@
+port	process state
+3000	node listening
+5173	vite listening
+8080	java stale

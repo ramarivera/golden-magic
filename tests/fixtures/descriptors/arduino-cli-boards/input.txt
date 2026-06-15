@@ -1,0 +1,4 @@
+board	fqbn state
+uno	arduino:avr:uno installed
+nano	arduino:avr:nano installed
+esp32	esp32:esp32:esp32 available
