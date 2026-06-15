@@ -1,0 +1,2 @@
+command option help
+serve --debug enable-debug

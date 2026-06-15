@@ -1,0 +1,4 @@
+plugin	status entries
+network	enabled 12
+console	enabled 44
+storage	disabled 0

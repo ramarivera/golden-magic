@@ -5218,5 +5218,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "descriptor_id": "known.click.commands",
+    "run_id": "agentic.click-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/click-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/click-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "option row",
+      "help field"
+    ],
+    "transcript": [
+      "selected descriptor known.click.commands for Click command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yorukot/superfile",
+    "descriptor_id": "known.superfile.panels",
+    "run_id": "agentic.superfile-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/superfile-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/superfile-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "path row",
+      "focus field"
+    ],
+    "transcript": [
+      "selected descriptor known.superfile.panels for superfile panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tinygo-org/tinygo",
+    "descriptor_id": "known.tinygo.targets",
+    "run_id": "agentic.tinygo-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tinygo-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tinygo-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "arch row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.tinygo.targets for TinyGo target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Tencent/vConsole",
+    "descriptor_id": "known.vconsole.plugins",
+    "run_id": "agentic.vconsole-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vconsole-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vconsole-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "entries field"
+    ],
+    "transcript": [
+      "selected descriptor known.vconsole.plugins for vConsole plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/commitizen/cz-cli",
+    "descriptor_id": "known.cz-cli.adapters",
+    "run_id": "agentic.cz-cli-adapters.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cz-cli-adapters/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cz-cli-adapters/expected.rows.json",
+    "variants": [
+      "adapter header row",
+      "status row",
+      "prompts field"
+    ],
+    "transcript": [
+      "selected descriptor known.cz-cli.adapters for Commitizen adapter list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

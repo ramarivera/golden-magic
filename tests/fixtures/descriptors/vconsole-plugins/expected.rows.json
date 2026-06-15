@@ -1,0 +1,18 @@
+[
+  {
+    "name": "plugin",
+    "value": "status entries"
+  },
+  {
+    "name": "network",
+    "value": "enabled 12"
+  },
+  {
+    "name": "console",
+    "value": "enabled 44"
+  },
+  {
+    "name": "storage",
+    "value": "disabled 0"
+  }
+]

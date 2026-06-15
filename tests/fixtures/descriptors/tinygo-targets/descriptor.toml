@@ -1,0 +1,10 @@
+id = "known.tinygo.targets"
+name = "TinyGo target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tarch","arduino\tavr"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

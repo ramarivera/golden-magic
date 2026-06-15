@@ -1,0 +1,4 @@
+panel	path focus
+left	~/Projects true
+right	~/Downloads false
+preview	README.md false

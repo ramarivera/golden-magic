@@ -1,0 +1,2 @@
+adapter status prompts
+cz-conventional-changelog active 5

@@ -1,0 +1,4 @@
+target	arch status
+arduino	avr stable
+wasm	wasm32 stable
+pico	arm beta

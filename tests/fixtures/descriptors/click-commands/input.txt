@@ -1,0 +1,4 @@
+command	option help
+serve	--debug enable-debug
+init	--template choose-template
+version	--json output-json

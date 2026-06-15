@@ -2028,5 +2028,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/iterm2-profiles",
     "analysis_notes": "Modeled iTerm2 profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pallets/click",
+    "descriptor_id": "known.click.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/click-commands",
+    "analysis_notes": "Modeled Click command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yorukot/superfile",
+    "descriptor_id": "known.superfile.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/superfile-panels",
+    "analysis_notes": "Modeled superfile panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tinygo-org/tinygo",
+    "descriptor_id": "known.tinygo.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tinygo-targets",
+    "analysis_notes": "Modeled TinyGo target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Tencent/vConsole",
+    "descriptor_id": "known.vconsole.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vconsole-plugins",
+    "analysis_notes": "Modeled vConsole plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/commitizen/cz-cli",
+    "descriptor_id": "known.cz-cli.adapters",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cz-cli-adapters",
+    "analysis_notes": "Modeled Commitizen adapter output with a generated executable-json parser plugin."
   }
 ]

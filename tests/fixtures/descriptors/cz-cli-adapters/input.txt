@@ -1,0 +1,4 @@
+adapter	status prompts
+cz-conventional-changelog	active 5
+cz-customizable	available 6
+cz-git	available 7

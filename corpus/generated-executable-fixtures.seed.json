@@ -3238,5 +3238,65 @@
     "negative": "profile font theme\nDefault Menlo dark\n",
     "analysis_notes": "Modeled iTerm2 profile output with a generated executable-json parser plugin.",
     "variants": ["profile header row", "font row", "theme field"]
+  },
+  {
+    "fixture": "click-commands",
+    "descriptor_id": "known.click.commands",
+    "name": "Click command list",
+    "repo": "https://github.com/pallets/click",
+    "required_substrings": ["command\toption", "serve\t--debug"],
+    "parser": "tab-pairs",
+    "input": "command\toption help\nserve\t--debug enable-debug\ninit\t--template choose-template\nversion\t--json output-json\n",
+    "negative": "command option help\nserve --debug enable-debug\n",
+    "analysis_notes": "Modeled Click command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "option row", "help field"]
+  },
+  {
+    "fixture": "superfile-panels",
+    "descriptor_id": "known.superfile.panels",
+    "name": "superfile panel list",
+    "repo": "https://github.com/yorukot/superfile",
+    "required_substrings": ["panel\tpath", "left\t~/Projects"],
+    "parser": "tab-pairs",
+    "input": "panel\tpath focus\nleft\t~/Projects true\nright\t~/Downloads false\npreview\tREADME.md false\n",
+    "negative": "panel path focus\nleft ~/Projects true\n",
+    "analysis_notes": "Modeled superfile panel output with a generated executable-json parser plugin.",
+    "variants": ["panel header row", "path row", "focus field"]
+  },
+  {
+    "fixture": "tinygo-targets",
+    "descriptor_id": "known.tinygo.targets",
+    "name": "TinyGo target list",
+    "repo": "https://github.com/tinygo-org/tinygo",
+    "required_substrings": ["target\tarch", "arduino\tavr"],
+    "parser": "tab-pairs",
+    "input": "target\tarch status\narduino\tavr stable\nwasm\twasm32 stable\npico\tarm beta\n",
+    "negative": "target arch status\narduino avr stable\n",
+    "analysis_notes": "Modeled TinyGo target output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "arch row", "status field"]
+  },
+  {
+    "fixture": "vconsole-plugins",
+    "descriptor_id": "known.vconsole.plugins",
+    "name": "vConsole plugin list",
+    "repo": "https://github.com/Tencent/vConsole",
+    "required_substrings": ["plugin\tstatus", "network\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstatus entries\nnetwork\tenabled 12\nconsole\tenabled 44\nstorage\tdisabled 0\n",
+    "negative": "plugin status entries\nnetwork enabled 12\n",
+    "analysis_notes": "Modeled vConsole plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "status row", "entries field"]
+  },
+  {
+    "fixture": "cz-cli-adapters",
+    "descriptor_id": "known.cz-cli.adapters",
+    "name": "Commitizen adapter list",
+    "repo": "https://github.com/commitizen/cz-cli",
+    "required_substrings": ["adapter\tstatus", "cz-conventional-changelog\tactive"],
+    "parser": "tab-pairs",
+    "input": "adapter\tstatus prompts\ncz-conventional-changelog\tactive 5\ncz-customizable\tavailable 6\ncz-git\tavailable 7\n",
+    "negative": "adapter status prompts\ncz-conventional-changelog active 5\n",
+    "analysis_notes": "Modeled Commitizen adapter output with a generated executable-json parser plugin.",
+    "variants": ["adapter header row", "status row", "prompts field"]
   }
 ]
