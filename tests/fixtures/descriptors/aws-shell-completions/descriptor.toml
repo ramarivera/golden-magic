@@ -1,0 +1,10 @@
+id = "known.aws-shell.completions"
+name = "aws-shell completion list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tservice","list-buckets\ts3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.vive.features"
+name = "ViVe feature list"
+priority = 50
+
+[matches]
+required_substrings = ["feature\tstate","TaskbarAI\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

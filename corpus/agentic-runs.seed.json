@@ -8548,5 +8548,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/timvisee/ffsend",
+    "descriptor_id": "known.ffsend.transfers",
+    "run_id": "agentic.ffsend-transfers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ffsend-transfers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ffsend-transfers/expected.rows.json",
+    "variants": [
+      "file header row",
+      "state row",
+      "expires field"
+    ],
+    "transcript": [
+      "selected descriptor known.ffsend.transfers for ffsend transfer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/awslabs/aws-shell",
+    "descriptor_id": "known.aws-shell.completions",
+    "run_id": "agentic.aws-shell-completions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aws-shell-completions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aws-shell-completions/expected.rows.json",
+    "variants": [
+      "command header row",
+      "service row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.aws-shell.completions for aws-shell completion list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/unjs/consola",
+    "descriptor_id": "known.consola.logs",
+    "run_id": "agentic.consola-logs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/consola-logs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/consola-logs/expected.rows.json",
+    "variants": [
+      "level header row",
+      "message row",
+      "scope field"
+    ],
+    "transcript": [
+      "selected descriptor known.consola.logs for consola log list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/thebookisclosed/ViVe",
+    "descriptor_id": "known.vive.features",
+    "run_id": "agentic.vive-features.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vive-features/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vive-features/expected.rows.json",
+    "variants": [
+      "feature header row",
+      "state row",
+      "id field"
+    ],
+    "transcript": [
+      "selected descriptor known.vive.features for ViVe feature list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Narcooo/inkos",
+    "descriptor_id": "known.inkos.images",
+    "run_id": "agentic.inkos-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inkos-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inkos-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "state row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.inkos.images for inkos image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

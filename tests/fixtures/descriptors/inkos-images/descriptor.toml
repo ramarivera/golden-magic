@@ -1,0 +1,10 @@
+id = "known.inkos.images"
+name = "inkos image list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tstate","alpine\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+level message scope
+info started cli

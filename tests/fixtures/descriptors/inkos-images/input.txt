@@ -1,0 +1,4 @@
+image	state size
+alpine	ready 8M
+ubuntu	building 80M
+fedora	ready 95M

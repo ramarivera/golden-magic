@@ -1,0 +1,4 @@
+feature	state id
+TaskbarAI	enabled 1001
+ExplorerTabs	disabled 1002
+SettingsHome	enabled 1003

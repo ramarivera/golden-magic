@@ -1,0 +1,4 @@
+file	state expires
+report.pdf	uploaded 24h
+archive.zip	uploading 1h
+secret.txt	downloaded expired

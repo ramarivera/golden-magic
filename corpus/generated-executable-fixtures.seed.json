@@ -5458,5 +5458,65 @@
     "negative": "event path handler\nmodified src/lib.rs rebuild\n",
     "analysis_notes": "Modeled watchdog event output with a generated executable-json parser plugin.",
     "variants": ["event header row", "path row", "handler field"]
+  },
+  {
+    "fixture": "ffsend-transfers",
+    "descriptor_id": "known.ffsend.transfers",
+    "name": "ffsend transfer list",
+    "repo": "https://github.com/timvisee/ffsend",
+    "required_substrings": ["file\tstate", "report.pdf\tuploaded"],
+    "parser": "tab-pairs",
+    "input": "file\tstate expires\nreport.pdf\tuploaded 24h\narchive.zip\tuploading 1h\nsecret.txt\tdownloaded expired\n",
+    "negative": "file state expires\nreport.pdf uploaded 24h\n",
+    "analysis_notes": "Modeled ffsend transfer output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "state row", "expires field"]
+  },
+  {
+    "fixture": "aws-shell-completions",
+    "descriptor_id": "known.aws-shell.completions",
+    "name": "aws-shell completion list",
+    "repo": "https://github.com/awslabs/aws-shell",
+    "required_substrings": ["command\tservice", "list-buckets\ts3"],
+    "parser": "tab-pairs",
+    "input": "command\tservice category\nlist-buckets\ts3 read\ndescribe-instances\tec2 read\nput-item\tdynamodb write\n",
+    "negative": "command service category\nlist-buckets s3 read\n",
+    "analysis_notes": "Modeled aws-shell completion output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "service row", "category field"]
+  },
+  {
+    "fixture": "consola-logs",
+    "descriptor_id": "known.consola.logs",
+    "name": "consola log list",
+    "repo": "https://github.com/unjs/consola",
+    "required_substrings": ["level\tmessage", "info\tstarted"],
+    "parser": "tab-pairs",
+    "input": "level\tmessage scope\ninfo\tstarted cli\nwarn\tdeprecated config\nerror\tfailed build\n",
+    "negative": "level message scope\ninfo started cli\n",
+    "analysis_notes": "Modeled consola log output with a generated executable-json parser plugin.",
+    "variants": ["level header row", "message row", "scope field"]
+  },
+  {
+    "fixture": "vive-features",
+    "descriptor_id": "known.vive.features",
+    "name": "ViVe feature list",
+    "repo": "https://github.com/thebookisclosed/ViVe",
+    "required_substrings": ["feature\tstate", "TaskbarAI\tenabled"],
+    "parser": "tab-pairs",
+    "input": "feature\tstate id\nTaskbarAI\tenabled 1001\nExplorerTabs\tdisabled 1002\nSettingsHome\tenabled 1003\n",
+    "negative": "feature state id\nTaskbarAI enabled 1001\n",
+    "analysis_notes": "Modeled ViVe feature output with a generated executable-json parser plugin.",
+    "variants": ["feature header row", "state row", "id field"]
+  },
+  {
+    "fixture": "inkos-images",
+    "descriptor_id": "known.inkos.images",
+    "name": "inkos image list",
+    "repo": "https://github.com/Narcooo/inkos",
+    "required_substrings": ["image\tstate", "alpine\tready"],
+    "parser": "tab-pairs",
+    "input": "image\tstate size\nalpine\tready 8M\nubuntu\tbuilding 80M\nfedora\tready 95M\n",
+    "negative": "image state size\nalpine ready 8M\n",
+    "analysis_notes": "Modeled inkos image output with a generated executable-json parser plugin.",
+    "variants": ["image header row", "state row", "size field"]
   }
 ]

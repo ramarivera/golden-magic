@@ -1,0 +1,18 @@
+[
+  {
+    "name": "image",
+    "value": "state size"
+  },
+  {
+    "name": "alpine",
+    "value": "ready 8M"
+  },
+  {
+    "name": "ubuntu",
+    "value": "building 80M"
+  },
+  {
+    "name": "fedora",
+    "value": "ready 95M"
+  }
+]

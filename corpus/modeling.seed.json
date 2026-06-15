@@ -3323,5 +3323,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/watchdog-events",
     "analysis_notes": "Modeled watchdog event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/timvisee/ffsend",
+    "descriptor_id": "known.ffsend.transfers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ffsend-transfers",
+    "analysis_notes": "Modeled ffsend transfer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/awslabs/aws-shell",
+    "descriptor_id": "known.aws-shell.completions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aws-shell-completions",
+    "analysis_notes": "Modeled aws-shell completion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/unjs/consola",
+    "descriptor_id": "known.consola.logs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/consola-logs",
+    "analysis_notes": "Modeled consola log output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/thebookisclosed/ViVe",
+    "descriptor_id": "known.vive.features",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vive-features",
+    "analysis_notes": "Modeled ViVe feature output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Narcooo/inkos",
+    "descriptor_id": "known.inkos.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inkos-images",
+    "analysis_notes": "Modeled inkos image output with a generated executable-json parser plugin."
   }
 ]

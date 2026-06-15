@@ -1,0 +1,18 @@
+[
+  {
+    "name": "feature",
+    "value": "state id"
+  },
+  {
+    "name": "TaskbarAI",
+    "value": "enabled 1001"
+  },
+  {
+    "name": "ExplorerTabs",
+    "value": "disabled 1002"
+  },
+  {
+    "name": "SettingsHome",
+    "value": "enabled 1003"
+  }
+]

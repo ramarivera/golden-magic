@@ -1,0 +1,4 @@
+command	service category
+list-buckets	s3 read
+describe-instances	ec2 read
+put-item	dynamodb write

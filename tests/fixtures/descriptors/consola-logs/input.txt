@@ -1,0 +1,4 @@
+level	message scope
+info	started cli
+warn	deprecated config
+error	failed build
