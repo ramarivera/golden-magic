@@ -12,7 +12,21 @@ struct CorpusEntry {
     cli_evidence: String,
     status: String,
     source_query: String,
+    source_queries: Vec<String>,
     fetched_at: String,
+}
+
+fn is_cli_oriented_query(query: &str) -> bool {
+    [
+        "topic:cli",
+        "topic:command-line",
+        "topic:terminal",
+        "topic:tui",
+        "topic:shell",
+        "topic:command-line-tool",
+    ]
+    .iter()
+    .any(|needle| query.contains(needle))
 }
 
 #[test]
@@ -21,6 +35,10 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
         serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
             .expect("seed corpus parses");
     assert!(!entries.is_empty(), "seed corpus must not be empty");
+    assert!(
+        entries.len() >= 400,
+        "partitioned seed corpus should not regress to a single search page"
+    );
 
     let mut repos = BTreeSet::new();
     let mut previous_stars = u64::MAX;
@@ -42,7 +60,10 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
             entry.cli_evidence.contains("cli")
                 || entry.cli_evidence.contains("command")
                 || entry.cli_evidence.contains("terminal")
-                || entry.source_query.contains("topic:cli"),
+                || entry
+                    .source_queries
+                    .iter()
+                    .any(|query| is_cli_oriented_query(query)),
             "entry must preserve CLI-oriented evidence or query context: {}",
             entry.repo
         );
@@ -67,8 +88,26 @@ fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
             entry.repo
         );
         assert!(
-            entry.source_query.contains("topic:cli"),
-            "seed corpus must use an explicit CLI topic query"
+            !entry.source_queries.is_empty(),
+            "seed corpus must preserve at least one source query for {}",
+            entry.repo
+        );
+        assert!(
+            entry
+                .source_queries
+                .iter()
+                .any(|query| query == &entry.source_query),
+            "source_query must be one of source_queries for {}",
+            entry.repo
+        );
+        assert!(
+            entry
+                .source_queries
+                .iter()
+                .all(|query| is_cli_oriented_query(query)),
+            "seed corpus queries must stay CLI/tool oriented for {}: {:?}",
+            entry.repo,
+            entry.source_queries
         );
         let _ = (&entry.language, &entry.description);
         previous_stars = entry.stars;

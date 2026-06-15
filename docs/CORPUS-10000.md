@@ -18,13 +18,20 @@ Refresh the seed with:
 scripts/fetch_cli_corpus_seed.sh 100
 ```
 
-The default seed query is:
+The script reads partitioned GitHub search queries from:
 
 ```text
-topic:cli stars:>1000
+corpus/cli-corpus.queries.txt
 ```
 
-Override `GOLDEN_MAGIC_CORPUS_QUERY` when partitioning the GitHub search space toward the full 10,000 target. Any checked-in seed must preserve `source_query`, `fetched_at`, `stars`, and descending rank order.
+Each query is fetched independently with GitHub's star ordering, then the script
+merges all partitions, deduplicates by repository URL, preserves every
+`source_queries` value that found the repository, and reranks the combined seed
+by descending stars. This is still a seed harness, not the full corpus.
+
+Override `GOLDEN_MAGIC_CORPUS_QUERIES` to use a different query-partition file.
+Any checked-in seed must preserve `source_query`, `source_queries`, `fetched_at`,
+`stars`, and descending rank order.
 
 Run the manifest checks with:
 

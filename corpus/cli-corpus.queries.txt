@@ -1,0 +1,10 @@
+# GitHub repository-search partitions for the ranked CLI corpus seed.
+#
+# Keep these queries broad enough to find popular CLI/tool repos while preserving
+# explicit provenance in corpus/cli-tools.seed.json.
+topic:cli stars:>1000
+topic:command-line stars:>1000
+topic:terminal stars:>1000
+topic:tui stars:>1000
+topic:shell stars:>1000
+topic:command-line-tool stars:>1000
