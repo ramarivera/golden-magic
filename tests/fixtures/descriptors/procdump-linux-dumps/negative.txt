@@ -1,0 +1,2 @@
+dump pid state
+core.123 123 written

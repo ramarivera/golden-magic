@@ -1,0 +1,2 @@
+metric value state
+cpu 42 visible

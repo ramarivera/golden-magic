@@ -5976,5 +5976,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cac-commands",
     "analysis_notes": "Modeled cac command metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/imsnif/diskonaut",
+    "descriptor_id": "known.diskonaut.nodes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/diskonaut-nodes",
+    "analysis_notes": "Modeled diskonaut disk-usage node output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/ProcDump-for-Linux",
+    "descriptor_id": "known.procdump-linux.dumps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/procdump-linux-dumps",
+    "analysis_notes": "Modeled ProcDump-for-Linux dump output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tfeldmann/organize",
+    "descriptor_id": "known.organize.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/organize-rules",
+    "analysis_notes": "Modeled organize file-management rule output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dnote/dnote",
+    "descriptor_id": "known.dnote.notes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dnote-notes",
+    "analysis_notes": "Modeled dnote notebook output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/guptarohit/asciigraph",
+    "descriptor_id": "known.asciigraph.series",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asciigraph-series",
+    "analysis_notes": "Modeled asciigraph chart series output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bvaisvil/zenith",
+    "descriptor_id": "known.zenith.metrics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zenith-metrics",
+    "analysis_notes": "Modeled zenith system metric output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pimutils/khal",
+    "descriptor_id": "known.khal.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/khal-events",
+    "analysis_notes": "Modeled khal calendar event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dalibo/pg_activity",
+    "descriptor_id": "known.pg-activity.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pg-activity-processes",
+    "analysis_notes": "Modeled pg_activity PostgreSQL process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mierak/rmpc",
+    "descriptor_id": "known.rmpc.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rmpc-tracks",
+    "analysis_notes": "Modeled rmpc MPD track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tio/tio",
+    "descriptor_id": "known.tio.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tio-sessions",
+    "analysis_notes": "Modeled tio serial session output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+series	points state
+cpu	5 plotted
+memory	5 plotted
+old	2 skipped

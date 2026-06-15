@@ -1,0 +1,4 @@
+event	date state
+standup	2026-06-16 accepted
+review	2026-06-17 tentative
+old	2026-06-01 archived

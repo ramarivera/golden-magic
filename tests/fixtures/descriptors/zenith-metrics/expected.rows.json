@@ -1,0 +1,18 @@
+[
+  {
+    "name": "metric",
+    "value": "value state"
+  },
+  {
+    "name": "cpu",
+    "value": "42 visible"
+  },
+  {
+    "name": "memory",
+    "value": "80 visible"
+  },
+  {
+    "name": "disk",
+    "value": "20 visible"
+  }
+]

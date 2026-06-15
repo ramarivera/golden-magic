@@ -1,0 +1,10 @@
+id = "known.zenith.metrics"
+name = "zenith metric list"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","cpu\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

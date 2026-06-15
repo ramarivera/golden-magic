@@ -1,0 +1,4 @@
+node	size state
+/var	12GB large
+/home	8GB large
+/tmp	1GB small

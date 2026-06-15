@@ -1,0 +1,4 @@
+track	artist state
+Intro	Alice playing
+Next	Bob queued
+Old	Carol skipped

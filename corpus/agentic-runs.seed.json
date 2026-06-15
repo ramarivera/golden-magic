@@ -15370,5 +15370,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/imsnif/diskonaut",
+    "descriptor_id": "known.diskonaut.nodes",
+    "run_id": "agentic.diskonaut-nodes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/diskonaut-nodes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/diskonaut-nodes/expected.rows.json",
+    "variants": [
+      "node header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.diskonaut.nodes for diskonaut node list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/ProcDump-for-Linux",
+    "descriptor_id": "known.procdump-linux.dumps",
+    "run_id": "agentic.procdump-linux-dumps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/procdump-linux-dumps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/procdump-linux-dumps/expected.rows.json",
+    "variants": [
+      "dump header row",
+      "pid row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.procdump-linux.dumps for ProcDump-for-Linux dump list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tfeldmann/organize",
+    "descriptor_id": "known.organize.rules",
+    "run_id": "agentic.organize-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/organize-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/organize-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "matches row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.organize.rules for organize rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dnote/dnote",
+    "descriptor_id": "known.dnote.notes",
+    "run_id": "agentic.dnote-notes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dnote-notes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dnote-notes/expected.rows.json",
+    "variants": [
+      "note header row",
+      "book row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dnote.notes for dnote note list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/guptarohit/asciigraph",
+    "descriptor_id": "known.asciigraph.series",
+    "run_id": "agentic.asciigraph-series.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asciigraph-series/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asciigraph-series/expected.rows.json",
+    "variants": [
+      "series header row",
+      "points row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.asciigraph.series for asciigraph series list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bvaisvil/zenith",
+    "descriptor_id": "known.zenith.metrics",
+    "run_id": "agentic.zenith-metrics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zenith-metrics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zenith-metrics/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zenith.metrics for zenith metric list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pimutils/khal",
+    "descriptor_id": "known.khal.events",
+    "run_id": "agentic.khal-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/khal-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/khal-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "date row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.khal.events for khal event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dalibo/pg_activity",
+    "descriptor_id": "known.pg-activity.processes",
+    "run_id": "agentic.pg-activity-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pg-activity-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pg-activity-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "state row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.pg-activity.processes for pg_activity process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mierak/rmpc",
+    "descriptor_id": "known.rmpc.tracks",
+    "run_id": "agentic.rmpc-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rmpc-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rmpc-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "artist row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rmpc.tracks for rmpc track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tio/tio",
+    "descriptor_id": "known.tio.sessions",
+    "run_id": "agentic.tio-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tio-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tio-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "device row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tio.sessions for tio session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,2 @@
+series points state
+cpu 5 plotted

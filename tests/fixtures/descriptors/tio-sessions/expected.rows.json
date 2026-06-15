@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "device state"
+  },
+  {
+    "name": "console",
+    "value": "/dev/ttyUSB0 open"
+  },
+  {
+    "name": "lab",
+    "value": "/dev/ttyACM0 open"
+  },
+  {
+    "name": "old",
+    "value": "/dev/ttyS0 closed"
+  }
+]

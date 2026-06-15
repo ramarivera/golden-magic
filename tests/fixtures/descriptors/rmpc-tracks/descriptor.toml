@@ -1,0 +1,10 @@
+id = "known.rmpc.tracks"
+name = "rmpc track list"
+priority = 50
+
+[matches]
+required_substrings = ["track\tartist","Intro\tAlice"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

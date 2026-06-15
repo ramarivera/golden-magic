@@ -1,0 +1,4 @@
+note	book state
+rust	cli synced
+nu	shell synced
+old	archive hidden

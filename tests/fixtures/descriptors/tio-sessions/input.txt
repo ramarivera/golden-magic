@@ -1,0 +1,4 @@
+session	device state
+console	/dev/ttyUSB0 open
+lab	/dev/ttyACM0 open
+old	/dev/ttyS0 closed

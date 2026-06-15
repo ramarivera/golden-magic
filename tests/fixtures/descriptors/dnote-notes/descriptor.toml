@@ -1,0 +1,10 @@
+id = "known.dnote.notes"
+name = "dnote note list"
+priority = 50
+
+[matches]
+required_substrings = ["note\tbook","rust\tcli"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

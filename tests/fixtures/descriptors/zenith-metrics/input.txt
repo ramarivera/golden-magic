@@ -1,0 +1,4 @@
+metric	value state
+cpu	42 visible
+memory	80 visible
+disk	20 visible

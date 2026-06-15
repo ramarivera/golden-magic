@@ -1,0 +1,4 @@
+dump	pid state
+core.123	123 written
+core.456	456 written
+old.789	789 archived

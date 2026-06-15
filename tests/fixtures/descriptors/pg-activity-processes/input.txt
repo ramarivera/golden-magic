@@ -1,0 +1,4 @@
+process	state status
+select	active running
+vacuum	idle waiting
+backup	active running

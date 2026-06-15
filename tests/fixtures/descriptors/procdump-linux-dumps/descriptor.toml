@@ -1,0 +1,10 @@
+id = "known.procdump-linux.dumps"
+name = "ProcDump-for-Linux dump list"
+priority = 50
+
+[matches]
+required_substrings = ["dump\tpid","core.123\t123"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

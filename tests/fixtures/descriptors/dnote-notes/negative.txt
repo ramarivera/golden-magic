@@ -1,0 +1,2 @@
+note book state
+rust cli synced

@@ -1,0 +1,10 @@
+id = "known.asciigraph.series"
+name = "asciigraph series list"
+priority = 50
+
+[matches]
+required_substrings = ["series\tpoints","cpu\t5"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

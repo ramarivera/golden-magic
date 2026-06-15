@@ -1,0 +1,10 @@
+id = "known.diskonaut.nodes"
+name = "diskonaut node list"
+priority = 50
+
+[matches]
+required_substrings = ["node\tsize","/var\t12GB"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

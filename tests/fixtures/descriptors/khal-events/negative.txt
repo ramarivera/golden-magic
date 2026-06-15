@@ -1,0 +1,2 @@
+event date state
+standup 2026-06-16 accepted

@@ -1,0 +1,4 @@
+rule	matches state
+downloads	12 applied
+screenshots	5 applied
+old	0 skipped

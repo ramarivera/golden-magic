@@ -1,0 +1,18 @@
+[
+  {
+    "name": "rule",
+    "value": "matches state"
+  },
+  {
+    "name": "downloads",
+    "value": "12 applied"
+  },
+  {
+    "name": "screenshots",
+    "value": "5 applied"
+  },
+  {
+    "name": "old",
+    "value": "0 skipped"
+  }
+]

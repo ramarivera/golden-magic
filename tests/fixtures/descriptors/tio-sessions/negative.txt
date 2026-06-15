@@ -1,0 +1,2 @@
+session device state
+console /dev/ttyUSB0 open

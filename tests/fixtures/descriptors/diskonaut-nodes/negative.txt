@@ -1,0 +1,2 @@
+node size state
+/var 12GB large

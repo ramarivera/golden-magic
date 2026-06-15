@@ -1,0 +1,10 @@
+id = "known.khal.events"
+name = "khal event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tdate","standup\t2026-06-16"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
