@@ -1,0 +1,4 @@
+font	style file
+CascadiaCode	Regular CascadiaCode.ttf
+CascadiaMono	Regular CascadiaMono.ttf
+CascadiaCodePL	Bold CascadiaCodePL-Bold.ttf

@@ -1,0 +1,4 @@
+conversation	state messages
+chat-1	open 12
+chat-2	archived 5
+chat-3	open 3

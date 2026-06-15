@@ -1,0 +1,10 @@
+id = "known.chatgpt.conversations"
+name = "ChatGPT conversation list"
+priority = 50
+
+[matches]
+required_substrings = ["conversation\tstate","chat-1\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

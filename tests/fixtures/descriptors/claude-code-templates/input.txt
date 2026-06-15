@@ -1,0 +1,4 @@
+template	category status
+rust-cli	tooling ready
+react-app	frontend ready
+agent-skill	agents beta

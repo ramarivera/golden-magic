@@ -1,0 +1,2 @@
+template category status
+rust-cli tooling ready

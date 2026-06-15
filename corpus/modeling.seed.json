@@ -1398,5 +1398,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/python-fire-commands",
     "analysis_notes": "Modeled python-fire command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/davila7/claude-code-templates",
+    "descriptor_id": "known.claude-code-templates.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-templates",
+    "analysis_notes": "Modeled claude-code-templates catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hwdsl2/setup-ipsec-vpn",
+    "descriptor_id": "known.setup-ipsec-vpn.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/setup-ipsec-vpn-profiles",
+    "analysis_notes": "Modeled setup-ipsec-vpn profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AlexsJones/llmfit",
+    "descriptor_id": "known.llmfit.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/llmfit-runs",
+    "analysis_notes": "Modeled llmfit run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/acheong08/ChatGPT",
+    "descriptor_id": "known.chatgpt.conversations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chatgpt-conversations",
+    "analysis_notes": "Modeled ChatGPT conversation listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/cascadia-code",
+    "descriptor_id": "known.cascadia-code.fonts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cascadia-code-fonts",
+    "analysis_notes": "Modeled Cascadia Code font listing output with a generated executable-json parser plugin."
   }
 ]

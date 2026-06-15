@@ -1,0 +1,10 @@
+id = "known.llmfit.runs"
+name = "llmfit run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstatus","train-small\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+profile	status port
+ikev2	ready 500
+l2tp	ready 1701
+wireguard	disabled 51820

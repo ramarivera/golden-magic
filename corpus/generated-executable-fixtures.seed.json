@@ -2158,5 +2158,65 @@
     "negative": "command argument type\ntrain --epochs int\n",
     "analysis_notes": "Modeled python-fire command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "argument row", "type field"]
+  },
+  {
+    "fixture": "claude-code-templates",
+    "descriptor_id": "known.claude-code-templates.templates",
+    "name": "claude-code-templates template list",
+    "repo": "https://github.com/davila7/claude-code-templates",
+    "required_substrings": ["template\tcategory", "rust-cli\ttooling"],
+    "parser": "tab-pairs",
+    "input": "template\tcategory status\nrust-cli\ttooling ready\nreact-app\tfrontend ready\nagent-skill\tagents beta\n",
+    "negative": "template category status\nrust-cli tooling ready\n",
+    "analysis_notes": "Modeled claude-code-templates catalog output with a generated executable-json parser plugin.",
+    "variants": ["template header row", "category row", "status field"]
+  },
+  {
+    "fixture": "setup-ipsec-vpn-profiles",
+    "descriptor_id": "known.setup-ipsec-vpn.profiles",
+    "name": "setup-ipsec-vpn profile list",
+    "repo": "https://github.com/hwdsl2/setup-ipsec-vpn",
+    "required_substrings": ["profile\tstatus", "ikev2\tready"],
+    "parser": "tab-pairs",
+    "input": "profile\tstatus port\nikev2\tready 500\nl2tp\tready 1701\nwireguard\tdisabled 51820\n",
+    "negative": "profile status port\nikev2 ready 500\n",
+    "analysis_notes": "Modeled setup-ipsec-vpn profile output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "ready profile row", "port field"]
+  },
+  {
+    "fixture": "llmfit-runs",
+    "descriptor_id": "known.llmfit.runs",
+    "name": "llmfit run list",
+    "repo": "https://github.com/AlexsJones/llmfit",
+    "required_substrings": ["run\tstatus", "train-small\trunning"],
+    "parser": "tab-pairs",
+    "input": "run\tstatus metric\ntrain-small\trunning loss\nbench-01\tcomplete accuracy\neval-fast\tqueued latency\n",
+    "negative": "run status metric\ntrain-small running loss\n",
+    "analysis_notes": "Modeled llmfit run output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "running run row", "metric field"]
+  },
+  {
+    "fixture": "chatgpt-conversations",
+    "descriptor_id": "known.chatgpt.conversations",
+    "name": "ChatGPT conversation list",
+    "repo": "https://github.com/acheong08/ChatGPT",
+    "required_substrings": ["conversation\tstate", "chat-1\topen"],
+    "parser": "tab-pairs",
+    "input": "conversation\tstate messages\nchat-1\topen 12\nchat-2\tarchived 5\nchat-3\topen 3\n",
+    "negative": "conversation state messages\nchat-1 open 12\n",
+    "analysis_notes": "Modeled ChatGPT conversation listing output with a generated executable-json parser plugin.",
+    "variants": ["conversation header row", "open conversation row", "messages field"]
+  },
+  {
+    "fixture": "cascadia-code-fonts",
+    "descriptor_id": "known.cascadia-code.fonts",
+    "name": "Cascadia Code font list",
+    "repo": "https://github.com/microsoft/cascadia-code",
+    "required_substrings": ["font\tstyle", "CascadiaCode\tRegular"],
+    "parser": "tab-pairs",
+    "input": "font\tstyle file\nCascadiaCode\tRegular CascadiaCode.ttf\nCascadiaMono\tRegular CascadiaMono.ttf\nCascadiaCodePL\tBold CascadiaCodePL-Bold.ttf\n",
+    "negative": "font style file\nCascadiaCode Regular CascadiaCode.ttf\n",
+    "analysis_notes": "Modeled Cascadia Code font listing output with a generated executable-json parser plugin.",
+    "variants": ["font header row", "style row", "file field"]
   }
 ]

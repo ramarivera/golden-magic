@@ -3598,5 +3598,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/davila7/claude-code-templates",
+    "descriptor_id": "known.claude-code-templates.templates",
+    "run_id": "agentic.claude-code-templates-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-code-templates.templates for claude-code-templates template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hwdsl2/setup-ipsec-vpn",
+    "descriptor_id": "known.setup-ipsec-vpn.profiles",
+    "run_id": "agentic.setup-ipsec-vpn-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/setup-ipsec-vpn-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/setup-ipsec-vpn-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "ready profile row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.setup-ipsec-vpn.profiles for setup-ipsec-vpn profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AlexsJones/llmfit",
+    "descriptor_id": "known.llmfit.runs",
+    "run_id": "agentic.llmfit-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/llmfit-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/llmfit-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "running run row",
+      "metric field"
+    ],
+    "transcript": [
+      "selected descriptor known.llmfit.runs for llmfit run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/acheong08/ChatGPT",
+    "descriptor_id": "known.chatgpt.conversations",
+    "run_id": "agentic.chatgpt-conversations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chatgpt-conversations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chatgpt-conversations/expected.rows.json",
+    "variants": [
+      "conversation header row",
+      "open conversation row",
+      "messages field"
+    ],
+    "transcript": [
+      "selected descriptor known.chatgpt.conversations for ChatGPT conversation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/cascadia-code",
+    "descriptor_id": "known.cascadia-code.fonts",
+    "run_id": "agentic.cascadia-code-fonts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cascadia-code-fonts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cascadia-code-fonts/expected.rows.json",
+    "variants": [
+      "font header row",
+      "style row",
+      "file field"
+    ],
+    "transcript": [
+      "selected descriptor known.cascadia-code.fonts for Cascadia Code font list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

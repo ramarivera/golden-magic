@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "status metric"
+  },
+  {
+    "name": "train-small",
+    "value": "running loss"
+  },
+  {
+    "name": "bench-01",
+    "value": "complete accuracy"
+  },
+  {
+    "name": "eval-fast",
+    "value": "queued latency"
+  }
+]

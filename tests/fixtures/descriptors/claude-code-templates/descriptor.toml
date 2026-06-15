@@ -1,0 +1,10 @@
+id = "known.claude-code-templates.templates"
+name = "claude-code-templates template list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tcategory","rust-cli\ttooling"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

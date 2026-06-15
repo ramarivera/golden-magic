@@ -1,0 +1,18 @@
+[
+  {
+    "name": "profile",
+    "value": "status port"
+  },
+  {
+    "name": "ikev2",
+    "value": "ready 500"
+  },
+  {
+    "name": "l2tp",
+    "value": "ready 1701"
+  },
+  {
+    "name": "wireguard",
+    "value": "disabled 51820"
+  }
+]

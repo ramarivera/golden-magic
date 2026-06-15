@@ -1,0 +1,4 @@
+run	status metric
+train-small	running loss
+bench-01	complete accuracy
+eval-fast	queued latency
