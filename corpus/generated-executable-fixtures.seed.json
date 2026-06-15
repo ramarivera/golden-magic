@@ -1858,5 +1858,65 @@
     "negative": "action selector target\ncopy .copy-btn #snippet\n",
     "analysis_notes": "Modeled clipboard.js action output with a generated executable-json parser plugin.",
     "variants": ["action header row", "copy action row", "target field"]
+  },
+  {
+    "fixture": "nps-tunnels",
+    "descriptor_id": "known.nps.tunnels",
+    "name": "nps tunnel list",
+    "repo": "https://github.com/ehang-io/nps",
+    "required_substrings": ["tunnel\tstatus", "web\topen"],
+    "parser": "tab-pairs",
+    "input": "tunnel\tstatus target\nweb\topen 127.0.0.1:8080\nssh\tclosed 127.0.0.1:22\napi\topen 127.0.0.1:3000\n",
+    "negative": "tunnel status target\nweb open 127.0.0.1:8080\n",
+    "analysis_notes": "Modeled nps tunnel listing output with a generated executable-json parser plugin.",
+    "variants": ["tunnel header row", "open tunnel row", "target field"]
+  },
+  {
+    "fixture": "clip-embeddings",
+    "descriptor_id": "known.clip.embeddings",
+    "name": "CLIP embedding batch list",
+    "repo": "https://github.com/openai/CLIP",
+    "required_substrings": ["item\tscore", "image001.jpg\t0.92"],
+    "parser": "tab-pairs",
+    "input": "item\tscore label\nimage001.jpg\t0.92 dog\nimage002.jpg\t0.87 bicycle\ncaption.txt\t0.81 text\n",
+    "negative": "item score label\nimage001.jpg 0.92 dog\n",
+    "analysis_notes": "Modeled CLIP batch scoring output with a generated executable-json parser plugin.",
+    "variants": ["item header row", "numeric score row", "label field"]
+  },
+  {
+    "fixture": "continue-models",
+    "descriptor_id": "known.continue.models",
+    "name": "Continue model list",
+    "repo": "https://github.com/continuedev/continue",
+    "required_substrings": ["model\tprovider", "claude-sonnet\tanthropic"],
+    "parser": "tab-pairs",
+    "input": "model\tprovider status\nclaude-sonnet\tanthropic active\ngpt-4.1\topenai active\nlocal-llama\tollama idle\n",
+    "negative": "model provider status\nclaude-sonnet anthropic active\n",
+    "analysis_notes": "Modeled Continue model listing output with a generated executable-json parser plugin.",
+    "variants": ["model header row", "provider row", "status field"]
+  },
+  {
+    "fixture": "fish-functions",
+    "descriptor_id": "known.fish.functions",
+    "name": "fish shell function list",
+    "repo": "https://github.com/fish-shell/fish-shell",
+    "required_substrings": ["function\tscope", "fish_prompt\tglobal"],
+    "parser": "tab-pairs",
+    "input": "function\tscope source\nfish_prompt\tglobal user\nfish_right_prompt\tglobal user\n__fish_complete_cd\tinternal builtin\n",
+    "negative": "function scope source\nfish_prompt global user\n",
+    "analysis_notes": "Modeled fish function listing output with a generated executable-json parser plugin.",
+    "variants": ["function header row", "global function row", "source field"]
+  },
+  {
+    "fixture": "zellij-sessions",
+    "descriptor_id": "known.zellij.sessions",
+    "name": "Zellij session list",
+    "repo": "https://github.com/zellij-org/zellij",
+    "required_substrings": ["session\tstatus", "dev\tattached"],
+    "parser": "tab-pairs",
+    "input": "session\tstatus panes\ndev\tattached 4\nlogs\tdetached 2\nscratch\tdetached 1\n",
+    "negative": "session status panes\ndev attached 4\n",
+    "analysis_notes": "Modeled Zellij session listing output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "attached session row", "panes count field"]
   }
 ]

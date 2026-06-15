@@ -1,0 +1,4 @@
+session	status panes
+dev	attached 4
+logs	detached 2
+scratch	detached 1

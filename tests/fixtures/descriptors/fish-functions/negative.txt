@@ -1,0 +1,2 @@
+function scope source
+fish_prompt global user

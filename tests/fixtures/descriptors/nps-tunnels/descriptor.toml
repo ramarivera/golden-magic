@@ -1,0 +1,10 @@
+id = "known.nps.tunnels"
+name = "nps tunnel list"
+priority = 50
+
+[matches]
+required_substrings = ["tunnel\tstatus","web\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

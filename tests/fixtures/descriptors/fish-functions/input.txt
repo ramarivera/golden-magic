@@ -1,0 +1,4 @@
+function	scope source
+fish_prompt	global user
+fish_right_prompt	global user
+__fish_complete_cd	internal builtin

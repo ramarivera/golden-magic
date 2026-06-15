@@ -1,0 +1,4 @@
+model	provider status
+claude-sonnet	anthropic active
+gpt-4.1	openai active
+local-llama	ollama idle

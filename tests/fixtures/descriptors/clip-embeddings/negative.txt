@@ -1,0 +1,2 @@
+item score label
+image001.jpg 0.92 dog

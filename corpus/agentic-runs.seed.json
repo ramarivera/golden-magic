@@ -3148,5 +3148,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/ehang-io/nps",
+    "descriptor_id": "known.nps.tunnels",
+    "run_id": "agentic.nps-tunnels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nps-tunnels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nps-tunnels/expected.rows.json",
+    "variants": [
+      "tunnel header row",
+      "open tunnel row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.nps.tunnels for nps tunnel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/openai/CLIP",
+    "descriptor_id": "known.clip.embeddings",
+    "run_id": "agentic.clip-embeddings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clip-embeddings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clip-embeddings/expected.rows.json",
+    "variants": [
+      "item header row",
+      "numeric score row",
+      "label field"
+    ],
+    "transcript": [
+      "selected descriptor known.clip.embeddings for CLIP embedding batch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/continuedev/continue",
+    "descriptor_id": "known.continue.models",
+    "run_id": "agentic.continue-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/continue-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/continue-models/expected.rows.json",
+    "variants": [
+      "model header row",
+      "provider row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.continue.models for Continue model list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fish-shell/fish-shell",
+    "descriptor_id": "known.fish.functions",
+    "run_id": "agentic.fish-functions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fish-functions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fish-functions/expected.rows.json",
+    "variants": [
+      "function header row",
+      "global function row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.fish.functions for fish shell function list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zellij-org/zellij",
+    "descriptor_id": "known.zellij.sessions",
+    "run_id": "agentic.zellij-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zellij-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zellij-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "attached session row",
+      "panes count field"
+    ],
+    "transcript": [
+      "selected descriptor known.zellij.sessions for Zellij session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

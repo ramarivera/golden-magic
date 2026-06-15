@@ -1,0 +1,10 @@
+id = "known.clip.embeddings"
+name = "CLIP embedding batch list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tscore","image001.jpg\t0.92"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

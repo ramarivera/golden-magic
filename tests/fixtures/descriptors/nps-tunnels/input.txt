@@ -1,0 +1,4 @@
+tunnel	status target
+web	open 127.0.0.1:8080
+ssh	closed 127.0.0.1:22
+api	open 127.0.0.1:3000

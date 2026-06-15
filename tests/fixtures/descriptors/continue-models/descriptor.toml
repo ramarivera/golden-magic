@@ -1,0 +1,10 @@
+id = "known.continue.models"
+name = "Continue model list"
+priority = 50
+
+[matches]
+required_substrings = ["model\tprovider","claude-sonnet\tanthropic"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

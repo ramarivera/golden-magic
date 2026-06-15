@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tunnel",
+    "value": "status target"
+  },
+  {
+    "name": "web",
+    "value": "open 127.0.0.1:8080"
+  },
+  {
+    "name": "ssh",
+    "value": "closed 127.0.0.1:22"
+  },
+  {
+    "name": "api",
+    "value": "open 127.0.0.1:3000"
+  }
+]

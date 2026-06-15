@@ -1,0 +1,18 @@
+[
+  {
+    "name": "function",
+    "value": "scope source"
+  },
+  {
+    "name": "fish_prompt",
+    "value": "global user"
+  },
+  {
+    "name": "fish_right_prompt",
+    "value": "global user"
+  },
+  {
+    "name": "__fish_complete_cd",
+    "value": "internal builtin"
+  }
+]

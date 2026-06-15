@@ -1,0 +1,18 @@
+[
+  {
+    "name": "model",
+    "value": "provider status"
+  },
+  {
+    "name": "claude-sonnet",
+    "value": "anthropic active"
+  },
+  {
+    "name": "gpt-4.1",
+    "value": "openai active"
+  },
+  {
+    "name": "local-llama",
+    "value": "ollama idle"
+  }
+]

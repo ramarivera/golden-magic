@@ -1223,5 +1223,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/clipboardjs-actions",
     "analysis_notes": "Modeled clipboard.js action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ehang-io/nps",
+    "descriptor_id": "known.nps.tunnels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nps-tunnels",
+    "analysis_notes": "Modeled nps tunnel listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openai/CLIP",
+    "descriptor_id": "known.clip.embeddings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clip-embeddings",
+    "analysis_notes": "Modeled CLIP batch scoring output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/continuedev/continue",
+    "descriptor_id": "known.continue.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/continue-models",
+    "analysis_notes": "Modeled Continue model listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fish-shell/fish-shell",
+    "descriptor_id": "known.fish.functions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fish-functions",
+    "analysis_notes": "Modeled fish function listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zellij-org/zellij",
+    "descriptor_id": "known.zellij.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zellij-sessions",
+    "analysis_notes": "Modeled Zellij session listing output with a generated executable-json parser plugin."
   }
 ]

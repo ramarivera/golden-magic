@@ -1,0 +1,2 @@
+session status panes
+dev attached 4
