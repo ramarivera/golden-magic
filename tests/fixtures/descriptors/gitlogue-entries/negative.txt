@@ -1,0 +1,2 @@
+commit author state
+a1b2c3 alice merged

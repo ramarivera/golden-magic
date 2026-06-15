@@ -1,0 +1,10 @@
+id = "known.musikcube.tracks"
+name = "musikcube track list"
+priority = 50
+
+[matches]
+required_substrings = ["track\tartist","Intro\tAster"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

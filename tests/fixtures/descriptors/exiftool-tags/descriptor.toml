@@ -1,0 +1,10 @@
+id = "known.exiftool.tags"
+name = "ExifTool tag list"
+priority = 50
+
+[matches]
+required_substrings = ["tag\tvalue","CameraModel\tX100V"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

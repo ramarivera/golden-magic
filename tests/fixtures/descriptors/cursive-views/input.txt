@@ -1,0 +1,4 @@
+view	kind state
+menu	Dialog visible
+list	SelectView focused
+status	TextView hidden

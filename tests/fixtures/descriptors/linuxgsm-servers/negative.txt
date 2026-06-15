@@ -1,0 +1,2 @@
+server game state
+mcserver minecraft running

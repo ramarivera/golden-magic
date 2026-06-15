@@ -1,0 +1,4 @@
+option	type state
+--verbose	bool optional
+--output	string required
+--count	int optional

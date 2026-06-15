@@ -1,0 +1,4 @@
+track	artist state
+Intro	Aster queued
+Signal	Nadir playing
+Outro	Aster queued

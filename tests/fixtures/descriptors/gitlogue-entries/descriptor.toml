@@ -1,0 +1,10 @@
+id = "known.gitlogue.entries"
+name = "gitlogue entry list"
+priority = 50
+
+[matches]
+required_substrings = ["commit\tauthor","a1b2c3\talice"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

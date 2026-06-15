@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "model state"
+  },
+  {
+    "name": "demo",
+    "value": "orca-mini complete"
+  },
+  {
+    "name": "batch",
+    "value": "orca-base running"
+  },
+  {
+    "name": "sample",
+    "value": "orca-large queued"
+  }
+]

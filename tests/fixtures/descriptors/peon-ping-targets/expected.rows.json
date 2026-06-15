@@ -1,0 +1,18 @@
+[
+  {
+    "name": "target",
+    "value": "latency state"
+  },
+  {
+    "name": "api",
+    "value": "12ms up"
+  },
+  {
+    "name": "db",
+    "value": "31ms up"
+  },
+  {
+    "name": "cache",
+    "value": "timeout down"
+  }
+]

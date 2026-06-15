@@ -1,0 +1,4 @@
+server	game state
+mcserver	minecraft running
+csserver	counterstrike stopped
+valheim	valheim updating

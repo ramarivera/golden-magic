@@ -11626,5 +11626,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/stablyai/orca",
+    "descriptor_id": "known.orca.runs",
+    "run_id": "agentic.orca-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/orca-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/orca-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.orca.runs for Orca run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GameServerManagers/LinuxGSM",
+    "descriptor_id": "known.linuxgsm.servers",
+    "run_id": "agentic.linuxgsm-servers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/linuxgsm-servers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/linuxgsm-servers/expected.rows.json",
+    "variants": [
+      "server header row",
+      "game row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.linuxgsm.servers for LinuxGSM server list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/carloscuesta/gitmoji-cli",
+    "descriptor_id": "known.gitmoji-cli.emojis",
+    "run_id": "agentic.gitmoji-cli-emojis.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitmoji-cli-emojis/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitmoji-cli-emojis/expected.rows.json",
+    "variants": [
+      "emoji header row",
+      "code row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitmoji-cli.emojis for gitmoji-cli emoji list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/modem-dev/hunk",
+    "descriptor_id": "known.hunk.patches",
+    "run_id": "agentic.hunk-patches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hunk-patches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hunk-patches/expected.rows.json",
+    "variants": [
+      "patch header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hunk.patches for Hunk patch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PeonPing/peon-ping",
+    "descriptor_id": "known.peon-ping.targets",
+    "run_id": "agentic.peon-ping-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/peon-ping-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/peon-ping-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "latency row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.peon-ping.targets for Peon Ping target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/commandlineparser/commandline",
+    "descriptor_id": "known.commandline.options",
+    "run_id": "agentic.commandline-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/commandline-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/commandline-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.commandline.options for CommandLineParser option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gyscos/cursive",
+    "descriptor_id": "known.cursive.views",
+    "run_id": "agentic.cursive-views.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cursive-views/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cursive-views/expected.rows.json",
+    "variants": [
+      "view header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cursive.views for Cursive view list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/unhappychoice/gitlogue",
+    "descriptor_id": "known.gitlogue.entries",
+    "run_id": "agentic.gitlogue-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitlogue-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitlogue-entries/expected.rows.json",
+    "variants": [
+      "commit header row",
+      "author row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitlogue.entries for gitlogue entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/exiftool/exiftool",
+    "descriptor_id": "known.exiftool.tags",
+    "run_id": "agentic.exiftool-tags.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/exiftool-tags/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/exiftool-tags/expected.rows.json",
+    "variants": [
+      "tag header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.exiftool.tags for ExifTool tag list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/clangen/musikcube",
+    "descriptor_id": "known.musikcube.tracks",
+    "run_id": "agentic.musikcube-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/musikcube-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/musikcube-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "artist row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.musikcube.tracks for musikcube track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

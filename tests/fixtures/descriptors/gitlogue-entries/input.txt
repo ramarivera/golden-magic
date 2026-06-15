@@ -1,0 +1,4 @@
+commit	author state
+a1b2c3	alice merged
+d4e5f6	bob reviewed
+f7a8b9	cara pending

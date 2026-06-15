@@ -1,0 +1,2 @@
+view kind state
+menu Dialog visible

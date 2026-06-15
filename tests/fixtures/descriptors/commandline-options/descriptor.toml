@@ -1,0 +1,10 @@
+id = "known.commandline.options"
+name = "CommandLineParser option list"
+priority = 50
+
+[matches]
+required_substrings = ["option\ttype","--verbose\tbool"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+emoji	code state
+sparkles	feat selected
+bug	fix available
+memo	docs available

@@ -1,0 +1,10 @@
+id = "known.hunk.patches"
+name = "Hunk patch list"
+priority = 50
+
+[matches]
+required_substrings = ["patch\tfile","001\tsrc/main.rs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

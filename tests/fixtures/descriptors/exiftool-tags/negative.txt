@@ -1,0 +1,2 @@
+tag value state
+CameraModel X100V present

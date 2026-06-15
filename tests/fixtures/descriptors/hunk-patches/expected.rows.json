@@ -1,0 +1,18 @@
+[
+  {
+    "name": "patch",
+    "value": "file state"
+  },
+  {
+    "name": "001",
+    "value": "src/main.rs applied"
+  },
+  {
+    "name": "002",
+    "value": "src/lib.rs pending"
+  },
+  {
+    "name": "003",
+    "value": "tests/parser.rs rejected"
+  }
+]

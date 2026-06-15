@@ -4520,5 +4520,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/byterover-cli-memories",
     "analysis_notes": "Modeled Byterover CLI memory output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/stablyai/orca",
+    "descriptor_id": "known.orca.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/orca-runs",
+    "analysis_notes": "Modeled Orca run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GameServerManagers/LinuxGSM",
+    "descriptor_id": "known.linuxgsm.servers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/linuxgsm-servers",
+    "analysis_notes": "Modeled LinuxGSM server output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/carloscuesta/gitmoji-cli",
+    "descriptor_id": "known.gitmoji-cli.emojis",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitmoji-cli-emojis",
+    "analysis_notes": "Modeled gitmoji-cli emoji output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/modem-dev/hunk",
+    "descriptor_id": "known.hunk.patches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hunk-patches",
+    "analysis_notes": "Modeled Hunk patch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PeonPing/peon-ping",
+    "descriptor_id": "known.peon-ping.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/peon-ping-targets",
+    "analysis_notes": "Modeled Peon Ping target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/commandlineparser/commandline",
+    "descriptor_id": "known.commandline.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/commandline-options",
+    "analysis_notes": "Modeled CommandLineParser option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gyscos/cursive",
+    "descriptor_id": "known.cursive.views",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cursive-views",
+    "analysis_notes": "Modeled Cursive view output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/unhappychoice/gitlogue",
+    "descriptor_id": "known.gitlogue.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitlogue-entries",
+    "analysis_notes": "Modeled gitlogue entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/exiftool/exiftool",
+    "descriptor_id": "known.exiftool.tags",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/exiftool-tags",
+    "analysis_notes": "Modeled ExifTool tag output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/clangen/musikcube",
+    "descriptor_id": "known.musikcube.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/musikcube-tracks",
+    "analysis_notes": "Modeled musikcube track output with a generated executable-json parser plugin."
   }
 ]

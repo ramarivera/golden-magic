@@ -1,0 +1,10 @@
+id = "known.linuxgsm.servers"
+name = "LinuxGSM server list"
+priority = 50
+
+[matches]
+required_substrings = ["server\tgame","mcserver\tminecraft"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

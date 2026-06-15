@@ -1,0 +1,10 @@
+id = "known.orca.runs"
+name = "Orca run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tmodel","demo\torca-mini"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

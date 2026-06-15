@@ -1,0 +1,4 @@
+tag	value state
+CameraModel	X100V present
+Lens	23mm present
+GPS	missing absent
