@@ -2698,5 +2698,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "descriptor_id": "known.chrome-devtools-mcp.targets",
+    "run_id": "agentic.chrome-devtools-mcp-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chrome-devtools-mcp-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chrome-devtools-mcp-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "attached target row",
+      "url field"
+    ],
+    "transcript": [
+      "selected descriptor known.chrome-devtools-mcp.targets for Chrome DevTools MCP target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Unitech/pm2",
+    "descriptor_id": "known.pm2.processes",
+    "run_id": "agentic.pm2-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pm2-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pm2-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "online process row",
+      "restart count field"
+    ],
+    "transcript": [
+      "selected descriptor known.pm2.processes for pm2 process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/bubbletea",
+    "descriptor_id": "known.bubbletea.models",
+    "run_id": "agentic.bubbletea-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bubbletea-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bubbletea-models/expected.rows.json",
+    "variants": [
+      "model header row",
+      "focused model row",
+      "message count field"
+    ],
+    "transcript": [
+      "selected descriptor known.bubbletea.models for Bubble Tea model state list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/HKUDS/CLI-Anything",
+    "descriptor_id": "known.cli-anything.runs",
+    "run_id": "agentic.cli-anything-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cli-anything-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cli-anything-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "complete run row",
+      "tool field"
+    ],
+    "transcript": [
+      "selected descriptor known.cli-anything.runs for CLI-Anything run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dylanaraps/pure-bash-bible",
+    "descriptor_id": "known.pure-bash-bible.topics",
+    "run_id": "agentic.pure-bash-bible-topics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pure-bash-bible-topics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pure-bash-bible-topics/expected.rows.json",
+    "variants": [
+      "topic header row",
+      "example count row",
+      "section field"
+    ],
+    "transcript": [
+      "selected descriptor known.pure-bash-bible.topics for pure-bash-bible topic index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

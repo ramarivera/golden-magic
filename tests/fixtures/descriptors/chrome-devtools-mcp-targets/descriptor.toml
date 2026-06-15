@@ -1,0 +1,10 @@
+id = "known.chrome-devtools-mcp.targets"
+name = "Chrome DevTools MCP target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstate","page-1\tattached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

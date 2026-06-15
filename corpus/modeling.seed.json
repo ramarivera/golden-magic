@@ -1048,5 +1048,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cobra-commands",
     "analysis_notes": "Modeled Cobra command tree output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "descriptor_id": "known.chrome-devtools-mcp.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chrome-devtools-mcp-targets",
+    "analysis_notes": "Modeled Chrome DevTools MCP target list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Unitech/pm2",
+    "descriptor_id": "known.pm2.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pm2-processes",
+    "analysis_notes": "Modeled pm2 process list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/charmbracelet/bubbletea",
+    "descriptor_id": "known.bubbletea.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bubbletea-models",
+    "analysis_notes": "Modeled Bubble Tea model state output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/HKUDS/CLI-Anything",
+    "descriptor_id": "known.cli-anything.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cli-anything-runs",
+    "analysis_notes": "Modeled CLI-Anything run list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dylanaraps/pure-bash-bible",
+    "descriptor_id": "known.pure-bash-bible.topics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pure-bash-bible-topics",
+    "analysis_notes": "Modeled pure-bash-bible topic index output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+run	status tool
+agent	complete shell
+browser	running playwright
+report	queued markdown

@@ -1,0 +1,4 @@
+target	state url
+page-1	attached https://example.test
+page-2	available https://docs.test
+worker-1	detached service-worker

@@ -1,0 +1,10 @@
+id = "known.cli-anything.runs"
+name = "CLI-Anything run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstatus","agent\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

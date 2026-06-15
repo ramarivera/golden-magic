@@ -1,0 +1,2 @@
+topic examples section
+strings 18 shell

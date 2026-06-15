@@ -1558,5 +1558,65 @@
     "negative": "command parent flags\nserve root 4\n",
     "analysis_notes": "Modeled Cobra command tree output with a generated executable-json parser plugin.",
     "variants": ["command header row", "root command row", "flags field"]
+  },
+  {
+    "fixture": "chrome-devtools-mcp-targets",
+    "descriptor_id": "known.chrome-devtools-mcp.targets",
+    "name": "Chrome DevTools MCP target list",
+    "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "required_substrings": ["target\tstate", "page-1\tattached"],
+    "parser": "tab-pairs",
+    "input": "target\tstate url\npage-1\tattached https://example.test\npage-2\tavailable https://docs.test\nworker-1\tdetached service-worker\n",
+    "negative": "target state url\npage-1 attached https://example.test\n",
+    "analysis_notes": "Modeled Chrome DevTools MCP target list output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "attached target row", "url field"]
+  },
+  {
+    "fixture": "pm2-processes",
+    "descriptor_id": "known.pm2.processes",
+    "name": "pm2 process list",
+    "repo": "https://github.com/Unitech/pm2",
+    "required_substrings": ["process\tstatus", "api\tonline"],
+    "parser": "tab-pairs",
+    "input": "process\tstatus restarts\napi\tonline 0\nworker\tonline 2\ncron\tstopped 1\n",
+    "negative": "process status restarts\napi online 0\n",
+    "analysis_notes": "Modeled pm2 process list output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "online process row", "restart count field"]
+  },
+  {
+    "fixture": "bubbletea-models",
+    "descriptor_id": "known.bubbletea.models",
+    "name": "Bubble Tea model state list",
+    "repo": "https://github.com/charmbracelet/bubbletea",
+    "required_substrings": ["model\tstate", "list\tfocused"],
+    "parser": "tab-pairs",
+    "input": "model\tstate messages\nlist\tfocused 12\ninput\tblurred 3\nspinner\trunning 8\n",
+    "negative": "model state messages\nlist focused 12\n",
+    "analysis_notes": "Modeled Bubble Tea model state output with a generated executable-json parser plugin.",
+    "variants": ["model header row", "focused model row", "message count field"]
+  },
+  {
+    "fixture": "cli-anything-runs",
+    "descriptor_id": "known.cli-anything.runs",
+    "name": "CLI-Anything run list",
+    "repo": "https://github.com/HKUDS/CLI-Anything",
+    "required_substrings": ["run\tstatus", "agent\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "run\tstatus tool\nagent\tcomplete shell\nbrowser\trunning playwright\nreport\tqueued markdown\n",
+    "negative": "run status tool\nagent complete shell\n",
+    "analysis_notes": "Modeled CLI-Anything run list output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "complete run row", "tool field"]
+  },
+  {
+    "fixture": "pure-bash-bible-topics",
+    "descriptor_id": "known.pure-bash-bible.topics",
+    "name": "pure-bash-bible topic index",
+    "repo": "https://github.com/dylanaraps/pure-bash-bible",
+    "required_substrings": ["topic\texamples", "strings\t18"],
+    "parser": "tab-pairs",
+    "input": "topic\texamples section\nstrings\t18 shell\narrays\t12 shell\nfiles\t9 shell\n",
+    "negative": "topic examples section\nstrings 18 shell\n",
+    "analysis_notes": "Modeled pure-bash-bible topic index output with a generated executable-json parser plugin.",
+    "variants": ["topic header row", "example count row", "section field"]
   }
 ]

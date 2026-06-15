@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "status tool"
+  },
+  {
+    "name": "agent",
+    "value": "complete shell"
+  },
+  {
+    "name": "browser",
+    "value": "running playwright"
+  },
+  {
+    "name": "report",
+    "value": "queued markdown"
+  }
+]

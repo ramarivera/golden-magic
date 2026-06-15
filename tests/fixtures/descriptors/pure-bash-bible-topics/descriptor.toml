@@ -1,0 +1,10 @@
+id = "known.pure-bash-bible.topics"
+name = "pure-bash-bible topic index"
+priority = 50
+
+[matches]
+required_substrings = ["topic\texamples","strings\t18"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

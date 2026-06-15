@@ -1,0 +1,4 @@
+topic	examples section
+strings	18 shell
+arrays	12 shell
+files	9 shell

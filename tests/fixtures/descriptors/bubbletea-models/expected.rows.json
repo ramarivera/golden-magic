@@ -1,0 +1,18 @@
+[
+  {
+    "name": "model",
+    "value": "state messages"
+  },
+  {
+    "name": "list",
+    "value": "focused 12"
+  },
+  {
+    "name": "input",
+    "value": "blurred 3"
+  },
+  {
+    "name": "spinner",
+    "value": "running 8"
+  }
+]

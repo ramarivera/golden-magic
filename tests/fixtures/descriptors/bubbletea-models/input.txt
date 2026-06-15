@@ -1,0 +1,4 @@
+model	state messages
+list	focused 12
+input	blurred 3
+spinner	running 8
