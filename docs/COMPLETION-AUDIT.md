@@ -25,6 +25,7 @@ This audit validates the previously claimed completion list against current repo
 | CLI tests | `tests/cli.rs`; `cargo test --test cli -- --nocapture` passed. |
 | Nu wrapper tests | `tests/nu_wrapper.rs`; `cargo test --test nu_wrapper -- --nocapture` passed. |
 | Native Nu plugin integration test | `tests/nu_plugin.rs`; `cargo test --features nu-plugin --test nu_plugin -- --nocapture` passed. |
+| Generated 2,000+ deterministic parser/tool-pack cases | `tests/generated_matrix.rs` runs 2,400 generated cases and fails below 2,000; see `docs/TEST-MATRIX.md`. |
 | Optional Nix-backed fixture test exists | `tests/nix_fixture.rs` exists and `cargo test --test nix_fixture -- --nocapture` passed the default skip path. |
 | Descriptor-driven Nix manifest harness exists | `tests/nix_fixture.rs` reads `nix.toml` manifests; `tests/fixtures/descriptors/generic-pipes/nix.toml` exists; default skip test passed; opt-in live execution passed in a disposable `nixos/nix:latest` container with `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1`. |
 | Known-tool descriptor corpus | `tests/fixtures/descriptors/*` contains representative descriptor packs; `docs/KNOWN-TOOLS.md`; descriptor fixture tests passed. |
@@ -56,3 +57,4 @@ This audit validates the previously claimed completion list against current repo
 - Descriptor-driven Nix manifest fixtures were verified in a disposable `nixos/nix:latest` container with the repository mounted read-only and Cargo outputs redirected to `/tmp`.
 - Native runtime loading now has a formal security and portability review artifact in [`docs/NATIVE-RUNTIME-REVIEW.md`](NATIVE-RUNTIME-REVIEW.md); the feature remains rejected until those gates are met.
 - Declarative tool packs are implemented in `src/tool_packs.rs`, wired into CLI/config loading through `--tool-pack-dir`, `--validate-tool-pack-dir`, `--list-tool-packs`, and specified in [`docs/TOOL-PACKS.md`](TOOL-PACKS.md) plus [`schemas/tool-pack.schema.json`](../schemas/tool-pack.schema.json) as the data-only plugin surface.
+- Generated deterministic tests now enforce a 2,000+ case floor across parser and tool-pack surfaces.

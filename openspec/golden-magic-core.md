@@ -38,6 +38,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Reject unknown rule ids instead of silently ignoring typos.
 - [x] Include unit tests for current heuristics.
 - [x] Include property-based tests for rectangular table invariants.
+- [x] Include a generated deterministic matrix with at least 2,000 parser/tool-pack cases.
 - [x] Include CLI integration tests for stdin parsing, output modes, header modes, rule listing, and invalid rule rejection.
 - [x] Include a Nushell wrapper integration test.
 - [x] Include a Criterion performance benchmark harness with initial parser baselines.
