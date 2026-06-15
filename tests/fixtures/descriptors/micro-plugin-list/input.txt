@@ -1,0 +1,3 @@
+autoclose	enabled
+linter	disabled
+fzf	enabled

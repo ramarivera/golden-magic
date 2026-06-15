@@ -1,0 +1,10 @@
+id = "known.lux.info"
+name = "lux video info"
+priority = 50
+
+[matches]
+required_substrings = ["Site:","Title:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

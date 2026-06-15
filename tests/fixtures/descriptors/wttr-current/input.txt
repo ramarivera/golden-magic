@@ -1,0 +1,4 @@
+Location: Berlin
+Condition: Partly cloudy
+Temperature: 18 C
+Wind: 11 km/h

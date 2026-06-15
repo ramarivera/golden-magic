@@ -5,6 +5,8 @@ const path = require("path");
 
 const repoRoot = path.resolve(__dirname, "..");
 const seedPath = path.join(repoRoot, "corpus", "generated-executable-fixtures.seed.json");
+const modelingPath = path.join(repoRoot, "corpus", "modeling.seed.json");
+const agenticRunsPath = path.join(repoRoot, "corpus", "agentic-runs.seed.json");
 const fixtureRoot = path.join(repoRoot, "tests", "fixtures", "descriptors");
 const specs = JSON.parse(fs.readFileSync(seedPath, "utf8"));
 
@@ -104,4 +106,43 @@ executable = "./parser-plugin.py"
   });
 }
 
-console.error(`generated ${specs.length} executable-json fixture(s)`);
+const generatedFixtures = new Set(
+  specs.map((spec) => `tests/fixtures/descriptors/${spec.fixture}`),
+);
+const generatedDescriptors = new Set(specs.map((spec) => spec.descriptor_id));
+
+const modeling = JSON.parse(fs.readFileSync(modelingPath, "utf8"))
+  .filter((entry) => !generatedFixtures.has(entry.fixture));
+for (const spec of specs) {
+  modeling.push({
+    repo: spec.repo,
+    descriptor_id: spec.descriptor_id,
+    backend: "executable-json",
+    fixture: `tests/fixtures/descriptors/${spec.fixture}`,
+    analysis_notes: spec.analysis_notes,
+  });
+}
+fs.writeFileSync(modelingPath, `${JSON.stringify(modeling, null, 2)}\n`);
+
+const agenticRuns = JSON.parse(fs.readFileSync(agenticRunsPath, "utf8"))
+  .filter((entry) => !generatedDescriptors.has(entry.descriptor_id));
+for (const spec of specs) {
+  const runName = spec.descriptor_id.replace(/^known\./, "").replaceAll(".", "-");
+  agenticRuns.push({
+    repo: spec.repo,
+    descriptor_id: spec.descriptor_id,
+    run_id: `agentic.${runName}.001`,
+    run_kind: "exploratory-cli-variant",
+    input_fixture: `tests/fixtures/descriptors/${spec.fixture}/input.txt`,
+    expected_rows: `tests/fixtures/descriptors/${spec.fixture}/expected.rows.json`,
+    variants: spec.variants,
+    transcript: [
+      `selected descriptor ${spec.descriptor_id} for ${spec.name} output`,
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json",
+    ],
+  });
+}
+fs.writeFileSync(agenticRunsPath, `${JSON.stringify(agenticRuns, null, 2)}\n`);
+
+console.error(`generated ${specs.length} executable-json fixture(s) and synced manifests`);

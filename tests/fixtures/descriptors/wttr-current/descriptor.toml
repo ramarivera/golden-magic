@@ -1,0 +1,10 @@
+id = "known.wttr.current"
+name = "wttr.in current conditions"
+priority = 50
+
+[matches]
+required_substrings = ["Location:","Temperature:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

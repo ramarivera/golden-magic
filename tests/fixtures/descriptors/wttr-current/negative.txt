@@ -1,0 +1,2 @@
+Location Berlin
+Temperature 18 C

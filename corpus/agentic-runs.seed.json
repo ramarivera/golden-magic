@@ -362,11 +362,15 @@
   {
     "repo": "https://github.com/atuinsh/atuin",
     "descriptor_id": "known.atuin.stats",
-    "run_id": "agentic.atuin.stats.001",
+    "run_id": "agentic.atuin-stats.001",
     "run_kind": "exploratory-cli-variant",
     "input_fixture": "tests/fixtures/descriptors/atuin-stats/input.txt",
     "expected_rows": "tests/fixtures/descriptors/atuin-stats/expected.rows.json",
-    "variants": ["integer value", "multi-word command value", "multiple key-value rows"],
+    "variants": [
+      "integer value",
+      "multi-word command value",
+      "multiple key-value rows"
+    ],
     "transcript": [
       "selected descriptor known.atuin.stats for atuin stats output",
       "ran golden-magic against generated fixture input through executable-json parser plugin",
@@ -376,13 +380,17 @@
   {
     "repo": "https://github.com/charmbracelet/glow",
     "descriptor_id": "known.glow.stash-list",
-    "run_id": "agentic.glow.stash-list.001",
+    "run_id": "agentic.glow-stash-list.001",
     "run_kind": "exploratory-cli-variant",
     "input_fixture": "tests/fixtures/descriptors/glow-stash-list/input.txt",
     "expected_rows": "tests/fixtures/descriptors/glow-stash-list/expected.rows.json",
-    "variants": ["markdown filename", "title with spaces", "multiple stash rows"],
+    "variants": [
+      "markdown filename",
+      "title with spaces",
+      "multiple stash rows"
+    ],
     "transcript": [
-      "selected descriptor known.glow.stash-list for glow stash/list output",
+      "selected descriptor known.glow.stash-list for glow stash list output",
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
@@ -390,11 +398,15 @@
   {
     "repo": "https://github.com/dylanaraps/neofetch",
     "descriptor_id": "known.neofetch.summary",
-    "run_id": "agentic.neofetch.summary.001",
+    "run_id": "agentic.neofetch-summary.001",
     "run_kind": "exploratory-cli-variant",
     "input_fixture": "tests/fixtures/descriptors/neofetch-summary/input.txt",
     "expected_rows": "tests/fixtures/descriptors/neofetch-summary/expected.rows.json",
-    "variants": ["OS row", "kernel row", "terminal row"],
+    "variants": [
+      "OS row",
+      "kernel row",
+      "terminal row"
+    ],
     "transcript": [
       "selected descriptor known.neofetch.summary for neofetch summary output",
       "ran golden-magic against generated fixture input through executable-json parser plugin",
@@ -404,11 +416,15 @@
   {
     "repo": "https://github.com/fastfetch-cli/fastfetch",
     "descriptor_id": "known.fastfetch.summary",
-    "run_id": "agentic.fastfetch.summary.001",
+    "run_id": "agentic.fastfetch-summary.001",
     "run_kind": "exploratory-cli-variant",
     "input_fixture": "tests/fixtures/descriptors/fastfetch-summary/input.txt",
     "expected_rows": "tests/fixtures/descriptors/fastfetch-summary/expected.rows.json",
-    "variants": ["host row", "package count row", "shell version row"],
+    "variants": [
+      "host row",
+      "package count row",
+      "shell version row"
+    ],
     "transcript": [
       "selected descriptor known.fastfetch.summary for fastfetch summary output",
       "ran golden-magic against generated fixture input through executable-json parser plugin",
@@ -418,13 +434,107 @@
   {
     "repo": "https://github.com/eza-community/eza",
     "descriptor_id": "known.eza.long",
-    "run_id": "agentic.eza.long.001",
+    "run_id": "agentic.eza-long.001",
     "run_kind": "exploratory-cli-variant",
     "input_fixture": "tests/fixtures/descriptors/eza-long/input.txt",
     "expected_rows": "tests/fixtures/descriptors/eza-long/expected.rows.json",
-    "variants": ["file row", "directory row", "size with unit"],
+    "variants": [
+      "file row",
+      "directory row",
+      "size with unit"
+    ],
     "transcript": [
-      "selected descriptor known.eza.long for eza long listing output",
+      "selected descriptor known.eza.long for eza --long output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/gum",
+    "descriptor_id": "known.gum.choose",
+    "run_id": "agentic.gum-choose.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gum-choose/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gum-choose/expected.rows.json",
+    "variants": [
+      "selected value",
+      "numeric index",
+      "multi-word label"
+    ],
+    "transcript": [
+      "selected descriptor known.gum.choose for gum choose output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/derailed/k9s",
+    "descriptor_id": "known.k9s.popeye",
+    "run_id": "agentic.k9s-popeye.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/k9s-popeye/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/k9s-popeye/expected.rows.json",
+    "variants": [
+      "score value",
+      "grade value",
+      "warning count"
+    ],
+    "transcript": [
+      "selected descriptor known.k9s.popeye for k9s popeye score summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/iawia002/lux",
+    "descriptor_id": "known.lux.info",
+    "run_id": "agentic.lux-info.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lux-info/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lux-info/expected.rows.json",
+    "variants": [
+      "site row",
+      "title row",
+      "size row"
+    ],
+    "transcript": [
+      "selected descriptor known.lux.info for lux video info output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/micro-editor/micro",
+    "descriptor_id": "known.micro.plugin-list",
+    "run_id": "agentic.micro-plugin-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/micro-plugin-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/micro-plugin-list/expected.rows.json",
+    "variants": [
+      "enabled plugin",
+      "disabled plugin",
+      "multiple plugin rows"
+    ],
+    "transcript": [
+      "selected descriptor known.micro.plugin-list for micro plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chubin/wttr.in",
+    "descriptor_id": "known.wttr.current",
+    "run_id": "agentic.wttr-current.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wttr-current/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wttr-current/expected.rows.json",
+    "variants": [
+      "location row",
+      "weather condition row",
+      "wind row"
+    ],
+    "transcript": [
+      "selected descriptor known.wttr.current for wttr.in current conditions output",
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]

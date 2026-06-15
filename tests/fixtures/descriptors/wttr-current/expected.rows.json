@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Location",
+    "value": "Berlin"
+  },
+  {
+    "key": "Condition",
+    "value": "Partly cloudy"
+  },
+  {
+    "key": "Temperature",
+    "value": "18 C"
+  },
+  {
+    "key": "Wind",
+    "value": "11 km/h"
+  }
+]

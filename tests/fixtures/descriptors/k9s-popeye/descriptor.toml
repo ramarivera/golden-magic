@@ -1,0 +1,10 @@
+id = "known.k9s.popeye"
+name = "k9s popeye score summary"
+priority = 50
+
+[matches]
+required_substrings = ["score:","grade:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

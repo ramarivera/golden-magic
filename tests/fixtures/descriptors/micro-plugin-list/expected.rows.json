@@ -1,0 +1,14 @@
+[
+  {
+    "name": "autoclose",
+    "value": "enabled"
+  },
+  {
+    "name": "linter",
+    "value": "disabled"
+  },
+  {
+    "name": "fzf",
+    "value": "enabled"
+  }
+]

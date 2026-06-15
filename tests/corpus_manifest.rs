@@ -53,6 +53,14 @@ struct ModelingSeed {
     analysis_notes: String,
 }
 
+#[derive(Debug, Deserialize)]
+struct GeneratedFixtureSeed {
+    fixture: String,
+    descriptor_id: String,
+    repo: String,
+    variants: Vec<String>,
+}
+
 fn is_cli_oriented_query(query: &str) -> bool {
     [
         "cli ",
@@ -352,6 +360,60 @@ fn modeling_seed_backs_advanced_corpus_entries_with_fixtures() {
                 model.repo
             );
         }
+    }
+}
+
+#[test]
+fn generated_executable_fixture_seed_is_synced_to_modeling_and_agentic_manifests() {
+    let generated: Vec<GeneratedFixtureSeed> = serde_json::from_str(include_str!(
+        "../corpus/generated-executable-fixtures.seed.json"
+    ))
+    .expect("generated executable fixture seed parses");
+    let modeled_seed: Vec<ModelingSeed> =
+        serde_json::from_str(include_str!("../corpus/modeling.seed.json"))
+            .expect("modeling seed parses");
+    let runs: Vec<AgenticRun> =
+        serde_json::from_str(include_str!("../corpus/agentic-runs.seed.json"))
+            .expect("agentic run manifest parses");
+
+    let modeled_by_descriptor = modeled_seed
+        .iter()
+        .map(|entry| (entry.descriptor_id.as_str(), entry))
+        .collect::<BTreeMap<_, _>>();
+    let runs_by_descriptor = runs
+        .iter()
+        .map(|run| (run.descriptor_id.as_str(), run))
+        .collect::<BTreeMap<_, _>>();
+
+    for spec in generated {
+        let fixture_path = format!("tests/fixtures/descriptors/{}", spec.fixture);
+        let modeled = modeled_by_descriptor
+            .get(spec.descriptor_id.as_str())
+            .unwrap_or_else(|| {
+                panic!(
+                    "generated descriptor missing from modeling seed: {}",
+                    spec.descriptor_id
+                )
+            });
+        assert_eq!(modeled.repo, spec.repo);
+        assert_eq!(modeled.backend, "executable-json");
+        assert_eq!(modeled.fixture, fixture_path);
+
+        let run = runs_by_descriptor
+            .get(spec.descriptor_id.as_str())
+            .unwrap_or_else(|| {
+                panic!(
+                    "generated descriptor missing from agentic runs: {}",
+                    spec.descriptor_id
+                )
+            });
+        assert_eq!(run.repo, spec.repo);
+        assert_eq!(run.variants, spec.variants);
+        assert_eq!(run.input_fixture, format!("{fixture_path}/input.txt"));
+        assert_eq!(
+            run.expected_rows,
+            format!("{fixture_path}/expected.rows.json")
+        );
     }
 }
 

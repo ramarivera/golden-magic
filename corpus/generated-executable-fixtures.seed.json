@@ -58,5 +58,65 @@
     "negative": "Cargo.toml\nREADME.md\n",
     "analysis_notes": "Modeled eza long listing output with a generated executable-json parser plugin.",
     "variants": ["file row", "directory row", "size with unit"]
+  },
+  {
+    "fixture": "gum-choose",
+    "descriptor_id": "known.gum.choose",
+    "name": "gum choose output",
+    "repo": "https://github.com/charmbracelet/gum",
+    "required_substrings": ["selected:", "deploy"],
+    "parser": "colon-kv",
+    "input": "selected: deploy\nindex: 2\nlabel: Deploy production\n",
+    "negative": "selected deploy\nindex 2\n",
+    "analysis_notes": "Modeled gum choose selection output with a generated executable-json parser plugin.",
+    "variants": ["selected value", "numeric index", "multi-word label"]
+  },
+  {
+    "fixture": "k9s-popeye",
+    "descriptor_id": "known.k9s.popeye",
+    "name": "k9s popeye score summary",
+    "repo": "https://github.com/derailed/k9s",
+    "required_substrings": ["score:", "grade:"],
+    "parser": "colon-kv",
+    "input": "score: 92\ngrade: A\nerrors: 0\nwarnings: 3\n",
+    "negative": "score 92\ngrade A\n",
+    "analysis_notes": "Modeled k9s score-summary output with a generated executable-json parser plugin.",
+    "variants": ["score value", "grade value", "warning count"]
+  },
+  {
+    "fixture": "lux-info",
+    "descriptor_id": "known.lux.info",
+    "name": "lux video info",
+    "repo": "https://github.com/iawia002/lux",
+    "required_substrings": ["Site:", "Title:"],
+    "parser": "colon-kv",
+    "input": "Site: YouTube\nTitle: Demo video\nType: video/mp4\nSize: 12.4 MiB\n",
+    "negative": "Site YouTube\nTitle Demo video\n",
+    "analysis_notes": "Modeled lux video-info output with a generated executable-json parser plugin.",
+    "variants": ["site row", "title row", "size row"]
+  },
+  {
+    "fixture": "micro-plugin-list",
+    "descriptor_id": "known.micro.plugin-list",
+    "name": "micro plugin list",
+    "repo": "https://github.com/micro-editor/micro",
+    "required_substrings": ["autoclose\tenabled", "linter\tdisabled"],
+    "parser": "tab-pairs",
+    "input": "autoclose\tenabled\nlinter\tdisabled\nfzf\tenabled\n",
+    "negative": "autoclose enabled\nlinter disabled\n",
+    "analysis_notes": "Modeled micro plugin list output with a generated executable-json parser plugin.",
+    "variants": ["enabled plugin", "disabled plugin", "multiple plugin rows"]
+  },
+  {
+    "fixture": "wttr-current",
+    "descriptor_id": "known.wttr.current",
+    "name": "wttr.in current conditions",
+    "repo": "https://github.com/chubin/wttr.in",
+    "required_substrings": ["Location:", "Temperature:"],
+    "parser": "colon-kv",
+    "input": "Location: Berlin\nCondition: Partly cloudy\nTemperature: 18 C\nWind: 11 km/h\n",
+    "negative": "Location Berlin\nTemperature 18 C\n",
+    "analysis_notes": "Modeled wttr.in current-conditions output with a generated executable-json parser plugin.",
+    "variants": ["location row", "weather condition row", "wind row"]
   }
 ]
