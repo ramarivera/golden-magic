@@ -418,5 +418,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/miller-stats",
     "analysis_notes": "Modeled miller stats output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gcla/termshark",
+    "descriptor_id": "known.termshark.streams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termshark-streams",
+    "analysis_notes": "Modeled termshark stream summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rgcr/m-cli",
+    "descriptor_id": "known.m-cli.info",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/m-cli-info",
+    "analysis_notes": "Modeled m-cli info output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel/serve",
+    "descriptor_id": "known.serve.listen",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/serve-listen",
+    "analysis_notes": "Modeled serve listen status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nbedos/termtosvg",
+    "descriptor_id": "known.termtosvg.recording",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termtosvg-recording",
+    "analysis_notes": "Modeled termtosvg recording summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gruntwork-io/terragrunt",
+    "descriptor_id": "known.terragrunt.plan",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terragrunt-plan",
+    "analysis_notes": "Modeled terragrunt plan summary output with a generated executable-json parser plugin."
   }
 ]

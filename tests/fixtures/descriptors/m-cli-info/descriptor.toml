@@ -1,0 +1,10 @@
+id = "known.m-cli.info"
+name = "m-cli info output"
+priority = 50
+
+[matches]
+required_substrings = ["hostname:","os:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

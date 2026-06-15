@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Serving",
+    "value": "dist"
+  },
+  {
+    "key": "Local",
+    "value": "http://localhost:3000"
+  },
+  {
+    "key": "Network",
+    "value": "http://192.168.1.5:3000"
+  },
+  {
+    "key": "Directory",
+    "value": "/Users/ramiro/site"
+  }
+]

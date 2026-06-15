@@ -1,0 +1,4 @@
+hostname: zeph
+os: macOS 15.5
+cpu: Apple M1 Pro
+shell: nu

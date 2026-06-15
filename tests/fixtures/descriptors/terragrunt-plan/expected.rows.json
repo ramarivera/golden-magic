@@ -1,0 +1,18 @@
+[
+  {
+    "key": "module",
+    "value": "prod/us-east-1/app"
+  },
+  {
+    "key": "changes",
+    "value": "2 to add, 0 to change, 1 to destroy"
+  },
+  {
+    "key": "workspace",
+    "value": "default"
+  },
+  {
+    "key": "status",
+    "value": "planned"
+  }
+]

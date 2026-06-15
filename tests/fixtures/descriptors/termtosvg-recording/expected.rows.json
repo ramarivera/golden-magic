@@ -1,0 +1,18 @@
+[
+  {
+    "key": "output",
+    "value": "demo.svg"
+  },
+  {
+    "key": "duration",
+    "value": "8.7s"
+  },
+  {
+    "key": "frames",
+    "value": "132"
+  },
+  {
+    "key": "shell",
+    "value": "/bin/zsh"
+  }
+]

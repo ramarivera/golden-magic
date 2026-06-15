@@ -478,5 +478,65 @@
     "negative": "field mean min max\nlatency 12.4 3.1 31.8\n",
     "analysis_notes": "Modeled miller stats output with a generated executable-json parser plugin.",
     "variants": ["stats header row", "latency metric row", "request metric row"]
+  },
+  {
+    "fixture": "termshark-streams",
+    "descriptor_id": "known.termshark.streams",
+    "name": "termshark stream summary",
+    "repo": "https://github.com/gcla/termshark",
+    "required_substrings": ["stream:", "packets:"],
+    "parser": "colon-kv",
+    "input": "stream: tcp:0\npackets: 42\nsrc: 10.0.0.2:443\ndst: 10.0.0.7:51432\n",
+    "negative": "stream tcp:0\npackets 42\n",
+    "analysis_notes": "Modeled termshark stream summary output with a generated executable-json parser plugin.",
+    "variants": ["stream id row", "packet count row", "endpoint rows"]
+  },
+  {
+    "fixture": "m-cli-info",
+    "descriptor_id": "known.m-cli.info",
+    "name": "m-cli info output",
+    "repo": "https://github.com/rgcr/m-cli",
+    "required_substrings": ["hostname:", "os:"],
+    "parser": "colon-kv",
+    "input": "hostname: zeph\nos: macOS 15.5\ncpu: Apple M1 Pro\nshell: nu\n",
+    "negative": "hostname zeph\nos macOS 15.5\n",
+    "analysis_notes": "Modeled m-cli info output with a generated executable-json parser plugin.",
+    "variants": ["hostname row", "OS row", "CPU row"]
+  },
+  {
+    "fixture": "serve-listen",
+    "descriptor_id": "known.serve.listen",
+    "name": "serve listen status",
+    "repo": "https://github.com/vercel/serve",
+    "required_substrings": ["Serving:", "Local:"],
+    "parser": "colon-kv",
+    "input": "Serving: dist\nLocal: http://localhost:3000\nNetwork: http://192.168.1.5:3000\nDirectory: /Users/ramiro/site\n",
+    "negative": "Serving dist\nLocal http://localhost:3000\n",
+    "analysis_notes": "Modeled serve listen status output with a generated executable-json parser plugin.",
+    "variants": ["served directory row", "local URL row", "network URL row"]
+  },
+  {
+    "fixture": "termtosvg-recording",
+    "descriptor_id": "known.termtosvg.recording",
+    "name": "termtosvg recording summary",
+    "repo": "https://github.com/nbedos/termtosvg",
+    "required_substrings": ["output:", "duration:"],
+    "parser": "colon-kv",
+    "input": "output: demo.svg\nduration: 8.7s\nframes: 132\nshell: /bin/zsh\n",
+    "negative": "output demo.svg\nduration 8.7s\n",
+    "analysis_notes": "Modeled termtosvg recording summary output with a generated executable-json parser plugin.",
+    "variants": ["output path row", "duration row", "frame count row"]
+  },
+  {
+    "fixture": "terragrunt-plan",
+    "descriptor_id": "known.terragrunt.plan",
+    "name": "terragrunt plan summary",
+    "repo": "https://github.com/gruntwork-io/terragrunt",
+    "required_substrings": ["module:", "changes:"],
+    "parser": "colon-kv",
+    "input": "module: prod/us-east-1/app\nchanges: 2 to add, 0 to change, 1 to destroy\nworkspace: default\nstatus: planned\n",
+    "negative": "module prod/us-east-1/app\nchanges 2 to add\n",
+    "analysis_notes": "Modeled terragrunt plan summary output with a generated executable-json parser plugin.",
+    "variants": ["module path row", "plan changes row", "workspace row"]
   }
 ]

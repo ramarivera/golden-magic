@@ -1,0 +1,10 @@
+id = "known.serve.listen"
+name = "serve listen status"
+priority = 50
+
+[matches]
+required_substrings = ["Serving:","Local:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

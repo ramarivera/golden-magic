@@ -1,0 +1,10 @@
+id = "known.termtosvg.recording"
+name = "termtosvg recording summary"
+priority = 50
+
+[matches]
+required_substrings = ["output:","duration:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.terragrunt.plan"
+name = "terragrunt plan summary"
+priority = 50
+
+[matches]
+required_substrings = ["module:","changes:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

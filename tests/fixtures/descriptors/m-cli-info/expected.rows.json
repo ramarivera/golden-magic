@@ -1,0 +1,18 @@
+[
+  {
+    "key": "hostname",
+    "value": "zeph"
+  },
+  {
+    "key": "os",
+    "value": "macOS 15.5"
+  },
+  {
+    "key": "cpu",
+    "value": "Apple M1 Pro"
+  },
+  {
+    "key": "shell",
+    "value": "nu"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "stream",
+    "value": "tcp:0"
+  },
+  {
+    "key": "packets",
+    "value": "42"
+  },
+  {
+    "key": "src",
+    "value": "10.0.0.2:443"
+  },
+  {
+    "key": "dst",
+    "value": "10.0.0.7:51432"
+  }
+]

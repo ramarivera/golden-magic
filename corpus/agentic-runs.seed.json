@@ -1078,5 +1078,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/gcla/termshark",
+    "descriptor_id": "known.termshark.streams",
+    "run_id": "agentic.termshark-streams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termshark-streams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termshark-streams/expected.rows.json",
+    "variants": [
+      "stream id row",
+      "packet count row",
+      "endpoint rows"
+    ],
+    "transcript": [
+      "selected descriptor known.termshark.streams for termshark stream summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rgcr/m-cli",
+    "descriptor_id": "known.m-cli.info",
+    "run_id": "agentic.m-cli-info.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/m-cli-info/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/m-cli-info/expected.rows.json",
+    "variants": [
+      "hostname row",
+      "OS row",
+      "CPU row"
+    ],
+    "transcript": [
+      "selected descriptor known.m-cli.info for m-cli info output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel/serve",
+    "descriptor_id": "known.serve.listen",
+    "run_id": "agentic.serve-listen.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/serve-listen/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/serve-listen/expected.rows.json",
+    "variants": [
+      "served directory row",
+      "local URL row",
+      "network URL row"
+    ],
+    "transcript": [
+      "selected descriptor known.serve.listen for serve listen status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nbedos/termtosvg",
+    "descriptor_id": "known.termtosvg.recording",
+    "run_id": "agentic.termtosvg-recording.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termtosvg-recording/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termtosvg-recording/expected.rows.json",
+    "variants": [
+      "output path row",
+      "duration row",
+      "frame count row"
+    ],
+    "transcript": [
+      "selected descriptor known.termtosvg.recording for termtosvg recording summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gruntwork-io/terragrunt",
+    "descriptor_id": "known.terragrunt.plan",
+    "run_id": "agentic.terragrunt-plan.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terragrunt-plan/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terragrunt-plan/expected.rows.json",
+    "variants": [
+      "module path row",
+      "plan changes row",
+      "workspace row"
+    ],
+    "transcript": [
+      "selected descriptor known.terragrunt.plan for terragrunt plan summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

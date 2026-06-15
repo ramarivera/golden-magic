@@ -1,0 +1,4 @@
+Serving: dist
+Local: http://localhost:3000
+Network: http://192.168.1.5:3000
+Directory: /Users/ramiro/site

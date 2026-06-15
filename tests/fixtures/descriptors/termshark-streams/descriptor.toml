@@ -1,0 +1,10 @@
+id = "known.termshark.streams"
+name = "termshark stream summary"
+priority = 50
+
+[matches]
+required_substrings = ["stream:","packets:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

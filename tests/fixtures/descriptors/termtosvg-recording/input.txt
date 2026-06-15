@@ -1,0 +1,4 @@
+output: demo.svg
+duration: 8.7s
+frames: 132
+shell: /bin/zsh
