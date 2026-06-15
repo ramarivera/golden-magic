@@ -44,6 +44,15 @@ struct AgenticRun {
     transcript: Vec<String>,
 }
 
+#[derive(Debug, Deserialize)]
+struct ModelingSeed {
+    repo: String,
+    descriptor_id: String,
+    backend: String,
+    fixture: String,
+    analysis_notes: String,
+}
+
 fn is_cli_oriented_query(query: &str) -> bool {
     [
         "cli ",
@@ -248,6 +257,10 @@ fn seed_corpus_lifecycle_counts_are_explicitly_incomplete() {
     let entries: Vec<CorpusEntry> =
         serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
             .expect("seed corpus parses");
+    let modeled_seed: Vec<ModelingSeed> =
+        serde_json::from_str(include_str!("../corpus/modeling.seed.json"))
+            .expect("modeling seed parses");
+    let expected_advanced = modeled_seed.len();
 
     let found = entries.iter().filter(|entry| entry.lifecycle.found).count();
     let analyzed = entries
@@ -268,16 +281,78 @@ fn seed_corpus_lifecycle_counts_are_explicitly_incomplete() {
         .count();
 
     assert_eq!(found, entries.len(), "every seed entry is at least found");
-    assert_eq!(analyzed, 2, "only explicitly analyzed entries may advance");
-    assert_eq!(modeled, 2, "only explicitly modeled entries may advance");
     assert_eq!(
-        deterministic, 2,
+        analyzed, expected_advanced,
+        "only explicitly analyzed entries may advance"
+    );
+    assert_eq!(
+        modeled, expected_advanced,
+        "only explicitly modeled entries may advance"
+    );
+    assert_eq!(
+        deterministic, expected_advanced,
         "only explicitly fixture-backed entries may claim deterministic tests"
     );
     assert_eq!(
-        agentic, 2,
+        agentic, expected_advanced,
         "only manifest-backed entries may claim agentic tests"
     );
+}
+
+#[test]
+fn modeling_seed_backs_advanced_corpus_entries_with_fixtures() {
+    let entries: Vec<CorpusEntry> =
+        serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
+            .expect("seed corpus parses");
+    let modeled_seed: Vec<ModelingSeed> =
+        serde_json::from_str(include_str!("../corpus/modeling.seed.json"))
+            .expect("modeling seed parses");
+    let entries_by_repo = entries
+        .iter()
+        .map(|entry| (entry.repo.as_str(), entry))
+        .collect::<BTreeMap<_, _>>();
+    let mut descriptors = BTreeSet::new();
+
+    for model in modeled_seed {
+        let entry = entries_by_repo
+            .get(model.repo.as_str())
+            .unwrap_or_else(|| panic!("modeling seed repo missing from corpus: {}", model.repo));
+        assert!(
+            descriptors.insert(model.descriptor_id.clone()),
+            "modeling seed descriptor duplicated: {}",
+            model.descriptor_id
+        );
+        assert_eq!(
+            entry.descriptor_id.as_deref(),
+            Some(model.descriptor_id.as_str()),
+            "{} corpus descriptor must match modeling seed",
+            model.repo
+        );
+        assert_eq!(
+            entry.backend.as_deref(),
+            Some(model.backend.as_str()),
+            "{} corpus backend must match modeling seed",
+            model.repo
+        );
+        assert!(
+            entry.analysis_notes.contains(&model.analysis_notes),
+            "{} corpus analysis notes must preserve modeling seed evidence",
+            model.repo
+        );
+        let fixture = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join(&model.fixture);
+        for file in [
+            "descriptor.toml",
+            "input.txt",
+            "expected.rows.json",
+            "negative.txt",
+        ] {
+            assert!(
+                fixture.join(file).exists(),
+                "{} modeling fixture missing {file}",
+                model.repo
+            );
+        }
+    }
 }
 
 #[test]

@@ -34,5 +34,59 @@
       "ran golden-magic against fixture input through fixed-width heuristic",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/cli/cli",
+    "descriptor_id": "known.gh.pr-list",
+    "run_id": "agentic.gh.pr-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gh-pr-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gh-pr-list/expected.rows.json",
+    "variants": [
+      "numeric pull request id prefix",
+      "open state column",
+      "title text containing punctuation"
+    ],
+    "transcript": [
+      "selected descriptor known.gh.pr-list for gh pr list-style compact table output",
+      "ran golden-magic against fixture input through fixed-width heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aws/aws-cli",
+    "descriptor_id": "known.aws.s3-ls",
+    "run_id": "agentic.aws.s3-ls.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aws-s3-ls/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aws-s3-ls/expected.rows.json",
+    "variants": [
+      "dated object rows",
+      "directory prefix rows",
+      "object names with extensions"
+    ],
+    "transcript": [
+      "selected descriptor known.aws.s3-ls for aws s3 ls bucket listing output",
+      "ran golden-magic against fixture input through fixed-width heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/docker/cli",
+    "descriptor_id": "known.docker.ps",
+    "run_id": "agentic.docker.ps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/docker-ps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/docker-ps/expected.rows.json",
+    "variants": [
+      "compact container id column",
+      "status text with duration",
+      "ports column containing arrows and commas"
+    ],
+    "transcript": [
+      "selected descriptor known.docker.ps for docker ps compact table output",
+      "ran golden-magic against fixture input through fixed-width heuristic parsing",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

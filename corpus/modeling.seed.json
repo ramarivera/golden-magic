@@ -1,0 +1,37 @@
+[
+  {
+    "repo": "https://github.com/BurntSushi/ripgrep",
+    "descriptor_id": "known.ripgrep.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ripgrep-matches",
+    "analysis_notes": "Modeled ripgrep path:line:column match output with the executable-json backend and fixture-backed parser plugin."
+  },
+  {
+    "repo": "https://github.com/git/git",
+    "descriptor_id": "known.git.branch-verbose",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/git-branch-verbose",
+    "analysis_notes": "Modeled git branch --verbose output with fixed-width heuristic parsing and branch/tracking variants."
+  },
+  {
+    "repo": "https://github.com/cli/cli",
+    "descriptor_id": "known.gh.pr-list",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/gh-pr-list",
+    "analysis_notes": "Modeled GitHub CLI pull-request list output with fixed-width heuristic parsing."
+  },
+  {
+    "repo": "https://github.com/aws/aws-cli",
+    "descriptor_id": "known.aws.s3-ls",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/aws-s3-ls",
+    "analysis_notes": "Modeled aws s3 ls bucket listing output with fixed-width heuristic parsing."
+  },
+  {
+    "repo": "https://github.com/docker/cli",
+    "descriptor_id": "known.docker.ps",
+    "backend": "heuristic",
+    "fixture": "tests/fixtures/descriptors/docker-ps",
+    "analysis_notes": "Modeled docker ps compact table output with fixed-width heuristic parsing."
+  }
+]
