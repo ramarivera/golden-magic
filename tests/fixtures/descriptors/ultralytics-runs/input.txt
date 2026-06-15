@@ -1,0 +1,4 @@
+run	metric epochs
+yolo11n	0.72 50
+yolo11s	0.76 80
+yolo11m	0.81 100

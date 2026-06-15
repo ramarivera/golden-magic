@@ -1,0 +1,4 @@
+run	state input
+video-summary	complete video.mp4
+doc-map	running guide.pdf
+audio-notes	queued meeting.wav

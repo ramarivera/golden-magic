@@ -1,0 +1,4 @@
+status: enabled
+domains_blocked: 123456
+queries_today: 43210
+queries_blocked: 9876

@@ -1,0 +1,10 @@
+id = "known.rich.renderables"
+name = "Rich renderable list"
+priority = 50
+
+[matches]
+required_substrings = ["renderable\tstyle","table\tbox"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

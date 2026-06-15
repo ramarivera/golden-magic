@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "state input"
+  },
+  {
+    "name": "video-summary",
+    "value": "complete video.mp4"
+  },
+  {
+    "name": "doc-map",
+    "value": "running guide.pdf"
+  },
+  {
+    "name": "audio-notes",
+    "value": "queued meeting.wav"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "status",
+    "value": "enabled"
+  },
+  {
+    "key": "domains_blocked",
+    "value": "123456"
+  },
+  {
+    "key": "queries_today",
+    "value": "43210"
+  },
+  {
+    "key": "queries_blocked",
+    "value": "9876"
+  }
+]

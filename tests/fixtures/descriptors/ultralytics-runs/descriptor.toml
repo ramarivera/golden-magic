@@ -1,0 +1,10 @@
+id = "known.ultralytics.runs"
+name = "Ultralytics training run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tmetric","yolo11n\t0.72"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

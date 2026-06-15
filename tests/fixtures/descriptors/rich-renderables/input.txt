@@ -1,0 +1,4 @@
+renderable	style width
+table	box 80
+progress	bar 60
+syntax	theme 100

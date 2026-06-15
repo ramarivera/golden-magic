@@ -2248,5 +2248,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/warpdotdev/warp",
+    "descriptor_id": "known.warp.sessions",
+    "run_id": "agentic.warp-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/warp-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/warp-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "active session row",
+      "shell field"
+    ],
+    "transcript": [
+      "selected descriptor known.warp.sessions for Warp terminal session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Egonex-AI/Understand-Anything",
+    "descriptor_id": "known.understand-anything.runs",
+    "run_id": "agentic.understand-anything-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/understand-anything-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/understand-anything-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "complete run row",
+      "input field"
+    ],
+    "transcript": [
+      "selected descriptor known.understand-anything.runs for Understand Anything run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pi-hole/pi-hole",
+    "descriptor_id": "known.pi-hole.status",
+    "run_id": "agentic.pi-hole-status.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pihole-status/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pihole-status/expected.rows.json",
+    "variants": [
+      "status row",
+      "blocked domains row",
+      "blocked queries row"
+    ],
+    "transcript": [
+      "selected descriptor known.pi-hole.status for Pi-hole status summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ultralytics/ultralytics",
+    "descriptor_id": "known.ultralytics.runs",
+    "run_id": "agentic.ultralytics-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ultralytics-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ultralytics-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "metric row",
+      "epoch field"
+    ],
+    "transcript": [
+      "selected descriptor known.ultralytics.runs for Ultralytics training run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Textualize/rich",
+    "descriptor_id": "known.rich.renderables",
+    "run_id": "agentic.rich-renderables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rich-renderables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rich-renderables/expected.rows.json",
+    "variants": [
+      "renderable header row",
+      "table row",
+      "width field"
+    ],
+    "transcript": [
+      "selected descriptor known.rich.renderables for Rich renderable list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

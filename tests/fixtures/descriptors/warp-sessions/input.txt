@@ -1,0 +1,4 @@
+session	status shell
+dev	active zsh
+prod	idle ssh
+scratch	closed fish

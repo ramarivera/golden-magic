@@ -1258,5 +1258,65 @@
     "negative": "agent status source\nplanner installed registry\n",
     "analysis_notes": "Modeled oh-my-openagent agent list output with a generated executable-json parser plugin.",
     "variants": ["agent header row", "installed agent row", "source field"]
+  },
+  {
+    "fixture": "warp-sessions",
+    "descriptor_id": "known.warp.sessions",
+    "name": "Warp terminal session list",
+    "repo": "https://github.com/warpdotdev/warp",
+    "required_substrings": ["session\tstatus", "dev\tactive"],
+    "parser": "tab-pairs",
+    "input": "session\tstatus shell\ndev\tactive zsh\nprod\tidle ssh\nscratch\tclosed fish\n",
+    "negative": "session status shell\ndev active zsh\n",
+    "analysis_notes": "Modeled Warp terminal session list output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "active session row", "shell field"]
+  },
+  {
+    "fixture": "understand-anything-runs",
+    "descriptor_id": "known.understand-anything.runs",
+    "name": "Understand Anything run list",
+    "repo": "https://github.com/Egonex-AI/Understand-Anything",
+    "required_substrings": ["run\tstate", "video-summary\tcomplete"],
+    "parser": "tab-pairs",
+    "input": "run\tstate input\nvideo-summary\tcomplete video.mp4\ndoc-map\trunning guide.pdf\naudio-notes\tqueued meeting.wav\n",
+    "negative": "run state input\nvideo-summary complete video.mp4\n",
+    "analysis_notes": "Modeled Understand-Anything run list output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "complete run row", "input field"]
+  },
+  {
+    "fixture": "pihole-status",
+    "descriptor_id": "known.pi-hole.status",
+    "name": "Pi-hole status summary",
+    "repo": "https://github.com/pi-hole/pi-hole",
+    "required_substrings": ["status:", "queries_blocked:"],
+    "parser": "colon-kv",
+    "input": "status: enabled\ndomains_blocked: 123456\nqueries_today: 43210\nqueries_blocked: 9876\n",
+    "negative": "status enabled\nqueries_blocked 9876\n",
+    "analysis_notes": "Modeled Pi-hole status summary output with a generated executable-json parser plugin.",
+    "variants": ["status row", "blocked domains row", "blocked queries row"]
+  },
+  {
+    "fixture": "ultralytics-runs",
+    "descriptor_id": "known.ultralytics.runs",
+    "name": "Ultralytics training run list",
+    "repo": "https://github.com/ultralytics/ultralytics",
+    "required_substrings": ["run\tmetric", "yolo11n\t0.72"],
+    "parser": "tab-pairs",
+    "input": "run\tmetric epochs\nyolo11n\t0.72 50\nyolo11s\t0.76 80\nyolo11m\t0.81 100\n",
+    "negative": "run metric epochs\nyolo11n 0.72 50\n",
+    "analysis_notes": "Modeled Ultralytics training run list output with a generated executable-json parser plugin.",
+    "variants": ["run header row", "metric row", "epoch field"]
+  },
+  {
+    "fixture": "rich-renderables",
+    "descriptor_id": "known.rich.renderables",
+    "name": "Rich renderable list",
+    "repo": "https://github.com/Textualize/rich",
+    "required_substrings": ["renderable\tstyle", "table\tbox"],
+    "parser": "tab-pairs",
+    "input": "renderable\tstyle width\ntable\tbox 80\nprogress\tbar 60\nsyntax\ttheme 100\n",
+    "negative": "renderable style width\ntable box 80\n",
+    "analysis_notes": "Modeled Rich renderable list output with a generated executable-json parser plugin.",
+    "variants": ["renderable header row", "table row", "width field"]
   }
 ]

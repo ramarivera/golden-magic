@@ -1,0 +1,2 @@
+renderable style width
+table box 80

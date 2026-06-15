@@ -1,0 +1,10 @@
+id = "known.pi-hole.status"
+name = "Pi-hole status summary"
+priority = 50
+
+[matches]
+required_substrings = ["status:","queries_blocked:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

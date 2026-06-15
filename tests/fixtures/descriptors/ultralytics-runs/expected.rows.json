@@ -1,0 +1,18 @@
+[
+  {
+    "name": "run",
+    "value": "metric epochs"
+  },
+  {
+    "name": "yolo11n",
+    "value": "0.72 50"
+  },
+  {
+    "name": "yolo11s",
+    "value": "0.76 80"
+  },
+  {
+    "name": "yolo11m",
+    "value": "0.81 100"
+  }
+]

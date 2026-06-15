@@ -873,5 +873,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/oh-my-openagent-agents",
     "analysis_notes": "Modeled oh-my-openagent agent list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/warpdotdev/warp",
+    "descriptor_id": "known.warp.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/warp-sessions",
+    "analysis_notes": "Modeled Warp terminal session list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Egonex-AI/Understand-Anything",
+    "descriptor_id": "known.understand-anything.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/understand-anything-runs",
+    "analysis_notes": "Modeled Understand-Anything run list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pi-hole/pi-hole",
+    "descriptor_id": "known.pi-hole.status",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pihole-status",
+    "analysis_notes": "Modeled Pi-hole status summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ultralytics/ultralytics",
+    "descriptor_id": "known.ultralytics.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ultralytics-runs",
+    "analysis_notes": "Modeled Ultralytics training run list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Textualize/rich",
+    "descriptor_id": "known.rich.renderables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rich-renderables",
+    "analysis_notes": "Modeled Rich renderable list output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.understand-anything.runs"
+name = "Understand Anything run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstate","video-summary\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
