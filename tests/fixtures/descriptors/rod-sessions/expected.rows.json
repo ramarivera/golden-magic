@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "state target"
+  },
+  {
+    "name": "chrome",
+    "value": "connected page-1"
+  },
+  {
+    "name": "headless",
+    "value": "idle page-2"
+  },
+  {
+    "name": "recorder",
+    "value": "connected page-3"
+  }
+]

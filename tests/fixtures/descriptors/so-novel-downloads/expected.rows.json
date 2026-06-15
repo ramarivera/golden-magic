@@ -1,0 +1,18 @@
+[
+  {
+    "name": "novel",
+    "value": "state chapters"
+  },
+  {
+    "name": "chapter-1",
+    "value": "done 1"
+  },
+  {
+    "name": "chapter-2",
+    "value": "queued 1"
+  },
+  {
+    "name": "volume-1",
+    "value": "running 12"
+  }
+]

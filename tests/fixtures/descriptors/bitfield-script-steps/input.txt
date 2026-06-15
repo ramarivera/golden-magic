@@ -1,0 +1,4 @@
+step	state command
+filter	ready grep
+map	ready awk
+write	pending tee

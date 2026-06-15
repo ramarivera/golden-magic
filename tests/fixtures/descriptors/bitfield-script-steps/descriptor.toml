@@ -1,0 +1,10 @@
+id = "known.bitfield-script.steps"
+name = "bitfield script step list"
+priority = 50
+
+[matches]
+required_substrings = ["step\tstate","filter\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

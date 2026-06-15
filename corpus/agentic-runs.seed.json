@@ -8908,5 +8908,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/bitfield/script",
+    "descriptor_id": "known.bitfield-script.steps",
+    "run_id": "agentic.bitfield-script-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bitfield-script-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bitfield-script-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "state row",
+      "command field"
+    ],
+    "transcript": [
+      "selected descriptor known.bitfield-script.steps for bitfield script step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/freeok/so-novel",
+    "descriptor_id": "known.so-novel.downloads",
+    "run_id": "agentic.so-novel-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/so-novel-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/so-novel-downloads/expected.rows.json",
+    "variants": [
+      "novel header row",
+      "state row",
+      "chapters field"
+    ],
+    "transcript": [
+      "selected descriptor known.so-novel.downloads for so-novel download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/go-rod/rod",
+    "descriptor_id": "known.rod.sessions",
+    "run_id": "agentic.rod-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rod-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rod-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.rod.sessions for rod browser session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fujiapple852/trippy",
+    "descriptor_id": "known.trippy.hops",
+    "run_id": "agentic.trippy-hops.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/trippy-hops/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/trippy-hops/expected.rows.json",
+    "variants": [
+      "hop header row",
+      "loss row",
+      "host field"
+    ],
+    "transcript": [
+      "selected descriptor known.trippy.hops for trippy hop list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/XuehaiPan/nvitop",
+    "descriptor_id": "known.nvitop.devices",
+    "run_id": "agentic.nvitop-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nvitop-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nvitop-devices/expected.rows.json",
+    "variants": [
+      "gpu header row",
+      "mem row",
+      "util field"
+    ],
+    "transcript": [
+      "selected descriptor known.nvitop.devices for nvitop device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

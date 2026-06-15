@@ -5698,5 +5698,65 @@
     "negative": "process pid signal\nnode 4242 TERM\n",
     "analysis_notes": "Modeled fkill-cli process output with a generated executable-json parser plugin.",
     "variants": ["process header row", "pid row", "signal field"]
+  },
+  {
+    "fixture": "bitfield-script-steps",
+    "descriptor_id": "known.bitfield-script.steps",
+    "name": "bitfield script step list",
+    "repo": "https://github.com/bitfield/script",
+    "required_substrings": ["step\tstate", "filter\tready"],
+    "parser": "tab-pairs",
+    "input": "step\tstate command\nfilter\tready grep\nmap\tready awk\nwrite\tpending tee\n",
+    "negative": "step state command\nfilter ready grep\n",
+    "analysis_notes": "Modeled bitfield/script pipeline step output with a generated executable-json parser plugin.",
+    "variants": ["step header row", "state row", "command field"]
+  },
+  {
+    "fixture": "so-novel-downloads",
+    "descriptor_id": "known.so-novel.downloads",
+    "name": "so-novel download list",
+    "repo": "https://github.com/freeok/so-novel",
+    "required_substrings": ["novel\tstate", "chapter-1\tdone"],
+    "parser": "tab-pairs",
+    "input": "novel\tstate chapters\nchapter-1\tdone 1\nchapter-2\tqueued 1\nvolume-1\trunning 12\n",
+    "negative": "novel state chapters\nchapter-1 done 1\n",
+    "analysis_notes": "Modeled so-novel download output with a generated executable-json parser plugin.",
+    "variants": ["novel header row", "state row", "chapters field"]
+  },
+  {
+    "fixture": "rod-sessions",
+    "descriptor_id": "known.rod.sessions",
+    "name": "rod browser session list",
+    "repo": "https://github.com/go-rod/rod",
+    "required_substrings": ["session\tstate", "chrome\tconnected"],
+    "parser": "tab-pairs",
+    "input": "session\tstate target\nchrome\tconnected page-1\nheadless\tidle page-2\nrecorder\tconnected page-3\n",
+    "negative": "session state target\nchrome connected page-1\n",
+    "analysis_notes": "Modeled rod browser session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "target field"]
+  },
+  {
+    "fixture": "trippy-hops",
+    "descriptor_id": "known.trippy.hops",
+    "name": "trippy hop list",
+    "repo": "https://github.com/fujiapple852/trippy",
+    "required_substrings": ["hop\tloss", "1\t0.0"],
+    "parser": "tab-pairs",
+    "input": "hop\tloss host\n1\t0.0 router\n2\t1.2 isp\n3\t0.0 example.com\n",
+    "negative": "hop loss host\n1 0.0 router\n",
+    "analysis_notes": "Modeled trippy hop output with a generated executable-json parser plugin.",
+    "variants": ["hop header row", "loss row", "host field"]
+  },
+  {
+    "fixture": "nvitop-devices",
+    "descriptor_id": "known.nvitop.devices",
+    "name": "nvitop device list",
+    "repo": "https://github.com/XuehaiPan/nvitop",
+    "required_substrings": ["gpu\tmem", "0\t8192"],
+    "parser": "tab-pairs",
+    "input": "gpu\tmem util\n0\t8192 45\n1\t24576 92\n2\t16384 10\n",
+    "negative": "gpu mem util\n0 8192 45\n",
+    "analysis_notes": "Modeled nvitop GPU device output with a generated executable-json parser plugin.",
+    "variants": ["gpu header row", "mem row", "util field"]
   }
 ]

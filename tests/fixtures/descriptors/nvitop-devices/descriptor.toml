@@ -1,0 +1,10 @@
+id = "known.nvitop.devices"
+name = "nvitop device list"
+priority = 50
+
+[matches]
+required_substrings = ["gpu\tmem","0\t8192"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -3463,5 +3463,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/fkill-processes",
     "analysis_notes": "Modeled fkill-cli process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bitfield/script",
+    "descriptor_id": "known.bitfield-script.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bitfield-script-steps",
+    "analysis_notes": "Modeled bitfield/script pipeline step output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/freeok/so-novel",
+    "descriptor_id": "known.so-novel.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/so-novel-downloads",
+    "analysis_notes": "Modeled so-novel download output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/go-rod/rod",
+    "descriptor_id": "known.rod.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rod-sessions",
+    "analysis_notes": "Modeled rod browser session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fujiapple852/trippy",
+    "descriptor_id": "known.trippy.hops",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/trippy-hops",
+    "analysis_notes": "Modeled trippy hop output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/XuehaiPan/nvitop",
+    "descriptor_id": "known.nvitop.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nvitop-devices",
+    "analysis_notes": "Modeled nvitop GPU device output with a generated executable-json parser plugin."
   }
 ]

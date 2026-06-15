@@ -1,0 +1,2 @@
+hop loss host
+1 0.0 router

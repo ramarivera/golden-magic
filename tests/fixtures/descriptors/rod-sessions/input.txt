@@ -1,0 +1,4 @@
+session	state target
+chrome	connected page-1
+headless	idle page-2
+recorder	connected page-3

@@ -1,0 +1,4 @@
+novel	state chapters
+chapter-1	done 1
+chapter-2	queued 1
+volume-1	running 12

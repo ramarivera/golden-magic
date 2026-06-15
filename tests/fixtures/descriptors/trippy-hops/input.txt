@@ -1,0 +1,4 @@
+hop	loss host
+1	0.0 router
+2	1.2 isp
+3	0.0 example.com
