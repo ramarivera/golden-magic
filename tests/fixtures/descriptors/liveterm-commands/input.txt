@@ -1,0 +1,4 @@
+command	visible route
+about	yes /about
+projects	yes /projects
+secret	no /hidden

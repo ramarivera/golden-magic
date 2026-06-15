@@ -1,0 +1,2 @@
+watch interval state
+logs 2s running

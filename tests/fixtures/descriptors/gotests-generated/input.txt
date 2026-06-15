@@ -1,0 +1,4 @@
+test	function file
+TestParse	Parse parser_test.go
+TestRun	Run runner_test.go
+TestFormat	Format format_test.go

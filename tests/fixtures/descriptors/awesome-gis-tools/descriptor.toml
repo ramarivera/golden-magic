@@ -1,0 +1,10 @@
+id = "known.awesome-gis.tools"
+name = "awesome-gis tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tdomain","qgis\tdesktop"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

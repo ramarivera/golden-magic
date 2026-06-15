@@ -1,0 +1,10 @@
+id = "known.evil-winrm.sessions"
+name = "evil-winrm session list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstate","lab-host\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

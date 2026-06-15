@@ -1,0 +1,10 @@
+id = "known.liveterm.commands"
+name = "LiveTerm command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tvisible","about\tyes"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

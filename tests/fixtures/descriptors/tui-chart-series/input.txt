@@ -1,0 +1,4 @@
+series	points type
+sales	12 line
+cost	12 bar
+profit	12 area

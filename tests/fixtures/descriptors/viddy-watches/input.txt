@@ -1,0 +1,4 @@
+watch	interval state
+logs	2s running
+status	5s running
+metrics	10s paused

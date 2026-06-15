@@ -1,0 +1,4 @@
+tool	category status
+hardhat	framework active
+foundry	framework active
+geth	node active

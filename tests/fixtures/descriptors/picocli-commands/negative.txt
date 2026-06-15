@@ -1,0 +1,2 @@
+command arity status
+commit 2 ready

@@ -1,0 +1,2 @@
+series points type
+sales 12 line

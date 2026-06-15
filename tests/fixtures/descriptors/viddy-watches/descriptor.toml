@@ -1,0 +1,10 @@
+id = "known.viddy.watches"
+name = "viddy watch list"
+priority = 50
+
+[matches]
+required_substrings = ["watch\tinterval","logs\t2s"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

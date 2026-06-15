@@ -4163,5 +4163,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/shimmy-models",
     "analysis_notes": "Modeled shimmy model output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Consensys/ethereum-developer-tools-list",
+    "descriptor_id": "known.ethereum-developer-tools.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ethereum-developer-tools",
+    "analysis_notes": "Modeled ethereum-developer-tools-list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Cveinnt/LiveTerm",
+    "descriptor_id": "known.liveterm.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/liveterm-commands",
+    "analysis_notes": "Modeled LiveTerm command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nhn/tui.chart",
+    "descriptor_id": "known.tui-chart.series",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-chart-series",
+    "analysis_notes": "Modeled tui.chart series output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Hackplayers/evil-winrm",
+    "descriptor_id": "known.evil-winrm.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/evil-winrm-sessions",
+    "analysis_notes": "Modeled evil-winrm session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tw93/Kaku",
+    "descriptor_id": "known.kaku.terminals",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kaku-terminals",
+    "analysis_notes": "Modeled Kaku terminal output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sshuair/awesome-gis",
+    "descriptor_id": "known.awesome-gis.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-gis-tools",
+    "analysis_notes": "Modeled awesome-gis tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/remkop/picocli",
+    "descriptor_id": "known.picocli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/picocli-commands",
+    "analysis_notes": "Modeled picocli command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sachaos/viddy",
+    "descriptor_id": "known.viddy.watches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/viddy-watches",
+    "analysis_notes": "Modeled viddy watch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/teddysun/across",
+    "descriptor_id": "known.across.nodes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/across-nodes",
+    "analysis_notes": "Modeled across node output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cweill/gotests",
+    "descriptor_id": "known.gotests.generated",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gotests-generated",
+    "analysis_notes": "Modeled gotests generated output with a generated executable-json parser plugin."
   }
 ]

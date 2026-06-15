@@ -1,0 +1,4 @@
+target	state user
+lab-host	connected administrator
+jumpbox	closed operator
+dc01	queued auditor

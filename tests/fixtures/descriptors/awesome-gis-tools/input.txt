@@ -1,0 +1,4 @@
+tool	domain license
+qgis	desktop gpl
+postgis	database gpl
+gdal	cli mit

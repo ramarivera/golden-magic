@@ -1,0 +1,10 @@
+id = "known.ethereum-developer-tools.tools"
+name = "ethereum developer tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tcategory","hardhat\tframework"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

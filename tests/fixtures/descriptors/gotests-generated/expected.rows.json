@@ -1,0 +1,18 @@
+[
+  {
+    "name": "test",
+    "value": "function file"
+  },
+  {
+    "name": "TestParse",
+    "value": "Parse parser_test.go"
+  },
+  {
+    "name": "TestRun",
+    "value": "Run runner_test.go"
+  },
+  {
+    "name": "TestFormat",
+    "value": "Format format_test.go"
+  }
+]

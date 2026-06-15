@@ -10708,5 +10708,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Consensys/ethereum-developer-tools-list",
+    "descriptor_id": "known.ethereum-developer-tools.tools",
+    "run_id": "agentic.ethereum-developer-tools-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ethereum-developer-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ethereum-developer-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.ethereum-developer-tools.tools for ethereum developer tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Cveinnt/LiveTerm",
+    "descriptor_id": "known.liveterm.commands",
+    "run_id": "agentic.liveterm-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/liveterm-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/liveterm-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "visible row",
+      "route field"
+    ],
+    "transcript": [
+      "selected descriptor known.liveterm.commands for LiveTerm command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nhn/tui.chart",
+    "descriptor_id": "known.tui-chart.series",
+    "run_id": "agentic.tui-chart-series.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-chart-series/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-chart-series/expected.rows.json",
+    "variants": [
+      "series header row",
+      "points row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui-chart.series for tui.chart series list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Hackplayers/evil-winrm",
+    "descriptor_id": "known.evil-winrm.sessions",
+    "run_id": "agentic.evil-winrm-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/evil-winrm-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/evil-winrm-sessions/expected.rows.json",
+    "variants": [
+      "target header row",
+      "state row",
+      "user field"
+    ],
+    "transcript": [
+      "selected descriptor known.evil-winrm.sessions for evil-winrm session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tw93/Kaku",
+    "descriptor_id": "known.kaku.terminals",
+    "run_id": "agentic.kaku-terminals.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kaku-terminals/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kaku-terminals/expected.rows.json",
+    "variants": [
+      "terminal header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kaku.terminals for Kaku terminal list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sshuair/awesome-gis",
+    "descriptor_id": "known.awesome-gis.tools",
+    "run_id": "agentic.awesome-gis-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-gis-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-gis-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "domain row",
+      "license field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-gis.tools for awesome-gis tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/remkop/picocli",
+    "descriptor_id": "known.picocli.commands",
+    "run_id": "agentic.picocli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/picocli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/picocli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "arity row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.picocli.commands for picocli command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sachaos/viddy",
+    "descriptor_id": "known.viddy.watches",
+    "run_id": "agentic.viddy-watches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/viddy-watches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/viddy-watches/expected.rows.json",
+    "variants": [
+      "watch header row",
+      "interval row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.viddy.watches for viddy watch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/teddysun/across",
+    "descriptor_id": "known.across.nodes",
+    "run_id": "agentic.across-nodes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/across-nodes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/across-nodes/expected.rows.json",
+    "variants": [
+      "node header row",
+      "region row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.across.nodes for across node list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cweill/gotests",
+    "descriptor_id": "known.gotests.generated",
+    "run_id": "agentic.gotests-generated.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gotests-generated/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gotests-generated/expected.rows.json",
+    "variants": [
+      "test header row",
+      "function row",
+      "file field"
+    ],
+    "transcript": [
+      "selected descriptor known.gotests.generated for gotests generated test list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.kaku.terminals"
+name = "Kaku terminal list"
+priority = 50
+
+[matches]
+required_substrings = ["terminal\tmodel","main\tcodex"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

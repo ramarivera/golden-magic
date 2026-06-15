@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "visible route"
+  },
+  {
+    "name": "about",
+    "value": "yes /about"
+  },
+  {
+    "name": "projects",
+    "value": "yes /projects"
+  },
+  {
+    "name": "secret",
+    "value": "no /hidden"
+  }
+]

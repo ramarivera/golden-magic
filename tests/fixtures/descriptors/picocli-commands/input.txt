@@ -1,0 +1,4 @@
+command	arity status
+commit	2 ready
+push	1 ready
+release	3 hidden

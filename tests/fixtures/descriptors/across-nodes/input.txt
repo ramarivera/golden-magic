@@ -1,0 +1,4 @@
+node	region state
+proxy-us	us active
+proxy-eu	eu active
+proxy-apac	apac queued
