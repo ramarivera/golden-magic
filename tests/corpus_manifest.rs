@@ -90,6 +90,10 @@ fn corpus_query_partitions_are_broad_enough_to_scale_discovery() {
         "query partitions should include a lower star window toward 10k"
     );
     assert!(
+        queries.iter().any(|query| query.contains("stars:25..50")),
+        "query partitions should include an objective tail window to fill the 10k corpus"
+    );
+    assert!(
         queries.iter().any(|query| query.contains("language:Rust")),
         "query partitions should include language windows"
     );
@@ -360,14 +364,14 @@ fn agentic_run_manifest_backs_agentic_corpus_claims() {
 }
 
 #[test]
-fn full_corpus_completion_requires_ten_thousand_entries() {
+fn seed_corpus_contains_at_least_ten_thousand_ranked_entries() {
     let entries: Vec<CorpusEntry> =
         serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
             .expect("seed corpus parses");
 
     assert!(
-        entries.len() < 10_000,
-        "rename this test when corpus/cli-tools.seed.json becomes the full 10k corpus"
+        entries.len() >= 10_000,
+        "seed corpus must preserve at least the requested 10k ranked CLI/tool candidates"
     );
 }
 
