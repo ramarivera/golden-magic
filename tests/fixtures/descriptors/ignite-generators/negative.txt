@@ -1,0 +1,2 @@
+generator status files
+component ready 3

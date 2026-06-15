@@ -1,0 +1,10 @@
+id = "known.typer.commands"
+name = "Typer command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\toption","serve\t--port"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+operation	cache latency
+GetUser	hit 12ms
+ListRepos	miss 48ms
+UpdateName	write 31ms

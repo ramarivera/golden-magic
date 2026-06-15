@@ -1,0 +1,18 @@
+[
+  {
+    "name": "app",
+    "value": "category language"
+  },
+  {
+    "name": "fzf",
+    "value": "finder Go"
+  },
+  {
+    "name": "ripgrep",
+    "value": "search Rust"
+  },
+  {
+    "name": "httpie",
+    "value": "http Python"
+  }
+]

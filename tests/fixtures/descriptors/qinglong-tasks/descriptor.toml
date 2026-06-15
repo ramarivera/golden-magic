@@ -1,0 +1,10 @@
+id = "known.qinglong.tasks"
+name = "QingLong task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","daily-checkin\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.apollo-client.operations"
+name = "Apollo Client operation list"
+priority = 50
+
+[matches]
+required_substrings = ["operation\tcache","GetUser\thit"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

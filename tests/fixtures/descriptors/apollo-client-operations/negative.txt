@@ -1,0 +1,2 @@
+operation cache latency
+GetUser hit 12ms

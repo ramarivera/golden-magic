@@ -1,0 +1,4 @@
+app	category language
+fzf	finder Go
+ripgrep	search Rust
+httpie	http Python

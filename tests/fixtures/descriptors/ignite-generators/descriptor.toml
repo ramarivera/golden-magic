@@ -1,0 +1,10 @@
+id = "known.ignite.generators"
+name = "Ignite generator list"
+priority = 50
+
+[matches]
+required_substrings = ["generator\tstatus","component\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

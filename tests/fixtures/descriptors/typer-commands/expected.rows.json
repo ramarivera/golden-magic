@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "option callback"
+  },
+  {
+    "name": "serve",
+    "value": "--port run_server"
+  },
+  {
+    "name": "users",
+    "value": "--limit list_users"
+  },
+  {
+    "name": "version",
+    "value": "--json show_version"
+  }
+]

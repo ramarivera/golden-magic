@@ -1,0 +1,2 @@
+task status schedule
+daily-checkin running 0_8_*_*_*

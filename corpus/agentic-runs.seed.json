@@ -4858,5 +4858,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/infinitered/ignite",
+    "descriptor_id": "known.ignite.generators",
+    "run_id": "agentic.ignite-generators.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ignite-generators/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ignite-generators/expected.rows.json",
+    "variants": [
+      "generator header row",
+      "status row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.ignite.generators for Ignite generator list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/apollographql/apollo-client",
+    "descriptor_id": "known.apollo-client.operations",
+    "run_id": "agentic.apollo-client-operations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/apollo-client-operations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/apollo-client-operations/expected.rows.json",
+    "variants": [
+      "operation header row",
+      "cache row",
+      "latency field"
+    ],
+    "transcript": [
+      "selected descriptor known.apollo-client.operations for Apollo Client operation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/agarrharr/awesome-cli-apps",
+    "descriptor_id": "known.awesome-cli-apps.index",
+    "run_id": "agentic.awesome-cli-apps-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-cli-apps-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-cli-apps-index/expected.rows.json",
+    "variants": [
+      "app header row",
+      "category row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-cli-apps.index for awesome-cli-apps index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/whyour/qinglong",
+    "descriptor_id": "known.qinglong.tasks",
+    "run_id": "agentic.qinglong-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qinglong-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qinglong-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "schedule field"
+    ],
+    "transcript": [
+      "selected descriptor known.qinglong.tasks for QingLong task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fastapi/typer",
+    "descriptor_id": "known.typer.commands",
+    "run_id": "agentic.typer-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/typer-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/typer-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "option row",
+      "callback field"
+    ],
+    "transcript": [
+      "selected descriptor known.typer.commands for Typer command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

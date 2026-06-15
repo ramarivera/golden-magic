@@ -2998,5 +2998,65 @@
     "negative": "workflow state steps\nresearch running 6\n",
     "analysis_notes": "Modeled Suna workflow output with a generated executable-json parser plugin.",
     "variants": ["workflow header row", "state row", "steps field"]
+  },
+  {
+    "fixture": "ignite-generators",
+    "descriptor_id": "known.ignite.generators",
+    "name": "Ignite generator list",
+    "repo": "https://github.com/infinitered/ignite",
+    "required_substrings": ["generator\tstatus", "component\tready"],
+    "parser": "tab-pairs",
+    "input": "generator\tstatus files\ncomponent\tready 3\nscreen\tready 4\nmodel\tbeta 2\n",
+    "negative": "generator status files\ncomponent ready 3\n",
+    "analysis_notes": "Modeled Ignite generator output with a generated executable-json parser plugin.",
+    "variants": ["generator header row", "status row", "files field"]
+  },
+  {
+    "fixture": "apollo-client-operations",
+    "descriptor_id": "known.apollo-client.operations",
+    "name": "Apollo Client operation list",
+    "repo": "https://github.com/apollographql/apollo-client",
+    "required_substrings": ["operation\tcache", "GetUser\thit"],
+    "parser": "tab-pairs",
+    "input": "operation\tcache latency\nGetUser\thit 12ms\nListRepos\tmiss 48ms\nUpdateName\twrite 31ms\n",
+    "negative": "operation cache latency\nGetUser hit 12ms\n",
+    "analysis_notes": "Modeled Apollo Client operation output with a generated executable-json parser plugin.",
+    "variants": ["operation header row", "cache row", "latency field"]
+  },
+  {
+    "fixture": "awesome-cli-apps-index",
+    "descriptor_id": "known.awesome-cli-apps.index",
+    "name": "awesome-cli-apps index",
+    "repo": "https://github.com/agarrharr/awesome-cli-apps",
+    "required_substrings": ["app\tcategory", "fzf\tfinder"],
+    "parser": "tab-pairs",
+    "input": "app\tcategory language\nfzf\tfinder Go\nripgrep\tsearch Rust\nhttpie\thttp Python\n",
+    "negative": "app category language\nfzf finder Go\n",
+    "analysis_notes": "Modeled awesome-cli-apps index output with a generated executable-json parser plugin.",
+    "variants": ["app header row", "category row", "language field"]
+  },
+  {
+    "fixture": "qinglong-tasks",
+    "descriptor_id": "known.qinglong.tasks",
+    "name": "QingLong task list",
+    "repo": "https://github.com/whyour/qinglong",
+    "required_substrings": ["task\tstatus", "daily-checkin\trunning"],
+    "parser": "tab-pairs",
+    "input": "task\tstatus schedule\ndaily-checkin\trunning 0_8_*_*_*\ncleanup\tqueued 0_3_*_*_*\nnotify\tdone manual\n",
+    "negative": "task status schedule\ndaily-checkin running 0_8_*_*_*\n",
+    "analysis_notes": "Modeled QingLong task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "status row", "schedule field"]
+  },
+  {
+    "fixture": "typer-commands",
+    "descriptor_id": "known.typer.commands",
+    "name": "Typer command list",
+    "repo": "https://github.com/fastapi/typer",
+    "required_substrings": ["command\toption", "serve\t--port"],
+    "parser": "tab-pairs",
+    "input": "command\toption callback\nserve\t--port run_server\nusers\t--limit list_users\nversion\t--json show_version\n",
+    "negative": "command option callback\nserve --port run_server\n",
+    "analysis_notes": "Modeled Typer command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "option row", "callback field"]
   }
 ]

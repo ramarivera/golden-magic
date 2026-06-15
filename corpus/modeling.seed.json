@@ -1888,5 +1888,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/suna-workflows",
     "analysis_notes": "Modeled Suna workflow output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/infinitered/ignite",
+    "descriptor_id": "known.ignite.generators",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ignite-generators",
+    "analysis_notes": "Modeled Ignite generator output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/apollographql/apollo-client",
+    "descriptor_id": "known.apollo-client.operations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/apollo-client-operations",
+    "analysis_notes": "Modeled Apollo Client operation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/agarrharr/awesome-cli-apps",
+    "descriptor_id": "known.awesome-cli-apps.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-cli-apps-index",
+    "analysis_notes": "Modeled awesome-cli-apps index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/whyour/qinglong",
+    "descriptor_id": "known.qinglong.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qinglong-tasks",
+    "analysis_notes": "Modeled QingLong task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fastapi/typer",
+    "descriptor_id": "known.typer.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/typer-commands",
+    "analysis_notes": "Modeled Typer command output with a generated executable-json parser plugin."
   }
 ]

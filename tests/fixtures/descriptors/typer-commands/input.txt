@@ -1,0 +1,4 @@
+command	option callback
+serve	--port run_server
+users	--limit list_users
+version	--json show_version

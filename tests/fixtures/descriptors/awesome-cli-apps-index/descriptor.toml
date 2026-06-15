@@ -1,0 +1,10 @@
+id = "known.awesome-cli-apps.index"
+name = "awesome-cli-apps index"
+priority = 50
+
+[matches]
+required_substrings = ["app\tcategory","fzf\tfinder"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

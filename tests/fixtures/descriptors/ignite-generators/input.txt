@@ -1,0 +1,4 @@
+generator	status files
+component	ready 3
+screen	ready 4
+model	beta 2
