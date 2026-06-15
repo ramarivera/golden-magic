@@ -1258,5 +1258,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/klaudiosinani/taskbook",
+    "descriptor_id": "known.taskbook.list",
+    "run_id": "agentic.taskbook-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/taskbook-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/taskbook-list/expected.rows.json",
+    "variants": [
+      "task header row",
+      "done task row",
+      "open task row"
+    ],
+    "transcript": [
+      "selected descriptor known.taskbook.list for taskbook task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/terkelg/prompts",
+    "descriptor_id": "known.prompts.selection",
+    "run_id": "agentic.prompts-selection.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/prompts-selection/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/prompts-selection/expected.rows.json",
+    "variants": [
+      "prompt name row",
+      "selected value row",
+      "confirmation row"
+    ],
+    "transcript": [
+      "selected descriptor known.prompts.selection for prompts selection summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/voidcosmos/npkill",
+    "descriptor_id": "known.npkill.candidates",
+    "run_id": "agentic.npkill-candidates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/npkill-candidates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/npkill-candidates/expected.rows.json",
+    "variants": [
+      "path header row",
+      "node_modules row",
+      "nested node_modules row"
+    ],
+    "transcript": [
+      "selected descriptor known.npkill.candidates for npkill candidate list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/klaudiosinani/signale",
+    "descriptor_id": "known.signale.log",
+    "run_id": "agentic.signale-log.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/signale-log/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/signale-log/expected.rows.json",
+    "variants": [
+      "level row",
+      "message row",
+      "scope row"
+    ],
+    "transcript": [
+      "selected descriptor known.signale.log for signale log fields output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rastapasta/mapscii",
+    "descriptor_id": "known.mapscii.location",
+    "run_id": "agentic.mapscii-location.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mapscii-location/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mapscii-location/expected.rows.json",
+    "variants": [
+      "latitude row",
+      "longitude row",
+      "label row"
+    ],
+    "transcript": [
+      "selected descriptor known.mapscii.location for mapscii location summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

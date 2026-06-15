@@ -1,0 +1,4 @@
+task	status priority
+Ship parser	done high
+Write fixtures	open medium
+Review docs	open low

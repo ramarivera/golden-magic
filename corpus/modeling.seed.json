@@ -488,5 +488,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/lf-selection",
     "analysis_notes": "Modeled lf selected-file summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/klaudiosinani/taskbook",
+    "descriptor_id": "known.taskbook.list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/taskbook-list",
+    "analysis_notes": "Modeled taskbook task-list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/terkelg/prompts",
+    "descriptor_id": "known.prompts.selection",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/prompts-selection",
+    "analysis_notes": "Modeled prompts selection summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/voidcosmos/npkill",
+    "descriptor_id": "known.npkill.candidates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/npkill-candidates",
+    "analysis_notes": "Modeled npkill candidate list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/klaudiosinani/signale",
+    "descriptor_id": "known.signale.log",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/signale-log",
+    "analysis_notes": "Modeled signale structured log fields with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rastapasta/mapscii",
+    "descriptor_id": "known.mapscii.location",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mapscii-location",
+    "analysis_notes": "Modeled mapscii location summary output with a generated executable-json parser plugin."
   }
 ]

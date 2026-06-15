@@ -1,0 +1,10 @@
+id = "known.mapscii.location"
+name = "mapscii location summary"
+priority = 50
+
+[matches]
+required_substrings = ["latitude:","longitude:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

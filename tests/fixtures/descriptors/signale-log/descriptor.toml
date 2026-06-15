@@ -1,0 +1,10 @@
+id = "known.signale.log"
+name = "signale log fields"
+priority = 50
+
+[matches]
+required_substrings = ["level:","message:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

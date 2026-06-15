@@ -1,0 +1,3 @@
+path	size modified
+node_modules	842M 2026-06-14
+packages/app/node_modules	318M 2026-06-13

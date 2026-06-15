@@ -1,0 +1,10 @@
+id = "known.taskbook.list"
+name = "taskbook task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","Ship parser\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

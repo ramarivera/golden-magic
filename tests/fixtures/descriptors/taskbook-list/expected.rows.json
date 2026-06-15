@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "status priority"
+  },
+  {
+    "name": "Ship parser",
+    "value": "done high"
+  },
+  {
+    "name": "Write fixtures",
+    "value": "open medium"
+  },
+  {
+    "name": "Review docs",
+    "value": "open low"
+  }
+]

@@ -598,5 +598,65 @@
     "negative": "selected README.md\npath /Users/ramiro/dev/golden-magic/README.md\n",
     "analysis_notes": "Modeled lf selected-file summary output with a generated executable-json parser plugin.",
     "variants": ["selected filename row", "path row", "size row"]
+  },
+  {
+    "fixture": "taskbook-list",
+    "descriptor_id": "known.taskbook.list",
+    "name": "taskbook task list",
+    "repo": "https://github.com/klaudiosinani/taskbook",
+    "required_substrings": ["task\tstatus", "Ship parser\tdone"],
+    "parser": "tab-pairs",
+    "input": "task\tstatus priority\nShip parser\tdone high\nWrite fixtures\topen medium\nReview docs\topen low\n",
+    "negative": "task status priority\nShip parser done high\n",
+    "analysis_notes": "Modeled taskbook task-list output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "done task row", "open task row"]
+  },
+  {
+    "fixture": "prompts-selection",
+    "descriptor_id": "known.prompts.selection",
+    "name": "prompts selection summary",
+    "repo": "https://github.com/terkelg/prompts",
+    "required_substrings": ["name:", "value:"],
+    "parser": "colon-kv",
+    "input": "name: environment\nvalue: production\nconfirmed: true\nindex: 2\n",
+    "negative": "name environment\nvalue production\n",
+    "analysis_notes": "Modeled prompts selection summary output with a generated executable-json parser plugin.",
+    "variants": ["prompt name row", "selected value row", "confirmation row"]
+  },
+  {
+    "fixture": "npkill-candidates",
+    "descriptor_id": "known.npkill.candidates",
+    "name": "npkill candidate list",
+    "repo": "https://github.com/voidcosmos/npkill",
+    "required_substrings": ["path\tsize", "node_modules\t842M"],
+    "parser": "tab-pairs",
+    "input": "path\tsize modified\nnode_modules\t842M 2026-06-14\npackages/app/node_modules\t318M 2026-06-13\n",
+    "negative": "path size modified\nnode_modules 842M 2026-06-14\n",
+    "analysis_notes": "Modeled npkill candidate list output with a generated executable-json parser plugin.",
+    "variants": ["path header row", "node_modules row", "nested node_modules row"]
+  },
+  {
+    "fixture": "signale-log",
+    "descriptor_id": "known.signale.log",
+    "name": "signale log fields",
+    "repo": "https://github.com/klaudiosinani/signale",
+    "required_substrings": ["level:", "message:"],
+    "parser": "colon-kv",
+    "input": "level: success\nmessage: Build completed\nscope: golden-magic\ntime: 10:30:15\n",
+    "negative": "level success\nmessage Build completed\n",
+    "analysis_notes": "Modeled signale structured log fields with a generated executable-json parser plugin.",
+    "variants": ["level row", "message row", "scope row"]
+  },
+  {
+    "fixture": "mapscii-location",
+    "descriptor_id": "known.mapscii.location",
+    "name": "mapscii location summary",
+    "repo": "https://github.com/rastapasta/mapscii",
+    "required_substrings": ["latitude:", "longitude:"],
+    "parser": "colon-kv",
+    "input": "latitude: 52.5200\nlongitude: 13.4050\nzoom: 12\nlabel: Berlin\n",
+    "negative": "latitude 52.5200\nlongitude 13.4050\n",
+    "analysis_notes": "Modeled mapscii location summary output with a generated executable-json parser plugin.",
+    "variants": ["latitude row", "longitude row", "label row"]
   }
 ]

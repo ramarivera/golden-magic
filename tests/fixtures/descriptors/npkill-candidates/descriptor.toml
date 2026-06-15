@@ -1,0 +1,10 @@
+id = "known.npkill.candidates"
+name = "npkill candidate list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tsize","node_modules\t842M"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
