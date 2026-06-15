@@ -1,0 +1,10 @@
+id = "known.fkill.processes"
+name = "fkill process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tpid","node\t4242"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

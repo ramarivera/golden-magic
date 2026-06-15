@@ -1,0 +1,4 @@
+name	category url
+lighthouse	audit chrome://lighthouse
+protocol	debug https://chromedevtools.github.io/devtools-protocol
+recorder	automation chrome://recorder

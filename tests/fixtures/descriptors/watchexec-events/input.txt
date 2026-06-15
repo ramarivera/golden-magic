@@ -1,0 +1,4 @@
+event	path command
+write	src/main.rs cargo-test
+create	tmp/cache touch
+delete	old.log cleanup

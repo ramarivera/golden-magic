@@ -1,0 +1,10 @@
+id = "known.git-quick-stats.authors"
+name = "git-quick-stats author list"
+priority = 50
+
+[matches]
+required_substrings = ["author\tcommits","Ramiro\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

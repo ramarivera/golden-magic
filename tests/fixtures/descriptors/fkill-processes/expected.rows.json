@@ -1,0 +1,18 @@
+[
+  {
+    "name": "process",
+    "value": "pid signal"
+  },
+  {
+    "name": "node",
+    "value": "4242 TERM"
+  },
+  {
+    "name": "chrome",
+    "value": "5151 KILL"
+  },
+  {
+    "name": "vite",
+    "value": "6262 TERM"
+  }
+]

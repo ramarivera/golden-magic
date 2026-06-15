@@ -1,0 +1,4 @@
+process	pid signal
+node	4242 TERM
+chrome	5151 KILL
+vite	6262 TERM

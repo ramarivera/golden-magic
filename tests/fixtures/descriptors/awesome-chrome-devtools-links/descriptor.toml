@@ -1,0 +1,10 @@
+id = "known.awesome-chrome-devtools.links"
+name = "awesome-chrome-devtools link list"
+priority = 50
+
+[matches]
+required_substrings = ["name\tcategory","lighthouse\taudit"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

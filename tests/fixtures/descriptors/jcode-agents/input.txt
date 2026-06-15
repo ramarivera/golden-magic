@@ -1,0 +1,4 @@
+agent	state task
+builder	active compile
+reviewer	idle lint
+planner	active design

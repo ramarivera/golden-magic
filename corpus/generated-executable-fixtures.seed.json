@@ -5638,5 +5638,65 @@
     "negative": "plugin state version\nlauncher loaded 1.0\n",
     "analysis_notes": "Modeled OpenShell plugin output with a generated executable-json parser plugin.",
     "variants": ["plugin header row", "state row", "version field"]
+  },
+  {
+    "fixture": "jcode-agents",
+    "descriptor_id": "known.jcode.agents",
+    "name": "jcode agent list",
+    "repo": "https://github.com/1jehuang/jcode",
+    "required_substrings": ["agent\tstate", "builder\tactive"],
+    "parser": "tab-pairs",
+    "input": "agent\tstate task\nbuilder\tactive compile\nreviewer\tidle lint\nplanner\tactive design\n",
+    "negative": "agent state task\nbuilder active compile\n",
+    "analysis_notes": "Modeled jcode agent output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "state row", "task field"]
+  },
+  {
+    "fixture": "awesome-chrome-devtools-links",
+    "descriptor_id": "known.awesome-chrome-devtools.links",
+    "name": "awesome-chrome-devtools link list",
+    "repo": "https://github.com/ChromeDevTools/awesome-chrome-devtools",
+    "required_substrings": ["name\tcategory", "lighthouse\taudit"],
+    "parser": "tab-pairs",
+    "input": "name\tcategory url\nlighthouse\taudit chrome://lighthouse\nprotocol\tdebug https://chromedevtools.github.io/devtools-protocol\nrecorder\tautomation chrome://recorder\n",
+    "negative": "name category url\nlighthouse audit chrome://lighthouse\n",
+    "analysis_notes": "Modeled awesome-chrome-devtools link output with a generated executable-json parser plugin.",
+    "variants": ["name header row", "category row", "url field"]
+  },
+  {
+    "fixture": "watchexec-events",
+    "descriptor_id": "known.watchexec.events",
+    "name": "watchexec event list",
+    "repo": "https://github.com/watchexec/watchexec",
+    "required_substrings": ["event\tpath", "write\tsrc/main.rs"],
+    "parser": "tab-pairs",
+    "input": "event\tpath command\nwrite\tsrc/main.rs cargo-test\ncreate\ttmp/cache touch\ndelete\told.log cleanup\n",
+    "negative": "event path command\nwrite src/main.rs cargo-test\n",
+    "analysis_notes": "Modeled watchexec event output with a generated executable-json parser plugin.",
+    "variants": ["event header row", "path row", "command field"]
+  },
+  {
+    "fixture": "git-quick-stats-authors",
+    "descriptor_id": "known.git-quick-stats.authors",
+    "name": "git-quick-stats author list",
+    "repo": "https://github.com/git-quick-stats/git-quick-stats",
+    "required_substrings": ["author\tcommits", "Ramiro\t42"],
+    "parser": "tab-pairs",
+    "input": "author\tcommits files\nRamiro\t42 120\nCodex\t18 44\nBot\t7 16\n",
+    "negative": "author commits files\nRamiro 42 120\n",
+    "analysis_notes": "Modeled git-quick-stats author output with a generated executable-json parser plugin.",
+    "variants": ["author header row", "commits row", "files field"]
+  },
+  {
+    "fixture": "fkill-processes",
+    "descriptor_id": "known.fkill.processes",
+    "name": "fkill process list",
+    "repo": "https://github.com/sindresorhus/fkill-cli",
+    "required_substrings": ["process\tpid", "node\t4242"],
+    "parser": "tab-pairs",
+    "input": "process\tpid signal\nnode\t4242 TERM\nchrome\t5151 KILL\nvite\t6262 TERM\n",
+    "negative": "process pid signal\nnode 4242 TERM\n",
+    "analysis_notes": "Modeled fkill-cli process output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "pid row", "signal field"]
   }
 ]

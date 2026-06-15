@@ -1,0 +1,2 @@
+event path command
+write src/main.rs cargo-test

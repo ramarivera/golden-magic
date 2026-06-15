@@ -1,0 +1,10 @@
+id = "known.jcode.agents"
+name = "jcode agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\tstate","builder\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

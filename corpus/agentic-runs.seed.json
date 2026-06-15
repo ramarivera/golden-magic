@@ -8818,5 +8818,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/1jehuang/jcode",
+    "descriptor_id": "known.jcode.agents",
+    "run_id": "agentic.jcode-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jcode-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jcode-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "state row",
+      "task field"
+    ],
+    "transcript": [
+      "selected descriptor known.jcode.agents for jcode agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/awesome-chrome-devtools",
+    "descriptor_id": "known.awesome-chrome-devtools.links",
+    "run_id": "agentic.awesome-chrome-devtools-links.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-chrome-devtools-links/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-chrome-devtools-links/expected.rows.json",
+    "variants": [
+      "name header row",
+      "category row",
+      "url field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-chrome-devtools.links for awesome-chrome-devtools link list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/watchexec/watchexec",
+    "descriptor_id": "known.watchexec.events",
+    "run_id": "agentic.watchexec-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/watchexec-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/watchexec-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "path row",
+      "command field"
+    ],
+    "transcript": [
+      "selected descriptor known.watchexec.events for watchexec event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/git-quick-stats/git-quick-stats",
+    "descriptor_id": "known.git-quick-stats.authors",
+    "run_id": "agentic.git-quick-stats-authors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-quick-stats-authors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-quick-stats-authors/expected.rows.json",
+    "variants": [
+      "author header row",
+      "commits row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-quick-stats.authors for git-quick-stats author list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/fkill-cli",
+    "descriptor_id": "known.fkill.processes",
+    "run_id": "agentic.fkill-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fkill-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fkill-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "pid row",
+      "signal field"
+    ],
+    "transcript": [
+      "selected descriptor known.fkill.processes for fkill process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

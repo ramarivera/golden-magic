@@ -3428,5 +3428,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/openshell-plugins",
     "analysis_notes": "Modeled OpenShell plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/1jehuang/jcode",
+    "descriptor_id": "known.jcode.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jcode-agents",
+    "analysis_notes": "Modeled jcode agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/awesome-chrome-devtools",
+    "descriptor_id": "known.awesome-chrome-devtools.links",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-chrome-devtools-links",
+    "analysis_notes": "Modeled awesome-chrome-devtools link output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/watchexec/watchexec",
+    "descriptor_id": "known.watchexec.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/watchexec-events",
+    "analysis_notes": "Modeled watchexec event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/git-quick-stats/git-quick-stats",
+    "descriptor_id": "known.git-quick-stats.authors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-quick-stats-authors",
+    "analysis_notes": "Modeled git-quick-stats author output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/fkill-cli",
+    "descriptor_id": "known.fkill.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fkill-processes",
+    "analysis_notes": "Modeled fkill-cli process output with a generated executable-json parser plugin."
   }
 ]
