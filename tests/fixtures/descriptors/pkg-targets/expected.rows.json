@@ -1,0 +1,18 @@
+[
+  {
+    "name": "target",
+    "value": "platform arch"
+  },
+  {
+    "name": "node18-linux-x64",
+    "value": "linux x64"
+  },
+  {
+    "name": "node18-macos-arm64",
+    "value": "macos arm64"
+  },
+  {
+    "name": "node18-win-x64",
+    "value": "windows x64"
+  }
+]

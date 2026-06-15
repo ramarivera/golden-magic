@@ -4048,5 +4048,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/vuejs/devtools-v6",
+    "descriptor_id": "known.vue-devtools.tabs",
+    "run_id": "agentic.vue-devtools-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vue-devtools-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vue-devtools-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "state row",
+      "count field"
+    ],
+    "transcript": [
+      "selected descriptor known.vue-devtools.tabs for Vue Devtools tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Devolutions/UniGetUI",
+    "descriptor_id": "known.unigetui.packages",
+    "run_id": "agentic.unigetui-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/unigetui-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/unigetui-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "manager row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.unigetui.packages for UniGetUI package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ogham/exa",
+    "descriptor_id": "known.exa.files",
+    "run_id": "agentic.exa-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/exa-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/exa-files/expected.rows.json",
+    "variants": [
+      "name header row",
+      "directory row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.exa.files for exa file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jackwener/OpenCLI",
+    "descriptor_id": "known.opencli.commands",
+    "run_id": "agentic.opencli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/opencli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/opencli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "ready command row",
+      "backend field"
+    ],
+    "transcript": [
+      "selected descriptor known.opencli.commands for OpenCLI command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel/pkg",
+    "descriptor_id": "known.pkg.targets",
+    "run_id": "agentic.pkg-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pkg-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pkg-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "platform row",
+      "arch field"
+    ],
+    "transcript": [
+      "selected descriptor known.pkg.targets for pkg target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

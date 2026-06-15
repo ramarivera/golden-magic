@@ -1573,5 +1573,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cookiecutter-templates",
     "analysis_notes": "Modeled Cookiecutter template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vuejs/devtools-v6",
+    "descriptor_id": "known.vue-devtools.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vue-devtools-tabs",
+    "analysis_notes": "Modeled Vue Devtools tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Devolutions/UniGetUI",
+    "descriptor_id": "known.unigetui.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/unigetui-packages",
+    "analysis_notes": "Modeled UniGetUI package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ogham/exa",
+    "descriptor_id": "known.exa.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/exa-files",
+    "analysis_notes": "Modeled exa file listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jackwener/OpenCLI",
+    "descriptor_id": "known.opencli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/opencli-commands",
+    "analysis_notes": "Modeled OpenCLI command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel/pkg",
+    "descriptor_id": "known.pkg.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pkg-targets",
+    "analysis_notes": "Modeled pkg target output with a generated executable-json parser plugin."
   }
 ]

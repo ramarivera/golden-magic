@@ -1,0 +1,4 @@
+tab	state count
+components	active 24
+pinia	ready 3
+routes	ready 8

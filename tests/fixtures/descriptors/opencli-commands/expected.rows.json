@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "status backend"
+  },
+  {
+    "name": "ask",
+    "value": "ready llm"
+  },
+  {
+    "name": "run",
+    "value": "ready shell"
+  },
+  {
+    "name": "index",
+    "value": "beta vector"
+  }
+]

@@ -1,0 +1,4 @@
+command	status backend
+ask	ready llm
+run	ready shell
+index	beta vector

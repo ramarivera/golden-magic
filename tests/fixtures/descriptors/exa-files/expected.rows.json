@@ -1,0 +1,18 @@
+[
+  {
+    "name": "name",
+    "value": "type size"
+  },
+  {
+    "name": "src",
+    "value": "dir 4K"
+  },
+  {
+    "name": "Cargo.toml",
+    "value": "file 2K"
+  },
+  {
+    "name": "README.md",
+    "value": "file 8K"
+  }
+]

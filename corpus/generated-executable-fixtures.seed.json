@@ -2458,5 +2458,65 @@
     "negative": "template language status\npython-package python ready\n",
     "analysis_notes": "Modeled Cookiecutter template output with a generated executable-json parser plugin.",
     "variants": ["template header row", "language row", "status field"]
+  },
+  {
+    "fixture": "vue-devtools-tabs",
+    "descriptor_id": "known.vue-devtools.tabs",
+    "name": "Vue Devtools tab list",
+    "repo": "https://github.com/vuejs/devtools-v6",
+    "required_substrings": ["tab\tstate", "components\tactive"],
+    "parser": "tab-pairs",
+    "input": "tab\tstate count\ncomponents\tactive 24\npinia\tready 3\nroutes\tready 8\n",
+    "negative": "tab state count\ncomponents active 24\n",
+    "analysis_notes": "Modeled Vue Devtools tab output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "state row", "count field"]
+  },
+  {
+    "fixture": "unigetui-packages",
+    "descriptor_id": "known.unigetui.packages",
+    "name": "UniGetUI package list",
+    "repo": "https://github.com/Devolutions/UniGetUI",
+    "required_substrings": ["package\tmanager", "PowerShell\twinget"],
+    "parser": "tab-pairs",
+    "input": "package\tmanager status\nPowerShell\twinget installed\nGit\tscoop installed\nNode.js\tchocolatey update\n",
+    "negative": "package manager status\nPowerShell winget installed\n",
+    "analysis_notes": "Modeled UniGetUI package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "manager row", "status field"]
+  },
+  {
+    "fixture": "exa-files",
+    "descriptor_id": "known.exa.files",
+    "name": "exa file list",
+    "repo": "https://github.com/ogham/exa",
+    "required_substrings": ["name\ttype", "src\tdir"],
+    "parser": "tab-pairs",
+    "input": "name\ttype size\nsrc\tdir 4K\nCargo.toml\tfile 2K\nREADME.md\tfile 8K\n",
+    "negative": "name type size\nsrc dir 4K\n",
+    "analysis_notes": "Modeled exa file listing output with a generated executable-json parser plugin.",
+    "variants": ["name header row", "directory row", "size field"]
+  },
+  {
+    "fixture": "opencli-commands",
+    "descriptor_id": "known.opencli.commands",
+    "name": "OpenCLI command list",
+    "repo": "https://github.com/jackwener/OpenCLI",
+    "required_substrings": ["command\tstatus", "ask\tready"],
+    "parser": "tab-pairs",
+    "input": "command\tstatus backend\nask\tready llm\nrun\tready shell\nindex\tbeta vector\n",
+    "negative": "command status backend\nask ready llm\n",
+    "analysis_notes": "Modeled OpenCLI command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "ready command row", "backend field"]
+  },
+  {
+    "fixture": "pkg-targets",
+    "descriptor_id": "known.pkg.targets",
+    "name": "pkg target list",
+    "repo": "https://github.com/vercel/pkg",
+    "required_substrings": ["target\tplatform", "node18-linux-x64\tlinux"],
+    "parser": "tab-pairs",
+    "input": "target\tplatform arch\nnode18-linux-x64\tlinux x64\nnode18-macos-arm64\tmacos arm64\nnode18-win-x64\twindows x64\n",
+    "negative": "target platform arch\nnode18-linux-x64 linux x64\n",
+    "analysis_notes": "Modeled pkg target output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "platform row", "arch field"]
   }
 ]

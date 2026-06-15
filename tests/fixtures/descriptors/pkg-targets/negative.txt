@@ -1,0 +1,2 @@
+target platform arch
+node18-linux-x64 linux x64

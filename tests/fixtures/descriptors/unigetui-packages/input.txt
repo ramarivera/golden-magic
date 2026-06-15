@@ -1,0 +1,4 @@
+package	manager status
+PowerShell	winget installed
+Git	scoop installed
+Node.js	chocolatey update

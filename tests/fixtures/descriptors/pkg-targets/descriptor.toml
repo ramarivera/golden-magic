@@ -1,0 +1,10 @@
+id = "known.pkg.targets"
+name = "pkg target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tplatform","node18-linux-x64\tlinux"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

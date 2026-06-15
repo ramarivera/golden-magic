@@ -1,0 +1,10 @@
+id = "known.vue-devtools.tabs"
+name = "Vue Devtools tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\tstate","components\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
