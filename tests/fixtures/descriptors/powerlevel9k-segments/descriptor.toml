@@ -1,0 +1,10 @@
+id = "known.powerlevel9k.segments"
+name = "Powerlevel9k segment list"
+priority = 50
+
+[matches]
+required_substrings = ["segment\tstate","vcs\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

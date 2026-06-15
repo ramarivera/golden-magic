@@ -1,0 +1,2 @@
+host status protocol
+home-lab online ssh

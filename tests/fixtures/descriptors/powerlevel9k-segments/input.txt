@@ -1,0 +1,4 @@
+segment	state position
+vcs	active left
+time	active right
+battery	hidden right

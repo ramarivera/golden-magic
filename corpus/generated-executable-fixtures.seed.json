@@ -3838,5 +3838,65 @@
     "negative": "widget status rows\ngauge ready 3\n",
     "analysis_notes": "Modeled termui widget output with a generated executable-json parser plugin.",
     "variants": ["widget header row", "status row", "rows field"]
+  },
+  {
+    "fixture": "nexe-builds",
+    "descriptor_id": "known.nexe.builds",
+    "name": "nexe build list",
+    "repo": "https://github.com/nexe/nexe",
+    "required_substrings": ["target\tstatus", "linux-x64\tbuilt"],
+    "parser": "tab-pairs",
+    "input": "target\tstatus size\nlinux-x64\tbuilt 42MB\nmacos-arm64\tbuilt 39MB\nwindows-x64\tqueued 0MB\n",
+    "negative": "target status size\nlinux-x64 built 42MB\n",
+    "analysis_notes": "Modeled nexe build output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "status row", "size field"]
+  },
+  {
+    "fixture": "bottom-processes",
+    "descriptor_id": "known.bottom.processes",
+    "name": "bottom process list",
+    "repo": "https://github.com/ClementTsang/bottom",
+    "required_substrings": ["pid\tname", "4242\tgolden-magic"],
+    "parser": "tab-pairs",
+    "input": "pid\tname cpu\n4242\tgolden-magic 12.4\n101\tkernel_task 4.1\n777\tnu 2.8\n",
+    "negative": "pid name cpu\n4242 golden-magic 12.4\n",
+    "analysis_notes": "Modeled bottom process output with a generated executable-json parser plugin.",
+    "variants": ["pid header row", "name row", "cpu field"]
+  },
+  {
+    "fixture": "termix-hosts",
+    "descriptor_id": "known.termix.hosts",
+    "name": "Termix host list",
+    "repo": "https://github.com/Termix-SSH/Termix",
+    "required_substrings": ["host\tstatus", "home-lab\tonline"],
+    "parser": "tab-pairs",
+    "input": "host\tstatus protocol\nhome-lab\tonline ssh\nrouter\toffline ssh\nnas\tonline sftp\n",
+    "negative": "host status protocol\nhome-lab online ssh\n",
+    "analysis_notes": "Modeled Termix host output with a generated executable-json parser plugin.",
+    "variants": ["host header row", "status row", "protocol field"]
+  },
+  {
+    "fixture": "redux-devtools-extension-tabs",
+    "descriptor_id": "known.redux-devtools-extension.tabs",
+    "name": "Redux DevTools extension tab list",
+    "repo": "https://github.com/zalmoxisus/redux-devtools-extension",
+    "required_substrings": ["tab\tstate", "app\tconnected"],
+    "parser": "tab-pairs",
+    "input": "tab\tstate actions\napp\tconnected 44\nadmin\tconnected 12\nlegacy\tdisconnected 0\n",
+    "negative": "tab state actions\napp connected 44\n",
+    "analysis_notes": "Modeled Redux DevTools extension tab output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "state row", "actions field"]
+  },
+  {
+    "fixture": "powerlevel9k-segments",
+    "descriptor_id": "known.powerlevel9k.segments",
+    "name": "Powerlevel9k segment list",
+    "repo": "https://github.com/Powerlevel9k/powerlevel9k",
+    "required_substrings": ["segment\tstate", "vcs\tactive"],
+    "parser": "tab-pairs",
+    "input": "segment\tstate position\nvcs\tactive left\ntime\tactive right\nbattery\thidden right\n",
+    "negative": "segment state position\nvcs active left\n",
+    "analysis_notes": "Modeled Powerlevel9k segment output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "state row", "position field"]
   }
 ]

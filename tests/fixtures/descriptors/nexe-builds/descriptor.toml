@@ -1,0 +1,10 @@
+id = "known.nexe.builds"
+name = "nexe build list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstatus","linux-x64\tbuilt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

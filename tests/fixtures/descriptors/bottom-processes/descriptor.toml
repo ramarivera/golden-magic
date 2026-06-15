@@ -1,0 +1,10 @@
+id = "known.bottom.processes"
+name = "bottom process list"
+priority = 50
+
+[matches]
+required_substrings = ["pid\tname","4242\tgolden-magic"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

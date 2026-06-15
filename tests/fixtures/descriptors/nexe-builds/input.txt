@@ -1,0 +1,4 @@
+target	status size
+linux-x64	built 42MB
+macos-arm64	built 39MB
+windows-x64	queued 0MB

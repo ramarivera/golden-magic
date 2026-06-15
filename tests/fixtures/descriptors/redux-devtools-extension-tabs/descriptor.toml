@@ -1,0 +1,10 @@
+id = "known.redux-devtools-extension.tabs"
+name = "Redux DevTools extension tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\tstate","app\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "segment",
+    "value": "state position"
+  },
+  {
+    "name": "vcs",
+    "value": "active left"
+  },
+  {
+    "name": "time",
+    "value": "active right"
+  },
+  {
+    "name": "battery",
+    "value": "hidden right"
+  }
+]

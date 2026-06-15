@@ -2378,5 +2378,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/termui-widgets",
     "analysis_notes": "Modeled termui widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nexe/nexe",
+    "descriptor_id": "known.nexe.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nexe-builds",
+    "analysis_notes": "Modeled nexe build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ClementTsang/bottom",
+    "descriptor_id": "known.bottom.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bottom-processes",
+    "analysis_notes": "Modeled bottom process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Termix-SSH/Termix",
+    "descriptor_id": "known.termix.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termix-hosts",
+    "analysis_notes": "Modeled Termix host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zalmoxisus/redux-devtools-extension",
+    "descriptor_id": "known.redux-devtools-extension.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/redux-devtools-extension-tabs",
+    "analysis_notes": "Modeled Redux DevTools extension tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Powerlevel9k/powerlevel9k",
+    "descriptor_id": "known.powerlevel9k.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/powerlevel9k-segments",
+    "analysis_notes": "Modeled Powerlevel9k segment output with a generated executable-json parser plugin."
   }
 ]

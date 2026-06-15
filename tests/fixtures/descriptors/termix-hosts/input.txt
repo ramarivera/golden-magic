@@ -1,0 +1,4 @@
+host	status protocol
+home-lab	online ssh
+router	offline ssh
+nas	online sftp

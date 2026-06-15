@@ -1,0 +1,4 @@
+pid	name cpu
+4242	golden-magic 12.4
+101	kernel_task 4.1
+777	nu 2.8

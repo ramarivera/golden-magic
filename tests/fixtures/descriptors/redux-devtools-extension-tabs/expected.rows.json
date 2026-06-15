@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tab",
+    "value": "state actions"
+  },
+  {
+    "name": "app",
+    "value": "connected 44"
+  },
+  {
+    "name": "admin",
+    "value": "connected 12"
+  },
+  {
+    "name": "legacy",
+    "value": "disconnected 0"
+  }
+]
