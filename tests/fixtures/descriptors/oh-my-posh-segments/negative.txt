@@ -1,0 +1,2 @@
+segment enabled style
+git true powerline

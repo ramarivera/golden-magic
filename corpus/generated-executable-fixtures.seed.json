@@ -2638,5 +2638,65 @@
     "negative": "style category ansi\nred color 31\n",
     "analysis_notes": "Modeled Chalk style output with a generated executable-json parser plugin.",
     "variants": ["style header row", "category row", "ansi field"]
+  },
+  {
+    "fixture": "social-analyzer-profiles",
+    "descriptor_id": "known.social-analyzer.profiles",
+    "name": "social-analyzer profile results",
+    "repo": "https://github.com/qeeqbox/social-analyzer",
+    "required_substrings": ["site\tstatus", "github\tfound"],
+    "parser": "tab-pairs",
+    "input": "site\tstatus confidence\ngithub\tfound 0.98\ntwitter\tmissing 0.12\nreddit\tfound 0.76\n",
+    "negative": "site status confidence\ngithub found 0.98\n",
+    "analysis_notes": "Modeled social-analyzer profile output with a generated executable-json parser plugin.",
+    "variants": ["site header row", "status row", "confidence field"]
+  },
+  {
+    "fixture": "oh-my-posh-segments",
+    "descriptor_id": "known.oh-my-posh.segments",
+    "name": "oh-my-posh segment list",
+    "repo": "https://github.com/JanDeDobbeleer/oh-my-posh",
+    "required_substrings": ["segment\tenabled", "git\ttrue"],
+    "parser": "tab-pairs",
+    "input": "segment\tenabled style\ngit\ttrue powerline\npath\ttrue plain\nnode\tfalse diamond\n",
+    "negative": "segment enabled style\ngit true powerline\n",
+    "analysis_notes": "Modeled oh-my-posh segment output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "enabled row", "style field"]
+  },
+  {
+    "fixture": "zsh-syntax-highlighting-styles",
+    "descriptor_id": "known.zsh-syntax-highlighting.styles",
+    "name": "zsh-syntax-highlighting style list",
+    "repo": "https://github.com/zsh-users/zsh-syntax-highlighting",
+    "required_substrings": ["token\tstyle", "command\tfg=green"],
+    "parser": "tab-pairs",
+    "input": "token\tstyle scope\ncommand\tfg=green builtin\npath\tunderline filesystem\nunknown-token\tfg=red error\n",
+    "negative": "token style scope\ncommand fg=green builtin\n",
+    "analysis_notes": "Modeled zsh-syntax-highlighting style output with a generated executable-json parser plugin.",
+    "variants": ["token header row", "style row", "scope field"]
+  },
+  {
+    "fixture": "svgo-plugins",
+    "descriptor_id": "known.svgo.plugins",
+    "name": "SVGO plugin list",
+    "repo": "https://github.com/svg/svgo",
+    "required_substrings": ["plugin\tenabled", "removeDoctype\ttrue"],
+    "parser": "tab-pairs",
+    "input": "plugin\tenabled phase\nremoveDoctype\ttrue cleanup\nremoveComments\ttrue cleanup\nprefixIds\tfalse transform\n",
+    "negative": "plugin enabled phase\nremoveDoctype true cleanup\n",
+    "analysis_notes": "Modeled SVGO plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "enabled row", "phase field"]
+  },
+  {
+    "fixture": "archon-tasks",
+    "descriptor_id": "known.archon.tasks",
+    "name": "Archon task list",
+    "repo": "https://github.com/coleam00/Archon",
+    "required_substrings": ["task\tstate", "crawl-docs\trunning"],
+    "parser": "tab-pairs",
+    "input": "task\tstate owner\ncrawl-docs\trunning agent\nindex-code\tqueued worker\nanswer-ticket\tdone agent\n",
+    "negative": "task state owner\ncrawl-docs running agent\n",
+    "analysis_notes": "Modeled Archon task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "state row", "owner field"]
   }
 ]

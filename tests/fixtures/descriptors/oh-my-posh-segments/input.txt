@@ -1,0 +1,4 @@
+segment	enabled style
+git	true powerline
+path	true plain
+node	false diamond

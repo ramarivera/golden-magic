@@ -1678,5 +1678,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/chalk-styles",
     "analysis_notes": "Modeled Chalk style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/qeeqbox/social-analyzer",
+    "descriptor_id": "known.social-analyzer.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/social-analyzer-profiles",
+    "analysis_notes": "Modeled social-analyzer profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JanDeDobbeleer/oh-my-posh",
+    "descriptor_id": "known.oh-my-posh.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oh-my-posh-segments",
+    "analysis_notes": "Modeled oh-my-posh segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zsh-users/zsh-syntax-highlighting",
+    "descriptor_id": "known.zsh-syntax-highlighting.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zsh-syntax-highlighting-styles",
+    "analysis_notes": "Modeled zsh-syntax-highlighting style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/svg/svgo",
+    "descriptor_id": "known.svgo.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/svgo-plugins",
+    "analysis_notes": "Modeled SVGO plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/coleam00/Archon",
+    "descriptor_id": "known.archon.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/archon-tasks",
+    "analysis_notes": "Modeled Archon task output with a generated executable-json parser plugin."
   }
 ]

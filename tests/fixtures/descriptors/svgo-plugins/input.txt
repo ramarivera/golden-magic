@@ -1,0 +1,4 @@
+plugin	enabled phase
+removeDoctype	true cleanup
+removeComments	true cleanup
+prefixIds	false transform

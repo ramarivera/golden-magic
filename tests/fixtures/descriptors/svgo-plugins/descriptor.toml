@@ -1,0 +1,10 @@
+id = "known.svgo.plugins"
+name = "SVGO plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tenabled","removeDoctype\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

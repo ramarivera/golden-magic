@@ -1,0 +1,10 @@
+id = "known.social-analyzer.profiles"
+name = "social-analyzer profile results"
+priority = 50
+
+[matches]
+required_substrings = ["site\tstatus","github\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

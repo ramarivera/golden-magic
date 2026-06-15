@@ -1,0 +1,4 @@
+token	style scope
+command	fg=green builtin
+path	underline filesystem
+unknown-token	fg=red error

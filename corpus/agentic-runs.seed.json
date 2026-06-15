@@ -4318,5 +4318,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/qeeqbox/social-analyzer",
+    "descriptor_id": "known.social-analyzer.profiles",
+    "run_id": "agentic.social-analyzer-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/social-analyzer-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/social-analyzer-profiles/expected.rows.json",
+    "variants": [
+      "site header row",
+      "status row",
+      "confidence field"
+    ],
+    "transcript": [
+      "selected descriptor known.social-analyzer.profiles for social-analyzer profile results output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JanDeDobbeleer/oh-my-posh",
+    "descriptor_id": "known.oh-my-posh.segments",
+    "run_id": "agentic.oh-my-posh-segments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oh-my-posh-segments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oh-my-posh-segments/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "enabled row",
+      "style field"
+    ],
+    "transcript": [
+      "selected descriptor known.oh-my-posh.segments for oh-my-posh segment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zsh-users/zsh-syntax-highlighting",
+    "descriptor_id": "known.zsh-syntax-highlighting.styles",
+    "run_id": "agentic.zsh-syntax-highlighting-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zsh-syntax-highlighting-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zsh-syntax-highlighting-styles/expected.rows.json",
+    "variants": [
+      "token header row",
+      "style row",
+      "scope field"
+    ],
+    "transcript": [
+      "selected descriptor known.zsh-syntax-highlighting.styles for zsh-syntax-highlighting style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/svg/svgo",
+    "descriptor_id": "known.svgo.plugins",
+    "run_id": "agentic.svgo-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/svgo-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/svgo-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "enabled row",
+      "phase field"
+    ],
+    "transcript": [
+      "selected descriptor known.svgo.plugins for SVGO plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/coleam00/Archon",
+    "descriptor_id": "known.archon.tasks",
+    "run_id": "agentic.archon-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/archon-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/archon-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "owner field"
+    ],
+    "transcript": [
+      "selected descriptor known.archon.tasks for Archon task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

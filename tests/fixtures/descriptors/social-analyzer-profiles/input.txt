@@ -1,0 +1,4 @@
+site	status confidence
+github	found 0.98
+twitter	missing 0.12
+reddit	found 0.76
