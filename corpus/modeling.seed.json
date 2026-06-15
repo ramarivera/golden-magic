@@ -2903,5 +2903,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/command-line-text-processing-recipes",
     "analysis_notes": "Modeled Command-line-text-processing recipe output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/caelestia-dots/shell",
+    "descriptor_id": "known.caelestia-shell.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/caelestia-shell-widgets",
+    "analysis_notes": "Modeled caelestia shell widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/inshellisense",
+    "descriptor_id": "known.inshellisense.completions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inshellisense-completions",
+    "analysis_notes": "Modeled inshellisense completion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/blacklanternsecurity/bbot",
+    "descriptor_id": "known.bbot.scans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bbot-scans",
+    "analysis_notes": "Modeled bbot scan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gitkraken/vscode-gitlens",
+    "descriptor_id": "known.vscode-gitlens.repos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vscode-gitlens-repos",
+    "analysis_notes": "Modeled GitLens repository output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bobthecow/psysh",
+    "descriptor_id": "known.psysh.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/psysh-commands",
+    "analysis_notes": "Modeled PsySH command output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+command	kind status
+show	introspection enabled
+doc	help enabled
+whereami	debug enabled

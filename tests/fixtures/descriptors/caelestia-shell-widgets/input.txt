@@ -1,0 +1,4 @@
+widget	state monitor
+launcher	visible eDP-1
+bar	visible HDMI-1
+notifier	hidden eDP-1

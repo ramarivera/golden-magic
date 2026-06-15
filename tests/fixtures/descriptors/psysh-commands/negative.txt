@@ -1,0 +1,2 @@
+command kind status
+show introspection enabled

@@ -1,0 +1,4 @@
+command	source status
+git	builtin enabled
+npm	spec enabled
+kubectl	spec enabled

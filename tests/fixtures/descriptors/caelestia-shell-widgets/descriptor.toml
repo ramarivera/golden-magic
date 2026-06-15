@@ -1,0 +1,10 @@
+id = "known.caelestia-shell.widgets"
+name = "caelestia shell widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tstate","launcher\tvisible"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

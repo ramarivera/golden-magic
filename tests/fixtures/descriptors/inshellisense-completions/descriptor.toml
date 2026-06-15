@@ -1,0 +1,10 @@
+id = "known.inshellisense.completions"
+name = "inshellisense completion list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tsource","git\tbuiltin"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

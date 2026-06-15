@@ -4738,5 +4738,65 @@
     "negative": "recipe tool status\nsearch grep listed\n",
     "analysis_notes": "Modeled Command-line-text-processing recipe output with a generated executable-json parser plugin.",
     "variants": ["recipe header row", "tool row", "status field"]
+  },
+  {
+    "fixture": "caelestia-shell-widgets",
+    "descriptor_id": "known.caelestia-shell.widgets",
+    "name": "caelestia shell widget list",
+    "repo": "https://github.com/caelestia-dots/shell",
+    "required_substrings": ["widget\tstate", "launcher\tvisible"],
+    "parser": "tab-pairs",
+    "input": "widget\tstate monitor\nlauncher\tvisible eDP-1\nbar\tvisible HDMI-1\nnotifier\thidden eDP-1\n",
+    "negative": "widget state monitor\nlauncher visible eDP-1\n",
+    "analysis_notes": "Modeled caelestia shell widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "state row", "monitor field"]
+  },
+  {
+    "fixture": "inshellisense-completions",
+    "descriptor_id": "known.inshellisense.completions",
+    "name": "inshellisense completion list",
+    "repo": "https://github.com/microsoft/inshellisense",
+    "required_substrings": ["command\tsource", "git\tbuiltin"],
+    "parser": "tab-pairs",
+    "input": "command\tsource status\ngit\tbuiltin enabled\nnpm\tspec enabled\nkubectl\tspec enabled\n",
+    "negative": "command source status\ngit builtin enabled\n",
+    "analysis_notes": "Modeled inshellisense completion output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "source row", "status field"]
+  },
+  {
+    "fixture": "bbot-scans",
+    "descriptor_id": "known.bbot.scans",
+    "name": "bbot scan list",
+    "repo": "https://github.com/blacklanternsecurity/bbot",
+    "required_substrings": ["scan\tstatus", "corp\trunning"],
+    "parser": "tab-pairs",
+    "input": "scan\tstatus findings\ncorp\trunning 42\nlab\tfinished 18\nexternal\tqueued 0\n",
+    "negative": "scan status findings\ncorp running 42\n",
+    "analysis_notes": "Modeled bbot scan output with a generated executable-json parser plugin.",
+    "variants": ["scan header row", "status row", "findings field"]
+  },
+  {
+    "fixture": "vscode-gitlens-repos",
+    "descriptor_id": "known.vscode-gitlens.repos",
+    "name": "GitLens repository list",
+    "repo": "https://github.com/gitkraken/vscode-gitlens",
+    "required_substrings": ["repo\tbranch", "golden-magic\tmaster"],
+    "parser": "tab-pairs",
+    "input": "repo\tbranch authors\ngolden-magic\tmaster 3\ntoolbox\tmain 7\ndocs\tmain 2\n",
+    "negative": "repo branch authors\ngolden-magic master 3\n",
+    "analysis_notes": "Modeled GitLens repository output with a generated executable-json parser plugin.",
+    "variants": ["repo header row", "branch row", "authors field"]
+  },
+  {
+    "fixture": "psysh-commands",
+    "descriptor_id": "known.psysh.commands",
+    "name": "PsySH command list",
+    "repo": "https://github.com/bobthecow/psysh",
+    "required_substrings": ["command\tkind", "show\tintrospection"],
+    "parser": "tab-pairs",
+    "input": "command\tkind status\nshow\tintrospection enabled\ndoc\thelp enabled\nwhereami\tdebug enabled\n",
+    "negative": "command kind status\nshow introspection enabled\n",
+    "analysis_notes": "Modeled PsySH command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "kind row", "status field"]
   }
 ]

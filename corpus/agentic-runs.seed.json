@@ -7468,5 +7468,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/caelestia-dots/shell",
+    "descriptor_id": "known.caelestia-shell.widgets",
+    "run_id": "agentic.caelestia-shell-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/caelestia-shell-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/caelestia-shell-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "state row",
+      "monitor field"
+    ],
+    "transcript": [
+      "selected descriptor known.caelestia-shell.widgets for caelestia shell widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/inshellisense",
+    "descriptor_id": "known.inshellisense.completions",
+    "run_id": "agentic.inshellisense-completions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inshellisense-completions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inshellisense-completions/expected.rows.json",
+    "variants": [
+      "command header row",
+      "source row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.inshellisense.completions for inshellisense completion list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/blacklanternsecurity/bbot",
+    "descriptor_id": "known.bbot.scans",
+    "run_id": "agentic.bbot-scans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bbot-scans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bbot-scans/expected.rows.json",
+    "variants": [
+      "scan header row",
+      "status row",
+      "findings field"
+    ],
+    "transcript": [
+      "selected descriptor known.bbot.scans for bbot scan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gitkraken/vscode-gitlens",
+    "descriptor_id": "known.vscode-gitlens.repos",
+    "run_id": "agentic.vscode-gitlens-repos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vscode-gitlens-repos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vscode-gitlens-repos/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "branch row",
+      "authors field"
+    ],
+    "transcript": [
+      "selected descriptor known.vscode-gitlens.repos for GitLens repository list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bobthecow/psysh",
+    "descriptor_id": "known.psysh.commands",
+    "run_id": "agentic.psysh-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/psysh-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/psysh-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "kind row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.psysh.commands for PsySH command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "kind status"
+  },
+  {
+    "name": "show",
+    "value": "introspection enabled"
+  },
+  {
+    "name": "doc",
+    "value": "help enabled"
+  },
+  {
+    "name": "whereami",
+    "value": "debug enabled"
+  }
+]

@@ -1,0 +1,2 @@
+widget state monitor
+launcher visible eDP-1

@@ -1,0 +1,10 @@
+id = "known.bbot.scans"
+name = "bbot scan list"
+priority = 50
+
+[matches]
+required_substrings = ["scan\tstatus","corp\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

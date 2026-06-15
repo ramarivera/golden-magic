@@ -1,0 +1,18 @@
+[
+  {
+    "name": "scan",
+    "value": "status findings"
+  },
+  {
+    "name": "corp",
+    "value": "running 42"
+  },
+  {
+    "name": "lab",
+    "value": "finished 18"
+  },
+  {
+    "name": "external",
+    "value": "queued 0"
+  }
+]

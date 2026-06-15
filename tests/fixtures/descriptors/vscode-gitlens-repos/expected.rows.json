@@ -1,0 +1,18 @@
+[
+  {
+    "name": "repo",
+    "value": "branch authors"
+  },
+  {
+    "name": "golden-magic",
+    "value": "master 3"
+  },
+  {
+    "name": "toolbox",
+    "value": "main 7"
+  },
+  {
+    "name": "docs",
+    "value": "main 2"
+  }
+]

@@ -1,0 +1,4 @@
+scan	status findings
+corp	running 42
+lab	finished 18
+external	queued 0
