@@ -803,5 +803,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/apollo11-assemblies",
     "analysis_notes": "Modeled Apollo-11 assembly source index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/safishamsi/graphify",
+    "descriptor_id": "known.graphify.graphs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/graphify-graphs",
+    "analysis_notes": "Modeled Graphify graph summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nexu-io/open-design",
+    "descriptor_id": "known.open-design.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/open-design-assets",
+    "analysis_notes": "Modeled open-design asset list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alacritty/alacritty",
+    "descriptor_id": "known.alacritty.config",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/alacritty-config",
+    "analysis_notes": "Modeled Alacritty config summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openinterpreter/openinterpreter",
+    "descriptor_id": "known.openinterpreter.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openinterpreter-sessions",
+    "analysis_notes": "Modeled Open Interpreter session list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ryanoasis/nerd-fonts",
+    "descriptor_id": "known.nerd-fonts.families",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nerd-fonts-families",
+    "analysis_notes": "Modeled Nerd Fonts family list output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+key: window.opacity
+value: 0.95
+font: JetBrainsMono
+shell: /bin/zsh

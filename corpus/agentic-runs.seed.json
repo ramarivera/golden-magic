@@ -2068,5 +2068,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/safishamsi/graphify",
+    "descriptor_id": "known.graphify.graphs",
+    "run_id": "agentic.graphify-graphs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/graphify-graphs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/graphify-graphs/expected.rows.json",
+    "variants": [
+      "graph header row",
+      "node count row",
+      "edge count field"
+    ],
+    "transcript": [
+      "selected descriptor known.graphify.graphs for Graphify graph list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nexu-io/open-design",
+    "descriptor_id": "known.open-design.assets",
+    "run_id": "agentic.open-design-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/open-design-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/open-design-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "ready asset row",
+      "format field"
+    ],
+    "transcript": [
+      "selected descriptor known.open-design.assets for open-design asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alacritty/alacritty",
+    "descriptor_id": "known.alacritty.config",
+    "run_id": "agentic.alacritty-config.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/alacritty-config/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/alacritty-config/expected.rows.json",
+    "variants": [
+      "config key row",
+      "font row",
+      "shell row"
+    ],
+    "transcript": [
+      "selected descriptor known.alacritty.config for Alacritty config summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/openinterpreter/openinterpreter",
+    "descriptor_id": "known.openinterpreter.sessions",
+    "run_id": "agentic.openinterpreter-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openinterpreter-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openinterpreter-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "active session row",
+      "runtime field"
+    ],
+    "transcript": [
+      "selected descriptor known.openinterpreter.sessions for Open Interpreter session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ryanoasis/nerd-fonts",
+    "descriptor_id": "known.nerd-fonts.families",
+    "run_id": "agentic.nerd-fonts-families.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nerd-fonts-families/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nerd-fonts-families/expected.rows.json",
+    "variants": [
+      "family header row",
+      "patched family row",
+      "glyph count field"
+    ],
+    "transcript": [
+      "selected descriptor known.nerd-fonts.families for Nerd Fonts family list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

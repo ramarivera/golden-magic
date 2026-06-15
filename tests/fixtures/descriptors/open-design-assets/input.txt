@@ -1,0 +1,4 @@
+asset	status format
+homepage	ready html
+wireframe	draft figma
+palette	ready json

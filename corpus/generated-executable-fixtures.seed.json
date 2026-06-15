@@ -1138,5 +1138,65 @@
     "negative": "module lines language\nAGC 1200 assembly\n",
     "analysis_notes": "Modeled Apollo-11 assembly source index output with a generated executable-json parser plugin.",
     "variants": ["module header row", "line count row", "language field"]
+  },
+  {
+    "fixture": "graphify-graphs",
+    "descriptor_id": "known.graphify.graphs",
+    "name": "Graphify graph list",
+    "repo": "https://github.com/safishamsi/graphify",
+    "required_substrings": ["graph\tnodes", "deps\t42"],
+    "parser": "tab-pairs",
+    "input": "graph\tnodes edges\ndeps\t42 91\nimports\t18 33\nroutes\t12 15\n",
+    "negative": "graph nodes edges\ndeps 42 91\n",
+    "analysis_notes": "Modeled Graphify graph summary output with a generated executable-json parser plugin.",
+    "variants": ["graph header row", "node count row", "edge count field"]
+  },
+  {
+    "fixture": "open-design-assets",
+    "descriptor_id": "known.open-design.assets",
+    "name": "open-design asset list",
+    "repo": "https://github.com/nexu-io/open-design",
+    "required_substrings": ["asset\tstatus", "homepage\tready"],
+    "parser": "tab-pairs",
+    "input": "asset\tstatus format\nhomepage\tready html\nwireframe\tdraft figma\npalette\tready json\n",
+    "negative": "asset status format\nhomepage ready html\n",
+    "analysis_notes": "Modeled open-design asset list output with a generated executable-json parser plugin.",
+    "variants": ["asset header row", "ready asset row", "format field"]
+  },
+  {
+    "fixture": "alacritty-config",
+    "descriptor_id": "known.alacritty.config",
+    "name": "Alacritty config summary",
+    "repo": "https://github.com/alacritty/alacritty",
+    "required_substrings": ["key:", "font:"],
+    "parser": "colon-kv",
+    "input": "key: window.opacity\nvalue: 0.95\nfont: JetBrainsMono\nshell: /bin/zsh\n",
+    "negative": "key window.opacity\nfont JetBrainsMono\n",
+    "analysis_notes": "Modeled Alacritty config summary output with a generated executable-json parser plugin.",
+    "variants": ["config key row", "font row", "shell row"]
+  },
+  {
+    "fixture": "openinterpreter-sessions",
+    "descriptor_id": "known.openinterpreter.sessions",
+    "name": "Open Interpreter session list",
+    "repo": "https://github.com/openinterpreter/openinterpreter",
+    "required_substrings": ["session\tstate", "local\tactive"],
+    "parser": "tab-pairs",
+    "input": "session\tstate runtime\nlocal\tactive python\nremote\tidle docker\nnotebook\tclosed jupyter\n",
+    "negative": "session state runtime\nlocal active python\n",
+    "analysis_notes": "Modeled Open Interpreter session list output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "active session row", "runtime field"]
+  },
+  {
+    "fixture": "nerd-fonts-families",
+    "descriptor_id": "known.nerd-fonts.families",
+    "name": "Nerd Fonts family list",
+    "repo": "https://github.com/ryanoasis/nerd-fonts",
+    "required_substrings": ["family\tpatched", "FiraCode\ttrue"],
+    "parser": "tab-pairs",
+    "input": "family\tpatched glyphs\nFiraCode\ttrue 12000\nJetBrainsMono\ttrue 11800\nIosevka\ttrue 12100\n",
+    "negative": "family patched glyphs\nFiraCode true 12000\n",
+    "analysis_notes": "Modeled Nerd Fonts family list output with a generated executable-json parser plugin.",
+    "variants": ["family header row", "patched family row", "glyph count field"]
   }
 ]

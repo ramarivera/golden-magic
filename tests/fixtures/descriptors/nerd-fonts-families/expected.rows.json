@@ -1,0 +1,18 @@
+[
+  {
+    "name": "family",
+    "value": "patched glyphs"
+  },
+  {
+    "name": "FiraCode",
+    "value": "true 12000"
+  },
+  {
+    "name": "JetBrainsMono",
+    "value": "true 11800"
+  },
+  {
+    "name": "Iosevka",
+    "value": "true 12100"
+  }
+]

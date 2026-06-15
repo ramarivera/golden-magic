@@ -1,0 +1,4 @@
+session	state runtime
+local	active python
+remote	idle docker
+notebook	closed jupyter

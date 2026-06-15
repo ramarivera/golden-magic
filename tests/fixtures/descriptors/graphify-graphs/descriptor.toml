@@ -1,0 +1,10 @@
+id = "known.graphify.graphs"
+name = "Graphify graph list"
+priority = 50
+
+[matches]
+required_substrings = ["graph\tnodes","deps\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

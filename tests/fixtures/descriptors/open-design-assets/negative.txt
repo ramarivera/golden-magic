@@ -1,0 +1,2 @@
+asset status format
+homepage ready html

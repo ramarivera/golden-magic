@@ -1,0 +1,10 @@
+id = "known.nerd-fonts.families"
+name = "Nerd Fonts family list"
+priority = 50
+
+[matches]
+required_substrings = ["family\tpatched","FiraCode\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

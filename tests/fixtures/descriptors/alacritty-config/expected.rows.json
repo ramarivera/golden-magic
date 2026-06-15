@@ -1,0 +1,18 @@
+[
+  {
+    "key": "key",
+    "value": "window.opacity"
+  },
+  {
+    "key": "value",
+    "value": "0.95"
+  },
+  {
+    "key": "font",
+    "value": "JetBrainsMono"
+  },
+  {
+    "key": "shell",
+    "value": "/bin/zsh"
+  }
+]

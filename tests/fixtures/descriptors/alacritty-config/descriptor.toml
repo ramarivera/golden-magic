@@ -1,0 +1,10 @@
+id = "known.alacritty.config"
+name = "Alacritty config summary"
+priority = 50
+
+[matches]
+required_substrings = ["key:","font:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+family	patched glyphs
+FiraCode	true 12000
+JetBrainsMono	true 11800
+Iosevka	true 12100

@@ -1,0 +1,2 @@
+key window.opacity
+font JetBrainsMono
