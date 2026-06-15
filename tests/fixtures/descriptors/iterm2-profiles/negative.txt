@@ -1,0 +1,2 @@
+profile font theme
+Default Menlo dark

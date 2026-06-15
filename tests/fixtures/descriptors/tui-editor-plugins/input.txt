@@ -1,0 +1,4 @@
+plugin	status bundle
+chart	enabled optional
+code-syntax-highlight	enabled optional
+table-merged-cell	disabled optional

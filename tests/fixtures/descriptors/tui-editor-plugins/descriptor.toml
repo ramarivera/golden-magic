@@ -1,0 +1,10 @@
+id = "known.tui-editor.plugins"
+name = "TOAST UI Editor plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tstatus","chart\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

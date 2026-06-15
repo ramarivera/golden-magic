@@ -1,0 +1,18 @@
+[
+  {
+    "name": "skill",
+    "value": "status category"
+  },
+  {
+    "name": "planning",
+    "value": "ready project"
+  },
+  {
+    "name": "review",
+    "value": "ready quality"
+  },
+  {
+    "name": "handoff",
+    "value": "draft process"
+  }
+]

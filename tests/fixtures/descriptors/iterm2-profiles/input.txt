@@ -1,0 +1,4 @@
+profile	font theme
+Default	Menlo dark
+Presentation	Monaco light
+Remote	FiraCode dark

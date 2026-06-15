@@ -1,0 +1,18 @@
+[
+  {
+    "name": "plugin",
+    "value": "status bundle"
+  },
+  {
+    "name": "chart",
+    "value": "enabled optional"
+  },
+  {
+    "name": "code-syntax-highlight",
+    "value": "enabled optional"
+  },
+  {
+    "name": "table-merged-cell",
+    "value": "disabled optional"
+  }
+]

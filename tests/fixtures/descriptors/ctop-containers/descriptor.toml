@@ -1,0 +1,10 @@
+id = "known.ctop.containers"
+name = "ctop container list"
+priority = 50
+
+[matches]
+required_substrings = ["container\tstate","web\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

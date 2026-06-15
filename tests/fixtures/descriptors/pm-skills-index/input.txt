@@ -1,0 +1,4 @@
+skill	status category
+planning	ready project
+review	ready quality
+handoff	draft process

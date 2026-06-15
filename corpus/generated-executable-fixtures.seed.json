@@ -3178,5 +3178,65 @@
     "negative": "action state scope\ndb-migrate ready server\n",
     "analysis_notes": "Modeled Wasp action output with a generated executable-json parser plugin.",
     "variants": ["action header row", "state row", "scope field"]
+  },
+  {
+    "fixture": "pm-skills-index",
+    "descriptor_id": "known.pm-skills.index",
+    "name": "pm-skills index",
+    "repo": "https://github.com/phuryn/pm-skills",
+    "required_substrings": ["skill\tstatus", "planning\tready"],
+    "parser": "tab-pairs",
+    "input": "skill\tstatus category\nplanning\tready project\nreview\tready quality\nhandoff\tdraft process\n",
+    "negative": "skill status category\nplanning ready project\n",
+    "analysis_notes": "Modeled pm-skills index output with a generated executable-json parser plugin.",
+    "variants": ["skill header row", "status row", "category field"]
+  },
+  {
+    "fixture": "claude-skills-index",
+    "descriptor_id": "known.claude-skills.index",
+    "name": "claude-skills index",
+    "repo": "https://github.com/alirezarezvani/claude-skills",
+    "required_substrings": ["skill\tlanguage", "python-helper\tPython"],
+    "parser": "tab-pairs",
+    "input": "skill\tlanguage status\npython-helper\tPython ready\nrepo-review\tMarkdown ready\nrelease-notes\tMarkdown draft\n",
+    "negative": "skill language status\npython-helper Python ready\n",
+    "analysis_notes": "Modeled claude-skills index output with a generated executable-json parser plugin.",
+    "variants": ["skill header row", "language row", "status field"]
+  },
+  {
+    "fixture": "tui-editor-plugins",
+    "descriptor_id": "known.tui-editor.plugins",
+    "name": "TOAST UI Editor plugin list",
+    "repo": "https://github.com/nhn/tui.editor",
+    "required_substrings": ["plugin\tstatus", "chart\tenabled"],
+    "parser": "tab-pairs",
+    "input": "plugin\tstatus bundle\nchart\tenabled optional\ncode-syntax-highlight\tenabled optional\ntable-merged-cell\tdisabled optional\n",
+    "negative": "plugin status bundle\nchart enabled optional\n",
+    "analysis_notes": "Modeled TOAST UI Editor plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "status row", "bundle field"]
+  },
+  {
+    "fixture": "ctop-containers",
+    "descriptor_id": "known.ctop.containers",
+    "name": "ctop container list",
+    "repo": "https://github.com/bcicen/ctop",
+    "required_substrings": ["container\tstate", "web\trunning"],
+    "parser": "tab-pairs",
+    "input": "container\tstate cpu\nweb\trunning 12%\ndb\trunning 7%\nworker\tstopped 0%\n",
+    "negative": "container state cpu\nweb running 12%\n",
+    "analysis_notes": "Modeled ctop container output with a generated executable-json parser plugin.",
+    "variants": ["container header row", "state row", "cpu field"]
+  },
+  {
+    "fixture": "iterm2-profiles",
+    "descriptor_id": "known.iterm2.profiles",
+    "name": "iTerm2 profile list",
+    "repo": "https://github.com/gnachman/iTerm2",
+    "required_substrings": ["profile\tfont", "Default\tMenlo"],
+    "parser": "tab-pairs",
+    "input": "profile\tfont theme\nDefault\tMenlo dark\nPresentation\tMonaco light\nRemote\tFiraCode dark\n",
+    "negative": "profile font theme\nDefault Menlo dark\n",
+    "analysis_notes": "Modeled iTerm2 profile output with a generated executable-json parser plugin.",
+    "variants": ["profile header row", "font row", "theme field"]
   }
 ]

@@ -5128,5 +5128,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/phuryn/pm-skills",
+    "descriptor_id": "known.pm-skills.index",
+    "run_id": "agentic.pm-skills-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pm-skills-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pm-skills-index/expected.rows.json",
+    "variants": [
+      "skill header row",
+      "status row",
+      "category field"
+    ],
+    "transcript": [
+      "selected descriptor known.pm-skills.index for pm-skills index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alirezarezvani/claude-skills",
+    "descriptor_id": "known.claude-skills.index",
+    "run_id": "agentic.claude-skills-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-skills-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-skills-index/expected.rows.json",
+    "variants": [
+      "skill header row",
+      "language row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-skills.index for claude-skills index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nhn/tui.editor",
+    "descriptor_id": "known.tui-editor.plugins",
+    "run_id": "agentic.tui-editor-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-editor-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-editor-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "bundle field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui-editor.plugins for TOAST UI Editor plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bcicen/ctop",
+    "descriptor_id": "known.ctop.containers",
+    "run_id": "agentic.ctop-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ctop-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ctop-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "state row",
+      "cpu field"
+    ],
+    "transcript": [
+      "selected descriptor known.ctop.containers for ctop container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gnachman/iTerm2",
+    "descriptor_id": "known.iterm2.profiles",
+    "run_id": "agentic.iterm2-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/iterm2-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/iterm2-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "font row",
+      "theme field"
+    ],
+    "transcript": [
+      "selected descriptor known.iterm2.profiles for iTerm2 profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

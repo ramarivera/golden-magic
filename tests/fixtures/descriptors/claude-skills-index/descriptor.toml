@@ -1,0 +1,10 @@
+id = "known.claude-skills.index"
+name = "claude-skills index"
+priority = 50
+
+[matches]
+required_substrings = ["skill\tlanguage","python-helper\tPython"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

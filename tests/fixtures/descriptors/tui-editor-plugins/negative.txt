@@ -1,0 +1,2 @@
+plugin status bundle
+chart enabled optional

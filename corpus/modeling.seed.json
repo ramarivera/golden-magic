@@ -1993,5 +1993,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/wasp-actions",
     "analysis_notes": "Modeled Wasp action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/phuryn/pm-skills",
+    "descriptor_id": "known.pm-skills.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pm-skills-index",
+    "analysis_notes": "Modeled pm-skills index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alirezarezvani/claude-skills",
+    "descriptor_id": "known.claude-skills.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-skills-index",
+    "analysis_notes": "Modeled claude-skills index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nhn/tui.editor",
+    "descriptor_id": "known.tui-editor.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-editor-plugins",
+    "analysis_notes": "Modeled TOAST UI Editor plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bcicen/ctop",
+    "descriptor_id": "known.ctop.containers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ctop-containers",
+    "analysis_notes": "Modeled ctop container output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gnachman/iTerm2",
+    "descriptor_id": "known.iterm2.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/iterm2-profiles",
+    "analysis_notes": "Modeled iTerm2 profile output with a generated executable-json parser plugin."
   }
 ]
