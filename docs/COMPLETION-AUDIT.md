@@ -8,13 +8,13 @@ This audit validates the previously claimed completion list against current repo
 
 | Claim | Evidence |
 | --- | --- |
-| Rust parser core | `src/lib.rs` exposes `parse`, `parse_with_options`, `ParseReport`, `ParseOptions`; `cargo test --lib -- --nocapture` passed 13 tests. |
+| Rust parser core | `src/lib.rs` exposes `parse`, `parse_with_options`, `ParseReport`, `ParseOptions`; `cargo test --lib -- --nocapture` passed. |
 | Rust CLI binary `golden-magic` | `Cargo.toml` package/bin defaults and `src/main.rs`; `cargo build --bins` passed; manual stdin smoke through `target/debug/golden-magic` emitted rows JSON. |
 | CLI aliases `gold`, `golden`, `magic`, `magia` | `src/bin/*.rs`; `cargo test --test cli -- --nocapture` passed 13 tests including alias coverage. |
 | Native Rust Nushell plugin binary `nu_plugin_golden_magic` | `Cargo.toml` feature-gated bin and `src/bin/nu_plugin_golden_magic.rs`; `cargo test --features nu-plugin --test nu_plugin -- --nocapture` passed 3 tests. |
 | Nushell wrapper module | `nu/golden-magic.nu`; `cargo test --test nu_wrapper -- --nocapture` passed 1 integration test. |
 | `from golden-magic` aliases in wrapper and native plugin paths | Wrapper exports aliases in `nu/golden-magic.nu`; plugin command list in `src/bin/nu_plugin_golden_magic.rs`; Nu wrapper and native plugin integration tests passed. |
-| Heuristic parsing: tabs, pipes, commas, semicolons, repeated-space tables, fallback lines | Rule constants and parser implementations are in `src/lib.rs`; `cargo test --lib -- --nocapture` passed 13 tests; `target/debug/golden-magic --list-rules` listed all expected rule ids. |
+| Heuristic parsing: tabs, pipes, commas, semicolons, repeated-space tables, fallback lines | Rule constants and parser implementations are in `src/lib.rs`; `cargo test --lib -- --nocapture` passed; `target/debug/golden-magic --list-rules` listed all expected rule ids. |
 | Rule toggles: `--disable-rule`, `--only-rule`, `--list-rules` | `src/cli.rs` implements all three; `cargo test --test cli -- --nocapture` passed; manual `--only-rule detect.delimited.pipes --output trace-json` showed `options.only-rule` and pipe detection. |
 | Output modes: report JSON, rows JSON, trace JSON | `src/cli.rs` implements `report-json`, `rows-json`, `trace-json`, and `--explain`; CLI tests passed. |
 | Descriptor registry substrate | `src/descriptors.rs`; `cargo test --test descriptor_fixtures -- --nocapture` passed 3 tests. |
@@ -22,13 +22,13 @@ This audit validates the previously claimed completion list against current repo
 | Descriptor/config loading inside native Nu plugin path | `src/bin/nu_plugin_golden_magic.rs` reuses `parser_options_from_descriptors`; native plugin integration tests passed. |
 | Descriptor fixture tests | `tests/descriptor_fixtures.rs`; `cargo test --test descriptor_fixtures -- --nocapture` passed. |
 | Property tests | `src/lib.rs` includes `proptest!`; `cargo test --lib -- --nocapture` passed. |
-| CLI tests | `tests/cli.rs`; `cargo test --test cli -- --nocapture` passed 13 tests. |
+| CLI tests | `tests/cli.rs`; `cargo test --test cli -- --nocapture` passed. |
 | Nu wrapper tests | `tests/nu_wrapper.rs`; `cargo test --test nu_wrapper -- --nocapture` passed. |
 | Native Nu plugin integration test | `tests/nu_plugin.rs`; `cargo test --features nu-plugin --test nu_plugin -- --nocapture` passed. |
 | Optional Nix-backed fixture test exists | `tests/nix_fixture.rs` exists and `cargo test --test nix_fixture -- --nocapture` passed the default skip path. |
 | Descriptor-driven Nix manifest harness exists | `tests/nix_fixture.rs` reads `nix.toml` manifests; `tests/fixtures/descriptors/generic-pipes/nix.toml` exists; default skip test passed; opt-in live execution passed in a disposable `nixos/nix:latest` container with `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1`. |
 | Known-tool descriptor corpus | `tests/fixtures/descriptors/*` contains representative descriptor packs; `docs/KNOWN-TOOLS.md`; descriptor fixture tests passed. |
-| Extension-author SDK for descriptor packs | `docs/SDK.md`, `schemas/descriptor.schema.json`, `examples/descriptors/simple-pipes/*`, `--validate-descriptor-dir`; CLI tests and manual validation passed. |
+| Extension-author SDK for descriptor/tool packs | `docs/SDK.md`, `docs/TOOL-PACKS.md`, `src/tool_packs.rs`, `schemas/descriptor.schema.json`, `schemas/tool-pack.schema.json`, `examples/descriptors/simple-pipes/*`, `--validate-descriptor-dir`; CLI tests and validation passed. |
 | Prior-art research artifact | `docs/PRIOR-ART.md` and `docs/PARSER-BACKENDS.md` cover Nushell, descriptors, tree-sitter, dynamic native loading, subprocesses, WASM/WASI, and the chosen parser-backend boundary. |
 | Safe native runtime extension stance | `docs/EXTENSIONS.md` and `docs/NATIVE-RUNTIME-REVIEW.md` explicitly reject arbitrary native runtime loading until separate approval, ABI, security, portability, and test gates are satisfied. |
 | Docs, OpenSpec, beads, AGENTS/CLAUDE setup | `docs/*`, `openspec/golden-magic-core.md`, `.beads/issues.jsonl`, `AGENTS.md`, `CLAUDE.md` exist. |
@@ -40,7 +40,6 @@ This audit validates the previously claimed completion list against current repo
 | Claim | Status |
 | --- | --- |
 | Arbitrary Rust runtime extension/plugin loading | Not implemented by design. `docs/NATIVE-RUNTIME-REVIEW.md` rejects it until explicit approval and concrete ABI/security/portability/test gates are satisfied. |
-| Tree-sitter backend | Not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding tree-sitter runtime and grammar packages. |
 
 ## Weak Or Qualified Evidence
 
@@ -53,6 +52,7 @@ This audit validates the previously claimed completion list against current repo
 - Descriptor loading now ignores reserved `nix.toml` fixture manifests, so a descriptor directory can contain optional Nix fixture metadata without breaking `--descriptor-dir` or `--validate-descriptor-dir`.
 - Added a unit test for ignoring `nix.toml` in descriptor directories.
 - Criterion regression was investigated and recorded in [`docs/PERFORMANCE.md`](PERFORMANCE.md). No baseline was updated.
-- Descriptor parser backends now have explicit validation, `--list-backends` discovery, and core `ParseOptions` backend selection. `heuristic` and `sections` are implemented; `tree-sitter` remains a planned candidate and fails validation until implemented.
+- Descriptor parser backends now have explicit validation, `--list-backends` discovery, and core `ParseOptions` backend selection. `heuristic`, `sections`, and `tree-sitter-rust` are implemented.
 - Descriptor-driven Nix manifest fixtures were verified in a disposable `nixos/nix:latest` container with the repository mounted read-only and Cargo outputs redirected to `/tmp`.
 - Native runtime loading now has a formal security and portability review artifact in [`docs/NATIVE-RUNTIME-REVIEW.md`](NATIVE-RUNTIME-REVIEW.md); the feature remains rejected until those gates are met.
+- Declarative tool packs are implemented in `src/tool_packs.rs` and specified in [`docs/TOOL-PACKS.md`](TOOL-PACKS.md) plus [`schemas/tool-pack.schema.json`](../schemas/tool-pack.schema.json) as the data-only plugin surface.

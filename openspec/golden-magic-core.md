@@ -19,6 +19,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - Completed known-tool descriptor corpus for current descriptor schema: `golden-magic-9pu`
 - Completed extension-author SDK for descriptor packs: `golden-magic-euf`
 - Completed parser-backend/grammar-like parsing slice: `golden-magic-2mf`
+- In progress tree-sitter backend: `golden-magic-3hr`
 
 ## Acceptance Criteria
 
@@ -49,17 +50,17 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 - [x] Include descriptor fixture harness tests for isolated matching, negative inputs, expected rows, and duplicate registry ids.
 - [x] Include optional descriptor-driven Nix manifest fixture harness and docs.
 - [x] Include extension-author SDK docs, descriptor schema, validation command, example descriptor pack, and fixture guidance.
-- [x] Include descriptor-selected parser backend support with `heuristic` and `sections` backends.
+- [x] Include descriptor-selected parser backend support with `heuristic`, `sections`, and `tree-sitter-rust` backends.
 - [x] Include backend listing, validation, fixture coverage, malformed-input diagnostics, and property tests for current backend behavior.
-- [x] Evaluate tree-sitter before inventing a custom grammar DSL and document why tree-sitter is deferred for this scope.
+- [x] Evaluate tree-sitter before inventing a custom grammar DSL and implement the approved `tree-sitter-rust` backend.
+- [x] Implement declarative tool packs as the data-only plugin surface for tools, commands, subcommands, args, output patterns, and descriptor bindings.
 - [x] Document debug instrumentation threat model and explicit no-hidden-channel default.
 - [x] Keep parser core independent from Nushell plugin APIs.
 
 ## Deferred Criteria
 
 - Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/NATIVE-RUNTIME-REVIEW.md` explicitly rejects native runtime loading until separate approval plus ABI, security, portability, and test gates are satisfied; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
-- Tree-sitter backend is not implemented. `docs/PARSER-BACKENDS.md` defers it until a named CLI grammar target and dependency approval justify adding the runtime and generated grammar package.
-- Native runtime extension SDK is not implemented. The current SDK is descriptor-pack authoring, validation, schema, examples, and fixture guidance.
+- Native runtime extension SDK is not implemented. The current SDK is descriptor-pack and tool-pack authoring, validation schemas, examples, and fixture guidance.
 
 ## Evidence
 

@@ -1,0 +1,6 @@
+mod commands {
+  pub struct Tool;
+  pub fn run() {}
+}
+
+fn main() {}

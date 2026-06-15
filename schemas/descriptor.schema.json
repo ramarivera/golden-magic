@@ -42,7 +42,7 @@
       "properties": {
         "backend": {
           "type": "string",
-          "enum": ["heuristic", "sections"],
+          "enum": ["heuristic", "sections", "tree-sitter-rust"],
           "description": "Parser backend id."
         },
         "only_rules": {

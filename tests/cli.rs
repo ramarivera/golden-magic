@@ -216,12 +216,12 @@ only_rules = ["detect.delimited.pipes"]
 fn cli_rejects_unsupported_descriptor_backend() {
     let dir = tempdir().expect("temp dir");
     fs::write(
-        dir.path().join("tree_sitter.toml"),
+        dir.path().join("unsupported.toml"),
         r#"
-id = "backend.tree-sitter"
-name = "Backend Tree Sitter"
+id = "backend.unsupported"
+name = "Backend Unsupported"
 [parser]
-backend = "tree-sitter"
+backend = "definitely-not-real"
 "#,
     )
     .expect("write descriptor");
@@ -233,7 +233,7 @@ backend = "tree-sitter"
         .assert()
         .failure()
         .stderr(predicates::str::contains(
-            "descriptor contains unknown or unsupported parser backend(s): tree-sitter",
+            "descriptor contains unknown or unsupported parser backend(s): definitely-not-real",
         ));
 }
 
@@ -274,6 +274,44 @@ backend = "sections"
     assert_eq!(rows[0]["status"], "ok");
     assert_eq!(rows[1]["section"], "worker");
     assert_eq!(rows[1]["status"], "degraded");
+}
+
+#[test]
+fn cli_applies_tree_sitter_rust_descriptor_backend() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("rust.toml"),
+        r#"
+id = "backend.tree-sitter-rust"
+name = "Backend Tree Sitter Rust"
+priority = 10
+[matches]
+required_substrings = ["fn ", "struct "]
+[parser]
+backend = "tree-sitter-rust"
+"#,
+    )
+    .expect("write descriptor");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(dir.path())
+        .arg("--output")
+        .arg("rows-json")
+        .write_stdin("struct Tool;\nfn run() {}\n")
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let rows: Value = serde_json::from_slice(&output).expect("valid JSON rows");
+    assert_eq!(rows[0]["kind"], "struct");
+    assert_eq!(rows[0]["name"], "Tool");
+    assert_eq!(rows[1]["kind"], "function");
+    assert_eq!(rows[1]["name"], "run");
 }
 
 #[test]

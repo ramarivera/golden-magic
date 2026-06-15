@@ -21,7 +21,7 @@ The implemented slice is a narrow backend experiment, not a general grammar engi
 3. The `sections` backend prototypes one structured output family whose shape is awkward for delimiter or repeated-space parsing.
 4. Fallback heuristics remain the default path for ordinary CLI tables.
 
-Status: the core has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic` and `sections` backends. Tree-sitter is evaluated below and deferred for this scope.
+Status: the core has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic`, `sections`, and `tree-sitter-rust` backends.
 
 ## Why Tree-sitter Fits Some Cases
 
@@ -41,16 +41,16 @@ Tree-sitter is also strongest when there is a real grammar. Many CLI outputs are
 
 ## Tree-sitter Scope Decision
 
-Tree-sitter is rejected for the current `golden-magic-2mf` implementation slice and kept as a future backend candidate.
+Tree-sitter is accepted as a descriptor-selected backend surface after explicit dependency approval. The first implemented grammar target is `tree-sitter-rust`, using the `tree-sitter` runtime crate and the generated `tree-sitter-rust` grammar package.
 
 The evidence:
 
 - Official tree-sitter docs frame it as a parser generator plus incremental parsing library that produces concrete syntax trees for source files. Golden Magic's dominant inputs are one-shot CLI output streams, not editable source files.
-- Rust tree-sitter usage requires the `tree-sitter` crate plus a language grammar crate such as `tree-sitter-rust`; that is at least one new parser dependency and one grammar dependency per supported grammar.
+- Rust tree-sitter usage requires the `tree-sitter` crate plus a language grammar crate such as `tree-sitter-rust`; this dependency surface is now explicit in `Cargo.toml`.
 - Tree-sitter parser authoring uses generated grammars from `grammar.js`. The authoring docs call out a real grammar development workflow, including grammar DSL, parser writing, tests, and publishing. That is heavier than the current descriptor-pack SDK.
-- The current repo now has a real non-table backend, `sections`, with stable trace IDs, fixture coverage, property coverage, malformed-input diagnostics, and descriptor integration. That satisfies the immediate need to prove backend routing without taking on tree-sitter packaging yet.
+- The current repo has two non-default backends: `sections` for section/key-value blocks and `tree-sitter-rust` for Rust syntax declaration extraction.
 
-Tree-sitter should be reconsidered when there is a named CLI output family with an actual grammar, fixtures that cannot be handled by `heuristic` or `sections`, and explicit approval to add both the tree-sitter runtime crate and a generated grammar package.
+New tree-sitter grammar targets should still require a named input family, fixtures that cannot be handled by `heuristic` or `sections`, and explicit approval to add the generated grammar package.
 
 ## Rejected Default
 
@@ -91,13 +91,21 @@ and:
 backend = "sections"
 ```
 
-Descriptors that request `tree-sitter` fail validation until a future tree-sitter backend exists.
+and:
+
+```toml
+[parser]
+backend = "tree-sitter-rust"
+```
+
+`tree-sitter-rust` parses Rust syntax with tree-sitter and emits one row per supported declaration with `kind`, `name`, `start_line`, and `end_line`. It currently extracts modules, structs, and functions.
 
 Direct core use can also select the implemented backend:
 
 ```rust
 ParseOptions::new().backend("heuristic")
 ParseOptions::new().backend("sections")
+ParseOptions::new().backend("tree-sitter-rust")
 ```
 
 Inspect implemented backend ids with:
@@ -119,7 +127,7 @@ Backend results must include:
 This slice proves:
 
 - a descriptor can select a backend explicitly
-- tree-sitter support is rejected for this scope with evidence and future-entry criteria
+- tree-sitter support is implemented for one named grammar target with evidence and future-entry criteria for additional grammars
 - backend ids are listed or discoverable
 - backend failures fall back safely or report clear diagnostics
 - fixtures cover positive input, negative input, malformed input, and expected rows
@@ -127,6 +135,6 @@ This slice proves:
 - parser core remains independent from Nushell plugin APIs
 - dependency/build implications are documented
 
-## Open Dependency Gate
+## Dependency Gate
 
-Adding the `tree-sitter` crate or a generated grammar crate is a new dependency. That requires explicit approval before code changes add it.
+The `tree-sitter` runtime and `tree-sitter-rust` grammar dependencies were explicitly approved before implementation. Adding more generated grammar crates remains a new dependency decision.

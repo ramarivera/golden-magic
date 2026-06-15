@@ -23,6 +23,7 @@ The descriptor fixture test harness verifies every pack in isolation and checks 
 | `kubectl-get-pods` | `known.kubectl.get-pods` | repeated-space pod table | Covers name/ready/status/restarts/age columns. |
 | `pnpm-outdated` | `known.pnpm.outdated` | repeated-space dependency table | Covers package/current/latest/dependent rows. |
 | `ps-basic` | `known.ps.basic` | repeated-space process table | Covers PID/TTY/time/command rows. |
+| `rust-declarations` | `known.rust.declarations` | tree-sitter Rust declarations | Covers `mod`, `struct`, and `fn` extraction through the `tree-sitter-rust` backend. |
 | `sectioned-services` | `known.sectioned.services` | sectioned key-value blocks | Covers repeated `section: <name>` blocks through the `sections` backend. |
 | `systemctl-list-units` | `known.systemctl.list-units` | repeated-space service table | Covers service unit/load/active/sub/description rows. |
 
@@ -32,4 +33,4 @@ The descriptor fixture test harness verifies every pack in isolation and checks 
 
 The current descriptor schema can select implemented parser backends and heuristic rule hints. It cannot yet express column-specific grammars, free-text trailing fields, optional columns, or tool-specific cleanup. Fixtures in this corpus are intentionally shaped to what the current parser can prove.
 
-More hostile real outputs need either a new descriptor-selected backend or a future tree-sitter backend when a named CLI grammar target justifies the dependency and build cost.
+More hostile real outputs need either a new descriptor-selected backend or a tree-sitter grammar target with fixtures and traceable row extraction.

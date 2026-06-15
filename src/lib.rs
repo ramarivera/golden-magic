@@ -1,6 +1,7 @@
 pub mod cli;
 pub mod config;
 pub mod descriptors;
+pub mod tool_packs;
 
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet};
@@ -16,9 +17,12 @@ const FALLBACK_EMPTY: &str = "fallback.empty";
 const FALLBACK_LINES: &str = "fallback.lines";
 const BACKEND_HEURISTIC: &str = "heuristic";
 const BACKEND_SECTIONS: &str = "sections";
+const BACKEND_TREE_SITTER_RUST: &str = "tree-sitter-rust";
 const BACKEND_SECTIONS_SELECTED: &str = "backend.sections";
 const BACKEND_SECTIONS_PARSED: &str = "backend.sections.parsed";
 const BACKEND_SECTIONS_MALFORMED: &str = "backend.sections.malformed";
+const BACKEND_TREE_SITTER_RUST_PARSED: &str = "backend.tree-sitter-rust.parsed";
+const BACKEND_TREE_SITTER_RUST_ERROR: &str = "backend.tree-sitter-rust.error";
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct ParseReport {
@@ -36,6 +40,7 @@ pub enum ParseKind {
     FixedWidth,
     Lines,
     Sections,
+    TreeSitter,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
@@ -157,6 +162,7 @@ pub fn parse_with_options(input: &str, options: &ParseOptions) -> ParseReport {
     match options.selected_backend() {
         BACKEND_HEURISTIC => parse_with_heuristic_backend(input, options),
         BACKEND_SECTIONS => parse_with_sections_backend(input, options),
+        BACKEND_TREE_SITTER_RUST => parse_with_tree_sitter_rust_backend(input, options),
         other => unsupported_backend_report(other, options),
     }
 }
@@ -234,7 +240,11 @@ pub fn known_rule_ids() -> &'static [&'static str] {
 }
 
 pub fn known_backend_ids() -> &'static [&'static str] {
-    &[BACKEND_HEURISTIC, BACKEND_SECTIONS]
+    &[
+        BACKEND_HEURISTIC,
+        BACKEND_SECTIONS,
+        BACKEND_TREE_SITTER_RUST,
+    ]
 }
 
 fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
@@ -268,6 +278,7 @@ fn backend_rule_id(backend: &str) -> &'static str {
     match backend {
         BACKEND_HEURISTIC => "backend.heuristic",
         BACKEND_SECTIONS => BACKEND_SECTIONS_SELECTED,
+        BACKEND_TREE_SITTER_RUST => "backend.tree-sitter-rust",
         _ => "backend.unsupported",
     }
 }
@@ -325,6 +336,106 @@ fn parse_with_sections_backend(input: &str, options: &ParseOptions) -> ParseRepo
         columns,
         rows,
         trace,
+    }
+}
+
+fn parse_with_tree_sitter_rust_backend(input: &str, options: &ParseOptions) -> ParseReport {
+    let mut trace = options_trace(options);
+    let mut parser = tree_sitter::Parser::new();
+    if let Err(error) = parser.set_language(&tree_sitter_rust::LANGUAGE.into()) {
+        trace.push(event(
+            BACKEND_TREE_SITTER_RUST_ERROR,
+            format!("failed to load tree-sitter Rust grammar: {error}"),
+        ));
+        return ParseReport {
+            kind: ParseKind::TreeSitter,
+            confidence: 0.0,
+            columns: tree_sitter_declaration_columns(),
+            rows: Vec::new(),
+            trace,
+        };
+    }
+
+    let Some(tree) = parser.parse(input, None) else {
+        trace.push(event(
+            BACKEND_TREE_SITTER_RUST_ERROR,
+            "tree-sitter Rust parser did not return a syntax tree",
+        ));
+        return ParseReport {
+            kind: ParseKind::TreeSitter,
+            confidence: 0.0,
+            columns: tree_sitter_declaration_columns(),
+            rows: Vec::new(),
+            trace,
+        };
+    };
+
+    let root = tree.root_node();
+    if root.has_error() {
+        trace.push(event(
+            BACKEND_TREE_SITTER_RUST_ERROR,
+            "tree-sitter Rust grammar reported syntax errors",
+        ));
+    }
+
+    let mut rows = Vec::new();
+    collect_rust_declarations(root, input.as_bytes(), &mut rows);
+
+    trace.push(event(
+        BACKEND_TREE_SITTER_RUST_PARSED,
+        format!(
+            "tree-sitter Rust backend extracted {} declaration row(s)",
+            rows.len()
+        ),
+    ));
+
+    ParseReport {
+        kind: ParseKind::TreeSitter,
+        confidence: if root.has_error() { 0.45 } else { 0.88 },
+        columns: tree_sitter_declaration_columns(),
+        rows,
+        trace,
+    }
+}
+
+fn tree_sitter_declaration_columns() -> Vec<String> {
+    ["kind", "name", "start_line", "end_line"]
+        .into_iter()
+        .map(ToOwned::to_owned)
+        .collect()
+}
+
+fn collect_rust_declarations(node: tree_sitter::Node, source: &[u8], rows: &mut Vec<Row>) {
+    if let Some(kind) = rust_declaration_kind(node.kind())
+        && let Some(name_node) = node.child_by_field_name("name")
+        && let Ok(name) = name_node.utf8_text(source)
+    {
+        rows.push(BTreeMap::from([
+            ("kind".to_string(), kind.to_string()),
+            ("name".to_string(), name.to_string()),
+            (
+                "start_line".to_string(),
+                (node.start_position().row + 1).to_string(),
+            ),
+            (
+                "end_line".to_string(),
+                (node.end_position().row + 1).to_string(),
+            ),
+        ]));
+    }
+
+    let mut cursor = node.walk();
+    for child in node.named_children(&mut cursor) {
+        collect_rust_declarations(child, source, rows);
+    }
+}
+
+fn rust_declaration_kind(node_kind: &str) -> Option<&'static str> {
+    match node_kind {
+        "function_item" => Some("function"),
+        "mod_item" => Some("module"),
+        "struct_item" => Some("struct"),
+        _ => None,
     }
 }
 
@@ -743,13 +854,38 @@ mod tests {
 
     #[test]
     fn unsupported_backend_reports_diagnostic_without_parsing() {
-        let options = ParseOptions::new().backend("tree-sitter");
+        let options = ParseOptions::new().backend("tree-sitter-unknown");
         let report = parse_with_options("alpha\tbeta\ngamma\tdelta\n", &options);
 
         assert_eq!(report.kind, ParseKind::Lines);
         assert_eq!(report.confidence, 0.0);
         assert!(report.rows.is_empty());
         assert_eq!(report.trace[0].rule_id, "backend.unsupported");
+    }
+
+    #[test]
+    fn tree_sitter_rust_backend_extracts_declarations() {
+        let options = ParseOptions::new().backend(BACKEND_TREE_SITTER_RUST);
+        let report = parse_with_options(
+            "mod commands {\n  pub struct Tool;\n  pub fn run() {}\n}\nfn main() {}\n",
+            &options,
+        );
+
+        assert_eq!(report.kind, ParseKind::TreeSitter);
+        assert_eq!(report.columns, tree_sitter_declaration_columns());
+        assert_eq!(report.rows[0]["kind"], "module");
+        assert_eq!(report.rows[0]["name"], "commands");
+        assert_eq!(report.rows[1]["kind"], "struct");
+        assert_eq!(report.rows[1]["name"], "Tool");
+        assert_eq!(report.rows[2]["kind"], "function");
+        assert_eq!(report.rows[2]["name"], "run");
+        assert_eq!(report.rows[3]["name"], "main");
+        assert!(
+            report
+                .trace
+                .iter()
+                .any(|event| event.rule_id == BACKEND_TREE_SITTER_RUST_PARSED)
+        );
     }
 
     #[test]

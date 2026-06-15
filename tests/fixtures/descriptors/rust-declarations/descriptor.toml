@@ -1,0 +1,9 @@
+id = "known.rust.declarations"
+name = "Rust declarations"
+priority = 60
+
+[matches]
+required_substrings = ["fn ", "struct "]
+
+[parser]
+backend = "tree-sitter-rust"
