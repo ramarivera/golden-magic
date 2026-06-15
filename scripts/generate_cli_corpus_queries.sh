@@ -20,6 +20,21 @@ star_windows=(
   '50..100'
 )
 
+keywords=(
+  cli
+  command-line
+  commandline
+  command
+  terminal
+  shell
+  console
+  tui
+  developer-tool
+  devtool
+  command-line-interface
+  command-line-application
+)
+
 languages=(
   Rust
   Go
@@ -59,6 +74,12 @@ HEADER
 for topic in "${topics[@]}"; do
   for stars in "${star_windows[@]}"; do
     printf 'topic:%s stars:%s\n' "$topic" "$stars"
+  done
+done
+
+for keyword in "${keywords[@]}"; do
+  for stars in "${star_windows[@]}"; do
+    printf '%s stars:%s\n' "$keyword" "$stars"
   done
 done
 

@@ -46,6 +46,18 @@ struct AgenticRun {
 
 fn is_cli_oriented_query(query: &str) -> bool {
     [
+        "cli ",
+        "command-line ",
+        "commandline ",
+        "command ",
+        "terminal ",
+        "shell ",
+        "console ",
+        "tui ",
+        "developer-tool ",
+        "devtool ",
+        "command-line-interface ",
+        "command-line-application ",
         "topic:cli",
         "topic:command-line",
         "topic:terminal",
