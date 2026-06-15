@@ -1,0 +1,10 @@
+id = "known.posting.history"
+name = "posting request history"
+priority = 50
+
+[matches]
+required_substrings = ["GET\thttps://api.example.test/users","POST\thttps://api.example.test/login"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

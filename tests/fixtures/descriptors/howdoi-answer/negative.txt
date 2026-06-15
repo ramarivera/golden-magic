@@ -1,0 +1,2 @@
+query rust read stdin
+answer use std::io::read_to_string

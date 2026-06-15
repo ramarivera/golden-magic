@@ -1,0 +1,3 @@
+field	type sum min max
+age	Integer 91 28 34
+name	Unicode 0 alice zoe

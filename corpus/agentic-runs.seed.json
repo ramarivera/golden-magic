@@ -808,5 +808,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/darrenburns/posting",
+    "descriptor_id": "known.posting.history",
+    "run_id": "agentic.posting-history.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/posting-history/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/posting-history/expected.rows.json",
+    "variants": [
+      "HTTP method",
+      "request URL",
+      "multiple history rows"
+    ],
+    "transcript": [
+      "selected descriptor known.posting.history for posting request history output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dbcli/mycli",
+    "descriptor_id": "known.mycli.status",
+    "run_id": "agentic.mycli-status.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mycli-status/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mycli-status/expected.rows.json",
+    "variants": [
+      "server version row",
+      "user row",
+      "database row"
+    ],
+    "transcript": [
+      "selected descriptor known.mycli.status for mycli connection status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ekzhang/bore",
+    "descriptor_id": "known.bore.local",
+    "run_id": "agentic.bore-local.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bore-local/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bore-local/expected.rows.json",
+    "variants": [
+      "local endpoint row",
+      "remote endpoint row",
+      "connection status row"
+    ],
+    "transcript": [
+      "selected descriptor known.bore.local for bore local tunnel status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gleitz/howdoi",
+    "descriptor_id": "known.howdoi.answer",
+    "run_id": "agentic.howdoi-answer.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/howdoi-answer/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/howdoi-answer/expected.rows.json",
+    "variants": [
+      "query row",
+      "answer row",
+      "source row"
+    ],
+    "transcript": [
+      "selected descriptor known.howdoi.answer for howdoi answer summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/BurntSushi/xsv",
+    "descriptor_id": "known.xsv.stats",
+    "run_id": "agentic.xsv-stats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xsv-stats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xsv-stats/expected.rows.json",
+    "variants": [
+      "header row",
+      "integer field row",
+      "unicode field row"
+    ],
+    "transcript": [
+      "selected descriptor known.xsv.stats for xsv stats output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

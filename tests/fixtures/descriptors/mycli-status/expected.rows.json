@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Server",
+    "value": "MySQL 8.4.0"
+  },
+  {
+    "key": "User",
+    "value": "ramiro@localhost"
+  },
+  {
+    "key": "Database",
+    "value": "golden_magic"
+  },
+  {
+    "key": "Prompt",
+    "value": "mycli"
+  }
+]

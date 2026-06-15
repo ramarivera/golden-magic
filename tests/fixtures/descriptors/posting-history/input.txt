@@ -1,0 +1,3 @@
+GET	https://api.example.test/users
+POST	https://api.example.test/login
+DELETE	https://api.example.test/sessions/42

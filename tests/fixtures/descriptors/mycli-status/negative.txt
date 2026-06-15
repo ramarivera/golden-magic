@@ -1,0 +1,2 @@
+Server MySQL 8.4.0
+User ramiro@localhost

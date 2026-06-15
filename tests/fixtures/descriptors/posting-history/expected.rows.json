@@ -1,0 +1,14 @@
+[
+  {
+    "name": "GET",
+    "value": "https://api.example.test/users"
+  },
+  {
+    "name": "POST",
+    "value": "https://api.example.test/login"
+  },
+  {
+    "name": "DELETE",
+    "value": "https://api.example.test/sessions/42"
+  }
+]

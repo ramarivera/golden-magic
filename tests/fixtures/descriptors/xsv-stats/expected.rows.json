@@ -1,0 +1,14 @@
+[
+  {
+    "name": "field",
+    "value": "type sum min max"
+  },
+  {
+    "name": "age",
+    "value": "Integer 91 28 34"
+  },
+  {
+    "name": "name",
+    "value": "Unicode 0 alice zoe"
+  }
+]

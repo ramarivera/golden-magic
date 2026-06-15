@@ -1,0 +1,14 @@
+[
+  {
+    "key": "query",
+    "value": "rust read stdin"
+  },
+  {
+    "key": "answer",
+    "value": "use std::io::read_to_string"
+  },
+  {
+    "key": "source",
+    "value": "stackoverflow"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "local",
+    "value": "127.0.0.1:3000"
+  },
+  {
+    "key": "remote",
+    "value": "bore.pub:42517"
+  },
+  {
+    "key": "status",
+    "value": "connected"
+  },
+  {
+    "key": "protocol",
+    "value": "tcp"
+  }
+]

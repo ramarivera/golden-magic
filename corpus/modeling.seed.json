@@ -313,5 +313,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/llm-models",
     "analysis_notes": "Modeled llm model-list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/darrenburns/posting",
+    "descriptor_id": "known.posting.history",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/posting-history",
+    "analysis_notes": "Modeled posting request-history output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dbcli/mycli",
+    "descriptor_id": "known.mycli.status",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mycli-status",
+    "analysis_notes": "Modeled mycli connection-status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ekzhang/bore",
+    "descriptor_id": "known.bore.local",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bore-local",
+    "analysis_notes": "Modeled bore local tunnel status output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gleitz/howdoi",
+    "descriptor_id": "known.howdoi.answer",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/howdoi-answer",
+    "analysis_notes": "Modeled howdoi answer summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/BurntSushi/xsv",
+    "descriptor_id": "known.xsv.stats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xsv-stats",
+    "analysis_notes": "Modeled xsv stats table output with a generated executable-json parser plugin."
   }
 ]

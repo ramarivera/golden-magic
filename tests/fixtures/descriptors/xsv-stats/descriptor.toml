@@ -1,0 +1,10 @@
+id = "known.xsv.stats"
+name = "xsv stats output"
+priority = 50
+
+[matches]
+required_substrings = ["field\ttype","age\tInteger"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

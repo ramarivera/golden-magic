@@ -298,5 +298,65 @@
     "negative": "gpt-5 OpenAI flagship\nlocal-llama Local model\n",
     "analysis_notes": "Modeled llm model-list output with a generated executable-json parser plugin.",
     "variants": ["provider model id", "model description", "local model row"]
+  },
+  {
+    "fixture": "posting-history",
+    "descriptor_id": "known.posting.history",
+    "name": "posting request history",
+    "repo": "https://github.com/darrenburns/posting",
+    "required_substrings": ["GET\thttps://api.example.test/users", "POST\thttps://api.example.test/login"],
+    "parser": "tab-pairs",
+    "input": "GET\thttps://api.example.test/users\nPOST\thttps://api.example.test/login\nDELETE\thttps://api.example.test/sessions/42\n",
+    "negative": "GET https://api.example.test/users\nPOST https://api.example.test/login\n",
+    "analysis_notes": "Modeled posting request-history output with a generated executable-json parser plugin.",
+    "variants": ["HTTP method", "request URL", "multiple history rows"]
+  },
+  {
+    "fixture": "mycli-status",
+    "descriptor_id": "known.mycli.status",
+    "name": "mycli connection status",
+    "repo": "https://github.com/dbcli/mycli",
+    "required_substrings": ["Server:", "User:"],
+    "parser": "colon-kv",
+    "input": "Server: MySQL 8.4.0\nUser: ramiro@localhost\nDatabase: golden_magic\nPrompt: mycli\n",
+    "negative": "Server MySQL 8.4.0\nUser ramiro@localhost\n",
+    "analysis_notes": "Modeled mycli connection-status output with a generated executable-json parser plugin.",
+    "variants": ["server version row", "user row", "database row"]
+  },
+  {
+    "fixture": "bore-local",
+    "descriptor_id": "known.bore.local",
+    "name": "bore local tunnel status",
+    "repo": "https://github.com/ekzhang/bore",
+    "required_substrings": ["local:", "remote:"],
+    "parser": "colon-kv",
+    "input": "local: 127.0.0.1:3000\nremote: bore.pub:42517\nstatus: connected\nprotocol: tcp\n",
+    "negative": "local 127.0.0.1:3000\nremote bore.pub:42517\n",
+    "analysis_notes": "Modeled bore local tunnel status output with a generated executable-json parser plugin.",
+    "variants": ["local endpoint row", "remote endpoint row", "connection status row"]
+  },
+  {
+    "fixture": "howdoi-answer",
+    "descriptor_id": "known.howdoi.answer",
+    "name": "howdoi answer summary",
+    "repo": "https://github.com/gleitz/howdoi",
+    "required_substrings": ["query:", "answer:"],
+    "parser": "colon-kv",
+    "input": "query: rust read stdin\nanswer: use std::io::read_to_string\nsource: stackoverflow\n",
+    "negative": "query rust read stdin\nanswer use std::io::read_to_string\n",
+    "analysis_notes": "Modeled howdoi answer summary output with a generated executable-json parser plugin.",
+    "variants": ["query row", "answer row", "source row"]
+  },
+  {
+    "fixture": "xsv-stats",
+    "descriptor_id": "known.xsv.stats",
+    "name": "xsv stats output",
+    "repo": "https://github.com/BurntSushi/xsv",
+    "required_substrings": ["field\ttype", "age\tInteger"],
+    "parser": "tab-pairs",
+    "input": "field\ttype sum min max\nage\tInteger 91 28 34\nname\tUnicode 0 alice zoe\n",
+    "negative": "field type sum min max\nage Integer 91 28 34\n",
+    "analysis_notes": "Modeled xsv stats table output with a generated executable-json parser plugin.",
+    "variants": ["header row", "integer field row", "unicode field row"]
   }
 ]

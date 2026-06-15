@@ -1,0 +1,10 @@
+id = "known.howdoi.answer"
+name = "howdoi answer summary"
+priority = 50
+
+[matches]
+required_substrings = ["query:","answer:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
