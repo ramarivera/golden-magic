@@ -1,0 +1,18 @@
+[
+  {
+    "name": "peer",
+    "value": "state blocks"
+  },
+  {
+    "name": "peer-a",
+    "value": "connected 128"
+  },
+  {
+    "name": "peer-b",
+    "value": "syncing 64"
+  },
+  {
+    "name": "peer-c",
+    "value": "disconnected 0"
+  }
+]

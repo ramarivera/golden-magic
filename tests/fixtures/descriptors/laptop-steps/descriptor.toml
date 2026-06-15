@@ -1,0 +1,10 @@
+id = "known.laptop.steps"
+name = "thoughtbot laptop step list"
+priority = 50
+
+[matches]
+required_substrings = ["step\tstatus","homebrew\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

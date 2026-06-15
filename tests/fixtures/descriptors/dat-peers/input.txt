@@ -1,0 +1,4 @@
+peer	state blocks
+peer-a	connected 128
+peer-b	syncing 64
+peer-c	disconnected 0

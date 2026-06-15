@@ -1,0 +1,4 @@
+module	state profile
+waybar	enabled default
+hyprlock	enabled secure
+rofi	disabled minimal

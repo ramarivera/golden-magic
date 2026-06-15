@@ -1,0 +1,4 @@
+step	status duration
+homebrew	done 45s
+asdf	done 30s
+postgres	pending 0s

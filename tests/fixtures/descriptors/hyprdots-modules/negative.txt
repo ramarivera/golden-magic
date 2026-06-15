@@ -1,0 +1,2 @@
+module state profile
+waybar enabled default

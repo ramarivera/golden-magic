@@ -1,0 +1,2 @@
+package state version
+zsh installed 5.8

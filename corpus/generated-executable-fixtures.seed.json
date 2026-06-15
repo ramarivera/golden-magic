@@ -4918,5 +4918,65 @@
     "negative": "query state count\nsunsets done 100\n",
     "analysis_notes": "Modeled google-images-download job output with a generated executable-json parser plugin.",
     "variants": ["query header row", "state row", "count field"]
+  },
+  {
+    "fixture": "crouton-targets",
+    "descriptor_id": "known.crouton.targets",
+    "name": "crouton target list",
+    "repo": "https://github.com/dnschneid/crouton",
+    "required_substrings": ["target\tstate", "xenial\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "target\tstate arch\nxenial\tinstalled amd64\njammy\tavailable amd64\nsid\tinstalled arm64\n",
+    "negative": "target state arch\nxenial installed amd64\n",
+    "analysis_notes": "Modeled crouton target output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "state row", "arch field"]
+  },
+  {
+    "fixture": "laptop-steps",
+    "descriptor_id": "known.laptop.steps",
+    "name": "thoughtbot laptop step list",
+    "repo": "https://github.com/thoughtbot/laptop",
+    "required_substrings": ["step\tstatus", "homebrew\tdone"],
+    "parser": "tab-pairs",
+    "input": "step\tstatus duration\nhomebrew\tdone 45s\nasdf\tdone 30s\npostgres\tpending 0s\n",
+    "negative": "step status duration\nhomebrew done 45s\n",
+    "analysis_notes": "Modeled thoughtbot laptop setup output with a generated executable-json parser plugin.",
+    "variants": ["step header row", "status row", "duration field"]
+  },
+  {
+    "fixture": "babun-packages",
+    "descriptor_id": "known.babun.packages",
+    "name": "Babun package list",
+    "repo": "https://github.com/babun/babun",
+    "required_substrings": ["package\tstate", "zsh\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "package\tstate version\nzsh\tinstalled 5.8\npact\tinstalled 1.0\nmintty\tavailable 3.7\n",
+    "negative": "package state version\nzsh installed 5.8\n",
+    "analysis_notes": "Modeled Babun package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "state row", "version field"]
+  },
+  {
+    "fixture": "hyprdots-modules",
+    "descriptor_id": "known.hyprdots.modules",
+    "name": "hyprdots module list",
+    "repo": "https://github.com/prasanthrangan/hyprdots",
+    "required_substrings": ["module\tstate", "waybar\tenabled"],
+    "parser": "tab-pairs",
+    "input": "module\tstate profile\nwaybar\tenabled default\nhyprlock\tenabled secure\nrofi\tdisabled minimal\n",
+    "negative": "module state profile\nwaybar enabled default\n",
+    "analysis_notes": "Modeled hyprdots module output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "state row", "profile field"]
+  },
+  {
+    "fixture": "dat-peers",
+    "descriptor_id": "known.dat.peers",
+    "name": "dat peer list",
+    "repo": "https://github.com/dat-ecosystem/dat",
+    "required_substrings": ["peer\tstate", "peer-a\tconnected"],
+    "parser": "tab-pairs",
+    "input": "peer\tstate blocks\npeer-a\tconnected 128\npeer-b\tsyncing 64\npeer-c\tdisconnected 0\n",
+    "negative": "peer state blocks\npeer-a connected 128\n",
+    "analysis_notes": "Modeled dat peer output with a generated executable-json parser plugin.",
+    "variants": ["peer header row", "state row", "blocks field"]
   }
 ]

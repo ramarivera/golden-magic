@@ -7738,5 +7738,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/dnschneid/crouton",
+    "descriptor_id": "known.crouton.targets",
+    "run_id": "agentic.crouton-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/crouton-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/crouton-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "state row",
+      "arch field"
+    ],
+    "transcript": [
+      "selected descriptor known.crouton.targets for crouton target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/thoughtbot/laptop",
+    "descriptor_id": "known.laptop.steps",
+    "run_id": "agentic.laptop-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/laptop-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/laptop-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "status row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.laptop.steps for thoughtbot laptop step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/babun/babun",
+    "descriptor_id": "known.babun.packages",
+    "run_id": "agentic.babun-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/babun-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/babun-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "state row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.babun.packages for Babun package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/prasanthrangan/hyprdots",
+    "descriptor_id": "known.hyprdots.modules",
+    "run_id": "agentic.hyprdots-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hyprdots-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hyprdots-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "state row",
+      "profile field"
+    ],
+    "transcript": [
+      "selected descriptor known.hyprdots.modules for hyprdots module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dat-ecosystem/dat",
+    "descriptor_id": "known.dat.peers",
+    "run_id": "agentic.dat-peers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dat-peers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dat-peers/expected.rows.json",
+    "variants": [
+      "peer header row",
+      "state row",
+      "blocks field"
+    ],
+    "transcript": [
+      "selected descriptor known.dat.peers for dat peer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

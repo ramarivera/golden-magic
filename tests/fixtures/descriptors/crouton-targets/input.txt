@@ -1,0 +1,4 @@
+target	state arch
+xenial	installed amd64
+jammy	available amd64
+sid	installed arm64

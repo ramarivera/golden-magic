@@ -3008,5 +3008,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/google-images-download-jobs",
     "analysis_notes": "Modeled google-images-download job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dnschneid/crouton",
+    "descriptor_id": "known.crouton.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/crouton-targets",
+    "analysis_notes": "Modeled crouton target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/thoughtbot/laptop",
+    "descriptor_id": "known.laptop.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/laptop-steps",
+    "analysis_notes": "Modeled thoughtbot laptop setup output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/babun/babun",
+    "descriptor_id": "known.babun.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/babun-packages",
+    "analysis_notes": "Modeled Babun package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/prasanthrangan/hyprdots",
+    "descriptor_id": "known.hyprdots.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hyprdots-modules",
+    "analysis_notes": "Modeled hyprdots module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dat-ecosystem/dat",
+    "descriptor_id": "known.dat.peers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dat-peers",
+    "analysis_notes": "Modeled dat peer output with a generated executable-json parser plugin."
   }
 ]
