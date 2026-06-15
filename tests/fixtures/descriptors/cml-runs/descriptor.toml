@@ -1,0 +1,10 @@
+id = "known.cml.runs"
+name = "CML run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tmetric","train\t0.92"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.cli11.options"
+name = "CLI11 option list"
+priority = 50
+
+[matches]
+required_substrings = ["option\ttype","--config\tpath"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

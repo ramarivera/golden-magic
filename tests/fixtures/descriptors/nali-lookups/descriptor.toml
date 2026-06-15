@@ -1,0 +1,10 @@
+id = "known.nali.lookups"
+name = "nali lookup list"
+priority = 50
+
+[matches]
+required_substrings = ["address\tlocation","8.8.8.8\tUS"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

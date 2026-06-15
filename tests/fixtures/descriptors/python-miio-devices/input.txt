@@ -1,0 +1,4 @@
+device	model state
+vacuum	roborock online
+lamp	yeelight online
+fan	zhimi offline

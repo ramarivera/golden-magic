@@ -1,0 +1,4 @@
+command	status state
+ls	ported ready
+cp	ported ready
+stat	partial working

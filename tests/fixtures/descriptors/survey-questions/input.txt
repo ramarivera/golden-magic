@@ -1,0 +1,4 @@
+question	kind state
+name	input required
+color	select optional
+confirm	confirm required

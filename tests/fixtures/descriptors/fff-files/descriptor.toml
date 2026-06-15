@@ -1,0 +1,10 @@
+id = "known.fff.files"
+name = "fff file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tkind","src\tdir"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

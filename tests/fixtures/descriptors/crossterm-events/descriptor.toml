@@ -1,0 +1,10 @@
+id = "known.crossterm.events"
+name = "crossterm event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tcode","key\tEnter"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

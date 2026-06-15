@@ -1,0 +1,4 @@
+target	platform state
+dmg	mac built
+nsis	windows built
+appimage	linux queued

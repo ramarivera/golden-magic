@@ -1,0 +1,18 @@
+[
+  {
+    "name": "symbol",
+    "value": "section state"
+  },
+  {
+    "name": "main",
+    "value": ".text present"
+  },
+  {
+    "name": "init",
+    "value": ".init present"
+  },
+  {
+    "name": "data",
+    "value": ".data present"
+  }
+]

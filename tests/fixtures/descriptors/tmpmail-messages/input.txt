@@ -1,0 +1,4 @@
+message	from state
+welcome	noreply unread
+code	auth unread
+newsletter	robot read

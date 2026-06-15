@@ -1,0 +1,10 @@
+id = "known.asciimatics.scenes"
+name = "asciimatics scene list"
+priority = 50
+
+[matches]
+required_substrings = ["scene\teffect","intro\tMatrix"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

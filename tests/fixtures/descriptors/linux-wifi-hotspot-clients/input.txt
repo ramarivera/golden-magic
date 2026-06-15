@@ -1,0 +1,4 @@
+client	ip state
+phone	192.168.12.2 connected
+laptop	192.168.12.3 connected
+tablet	192.168.12.4 idle

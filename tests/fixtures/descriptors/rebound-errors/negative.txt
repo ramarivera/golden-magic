@@ -1,0 +1,2 @@
+error file state
+NameError app.py explained

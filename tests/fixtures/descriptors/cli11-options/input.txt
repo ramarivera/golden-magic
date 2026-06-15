@@ -1,0 +1,4 @@
+option	type state
+--config	path required
+--verbose	bool optional
+--threads	int optional

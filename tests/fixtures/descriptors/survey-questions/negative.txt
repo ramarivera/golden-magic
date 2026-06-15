@@ -1,0 +1,2 @@
+question kind state
+name input required

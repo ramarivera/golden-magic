@@ -1,0 +1,10 @@
+id = "known.tmpmail.messages"
+name = "tmpmail message list"
+priority = 50
+
+[matches]
+required_substrings = ["message\tfrom","welcome\tnoreply"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

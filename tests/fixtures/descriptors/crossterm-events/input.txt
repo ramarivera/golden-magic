@@ -1,0 +1,4 @@
+event	code state
+key	Enter received
+mouse	Click received
+resize	80x24 received

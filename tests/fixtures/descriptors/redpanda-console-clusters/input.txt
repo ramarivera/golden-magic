@@ -1,0 +1,4 @@
+cluster	brokers state
+dev	3 healthy
+prod	9 healthy
+lab	1 warning

@@ -1,0 +1,4 @@
+database	tables state
+app.db	12 open
+cache.db	4 open
+old.db	2 readonly

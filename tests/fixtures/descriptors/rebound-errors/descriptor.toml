@@ -1,0 +1,10 @@
+id = "known.rebound.errors"
+name = "rebound error list"
+priority = 50
+
+[matches]
+required_substrings = ["error\tfile","NameError\tapp.py"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

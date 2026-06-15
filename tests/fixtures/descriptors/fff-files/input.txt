@@ -1,0 +1,4 @@
+file	kind state
+src	dir open
+README.md	file selected
+.git	dir hidden

@@ -1,0 +1,10 @@
+id = "known.pad-ws.pads"
+name = "pad.ws pad list"
+priority = 50
+
+[matches]
+required_substrings = ["pad\tusers","notes\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

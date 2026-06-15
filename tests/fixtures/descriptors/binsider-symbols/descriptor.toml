@@ -1,0 +1,10 @@
+id = "known.binsider.symbols"
+name = "binsider symbol list"
+priority = 50
+
+[matches]
+required_substrings = ["symbol\tsection","main\t.text"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

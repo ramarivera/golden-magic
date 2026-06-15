@@ -1,0 +1,2 @@
+image size state
+photo.jpg 120KB shown

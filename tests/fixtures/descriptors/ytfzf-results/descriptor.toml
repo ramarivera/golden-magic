@@ -1,0 +1,10 @@
+id = "known.ytfzf.results"
+name = "ytfzf result list"
+priority = 50
+
+[matches]
+required_substrings = ["video\tduration","demo\t3:12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

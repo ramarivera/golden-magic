@@ -1,0 +1,10 @@
+id = "known.vue-cli-plugin-electron-builder.targets"
+name = "vue-cli-plugin-electron-builder target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tplatform","dmg\tmac"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

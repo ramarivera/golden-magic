@@ -1,0 +1,2 @@
+target platform state
+dmg mac built

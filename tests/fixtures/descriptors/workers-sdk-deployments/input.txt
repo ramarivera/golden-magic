@@ -1,0 +1,4 @@
+worker	environment state
+api	production deployed
+web	preview deployed
+cron	staging queued

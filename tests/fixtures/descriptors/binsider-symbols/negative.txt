@@ -1,0 +1,2 @@
+symbol section state
+main .text present

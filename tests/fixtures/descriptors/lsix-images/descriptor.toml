@@ -1,0 +1,10 @@
+id = "known.lsix.images"
+name = "lsix image list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tsize","photo.jpg\t120KB"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

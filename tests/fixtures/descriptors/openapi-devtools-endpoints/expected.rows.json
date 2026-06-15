@@ -1,0 +1,18 @@
+[
+  {
+    "name": "endpoint",
+    "value": "method state"
+  },
+  {
+    "name": "/pets",
+    "value": "GET valid"
+  },
+  {
+    "name": "/pets",
+    "value": "POST valid"
+  },
+  {
+    "name": "/users",
+    "value": "GET warning"
+  }
+]

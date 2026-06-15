@@ -1,0 +1,18 @@
+[
+  {
+    "name": "database",
+    "value": "tables state"
+  },
+  {
+    "name": "app.db",
+    "value": "12 open"
+  },
+  {
+    "name": "cache.db",
+    "value": "4 open"
+  },
+  {
+    "name": "old.db",
+    "value": "2 readonly"
+  }
+]

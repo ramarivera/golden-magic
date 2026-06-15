@@ -1,0 +1,10 @@
+id = "known.linux-wifi-hotspot.clients"
+name = "linux-wifi-hotspot client list"
+priority = 50
+
+[matches]
+required_substrings = ["client\tip","phone\t192.168.12.2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

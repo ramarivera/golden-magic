@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "status state"
+  },
+  {
+    "name": "ls",
+    "value": "ported ready"
+  },
+  {
+    "name": "cp",
+    "value": "ported ready"
+  },
+  {
+    "name": "stat",
+    "value": "partial working"
+  }
+]

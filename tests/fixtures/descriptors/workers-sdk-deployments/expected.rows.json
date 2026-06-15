@@ -1,0 +1,18 @@
+[
+  {
+    "name": "worker",
+    "value": "environment state"
+  },
+  {
+    "name": "api",
+    "value": "production deployed"
+  },
+  {
+    "name": "web",
+    "value": "preview deployed"
+  },
+  {
+    "name": "cron",
+    "value": "staging queued"
+  }
+]

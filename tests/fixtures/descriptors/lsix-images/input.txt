@@ -1,0 +1,4 @@
+image	size state
+photo.jpg	120KB shown
+chart.png	80KB shown
+scan.gif	200KB skipped

@@ -1,0 +1,10 @@
+id = "known.workers-sdk.deployments"
+name = "Workers SDK deployment list"
+priority = 50
+
+[matches]
+required_substrings = ["worker\tenvironment","api\tproduction"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

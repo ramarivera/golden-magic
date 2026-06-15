@@ -1,0 +1,2 @@
+device model state
+vacuum roborock online

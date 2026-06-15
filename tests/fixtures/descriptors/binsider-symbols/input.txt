@@ -1,0 +1,4 @@
+symbol	section state
+main	.text present
+init	.init present
+data	.data present

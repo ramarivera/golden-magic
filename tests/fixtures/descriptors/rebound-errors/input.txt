@@ -1,0 +1,4 @@
+error	file state
+NameError	app.py explained
+TypeError	lib.py explained
+ImportError	main.py unresolved

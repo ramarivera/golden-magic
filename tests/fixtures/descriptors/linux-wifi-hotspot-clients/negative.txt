@@ -1,0 +1,2 @@
+client ip state
+phone 192.168.12.2 connected

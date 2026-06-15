@@ -1,0 +1,4 @@
+endpoint	method state
+/pets	GET valid
+/pets	POST valid
+/users	GET warning
