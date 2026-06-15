@@ -1,0 +1,2 @@
+section status lines
+installation generated 12

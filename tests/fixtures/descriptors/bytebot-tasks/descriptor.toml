@@ -1,0 +1,10 @@
+id = "known.bytebot.tasks"
+name = "bytebot task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstate","browser-login\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

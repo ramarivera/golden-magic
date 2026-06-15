@@ -1,0 +1,4 @@
+component	renders owner
+App	3 root
+Sidebar	7 App
+Inspector	2 App

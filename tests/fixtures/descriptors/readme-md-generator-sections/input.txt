@@ -1,0 +1,4 @@
+section	status lines
+installation	generated 12
+usage	generated 18
+license	skipped 0

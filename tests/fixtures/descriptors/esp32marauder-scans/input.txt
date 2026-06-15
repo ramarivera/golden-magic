@@ -1,0 +1,4 @@
+target	channel signal
+lab-ap	6 -42
+printer	11 -70
+guest	1 -61

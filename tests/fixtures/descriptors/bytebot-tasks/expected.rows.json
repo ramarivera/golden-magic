@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "state worker"
+  },
+  {
+    "name": "browser-login",
+    "value": "running desktop-1"
+  },
+  {
+    "name": "invoice-check",
+    "value": "queued desktop-2"
+  },
+  {
+    "name": "report-export",
+    "value": "done desktop-1"
+  }
+]

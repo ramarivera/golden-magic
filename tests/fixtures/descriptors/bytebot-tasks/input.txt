@@ -1,0 +1,4 @@
+task	state worker
+browser-login	running desktop-1
+invoice-check	queued desktop-2
+report-export	done desktop-1

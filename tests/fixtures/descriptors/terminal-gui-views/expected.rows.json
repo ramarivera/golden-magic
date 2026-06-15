@@ -1,0 +1,18 @@
+[
+  {
+    "name": "view",
+    "value": "state layout"
+  },
+  {
+    "name": "dialog",
+    "value": "visible centered"
+  },
+  {
+    "name": "listview",
+    "value": "focused fill"
+  },
+  {
+    "name": "statusbar",
+    "value": "visible bottom"
+  }
+]

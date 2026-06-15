@@ -4438,5 +4438,65 @@
     "negative": "tool status scope\nedit_file enabled workspace\n",
     "analysis_notes": "Modeled Claude Engineer tool output with a generated executable-json parser plugin.",
     "variants": ["tool header row", "status row", "scope field"]
+  },
+  {
+    "fixture": "esp32marauder-scans",
+    "descriptor_id": "known.esp32marauder.scans",
+    "name": "ESP32Marauder scan list",
+    "repo": "https://github.com/justcallmekoko/ESP32Marauder",
+    "required_substrings": ["target\tchannel", "lab-ap\t6"],
+    "parser": "tab-pairs",
+    "input": "target\tchannel signal\nlab-ap\t6 -42\nprinter\t11 -70\nguest\t1 -61\n",
+    "negative": "target channel signal\nlab-ap 6 -42\n",
+    "analysis_notes": "Modeled ESP32Marauder scan output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "channel row", "signal field"]
+  },
+  {
+    "fixture": "readme-md-generator-sections",
+    "descriptor_id": "known.readme-md-generator.sections",
+    "name": "readme-md-generator section list",
+    "repo": "https://github.com/kefranabg/readme-md-generator",
+    "required_substrings": ["section\tstatus", "installation\tgenerated"],
+    "parser": "tab-pairs",
+    "input": "section\tstatus lines\ninstallation\tgenerated 12\nusage\tgenerated 18\nlicense\tskipped 0\n",
+    "negative": "section status lines\ninstallation generated 12\n",
+    "analysis_notes": "Modeled readme-md-generator section output with a generated executable-json parser plugin.",
+    "variants": ["section header row", "status row", "lines field"]
+  },
+  {
+    "fixture": "terminal-gui-views",
+    "descriptor_id": "known.terminal-gui.views",
+    "name": "Terminal.Gui view list",
+    "repo": "https://github.com/gui-cs/Terminal.Gui",
+    "required_substrings": ["view\tstate", "dialog\tvisible"],
+    "parser": "tab-pairs",
+    "input": "view\tstate layout\ndialog\tvisible centered\nlistview\tfocused fill\nstatusbar\tvisible bottom\n",
+    "negative": "view state layout\ndialog visible centered\n",
+    "analysis_notes": "Modeled Terminal.Gui view output with a generated executable-json parser plugin.",
+    "variants": ["view header row", "state row", "layout field"]
+  },
+  {
+    "fixture": "bytebot-tasks",
+    "descriptor_id": "known.bytebot.tasks",
+    "name": "bytebot task list",
+    "repo": "https://github.com/bytebot-ai/bytebot",
+    "required_substrings": ["task\tstate", "browser-login\trunning"],
+    "parser": "tab-pairs",
+    "input": "task\tstate worker\nbrowser-login\trunning desktop-1\ninvoice-check\tqueued desktop-2\nreport-export\tdone desktop-1\n",
+    "negative": "task state worker\nbrowser-login running desktop-1\n",
+    "analysis_notes": "Modeled bytebot task output with a generated executable-json parser plugin.",
+    "variants": ["task header row", "state row", "worker field"]
+  },
+  {
+    "fixture": "react-devtools-components",
+    "descriptor_id": "known.react-devtools.components",
+    "name": "React DevTools component list",
+    "repo": "https://github.com/facebook/react-devtools",
+    "required_substrings": ["component\trenders", "App\t3"],
+    "parser": "tab-pairs",
+    "input": "component\trenders owner\nApp\t3 root\nSidebar\t7 App\nInspector\t2 App\n",
+    "negative": "component renders owner\nApp 3 root\n",
+    "analysis_notes": "Modeled React DevTools component output with a generated executable-json parser plugin.",
+    "variants": ["component header row", "renders row", "owner field"]
   }
 ]

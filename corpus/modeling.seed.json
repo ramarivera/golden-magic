@@ -2728,5 +2728,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/claude-engineer-tools",
     "analysis_notes": "Modeled Claude Engineer tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/justcallmekoko/ESP32Marauder",
+    "descriptor_id": "known.esp32marauder.scans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/esp32marauder-scans",
+    "analysis_notes": "Modeled ESP32Marauder scan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kefranabg/readme-md-generator",
+    "descriptor_id": "known.readme-md-generator.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/readme-md-generator-sections",
+    "analysis_notes": "Modeled readme-md-generator section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gui-cs/Terminal.Gui",
+    "descriptor_id": "known.terminal-gui.views",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminal-gui-views",
+    "analysis_notes": "Modeled Terminal.Gui view output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bytebot-ai/bytebot",
+    "descriptor_id": "known.bytebot.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bytebot-tasks",
+    "analysis_notes": "Modeled bytebot task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/facebook/react-devtools",
+    "descriptor_id": "known.react-devtools.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-devtools-components",
+    "analysis_notes": "Modeled React DevTools component output with a generated executable-json parser plugin."
   }
 ]

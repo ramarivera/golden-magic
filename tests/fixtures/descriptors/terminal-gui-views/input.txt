@@ -1,0 +1,4 @@
+view	state layout
+dialog	visible centered
+listview	focused fill
+statusbar	visible bottom

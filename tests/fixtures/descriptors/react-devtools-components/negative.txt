@@ -1,0 +1,2 @@
+component renders owner
+App 3 root

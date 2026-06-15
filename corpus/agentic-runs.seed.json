@@ -7018,5 +7018,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/justcallmekoko/ESP32Marauder",
+    "descriptor_id": "known.esp32marauder.scans",
+    "run_id": "agentic.esp32marauder-scans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/esp32marauder-scans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/esp32marauder-scans/expected.rows.json",
+    "variants": [
+      "target header row",
+      "channel row",
+      "signal field"
+    ],
+    "transcript": [
+      "selected descriptor known.esp32marauder.scans for ESP32Marauder scan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kefranabg/readme-md-generator",
+    "descriptor_id": "known.readme-md-generator.sections",
+    "run_id": "agentic.readme-md-generator-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/readme-md-generator-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/readme-md-generator-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "status row",
+      "lines field"
+    ],
+    "transcript": [
+      "selected descriptor known.readme-md-generator.sections for readme-md-generator section list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gui-cs/Terminal.Gui",
+    "descriptor_id": "known.terminal-gui.views",
+    "run_id": "agentic.terminal-gui-views.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminal-gui-views/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminal-gui-views/expected.rows.json",
+    "variants": [
+      "view header row",
+      "state row",
+      "layout field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminal-gui.views for Terminal.Gui view list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bytebot-ai/bytebot",
+    "descriptor_id": "known.bytebot.tasks",
+    "run_id": "agentic.bytebot-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bytebot-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bytebot-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "state row",
+      "worker field"
+    ],
+    "transcript": [
+      "selected descriptor known.bytebot.tasks for bytebot task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/facebook/react-devtools",
+    "descriptor_id": "known.react-devtools.components",
+    "run_id": "agentic.react-devtools-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-devtools-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-devtools-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "renders row",
+      "owner field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-devtools.components for React DevTools component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.esp32marauder.scans"
+name = "ESP32Marauder scan list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tchannel","lab-ap\t6"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
