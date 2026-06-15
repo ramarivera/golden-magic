@@ -1,3 +1,5 @@
+extern crate golden_magic;
+
 use golden_magic::{HeaderMode, ParseOptions, parse_with_options};
 use nu_plugin::{EvaluatedCall, JsonSerializer, Plugin, SimplePluginCommand, serve_plugin};
 use nu_protocol::{
