@@ -1,0 +1,2 @@
+widget area focus
+Table main true

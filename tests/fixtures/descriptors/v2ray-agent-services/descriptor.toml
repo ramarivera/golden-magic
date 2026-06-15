@@ -1,0 +1,10 @@
+id = "known.v2ray-agent.services"
+name = "v2ray-agent service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tstate","xray\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

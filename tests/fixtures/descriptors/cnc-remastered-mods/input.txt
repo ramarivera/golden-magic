@@ -1,0 +1,4 @@
+mod	status game
+td-balance	enabled tiberian-dawn
+ra-maps	enabled red-alert
+legacy-ai	disabled shared

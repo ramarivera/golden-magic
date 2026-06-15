@@ -1,0 +1,4 @@
+service	state port
+xray	running 443
+nginx	running 80
+trojan	stopped 8443

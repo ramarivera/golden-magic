@@ -1,0 +1,4 @@
+connection	state shell
+local	active zsh
+staging	idle bash
+prod	locked bash

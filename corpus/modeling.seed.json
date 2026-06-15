@@ -1783,5 +1783,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/singlefile-saves",
     "analysis_notes": "Modeled SingleFile save output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/electronicarts/CnC_Remastered_Collection",
+    "descriptor_id": "known.cnc-remastered.mods",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cnc-remastered-mods",
+    "analysis_notes": "Modeled CnC Remastered mod output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wavetermdev/waveterm",
+    "descriptor_id": "known.waveterm.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/waveterm-connections",
+    "analysis_notes": "Modeled Wave Terminal connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mack-a/v2ray-agent",
+    "descriptor_id": "known.v2ray-agent.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/v2ray-agent-services",
+    "analysis_notes": "Modeled v2ray-agent service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ratatui/ratatui",
+    "descriptor_id": "known.ratatui.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ratatui-widgets",
+    "analysis_notes": "Modeled ratatui widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/liriliri/eruda",
+    "descriptor_id": "known.eruda.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/eruda-panels",
+    "analysis_notes": "Modeled eruda panel output with a generated executable-json parser plugin."
   }
 ]

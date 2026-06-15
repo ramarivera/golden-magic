@@ -2818,5 +2818,65 @@
     "negative": "url status bytes\nhttps://example.com saved 40960\n",
     "analysis_notes": "Modeled SingleFile save output with a generated executable-json parser plugin.",
     "variants": ["url header row", "status row", "bytes field"]
+  },
+  {
+    "fixture": "cnc-remastered-mods",
+    "descriptor_id": "known.cnc-remastered.mods",
+    "name": "CnC Remastered mod list",
+    "repo": "https://github.com/electronicarts/CnC_Remastered_Collection",
+    "required_substrings": ["mod\tstatus", "td-balance\tenabled"],
+    "parser": "tab-pairs",
+    "input": "mod\tstatus game\ntd-balance\tenabled tiberian-dawn\nra-maps\tenabled red-alert\nlegacy-ai\tdisabled shared\n",
+    "negative": "mod status game\ntd-balance enabled tiberian-dawn\n",
+    "analysis_notes": "Modeled CnC Remastered mod output with a generated executable-json parser plugin.",
+    "variants": ["mod header row", "status row", "game field"]
+  },
+  {
+    "fixture": "waveterm-connections",
+    "descriptor_id": "known.waveterm.connections",
+    "name": "Wave Terminal connection list",
+    "repo": "https://github.com/wavetermdev/waveterm",
+    "required_substrings": ["connection\tstate", "local\tactive"],
+    "parser": "tab-pairs",
+    "input": "connection\tstate shell\nlocal\tactive zsh\nstaging\tidle bash\nprod\tlocked bash\n",
+    "negative": "connection state shell\nlocal active zsh\n",
+    "analysis_notes": "Modeled Wave Terminal connection output with a generated executable-json parser plugin.",
+    "variants": ["connection header row", "state row", "shell field"]
+  },
+  {
+    "fixture": "v2ray-agent-services",
+    "descriptor_id": "known.v2ray-agent.services",
+    "name": "v2ray-agent service list",
+    "repo": "https://github.com/mack-a/v2ray-agent",
+    "required_substrings": ["service\tstate", "xray\trunning"],
+    "parser": "tab-pairs",
+    "input": "service\tstate port\nxray\trunning 443\nnginx\trunning 80\ntrojan\tstopped 8443\n",
+    "negative": "service state port\nxray running 443\n",
+    "analysis_notes": "Modeled v2ray-agent service output with a generated executable-json parser plugin.",
+    "variants": ["service header row", "state row", "port field"]
+  },
+  {
+    "fixture": "ratatui-widgets",
+    "descriptor_id": "known.ratatui.widgets",
+    "name": "ratatui widget list",
+    "repo": "https://github.com/ratatui/ratatui",
+    "required_substrings": ["widget\tarea", "Table\tmain"],
+    "parser": "tab-pairs",
+    "input": "widget\tarea focus\nTable\tmain true\nParagraph\tsidebar false\nGauge\tfooter false\n",
+    "negative": "widget area focus\nTable main true\n",
+    "analysis_notes": "Modeled ratatui widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "area row", "focus field"]
+  },
+  {
+    "fixture": "eruda-panels",
+    "descriptor_id": "known.eruda.panels",
+    "name": "eruda panel list",
+    "repo": "https://github.com/liriliri/eruda",
+    "required_substrings": ["panel\tstatus", "console\tvisible"],
+    "parser": "tab-pairs",
+    "input": "panel\tstatus entries\nconsole\tvisible 42\nnetwork\tvisible 8\nresources\thidden 0\n",
+    "negative": "panel status entries\nconsole visible 42\n",
+    "analysis_notes": "Modeled eruda panel output with a generated executable-json parser plugin.",
+    "variants": ["panel header row", "status row", "entries field"]
   }
 ]

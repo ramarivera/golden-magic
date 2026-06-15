@@ -1,0 +1,2 @@
+panel status entries
+console visible 42

@@ -1,0 +1,4 @@
+panel	status entries
+console	visible 42
+network	visible 8
+resources	hidden 0

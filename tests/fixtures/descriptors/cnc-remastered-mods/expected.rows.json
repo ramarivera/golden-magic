@@ -1,0 +1,18 @@
+[
+  {
+    "name": "mod",
+    "value": "status game"
+  },
+  {
+    "name": "td-balance",
+    "value": "enabled tiberian-dawn"
+  },
+  {
+    "name": "ra-maps",
+    "value": "enabled red-alert"
+  },
+  {
+    "name": "legacy-ai",
+    "value": "disabled shared"
+  }
+]

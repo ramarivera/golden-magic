@@ -1,0 +1,2 @@
+service state port
+xray running 443

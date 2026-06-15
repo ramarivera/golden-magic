@@ -1,0 +1,10 @@
+id = "known.waveterm.connections"
+name = "Wave Terminal connection list"
+priority = 50
+
+[matches]
+required_substrings = ["connection\tstate","local\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

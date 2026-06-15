@@ -1,0 +1,10 @@
+id = "known.ratatui.widgets"
+name = "ratatui widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tarea","Table\tmain"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

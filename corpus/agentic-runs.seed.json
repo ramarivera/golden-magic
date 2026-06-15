@@ -4588,5 +4588,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/electronicarts/CnC_Remastered_Collection",
+    "descriptor_id": "known.cnc-remastered.mods",
+    "run_id": "agentic.cnc-remastered-mods.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cnc-remastered-mods/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cnc-remastered-mods/expected.rows.json",
+    "variants": [
+      "mod header row",
+      "status row",
+      "game field"
+    ],
+    "transcript": [
+      "selected descriptor known.cnc-remastered.mods for CnC Remastered mod list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wavetermdev/waveterm",
+    "descriptor_id": "known.waveterm.connections",
+    "run_id": "agentic.waveterm-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/waveterm-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/waveterm-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "state row",
+      "shell field"
+    ],
+    "transcript": [
+      "selected descriptor known.waveterm.connections for Wave Terminal connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mack-a/v2ray-agent",
+    "descriptor_id": "known.v2ray-agent.services",
+    "run_id": "agentic.v2ray-agent-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/v2ray-agent-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/v2ray-agent-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.v2ray-agent.services for v2ray-agent service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ratatui/ratatui",
+    "descriptor_id": "known.ratatui.widgets",
+    "run_id": "agentic.ratatui-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ratatui-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ratatui-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "area row",
+      "focus field"
+    ],
+    "transcript": [
+      "selected descriptor known.ratatui.widgets for ratatui widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/liriliri/eruda",
+    "descriptor_id": "known.eruda.panels",
+    "run_id": "agentic.eruda-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/eruda-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/eruda-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "entries field"
+    ],
+    "transcript": [
+      "selected descriptor known.eruda.panels for eruda panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

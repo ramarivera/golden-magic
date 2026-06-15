@@ -1,0 +1,2 @@
+connection state shell
+local active zsh

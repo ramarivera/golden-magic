@@ -1,0 +1,4 @@
+widget	area focus
+Table	main true
+Paragraph	sidebar false
+Gauge	footer false

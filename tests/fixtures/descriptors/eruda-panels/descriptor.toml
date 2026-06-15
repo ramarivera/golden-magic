@@ -1,0 +1,10 @@
+id = "known.eruda.panels"
+name = "eruda panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tstatus","console\tvisible"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

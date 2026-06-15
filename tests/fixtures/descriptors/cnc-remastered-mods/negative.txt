@@ -1,0 +1,2 @@
+mod status game
+td-balance enabled tiberian-dawn

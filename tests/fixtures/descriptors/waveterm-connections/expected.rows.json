@@ -1,0 +1,18 @@
+[
+  {
+    "name": "connection",
+    "value": "state shell"
+  },
+  {
+    "name": "local",
+    "value": "active zsh"
+  },
+  {
+    "name": "staging",
+    "value": "idle bash"
+  },
+  {
+    "name": "prod",
+    "value": "locked bash"
+  }
+]
