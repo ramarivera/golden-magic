@@ -1,0 +1,10 @@
+id = "known.miller.stats"
+name = "miller stats output"
+priority = 50
+
+[matches]
+required_substrings = ["field\tmean","latency\t12.4"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

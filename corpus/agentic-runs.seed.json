@@ -988,5 +988,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/sigoden/aichat",
+    "descriptor_id": "known.aichat.models",
+    "run_id": "agentic.aichat-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aichat-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aichat-models/expected.rows.json",
+    "variants": [
+      "provider-qualified model",
+      "availability value",
+      "local model row"
+    ],
+    "transcript": [
+      "selected descriptor known.aichat.models for aichat model list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/httpx",
+    "descriptor_id": "known.httpx.probe",
+    "run_id": "agentic.httpx-probe.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/httpx-probe/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/httpx-probe/expected.rows.json",
+    "variants": [
+      "URL row",
+      "status code row",
+      "technology row"
+    ],
+    "transcript": [
+      "selected descriptor known.httpx.probe for httpx probe result output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xo/usql",
+    "descriptor_id": "known.usql.connection",
+    "run_id": "agentic.usql-connection.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/usql-connection/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/usql-connection/expected.rows.json",
+    "variants": [
+      "driver row",
+      "database row",
+      "user row"
+    ],
+    "transcript": [
+      "selected descriptor known.usql.connection for usql connection info output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aksakalli/gtop",
+    "descriptor_id": "known.gtop.processes",
+    "run_id": "agentic.gtop-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gtop-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gtop-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "node process row",
+      "high-cpu process row"
+    ],
+    "transcript": [
+      "selected descriptor known.gtop.processes for gtop process snapshot output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/johnkerl/miller",
+    "descriptor_id": "known.miller.stats",
+    "run_id": "agentic.miller-stats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/miller-stats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/miller-stats/expected.rows.json",
+    "variants": [
+      "stats header row",
+      "latency metric row",
+      "request metric row"
+    ],
+    "transcript": [
+      "selected descriptor known.miller.stats for miller stats output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

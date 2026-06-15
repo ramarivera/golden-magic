@@ -418,5 +418,65 @@
     "negative": "offset 00000010\nbytes 48 65 6c 6c 6f\n",
     "analysis_notes": "Modeled hexyl offset/byte summary output with a generated executable-json parser plugin.",
     "variants": ["hex offset row", "byte sequence row", "ascii preview row"]
+  },
+  {
+    "fixture": "aichat-models",
+    "descriptor_id": "known.aichat.models",
+    "name": "aichat model list",
+    "repo": "https://github.com/sigoden/aichat",
+    "required_substrings": ["openai:gpt-5\tavailable", "local:llama\tavailable"],
+    "parser": "tab-pairs",
+    "input": "openai:gpt-5\tavailable\nanthropic:claude-sonnet\tavailable\nlocal:llama\tavailable\n",
+    "negative": "openai:gpt-5 available\nlocal:llama available\n",
+    "analysis_notes": "Modeled aichat model-list output with a generated executable-json parser plugin.",
+    "variants": ["provider-qualified model", "availability value", "local model row"]
+  },
+  {
+    "fixture": "httpx-probe",
+    "descriptor_id": "known.httpx.probe",
+    "name": "httpx probe result",
+    "repo": "https://github.com/projectdiscovery/httpx",
+    "required_substrings": ["url:", "status_code:"],
+    "parser": "colon-kv",
+    "input": "url: https://example.test\nstatus_code: 200\ntitle: Example Domain\ntech: nginx\n",
+    "negative": "url https://example.test\nstatus_code 200\n",
+    "analysis_notes": "Modeled httpx probe result output with a generated executable-json parser plugin.",
+    "variants": ["URL row", "status code row", "technology row"]
+  },
+  {
+    "fixture": "usql-connection",
+    "descriptor_id": "known.usql.connection",
+    "name": "usql connection info",
+    "repo": "https://github.com/xo/usql",
+    "required_substrings": ["driver:", "database:"],
+    "parser": "colon-kv",
+    "input": "driver: postgres\ndatabase: golden_magic\nuser: ramiro\nsslmode: disable\n",
+    "negative": "driver postgres\ndatabase golden_magic\n",
+    "analysis_notes": "Modeled usql connection-info output with a generated executable-json parser plugin.",
+    "variants": ["driver row", "database row", "user row"]
+  },
+  {
+    "fixture": "gtop-processes",
+    "descriptor_id": "known.gtop.processes",
+    "name": "gtop process snapshot",
+    "repo": "https://github.com/aksakalli/gtop",
+    "required_substrings": ["pid\tcommand", "1234\tnode"],
+    "parser": "tab-pairs",
+    "input": "pid\tcommand cpu mem\n1234\tnode 12.1 180M\n4321\trustc 88.4 1.2G\n",
+    "negative": "pid command cpu mem\n1234 node 12.1 180M\n",
+    "analysis_notes": "Modeled gtop process snapshot output with a generated executable-json parser plugin.",
+    "variants": ["process header row", "node process row", "high-cpu process row"]
+  },
+  {
+    "fixture": "miller-stats",
+    "descriptor_id": "known.miller.stats",
+    "name": "miller stats output",
+    "repo": "https://github.com/johnkerl/miller",
+    "required_substrings": ["field\tmean", "latency\t12.4"],
+    "parser": "tab-pairs",
+    "input": "field\tmean min max\nlatency\t12.4 3.1 31.8\nrequests\t1842 1200 2410\n",
+    "negative": "field mean min max\nlatency 12.4 3.1 31.8\n",
+    "analysis_notes": "Modeled miller stats output with a generated executable-json parser plugin.",
+    "variants": ["stats header row", "latency metric row", "request metric row"]
   }
 ]

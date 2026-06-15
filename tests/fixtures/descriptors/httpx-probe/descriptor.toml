@@ -1,0 +1,10 @@
+id = "known.httpx.probe"
+name = "httpx probe result"
+priority = 50
+
+[matches]
+required_substrings = ["url:","status_code:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

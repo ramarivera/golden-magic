@@ -1,0 +1,18 @@
+[
+  {
+    "key": "url",
+    "value": "https://example.test"
+  },
+  {
+    "key": "status_code",
+    "value": "200"
+  },
+  {
+    "key": "title",
+    "value": "Example Domain"
+  },
+  {
+    "key": "tech",
+    "value": "nginx"
+  }
+]

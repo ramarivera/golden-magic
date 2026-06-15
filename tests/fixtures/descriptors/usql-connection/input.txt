@@ -1,0 +1,4 @@
+driver: postgres
+database: golden_magic
+user: ramiro
+sslmode: disable

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "driver",
+    "value": "postgres"
+  },
+  {
+    "key": "database",
+    "value": "golden_magic"
+  },
+  {
+    "key": "user",
+    "value": "ramiro"
+  },
+  {
+    "key": "sslmode",
+    "value": "disable"
+  }
+]

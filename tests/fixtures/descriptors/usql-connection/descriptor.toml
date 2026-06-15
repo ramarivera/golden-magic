@@ -1,0 +1,10 @@
+id = "known.usql.connection"
+name = "usql connection info"
+priority = 50
+
+[matches]
+required_substrings = ["driver:","database:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

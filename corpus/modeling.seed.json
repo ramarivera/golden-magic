@@ -383,5 +383,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/hexyl-offsets",
     "analysis_notes": "Modeled hexyl offset/byte summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sigoden/aichat",
+    "descriptor_id": "known.aichat.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aichat-models",
+    "analysis_notes": "Modeled aichat model-list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/httpx",
+    "descriptor_id": "known.httpx.probe",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/httpx-probe",
+    "analysis_notes": "Modeled httpx probe result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xo/usql",
+    "descriptor_id": "known.usql.connection",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/usql-connection",
+    "analysis_notes": "Modeled usql connection-info output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aksakalli/gtop",
+    "descriptor_id": "known.gtop.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gtop-processes",
+    "analysis_notes": "Modeled gtop process snapshot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/johnkerl/miller",
+    "descriptor_id": "known.miller.stats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/miller-stats",
+    "analysis_notes": "Modeled miller stats output with a generated executable-json parser plugin."
   }
 ]

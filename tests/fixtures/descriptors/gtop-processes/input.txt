@@ -1,0 +1,3 @@
+pid	command cpu mem
+1234	node 12.1 180M
+4321	rustc 88.4 1.2G

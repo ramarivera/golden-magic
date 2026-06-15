@@ -1,0 +1,14 @@
+[
+  {
+    "name": "openai:gpt-5",
+    "value": "available"
+  },
+  {
+    "name": "anthropic:claude-sonnet",
+    "value": "available"
+  },
+  {
+    "name": "local:llama",
+    "value": "available"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.aichat.models"
+name = "aichat model list"
+priority = 50
+
+[matches]
+required_substrings = ["openai:gpt-5\tavailable","local:llama\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

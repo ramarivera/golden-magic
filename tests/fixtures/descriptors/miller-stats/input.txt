@@ -1,0 +1,3 @@
+field	mean min max
+latency	12.4 3.1 31.8
+requests	1842 1200 2410

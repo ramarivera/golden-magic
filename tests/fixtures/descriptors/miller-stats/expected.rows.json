@@ -1,0 +1,14 @@
+[
+  {
+    "name": "field",
+    "value": "mean min max"
+  },
+  {
+    "name": "latency",
+    "value": "12.4 3.1 31.8"
+  },
+  {
+    "name": "requests",
+    "value": "1842 1200 2410"
+  }
+]

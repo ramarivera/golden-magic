@@ -1,0 +1,10 @@
+id = "known.gtop.processes"
+name = "gtop process snapshot"
+priority = 50
+
+[matches]
+required_substrings = ["pid\tcommand","1234\tnode"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
