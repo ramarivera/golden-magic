@@ -1,0 +1,10 @@
+id = "known.signal-cli.devices"
+name = "signal-cli device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tlinked","phone\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

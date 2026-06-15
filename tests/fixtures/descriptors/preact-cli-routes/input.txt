@@ -1,0 +1,4 @@
+route	chunk state
+/home	home emitted
+/about	about emitted
+/admin	admin lazy

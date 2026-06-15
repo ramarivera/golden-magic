@@ -1,0 +1,10 @@
+id = "known.mermaid-cli.diagrams"
+name = "mermaid-cli diagram list"
+priority = 50
+
+[matches]
+required_substrings = ["diagram\tformat","flowchart\tsvg"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

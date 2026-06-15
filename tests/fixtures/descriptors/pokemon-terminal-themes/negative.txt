@@ -1,0 +1,2 @@
+theme pokemon state
+kanto pikachu active

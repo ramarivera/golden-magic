@@ -1,0 +1,10 @@
+id = "known.rtv.subreddits"
+name = "rtv subreddit list"
+priority = 50
+
+[matches]
+required_substrings = ["subreddit\tposts","python\t25"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

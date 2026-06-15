@@ -1,0 +1,18 @@
+[
+  {
+    "name": "subreddit",
+    "value": "posts state"
+  },
+  {
+    "name": "python",
+    "value": "25 loaded"
+  },
+  {
+    "name": "rust",
+    "value": "18 loaded"
+  },
+  {
+    "name": "cli",
+    "value": "9 cached"
+  }
+]

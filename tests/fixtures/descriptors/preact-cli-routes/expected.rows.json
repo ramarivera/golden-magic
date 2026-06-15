@@ -1,0 +1,18 @@
+[
+  {
+    "name": "route",
+    "value": "chunk state"
+  },
+  {
+    "name": "/home",
+    "value": "home emitted"
+  },
+  {
+    "name": "/about",
+    "value": "about emitted"
+  },
+  {
+    "name": "/admin",
+    "value": "admin lazy"
+  }
+]

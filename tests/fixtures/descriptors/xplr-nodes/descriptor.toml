@@ -1,0 +1,10 @@
+id = "known.xplr.nodes"
+name = "xplr node list"
+priority = 50
+
+[matches]
+required_substrings = ["node\tkind","src\tdir"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

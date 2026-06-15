@@ -1,0 +1,18 @@
+[
+  {
+    "name": "error",
+    "value": "file state"
+  },
+  {
+    "name": "TypeError",
+    "value": "app.php rendered"
+  },
+  {
+    "name": "RuntimeException",
+    "value": "worker.php rendered"
+  },
+  {
+    "name": "Warning",
+    "value": "config.php hidden"
+  }
+]

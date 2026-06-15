@@ -1,0 +1,2 @@
+node kind state
+src dir open

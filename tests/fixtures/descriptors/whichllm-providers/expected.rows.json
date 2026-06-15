@@ -1,0 +1,18 @@
+[
+  {
+    "name": "provider",
+    "value": "model state"
+  },
+  {
+    "name": "openai",
+    "value": "gpt ready"
+  },
+  {
+    "name": "anthropic",
+    "value": "claude ready"
+  },
+  {
+    "name": "local",
+    "value": "llama unavailable"
+  }
+]

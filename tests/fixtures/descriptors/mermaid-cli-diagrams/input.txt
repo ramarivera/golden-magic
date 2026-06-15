@@ -1,0 +1,4 @@
+diagram	format state
+flowchart	svg rendered
+sequence	png rendered
+gantt	pdf queued

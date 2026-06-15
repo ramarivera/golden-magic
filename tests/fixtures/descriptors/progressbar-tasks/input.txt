@@ -1,0 +1,4 @@
+task	percent state
+download	45 running
+extract	0 pending
+verify	100 complete

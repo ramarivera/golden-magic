@@ -4590,5 +4590,103 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/musikcube-tracks",
     "analysis_notes": "Modeled musikcube track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Andyyyy64/whichllm",
+    "descriptor_id": "known.whichllm.providers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/whichllm-providers",
+    "analysis_notes": "Modeled whichllm provider output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/LazoVelko/Pokemon-Terminal",
+    "descriptor_id": "known.pokemon-terminal.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pokemon-terminal-themes",
+    "analysis_notes": "Modeled Pokemon-Terminal theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Aloxaf/fzf-tab",
+    "descriptor_id": "known.fzf-tab.completions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fzf-tab-completions",
+    "analysis_notes": "Modeled fzf-tab completion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rorkai/App-Store-Connect-CLI",
+    "descriptor_id": "known.app-store-connect-cli.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/app-store-connect-cli-apps",
+    "analysis_notes": "Modeled App Store Connect CLI app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sayanarijit/xplr",
+    "descriptor_id": "known.xplr.nodes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xplr-nodes",
+    "analysis_notes": "Modeled xplr node output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/red-data-tools/YouPlot",
+    "descriptor_id": "known.youplot.series",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/youplot-series",
+    "analysis_notes": "Modeled YouPlot series output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/transitive-bullshit/create-react-library",
+    "descriptor_id": "known.create-react-library.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-react-library-builds",
+    "analysis_notes": "Modeled create-react-library build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jsonresume/resume-cli",
+    "descriptor_id": "known.resume-cli.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/resume-cli-sections",
+    "analysis_notes": "Modeled resume-cli section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mermaid-js/mermaid-cli",
+    "descriptor_id": "known.mermaid-cli.diagrams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mermaid-cli-diagrams",
+    "analysis_notes": "Modeled mermaid-cli diagram output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AsamK/signal-cli",
+    "descriptor_id": "known.signal-cli.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/signal-cli-devices",
+    "analysis_notes": "Modeled signal-cli device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/schollz/progressbar",
+    "descriptor_id": "known.progressbar.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/progressbar-tasks",
+    "analysis_notes": "Modeled progressbar task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/preactjs/preact-cli",
+    "descriptor_id": "known.preact-cli.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/preact-cli-routes",
+    "analysis_notes": "Modeled preact-cli route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nunomaduro/collision",
+    "descriptor_id": "known.collision.errors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/collision-errors",
+    "analysis_notes": "Modeled Collision error output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/michael-lazar/rtv",
+    "descriptor_id": "known.rtv.subreddits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rtv-subreddits",
+    "analysis_notes": "Modeled rtv subreddit output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+completion	group state
+git	commands ready
+cargo	targets ready
+ssh	hosts cached

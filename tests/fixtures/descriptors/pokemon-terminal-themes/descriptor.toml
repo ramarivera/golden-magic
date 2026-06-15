@@ -1,0 +1,10 @@
+id = "known.pokemon-terminal.themes"
+name = "Pokemon-Terminal theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tpokemon","kanto\tpikachu"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

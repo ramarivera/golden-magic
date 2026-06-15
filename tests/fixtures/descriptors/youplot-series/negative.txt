@@ -1,0 +1,2 @@
+series points state
+latency 120 rendered

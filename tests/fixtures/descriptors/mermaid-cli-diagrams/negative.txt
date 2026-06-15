@@ -1,0 +1,2 @@
+diagram format state
+flowchart svg rendered

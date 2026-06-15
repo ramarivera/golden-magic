@@ -1,0 +1,4 @@
+app	bundle state
+demo	com.example.demo ready
+beta	com.example.beta processing
+prod	com.example.prod live

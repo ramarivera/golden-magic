@@ -1,0 +1,10 @@
+id = "known.collision.errors"
+name = "Collision error list"
+priority = 50
+
+[matches]
+required_substrings = ["error\tfile","TypeError\tapp.php"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

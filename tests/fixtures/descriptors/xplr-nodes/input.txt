@@ -1,0 +1,4 @@
+node	kind state
+src	dir open
+README.md	file selected
+target	dir hidden

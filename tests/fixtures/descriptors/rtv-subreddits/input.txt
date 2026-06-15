@@ -1,0 +1,4 @@
+subreddit	posts state
+python	25 loaded
+rust	18 loaded
+cli	9 cached

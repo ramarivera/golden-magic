@@ -1,0 +1,10 @@
+id = "known.youplot.series"
+name = "YouPlot series list"
+priority = 50
+
+[matches]
+required_substrings = ["series\tpoints","latency\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

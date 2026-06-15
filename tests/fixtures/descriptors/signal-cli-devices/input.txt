@@ -1,0 +1,4 @@
+device	linked state
+phone	true primary
+desktop	true secondary
+old-phone	false removed

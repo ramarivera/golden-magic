@@ -1,0 +1,4 @@
+section	status fields
+basics	valid 6
+work	valid 3
+projects	missing 0

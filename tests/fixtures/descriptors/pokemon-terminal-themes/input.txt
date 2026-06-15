@@ -1,0 +1,4 @@
+theme	pokemon state
+kanto	pikachu active
+johto	lugia available
+hoenn	mudkip available

@@ -1,0 +1,2 @@
+device linked state
+phone true primary

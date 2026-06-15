@@ -1,0 +1,10 @@
+id = "known.app-store-connect-cli.apps"
+name = "App Store Connect CLI app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tbundle","demo\tcom.example.demo"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

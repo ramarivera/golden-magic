@@ -1,0 +1,4 @@
+series	points state
+latency	120 rendered
+throughput	95 rendered
+errors	7 rendered

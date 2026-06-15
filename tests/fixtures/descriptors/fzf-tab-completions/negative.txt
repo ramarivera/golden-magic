@@ -1,0 +1,2 @@
+completion group state
+git commands ready

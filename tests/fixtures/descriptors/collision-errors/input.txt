@@ -1,0 +1,4 @@
+error	file state
+TypeError	app.php rendered
+RuntimeException	worker.php rendered
+Warning	config.php hidden

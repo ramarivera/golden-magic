@@ -11806,5 +11806,257 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Andyyyy64/whichllm",
+    "descriptor_id": "known.whichllm.providers",
+    "run_id": "agentic.whichllm-providers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/whichllm-providers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/whichllm-providers/expected.rows.json",
+    "variants": [
+      "provider header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.whichllm.providers for whichllm provider list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/LazoVelko/Pokemon-Terminal",
+    "descriptor_id": "known.pokemon-terminal.themes",
+    "run_id": "agentic.pokemon-terminal-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pokemon-terminal-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pokemon-terminal-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "pokemon row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pokemon-terminal.themes for Pokemon-Terminal theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Aloxaf/fzf-tab",
+    "descriptor_id": "known.fzf-tab.completions",
+    "run_id": "agentic.fzf-tab-completions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fzf-tab-completions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fzf-tab-completions/expected.rows.json",
+    "variants": [
+      "completion header row",
+      "group row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fzf-tab.completions for fzf-tab completion list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rorkai/App-Store-Connect-CLI",
+    "descriptor_id": "known.app-store-connect-cli.apps",
+    "run_id": "agentic.app-store-connect-cli-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/app-store-connect-cli-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/app-store-connect-cli-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "bundle row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.app-store-connect-cli.apps for App Store Connect CLI app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sayanarijit/xplr",
+    "descriptor_id": "known.xplr.nodes",
+    "run_id": "agentic.xplr-nodes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xplr-nodes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xplr-nodes/expected.rows.json",
+    "variants": [
+      "node header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xplr.nodes for xplr node list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/red-data-tools/YouPlot",
+    "descriptor_id": "known.youplot.series",
+    "run_id": "agentic.youplot-series.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/youplot-series/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/youplot-series/expected.rows.json",
+    "variants": [
+      "series header row",
+      "points row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.youplot.series for YouPlot series list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/transitive-bullshit/create-react-library",
+    "descriptor_id": "known.create-react-library.builds",
+    "run_id": "agentic.create-react-library-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-react-library-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-react-library-builds/expected.rows.json",
+    "variants": [
+      "target header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-react-library.builds for create-react-library build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jsonresume/resume-cli",
+    "descriptor_id": "known.resume-cli.sections",
+    "run_id": "agentic.resume-cli-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/resume-cli-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/resume-cli-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "status row",
+      "fields field"
+    ],
+    "transcript": [
+      "selected descriptor known.resume-cli.sections for resume-cli section list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mermaid-js/mermaid-cli",
+    "descriptor_id": "known.mermaid-cli.diagrams",
+    "run_id": "agentic.mermaid-cli-diagrams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mermaid-cli-diagrams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mermaid-cli-diagrams/expected.rows.json",
+    "variants": [
+      "diagram header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mermaid-cli.diagrams for mermaid-cli diagram list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AsamK/signal-cli",
+    "descriptor_id": "known.signal-cli.devices",
+    "run_id": "agentic.signal-cli-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/signal-cli-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/signal-cli-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "linked row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.signal-cli.devices for signal-cli device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/schollz/progressbar",
+    "descriptor_id": "known.progressbar.tasks",
+    "run_id": "agentic.progressbar-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/progressbar-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/progressbar-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "percent row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.progressbar.tasks for progressbar task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/preactjs/preact-cli",
+    "descriptor_id": "known.preact-cli.routes",
+    "run_id": "agentic.preact-cli-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/preact-cli-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/preact-cli-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "chunk row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.preact-cli.routes for preact-cli route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nunomaduro/collision",
+    "descriptor_id": "known.collision.errors",
+    "run_id": "agentic.collision-errors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/collision-errors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/collision-errors/expected.rows.json",
+    "variants": [
+      "error header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.collision.errors for Collision error list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/michael-lazar/rtv",
+    "descriptor_id": "known.rtv.subreddits",
+    "run_id": "agentic.rtv-subreddits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rtv-subreddits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rtv-subreddits/expected.rows.json",
+    "variants": [
+      "subreddit header row",
+      "posts row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rtv.subreddits for rtv subreddit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

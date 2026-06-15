@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "percent state"
+  },
+  {
+    "name": "download",
+    "value": "45 running"
+  },
+  {
+    "name": "extract",
+    "value": "0 pending"
+  },
+  {
+    "name": "verify",
+    "value": "100 complete"
+  }
+]

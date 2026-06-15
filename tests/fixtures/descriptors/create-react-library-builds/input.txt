@@ -1,0 +1,4 @@
+target	format state
+dist	cjs built
+module	esm built
+types	dts emitted
