@@ -1,0 +1,4 @@
+pattern: ^foo[0-9]+$
+samples: 3
+conversion: digits
+status: generated

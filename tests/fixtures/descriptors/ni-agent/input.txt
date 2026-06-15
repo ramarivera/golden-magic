@@ -1,0 +1,4 @@
+agent: pnpm
+command: pnpm install
+lockfile: pnpm-lock.yaml
+status: ready

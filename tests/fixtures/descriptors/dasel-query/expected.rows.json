@@ -1,0 +1,18 @@
+[
+  {
+    "key": "selector",
+    "value": ".package.version"
+  },
+  {
+    "key": "value",
+    "value": "1.2.3"
+  },
+  {
+    "key": "format",
+    "value": "yaml"
+  },
+  {
+    "key": "matches",
+    "value": "1"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.ni.agent"
+name = "ni package-manager selection"
+priority = 50
+
+[matches]
+required_substrings = ["agent:","command:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

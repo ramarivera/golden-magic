@@ -1,0 +1,2 @@
+pattern ^foo[0-9]+$
+samples 3

@@ -838,5 +838,65 @@
     "negative": "Language Files Lines Code\nRust 12 2048 1800\n",
     "analysis_notes": "Modeled scc language summary output with a generated executable-json parser plugin.",
     "variants": ["language header row", "Rust row", "Markdown row"]
+  },
+  {
+    "fixture": "antigen-bundles",
+    "descriptor_id": "known.antigen.bundles",
+    "name": "antigen bundle list",
+    "repo": "https://github.com/zsh-users/antigen",
+    "required_substrings": ["bundle\tstatus", "zsh-users/zsh-autosuggestions\tloaded"],
+    "parser": "tab-pairs",
+    "input": "bundle\tstatus source\nzsh-users/zsh-autosuggestions\tloaded github\nzsh-users/zsh-syntax-highlighting\tloaded github\n",
+    "negative": "bundle status source\nzsh-users/zsh-autosuggestions loaded github\n",
+    "analysis_notes": "Modeled antigen bundle list output with a generated executable-json parser plugin.",
+    "variants": ["bundle header row", "loaded bundle row", "source field"]
+  },
+  {
+    "fixture": "ni-agent",
+    "descriptor_id": "known.ni.agent",
+    "name": "ni package-manager selection",
+    "repo": "https://github.com/antfu-collective/ni",
+    "required_substrings": ["agent:", "command:"],
+    "parser": "colon-kv",
+    "input": "agent: pnpm\ncommand: pnpm install\nlockfile: pnpm-lock.yaml\nstatus: ready\n",
+    "negative": "agent pnpm\ncommand pnpm install\n",
+    "analysis_notes": "Modeled ni package-manager selection output with a generated executable-json parser plugin.",
+    "variants": ["agent row", "command row", "lockfile row"]
+  },
+  {
+    "fixture": "nb-notes",
+    "descriptor_id": "known.nb.notes",
+    "name": "nb note list",
+    "repo": "https://github.com/xwmx/nb",
+    "required_substrings": ["id\ttitle", "1\tGolden Magic"],
+    "parser": "tab-pairs",
+    "input": "id\ttitle notebook\n1\tGolden Magic work\n2\tParser notes\n3\tRelease checklist\n",
+    "negative": "id title notebook\n1 Golden Magic work\n",
+    "analysis_notes": "Modeled nb note list output with a generated executable-json parser plugin.",
+    "variants": ["note header row", "note title row", "multiple notes"]
+  },
+  {
+    "fixture": "grex-pattern",
+    "descriptor_id": "known.grex.pattern",
+    "name": "grex pattern summary",
+    "repo": "https://github.com/pemistahl/grex",
+    "required_substrings": ["pattern:", "samples:"],
+    "parser": "colon-kv",
+    "input": "pattern: ^foo[0-9]+$\nsamples: 3\nconversion: digits\nstatus: generated\n",
+    "negative": "pattern ^foo[0-9]+$\nsamples 3\n",
+    "analysis_notes": "Modeled grex pattern summary output with a generated executable-json parser plugin.",
+    "variants": ["pattern row", "sample count row", "status row"]
+  },
+  {
+    "fixture": "dasel-query",
+    "descriptor_id": "known.dasel.query",
+    "name": "dasel query result",
+    "repo": "https://github.com/TomWright/dasel",
+    "required_substrings": ["selector:", "value:"],
+    "parser": "colon-kv",
+    "input": "selector: .package.version\nvalue: 1.2.3\nformat: yaml\nmatches: 1\n",
+    "negative": "selector .package.version\nvalue 1.2.3\n",
+    "analysis_notes": "Modeled dasel query result output with a generated executable-json parser plugin.",
+    "variants": ["selector row", "value row", "format row"]
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "key": "pattern",
+    "value": "^foo[0-9]+$"
+  },
+  {
+    "key": "samples",
+    "value": "3"
+  },
+  {
+    "key": "conversion",
+    "value": "digits"
+  },
+  {
+    "key": "status",
+    "value": "generated"
+  }
+]

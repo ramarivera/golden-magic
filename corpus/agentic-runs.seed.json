@@ -1618,5 +1618,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/zsh-users/antigen",
+    "descriptor_id": "known.antigen.bundles",
+    "run_id": "agentic.antigen-bundles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/antigen-bundles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/antigen-bundles/expected.rows.json",
+    "variants": [
+      "bundle header row",
+      "loaded bundle row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.antigen.bundles for antigen bundle list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/antfu-collective/ni",
+    "descriptor_id": "known.ni.agent",
+    "run_id": "agentic.ni-agent.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ni-agent/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ni-agent/expected.rows.json",
+    "variants": [
+      "agent row",
+      "command row",
+      "lockfile row"
+    ],
+    "transcript": [
+      "selected descriptor known.ni.agent for ni package-manager selection output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xwmx/nb",
+    "descriptor_id": "known.nb.notes",
+    "run_id": "agentic.nb-notes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nb-notes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nb-notes/expected.rows.json",
+    "variants": [
+      "note header row",
+      "note title row",
+      "multiple notes"
+    ],
+    "transcript": [
+      "selected descriptor known.nb.notes for nb note list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pemistahl/grex",
+    "descriptor_id": "known.grex.pattern",
+    "run_id": "agentic.grex-pattern.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/grex-pattern/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/grex-pattern/expected.rows.json",
+    "variants": [
+      "pattern row",
+      "sample count row",
+      "status row"
+    ],
+    "transcript": [
+      "selected descriptor known.grex.pattern for grex pattern summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/TomWright/dasel",
+    "descriptor_id": "known.dasel.query",
+    "run_id": "agentic.dasel-query.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dasel-query/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dasel-query/expected.rows.json",
+    "variants": [
+      "selector row",
+      "value row",
+      "format row"
+    ],
+    "transcript": [
+      "selected descriptor known.dasel.query for dasel query result output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

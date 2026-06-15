@@ -1,0 +1,10 @@
+id = "known.dasel.query"
+name = "dasel query result"
+priority = 50
+
+[matches]
+required_substrings = ["selector:","value:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

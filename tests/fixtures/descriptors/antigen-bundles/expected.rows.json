@@ -1,0 +1,14 @@
+[
+  {
+    "name": "bundle",
+    "value": "status source"
+  },
+  {
+    "name": "zsh-users/zsh-autosuggestions",
+    "value": "loaded github"
+  },
+  {
+    "name": "zsh-users/zsh-syntax-highlighting",
+    "value": "loaded github"
+  }
+]

@@ -628,5 +628,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/scc-summary",
     "analysis_notes": "Modeled scc language summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zsh-users/antigen",
+    "descriptor_id": "known.antigen.bundles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/antigen-bundles",
+    "analysis_notes": "Modeled antigen bundle list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/antfu-collective/ni",
+    "descriptor_id": "known.ni.agent",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ni-agent",
+    "analysis_notes": "Modeled ni package-manager selection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xwmx/nb",
+    "descriptor_id": "known.nb.notes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nb-notes",
+    "analysis_notes": "Modeled nb note list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pemistahl/grex",
+    "descriptor_id": "known.grex.pattern",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/grex-pattern",
+    "analysis_notes": "Modeled grex pattern summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/TomWright/dasel",
+    "descriptor_id": "known.dasel.query",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dasel-query",
+    "analysis_notes": "Modeled dasel query result output with a generated executable-json parser plugin."
   }
 ]

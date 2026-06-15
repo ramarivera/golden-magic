@@ -1,0 +1,10 @@
+id = "known.nb.notes"
+name = "nb note list"
+priority = 50
+
+[matches]
+required_substrings = ["id\ttitle","1\tGolden Magic"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

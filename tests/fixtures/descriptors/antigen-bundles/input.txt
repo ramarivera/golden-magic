@@ -1,0 +1,3 @@
+bundle	status source
+zsh-users/zsh-autosuggestions	loaded github
+zsh-users/zsh-syntax-highlighting	loaded github

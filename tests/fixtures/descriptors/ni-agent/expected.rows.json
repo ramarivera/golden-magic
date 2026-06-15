@@ -1,0 +1,18 @@
+[
+  {
+    "key": "agent",
+    "value": "pnpm"
+  },
+  {
+    "key": "command",
+    "value": "pnpm install"
+  },
+  {
+    "key": "lockfile",
+    "value": "pnpm-lock.yaml"
+  },
+  {
+    "key": "status",
+    "value": "ready"
+  }
+]

@@ -1,0 +1,4 @@
+selector: .package.version
+value: 1.2.3
+format: yaml
+matches: 1

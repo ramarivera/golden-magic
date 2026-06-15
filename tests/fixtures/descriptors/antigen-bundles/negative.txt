@@ -1,0 +1,2 @@
+bundle status source
+zsh-users/zsh-autosuggestions loaded github
