@@ -1,0 +1,10 @@
+id = "known.nuxt-devtools.panels"
+name = "Nuxt DevTools panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tmodule","routes\tnuxt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

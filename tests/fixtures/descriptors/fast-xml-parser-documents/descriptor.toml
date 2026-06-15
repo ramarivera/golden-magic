@@ -1,0 +1,10 @@
+id = "known.fast-xml-parser.documents"
+name = "fast-xml-parser document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tmode","feed.xml\tpreserve"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.tmux-yank.bindings"
+name = "tmux-yank binding list"
+priority = 50
+
+[matches]
+required_substrings = ["binding\tmode","y\tcopy"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

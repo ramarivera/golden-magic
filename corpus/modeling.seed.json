@@ -6256,5 +6256,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/darktile-tabs",
     "analysis_notes": "Modeled darktile terminal tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jessfraz/dotfiles",
+    "descriptor_id": "known.jessfraz-dotfiles.machines",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jessfraz-dotfiles-machines",
+    "analysis_notes": "Modeled dotfiles-managed machine output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/React-Proto/react-proto",
+    "descriptor_id": "known.react-proto.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-proto-components",
+    "analysis_notes": "Modeled React Proto generated component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/glorious-codes/glorious-demo",
+    "descriptor_id": "known.glorious-demo.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glorious-demo-steps",
+    "analysis_notes": "Modeled glorious-demo terminal demo step output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nuxt/devtools",
+    "descriptor_id": "known.nuxt-devtools.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nuxt-devtools-panels",
+    "analysis_notes": "Modeled Nuxt DevTools panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NaturalIntelligence/fast-xml-parser",
+    "descriptor_id": "known.fast-xml-parser.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fast-xml-parser-documents",
+    "analysis_notes": "Modeled fast-xml-parser batch document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tsedio/tsed",
+    "descriptor_id": "known.tsed.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tsed-routes",
+    "analysis_notes": "Modeled Ts.ED route table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/av/harbor",
+    "descriptor_id": "known.harbor.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/harbor-services",
+    "analysis_notes": "Modeled Harbor local service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tmux-plugins/tmux-yank",
+    "descriptor_id": "known.tmux-yank.bindings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tmux-yank-bindings",
+    "analysis_notes": "Modeled tmux-yank key binding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/magiblot/tvision",
+    "descriptor_id": "known.tvision.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tvision-widgets",
+    "analysis_notes": "Modeled Turbo Vision widget catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/apache/devlake",
+    "descriptor_id": "known.devlake.blueprints",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devlake-blueprints",
+    "analysis_notes": "Modeled Apache DevLake blueprint output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,2 @@
+panel module state
+routes nuxt enabled

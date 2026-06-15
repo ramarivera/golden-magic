@@ -1,0 +1,4 @@
+service	port state
+web	8080 running
+worker	9090 running
+old	7070 stopped

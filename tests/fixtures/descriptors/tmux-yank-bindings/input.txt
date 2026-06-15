@@ -1,0 +1,4 @@
+binding	mode state
+y	copy active
+Y	line active
+old	paste disabled

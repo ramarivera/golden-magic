@@ -1,0 +1,4 @@
+panel	module state
+routes	nuxt enabled
+payload	app enabled
+legacy	bridge hidden

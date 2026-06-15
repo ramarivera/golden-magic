@@ -1,0 +1,10 @@
+id = "known.tvision.widgets"
+name = "Turbo Vision widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tclass","dialog\tTDialog"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

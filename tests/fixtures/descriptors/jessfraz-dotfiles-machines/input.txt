@@ -1,0 +1,4 @@
+machine	profile state
+laptop	dev active
+server	ops active
+oldbox	legacy archived

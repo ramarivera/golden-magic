@@ -1,0 +1,4 @@
+component	kind state
+Header	container generated
+Button	presentational generated
+OldView	legacy skipped

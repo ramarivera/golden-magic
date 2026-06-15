@@ -1,0 +1,4 @@
+step	action state
+intro	type ready
+run	command ready
+old	pause skipped

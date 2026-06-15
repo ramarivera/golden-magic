@@ -1,0 +1,4 @@
+blueprint	provider state
+github	gh active
+jira	atlassian active
+old	csv disabled

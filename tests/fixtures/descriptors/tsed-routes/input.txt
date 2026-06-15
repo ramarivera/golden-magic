@@ -1,0 +1,4 @@
+route	method state
+/users	GET mounted
+/admin	POST mounted
+/old	DELETE disabled

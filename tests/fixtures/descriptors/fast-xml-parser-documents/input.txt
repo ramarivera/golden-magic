@@ -1,0 +1,4 @@
+document	mode state
+feed.xml	preserve parsed
+config.xml	validate parsed
+old.xml	ignore skipped

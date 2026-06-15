@@ -1,0 +1,4 @@
+widget	class state
+dialog	TDialog available
+listbox	TListBox available
+old	TLegacy hidden

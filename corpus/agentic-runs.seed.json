@@ -16090,5 +16090,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jessfraz/dotfiles",
+    "descriptor_id": "known.jessfraz-dotfiles.machines",
+    "run_id": "agentic.jessfraz-dotfiles-machines.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jessfraz-dotfiles-machines/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jessfraz-dotfiles-machines/expected.rows.json",
+    "variants": [
+      "machine header row",
+      "profile row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jessfraz-dotfiles.machines for Jess Fraz dotfiles machine list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/React-Proto/react-proto",
+    "descriptor_id": "known.react-proto.components",
+    "run_id": "agentic.react-proto-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-proto-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-proto-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-proto.components for React Proto component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/glorious-codes/glorious-demo",
+    "descriptor_id": "known.glorious-demo.steps",
+    "run_id": "agentic.glorious-demo-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glorious-demo-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glorious-demo-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "action row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.glorious-demo.steps for glorious-demo step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nuxt/devtools",
+    "descriptor_id": "known.nuxt-devtools.panels",
+    "run_id": "agentic.nuxt-devtools-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nuxt-devtools-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nuxt-devtools-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "module row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nuxt-devtools.panels for Nuxt DevTools panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/NaturalIntelligence/fast-xml-parser",
+    "descriptor_id": "known.fast-xml-parser.documents",
+    "run_id": "agentic.fast-xml-parser-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fast-xml-parser-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fast-xml-parser-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fast-xml-parser.documents for fast-xml-parser document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tsedio/tsed",
+    "descriptor_id": "known.tsed.routes",
+    "run_id": "agentic.tsed-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tsed-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tsed-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tsed.routes for Ts.ED route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/av/harbor",
+    "descriptor_id": "known.harbor.services",
+    "run_id": "agentic.harbor-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/harbor-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/harbor-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "port row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.harbor.services for Harbor service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tmux-plugins/tmux-yank",
+    "descriptor_id": "known.tmux-yank.bindings",
+    "run_id": "agentic.tmux-yank-bindings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tmux-yank-bindings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tmux-yank-bindings/expected.rows.json",
+    "variants": [
+      "binding header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tmux-yank.bindings for tmux-yank binding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/magiblot/tvision",
+    "descriptor_id": "known.tvision.widgets",
+    "run_id": "agentic.tvision-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tvision-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tvision-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "class row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tvision.widgets for Turbo Vision widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/apache/devlake",
+    "descriptor_id": "known.devlake.blueprints",
+    "run_id": "agentic.devlake-blueprints.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devlake-blueprints/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devlake-blueprints/expected.rows.json",
+    "variants": [
+      "blueprint header row",
+      "provider row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devlake.blueprints for Apache DevLake blueprint list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.jessfraz-dotfiles.machines"
+name = "Jess Fraz dotfiles machine list"
+priority = 50
+
+[matches]
+required_substrings = ["machine\tprofile","laptop\tdev"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

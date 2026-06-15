@@ -1,0 +1,18 @@
+[
+  {
+    "name": "component",
+    "value": "kind state"
+  },
+  {
+    "name": "Header",
+    "value": "container generated"
+  },
+  {
+    "name": "Button",
+    "value": "presentational generated"
+  },
+  {
+    "name": "OldView",
+    "value": "legacy skipped"
+  }
+]

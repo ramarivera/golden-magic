@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "class state"
+  },
+  {
+    "name": "dialog",
+    "value": "TDialog available"
+  },
+  {
+    "name": "listbox",
+    "value": "TListBox available"
+  },
+  {
+    "name": "old",
+    "value": "TLegacy hidden"
+  }
+]

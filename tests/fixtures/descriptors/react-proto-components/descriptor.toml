@@ -1,0 +1,10 @@
+id = "known.react-proto.components"
+name = "React Proto component list"
+priority = 50
+
+[matches]
+required_substrings = ["component\tkind","Header\tcontainer"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
