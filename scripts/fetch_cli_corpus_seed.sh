@@ -37,9 +37,10 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
   query_count=$((query_count + 1))
   query_out="$tmpdir/query-$query_count.json"
   echo "fetching partition $query_count: $query" >&2
+  read -r -a query_terms <<< "$query"
 
   attempt=0
-  until gh search repos "$query" \
+  until gh search repos "${query_terms[@]}" \
       --sort stars \
       --order desc \
       --limit "$per_query_limit" \
