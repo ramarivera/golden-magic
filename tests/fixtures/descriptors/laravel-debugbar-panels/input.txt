@@ -1,0 +1,4 @@
+panel	status count
+queries	visible 18
+views	visible 6
+mail	hidden 0

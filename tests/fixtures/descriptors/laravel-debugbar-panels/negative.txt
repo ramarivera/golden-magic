@@ -1,0 +1,2 @@
+panel status count
+queries visible 18

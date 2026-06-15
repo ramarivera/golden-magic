@@ -1,0 +1,10 @@
+id = "known.spotify-tui.playlists"
+name = "spotify-tui playlist list"
+priority = 50
+
+[matches]
+required_substrings = ["playlist\tstatus","Discover Weekly\tselected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

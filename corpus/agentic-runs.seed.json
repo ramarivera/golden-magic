@@ -4948,5 +4948,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/yudai/gotty",
+    "descriptor_id": "known.gotty.sessions",
+    "run_id": "agentic.gotty-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gotty-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gotty-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "clients field"
+    ],
+    "transcript": [
+      "selected descriptor known.gotty.sessions for GoTTY session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rothgar/awesome-tuis",
+    "descriptor_id": "known.awesome-tuis.index",
+    "run_id": "agentic.awesome-tuis-index.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-tuis-index/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-tuis-index/expected.rows.json",
+    "variants": [
+      "app header row",
+      "category row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-tuis.index for awesome-tuis index output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fruitcake/laravel-debugbar",
+    "descriptor_id": "known.laravel-debugbar.panels",
+    "run_id": "agentic.laravel-debugbar-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/laravel-debugbar-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/laravel-debugbar-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "count field"
+    ],
+    "transcript": [
+      "selected descriptor known.laravel-debugbar.panels for Laravel Debugbar panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Rigellute/spotify-tui",
+    "descriptor_id": "known.spotify-tui.playlists",
+    "run_id": "agentic.spotify-tui-playlists.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spotify-tui-playlists/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spotify-tui-playlists/expected.rows.json",
+    "variants": [
+      "playlist header row",
+      "status row",
+      "tracks field"
+    ],
+    "transcript": [
+      "selected descriptor known.spotify-tui.playlists for spotify-tui playlist list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fathyb/carbonyl",
+    "descriptor_id": "known.carbonyl.tabs",
+    "run_id": "agentic.carbonyl-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/carbonyl-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/carbonyl-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "state row",
+      "url field"
+    ],
+    "transcript": [
+      "selected descriptor known.carbonyl.tabs for Carbonyl tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

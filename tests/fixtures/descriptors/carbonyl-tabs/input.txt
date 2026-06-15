@@ -1,0 +1,4 @@
+tab	state url
+1	active https://example.com
+2	loading https://docs.example.com
+3	idle about:blank

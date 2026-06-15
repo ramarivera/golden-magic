@@ -1,0 +1,2 @@
+app category language
+lazygit git Go

@@ -1,0 +1,4 @@
+playlist	status tracks
+Discover Weekly	selected 30
+Daily Mix	available 50
+Liked Songs	available 342

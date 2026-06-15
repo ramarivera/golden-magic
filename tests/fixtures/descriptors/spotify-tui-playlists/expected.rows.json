@@ -1,0 +1,18 @@
+[
+  {
+    "name": "playlist",
+    "value": "status tracks"
+  },
+  {
+    "name": "Discover Weekly",
+    "value": "selected 30"
+  },
+  {
+    "name": "Daily Mix",
+    "value": "available 50"
+  },
+  {
+    "name": "Liked Songs",
+    "value": "available 342"
+  }
+]

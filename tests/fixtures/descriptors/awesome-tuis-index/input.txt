@@ -1,0 +1,4 @@
+app	category language
+lazygit	git Go
+btop	monitor C++
+spotify-tui	music Rust

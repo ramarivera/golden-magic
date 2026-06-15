@@ -1,0 +1,10 @@
+id = "known.carbonyl.tabs"
+name = "Carbonyl tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\tstate","1\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

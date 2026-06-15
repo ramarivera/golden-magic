@@ -1923,5 +1923,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/typer-commands",
     "analysis_notes": "Modeled Typer command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yudai/gotty",
+    "descriptor_id": "known.gotty.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gotty-sessions",
+    "analysis_notes": "Modeled GoTTY session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rothgar/awesome-tuis",
+    "descriptor_id": "known.awesome-tuis.index",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-tuis-index",
+    "analysis_notes": "Modeled awesome-tuis index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fruitcake/laravel-debugbar",
+    "descriptor_id": "known.laravel-debugbar.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/laravel-debugbar-panels",
+    "analysis_notes": "Modeled Laravel Debugbar panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Rigellute/spotify-tui",
+    "descriptor_id": "known.spotify-tui.playlists",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spotify-tui-playlists",
+    "analysis_notes": "Modeled spotify-tui playlist output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fathyb/carbonyl",
+    "descriptor_id": "known.carbonyl.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/carbonyl-tabs",
+    "analysis_notes": "Modeled Carbonyl tab output with a generated executable-json parser plugin."
   }
 ]

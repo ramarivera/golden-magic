@@ -1,0 +1,4 @@
+session	state clients
+shell	active 2
+logs	idle 1
+admin	closed 0

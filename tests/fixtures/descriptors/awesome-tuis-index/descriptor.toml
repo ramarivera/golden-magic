@@ -1,0 +1,10 @@
+id = "known.awesome-tuis.index"
+name = "awesome-tuis index"
+priority = 50
+
+[matches]
+required_substrings = ["app\tcategory","lazygit\tgit"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

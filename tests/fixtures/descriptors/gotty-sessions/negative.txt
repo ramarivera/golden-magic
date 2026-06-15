@@ -1,0 +1,2 @@
+session state clients
+shell active 2

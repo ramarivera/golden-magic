@@ -3058,5 +3058,65 @@
     "negative": "command option callback\nserve --port run_server\n",
     "analysis_notes": "Modeled Typer command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "option row", "callback field"]
+  },
+  {
+    "fixture": "gotty-sessions",
+    "descriptor_id": "known.gotty.sessions",
+    "name": "GoTTY session list",
+    "repo": "https://github.com/yudai/gotty",
+    "required_substrings": ["session\tstate", "shell\tactive"],
+    "parser": "tab-pairs",
+    "input": "session\tstate clients\nshell\tactive 2\nlogs\tidle 1\nadmin\tclosed 0\n",
+    "negative": "session state clients\nshell active 2\n",
+    "analysis_notes": "Modeled GoTTY session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "clients field"]
+  },
+  {
+    "fixture": "awesome-tuis-index",
+    "descriptor_id": "known.awesome-tuis.index",
+    "name": "awesome-tuis index",
+    "repo": "https://github.com/rothgar/awesome-tuis",
+    "required_substrings": ["app\tcategory", "lazygit\tgit"],
+    "parser": "tab-pairs",
+    "input": "app\tcategory language\nlazygit\tgit Go\nbtop\tmonitor C++\nspotify-tui\tmusic Rust\n",
+    "negative": "app category language\nlazygit git Go\n",
+    "analysis_notes": "Modeled awesome-tuis index output with a generated executable-json parser plugin.",
+    "variants": ["app header row", "category row", "language field"]
+  },
+  {
+    "fixture": "laravel-debugbar-panels",
+    "descriptor_id": "known.laravel-debugbar.panels",
+    "name": "Laravel Debugbar panel list",
+    "repo": "https://github.com/fruitcake/laravel-debugbar",
+    "required_substrings": ["panel\tstatus", "queries\tvisible"],
+    "parser": "tab-pairs",
+    "input": "panel\tstatus count\nqueries\tvisible 18\nviews\tvisible 6\nmail\thidden 0\n",
+    "negative": "panel status count\nqueries visible 18\n",
+    "analysis_notes": "Modeled Laravel Debugbar panel output with a generated executable-json parser plugin.",
+    "variants": ["panel header row", "status row", "count field"]
+  },
+  {
+    "fixture": "spotify-tui-playlists",
+    "descriptor_id": "known.spotify-tui.playlists",
+    "name": "spotify-tui playlist list",
+    "repo": "https://github.com/Rigellute/spotify-tui",
+    "required_substrings": ["playlist\tstatus", "Discover Weekly\tselected"],
+    "parser": "tab-pairs",
+    "input": "playlist\tstatus tracks\nDiscover Weekly\tselected 30\nDaily Mix\tavailable 50\nLiked Songs\tavailable 342\n",
+    "negative": "playlist status tracks\nDiscover Weekly selected 30\n",
+    "analysis_notes": "Modeled spotify-tui playlist output with a generated executable-json parser plugin.",
+    "variants": ["playlist header row", "status row", "tracks field"]
+  },
+  {
+    "fixture": "carbonyl-tabs",
+    "descriptor_id": "known.carbonyl.tabs",
+    "name": "Carbonyl tab list",
+    "repo": "https://github.com/fathyb/carbonyl",
+    "required_substrings": ["tab\tstate", "1\tactive"],
+    "parser": "tab-pairs",
+    "input": "tab\tstate url\n1\tactive https://example.com\n2\tloading https://docs.example.com\n3\tidle about:blank\n",
+    "negative": "tab state url\n1 active https://example.com\n",
+    "analysis_notes": "Modeled Carbonyl tab output with a generated executable-json parser plugin.",
+    "variants": ["tab header row", "state row", "url field"]
   }
 ]
