@@ -1,0 +1,4 @@
+media	state output
+portrait.png	done portrait-cut.png
+clip.mp4	running clip-alpha.mp4
+logo.jpg	queued logo-cut.png

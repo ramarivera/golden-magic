@@ -1,0 +1,18 @@
+[
+  {
+    "name": "method",
+    "value": "status endpoint"
+  },
+  {
+    "name": "GET",
+    "value": "200 /health"
+  },
+  {
+    "name": "POST",
+    "value": "201 /items"
+  },
+  {
+    "name": "PATCH",
+    "value": "204 /items/1"
+  }
+]

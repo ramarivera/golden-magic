@@ -1,0 +1,10 @@
+id = "known.standard-version.releases"
+name = "standard-version release list"
+priority = 50
+
+[matches]
+required_substrings = ["version\tstate","1.2.3\ttagged"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

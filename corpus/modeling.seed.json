@@ -3078,5 +3078,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/term-everything-apps",
     "analysis_notes": "Modeled term.everything app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/getagentseal/codeburn",
+    "descriptor_id": "known.codeburn.costs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/codeburn-costs",
+    "analysis_notes": "Modeled codeburn cost output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/conventional-changelog/standard-version",
+    "descriptor_id": "known.standard-version.releases",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/standard-version-releases",
+    "analysis_notes": "Modeled standard-version release output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/enquirer/enquirer",
+    "descriptor_id": "known.enquirer.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/enquirer-prompts",
+    "analysis_notes": "Modeled enquirer prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nadermx/backgroundremover",
+    "descriptor_id": "known.backgroundremover.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/backgroundremover-jobs",
+    "analysis_notes": "Modeled backgroundremover job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ducaale/xh",
+    "descriptor_id": "known.xh.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xh-requests",
+    "analysis_notes": "Modeled xh request output with a generated executable-json parser plugin."
   }
 ]

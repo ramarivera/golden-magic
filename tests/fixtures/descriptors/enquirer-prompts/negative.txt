@@ -1,0 +1,2 @@
+prompt kind status
+confirm boolean stable

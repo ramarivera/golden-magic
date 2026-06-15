@@ -1,0 +1,4 @@
+prompt	kind status
+confirm	boolean stable
+select	choice stable
+survey	form beta

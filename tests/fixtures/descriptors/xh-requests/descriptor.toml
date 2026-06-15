@@ -1,0 +1,10 @@
+id = "known.xh.requests"
+name = "xh request list"
+priority = 50
+
+[matches]
+required_substrings = ["method\tstatus","GET\t200"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

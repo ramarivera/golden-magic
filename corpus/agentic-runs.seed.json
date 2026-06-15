@@ -7918,5 +7918,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/getagentseal/codeburn",
+    "descriptor_id": "known.codeburn.costs",
+    "run_id": "agentic.codeburn-costs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/codeburn-costs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/codeburn-costs/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "cost row",
+      "tokens field"
+    ],
+    "transcript": [
+      "selected descriptor known.codeburn.costs for codeburn cost list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/conventional-changelog/standard-version",
+    "descriptor_id": "known.standard-version.releases",
+    "run_id": "agentic.standard-version-releases.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/standard-version-releases/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/standard-version-releases/expected.rows.json",
+    "variants": [
+      "version header row",
+      "state row",
+      "commits field"
+    ],
+    "transcript": [
+      "selected descriptor known.standard-version.releases for standard-version release list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/enquirer/enquirer",
+    "descriptor_id": "known.enquirer.prompts",
+    "run_id": "agentic.enquirer-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/enquirer-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/enquirer-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "kind row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.enquirer.prompts for enquirer prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nadermx/backgroundremover",
+    "descriptor_id": "known.backgroundremover.jobs",
+    "run_id": "agentic.backgroundremover-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/backgroundremover-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/backgroundremover-jobs/expected.rows.json",
+    "variants": [
+      "media header row",
+      "state row",
+      "output field"
+    ],
+    "transcript": [
+      "selected descriptor known.backgroundremover.jobs for backgroundremover job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ducaale/xh",
+    "descriptor_id": "known.xh.requests",
+    "run_id": "agentic.xh-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xh-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xh-requests/expected.rows.json",
+    "variants": [
+      "method header row",
+      "status row",
+      "endpoint field"
+    ],
+    "transcript": [
+      "selected descriptor known.xh.requests for xh request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

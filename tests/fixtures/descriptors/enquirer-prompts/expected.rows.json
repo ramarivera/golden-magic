@@ -1,0 +1,18 @@
+[
+  {
+    "name": "prompt",
+    "value": "kind status"
+  },
+  {
+    "name": "confirm",
+    "value": "boolean stable"
+  },
+  {
+    "name": "select",
+    "value": "choice stable"
+  },
+  {
+    "name": "survey",
+    "value": "form beta"
+  }
+]

@@ -1,0 +1,4 @@
+version	state commits
+1.2.3	tagged 14
+1.2.4	planned 3
+2.0.0	draft 22

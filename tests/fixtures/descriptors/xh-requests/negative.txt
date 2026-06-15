@@ -1,0 +1,2 @@
+method status endpoint
+GET 200 /health

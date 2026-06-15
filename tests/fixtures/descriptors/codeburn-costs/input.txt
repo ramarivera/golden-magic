@@ -1,0 +1,4 @@
+agent	cost tokens
+codex	12.40 184000
+claude	9.10 130000
+cursor	3.25 42000

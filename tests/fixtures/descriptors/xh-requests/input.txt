@@ -1,0 +1,4 @@
+method	status endpoint
+GET	200 /health
+POST	201 /items
+PATCH	204 /items/1

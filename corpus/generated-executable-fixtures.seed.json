@@ -5038,5 +5038,65 @@
     "negative": "app state backend\ncalculator running x11\n",
     "analysis_notes": "Modeled term.everything app output with a generated executable-json parser plugin.",
     "variants": ["app header row", "state row", "backend field"]
+  },
+  {
+    "fixture": "codeburn-costs",
+    "descriptor_id": "known.codeburn.costs",
+    "name": "codeburn cost list",
+    "repo": "https://github.com/getagentseal/codeburn",
+    "required_substrings": ["agent\tcost", "codex\t12.40"],
+    "parser": "tab-pairs",
+    "input": "agent\tcost tokens\ncodex\t12.40 184000\nclaude\t9.10 130000\ncursor\t3.25 42000\n",
+    "negative": "agent cost tokens\ncodex 12.40 184000\n",
+    "analysis_notes": "Modeled codeburn cost output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "cost row", "tokens field"]
+  },
+  {
+    "fixture": "standard-version-releases",
+    "descriptor_id": "known.standard-version.releases",
+    "name": "standard-version release list",
+    "repo": "https://github.com/conventional-changelog/standard-version",
+    "required_substrings": ["version\tstate", "1.2.3\ttagged"],
+    "parser": "tab-pairs",
+    "input": "version\tstate commits\n1.2.3\ttagged 14\n1.2.4\tplanned 3\n2.0.0\tdraft 22\n",
+    "negative": "version state commits\n1.2.3 tagged 14\n",
+    "analysis_notes": "Modeled standard-version release output with a generated executable-json parser plugin.",
+    "variants": ["version header row", "state row", "commits field"]
+  },
+  {
+    "fixture": "enquirer-prompts",
+    "descriptor_id": "known.enquirer.prompts",
+    "name": "enquirer prompt list",
+    "repo": "https://github.com/enquirer/enquirer",
+    "required_substrings": ["prompt\tkind", "confirm\tboolean"],
+    "parser": "tab-pairs",
+    "input": "prompt\tkind status\nconfirm\tboolean stable\nselect\tchoice stable\nsurvey\tform beta\n",
+    "negative": "prompt kind status\nconfirm boolean stable\n",
+    "analysis_notes": "Modeled enquirer prompt output with a generated executable-json parser plugin.",
+    "variants": ["prompt header row", "kind row", "status field"]
+  },
+  {
+    "fixture": "backgroundremover-jobs",
+    "descriptor_id": "known.backgroundremover.jobs",
+    "name": "backgroundremover job list",
+    "repo": "https://github.com/nadermx/backgroundremover",
+    "required_substrings": ["media\tstate", "portrait.png\tdone"],
+    "parser": "tab-pairs",
+    "input": "media\tstate output\nportrait.png\tdone portrait-cut.png\nclip.mp4\trunning clip-alpha.mp4\nlogo.jpg\tqueued logo-cut.png\n",
+    "negative": "media state output\nportrait.png done portrait-cut.png\n",
+    "analysis_notes": "Modeled backgroundremover job output with a generated executable-json parser plugin.",
+    "variants": ["media header row", "state row", "output field"]
+  },
+  {
+    "fixture": "xh-requests",
+    "descriptor_id": "known.xh.requests",
+    "name": "xh request list",
+    "repo": "https://github.com/ducaale/xh",
+    "required_substrings": ["method\tstatus", "GET\t200"],
+    "parser": "tab-pairs",
+    "input": "method\tstatus endpoint\nGET\t200 /health\nPOST\t201 /items\nPATCH\t204 /items/1\n",
+    "negative": "method status endpoint\nGET 200 /health\n",
+    "analysis_notes": "Modeled xh request output with a generated executable-json parser plugin.",
+    "variants": ["method header row", "status row", "endpoint field"]
   }
 ]

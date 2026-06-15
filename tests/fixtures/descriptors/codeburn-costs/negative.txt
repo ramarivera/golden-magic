@@ -1,0 +1,2 @@
+agent cost tokens
+codex 12.40 184000

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "media",
+    "value": "state output"
+  },
+  {
+    "name": "portrait.png",
+    "value": "done portrait-cut.png"
+  },
+  {
+    "name": "clip.mp4",
+    "value": "running clip-alpha.mp4"
+  },
+  {
+    "name": "logo.jpg",
+    "value": "queued logo-cut.png"
+  }
+]
