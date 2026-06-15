@@ -1,0 +1,18 @@
+[
+  {
+    "name": "symbol",
+    "value": "price change"
+  },
+  {
+    "name": "AAPL",
+    "value": "198.40 +1.2"
+  },
+  {
+    "name": "BTC-USD",
+    "value": "65200.00 -0.4"
+  },
+  {
+    "name": "ETH-USD",
+    "value": "3420.10 +0.8"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.bats.tests"
+name = "bats test result list"
+priority = 50
+
+[matches]
+required_substrings = ["test\tstatus","parses flags\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

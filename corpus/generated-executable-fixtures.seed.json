@@ -6238,5 +6238,65 @@
     "negative": "style ansi example\nerror 31 failed\n",
     "analysis_notes": "Modeled PHP-Console-Color style output with a generated executable-json parser plugin.",
     "variants": ["style header row", "ansi row", "example field"]
+  },
+  {
+    "fixture": "dietpi-services",
+    "descriptor_id": "known.dietpi.services",
+    "name": "DietPi service list",
+    "repo": "https://github.com/MichaIng/DietPi",
+    "required_substrings": ["service\tstate", "ssh\tactive"],
+    "parser": "tab-pairs",
+    "input": "service\tstate unit\nssh\tactive dropbear.service\nnginx\tactive nginx.service\nbackup\tinactive dietpi-backup.service\n",
+    "negative": "service state unit\nssh active dropbear.service\n",
+    "analysis_notes": "Modeled DietPi service output with a generated executable-json parser plugin.",
+    "variants": ["service header row", "state row", "unit field"]
+  },
+  {
+    "fixture": "procs-processes",
+    "descriptor_id": "known.procs.processes",
+    "name": "procs process list",
+    "repo": "https://github.com/dalance/procs",
+    "required_substrings": ["pid\tcommand", "101\tbash"],
+    "parser": "tab-pairs",
+    "input": "pid\tcommand cpu\n101\tbash 0.1\n202\tcargo 34.8\n303\tprocs 1.2\n",
+    "negative": "pid command cpu\n101 bash 0.1\n",
+    "analysis_notes": "Modeled procs process output with a generated executable-json parser plugin.",
+    "variants": ["pid header row", "command row", "cpu field"]
+  },
+  {
+    "fixture": "bats-tests",
+    "descriptor_id": "known.bats.tests",
+    "name": "bats test result list",
+    "repo": "https://github.com/bats-core/bats-core",
+    "required_substrings": ["test\tstatus", "parses flags\tok"],
+    "parser": "tab-pairs",
+    "input": "test\tstatus duration\nparses flags\tok 12ms\nhandles error\tnot_ok 4ms\ncleans tmp\tok 7ms\n",
+    "negative": "test status duration\nparses flags ok 12ms\n",
+    "analysis_notes": "Modeled bats-core test result output with a generated executable-json parser plugin.",
+    "variants": ["test header row", "status row", "duration field"]
+  },
+  {
+    "fixture": "ticker-positions",
+    "descriptor_id": "known.ticker.positions",
+    "name": "ticker position list",
+    "repo": "https://github.com/achannarasappa/ticker",
+    "required_substrings": ["symbol\tprice", "AAPL\t198.40"],
+    "parser": "tab-pairs",
+    "input": "symbol\tprice change\nAAPL\t198.40 +1.2\nBTC-USD\t65200.00 -0.4\nETH-USD\t3420.10 +0.8\n",
+    "negative": "symbol price change\nAAPL 198.40 +1.2\n",
+    "analysis_notes": "Modeled ticker position output with a generated executable-json parser plugin.",
+    "variants": ["symbol header row", "price row", "change field"]
+  },
+  {
+    "fixture": "bit-branches",
+    "descriptor_id": "known.bit.branches",
+    "name": "bit branch list",
+    "repo": "https://github.com/chriswalz/bit",
+    "required_substrings": ["branch\tstatus", "master\tcurrent"],
+    "parser": "tab-pairs",
+    "input": "branch\tstatus ahead\nmaster\tcurrent 0\nfeature/parser\tlocal 2\norigin/master\tremote 0\n",
+    "negative": "branch status ahead\nmaster current 0\n",
+    "analysis_notes": "Modeled bit branch output with a generated executable-json parser plugin.",
+    "variants": ["branch header row", "status row", "ahead field"]
   }
 ]

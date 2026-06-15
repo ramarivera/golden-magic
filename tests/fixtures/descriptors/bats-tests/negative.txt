@@ -1,0 +1,2 @@
+test status duration
+parses flags ok 12ms

@@ -9718,5 +9718,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/MichaIng/DietPi",
+    "descriptor_id": "known.dietpi.services",
+    "run_id": "agentic.dietpi-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dietpi-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dietpi-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "state row",
+      "unit field"
+    ],
+    "transcript": [
+      "selected descriptor known.dietpi.services for DietPi service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dalance/procs",
+    "descriptor_id": "known.procs.processes",
+    "run_id": "agentic.procs-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/procs-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/procs-processes/expected.rows.json",
+    "variants": [
+      "pid header row",
+      "command row",
+      "cpu field"
+    ],
+    "transcript": [
+      "selected descriptor known.procs.processes for procs process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bats-core/bats-core",
+    "descriptor_id": "known.bats.tests",
+    "run_id": "agentic.bats-tests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bats-tests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bats-tests/expected.rows.json",
+    "variants": [
+      "test header row",
+      "status row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.bats.tests for bats test result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/achannarasappa/ticker",
+    "descriptor_id": "known.ticker.positions",
+    "run_id": "agentic.ticker-positions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ticker-positions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ticker-positions/expected.rows.json",
+    "variants": [
+      "symbol header row",
+      "price row",
+      "change field"
+    ],
+    "transcript": [
+      "selected descriptor known.ticker.positions for ticker position list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chriswalz/bit",
+    "descriptor_id": "known.bit.branches",
+    "run_id": "agentic.bit-branches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bit-branches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bit-branches/expected.rows.json",
+    "variants": [
+      "branch header row",
+      "status row",
+      "ahead field"
+    ],
+    "transcript": [
+      "selected descriptor known.bit.branches for bit branch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

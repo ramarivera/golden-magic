@@ -3778,5 +3778,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/php-console-color-styles",
     "analysis_notes": "Modeled PHP-Console-Color style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MichaIng/DietPi",
+    "descriptor_id": "known.dietpi.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dietpi-services",
+    "analysis_notes": "Modeled DietPi service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dalance/procs",
+    "descriptor_id": "known.procs.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/procs-processes",
+    "analysis_notes": "Modeled procs process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bats-core/bats-core",
+    "descriptor_id": "known.bats.tests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bats-tests",
+    "analysis_notes": "Modeled bats-core test result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/achannarasappa/ticker",
+    "descriptor_id": "known.ticker.positions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ticker-positions",
+    "analysis_notes": "Modeled ticker position output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chriswalz/bit",
+    "descriptor_id": "known.bit.branches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bit-branches",
+    "analysis_notes": "Modeled bit branch output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,2 @@
+symbol price change
+AAPL 198.40 +1.2

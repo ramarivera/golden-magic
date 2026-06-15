@@ -1,0 +1,10 @@
+id = "known.ticker.positions"
+name = "ticker position list"
+priority = 50
+
+[matches]
+required_substrings = ["symbol\tprice","AAPL\t198.40"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

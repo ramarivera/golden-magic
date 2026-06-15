@@ -1,0 +1,4 @@
+test	status duration
+parses flags	ok 12ms
+handles error	not_ok 4ms
+cleans tmp	ok 7ms

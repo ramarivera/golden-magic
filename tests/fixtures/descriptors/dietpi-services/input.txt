@@ -1,0 +1,4 @@
+service	state unit
+ssh	active dropbear.service
+nginx	active nginx.service
+backup	inactive dietpi-backup.service

@@ -1,0 +1,4 @@
+symbol	price change
+AAPL	198.40 +1.2
+BTC-USD	65200.00 -0.4
+ETH-USD	3420.10 +0.8
