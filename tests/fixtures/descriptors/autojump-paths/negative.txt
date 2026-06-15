@@ -1,0 +1,2 @@
+path weight hits
+~/projects 42 120

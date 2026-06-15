@@ -1,0 +1,4 @@
+path	weight hits
+~/projects	42 120
+~/downloads	18 54
+~/.config	9 27

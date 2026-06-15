@@ -2098,5 +2098,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/wtf-widgets",
     "analysis_notes": "Modeled wtfutil widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wting/autojump",
+    "descriptor_id": "known.autojump.paths",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/autojump-paths",
+    "analysis_notes": "Modeled autojump path output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/OpenRA/OpenRA",
+    "descriptor_id": "known.openra.mods",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openra-mods",
+    "analysis_notes": "Modeled OpenRA mod output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ImageMagick/ImageMagick",
+    "descriptor_id": "known.imagemagick.formats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/imagemagick-formats",
+    "analysis_notes": "Modeled ImageMagick format output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rbenv/rbenv",
+    "descriptor_id": "known.rbenv.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rbenv-versions",
+    "analysis_notes": "Modeled rbenv version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/clap-rs/clap",
+    "descriptor_id": "known.clap.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clap-commands",
+    "analysis_notes": "Modeled clap command output with a generated executable-json parser plugin."
   }
 ]

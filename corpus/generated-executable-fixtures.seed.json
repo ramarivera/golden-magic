@@ -3358,5 +3358,65 @@
     "negative": "widget status position\nclocks enabled left\n",
     "analysis_notes": "Modeled wtfutil widget output with a generated executable-json parser plugin.",
     "variants": ["widget header row", "status row", "position field"]
+  },
+  {
+    "fixture": "autojump-paths",
+    "descriptor_id": "known.autojump.paths",
+    "name": "autojump path list",
+    "repo": "https://github.com/wting/autojump",
+    "required_substrings": ["path\tweight", "~/projects\t42"],
+    "parser": "tab-pairs",
+    "input": "path\tweight hits\n~/projects\t42 120\n~/downloads\t18 54\n~/.config\t9 27\n",
+    "negative": "path weight hits\n~/projects 42 120\n",
+    "analysis_notes": "Modeled autojump path output with a generated executable-json parser plugin.",
+    "variants": ["path header row", "weight row", "hits field"]
+  },
+  {
+    "fixture": "openra-mods",
+    "descriptor_id": "known.openra.mods",
+    "name": "OpenRA mod list",
+    "repo": "https://github.com/OpenRA/OpenRA",
+    "required_substrings": ["mod\tstatus", "ra\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "mod\tstatus version\nra\tinstalled release\ncnc\tinstalled release\nd2k\tavailable playtest\n",
+    "negative": "mod status version\nra installed release\n",
+    "analysis_notes": "Modeled OpenRA mod output with a generated executable-json parser plugin.",
+    "variants": ["mod header row", "status row", "version field"]
+  },
+  {
+    "fixture": "imagemagick-formats",
+    "descriptor_id": "known.imagemagick.formats",
+    "name": "ImageMagick format list",
+    "repo": "https://github.com/ImageMagick/ImageMagick",
+    "required_substrings": ["format\tmode", "PNG\trw"],
+    "parser": "tab-pairs",
+    "input": "format\tmode module\nPNG\trw png\nJPEG\trw jpeg\nPDF\tr pdf\n",
+    "negative": "format mode module\nPNG rw png\n",
+    "analysis_notes": "Modeled ImageMagick format output with a generated executable-json parser plugin.",
+    "variants": ["format header row", "mode row", "module field"]
+  },
+  {
+    "fixture": "rbenv-versions",
+    "descriptor_id": "known.rbenv.versions",
+    "name": "rbenv version list",
+    "repo": "https://github.com/rbenv/rbenv",
+    "required_substrings": ["version\tstatus", "3.3.0\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "version\tstatus source\n3.3.0\tinstalled ruby-build\n3.2.2\tinstalled ruby-build\njruby-9.4\tavailable remote\n",
+    "negative": "version status source\n3.3.0 installed ruby-build\n",
+    "analysis_notes": "Modeled rbenv version output with a generated executable-json parser plugin.",
+    "variants": ["version header row", "status row", "source field"]
+  },
+  {
+    "fixture": "clap-commands",
+    "descriptor_id": "known.clap.commands",
+    "name": "clap command list",
+    "repo": "https://github.com/clap-rs/clap",
+    "required_substrings": ["command\targ", "build\t--release"],
+    "parser": "tab-pairs",
+    "input": "command\targ help\nbuild\t--release optimized\nrun\t--bin select-binary\ntest\t--workspace all-crates\n",
+    "negative": "command arg help\nbuild --release optimized\n",
+    "analysis_notes": "Modeled clap command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "arg row", "help field"]
   }
 ]

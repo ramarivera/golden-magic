@@ -1,0 +1,4 @@
+command	arg help
+build	--release optimized
+run	--bin select-binary
+test	--workspace all-crates

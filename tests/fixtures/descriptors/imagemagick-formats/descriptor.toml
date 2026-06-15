@@ -1,0 +1,10 @@
+id = "known.imagemagick.formats"
+name = "ImageMagick format list"
+priority = 50
+
+[matches]
+required_substrings = ["format\tmode","PNG\trw"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

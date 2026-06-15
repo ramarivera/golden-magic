@@ -1,0 +1,18 @@
+[
+  {
+    "name": "format",
+    "value": "mode module"
+  },
+  {
+    "name": "PNG",
+    "value": "rw png"
+  },
+  {
+    "name": "JPEG",
+    "value": "rw jpeg"
+  },
+  {
+    "name": "PDF",
+    "value": "r pdf"
+  }
+]

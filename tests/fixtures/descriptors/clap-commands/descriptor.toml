@@ -1,0 +1,10 @@
+id = "known.clap.commands"
+name = "clap command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\targ","build\t--release"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

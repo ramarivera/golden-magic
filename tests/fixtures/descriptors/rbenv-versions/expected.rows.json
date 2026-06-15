@@ -1,0 +1,18 @@
+[
+  {
+    "name": "version",
+    "value": "status source"
+  },
+  {
+    "name": "3.3.0",
+    "value": "installed ruby-build"
+  },
+  {
+    "name": "3.2.2",
+    "value": "installed ruby-build"
+  },
+  {
+    "name": "jruby-9.4",
+    "value": "available remote"
+  }
+]

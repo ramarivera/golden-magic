@@ -5398,5 +5398,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/wting/autojump",
+    "descriptor_id": "known.autojump.paths",
+    "run_id": "agentic.autojump-paths.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/autojump-paths/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/autojump-paths/expected.rows.json",
+    "variants": [
+      "path header row",
+      "weight row",
+      "hits field"
+    ],
+    "transcript": [
+      "selected descriptor known.autojump.paths for autojump path list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/OpenRA/OpenRA",
+    "descriptor_id": "known.openra.mods",
+    "run_id": "agentic.openra-mods.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openra-mods/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openra-mods/expected.rows.json",
+    "variants": [
+      "mod header row",
+      "status row",
+      "version field"
+    ],
+    "transcript": [
+      "selected descriptor known.openra.mods for OpenRA mod list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ImageMagick/ImageMagick",
+    "descriptor_id": "known.imagemagick.formats",
+    "run_id": "agentic.imagemagick-formats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/imagemagick-formats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/imagemagick-formats/expected.rows.json",
+    "variants": [
+      "format header row",
+      "mode row",
+      "module field"
+    ],
+    "transcript": [
+      "selected descriptor known.imagemagick.formats for ImageMagick format list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rbenv/rbenv",
+    "descriptor_id": "known.rbenv.versions",
+    "run_id": "agentic.rbenv-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rbenv-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rbenv-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "status row",
+      "source field"
+    ],
+    "transcript": [
+      "selected descriptor known.rbenv.versions for rbenv version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/clap-rs/clap",
+    "descriptor_id": "known.clap.commands",
+    "run_id": "agentic.clap-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clap-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clap-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "arg row",
+      "help field"
+    ],
+    "transcript": [
+      "selected descriptor known.clap.commands for clap command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

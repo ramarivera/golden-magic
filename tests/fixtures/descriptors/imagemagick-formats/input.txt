@@ -1,0 +1,4 @@
+format	mode module
+PNG	rw png
+JPEG	rw jpeg
+PDF	r pdf

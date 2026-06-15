@@ -1,0 +1,4 @@
+version	status source
+3.3.0	installed ruby-build
+3.2.2	installed ruby-build
+jruby-9.4	available remote
