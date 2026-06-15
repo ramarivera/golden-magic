@@ -1,0 +1,10 @@
+id = "known.azure-cli.accounts"
+name = "Azure CLI account list"
+priority = 50
+
+[matches]
+required_substrings = ["account\ttenant","dev\tcontoso"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

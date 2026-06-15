@@ -1,0 +1,4 @@
+metric	value state
+CPU	42 normal
+GPU	38 normal
+ANE	12 idle

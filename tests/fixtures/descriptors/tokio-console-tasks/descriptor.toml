@@ -1,0 +1,10 @@
+id = "known.tokio-console.tasks"
+name = "tokio-console task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tpolls","server\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -4688,5 +4688,82 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/rtv-subreddits",
     "analysis_notes": "Modeled rtv subreddit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Guake/guake",
+    "descriptor_id": "known.guake.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/guake-tabs",
+    "analysis_notes": "Modeled Guake tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openclaw/mcporter",
+    "descriptor_id": "known.mcporter.ports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mcporter-ports",
+    "analysis_notes": "Modeled mcporter port output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/danburzo/percollate",
+    "descriptor_id": "known.percollate.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/percollate-jobs",
+    "analysis_notes": "Modeled percollate job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/firefox-devtools/debugger",
+    "descriptor_id": "known.firefox-debugger.sources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/firefox-debugger-sources",
+    "analysis_notes": "Modeled Firefox debugger source output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tlkh/asitop",
+    "descriptor_id": "known.asitop.metrics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asitop-metrics",
+    "analysis_notes": "Modeled asitop metric output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alexellis/arkade",
+    "descriptor_id": "known.arkade.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/arkade-apps",
+    "analysis_notes": "Modeled arkade app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dankamongmen/notcurses",
+    "descriptor_id": "known.notcurses.demos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/notcurses-demos",
+    "analysis_notes": "Modeled notcurses demo output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Azure/azure-cli",
+    "descriptor_id": "known.azure-cli.accounts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/azure-cli-accounts",
+    "analysis_notes": "Modeled Azure CLI account output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kdzwinel/betwixt",
+    "descriptor_id": "known.betwixt.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/betwixt-requests",
+    "analysis_notes": "Modeled Betwixt request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tokio-rs/console",
+    "descriptor_id": "known.tokio-console.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tokio-console-tasks",
+    "analysis_notes": "Modeled tokio-console task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/amantus-ai/vibetunnel",
+    "descriptor_id": "known.vibetunnel.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vibetunnel-sessions",
+    "analysis_notes": "Modeled VibeTunnel session output with a generated executable-json parser plugin."
   }
 ]

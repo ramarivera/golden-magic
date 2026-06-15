@@ -1,0 +1,2 @@
+account tenant state
+dev contoso active

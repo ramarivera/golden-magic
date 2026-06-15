@@ -1,0 +1,4 @@
+app	version state
+kubectl	1.30 installed
+helm	3.15 installed
+k9s	0.32 available

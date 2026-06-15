@@ -1,0 +1,4 @@
+job	format state
+article	epub complete
+manual	pdf running
+notes	html queued

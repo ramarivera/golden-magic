@@ -1,0 +1,2 @@
+job format state
+article epub complete

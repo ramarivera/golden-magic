@@ -12058,5 +12058,203 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Guake/guake",
+    "descriptor_id": "known.guake.tabs",
+    "run_id": "agentic.guake-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/guake-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/guake-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "cwd row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.guake.tabs for Guake tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/openclaw/mcporter",
+    "descriptor_id": "known.mcporter.ports",
+    "run_id": "agentic.mcporter-ports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mcporter-ports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mcporter-ports/expected.rows.json",
+    "variants": [
+      "port header row",
+      "protocol row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mcporter.ports for mcporter port list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/danburzo/percollate",
+    "descriptor_id": "known.percollate.jobs",
+    "run_id": "agentic.percollate-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/percollate-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/percollate-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.percollate.jobs for percollate job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/firefox-devtools/debugger",
+    "descriptor_id": "known.firefox-debugger.sources",
+    "run_id": "agentic.firefox-debugger-sources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/firefox-debugger-sources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/firefox-debugger-sources/expected.rows.json",
+    "variants": [
+      "source header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.firefox-debugger.sources for Firefox debugger source list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tlkh/asitop",
+    "descriptor_id": "known.asitop.metrics",
+    "run_id": "agentic.asitop-metrics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asitop-metrics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asitop-metrics/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.asitop.metrics for asitop metric list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alexellis/arkade",
+    "descriptor_id": "known.arkade.apps",
+    "run_id": "agentic.arkade-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/arkade-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/arkade-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.arkade.apps for arkade app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dankamongmen/notcurses",
+    "descriptor_id": "known.notcurses.demos",
+    "run_id": "agentic.notcurses-demos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/notcurses-demos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/notcurses-demos/expected.rows.json",
+    "variants": [
+      "demo header row",
+      "backend row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.notcurses.demos for notcurses demo list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Azure/azure-cli",
+    "descriptor_id": "known.azure-cli.accounts",
+    "run_id": "agentic.azure-cli-accounts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/azure-cli-accounts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/azure-cli-accounts/expected.rows.json",
+    "variants": [
+      "account header row",
+      "tenant row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.azure-cli.accounts for Azure CLI account list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kdzwinel/betwixt",
+    "descriptor_id": "known.betwixt.requests",
+    "run_id": "agentic.betwixt-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/betwixt-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/betwixt-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.betwixt.requests for Betwixt request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tokio-rs/console",
+    "descriptor_id": "known.tokio-console.tasks",
+    "run_id": "agentic.tokio-console-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tokio-console-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tokio-console-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "polls row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tokio-console.tasks for tokio-console task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/amantus-ai/vibetunnel",
+    "descriptor_id": "known.vibetunnel.sessions",
+    "run_id": "agentic.vibetunnel-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vibetunnel-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vibetunnel-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "host row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vibetunnel.sessions for VibeTunnel session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

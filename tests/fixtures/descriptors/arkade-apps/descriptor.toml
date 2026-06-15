@@ -1,0 +1,10 @@
+id = "known.arkade.apps"
+name = "arkade app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tversion","kubectl\t1.30"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

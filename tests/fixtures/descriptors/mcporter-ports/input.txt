@@ -1,0 +1,4 @@
+port	protocol state
+25565	tcp open
+19132	udp open
+8080	tcp closed

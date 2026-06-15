@@ -1,0 +1,4 @@
+source	status state
+app.js	loaded mapped
+vendor.js	loaded minified
+worker.js	pending queued

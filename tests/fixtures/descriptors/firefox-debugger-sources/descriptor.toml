@@ -1,0 +1,10 @@
+id = "known.firefox-debugger.sources"
+name = "Firefox debugger source list"
+priority = 50
+
+[matches]
+required_substrings = ["source\tstatus","app.js\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

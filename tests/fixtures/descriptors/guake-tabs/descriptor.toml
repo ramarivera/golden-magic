@@ -1,0 +1,10 @@
+id = "known.guake.tabs"
+name = "Guake tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\tcwd","shell\t/home/user"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

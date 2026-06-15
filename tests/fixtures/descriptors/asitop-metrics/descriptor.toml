@@ -1,0 +1,10 @@
+id = "known.asitop.metrics"
+name = "asitop metric list"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","CPU\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

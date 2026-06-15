@@ -1,0 +1,4 @@
+tab	cwd state
+shell	/home/user active
+logs	/var/log idle
+build	/project running

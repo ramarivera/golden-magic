@@ -1,0 +1,18 @@
+[
+  {
+    "name": "app",
+    "value": "version state"
+  },
+  {
+    "name": "kubectl",
+    "value": "1.30 installed"
+  },
+  {
+    "name": "helm",
+    "value": "3.15 installed"
+  },
+  {
+    "name": "k9s",
+    "value": "0.32 available"
+  }
+]

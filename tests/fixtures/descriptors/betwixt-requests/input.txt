@@ -1,0 +1,4 @@
+request	method state
+/api	GET captured
+/login	POST captured
+/assets	GET filtered

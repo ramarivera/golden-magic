@@ -1,0 +1,18 @@
+[
+  {
+    "name": "metric",
+    "value": "value state"
+  },
+  {
+    "name": "CPU",
+    "value": "42 normal"
+  },
+  {
+    "name": "GPU",
+    "value": "38 normal"
+  },
+  {
+    "name": "ANE",
+    "value": "12 idle"
+  }
+]

@@ -1,0 +1,4 @@
+task	polls state
+server	120 running
+worker	80 running
+cleanup	4 idle
