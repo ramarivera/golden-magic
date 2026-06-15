@@ -1,0 +1,2 @@
+register value changed
+rip 0x401000 true

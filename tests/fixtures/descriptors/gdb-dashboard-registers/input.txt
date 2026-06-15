@@ -1,0 +1,4 @@
+register	value changed
+rip	0x401000 true
+rsp	0x7ffeed false
+rax	0x000001 true

@@ -1,0 +1,2 @@
+resource category links
+event-storming practice 14

@@ -1,0 +1,4 @@
+service	cost tier
+postgres	free starter
+redis	free hobby
+storage	5usd basic

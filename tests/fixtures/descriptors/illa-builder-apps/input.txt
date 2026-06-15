@@ -1,0 +1,4 @@
+app	state widgets
+admin-panel	published 12
+crm-draft	draft 8
+ops-view	published 5

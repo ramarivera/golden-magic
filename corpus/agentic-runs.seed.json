@@ -6568,5 +6568,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/NoFxAiOS/nofx",
+    "descriptor_id": "known.nofx.tracks",
+    "run_id": "agentic.nofx-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nofx-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nofx-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "status row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.nofx.tracks for nofx track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/255kb/stack-on-a-budget",
+    "descriptor_id": "known.stack-on-a-budget.services",
+    "run_id": "agentic.stack-on-a-budget-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/stack-on-a-budget-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/stack-on-a-budget-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "cost row",
+      "tier field"
+    ],
+    "transcript": [
+      "selected descriptor known.stack-on-a-budget.services for stack-on-a-budget service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/illacloud/illa-builder",
+    "descriptor_id": "known.illa-builder.apps",
+    "run_id": "agentic.illa-builder-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/illa-builder-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/illa-builder-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "state row",
+      "widgets field"
+    ],
+    "transcript": [
+      "selected descriptor known.illa-builder.apps for ILLA Builder app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/heynickc/awesome-ddd",
+    "descriptor_id": "known.awesome-ddd.resources",
+    "run_id": "agentic.awesome-ddd-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-ddd-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-ddd-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "category row",
+      "links field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-ddd.resources for awesome-ddd resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cyrus-and/gdb-dashboard",
+    "descriptor_id": "known.gdb-dashboard.registers",
+    "run_id": "agentic.gdb-dashboard-registers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gdb-dashboard-registers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gdb-dashboard-registers/expected.rows.json",
+    "variants": [
+      "register header row",
+      "value row",
+      "changed field"
+    ],
+    "transcript": [
+      "selected descriptor known.gdb-dashboard.registers for gdb-dashboard register list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

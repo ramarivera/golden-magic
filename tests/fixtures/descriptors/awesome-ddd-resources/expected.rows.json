@@ -1,0 +1,18 @@
+[
+  {
+    "name": "resource",
+    "value": "category links"
+  },
+  {
+    "name": "event-storming",
+    "value": "practice 14"
+  },
+  {
+    "name": "bounded-contexts",
+    "value": "modeling 9"
+  },
+  {
+    "name": "aggregates",
+    "value": "patterns 11"
+  }
+]

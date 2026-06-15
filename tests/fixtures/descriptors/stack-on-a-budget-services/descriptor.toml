@@ -1,0 +1,10 @@
+id = "known.stack-on-a-budget.services"
+name = "stack-on-a-budget service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tcost","postgres\tfree"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

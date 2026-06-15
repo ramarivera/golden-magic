@@ -1,0 +1,10 @@
+id = "known.gdb-dashboard.registers"
+name = "gdb-dashboard register list"
+priority = 50
+
+[matches]
+required_substrings = ["register\tvalue","rip\t0x401000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

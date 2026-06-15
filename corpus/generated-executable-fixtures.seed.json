@@ -4138,5 +4138,65 @@
     "negative": "render state seconds\naskreddit-001 complete 92\n",
     "analysis_notes": "Modeled RedditVideoMakerBot render output with a generated executable-json parser plugin.",
     "variants": ["render header row", "state row", "seconds field"]
+  },
+  {
+    "fixture": "nofx-tracks",
+    "descriptor_id": "known.nofx.tracks",
+    "name": "nofx track list",
+    "repo": "https://github.com/NoFxAiOS/nofx",
+    "required_substrings": ["track\tstatus", "intro\tready"],
+    "parser": "tab-pairs",
+    "input": "track\tstatus duration\nintro\tready 01:20\nmain\tprocessing 03:44\noutro\tqueued 00:58\n",
+    "negative": "track status duration\nintro ready 01:20\n",
+    "analysis_notes": "Modeled nofx track output with a generated executable-json parser plugin.",
+    "variants": ["track header row", "status row", "duration field"]
+  },
+  {
+    "fixture": "stack-on-a-budget-services",
+    "descriptor_id": "known.stack-on-a-budget.services",
+    "name": "stack-on-a-budget service list",
+    "repo": "https://github.com/255kb/stack-on-a-budget",
+    "required_substrings": ["service\tcost", "postgres\tfree"],
+    "parser": "tab-pairs",
+    "input": "service\tcost tier\npostgres\tfree starter\nredis\tfree hobby\nstorage\t5usd basic\n",
+    "negative": "service cost tier\npostgres free starter\n",
+    "analysis_notes": "Modeled stack-on-a-budget service output with a generated executable-json parser plugin.",
+    "variants": ["service header row", "cost row", "tier field"]
+  },
+  {
+    "fixture": "illa-builder-apps",
+    "descriptor_id": "known.illa-builder.apps",
+    "name": "ILLA Builder app list",
+    "repo": "https://github.com/illacloud/illa-builder",
+    "required_substrings": ["app\tstate", "admin-panel\tpublished"],
+    "parser": "tab-pairs",
+    "input": "app\tstate widgets\nadmin-panel\tpublished 12\ncrm-draft\tdraft 8\nops-view\tpublished 5\n",
+    "negative": "app state widgets\nadmin-panel published 12\n",
+    "analysis_notes": "Modeled ILLA Builder app output with a generated executable-json parser plugin.",
+    "variants": ["app header row", "state row", "widgets field"]
+  },
+  {
+    "fixture": "awesome-ddd-resources",
+    "descriptor_id": "known.awesome-ddd.resources",
+    "name": "awesome-ddd resource list",
+    "repo": "https://github.com/heynickc/awesome-ddd",
+    "required_substrings": ["resource\tcategory", "event-storming\tpractice"],
+    "parser": "tab-pairs",
+    "input": "resource\tcategory links\nevent-storming\tpractice 14\nbounded-contexts\tmodeling 9\naggregates\tpatterns 11\n",
+    "negative": "resource category links\nevent-storming practice 14\n",
+    "analysis_notes": "Modeled awesome-ddd resource output with a generated executable-json parser plugin.",
+    "variants": ["resource header row", "category row", "links field"]
+  },
+  {
+    "fixture": "gdb-dashboard-registers",
+    "descriptor_id": "known.gdb-dashboard.registers",
+    "name": "gdb-dashboard register list",
+    "repo": "https://github.com/cyrus-and/gdb-dashboard",
+    "required_substrings": ["register\tvalue", "rip\t0x401000"],
+    "parser": "tab-pairs",
+    "input": "register\tvalue changed\nrip\t0x401000 true\nrsp\t0x7ffeed false\nrax\t0x000001 true\n",
+    "negative": "register value changed\nrip 0x401000 true\n",
+    "analysis_notes": "Modeled gdb-dashboard register output with a generated executable-json parser plugin.",
+    "variants": ["register header row", "value row", "changed field"]
   }
 ]

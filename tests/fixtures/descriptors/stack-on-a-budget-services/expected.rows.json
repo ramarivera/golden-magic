@@ -1,0 +1,18 @@
+[
+  {
+    "name": "service",
+    "value": "cost tier"
+  },
+  {
+    "name": "postgres",
+    "value": "free starter"
+  },
+  {
+    "name": "redis",
+    "value": "free hobby"
+  },
+  {
+    "name": "storage",
+    "value": "5usd basic"
+  }
+]

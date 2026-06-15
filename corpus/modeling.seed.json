@@ -2553,5 +2553,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/reddit-video-maker-renders",
     "analysis_notes": "Modeled RedditVideoMakerBot render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NoFxAiOS/nofx",
+    "descriptor_id": "known.nofx.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nofx-tracks",
+    "analysis_notes": "Modeled nofx track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/255kb/stack-on-a-budget",
+    "descriptor_id": "known.stack-on-a-budget.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/stack-on-a-budget-services",
+    "analysis_notes": "Modeled stack-on-a-budget service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/illacloud/illa-builder",
+    "descriptor_id": "known.illa-builder.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/illa-builder-apps",
+    "analysis_notes": "Modeled ILLA Builder app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/heynickc/awesome-ddd",
+    "descriptor_id": "known.awesome-ddd.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-ddd-resources",
+    "analysis_notes": "Modeled awesome-ddd resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cyrus-and/gdb-dashboard",
+    "descriptor_id": "known.gdb-dashboard.registers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gdb-dashboard-registers",
+    "analysis_notes": "Modeled gdb-dashboard register output with a generated executable-json parser plugin."
   }
 ]

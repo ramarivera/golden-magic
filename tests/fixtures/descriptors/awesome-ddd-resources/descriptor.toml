@@ -1,0 +1,10 @@
+id = "known.awesome-ddd.resources"
+name = "awesome-ddd resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tcategory","event-storming\tpractice"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

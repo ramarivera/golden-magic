@@ -1,0 +1,4 @@
+resource	category links
+event-storming	practice 14
+bounded-contexts	modeling 9
+aggregates	patterns 11
