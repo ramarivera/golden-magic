@@ -1,0 +1,10 @@
+id = "known.nx.projects"
+name = "Nx project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\ttype","web-app\tapplication"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

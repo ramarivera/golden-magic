@@ -1,0 +1,4 @@
+session	model status
+chat-001	claude active
+review-002	sonnet idle
+plan-003	opus complete

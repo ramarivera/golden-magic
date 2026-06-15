@@ -1,0 +1,4 @@
+agent	state provider
+designer	ready local
+researcher	running remote
+coder	queued local

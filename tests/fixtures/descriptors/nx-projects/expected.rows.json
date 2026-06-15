@@ -1,0 +1,18 @@
+[
+  {
+    "name": "project",
+    "value": "type target"
+  },
+  {
+    "name": "web-app",
+    "value": "application build"
+  },
+  {
+    "name": "api",
+    "value": "application serve"
+  },
+  {
+    "name": "shared-ui",
+    "value": "library test"
+  }
+]

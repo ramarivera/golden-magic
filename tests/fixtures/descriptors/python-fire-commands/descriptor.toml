@@ -1,0 +1,10 @@
+id = "known.python-fire.commands"
+name = "python-fire command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\targument","train\t--epochs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

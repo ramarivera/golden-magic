@@ -1,0 +1,4 @@
+project	type target
+web-app	application build
+api	application serve
+shared-ui	library test

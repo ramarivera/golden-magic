@@ -1,0 +1,4 @@
+command	option description
+serve	--port listen
+build	--watch rebuild
+deploy	--target publish

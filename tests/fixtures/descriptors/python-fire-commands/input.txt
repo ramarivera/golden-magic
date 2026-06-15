@@ -1,0 +1,4 @@
+command	argument type
+train	--epochs int
+serve	--host string
+eval	--checkpoint path

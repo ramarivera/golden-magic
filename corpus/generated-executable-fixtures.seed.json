@@ -2098,5 +2098,65 @@
     "negative": "option selected package\ntrpc true @trpc/server\n",
     "analysis_notes": "Modeled create-t3-app option output with a generated executable-json parser plugin.",
     "variants": ["option header row", "selected row", "package field"]
+  },
+  {
+    "fixture": "nx-projects",
+    "descriptor_id": "known.nx.projects",
+    "name": "Nx project list",
+    "repo": "https://github.com/nrwl/nx",
+    "required_substrings": ["project\ttype", "web-app\tapplication"],
+    "parser": "tab-pairs",
+    "input": "project\ttype target\nweb-app\tapplication build\napi\tapplication serve\nshared-ui\tlibrary test\n",
+    "negative": "project type target\nweb-app application build\n",
+    "analysis_notes": "Modeled Nx project listing output with a generated executable-json parser plugin.",
+    "variants": ["project header row", "application row", "target field"]
+  },
+  {
+    "fixture": "openclaude-sessions",
+    "descriptor_id": "known.openclaude.sessions",
+    "name": "openclaude session list",
+    "repo": "https://github.com/Gitlawb/openclaude",
+    "required_substrings": ["session\tmodel", "chat-001\tclaude"],
+    "parser": "tab-pairs",
+    "input": "session\tmodel status\nchat-001\tclaude active\nreview-002\tsonnet idle\nplan-003\topus complete\n",
+    "negative": "session model status\nchat-001 claude active\n",
+    "analysis_notes": "Modeled openclaude session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "model row", "status field"]
+  },
+  {
+    "fixture": "aionui-agents",
+    "descriptor_id": "known.aionui.agents",
+    "name": "AionUi agent list",
+    "repo": "https://github.com/iOfficeAI/AionUi",
+    "required_substrings": ["agent\tstate", "designer\tready"],
+    "parser": "tab-pairs",
+    "input": "agent\tstate provider\ndesigner\tready local\nresearcher\trunning remote\ncoder\tqueued local\n",
+    "negative": "agent state provider\ndesigner ready local\n",
+    "analysis_notes": "Modeled AionUi agent output with a generated executable-json parser plugin.",
+    "variants": ["agent header row", "ready state row", "provider field"]
+  },
+  {
+    "fixture": "commanderjs-commands",
+    "descriptor_id": "known.commanderjs.commands",
+    "name": "commander.js command list",
+    "repo": "https://github.com/tj/commander.js",
+    "required_substrings": ["command\toption", "serve\t--port"],
+    "parser": "tab-pairs",
+    "input": "command\toption description\nserve\t--port listen\nbuild\t--watch rebuild\ndeploy\t--target publish\n",
+    "negative": "command option description\nserve --port listen\n",
+    "analysis_notes": "Modeled commander.js command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "option row", "description field"]
+  },
+  {
+    "fixture": "python-fire-commands",
+    "descriptor_id": "known.python-fire.commands",
+    "name": "python-fire command list",
+    "repo": "https://github.com/google/python-fire",
+    "required_substrings": ["command\targument", "train\t--epochs"],
+    "parser": "tab-pairs",
+    "input": "command\targument type\ntrain\t--epochs int\nserve\t--host string\neval\t--checkpoint path\n",
+    "negative": "command argument type\ntrain --epochs int\n",
+    "analysis_notes": "Modeled python-fire command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "argument row", "type field"]
   }
 ]

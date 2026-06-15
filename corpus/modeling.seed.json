@@ -1363,5 +1363,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/create-t3-app-options",
     "analysis_notes": "Modeled create-t3-app option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nrwl/nx",
+    "descriptor_id": "known.nx.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nx-projects",
+    "analysis_notes": "Modeled Nx project listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Gitlawb/openclaude",
+    "descriptor_id": "known.openclaude.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openclaude-sessions",
+    "analysis_notes": "Modeled openclaude session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/iOfficeAI/AionUi",
+    "descriptor_id": "known.aionui.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aionui-agents",
+    "analysis_notes": "Modeled AionUi agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tj/commander.js",
+    "descriptor_id": "known.commanderjs.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/commanderjs-commands",
+    "analysis_notes": "Modeled commander.js command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google/python-fire",
+    "descriptor_id": "known.python-fire.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/python-fire-commands",
+    "analysis_notes": "Modeled python-fire command output with a generated executable-json parser plugin."
   }
 ]

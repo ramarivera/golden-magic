@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "option description"
+  },
+  {
+    "name": "serve",
+    "value": "--port listen"
+  },
+  {
+    "name": "build",
+    "value": "--watch rebuild"
+  },
+  {
+    "name": "deploy",
+    "value": "--target publish"
+  }
+]

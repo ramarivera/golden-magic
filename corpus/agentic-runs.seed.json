@@ -3508,5 +3508,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/nrwl/nx",
+    "descriptor_id": "known.nx.projects",
+    "run_id": "agentic.nx-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nx-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nx-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "application row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.nx.projects for Nx project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Gitlawb/openclaude",
+    "descriptor_id": "known.openclaude.sessions",
+    "run_id": "agentic.openclaude-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openclaude-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openclaude-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.openclaude.sessions for openclaude session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/iOfficeAI/AionUi",
+    "descriptor_id": "known.aionui.agents",
+    "run_id": "agentic.aionui-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aionui-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aionui-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "ready state row",
+      "provider field"
+    ],
+    "transcript": [
+      "selected descriptor known.aionui.agents for AionUi agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tj/commander.js",
+    "descriptor_id": "known.commanderjs.commands",
+    "run_id": "agentic.commanderjs-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/commanderjs-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/commanderjs-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "option row",
+      "description field"
+    ],
+    "transcript": [
+      "selected descriptor known.commanderjs.commands for commander.js command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/google/python-fire",
+    "descriptor_id": "known.python-fire.commands",
+    "run_id": "agentic.python-fire-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/python-fire-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/python-fire-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "argument row",
+      "type field"
+    ],
+    "transcript": [
+      "selected descriptor known.python-fire.commands for python-fire command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
