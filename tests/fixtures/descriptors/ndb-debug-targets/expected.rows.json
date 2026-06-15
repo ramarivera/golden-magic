@@ -1,0 +1,18 @@
+[
+  {
+    "name": "target",
+    "value": "state pid"
+  },
+  {
+    "name": "node:server.js",
+    "value": "attached 4312"
+  },
+  {
+    "name": "node:test.js",
+    "value": "waiting 4388"
+  },
+  {
+    "name": "chrome:page",
+    "value": "attached 4401"
+  }
+]

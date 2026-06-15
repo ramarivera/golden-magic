@@ -4498,5 +4498,65 @@
     "negative": "component renders owner\nApp 3 root\n",
     "analysis_notes": "Modeled React DevTools component output with a generated executable-json parser plugin.",
     "variants": ["component header row", "renders row", "owner field"]
+  },
+  {
+    "fixture": "awesome-hyper-plugins",
+    "descriptor_id": "known.awesome-hyper.plugins",
+    "name": "awesome-hyper plugin list",
+    "repo": "https://github.com/bnb/awesome-hyper",
+    "required_substrings": ["plugin\tcategory", "hyper-material-theme\ttheme"],
+    "parser": "tab-pairs",
+    "input": "plugin\tcategory status\nhyper-material-theme\ttheme listed\nhyper-search\tproductivity listed\nhyperterm-tabs\tnavigation archived\n",
+    "negative": "plugin category status\nhyper-material-theme theme listed\n",
+    "analysis_notes": "Modeled awesome-hyper plugin output with a generated executable-json parser plugin.",
+    "variants": ["plugin header row", "category row", "status field"]
+  },
+  {
+    "fixture": "tui-rs-widgets",
+    "descriptor_id": "known.tui-rs.widgets",
+    "name": "tui-rs widget list",
+    "repo": "https://github.com/fdehau/tui-rs",
+    "required_substrings": ["widget\tbackend", "chart\tcrossterm"],
+    "parser": "tab-pairs",
+    "input": "widget\tbackend state\nchart\tcrossterm stable\ntable\ttermion stable\ngauge\tcrossterm stable\n",
+    "negative": "widget backend state\nchart crossterm stable\n",
+    "analysis_notes": "Modeled tui-rs widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "backend row", "state field"]
+  },
+  {
+    "fixture": "ndb-debug-targets",
+    "descriptor_id": "known.ndb.debug-targets",
+    "name": "ndb debug target list",
+    "repo": "https://github.com/GoogleChromeLabs/ndb",
+    "required_substrings": ["target\tstate", "node:server.js\tattached"],
+    "parser": "tab-pairs",
+    "input": "target\tstate pid\nnode:server.js\tattached 4312\nnode:test.js\twaiting 4388\nchrome:page\tattached 4401\n",
+    "negative": "target state pid\nnode:server.js attached 4312\n",
+    "analysis_notes": "Modeled ndb debug target output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "state row", "pid field"]
+  },
+  {
+    "fixture": "php-codesniffer-findings",
+    "descriptor_id": "known.php-codesniffer.findings",
+    "name": "PHP_CodeSniffer finding list",
+    "repo": "https://github.com/squizlabs/PHP_CodeSniffer",
+    "required_substrings": ["file\tseverity", "src/App.php\terror"],
+    "parser": "tab-pairs",
+    "input": "file\tseverity rule\nsrc/App.php\terror PSR12.Files.FileHeader\nsrc/Util.php\twarning Generic.Files.LineLength\ntests/AppTest.php\terror Squiz.WhiteSpace.SuperfluousWhitespace\n",
+    "negative": "file severity rule\nsrc/App.php error PSR12.Files.FileHeader\n",
+    "analysis_notes": "Modeled PHP_CodeSniffer finding output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "severity row", "rule field"]
+  },
+  {
+    "fixture": "defi-roadmap-tools",
+    "descriptor_id": "known.defi-roadmap.tools",
+    "name": "DeFi Developer Road Map tool list",
+    "repo": "https://github.com/OffcierCia/DeFi-Developer-Road-Map",
+    "required_substrings": ["tool\tlayer", "hardhat\tdevelopment"],
+    "parser": "tab-pairs",
+    "input": "tool\tlayer status\nhardhat\tdevelopment recommended\nthegraph\tindexing recommended\nslither\tsecurity recommended\n",
+    "negative": "tool layer status\nhardhat development recommended\n",
+    "analysis_notes": "Modeled DeFi Developer Road Map tool output with a generated executable-json parser plugin.",
+    "variants": ["tool header row", "layer row", "status field"]
   }
 ]

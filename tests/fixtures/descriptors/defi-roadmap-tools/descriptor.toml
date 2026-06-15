@@ -1,0 +1,10 @@
+id = "known.defi-roadmap.tools"
+name = "DeFi Developer Road Map tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tlayer","hardhat\tdevelopment"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

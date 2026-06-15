@@ -1,0 +1,4 @@
+tool	layer status
+hardhat	development recommended
+thegraph	indexing recommended
+slither	security recommended

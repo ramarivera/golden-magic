@@ -1,0 +1,10 @@
+id = "known.awesome-hyper.plugins"
+name = "awesome-hyper plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tcategory","hyper-material-theme\ttheme"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

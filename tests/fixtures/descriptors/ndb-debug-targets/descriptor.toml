@@ -1,0 +1,10 @@
+id = "known.ndb.debug-targets"
+name = "ndb debug target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstate","node:server.js\tattached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

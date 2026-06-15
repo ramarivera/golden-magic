@@ -1,0 +1,4 @@
+widget	backend state
+chart	crossterm stable
+table	termion stable
+gauge	crossterm stable

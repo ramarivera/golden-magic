@@ -1,0 +1,4 @@
+plugin	category status
+hyper-material-theme	theme listed
+hyper-search	productivity listed
+hyperterm-tabs	navigation archived

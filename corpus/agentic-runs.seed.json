@@ -7108,5 +7108,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/bnb/awesome-hyper",
+    "descriptor_id": "known.awesome-hyper.plugins",
+    "run_id": "agentic.awesome-hyper-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-hyper-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-hyper-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "category row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-hyper.plugins for awesome-hyper plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fdehau/tui-rs",
+    "descriptor_id": "known.tui-rs.widgets",
+    "run_id": "agentic.tui-rs-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-rs-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-rs-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "backend row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui-rs.widgets for tui-rs widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GoogleChromeLabs/ndb",
+    "descriptor_id": "known.ndb.debug-targets",
+    "run_id": "agentic.ndb-debug-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ndb-debug-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ndb-debug-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "state row",
+      "pid field"
+    ],
+    "transcript": [
+      "selected descriptor known.ndb.debug-targets for ndb debug target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/squizlabs/PHP_CodeSniffer",
+    "descriptor_id": "known.php-codesniffer.findings",
+    "run_id": "agentic.php-codesniffer-findings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/php-codesniffer-findings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/php-codesniffer-findings/expected.rows.json",
+    "variants": [
+      "file header row",
+      "severity row",
+      "rule field"
+    ],
+    "transcript": [
+      "selected descriptor known.php-codesniffer.findings for PHP_CodeSniffer finding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/OffcierCia/DeFi-Developer-Road-Map",
+    "descriptor_id": "known.defi-roadmap.tools",
+    "run_id": "agentic.defi-roadmap-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/defi-roadmap-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/defi-roadmap-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "layer row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.defi-roadmap.tools for DeFi Developer Road Map tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

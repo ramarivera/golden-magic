@@ -1,0 +1,10 @@
+id = "known.tui-rs.widgets"
+name = "tui-rs widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tbackend","chart\tcrossterm"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+file	severity rule
+src/App.php	error PSR12.Files.FileHeader
+src/Util.php	warning Generic.Files.LineLength
+tests/AppTest.php	error Squiz.WhiteSpace.SuperfluousWhitespace

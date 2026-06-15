@@ -2763,5 +2763,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/react-devtools-components",
     "analysis_notes": "Modeled React DevTools component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bnb/awesome-hyper",
+    "descriptor_id": "known.awesome-hyper.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-hyper-plugins",
+    "analysis_notes": "Modeled awesome-hyper plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fdehau/tui-rs",
+    "descriptor_id": "known.tui-rs.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-rs-widgets",
+    "analysis_notes": "Modeled tui-rs widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GoogleChromeLabs/ndb",
+    "descriptor_id": "known.ndb.debug-targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ndb-debug-targets",
+    "analysis_notes": "Modeled ndb debug target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/squizlabs/PHP_CodeSniffer",
+    "descriptor_id": "known.php-codesniffer.findings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/php-codesniffer-findings",
+    "analysis_notes": "Modeled PHP_CodeSniffer finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/OffcierCia/DeFi-Developer-Road-Map",
+    "descriptor_id": "known.defi-roadmap.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/defi-roadmap-tools",
+    "analysis_notes": "Modeled DeFi Developer Road Map tool output with a generated executable-json parser plugin."
   }
 ]
