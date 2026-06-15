@@ -1,0 +1,29 @@
+[
+  {
+    "mode": ".rw-r--r--",
+    "size": "5.1k",
+    "owner": "ramiro",
+    "day": "15",
+    "month": "Jun",
+    "time": "10:01",
+    "path": "Cargo.lock"
+  },
+  {
+    "mode": "drwxr-xr-x",
+    "size": "160",
+    "owner": "ramiro",
+    "day": "15",
+    "month": "Jun",
+    "time": "10:02",
+    "path": "src"
+  },
+  {
+    "mode": ".rw-r--r--",
+    "size": "1.0k",
+    "owner": "ramiro",
+    "day": "15",
+    "month": "Jun",
+    "time": "10:03",
+    "path": "README.md"
+  }
+]

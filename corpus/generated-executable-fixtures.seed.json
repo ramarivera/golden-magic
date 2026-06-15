@@ -118,5 +118,65 @@
     "negative": "Location Berlin\nTemperature 18 C\n",
     "analysis_notes": "Modeled wttr.in current-conditions output with a generated executable-json parser plugin.",
     "variants": ["location row", "weather condition row", "wind row"]
+  },
+  {
+    "fixture": "hub-pr-list",
+    "descriptor_id": "known.hub.pr-list",
+    "name": "hub pull-request list",
+    "repo": "https://github.com/mislav/hub",
+    "required_substrings": ["#102\tOPEN", "#108\tMERGED"],
+    "parser": "tab-pairs",
+    "input": "#102\tOPEN feat: add parser\n#107\tCLOSED fix: docs\n#108\tMERGED refactor: registry\n",
+    "negative": "#102 OPEN feat: add parser\n#108 MERGED refactor: registry\n",
+    "analysis_notes": "Modeled hub pull-request list output with a generated executable-json parser plugin.",
+    "variants": ["open pull request", "closed pull request", "merged pull request"]
+  },
+  {
+    "fixture": "direnv-status",
+    "descriptor_id": "known.direnv.status",
+    "name": "direnv status",
+    "repo": "https://github.com/direnv/direnv",
+    "required_substrings": ["Found RC path:", "Loaded RC path:"],
+    "parser": "colon-kv",
+    "input": "Found RC path: /Users/ramiro/dev/.envrc\nLoaded RC path: /Users/ramiro/dev/.envrc\nAllow status: allowed\nLoaded watch: .envrc\n",
+    "negative": "Found RC path /Users/ramiro/dev/.envrc\nLoaded RC path /Users/ramiro/dev/.envrc\n",
+    "analysis_notes": "Modeled direnv status key-value output with a generated executable-json parser plugin.",
+    "variants": ["found rc path", "loaded rc path", "allow status"]
+  },
+  {
+    "fixture": "duf-table",
+    "descriptor_id": "known.duf.table",
+    "name": "duf table output",
+    "repo": "https://github.com/muesli/duf",
+    "required_substrings": ["Mount\tSize", "/System/Volumes/Data"],
+    "parser": "tab-pairs",
+    "input": "Mount\tSize Used Avail Use%\n/\t460G 120G 340G 26%\n/System/Volumes/Data\t460G 250G 210G 54%\n",
+    "negative": "Mount Size Used Avail Use%\n/ 460G 120G 340G 26%\n",
+    "analysis_notes": "Modeled duf table output with a generated executable-json parser plugin.",
+    "variants": ["root mount row", "data volume row", "usage percentage values"]
+  },
+  {
+    "fixture": "lsd-long",
+    "descriptor_id": "known.lsd.long",
+    "name": "lsd --long",
+    "repo": "https://github.com/lsd-rs/lsd",
+    "required_substrings": ["Cargo.lock", "src"],
+    "parser": "ls-long",
+    "input": ".rw-r--r-- 5.1k ramiro 15 Jun 10:01 Cargo.lock\ndrwxr-xr-x  160 ramiro 15 Jun 10:02 src\n.rw-r--r-- 1.0k ramiro 15 Jun 10:03 README.md\n",
+    "negative": "Cargo.lock\nREADME.md\n",
+    "analysis_notes": "Modeled lsd long listing output with a generated executable-json parser plugin.",
+    "variants": ["lockfile row", "directory row", "readme file row"]
+  },
+  {
+    "fixture": "yq-properties",
+    "descriptor_id": "known.yq.properties",
+    "name": "yq properties output",
+    "repo": "https://github.com/mikefarah/yq",
+    "required_substrings": ["name:", "version:"],
+    "parser": "colon-kv",
+    "input": "name: golden-magic\nversion: 0.1.1\nkind: parser\n",
+    "negative": "name golden-magic\nversion 0.1.1\n",
+    "analysis_notes": "Modeled yq scalar properties output with a generated executable-json parser plugin.",
+    "variants": ["name scalar", "version scalar", "kind scalar"]
   }
 ]

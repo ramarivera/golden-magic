@@ -538,5 +538,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/mislav/hub",
+    "descriptor_id": "known.hub.pr-list",
+    "run_id": "agentic.hub-pr-list.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hub-pr-list/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hub-pr-list/expected.rows.json",
+    "variants": [
+      "open pull request",
+      "closed pull request",
+      "merged pull request"
+    ],
+    "transcript": [
+      "selected descriptor known.hub.pr-list for hub pull-request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/direnv/direnv",
+    "descriptor_id": "known.direnv.status",
+    "run_id": "agentic.direnv-status.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/direnv-status/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/direnv-status/expected.rows.json",
+    "variants": [
+      "found rc path",
+      "loaded rc path",
+      "allow status"
+    ],
+    "transcript": [
+      "selected descriptor known.direnv.status for direnv status output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/muesli/duf",
+    "descriptor_id": "known.duf.table",
+    "run_id": "agentic.duf-table.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/duf-table/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/duf-table/expected.rows.json",
+    "variants": [
+      "root mount row",
+      "data volume row",
+      "usage percentage values"
+    ],
+    "transcript": [
+      "selected descriptor known.duf.table for duf table output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lsd-rs/lsd",
+    "descriptor_id": "known.lsd.long",
+    "run_id": "agentic.lsd-long.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lsd-long/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lsd-long/expected.rows.json",
+    "variants": [
+      "lockfile row",
+      "directory row",
+      "readme file row"
+    ],
+    "transcript": [
+      "selected descriptor known.lsd.long for lsd --long output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mikefarah/yq",
+    "descriptor_id": "known.yq.properties",
+    "run_id": "agentic.yq-properties.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yq-properties/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yq-properties/expected.rows.json",
+    "variants": [
+      "name scalar",
+      "version scalar",
+      "kind scalar"
+    ],
+    "transcript": [
+      "selected descriptor known.yq.properties for yq properties output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.direnv.status"
+name = "direnv status"
+priority = 50
+
+[matches]
+required_substrings = ["Found RC path:","Loaded RC path:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

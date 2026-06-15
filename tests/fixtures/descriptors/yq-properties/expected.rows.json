@@ -1,0 +1,14 @@
+[
+  {
+    "key": "name",
+    "value": "golden-magic"
+  },
+  {
+    "key": "version",
+    "value": "0.1.1"
+  },
+  {
+    "key": "kind",
+    "value": "parser"
+  }
+]

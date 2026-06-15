@@ -1,0 +1,2 @@
+Mount Size Used Avail Use%
+/ 460G 120G 340G 26%

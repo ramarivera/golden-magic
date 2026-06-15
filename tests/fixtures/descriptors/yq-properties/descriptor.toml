@@ -1,0 +1,10 @@
+id = "known.yq.properties"
+name = "yq properties output"
+priority = 50
+
+[matches]
+required_substrings = ["name:","version:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.hub.pr-list"
+name = "hub pull-request list"
+priority = 50
+
+[matches]
+required_substrings = ["#102\tOPEN","#108\tMERGED"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

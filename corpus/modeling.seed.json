@@ -208,5 +208,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/wttr-current",
     "analysis_notes": "Modeled wttr.in current-conditions output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mislav/hub",
+    "descriptor_id": "known.hub.pr-list",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hub-pr-list",
+    "analysis_notes": "Modeled hub pull-request list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/direnv/direnv",
+    "descriptor_id": "known.direnv.status",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/direnv-status",
+    "analysis_notes": "Modeled direnv status key-value output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/muesli/duf",
+    "descriptor_id": "known.duf.table",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/duf-table",
+    "analysis_notes": "Modeled duf table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lsd-rs/lsd",
+    "descriptor_id": "known.lsd.long",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lsd-long",
+    "analysis_notes": "Modeled lsd long listing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mikefarah/yq",
+    "descriptor_id": "known.yq.properties",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yq-properties",
+    "analysis_notes": "Modeled yq scalar properties output with a generated executable-json parser plugin."
   }
 ]

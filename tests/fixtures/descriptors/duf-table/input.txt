@@ -1,0 +1,3 @@
+Mount	Size Used Avail Use%
+/	460G 120G 340G 26%
+/System/Volumes/Data	460G 250G 210G 54%

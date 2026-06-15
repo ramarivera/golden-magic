@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Found RC path",
+    "value": "/Users/ramiro/dev/.envrc"
+  },
+  {
+    "key": "Loaded RC path",
+    "value": "/Users/ramiro/dev/.envrc"
+  },
+  {
+    "key": "Allow status",
+    "value": "allowed"
+  },
+  {
+    "key": "Loaded watch",
+    "value": ".envrc"
+  }
+]

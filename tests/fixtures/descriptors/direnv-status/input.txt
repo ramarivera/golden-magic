@@ -1,0 +1,4 @@
+Found RC path: /Users/ramiro/dev/.envrc
+Loaded RC path: /Users/ramiro/dev/.envrc
+Allow status: allowed
+Loaded watch: .envrc

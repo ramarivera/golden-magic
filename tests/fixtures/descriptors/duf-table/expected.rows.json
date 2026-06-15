@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Mount",
+    "value": "Size Used Avail Use%"
+  },
+  {
+    "name": "/",
+    "value": "460G 120G 340G 26%"
+  },
+  {
+    "name": "/System/Volumes/Data",
+    "value": "460G 250G 210G 54%"
+  }
+]

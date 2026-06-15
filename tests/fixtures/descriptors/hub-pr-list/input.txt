@@ -1,0 +1,3 @@
+#102	OPEN feat: add parser
+#107	CLOSED fix: docs
+#108	MERGED refactor: registry

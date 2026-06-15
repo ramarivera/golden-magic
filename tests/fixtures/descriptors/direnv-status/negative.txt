@@ -1,0 +1,2 @@
+Found RC path /Users/ramiro/dev/.envrc
+Loaded RC path /Users/ramiro/dev/.envrc

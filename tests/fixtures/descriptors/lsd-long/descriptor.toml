@@ -1,0 +1,10 @@
+id = "known.lsd.long"
+name = "lsd --long"
+priority = 50
+
+[matches]
+required_substrings = ["Cargo.lock","src"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

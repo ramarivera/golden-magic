@@ -1,0 +1,10 @@
+id = "known.duf.table"
+name = "duf table output"
+priority = 50
+
+[matches]
+required_substrings = ["Mount\tSize","/System/Volumes/Data"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
