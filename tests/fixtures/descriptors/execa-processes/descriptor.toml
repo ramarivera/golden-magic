@@ -1,0 +1,10 @@
+id = "known.execa.processes"
+name = "execa process list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tstatus","node\t0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

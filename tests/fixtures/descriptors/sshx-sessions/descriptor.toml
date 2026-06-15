@@ -1,0 +1,10 @@
+id = "known.sshx.sessions"
+name = "sshx session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstate","alpha\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

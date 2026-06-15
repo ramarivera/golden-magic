@@ -1,0 +1,4 @@
+source	target language
+hello	hola es
+goodbye	adios es
+thanks	gracias es

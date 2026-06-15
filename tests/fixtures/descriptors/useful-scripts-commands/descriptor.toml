@@ -1,0 +1,10 @@
+id = "known.useful-scripts.commands"
+name = "useful-scripts command list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tcategory","show-busy-java-threads\tjava"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

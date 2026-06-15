@@ -8368,5 +8368,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/oldratlee/useful-scripts",
+    "descriptor_id": "known.useful-scripts.commands",
+    "run_id": "agentic.useful-scripts-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/useful-scripts-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/useful-scripts-commands/expected.rows.json",
+    "variants": [
+      "script header row",
+      "category row",
+      "shell field"
+    ],
+    "transcript": [
+      "selected descriptor known.useful-scripts.commands for useful-scripts command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/execa",
+    "descriptor_id": "known.execa.processes",
+    "run_id": "agentic.execa-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/execa-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/execa-processes/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.execa.processes for execa process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ekzhang/sshx",
+    "descriptor_id": "known.sshx.sessions",
+    "run_id": "agentic.sshx-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sshx-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sshx-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "users field"
+    ],
+    "transcript": [
+      "selected descriptor known.sshx.sessions for sshx session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GoogleCloudPlatform/kubectl-ai",
+    "descriptor_id": "known.kubectl-ai.actions",
+    "run_id": "agentic.kubectl-ai-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kubectl-ai-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kubectl-ai-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "resource row",
+      "confidence field"
+    ],
+    "transcript": [
+      "selected descriptor known.kubectl-ai.actions for kubectl-ai action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/soimort/translate-shell",
+    "descriptor_id": "known.translate-shell.results",
+    "run_id": "agentic.translate-shell-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/translate-shell-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/translate-shell-results/expected.rows.json",
+    "variants": [
+      "source header row",
+      "target row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.translate-shell.results for translate-shell result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

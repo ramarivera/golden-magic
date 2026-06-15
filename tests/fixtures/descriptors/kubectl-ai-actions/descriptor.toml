@@ -1,0 +1,10 @@
+id = "known.kubectl-ai.actions"
+name = "kubectl-ai action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tresource","explain\tpod"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -5338,5 +5338,65 @@
     "negative": "process state port\nadmin running 5099\n",
     "analysis_notes": "Modeled yao process output with a generated executable-json parser plugin.",
     "variants": ["process header row", "state row", "port field"]
+  },
+  {
+    "fixture": "useful-scripts-commands",
+    "descriptor_id": "known.useful-scripts.commands",
+    "name": "useful-scripts command list",
+    "repo": "https://github.com/oldratlee/useful-scripts",
+    "required_substrings": ["script\tcategory", "show-busy-java-threads\tjava"],
+    "parser": "tab-pairs",
+    "input": "script\tcategory shell\nshow-busy-java-threads\tjava sh\nlinux-cmd\tlinux sh\njson-tool\tdev bash\n",
+    "negative": "script category shell\nshow-busy-java-threads java sh\n",
+    "analysis_notes": "Modeled useful-scripts command output with a generated executable-json parser plugin.",
+    "variants": ["script header row", "category row", "shell field"]
+  },
+  {
+    "fixture": "execa-processes",
+    "descriptor_id": "known.execa.processes",
+    "name": "execa process list",
+    "repo": "https://github.com/sindresorhus/execa",
+    "required_substrings": ["command\tstatus", "node\t0"],
+    "parser": "tab-pairs",
+    "input": "command\tstatus duration\nnode\t0 42ms\ngit\t0 18ms\nfalse\t1 3ms\n",
+    "negative": "command status duration\nnode 0 42ms\n",
+    "analysis_notes": "Modeled execa process output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "status row", "duration field"]
+  },
+  {
+    "fixture": "sshx-sessions",
+    "descriptor_id": "known.sshx.sessions",
+    "name": "sshx session list",
+    "repo": "https://github.com/ekzhang/sshx",
+    "required_substrings": ["session\tstate", "alpha\tconnected"],
+    "parser": "tab-pairs",
+    "input": "session\tstate users\nalpha\tconnected 2\nbravo\tidle 1\ncharlie\tconnected 4\n",
+    "negative": "session state users\nalpha connected 2\n",
+    "analysis_notes": "Modeled sshx session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "users field"]
+  },
+  {
+    "fixture": "kubectl-ai-actions",
+    "descriptor_id": "known.kubectl-ai.actions",
+    "name": "kubectl-ai action list",
+    "repo": "https://github.com/GoogleCloudPlatform/kubectl-ai",
+    "required_substrings": ["action\tresource", "explain\tpod"],
+    "parser": "tab-pairs",
+    "input": "action\tresource confidence\nexplain\tpod 0.91\npatch\tdeployment 0.83\nsummarize\tnamespace 0.78\n",
+    "negative": "action resource confidence\nexplain pod 0.91\n",
+    "analysis_notes": "Modeled kubectl-ai action output with a generated executable-json parser plugin.",
+    "variants": ["action header row", "resource row", "confidence field"]
+  },
+  {
+    "fixture": "translate-shell-results",
+    "descriptor_id": "known.translate-shell.results",
+    "name": "translate-shell result list",
+    "repo": "https://github.com/soimort/translate-shell",
+    "required_substrings": ["source\ttarget", "hello\thola"],
+    "parser": "tab-pairs",
+    "input": "source\ttarget language\nhello\thola es\ngoodbye\tadios es\nthanks\tgracias es\n",
+    "negative": "source target language\nhello hola es\n",
+    "analysis_notes": "Modeled translate-shell result output with a generated executable-json parser plugin.",
+    "variants": ["source header row", "target row", "language field"]
   }
 ]

@@ -1,0 +1,2 @@
+script category shell
+show-busy-java-threads java sh

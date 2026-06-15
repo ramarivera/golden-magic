@@ -3253,5 +3253,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/yao-processes",
     "analysis_notes": "Modeled yao process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/oldratlee/useful-scripts",
+    "descriptor_id": "known.useful-scripts.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/useful-scripts-commands",
+    "analysis_notes": "Modeled useful-scripts command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/execa",
+    "descriptor_id": "known.execa.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/execa-processes",
+    "analysis_notes": "Modeled execa process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ekzhang/sshx",
+    "descriptor_id": "known.sshx.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sshx-sessions",
+    "analysis_notes": "Modeled sshx session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GoogleCloudPlatform/kubectl-ai",
+    "descriptor_id": "known.kubectl-ai.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kubectl-ai-actions",
+    "analysis_notes": "Modeled kubectl-ai action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/soimort/translate-shell",
+    "descriptor_id": "known.translate-shell.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/translate-shell-results",
+    "analysis_notes": "Modeled translate-shell result output with a generated executable-json parser plugin."
   }
 ]

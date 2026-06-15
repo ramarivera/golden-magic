@@ -1,0 +1,4 @@
+command	status duration
+node	0 42ms
+git	0 18ms
+false	1 3ms

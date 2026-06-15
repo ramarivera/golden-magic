@@ -1,0 +1,4 @@
+script	category shell
+show-busy-java-threads	java sh
+linux-cmd	linux sh
+json-tool	dev bash

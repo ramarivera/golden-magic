@@ -1,0 +1,4 @@
+action	resource confidence
+explain	pod 0.91
+patch	deployment 0.83
+summarize	namespace 0.78

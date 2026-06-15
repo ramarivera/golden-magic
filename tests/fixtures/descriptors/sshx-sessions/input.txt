@@ -1,0 +1,4 @@
+session	state users
+alpha	connected 2
+bravo	idle 1
+charlie	connected 4
