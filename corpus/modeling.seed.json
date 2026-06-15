@@ -2868,5 +2868,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/react-native-debugger-sessions",
     "analysis_notes": "Modeled React Native Debugger session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/RetroPie/RetroPie-Setup",
+    "descriptor_id": "known.retropie-setup.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/retropie-setup-packages",
+    "analysis_notes": "Modeled RetroPie-Setup package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ArthurSonzogni/FTXUI",
+    "descriptor_id": "known.ftxui.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ftxui-components",
+    "analysis_notes": "Modeled FTXUI component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Gogh-Co/Gogh",
+    "descriptor_id": "known.gogh.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gogh-themes",
+    "analysis_notes": "Modeled Gogh theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NVIDIA/cosmos",
+    "descriptor_id": "known.cosmos.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cosmos-tools",
+    "analysis_notes": "Modeled NVIDIA Cosmos tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/learnbyexample/Command-line-text-processing",
+    "descriptor_id": "known.command-line-text-processing.recipes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/command-line-text-processing-recipes",
+    "analysis_notes": "Modeled Command-line-text-processing recipe output with a generated executable-json parser plugin."
   }
 ]

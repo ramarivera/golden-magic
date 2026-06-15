@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tool",
+    "value": "stage status"
+  },
+  {
+    "name": "tokenizer",
+    "value": "prepare ready"
+  },
+  {
+    "name": "world-model",
+    "value": "train queued"
+  },
+  {
+    "name": "evaluator",
+    "value": "validate ready"
+  }
+]

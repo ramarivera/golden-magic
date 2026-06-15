@@ -1,0 +1,4 @@
+package	state platform
+retroarch	installed arm
+emulationstation	installed arm
+lr-snes9x	available arm

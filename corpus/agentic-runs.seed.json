@@ -7378,5 +7378,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/RetroPie/RetroPie-Setup",
+    "descriptor_id": "known.retropie-setup.packages",
+    "run_id": "agentic.retropie-setup-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/retropie-setup-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/retropie-setup-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "state row",
+      "platform field"
+    ],
+    "transcript": [
+      "selected descriptor known.retropie-setup.packages for RetroPie-Setup package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ArthurSonzogni/FTXUI",
+    "descriptor_id": "known.ftxui.components",
+    "run_id": "agentic.ftxui-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ftxui-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ftxui-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "state row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.ftxui.components for FTXUI component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Gogh-Co/Gogh",
+    "descriptor_id": "known.gogh.themes",
+    "run_id": "agentic.gogh-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gogh-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gogh-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "terminal row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.gogh.themes for Gogh theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/NVIDIA/cosmos",
+    "descriptor_id": "known.cosmos.tools",
+    "run_id": "agentic.cosmos-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cosmos-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cosmos-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "stage row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.cosmos.tools for NVIDIA Cosmos tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/learnbyexample/Command-line-text-processing",
+    "descriptor_id": "known.command-line-text-processing.recipes",
+    "run_id": "agentic.command-line-text-processing-recipes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/command-line-text-processing-recipes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/command-line-text-processing-recipes/expected.rows.json",
+    "variants": [
+      "recipe header row",
+      "tool row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.command-line-text-processing.recipes for Command-line-text-processing recipe list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

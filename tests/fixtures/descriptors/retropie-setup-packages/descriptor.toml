@@ -1,0 +1,10 @@
+id = "known.retropie-setup.packages"
+name = "RetroPie-Setup package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstate","retroarch\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.cosmos.tools"
+name = "NVIDIA Cosmos tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tstage","tokenizer\tprepare"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.gogh.themes"
+name = "Gogh theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tterminal","dracula\tgnome"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+theme	terminal status
+dracula	gnome installed
+nord	tilix available
+solarized-dark	xfce installed

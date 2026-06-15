@@ -1,0 +1,10 @@
+id = "known.command-line-text-processing.recipes"
+name = "Command-line-text-processing recipe list"
+priority = 50
+
+[matches]
+required_substrings = ["recipe\ttool","search\tgrep"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

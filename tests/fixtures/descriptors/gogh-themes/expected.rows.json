@@ -1,0 +1,18 @@
+[
+  {
+    "name": "theme",
+    "value": "terminal status"
+  },
+  {
+    "name": "dracula",
+    "value": "gnome installed"
+  },
+  {
+    "name": "nord",
+    "value": "tilix available"
+  },
+  {
+    "name": "solarized-dark",
+    "value": "xfce installed"
+  }
+]

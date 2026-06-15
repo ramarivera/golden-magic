@@ -1,0 +1,18 @@
+[
+  {
+    "name": "component",
+    "value": "state size"
+  },
+  {
+    "name": "menu",
+    "value": "active 20x5"
+  },
+  {
+    "name": "input",
+    "value": "focused 40x1"
+  },
+  {
+    "name": "graph",
+    "value": "visible 60x12"
+  }
+]

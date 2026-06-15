@@ -4678,5 +4678,65 @@
     "negative": "session state target\nios-sim attached localhost:8081\n",
     "analysis_notes": "Modeled React Native Debugger session output with a generated executable-json parser plugin.",
     "variants": ["session header row", "state row", "target field"]
+  },
+  {
+    "fixture": "retropie-setup-packages",
+    "descriptor_id": "known.retropie-setup.packages",
+    "name": "RetroPie-Setup package list",
+    "repo": "https://github.com/RetroPie/RetroPie-Setup",
+    "required_substrings": ["package\tstate", "retroarch\tinstalled"],
+    "parser": "tab-pairs",
+    "input": "package\tstate platform\nretroarch\tinstalled arm\nemulationstation\tinstalled arm\nlr-snes9x\tavailable arm\n",
+    "negative": "package state platform\nretroarch installed arm\n",
+    "analysis_notes": "Modeled RetroPie-Setup package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "state row", "platform field"]
+  },
+  {
+    "fixture": "ftxui-components",
+    "descriptor_id": "known.ftxui.components",
+    "name": "FTXUI component list",
+    "repo": "https://github.com/ArthurSonzogni/FTXUI",
+    "required_substrings": ["component\tstate", "menu\tactive"],
+    "parser": "tab-pairs",
+    "input": "component\tstate size\nmenu\tactive 20x5\ninput\tfocused 40x1\ngraph\tvisible 60x12\n",
+    "negative": "component state size\nmenu active 20x5\n",
+    "analysis_notes": "Modeled FTXUI component output with a generated executable-json parser plugin.",
+    "variants": ["component header row", "state row", "size field"]
+  },
+  {
+    "fixture": "gogh-themes",
+    "descriptor_id": "known.gogh.themes",
+    "name": "Gogh theme list",
+    "repo": "https://github.com/Gogh-Co/Gogh",
+    "required_substrings": ["theme\tterminal", "dracula\tgnome"],
+    "parser": "tab-pairs",
+    "input": "theme\tterminal status\ndracula\tgnome installed\nnord\ttilix available\nsolarized-dark\txfce installed\n",
+    "negative": "theme terminal status\ndracula gnome installed\n",
+    "analysis_notes": "Modeled Gogh theme output with a generated executable-json parser plugin.",
+    "variants": ["theme header row", "terminal row", "status field"]
+  },
+  {
+    "fixture": "cosmos-tools",
+    "descriptor_id": "known.cosmos.tools",
+    "name": "NVIDIA Cosmos tool list",
+    "repo": "https://github.com/NVIDIA/cosmos",
+    "required_substrings": ["tool\tstage", "tokenizer\tprepare"],
+    "parser": "tab-pairs",
+    "input": "tool\tstage status\ntokenizer\tprepare ready\nworld-model\ttrain queued\nevaluator\tvalidate ready\n",
+    "negative": "tool stage status\ntokenizer prepare ready\n",
+    "analysis_notes": "Modeled NVIDIA Cosmos tool output with a generated executable-json parser plugin.",
+    "variants": ["tool header row", "stage row", "status field"]
+  },
+  {
+    "fixture": "command-line-text-processing-recipes",
+    "descriptor_id": "known.command-line-text-processing.recipes",
+    "name": "Command-line-text-processing recipe list",
+    "repo": "https://github.com/learnbyexample/Command-line-text-processing",
+    "required_substrings": ["recipe\ttool", "search\tgrep"],
+    "parser": "tab-pairs",
+    "input": "recipe\ttool status\nsearch\tgrep listed\nreplace\tsed listed\nfields\tawk listed\n",
+    "negative": "recipe tool status\nsearch grep listed\n",
+    "analysis_notes": "Modeled Command-line-text-processing recipe output with a generated executable-json parser plugin.",
+    "variants": ["recipe header row", "tool row", "status field"]
   }
 ]

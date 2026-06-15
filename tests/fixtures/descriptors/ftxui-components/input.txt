@@ -1,0 +1,4 @@
+component	state size
+menu	active 20x5
+input	focused 40x1
+graph	visible 60x12
