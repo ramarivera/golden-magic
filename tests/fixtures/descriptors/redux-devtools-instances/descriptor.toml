@@ -1,0 +1,10 @@
+id = "known.redux-devtools.instances"
+name = "Redux DevTools instance list"
+priority = 50
+
+[matches]
+required_substrings = ["instance\tstate","todo-app\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+command	category arity
+cp	filesystem 2
+exec	process 1
+grep	text 2

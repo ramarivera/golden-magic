@@ -1,0 +1,4 @@
+module	state load_order
+git	enabled 10
+syntax-highlighting	enabled 20
+completion	disabled 30

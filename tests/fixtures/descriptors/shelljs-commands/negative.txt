@@ -1,0 +1,2 @@
+command category arity
+cp filesystem 2

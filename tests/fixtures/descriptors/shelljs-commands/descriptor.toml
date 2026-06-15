@@ -1,0 +1,10 @@
+id = "known.shelljs.commands"
+name = "ShellJS command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcategory","cp\tfilesystem"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

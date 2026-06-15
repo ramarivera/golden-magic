@@ -1,0 +1,4 @@
+instance	state actions
+todo-app	connected 42
+admin	paused 13
+checkout	disconnected 0

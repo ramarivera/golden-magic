@@ -1,0 +1,10 @@
+id = "known.prezto.modules"
+name = "Prezto module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tstate","git\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

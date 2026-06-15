@@ -1,0 +1,4 @@
+widget	source interval
+cpu	shell 1s
+docker	command 5s
+ping	http 10s

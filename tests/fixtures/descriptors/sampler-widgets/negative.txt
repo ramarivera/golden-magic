@@ -1,0 +1,2 @@
+widget source interval
+cpu shell 1s

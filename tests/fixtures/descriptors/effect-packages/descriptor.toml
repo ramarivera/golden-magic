@@ -1,0 +1,10 @@
+id = "known.effect.packages"
+name = "Effect package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstatus","effect\tstable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

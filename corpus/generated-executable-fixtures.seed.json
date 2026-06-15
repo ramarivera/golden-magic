@@ -3598,5 +3598,65 @@
     "negative": "store state actions\ncart active 8\n",
     "analysis_notes": "Modeled Pinia store output with a generated executable-json parser plugin.",
     "variants": ["store header row", "state row", "actions field"]
+  },
+  {
+    "fixture": "effect-packages",
+    "descriptor_id": "known.effect.packages",
+    "name": "Effect package list",
+    "repo": "https://github.com/Effect-TS/effect",
+    "required_substrings": ["package\tstatus", "effect\tstable"],
+    "parser": "tab-pairs",
+    "input": "package\tstatus modules\neffect\tstable 84\nplatform\tstable 32\nschema\texperimental 18\n",
+    "negative": "package status modules\neffect stable 84\n",
+    "analysis_notes": "Modeled Effect package output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "status row", "modules field"]
+  },
+  {
+    "fixture": "sampler-widgets",
+    "descriptor_id": "known.sampler.widgets",
+    "name": "sampler widget list",
+    "repo": "https://github.com/sqshq/sampler",
+    "required_substrings": ["widget\tsource", "cpu\tshell"],
+    "parser": "tab-pairs",
+    "input": "widget\tsource interval\ncpu\tshell 1s\ndocker\tcommand 5s\nping\thttp 10s\n",
+    "negative": "widget source interval\ncpu shell 1s\n",
+    "analysis_notes": "Modeled sampler widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "source row", "interval field"]
+  },
+  {
+    "fixture": "prezto-modules",
+    "descriptor_id": "known.prezto.modules",
+    "name": "Prezto module list",
+    "repo": "https://github.com/sorin-ionescu/prezto",
+    "required_substrings": ["module\tstate", "git\tenabled"],
+    "parser": "tab-pairs",
+    "input": "module\tstate load_order\ngit\tenabled 10\nsyntax-highlighting\tenabled 20\ncompletion\tdisabled 30\n",
+    "negative": "module state load_order\ngit enabled 10\n",
+    "analysis_notes": "Modeled Prezto module output with a generated executable-json parser plugin.",
+    "variants": ["module header row", "state row", "load_order field"]
+  },
+  {
+    "fixture": "shelljs-commands",
+    "descriptor_id": "known.shelljs.commands",
+    "name": "ShellJS command list",
+    "repo": "https://github.com/shelljs/shelljs",
+    "required_substrings": ["command\tcategory", "cp\tfilesystem"],
+    "parser": "tab-pairs",
+    "input": "command\tcategory arity\ncp\tfilesystem 2\nexec\tprocess 1\ngrep\ttext 2\n",
+    "negative": "command category arity\ncp filesystem 2\n",
+    "analysis_notes": "Modeled ShellJS command output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "category row", "arity field"]
+  },
+  {
+    "fixture": "redux-devtools-instances",
+    "descriptor_id": "known.redux-devtools.instances",
+    "name": "Redux DevTools instance list",
+    "repo": "https://github.com/reduxjs/redux-devtools",
+    "required_substrings": ["instance\tstate", "todo-app\tconnected"],
+    "parser": "tab-pairs",
+    "input": "instance\tstate actions\ntodo-app\tconnected 42\nadmin\tpaused 13\ncheckout\tdisconnected 0\n",
+    "negative": "instance state actions\ntodo-app connected 42\n",
+    "analysis_notes": "Modeled Redux DevTools instance output with a generated executable-json parser plugin.",
+    "variants": ["instance header row", "state row", "actions field"]
   }
 ]

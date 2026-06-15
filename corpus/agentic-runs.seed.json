@@ -5758,5 +5758,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Effect-TS/effect",
+    "descriptor_id": "known.effect.packages",
+    "run_id": "agentic.effect-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/effect-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/effect-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "status row",
+      "modules field"
+    ],
+    "transcript": [
+      "selected descriptor known.effect.packages for Effect package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sqshq/sampler",
+    "descriptor_id": "known.sampler.widgets",
+    "run_id": "agentic.sampler-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sampler-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sampler-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "source row",
+      "interval field"
+    ],
+    "transcript": [
+      "selected descriptor known.sampler.widgets for sampler widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sorin-ionescu/prezto",
+    "descriptor_id": "known.prezto.modules",
+    "run_id": "agentic.prezto-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/prezto-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/prezto-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "state row",
+      "load_order field"
+    ],
+    "transcript": [
+      "selected descriptor known.prezto.modules for Prezto module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/shelljs/shelljs",
+    "descriptor_id": "known.shelljs.commands",
+    "run_id": "agentic.shelljs-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shelljs-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shelljs-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "category row",
+      "arity field"
+    ],
+    "transcript": [
+      "selected descriptor known.shelljs.commands for ShellJS command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/reduxjs/redux-devtools",
+    "descriptor_id": "known.redux-devtools.instances",
+    "run_id": "agentic.redux-devtools-instances.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/redux-devtools-instances/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/redux-devtools-instances/expected.rows.json",
+    "variants": [
+      "instance header row",
+      "state row",
+      "actions field"
+    ],
+    "transcript": [
+      "selected descriptor known.redux-devtools.instances for Redux DevTools instance list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

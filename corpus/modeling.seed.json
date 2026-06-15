@@ -2238,5 +2238,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/pinia-stores",
     "analysis_notes": "Modeled Pinia store output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Effect-TS/effect",
+    "descriptor_id": "known.effect.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/effect-packages",
+    "analysis_notes": "Modeled Effect package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sqshq/sampler",
+    "descriptor_id": "known.sampler.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sampler-widgets",
+    "analysis_notes": "Modeled sampler widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sorin-ionescu/prezto",
+    "descriptor_id": "known.prezto.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/prezto-modules",
+    "analysis_notes": "Modeled Prezto module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/shelljs/shelljs",
+    "descriptor_id": "known.shelljs.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shelljs-commands",
+    "analysis_notes": "Modeled ShellJS command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/reduxjs/redux-devtools",
+    "descriptor_id": "known.redux-devtools.instances",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/redux-devtools-instances",
+    "analysis_notes": "Modeled Redux DevTools instance output with a generated executable-json parser plugin."
   }
 ]

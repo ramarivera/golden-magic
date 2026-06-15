@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "state load_order"
+  },
+  {
+    "name": "git",
+    "value": "enabled 10"
+  },
+  {
+    "name": "syntax-highlighting",
+    "value": "enabled 20"
+  },
+  {
+    "name": "completion",
+    "value": "disabled 30"
+  }
+]
