@@ -1,0 +1,4 @@
+widget	state monitor
+bar	active eDP-1
+launcher	idle eDP-1
+notifications	active HDMI-A-1

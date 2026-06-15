@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "score when"
+  },
+  {
+    "name": "cargo test",
+    "value": "92 today"
+  },
+  {
+    "name": "git status",
+    "value": "81 today"
+  },
+  {
+    "name": "mise run check",
+    "value": "74 yesterday"
+  }
+]

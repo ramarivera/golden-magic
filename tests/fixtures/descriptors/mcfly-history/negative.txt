@@ -1,0 +1,2 @@
+command score when
+cargo test 92 today

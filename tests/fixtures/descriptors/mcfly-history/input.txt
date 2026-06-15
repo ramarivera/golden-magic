@@ -1,0 +1,4 @@
+command	score when
+cargo test	92 today
+git status	81 today
+mise run check	74 yesterday

@@ -1,0 +1,2 @@
+file state target
+zshrc linked ~/.zshrc

@@ -1,0 +1,2 @@
+segment start duration
+intro 0.00 4.20

@@ -8098,5 +8098,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/noctalia-dev/noctalia",
+    "descriptor_id": "known.noctalia.widgets",
+    "run_id": "agentic.noctalia-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/noctalia-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/noctalia-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "state row",
+      "monitor field"
+    ],
+    "transcript": [
+      "selected descriptor known.noctalia.widgets for noctalia widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/holman/dotfiles",
+    "descriptor_id": "known.holman-dotfiles.links",
+    "run_id": "agentic.holman-dotfiles-links.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/holman-dotfiles-links/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/holman-dotfiles-links/expected.rows.json",
+    "variants": [
+      "file header row",
+      "state row",
+      "target field"
+    ],
+    "transcript": [
+      "selected descriptor known.holman-dotfiles.links for holman dotfiles link list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jdepoix/youtube-transcript-api",
+    "descriptor_id": "known.youtube-transcript-api.segments",
+    "run_id": "agentic.youtube-transcript-api-segments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/youtube-transcript-api-segments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/youtube-transcript-api-segments/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "start row",
+      "duration field"
+    ],
+    "transcript": [
+      "selected descriptor known.youtube-transcript-api.segments for youtube-transcript-api segment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cantino/mcfly",
+    "descriptor_id": "known.mcfly.history",
+    "run_id": "agentic.mcfly-history.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mcfly-history/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mcfly-history/expected.rows.json",
+    "variants": [
+      "command header row",
+      "score row",
+      "when field"
+    ],
+    "transcript": [
+      "selected descriptor known.mcfly.history for mcfly history list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/podman-desktop/podman-desktop",
+    "descriptor_id": "known.podman-desktop.containers",
+    "run_id": "agentic.podman-desktop-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/podman-desktop-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/podman-desktop-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "state row",
+      "image field"
+    ],
+    "transcript": [
+      "selected descriptor known.podman-desktop.containers for podman desktop container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

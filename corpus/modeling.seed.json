@@ -3148,5 +3148,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/concurrently-commands",
     "analysis_notes": "Modeled concurrently command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/noctalia-dev/noctalia",
+    "descriptor_id": "known.noctalia.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/noctalia-widgets",
+    "analysis_notes": "Modeled noctalia widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/holman/dotfiles",
+    "descriptor_id": "known.holman-dotfiles.links",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/holman-dotfiles-links",
+    "analysis_notes": "Modeled dotfiles link output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jdepoix/youtube-transcript-api",
+    "descriptor_id": "known.youtube-transcript-api.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/youtube-transcript-api-segments",
+    "analysis_notes": "Modeled youtube-transcript-api segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cantino/mcfly",
+    "descriptor_id": "known.mcfly.history",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mcfly-history",
+    "analysis_notes": "Modeled mcfly history output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/podman-desktop/podman-desktop",
+    "descriptor_id": "known.podman-desktop.containers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/podman-desktop-containers",
+    "analysis_notes": "Modeled podman-desktop container output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.podman-desktop.containers"
+name = "podman desktop container list"
+priority = 50
+
+[matches]
+required_substrings = ["container\tstate","api\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

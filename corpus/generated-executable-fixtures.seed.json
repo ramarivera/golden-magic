@@ -5158,5 +5158,65 @@
     "negative": "command state pid\nweb running 1201\n",
     "analysis_notes": "Modeled concurrently command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "state row", "pid field"]
+  },
+  {
+    "fixture": "noctalia-widgets",
+    "descriptor_id": "known.noctalia.widgets",
+    "name": "noctalia widget list",
+    "repo": "https://github.com/noctalia-dev/noctalia",
+    "required_substrings": ["widget\tstate", "bar\tactive"],
+    "parser": "tab-pairs",
+    "input": "widget\tstate monitor\nbar\tactive eDP-1\nlauncher\tidle eDP-1\nnotifications\tactive HDMI-A-1\n",
+    "negative": "widget state monitor\nbar active eDP-1\n",
+    "analysis_notes": "Modeled noctalia widget output with a generated executable-json parser plugin.",
+    "variants": ["widget header row", "state row", "monitor field"]
+  },
+  {
+    "fixture": "holman-dotfiles-links",
+    "descriptor_id": "known.holman-dotfiles.links",
+    "name": "holman dotfiles link list",
+    "repo": "https://github.com/holman/dotfiles",
+    "required_substrings": ["file\tstate", "zshrc\tlinked"],
+    "parser": "tab-pairs",
+    "input": "file\tstate target\nzshrc\tlinked ~/.zshrc\ngitconfig\tlinked ~/.gitconfig\nvimrc\tpending ~/.vimrc\n",
+    "negative": "file state target\nzshrc linked ~/.zshrc\n",
+    "analysis_notes": "Modeled dotfiles link output with a generated executable-json parser plugin.",
+    "variants": ["file header row", "state row", "target field"]
+  },
+  {
+    "fixture": "youtube-transcript-api-segments",
+    "descriptor_id": "known.youtube-transcript-api.segments",
+    "name": "youtube-transcript-api segment list",
+    "repo": "https://github.com/jdepoix/youtube-transcript-api",
+    "required_substrings": ["segment\tstart", "intro\t0.00"],
+    "parser": "tab-pairs",
+    "input": "segment\tstart duration\nintro\t0.00 4.20\nchapter1\t4.20 31.10\noutro\t35.30 8.00\n",
+    "negative": "segment start duration\nintro 0.00 4.20\n",
+    "analysis_notes": "Modeled youtube-transcript-api segment output with a generated executable-json parser plugin.",
+    "variants": ["segment header row", "start row", "duration field"]
+  },
+  {
+    "fixture": "mcfly-history",
+    "descriptor_id": "known.mcfly.history",
+    "name": "mcfly history list",
+    "repo": "https://github.com/cantino/mcfly",
+    "required_substrings": ["command\tscore", "cargo test\t92"],
+    "parser": "tab-pairs",
+    "input": "command\tscore when\ncargo test\t92 today\ngit status\t81 today\nmise run check\t74 yesterday\n",
+    "negative": "command score when\ncargo test 92 today\n",
+    "analysis_notes": "Modeled mcfly history output with a generated executable-json parser plugin.",
+    "variants": ["command header row", "score row", "when field"]
+  },
+  {
+    "fixture": "podman-desktop-containers",
+    "descriptor_id": "known.podman-desktop.containers",
+    "name": "podman desktop container list",
+    "repo": "https://github.com/podman-desktop/podman-desktop",
+    "required_substrings": ["container\tstate", "api\trunning"],
+    "parser": "tab-pairs",
+    "input": "container\tstate image\napi\trunning quay.io/api:latest\ndb\trunning postgres:16\nworker\texited worker:dev\n",
+    "negative": "container state image\napi running quay.io/api:latest\n",
+    "analysis_notes": "Modeled podman-desktop container output with a generated executable-json parser plugin.",
+    "variants": ["container header row", "state row", "image field"]
   }
 ]

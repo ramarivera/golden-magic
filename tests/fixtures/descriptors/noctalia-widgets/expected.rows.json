@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "state monitor"
+  },
+  {
+    "name": "bar",
+    "value": "active eDP-1"
+  },
+  {
+    "name": "launcher",
+    "value": "idle eDP-1"
+  },
+  {
+    "name": "notifications",
+    "value": "active HDMI-A-1"
+  }
+]

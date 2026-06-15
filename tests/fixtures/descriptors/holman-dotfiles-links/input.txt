@@ -1,0 +1,4 @@
+file	state target
+zshrc	linked ~/.zshrc
+gitconfig	linked ~/.gitconfig
+vimrc	pending ~/.vimrc

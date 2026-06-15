@@ -1,0 +1,4 @@
+container	state image
+api	running quay.io/api:latest
+db	running postgres:16
+worker	exited worker:dev

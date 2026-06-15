@@ -1,0 +1,10 @@
+id = "known.mcfly.history"
+name = "mcfly history list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tscore","cargo test\t92"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

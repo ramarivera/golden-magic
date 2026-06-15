@@ -1,0 +1,10 @@
+id = "known.holman-dotfiles.links"
+name = "holman dotfiles link list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstate","zshrc\tlinked"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
