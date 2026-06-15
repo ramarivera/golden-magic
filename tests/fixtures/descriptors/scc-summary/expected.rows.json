@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Language",
+    "value": "Files Lines Code"
+  },
+  {
+    "name": "Rust",
+    "value": "12 2048 1800"
+  },
+  {
+    "name": "Markdown",
+    "value": "4 320 300"
+  },
+  {
+    "name": "TOML",
+    "value": "3 98 90"
+  }
+]

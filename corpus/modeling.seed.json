@@ -593,5 +593,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/websocat-connection",
     "analysis_notes": "Modeled websocat connection summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/charmbracelet/bubbles",
+    "descriptor_id": "known.bubbles.demo-state",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bubbles-demo-state",
+    "analysis_notes": "Modeled bubbles component state output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mfontanini/presenterm",
+    "descriptor_id": "known.presenterm.slides",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/presenterm-slides",
+    "analysis_notes": "Modeled presenterm slide summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yonaskolb/XcodeGen",
+    "descriptor_id": "known.xcodegen.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xcodegen-targets",
+    "analysis_notes": "Modeled XcodeGen target list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/schachmat/wego",
+    "descriptor_id": "known.wego.weather",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wego-weather",
+    "analysis_notes": "Modeled wego weather summary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/boyter/scc",
+    "descriptor_id": "known.scc.summary",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/scc-summary",
+    "analysis_notes": "Modeled scc language summary output with a generated executable-json parser plugin."
   }
 ]

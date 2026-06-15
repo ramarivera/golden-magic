@@ -1,0 +1,10 @@
+id = "known.bubbles.demo-state"
+name = "bubbles demo state"
+priority = 50
+
+[matches]
+required_substrings = ["component:","state:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

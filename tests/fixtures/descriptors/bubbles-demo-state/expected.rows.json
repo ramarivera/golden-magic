@@ -1,0 +1,18 @@
+[
+  {
+    "key": "component",
+    "value": "list"
+  },
+  {
+    "key": "state",
+    "value": "focused"
+  },
+  {
+    "key": "items",
+    "value": "12"
+  },
+  {
+    "key": "selected",
+    "value": "3"
+  }
+]

@@ -1,0 +1,4 @@
+deck: demo.md
+slides: 18
+theme: terminal-dark
+status: ready

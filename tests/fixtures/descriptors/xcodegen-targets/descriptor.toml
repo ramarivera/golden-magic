@@ -1,0 +1,10 @@
+id = "known.xcodegen.targets"
+name = "XcodeGen target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\ttype","App\tapplication"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.wego.weather"
+name = "wego weather summary"
+priority = 50
+
+[matches]
+required_substrings = ["location:","temperature:"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

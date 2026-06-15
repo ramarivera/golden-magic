@@ -778,5 +778,65 @@
     "negative": "source ws://127.0.0.1:8080\ndestination tcp:127.0.0.1:9000\n",
     "analysis_notes": "Modeled websocat connection summary output with a generated executable-json parser plugin.",
     "variants": ["source endpoint row", "destination endpoint row", "bridge mode row"]
+  },
+  {
+    "fixture": "bubbles-demo-state",
+    "descriptor_id": "known.bubbles.demo-state",
+    "name": "bubbles demo state",
+    "repo": "https://github.com/charmbracelet/bubbles",
+    "required_substrings": ["component:", "state:"],
+    "parser": "colon-kv",
+    "input": "component: list\nstate: focused\nitems: 12\nselected: 3\n",
+    "negative": "component list\nstate focused\n",
+    "analysis_notes": "Modeled bubbles component state output with a generated executable-json parser plugin.",
+    "variants": ["component row", "state row", "selected index row"]
+  },
+  {
+    "fixture": "presenterm-slides",
+    "descriptor_id": "known.presenterm.slides",
+    "name": "presenterm slide summary",
+    "repo": "https://github.com/mfontanini/presenterm",
+    "required_substrings": ["deck:", "slides:"],
+    "parser": "colon-kv",
+    "input": "deck: demo.md\nslides: 18\ntheme: terminal-dark\nstatus: ready\n",
+    "negative": "deck demo.md\nslides 18\n",
+    "analysis_notes": "Modeled presenterm slide summary output with a generated executable-json parser plugin.",
+    "variants": ["deck path row", "slide count row", "theme row"]
+  },
+  {
+    "fixture": "xcodegen-targets",
+    "descriptor_id": "known.xcodegen.targets",
+    "name": "XcodeGen target list",
+    "repo": "https://github.com/yonaskolb/XcodeGen",
+    "required_substrings": ["target\ttype", "App\tapplication"],
+    "parser": "tab-pairs",
+    "input": "target\ttype platform\nApp\tapplication iOS\nAppTests\tunit-test iOS\nWidget\textension iOS\n",
+    "negative": "target type platform\nApp application iOS\n",
+    "analysis_notes": "Modeled XcodeGen target list output with a generated executable-json parser plugin.",
+    "variants": ["target header row", "application target row", "test target row"]
+  },
+  {
+    "fixture": "wego-weather",
+    "descriptor_id": "known.wego.weather",
+    "name": "wego weather summary",
+    "repo": "https://github.com/schachmat/wego",
+    "required_substrings": ["location:", "temperature:"],
+    "parser": "colon-kv",
+    "input": "location: Berlin\ntemperature: 18 C\ncondition: cloudy\nwind: 11 km/h\n",
+    "negative": "location Berlin\ntemperature 18 C\n",
+    "analysis_notes": "Modeled wego weather summary output with a generated executable-json parser plugin.",
+    "variants": ["location row", "temperature row", "wind row"]
+  },
+  {
+    "fixture": "scc-summary",
+    "descriptor_id": "known.scc.summary",
+    "name": "scc language summary",
+    "repo": "https://github.com/boyter/scc",
+    "required_substrings": ["Language\tFiles", "Rust\t12"],
+    "parser": "tab-pairs",
+    "input": "Language\tFiles Lines Code\nRust\t12 2048 1800\nMarkdown\t4 320 300\nTOML\t3 98 90\n",
+    "negative": "Language Files Lines Code\nRust 12 2048 1800\n",
+    "analysis_notes": "Modeled scc language summary output with a generated executable-json parser plugin.",
+    "variants": ["language header row", "Rust row", "Markdown row"]
   }
 ]

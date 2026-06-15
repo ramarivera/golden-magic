@@ -1528,5 +1528,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/bubbles",
+    "descriptor_id": "known.bubbles.demo-state",
+    "run_id": "agentic.bubbles-demo-state.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bubbles-demo-state/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bubbles-demo-state/expected.rows.json",
+    "variants": [
+      "component row",
+      "state row",
+      "selected index row"
+    ],
+    "transcript": [
+      "selected descriptor known.bubbles.demo-state for bubbles demo state output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mfontanini/presenterm",
+    "descriptor_id": "known.presenterm.slides",
+    "run_id": "agentic.presenterm-slides.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/presenterm-slides/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/presenterm-slides/expected.rows.json",
+    "variants": [
+      "deck path row",
+      "slide count row",
+      "theme row"
+    ],
+    "transcript": [
+      "selected descriptor known.presenterm.slides for presenterm slide summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yonaskolb/XcodeGen",
+    "descriptor_id": "known.xcodegen.targets",
+    "run_id": "agentic.xcodegen-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xcodegen-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xcodegen-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "application target row",
+      "test target row"
+    ],
+    "transcript": [
+      "selected descriptor known.xcodegen.targets for XcodeGen target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/schachmat/wego",
+    "descriptor_id": "known.wego.weather",
+    "run_id": "agentic.wego-weather.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wego-weather/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wego-weather/expected.rows.json",
+    "variants": [
+      "location row",
+      "temperature row",
+      "wind row"
+    ],
+    "transcript": [
+      "selected descriptor known.wego.weather for wego weather summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/boyter/scc",
+    "descriptor_id": "known.scc.summary",
+    "run_id": "agentic.scc-summary.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/scc-summary/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/scc-summary/expected.rows.json",
+    "variants": [
+      "language header row",
+      "Rust row",
+      "Markdown row"
+    ],
+    "transcript": [
+      "selected descriptor known.scc.summary for scc language summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

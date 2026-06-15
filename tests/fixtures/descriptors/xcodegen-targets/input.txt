@@ -1,0 +1,4 @@
+target	type platform
+App	application iOS
+AppTests	unit-test iOS
+Widget	extension iOS

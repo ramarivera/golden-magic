@@ -1,0 +1,2 @@
+target type platform
+App application iOS
