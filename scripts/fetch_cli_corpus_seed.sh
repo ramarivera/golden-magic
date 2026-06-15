@@ -6,6 +6,8 @@ queries_file="${GOLDEN_MAGIC_CORPUS_QUERIES:-corpus/cli-corpus.queries.txt}"
 out="${GOLDEN_MAGIC_CORPUS_OUT:-corpus/cli-tools.seed.json}"
 fetch_sleep_seconds="${GOLDEN_MAGIC_CORPUS_FETCH_SLEEP_SECONDS:-2}"
 fetch_retries="${GOLDEN_MAGIC_CORPUS_FETCH_RETRIES:-2}"
+cache_dir="${GOLDEN_MAGIC_CORPUS_CACHE_DIR:-corpus/.cache/github-search}"
+cache_refresh="${GOLDEN_MAGIC_CORPUS_CACHE_REFRESH:-0}"
 fetched_at="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 tmpdir="$(mktemp -d)"
 existing="$tmpdir/existing.json"
@@ -16,6 +18,7 @@ cleanup() {
 trap cleanup EXIT
 
 mkdir -p "$(dirname "$out")"
+mkdir -p "$cache_dir"
 if [[ -f "$out" ]]; then
   cp "$out" "$existing"
 else
@@ -36,24 +39,34 @@ while IFS= read -r raw_query || [[ -n "$raw_query" ]]; do
 
   query_count=$((query_count + 1))
   query_out="$tmpdir/query-$query_count.json"
-  echo "fetching partition $query_count: $query" >&2
+  cache_key="$(printf '%s\n%s\n' "$per_query_limit" "$query" | shasum -a 256 | awk '{print $1}')"
+  cache_raw="$cache_dir/$cache_key.raw.json"
+  cache_meta="$cache_dir/$cache_key.query.txt"
   read -r -a query_terms <<< "$query"
 
-  attempt=0
-  until gh search repos "${query_terms[@]}" \
-      --sort stars \
-      --order desc \
-      --limit "$per_query_limit" \
-      --json fullName,url,stargazersCount,description,language > "$query_out.raw"; do
-    attempt=$((attempt + 1))
-    if [[ "$attempt" -gt "$fetch_retries" ]]; then
-      echo "failed partition after $fetch_retries retries: $query" >&2
-      exit 1
-    fi
-    sleep_for=$((fetch_sleep_seconds * attempt))
-    echo "retrying partition $query_count after ${sleep_for}s: $query" >&2
-    sleep "$sleep_for"
-  done
+  if [[ "$cache_refresh" != "1" && -f "$cache_raw" ]]; then
+    echo "using cached partition $query_count: $query" >&2
+    cp "$cache_raw" "$query_out.raw"
+  else
+    echo "fetching partition $query_count: $query" >&2
+    attempt=0
+    until gh search repos "${query_terms[@]}" \
+        --sort stars \
+        --order desc \
+        --limit "$per_query_limit" \
+        --json fullName,url,stargazersCount,description,language > "$query_out.raw"; do
+      attempt=$((attempt + 1))
+      if [[ "$attempt" -gt "$fetch_retries" ]]; then
+        echo "failed partition after $fetch_retries retries: $query" >&2
+        exit 1
+      fi
+      sleep_for=$((fetch_sleep_seconds * attempt))
+      echo "retrying partition $query_count after ${sleep_for}s: $query" >&2
+      sleep "$sleep_for"
+    done
+    cp "$query_out.raw" "$cache_raw"
+    printf 'limit=%s\nquery=%s\n' "$per_query_limit" "$query" > "$cache_meta"
+  fi
 
   jq --arg query "$query" --arg fetched_at "$fetched_at" '
         to_entries

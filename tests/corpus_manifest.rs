@@ -81,6 +81,28 @@ fn corpus_query_partitions_are_broad_enough_to_scale_discovery() {
 }
 
 #[test]
+fn corpus_fetcher_has_resumable_partition_cache_controls() {
+    let script = include_str!("../scripts/fetch_cli_corpus_seed.sh");
+
+    assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_CACHE_DIR"),
+        "fetcher should expose a cache directory override"
+    );
+    assert!(
+        script.contains("GOLDEN_MAGIC_CORPUS_CACHE_REFRESH"),
+        "fetcher should expose a forced refresh toggle"
+    );
+    assert!(
+        script.contains("using cached partition"),
+        "fetcher should make cache hits visible in stderr receipts"
+    );
+    assert!(
+        script.contains("shasum -a 256"),
+        "fetcher should key cache files by stable query content"
+    );
+}
+
+#[test]
 fn seed_corpus_manifest_has_unique_repositories_and_required_fields() {
     let entries: Vec<CorpusEntry> =
         serde_json::from_str(include_str!("../corpus/cli-tools.seed.json"))
