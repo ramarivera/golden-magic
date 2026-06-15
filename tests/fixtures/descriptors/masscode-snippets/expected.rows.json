@@ -1,0 +1,18 @@
+[
+  {
+    "name": "snippet",
+    "value": "language folder"
+  },
+  {
+    "name": "parser",
+    "value": "Rust golden"
+  },
+  {
+    "name": "request",
+    "value": "HTTP api"
+  },
+  {
+    "name": "note",
+    "value": "Markdown docs"
+  }
+]

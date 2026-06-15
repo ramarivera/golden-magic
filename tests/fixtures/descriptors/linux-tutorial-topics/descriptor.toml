@@ -1,0 +1,10 @@
+id = "known.linux-tutorial.topics"
+name = "linux-tutorial topic list"
+priority = 50
+
+[matches]
+required_substrings = ["topic\tstate","shell\tpublished"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

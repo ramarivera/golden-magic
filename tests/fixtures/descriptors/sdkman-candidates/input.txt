@@ -1,0 +1,4 @@
+candidate	version state
+java	21.0.2 installed
+gradle	8.7 available
+kotlin	2.0.0 installed

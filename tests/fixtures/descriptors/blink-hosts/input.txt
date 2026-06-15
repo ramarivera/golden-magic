@@ -1,0 +1,4 @@
+host	state user
+prod	connected ramiro
+staging	idle deploy
+local	connected dev

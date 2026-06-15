@@ -1,0 +1,10 @@
+id = "known.blink.hosts"
+name = "blink host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tstate","prod\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

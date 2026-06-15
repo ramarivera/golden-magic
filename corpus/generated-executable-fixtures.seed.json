@@ -5818,5 +5818,65 @@
     "negative": "session binding depth\nmain Object 0\n",
     "analysis_notes": "Modeled pry session output with a generated executable-json parser plugin.",
     "variants": ["session header row", "binding row", "depth field"]
+  },
+  {
+    "fixture": "masscode-snippets",
+    "descriptor_id": "known.masscode.snippets",
+    "name": "massCode snippet list",
+    "repo": "https://github.com/massCodeIO/massCode",
+    "required_substrings": ["snippet\tlanguage", "parser\tRust"],
+    "parser": "tab-pairs",
+    "input": "snippet\tlanguage folder\nparser\tRust golden\nrequest\tHTTP api\nnote\tMarkdown docs\n",
+    "negative": "snippet language folder\nparser Rust golden\n",
+    "analysis_notes": "Modeled massCode snippet output with a generated executable-json parser plugin.",
+    "variants": ["snippet header row", "language row", "folder field"]
+  },
+  {
+    "fixture": "linux-tutorial-topics",
+    "descriptor_id": "known.linux-tutorial.topics",
+    "name": "linux-tutorial topic list",
+    "repo": "https://github.com/dunwu/linux-tutorial",
+    "required_substrings": ["topic\tstate", "shell\tpublished"],
+    "parser": "tab-pairs",
+    "input": "topic\tstate files\nshell\tpublished 12\nnetwork\tdraft 8\nstorage\tpublished 6\n",
+    "negative": "topic state files\nshell published 12\n",
+    "analysis_notes": "Modeled linux-tutorial topic output with a generated executable-json parser plugin.",
+    "variants": ["topic header row", "state row", "files field"]
+  },
+  {
+    "fixture": "bombardier-results",
+    "descriptor_id": "known.bombardier.results",
+    "name": "bombardier result list",
+    "repo": "https://github.com/codesenberg/bombardier",
+    "required_substrings": ["metric\tvalue", "requests\t1000"],
+    "parser": "tab-pairs",
+    "input": "metric\tvalue unit\nrequests\t1000 count\nlatency\t12ms p95\nthroughput\t82 req/s\n",
+    "negative": "metric value unit\nrequests 1000 count\n",
+    "analysis_notes": "Modeled bombardier benchmark result output with a generated executable-json parser plugin.",
+    "variants": ["metric header row", "value row", "unit field"]
+  },
+  {
+    "fixture": "sdkman-candidates",
+    "descriptor_id": "known.sdkman.candidates",
+    "name": "sdkman candidate list",
+    "repo": "https://github.com/sdkman/sdkman-cli",
+    "required_substrings": ["candidate\tversion", "java\t21.0.2"],
+    "parser": "tab-pairs",
+    "input": "candidate\tversion state\njava\t21.0.2 installed\ngradle\t8.7 available\nkotlin\t2.0.0 installed\n",
+    "negative": "candidate version state\njava 21.0.2 installed\n",
+    "analysis_notes": "Modeled sdkman candidate output with a generated executable-json parser plugin.",
+    "variants": ["candidate header row", "version row", "state field"]
+  },
+  {
+    "fixture": "blink-hosts",
+    "descriptor_id": "known.blink.hosts",
+    "name": "blink host list",
+    "repo": "https://github.com/blinksh/blink",
+    "required_substrings": ["host\tstate", "prod\tconnected"],
+    "parser": "tab-pairs",
+    "input": "host\tstate user\nprod\tconnected ramiro\nstaging\tidle deploy\nlocal\tconnected dev\n",
+    "negative": "host state user\nprod connected ramiro\n",
+    "analysis_notes": "Modeled blink shell host output with a generated executable-json parser plugin.",
+    "variants": ["host header row", "state row", "user field"]
   }
 ]

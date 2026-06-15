@@ -1,0 +1,10 @@
+id = "known.bombardier.results"
+name = "bombardier result list"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","requests\t1000"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.sdkman.candidates"
+name = "sdkman candidate list"
+priority = 50
+
+[matches]
+required_substrings = ["candidate\tversion","java\t21.0.2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

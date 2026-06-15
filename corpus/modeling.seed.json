@@ -3533,5 +3533,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/pry-sessions",
     "analysis_notes": "Modeled pry session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/massCodeIO/massCode",
+    "descriptor_id": "known.masscode.snippets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/masscode-snippets",
+    "analysis_notes": "Modeled massCode snippet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dunwu/linux-tutorial",
+    "descriptor_id": "known.linux-tutorial.topics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/linux-tutorial-topics",
+    "analysis_notes": "Modeled linux-tutorial topic output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/codesenberg/bombardier",
+    "descriptor_id": "known.bombardier.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bombardier-results",
+    "analysis_notes": "Modeled bombardier benchmark result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sdkman/sdkman-cli",
+    "descriptor_id": "known.sdkman.candidates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sdkman-candidates",
+    "analysis_notes": "Modeled sdkman candidate output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/blinksh/blink",
+    "descriptor_id": "known.blink.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/blink-hosts",
+    "analysis_notes": "Modeled blink shell host output with a generated executable-json parser plugin."
   }
 ]

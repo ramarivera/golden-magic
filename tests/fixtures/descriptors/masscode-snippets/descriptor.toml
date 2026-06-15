@@ -1,0 +1,10 @@
+id = "known.masscode.snippets"
+name = "massCode snippet list"
+priority = 50
+
+[matches]
+required_substrings = ["snippet\tlanguage","parser\tRust"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

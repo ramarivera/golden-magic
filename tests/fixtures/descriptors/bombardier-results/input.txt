@@ -1,0 +1,4 @@
+metric	value unit
+requests	1000 count
+latency	12ms p95
+throughput	82 req/s

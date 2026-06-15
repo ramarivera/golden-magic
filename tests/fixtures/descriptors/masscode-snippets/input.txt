@@ -1,0 +1,4 @@
+snippet	language folder
+parser	Rust golden
+request	HTTP api
+note	Markdown docs

@@ -9088,5 +9088,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/massCodeIO/massCode",
+    "descriptor_id": "known.masscode.snippets",
+    "run_id": "agentic.masscode-snippets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/masscode-snippets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/masscode-snippets/expected.rows.json",
+    "variants": [
+      "snippet header row",
+      "language row",
+      "folder field"
+    ],
+    "transcript": [
+      "selected descriptor known.masscode.snippets for massCode snippet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dunwu/linux-tutorial",
+    "descriptor_id": "known.linux-tutorial.topics",
+    "run_id": "agentic.linux-tutorial-topics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/linux-tutorial-topics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/linux-tutorial-topics/expected.rows.json",
+    "variants": [
+      "topic header row",
+      "state row",
+      "files field"
+    ],
+    "transcript": [
+      "selected descriptor known.linux-tutorial.topics for linux-tutorial topic list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/codesenberg/bombardier",
+    "descriptor_id": "known.bombardier.results",
+    "run_id": "agentic.bombardier-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bombardier-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bombardier-results/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "unit field"
+    ],
+    "transcript": [
+      "selected descriptor known.bombardier.results for bombardier result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sdkman/sdkman-cli",
+    "descriptor_id": "known.sdkman.candidates",
+    "run_id": "agentic.sdkman-candidates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sdkman-candidates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sdkman-candidates/expected.rows.json",
+    "variants": [
+      "candidate header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sdkman.candidates for sdkman candidate list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/blinksh/blink",
+    "descriptor_id": "known.blink.hosts",
+    "run_id": "agentic.blink-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/blink-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/blink-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "state row",
+      "user field"
+    ],
+    "transcript": [
+      "selected descriptor known.blink.hosts for blink host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
