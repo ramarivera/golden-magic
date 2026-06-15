@@ -1,0 +1,18 @@
+[
+  {
+    "name": "metric",
+    "value": "value unit"
+  },
+  {
+    "name": "ping",
+    "value": "12.8 ms"
+  },
+  {
+    "name": "download",
+    "value": "92.4 Mbps"
+  },
+  {
+    "name": "upload",
+    "value": "31.7 Mbps"
+  }
+]

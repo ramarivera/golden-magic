@@ -1,0 +1,2 @@
+image base size
+curl alpine 8MB

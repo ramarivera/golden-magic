@@ -1,0 +1,4 @@
+metric	value unit
+ping	12.8 ms
+download	92.4 Mbps
+upload	31.7 Mbps

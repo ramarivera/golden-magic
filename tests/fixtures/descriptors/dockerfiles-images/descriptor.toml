@@ -1,0 +1,10 @@
+id = "known.dockerfiles.images"
+name = "jessfraz dockerfiles image list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tbase","curl\talpine"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

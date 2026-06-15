@@ -5938,5 +5938,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/idank/explainshell",
+    "descriptor_id": "known.explainshell.matches",
+    "run_id": "agentic.explainshell-matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/explainshell-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/explainshell-matches/expected.rows.json",
+    "variants": [
+      "token header row",
+      "explanation row",
+      "confidence field"
+    ],
+    "transcript": [
+      "selected descriptor known.explainshell.matches for explainshell match list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sivel/speedtest-cli",
+    "descriptor_id": "known.speedtest.results",
+    "run_id": "agentic.speedtest-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/speedtest-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/speedtest-results/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "unit field"
+    ],
+    "transcript": [
+      "selected descriptor known.speedtest.results for speedtest-cli result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mobile-shell/mosh",
+    "descriptor_id": "known.mosh.sessions",
+    "run_id": "agentic.mosh-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mosh-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mosh-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "state row",
+      "latency field"
+    ],
+    "transcript": [
+      "selected descriptor known.mosh.sessions for mosh session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/FormidableLabs/webpack-dashboard",
+    "descriptor_id": "known.webpack-dashboard.builds",
+    "run_id": "agentic.webpack-dashboard-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/webpack-dashboard-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/webpack-dashboard-builds/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "status row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.webpack-dashboard.builds for webpack-dashboard build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jessfraz/dockerfiles",
+    "descriptor_id": "known.dockerfiles.images",
+    "run_id": "agentic.dockerfiles-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dockerfiles-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dockerfiles-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "base row",
+      "size field"
+    ],
+    "transcript": [
+      "selected descriptor known.dockerfiles.images for jessfraz dockerfiles image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

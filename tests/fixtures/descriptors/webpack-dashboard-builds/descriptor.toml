@@ -1,0 +1,10 @@
+id = "known.webpack-dashboard.builds"
+name = "webpack-dashboard build list"
+priority = 50
+
+[matches]
+required_substrings = ["asset\tstatus","main.js\temitted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "asset",
+    "value": "status size"
+  },
+  {
+    "name": "main.js",
+    "value": "emitted 512KB"
+  },
+  {
+    "name": "vendor.js",
+    "value": "emitted 1.8MB"
+  },
+  {
+    "name": "styles.css",
+    "value": "cached 44KB"
+  }
+]

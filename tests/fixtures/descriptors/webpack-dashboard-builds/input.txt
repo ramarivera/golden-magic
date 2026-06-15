@@ -1,0 +1,4 @@
+asset	status size
+main.js	emitted 512KB
+vendor.js	emitted 1.8MB
+styles.css	cached 44KB

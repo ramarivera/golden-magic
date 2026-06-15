@@ -3718,5 +3718,65 @@
     "negative": "command scope args\napp workspace 3\n",
     "analysis_notes": "Modeled LarkSuite CLI command output with a generated executable-json parser plugin.",
     "variants": ["command header row", "scope row", "args field"]
+  },
+  {
+    "fixture": "explainshell-matches",
+    "descriptor_id": "known.explainshell.matches",
+    "name": "explainshell match list",
+    "repo": "https://github.com/idank/explainshell",
+    "required_substrings": ["token\texplanation", "tar\tarchive"],
+    "parser": "tab-pairs",
+    "input": "token\texplanation confidence\ntar\tarchive 0.98\n-xzf\textract-gzip 0.95\nfile.tar.gz\targument 0.89\n",
+    "negative": "token explanation confidence\ntar archive 0.98\n",
+    "analysis_notes": "Modeled explainshell match output with a generated executable-json parser plugin.",
+    "variants": ["token header row", "explanation row", "confidence field"]
+  },
+  {
+    "fixture": "speedtest-results",
+    "descriptor_id": "known.speedtest.results",
+    "name": "speedtest-cli result list",
+    "repo": "https://github.com/sivel/speedtest-cli",
+    "required_substrings": ["metric\tvalue", "download\t92.4"],
+    "parser": "tab-pairs",
+    "input": "metric\tvalue unit\nping\t12.8 ms\ndownload\t92.4 Mbps\nupload\t31.7 Mbps\n",
+    "negative": "metric value unit\ndownload 92.4 Mbps\n",
+    "analysis_notes": "Modeled speedtest-cli result output with a generated executable-json parser plugin.",
+    "variants": ["metric header row", "value row", "unit field"]
+  },
+  {
+    "fixture": "mosh-sessions",
+    "descriptor_id": "known.mosh.sessions",
+    "name": "mosh session list",
+    "repo": "https://github.com/mobile-shell/mosh",
+    "required_substrings": ["session\tstate", "devbox\tconnected"],
+    "parser": "tab-pairs",
+    "input": "session\tstate latency\ndevbox\tconnected 35ms\nstaging\troaming 88ms\noldhost\tdisconnected 0ms\n",
+    "negative": "session state latency\ndevbox connected 35ms\n",
+    "analysis_notes": "Modeled mosh session output with a generated executable-json parser plugin.",
+    "variants": ["session header row", "state row", "latency field"]
+  },
+  {
+    "fixture": "webpack-dashboard-builds",
+    "descriptor_id": "known.webpack-dashboard.builds",
+    "name": "webpack-dashboard build list",
+    "repo": "https://github.com/FormidableLabs/webpack-dashboard",
+    "required_substrings": ["asset\tstatus", "main.js\temitted"],
+    "parser": "tab-pairs",
+    "input": "asset\tstatus size\nmain.js\temitted 512KB\nvendor.js\temitted 1.8MB\nstyles.css\tcached 44KB\n",
+    "negative": "asset status size\nmain.js emitted 512KB\n",
+    "analysis_notes": "Modeled webpack-dashboard build output with a generated executable-json parser plugin.",
+    "variants": ["asset header row", "status row", "size field"]
+  },
+  {
+    "fixture": "dockerfiles-images",
+    "descriptor_id": "known.dockerfiles.images",
+    "name": "jessfraz dockerfiles image list",
+    "repo": "https://github.com/jessfraz/dockerfiles",
+    "required_substrings": ["image\tbase", "curl\talpine"],
+    "parser": "tab-pairs",
+    "input": "image\tbase size\ncurl\talpine 8MB\njq\talpine 11MB\nchrome\tdebian 814MB\n",
+    "negative": "image base size\ncurl alpine 8MB\n",
+    "analysis_notes": "Modeled jessfraz/dockerfiles image output with a generated executable-json parser plugin.",
+    "variants": ["image header row", "base row", "size field"]
   }
 ]

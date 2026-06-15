@@ -1,0 +1,4 @@
+token	explanation confidence
+tar	archive 0.98
+-xzf	extract-gzip 0.95
+file.tar.gz	argument 0.89

@@ -1,0 +1,4 @@
+image	base size
+curl	alpine 8MB
+jq	alpine 11MB
+chrome	debian 814MB

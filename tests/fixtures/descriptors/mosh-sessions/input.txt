@@ -1,0 +1,4 @@
+session	state latency
+devbox	connected 35ms
+staging	roaming 88ms
+oldhost	disconnected 0ms

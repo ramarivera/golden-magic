@@ -2308,5 +2308,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/larksuite-commands",
     "analysis_notes": "Modeled LarkSuite CLI command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/idank/explainshell",
+    "descriptor_id": "known.explainshell.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/explainshell-matches",
+    "analysis_notes": "Modeled explainshell match output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sivel/speedtest-cli",
+    "descriptor_id": "known.speedtest.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/speedtest-results",
+    "analysis_notes": "Modeled speedtest-cli result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mobile-shell/mosh",
+    "descriptor_id": "known.mosh.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mosh-sessions",
+    "analysis_notes": "Modeled mosh session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/FormidableLabs/webpack-dashboard",
+    "descriptor_id": "known.webpack-dashboard.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/webpack-dashboard-builds",
+    "analysis_notes": "Modeled webpack-dashboard build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jessfraz/dockerfiles",
+    "descriptor_id": "known.dockerfiles.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dockerfiles-images",
+    "analysis_notes": "Modeled jessfraz/dockerfiles image output with a generated executable-json parser plugin."
   }
 ]
