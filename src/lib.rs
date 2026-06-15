@@ -14,6 +14,7 @@ const DELIMITED_PIPES: &str = "detect.delimited.pipes";
 const FIXED_WIDTH_GAPS: &str = "detect.fixed-width.gaps";
 const FALLBACK_EMPTY: &str = "fallback.empty";
 const FALLBACK_LINES: &str = "fallback.lines";
+const BACKEND_HEURISTIC: &str = "heuristic";
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct ParseReport {
@@ -51,7 +52,23 @@ pub struct ParseOptions {
     disabled_rules: Vec<String>,
     only_rules: Vec<String>,
     header_mode: HeaderMode,
+    backend: ParserBackendSelection,
     trace_events: Vec<TraceEvent>,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+struct ParserBackendSelection {
+    id: String,
+    explicit: bool,
+}
+
+impl Default for ParserBackendSelection {
+    fn default() -> Self {
+        Self {
+            id: BACKEND_HEURISTIC.to_string(),
+            explicit: false,
+        }
+    }
 }
 
 impl ParseOptions {
@@ -74,6 +91,14 @@ impl ParseOptions {
         self
     }
 
+    pub fn backend(mut self, backend: impl Into<String>) -> Self {
+        self.backend = ParserBackendSelection {
+            id: backend.into(),
+            explicit: true,
+        };
+        self
+    }
+
     pub fn trace_event(mut self, rule_id: &'static str, message: impl Into<String>) -> Self {
         self.trace_events.push(event(rule_id, message));
         self
@@ -89,6 +114,10 @@ impl ParseOptions {
 
     pub fn selected_header_mode(&self) -> HeaderMode {
         self.header_mode
+    }
+
+    pub fn selected_backend(&self) -> &str {
+        &self.backend.id
     }
 
     pub fn configured_trace_events(&self) -> &[TraceEvent] {
@@ -120,6 +149,13 @@ pub fn parse(input: &str) -> ParseReport {
 }
 
 pub fn parse_with_options(input: &str, options: &ParseOptions) -> ParseReport {
+    match options.selected_backend() {
+        BACKEND_HEURISTIC => parse_with_heuristic_backend(input, options),
+        other => unsupported_backend_report(other, options),
+    }
+}
+
+fn parse_with_heuristic_backend(input: &str, options: &ParseOptions) -> ParseReport {
     let lines = significant_lines(input);
     let mut trace = Vec::new();
 
@@ -192,11 +228,18 @@ pub fn known_rule_ids() -> &'static [&'static str] {
 }
 
 pub fn known_backend_ids() -> &'static [&'static str] {
-    &["heuristic"]
+    &[BACKEND_HEURISTIC]
 }
 
 fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
     let mut trace = options.trace_events.clone();
+
+    if options.backend.explicit {
+        trace.push(event(
+            "backend.heuristic",
+            format!("selected {} parser backend", options.selected_backend()),
+        ));
+    }
 
     for rule_id in &options.disabled_rules {
         trace.push(event(
@@ -213,6 +256,25 @@ fn options_trace(options: &ParseOptions) -> Vec<TraceEvent> {
     }
 
     trace
+}
+
+fn unsupported_backend_report(backend: &str, options: &ParseOptions) -> ParseReport {
+    let mut trace = options.trace_events.clone();
+    trace.push(event(
+        "backend.unsupported",
+        format!(
+            "parser backend {backend} is not implemented; implemented backend(s): {}",
+            known_backend_ids().join(", ")
+        ),
+    ));
+
+    ParseReport {
+        kind: ParseKind::Lines,
+        confidence: 0.0,
+        columns: vec!["line".to_string()],
+        rows: Vec::new(),
+        trace,
+    }
 }
 
 fn significant_lines(input: &str) -> Vec<String> {
@@ -522,6 +584,31 @@ mod tests {
                 .iter()
                 .any(|event| event.rule_id == "options.only-rule")
         );
+    }
+
+    #[test]
+    fn explicit_heuristic_backend_traces_backend_selection() {
+        let options = ParseOptions::new().backend(BACKEND_HEURISTIC);
+        let report = parse_with_options("alpha\tbeta\ngamma\tdelta\n", &options);
+
+        assert_eq!(report.kind, ParseKind::Delimited);
+        assert!(
+            report
+                .trace
+                .iter()
+                .any(|event| event.rule_id == "backend.heuristic")
+        );
+    }
+
+    #[test]
+    fn unsupported_backend_reports_diagnostic_without_parsing() {
+        let options = ParseOptions::new().backend("tree-sitter");
+        let report = parse_with_options("alpha\tbeta\ngamma\tdelta\n", &options);
+
+        assert_eq!(report.kind, ParseKind::Lines);
+        assert_eq!(report.confidence, 0.0);
+        assert!(report.rows.is_empty());
+        assert_eq!(report.trace[0].rule_id, "backend.unsupported");
     }
 
     proptest! {

@@ -253,10 +253,7 @@ fn apply_descriptor_backend(
     };
 
     match backend {
-        "heuristic" => Ok(options.trace_event(
-            "backend.heuristic",
-            format!("selected heuristic parser backend from {}", loaded.descriptor.id),
-        )),
+        "heuristic" => Ok(options.backend(backend)),
         other => Err(format!(
             "descriptor {} requests parser backend {other}, but only {} is implemented. See docs/PARSER-BACKENDS.md.",
             loaded.descriptor.id,

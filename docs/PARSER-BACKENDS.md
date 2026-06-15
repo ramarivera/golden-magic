@@ -21,6 +21,8 @@ The next implementation slice should be a narrow backend experiment, not a gener
 3. Prototype one structured output family whose shape is awkward for delimiter or repeated-space parsing.
 4. Keep fallback heuristics as the default path for ordinary CLI tables.
 
+Status: the core now has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic` backend. Tree-sitter remains unimplemented.
+
 ## Why Tree-sitter Fits Some Cases
 
 Tree-sitter is built around generated parsers that return concrete syntax trees. That is useful when Golden Magic needs to preserve nested structure, repeated sections, subcommands, or language-like output where splitting rows loses meaning.
@@ -70,6 +72,12 @@ backend = "heuristic"
 ```
 
 Descriptors that request `tree-sitter` fail validation until the backend exists.
+
+Direct core use can also select the implemented backend:
+
+```rust
+ParseOptions::new().backend("heuristic")
+```
 
 Inspect implemented backend ids with:
 

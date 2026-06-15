@@ -101,6 +101,8 @@ Descriptor authors should treat these as stable:
 
 Adding new matcher fields or parser engines is allowed in future releases, but existing descriptor fields should remain backwards compatible unless a spec explicitly breaks them. `tree-sitter` is reserved as a candidate backend in [`docs/PARSER-BACKENDS.md`](PARSER-BACKENDS.md), but descriptors cannot use it until the backend is implemented.
 
+When a descriptor selects `backend = "heuristic"`, Golden Magic records `backend.heuristic` in trace output before heuristic rule events.
+
 ## Publishing
 
 Publish descriptor packs as plain source files. Keep one descriptor per TOML file when possible, include fixtures beside the descriptor, and pin any external command output used to create fixtures in review notes or tests.
