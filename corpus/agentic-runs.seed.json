@@ -14290,5 +14290,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/onevcat/FengNiao",
+    "descriptor_id": "known.fengniao.resources",
+    "run_id": "agentic.fengniao-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fengniao-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fengniao-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fengniao.resources for FengNiao resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sloria/doitlive",
+    "descriptor_id": "known.doitlive.sessions",
+    "run_id": "agentic.doitlive-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/doitlive-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/doitlive-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "steps row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.doitlive.sessions for doitlive session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nickjvandyke/opencode.nvim",
+    "descriptor_id": "known.opencode-nvim.sessions",
+    "run_id": "agentic.opencode-nvim-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/opencode-nvim-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/opencode-nvim-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "buffer row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.opencode-nvim.sessions for opencode.nvim session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/matt1398/claude-devtools",
+    "descriptor_id": "known.claude-devtools.events",
+    "run_id": "agentic.claude-devtools-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-devtools-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-devtools-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "count row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-devtools.events for claude-devtools event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alecthomas/kingpin",
+    "descriptor_id": "known.kingpin.commands",
+    "run_id": "agentic.kingpin-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kingpin-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kingpin-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "flags row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kingpin.commands for kingpin command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/smallcloudai/refact",
+    "descriptor_id": "known.refact.tasks",
+    "run_id": "agentic.refact-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/refact-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/refact-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.refact.tasks for refact task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/str4d/rage",
+    "descriptor_id": "known.rage.recipients",
+    "run_id": "agentic.rage-recipients.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rage-recipients/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rage-recipients/expected.rows.json",
+    "variants": [
+      "recipient header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rage.recipients for rage recipient list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/orakaro/rainbowstream",
+    "descriptor_id": "known.rainbowstream.tweets",
+    "run_id": "agentic.rainbowstream-tweets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rainbowstream-tweets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rainbowstream-tweets/expected.rows.json",
+    "variants": [
+      "tweet header row",
+      "user row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rainbowstream.tweets for rainbowstream tweet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/charmbracelet/glamour",
+    "descriptor_id": "known.glamour.renders",
+    "run_id": "agentic.glamour-renders.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glamour-renders/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glamour-renders/expected.rows.json",
+    "variants": [
+      "document header row",
+      "style row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.glamour.renders for glamour render list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/railwayapp/nixpacks",
+    "descriptor_id": "known.nixpacks.builds",
+    "run_id": "agentic.nixpacks-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nixpacks-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nixpacks-builds/expected.rows.json",
+    "variants": [
+      "build header row",
+      "provider row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nixpacks.builds for nixpacks build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

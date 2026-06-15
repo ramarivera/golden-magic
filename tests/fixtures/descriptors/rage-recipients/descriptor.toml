@@ -1,0 +1,10 @@
+id = "known.rage.recipients"
+name = "rage recipient list"
+priority = 50
+
+[matches]
+required_substrings = ["recipient\tkind","alice\tage"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

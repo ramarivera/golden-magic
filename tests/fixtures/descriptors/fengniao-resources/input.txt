@@ -1,0 +1,4 @@
+resource	status state
+unused.png	unused removable
+logo.png	used retained
+old.xib	unused removable

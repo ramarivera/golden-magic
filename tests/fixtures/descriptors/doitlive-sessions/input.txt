@@ -1,0 +1,4 @@
+session	steps state
+demo	4 ready
+workshop	8 ready
+old	3 archived

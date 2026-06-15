@@ -1,0 +1,10 @@
+id = "known.claude-devtools.events"
+name = "claude-devtools event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tcount","tool-call\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

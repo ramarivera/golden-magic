@@ -1,0 +1,10 @@
+id = "known.rainbowstream.tweets"
+name = "rainbowstream tweet list"
+priority = 50
+
+[matches]
+required_substrings = ["tweet\tuser","hello\talice"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

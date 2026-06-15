@@ -1,0 +1,18 @@
+[
+  {
+    "name": "resource",
+    "value": "status state"
+  },
+  {
+    "name": "unused.png",
+    "value": "unused removable"
+  },
+  {
+    "name": "logo.png",
+    "value": "used retained"
+  },
+  {
+    "name": "old.xib",
+    "value": "unused removable"
+  }
+]

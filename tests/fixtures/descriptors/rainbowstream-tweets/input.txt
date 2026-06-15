@@ -1,0 +1,4 @@
+tweet	user state
+hello	alice visible
+release	bob visible
+old	carol hidden

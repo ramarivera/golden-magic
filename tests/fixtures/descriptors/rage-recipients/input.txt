@@ -1,0 +1,4 @@
+recipient	kind state
+alice	age valid
+bob	ssh valid
+old	age revoked

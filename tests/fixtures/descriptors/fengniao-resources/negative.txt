@@ -1,0 +1,2 @@
+resource status state
+unused.png unused removable

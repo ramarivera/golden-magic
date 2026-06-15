@@ -1,0 +1,4 @@
+task	status state
+plan	queued pending
+edit	running active
+test	waiting pending

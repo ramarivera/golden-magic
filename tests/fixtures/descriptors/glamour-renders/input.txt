@@ -1,0 +1,4 @@
+document	style state
+README.md	dark rendered
+CHANGELOG.md	light rendered
+notes.md	notok queued

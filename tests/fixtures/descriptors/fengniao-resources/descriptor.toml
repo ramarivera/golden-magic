@@ -1,0 +1,10 @@
+id = "known.fengniao.resources"
+name = "FengNiao resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tstatus","unused.png\tunused"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

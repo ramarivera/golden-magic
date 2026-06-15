@@ -1,0 +1,18 @@
+[
+  {
+    "name": "document",
+    "value": "style state"
+  },
+  {
+    "name": "README.md",
+    "value": "dark rendered"
+  },
+  {
+    "name": "CHANGELOG.md",
+    "value": "light rendered"
+  },
+  {
+    "name": "notes.md",
+    "value": "notok queued"
+  }
+]

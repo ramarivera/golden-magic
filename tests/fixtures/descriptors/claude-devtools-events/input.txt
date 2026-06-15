@@ -1,0 +1,4 @@
+event	count state
+tool-call	12 visible
+token-usage	3 visible
+subagent	2 visible

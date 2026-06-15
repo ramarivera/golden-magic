@@ -1,0 +1,10 @@
+id = "known.nixpacks.builds"
+name = "nixpacks build list"
+priority = 50
+
+[matches]
+required_substrings = ["build\tprovider","web\tnode"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "steps state"
+  },
+  {
+    "name": "demo",
+    "value": "4 ready"
+  },
+  {
+    "name": "workshop",
+    "value": "8 ready"
+  },
+  {
+    "name": "old",
+    "value": "3 archived"
+  }
+]

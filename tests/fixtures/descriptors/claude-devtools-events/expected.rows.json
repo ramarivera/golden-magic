@@ -1,0 +1,18 @@
+[
+  {
+    "name": "event",
+    "value": "count state"
+  },
+  {
+    "name": "tool-call",
+    "value": "12 visible"
+  },
+  {
+    "name": "token-usage",
+    "value": "3 visible"
+  },
+  {
+    "name": "subagent",
+    "value": "2 visible"
+  }
+]

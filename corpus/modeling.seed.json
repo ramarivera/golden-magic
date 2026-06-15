@@ -5556,5 +5556,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/imtui-widgets",
     "analysis_notes": "Modeled ImTui widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/onevcat/FengNiao",
+    "descriptor_id": "known.fengniao.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fengniao-resources",
+    "analysis_notes": "Modeled FengNiao unused-resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sloria/doitlive",
+    "descriptor_id": "known.doitlive.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/doitlive-sessions",
+    "analysis_notes": "Modeled doitlive scripted session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nickjvandyke/opencode.nvim",
+    "descriptor_id": "known.opencode-nvim.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/opencode-nvim-sessions",
+    "analysis_notes": "Modeled opencode.nvim bridge session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/matt1398/claude-devtools",
+    "descriptor_id": "known.claude-devtools.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-devtools-events",
+    "analysis_notes": "Modeled claude-devtools session event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alecthomas/kingpin",
+    "descriptor_id": "known.kingpin.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kingpin-commands",
+    "analysis_notes": "Modeled kingpin command metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/smallcloudai/refact",
+    "descriptor_id": "known.refact.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/refact-tasks",
+    "analysis_notes": "Modeled Refact agent task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/str4d/rage",
+    "descriptor_id": "known.rage.recipients",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rage-recipients",
+    "analysis_notes": "Modeled rage encryption recipient output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/orakaro/rainbowstream",
+    "descriptor_id": "known.rainbowstream.tweets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rainbowstream-tweets",
+    "analysis_notes": "Modeled rainbowstream terminal tweet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/charmbracelet/glamour",
+    "descriptor_id": "known.glamour.renders",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glamour-renders",
+    "analysis_notes": "Modeled glamour markdown render output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/railwayapp/nixpacks",
+    "descriptor_id": "known.nixpacks.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nixpacks-builds",
+    "analysis_notes": "Modeled Nixpacks provider/build output with a generated executable-json parser plugin."
   }
 ]

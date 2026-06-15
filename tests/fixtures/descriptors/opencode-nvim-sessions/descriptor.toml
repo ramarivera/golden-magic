@@ -1,0 +1,10 @@
+id = "known.opencode-nvim.sessions"
+name = "opencode.nvim session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tbuffer","agent\tmain.rs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

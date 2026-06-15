@@ -1,0 +1,10 @@
+id = "known.kingpin.commands"
+name = "kingpin command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tflags","serve\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
