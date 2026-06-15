@@ -325,6 +325,7 @@ fn descriptor_ids(dirs: &[PathBuf]) -> Result<BTreeSet<String>, Box<dyn std::err
         let registry = DescriptorRegistry::load_dir(dir)?;
         reject_unknown_descriptor_backends(&registry)?;
         reject_invalid_tree_sitter_descriptors(&registry)?;
+        reject_invalid_wasm_json_descriptors(&registry)?;
         reject_unknown_descriptor_rules(&registry)?;
         ids.extend(
             registry
@@ -375,6 +376,7 @@ fn descriptor_options(
         let registry = DescriptorRegistry::load_dir(dir)?;
         reject_unknown_descriptor_backends(&registry)?;
         reject_invalid_tree_sitter_descriptors(&registry)?;
+        reject_invalid_wasm_json_descriptors(&registry)?;
         reject_unknown_descriptor_rules(&registry)?;
         let selected = registry.select(input);
         if let Some(loaded) = selected.first() {
@@ -407,6 +409,7 @@ fn validate_descriptor_dirs(dirs: &[PathBuf]) -> Result<(), Box<dyn std::error::
         let registry = DescriptorRegistry::load_dir(dir)?;
         reject_unknown_descriptor_backends(&registry)?;
         reject_invalid_tree_sitter_descriptors(&registry)?;
+        reject_invalid_wasm_json_descriptors(&registry)?;
         reject_unknown_descriptor_rules(&registry)?;
         let count = registry.descriptors().len();
         total += count;
@@ -475,6 +478,25 @@ fn apply_descriptor_backend(
             };
             options = options.executable_plugin(executable);
         }
+        if backend == "wasm-json" {
+            let Some(module) = &loaded.descriptor.parser.module else {
+                return Err(format!(
+                    "descriptor {} uses wasm-json backend but parser.module is missing",
+                    loaded.descriptor.id
+                )
+                .into());
+            };
+            let module = if module.is_absolute() {
+                module.clone()
+            } else {
+                loaded
+                    .path
+                    .parent()
+                    .unwrap_or_else(|| Path::new("."))
+                    .join(module)
+            };
+            options = options.wasm_module(module);
+        }
         Ok(options)
     } else {
         Err(format!(
@@ -542,6 +564,36 @@ fn reject_invalid_tree_sitter_descriptors(
 
     Err(format!(
         "descriptor contains invalid tree-sitter parser configuration(s): {}.",
+        invalid.join("; ")
+    )
+    .into())
+}
+
+fn reject_invalid_wasm_json_descriptors(
+    registry: &DescriptorRegistry,
+) -> Result<(), Box<dyn std::error::Error>> {
+    let invalid: Vec<String> = registry
+        .descriptors()
+        .iter()
+        .filter_map(|loaded| {
+            if descriptor_backend_id(&loaded.descriptor) != Some("wasm-json") {
+                return None;
+            }
+            loaded.descriptor.parser.module.is_none().then(|| {
+                format!(
+                    "{} uses wasm-json backend without parser.module",
+                    loaded.descriptor.id
+                )
+            })
+        })
+        .collect();
+
+    if invalid.is_empty() {
+        return Ok(());
+    }
+
+    Err(format!(
+        "descriptor contains invalid wasm-json parser configuration(s): {}.",
         invalid.join("; ")
     )
     .into())

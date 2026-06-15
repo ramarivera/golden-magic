@@ -1,0 +1,2 @@
+wasm-row: alpha ok
+wasm-row: beta degraded

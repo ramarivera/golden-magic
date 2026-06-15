@@ -10,6 +10,7 @@ use std::path::PathBuf;
 use std::process::{Command, Stdio};
 use std::thread;
 use std::time::{Duration, Instant};
+use wasmi::{Config as WasmConfig, Engine as WasmEngine, Linker as WasmLinker};
 
 pub type Row = BTreeMap<String, String>;
 
@@ -25,6 +26,7 @@ const BACKEND_SECTIONS: &str = "sections";
 const BACKEND_TREE_SITTER: &str = "tree-sitter";
 const BACKEND_TREE_SITTER_RUST: &str = "tree-sitter-rust";
 const BACKEND_EXECUTABLE_JSON: &str = "executable-json";
+const BACKEND_WASM_JSON: &str = "wasm-json";
 const BACKEND_SECTIONS_SELECTED: &str = "backend.sections";
 const BACKEND_SECTIONS_PARSED: &str = "backend.sections.parsed";
 const BACKEND_SECTIONS_MALFORMED: &str = "backend.sections.malformed";
@@ -32,10 +34,17 @@ const BACKEND_TREE_SITTER_RUST_PARSED: &str = "backend.tree-sitter-rust.parsed";
 const BACKEND_TREE_SITTER_RUST_ERROR: &str = "backend.tree-sitter-rust.error";
 const BACKEND_EXECUTABLE_JSON_PARSED: &str = "backend.executable-json.parsed";
 const BACKEND_EXECUTABLE_JSON_ERROR: &str = "backend.executable-json.error";
+const BACKEND_WASM_JSON_PARSED: &str = "backend.wasm-json.parsed";
+const BACKEND_WASM_JSON_ERROR: &str = "backend.wasm-json.error";
 const EXECUTABLE_JSON_PROTOCOL: &str = "golden-magic.executable-json.v1";
 const EXECUTABLE_JSON_TIMEOUT: Duration = Duration::from_secs(2);
 const EXECUTABLE_JSON_MAX_STDOUT: usize = 1024 * 1024;
 const EXECUTABLE_JSON_MAX_STDERR: usize = 64 * 1024;
+const WASM_JSON_PROTOCOL: &str = "golden-magic.wasm-json.v1";
+const WASM_JSON_INPUT_OFFSET: usize = 1024;
+const WASM_JSON_MAX_INPUT: usize = 1024 * 1024;
+const WASM_JSON_MAX_OUTPUT: usize = 1024 * 1024;
+const WASM_JSON_FUEL: u64 = 100_000;
 
 #[derive(Debug, Clone, PartialEq, Serialize, Deserialize)]
 pub struct ParseReport {
@@ -87,6 +96,7 @@ pub struct ParseOptions {
     tree_sitter_grammar: Option<String>,
     tree_sitter_query: Option<PathBuf>,
     executable_plugin: Option<PathBuf>,
+    wasm_module: Option<PathBuf>,
     trace_events: Vec<TraceEvent>,
 }
 
@@ -148,6 +158,11 @@ impl ParseOptions {
         self
     }
 
+    pub fn wasm_module(mut self, path: impl Into<PathBuf>) -> Self {
+        self.wasm_module = Some(path.into());
+        self
+    }
+
     pub fn trace_event(mut self, rule_id: &'static str, message: impl Into<String>) -> Self {
         self.trace_events.push(event(rule_id, message));
         self
@@ -179,6 +194,10 @@ impl ParseOptions {
 
     pub fn selected_executable_plugin(&self) -> Option<&PathBuf> {
         self.executable_plugin.as_ref()
+    }
+
+    pub fn selected_wasm_module(&self) -> Option<&PathBuf> {
+        self.wasm_module.as_ref()
     }
 
     pub fn configured_trace_events(&self) -> &[TraceEvent] {
@@ -216,6 +235,7 @@ pub fn parse_with_options(input: &str, options: &ParseOptions) -> ParseReport {
         BACKEND_TREE_SITTER => parse_with_tree_sitter_backend(input, options),
         BACKEND_TREE_SITTER_RUST => parse_with_tree_sitter_rust_backend(input, options),
         BACKEND_EXECUTABLE_JSON => parse_with_executable_json_backend(input, options),
+        BACKEND_WASM_JSON => parse_with_wasm_json_backend(input, options),
         other => unsupported_backend_report(other, options),
     }
 }
@@ -299,6 +319,7 @@ pub fn known_backend_ids() -> &'static [&'static str] {
         BACKEND_TREE_SITTER,
         BACKEND_TREE_SITTER_RUST,
         BACKEND_EXECUTABLE_JSON,
+        BACKEND_WASM_JSON,
     ]
 }
 
@@ -350,6 +371,7 @@ fn backend_rule_id(backend: &str) -> &'static str {
         BACKEND_TREE_SITTER => "backend.tree-sitter",
         BACKEND_TREE_SITTER_RUST => "backend.tree-sitter-rust",
         BACKEND_EXECUTABLE_JSON => "backend.executable-json",
+        BACKEND_WASM_JSON => "backend.wasm-json",
         _ => "backend.unsupported",
     }
 }
@@ -621,6 +643,126 @@ fn parse_with_executable_json_backend(input: &str, options: &ParseOptions) -> Pa
     ));
 
     plugin_report(rows, 0.78, trace)
+}
+
+fn parse_with_wasm_json_backend(input: &str, options: &ParseOptions) -> ParseReport {
+    let mut trace = options_trace(options);
+    let Some(path) = options.selected_wasm_module() else {
+        trace.push(event(
+            BACKEND_WASM_JSON_ERROR,
+            "wasm-json backend requires a descriptor parser.module path",
+        ));
+        return plugin_report(Vec::new(), 0.0, trace);
+    };
+
+    let rows = match run_wasm_json_plugin(path, input) {
+        Ok(rows) => rows,
+        Err(error) => {
+            trace.push(event(BACKEND_WASM_JSON_ERROR, error));
+            return plugin_report(Vec::new(), 0.0, trace);
+        }
+    };
+
+    trace.push(event(
+        BACKEND_WASM_JSON_PARSED,
+        format!(
+            "wasm module {} emitted {} row(s)",
+            path.display(),
+            rows.len()
+        ),
+    ));
+
+    plugin_report(rows, 0.8, trace)
+}
+
+fn run_wasm_json_plugin(path: &PathBuf, input: &str) -> Result<Vec<Row>, String> {
+    if input.len() > WASM_JSON_MAX_INPUT {
+        return Err(format!(
+            "wasm parser input exceeded limit of {} byte(s)",
+            WASM_JSON_MAX_INPUT
+        ));
+    }
+
+    let bytes = std::fs::read(path)
+        .map_err(|error| format!("failed to read wasm parser {}: {error}", path.display()))?;
+    let mut config = WasmConfig::default();
+    config.consume_fuel(true);
+    let engine = WasmEngine::new(&config);
+    let module = wasmi::Module::new(&engine, &bytes[..])
+        .map_err(|error| format!("failed to compile wasm parser {}: {error}", path.display()))?;
+    let linker = WasmLinker::new(&engine);
+    let mut store = wasmi::Store::new(&engine, ());
+    store
+        .set_fuel(WASM_JSON_FUEL)
+        .map_err(|error| format!("failed to configure wasm fuel: {error}"))?;
+    let instance = linker
+        .instantiate_and_start(&mut store, &module)
+        .map_err(|error| {
+            format!(
+                "failed to instantiate wasm parser {}: {error}",
+                path.display()
+            )
+        })?;
+    let memory = instance
+        .get_memory(&store, "memory")
+        .ok_or_else(|| "wasm parser must export memory named memory".to_string())?;
+    let parse = instance
+        .get_func(&store, "golden_magic_parse")
+        .ok_or_else(|| "wasm parser must export function golden_magic_parse".to_string())?
+        .typed::<(i32, i32), i64>(&store)
+        .map_err(|error| {
+            format!("wasm parser function golden_magic_parse has wrong signature: {error}")
+        })?;
+
+    let input_offset = WASM_JSON_INPUT_OFFSET;
+    let input_end = input_offset + input.len();
+    let memory_len = memory.data(&store).len();
+    if input_end > memory_len {
+        return Err(format!(
+            "wasm parser memory is too small for input: need {input_end} byte(s), memory has {memory_len}"
+        ));
+    }
+    memory.data_mut(&mut store)[input_offset..input_end].copy_from_slice(input.as_bytes());
+
+    let packed = parse
+        .call(&mut store, (input_offset as i32, input.len() as i32))
+        .map_err(|error| format!("wasm parser trapped or exhausted fuel: {error}"))?;
+    let output_offset = ((packed >> 32) & 0xffff_ffff) as usize;
+    let output_len = (packed & 0xffff_ffff) as usize;
+    if output_len > WASM_JSON_MAX_OUTPUT {
+        return Err(format!(
+            "wasm parser output exceeded limit of {} byte(s)",
+            WASM_JSON_MAX_OUTPUT
+        ));
+    }
+    let output_end = output_offset
+        .checked_add(output_len)
+        .ok_or_else(|| "wasm parser output pointer overflowed".to_string())?;
+    let memory = memory.data(&store);
+    if output_end > memory.len() {
+        return Err(format!(
+            "wasm parser output range {output_offset}..{output_end} exceeds memory size {}",
+            memory.len()
+        ));
+    }
+
+    parse_wasm_json_output(&memory[output_offset..output_end])
+}
+
+fn parse_wasm_json_output(bytes: &[u8]) -> Result<Vec<Row>, String> {
+    match serde_json::from_slice::<ExecutableJsonOutput>(bytes) {
+        Ok(ExecutableJsonOutput::Rows(rows)) => Ok(rows),
+        Ok(ExecutableJsonOutput::Envelope { protocol, rows }) => {
+            if protocol == WASM_JSON_PROTOCOL {
+                Ok(rows)
+            } else {
+                Err(format!(
+                    "unsupported wasm-json protocol {protocol}; expected {WASM_JSON_PROTOCOL}"
+                ))
+            }
+        }
+        Err(error) => Err(format!("wasm parser did not emit valid row JSON: {error}")),
+    }
 }
 
 #[derive(Debug)]

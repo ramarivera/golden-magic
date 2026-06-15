@@ -28,10 +28,11 @@ disable_rules = []
 - `name`: human-readable descriptor name.
 - `priority`: higher values are selected first when multiple descriptors match.
 - `matches.required_substrings`: all listed strings must appear in the input.
-- `parser.backend`: parser backend id. Implemented ids are `heuristic`, `sections`, `tree-sitter`, `tree-sitter-rust`, and `executable-json`.
+- `parser.backend`: parser backend id. Implemented ids are `heuristic`, `sections`, `tree-sitter`, `tree-sitter-rust`, `executable-json`, and `wasm-json`.
 - `parser.grammar`: tree-sitter grammar id when `parser.backend = "tree-sitter"`. Currently implemented: `rust`.
 - `parser.query`: optional tree-sitter query file path. Relative paths resolve beside the descriptor file.
 - `parser.executable`: executable parser path when `parser.backend = "executable-json"`. Relative paths resolve beside the descriptor file.
+- `parser.module`: WebAssembly parser module path when `parser.backend = "wasm-json"`. Relative paths resolve beside the descriptor file.
 - `parser.only_rules`: heuristic rule ids to restrict parser selection.
 - `parser.disable_rules`: heuristic rule ids to disable.
 
@@ -49,6 +50,7 @@ Implemented:
 - parse Rust declarations through the `tree-sitter` backend with `grammar = "rust"` and optional descriptor-local query metadata
 - keep `tree-sitter-rust` as a compatibility backend id for the first Rust grammar target
 - launch explicit subprocess parser plugins through the bounded `executable-json` backend
+- load explicit WebAssembly parser plugins through the bounded `wasm-json` backend
 
 CLI integration:
 
@@ -98,6 +100,26 @@ backend = "tree-sitter"
 grammar = "rust"
 query = "declarations.scm"
 ```
+
+WASM parser descriptor example:
+
+```toml
+id = "example.wasm.rows"
+name = "WASM rows"
+
+[matches]
+required_substrings = ["wasm-row:"]
+
+[parser]
+backend = "wasm-json"
+module = "./parser-plugin.wasm"
+```
+
+`wasm-json` modules export `memory` and a function named
+`golden_magic_parse(ptr: i32, len: i32) -> i64`. Golden Magic writes the raw
+input bytes into module memory, calls the function, and interprets the returned
+`i64` as a packed `(offset, length)` pair pointing at a JSON envelope in module
+memory. The expected protocol is `golden-magic.wasm-json.v1`.
 
 Fixture harness:
 

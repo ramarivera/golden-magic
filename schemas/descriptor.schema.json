@@ -42,7 +42,7 @@
       "properties": {
         "backend": {
           "type": "string",
-          "enum": ["heuristic", "sections", "tree-sitter", "tree-sitter-rust", "executable-json"],
+          "enum": ["heuristic", "sections", "tree-sitter", "tree-sitter-rust", "executable-json", "wasm-json"],
           "description": "Parser backend id."
         },
         "grammar": {
@@ -59,6 +59,11 @@
           "type": "string",
           "minLength": 1,
           "description": "Path to an explicit executable parser plugin for executable-json backends. Relative paths resolve beside descriptor.toml."
+        },
+        "module": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Path to a WebAssembly parser module for wasm-json backends. Relative paths resolve beside descriptor.toml."
         },
         "only_rules": {
           "type": "array",

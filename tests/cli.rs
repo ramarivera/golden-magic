@@ -771,6 +771,7 @@ fn cli_lists_known_backend_ids() {
         .success()
         .stdout(predicates::str::contains("heuristic"))
         .stdout(predicates::str::contains("sections"))
+        .stdout(predicates::str::contains("wasm-json"))
         .stdout(predicates::str::contains("executable-json"));
 }
 
@@ -827,6 +828,67 @@ backend = "executable-json"
         .failure()
         .stderr(predicates::str::contains(
             "uses executable-json backend but parser.executable is missing",
+        ));
+}
+
+#[test]
+fn cli_runs_descriptor_selected_wasm_json_backend() {
+    let fixture = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
+        .join("tests/fixtures/descriptors/wasm-json");
+
+    let output = Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--no-default-descriptors")
+        .arg("--descriptor-dir")
+        .arg(&fixture)
+        .arg("--output")
+        .arg("report-json")
+        .write_stdin(fs::read_to_string(fixture.join("input.txt")).expect("fixture input"))
+        .assert()
+        .success()
+        .get_output()
+        .stdout
+        .clone();
+
+    let report: Value = serde_json::from_slice(&output).expect("valid JSON report");
+    assert_eq!(report["kind"], "plugin");
+    assert_eq!(report["rows"][0]["name"], "alpha");
+    assert_eq!(report["rows"][0]["status"], "ok");
+    assert_eq!(report["rows"][1]["name"], "beta");
+    assert_eq!(report["rows"][1]["status"], "degraded");
+    assert!(report["trace"].as_array().unwrap().iter().any(|event| {
+        event["rule_id"] == "backend.wasm-json.parsed"
+            && event["message"]
+                .as_str()
+                .is_some_and(|message| message.contains("emitted 2 row(s)"))
+    }));
+}
+
+#[test]
+fn cli_rejects_wasm_json_descriptor_without_module() {
+    let dir = tempdir().expect("temp dir");
+    fs::write(
+        dir.path().join("missing-module.toml"),
+        r#"
+id = "plugin.missing-module"
+name = "Missing Module"
+priority = 10
+[matches]
+required_substrings = ["wasm-row:"]
+[parser]
+backend = "wasm-json"
+"#,
+    )
+    .expect("write descriptor");
+
+    Command::cargo_bin("golden-magic")
+        .expect("binary exists")
+        .arg("--validate-descriptor-dir")
+        .arg(dir.path())
+        .assert()
+        .failure()
+        .stderr(predicates::str::contains(
+            "uses wasm-json backend without parser.module",
         ));
 }
 

@@ -122,6 +122,25 @@ impl DescriptorFixture {
                 )
             });
         }
+        if let Some(module) = &loaded.descriptor.parser.module
+            && module.is_relative()
+        {
+            let source_module = self.path.join(module);
+            let target_module = dir.path().join(module);
+            if let Some(parent) = target_module.parent() {
+                fs::create_dir_all(parent).unwrap_or_else(|error| {
+                    panic!("fixture {:?} module parent copy failed: {error}", self.path)
+                });
+            }
+            fs::copy(&source_module, &target_module).unwrap_or_else(|error| {
+                panic!(
+                    "fixture {:?} module copy failed from {} to {}: {error}",
+                    self.path,
+                    source_module.display(),
+                    target_module.display()
+                )
+            });
+        }
         let registry = DescriptorRegistry::load_dir(dir.path())
             .unwrap_or_else(|error| panic!("fixture {:?} registry failed: {error}", self.path));
 
@@ -194,6 +213,9 @@ pub fn parse_options_from_descriptor(descriptor: &Descriptor) -> ParseOptions {
     if let Some(executable) = &descriptor.parser.executable {
         options = options.executable_plugin(executable);
     }
+    if let Some(module) = &descriptor.parser.module {
+        options = options.wasm_module(module);
+    }
     for rule in &descriptor.parser.only_rules {
         options = options.only_rule(rule);
     }
@@ -226,6 +248,17 @@ pub fn parse_options_from_loaded_descriptor(loaded: &LoadedDescriptor) -> ParseO
                 .parent()
                 .unwrap_or_else(|| Path::new("."))
                 .join(query),
+        );
+    }
+    if let Some(module) = &loaded.descriptor.parser.module
+        && module.is_relative()
+    {
+        options = options.wasm_module(
+            loaded
+                .path
+                .parent()
+                .unwrap_or_else(|| Path::new("."))
+                .join(module),
         );
     }
 

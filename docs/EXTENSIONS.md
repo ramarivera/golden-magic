@@ -76,24 +76,29 @@ Subprocess extensions should:
 
 Subprocess extensions isolate crashes better than in-process native libraries and work across languages without forcing Rust ABI stability.
 
-## Future Boundary: WASM/WASI
+## Supported Now: WASM Parser Plugins
 
-WASM/WASI is the preferred future path for sandboxable executable extensions.
+WASM is the preferred executable extension path when a descriptor needs code but
+should not load native libraries into the Golden Magic process. Golden Magic
+implements this as the descriptor-selected `wasm-json` backend.
 
-A WASM extension design must specify:
+```toml
+[parser]
+backend = "wasm-json"
+module = "./parser-plugin.wasm"
+```
 
-- host imports and denied capabilities
-- filesystem access policy
-- network access policy
-- memory and fuel limits
-- deterministic input/output protocol
-- component versioning
-- how descriptors bind to WASM modules
-- test fixtures and compatibility gates
+The v1 ABI is intentionally small:
 
-WASM is not implemented yet. It remains the preferred sandboxable executable
-plugin research direction because it offers a clearer sandbox story than loading
-native dylibs.
+- export `memory`
+- export `golden_magic_parse(ptr: i32, len: i32) -> i64`
+- receive raw input bytes at `(ptr, len)`
+- return an `i64` whose high 32 bits are the JSON output offset and whose low
+  32 bits are the JSON output length
+- emit a `golden-magic.wasm-json.v1` JSON envelope from that output range
+
+The host provides no imports, enables fuel metering, caps input and output at
+1 MiB each, and loads only descriptor-declared module paths.
 
 ## Forbidden Until Review: Native Runtime Loading
 
@@ -125,6 +130,6 @@ Until those answers exist in implemented, tested form, native loading is not a G
 
 - Descriptor packs: implemented substrate and fixture harness.
 - Descriptor-driven Nix manifests: implemented and live-verified through `nixos/nix:latest`; host runs still require Nix on `PATH`.
-- Subprocess extensions: designed here, not implemented.
-- WASM/WASI extensions: design direction only, not implemented.
+- Subprocess extensions: implemented through `executable-json`.
+- WASM parser plugins: implemented through `wasm-json`.
 - Native runtime loading: explicitly rejected by [`docs/NATIVE-RUNTIME-REVIEW.md`](NATIVE-RUNTIME-REVIEW.md) until separate approval and acceptance gates are satisfied.

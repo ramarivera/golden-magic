@@ -36,6 +36,8 @@ pub struct ParserHint {
     #[serde(default)]
     pub executable: Option<PathBuf>,
     #[serde(default)]
+    pub module: Option<PathBuf>,
+    #[serde(default)]
     pub only_rules: Vec<String>,
     #[serde(default)]
     pub disable_rules: Vec<String>,

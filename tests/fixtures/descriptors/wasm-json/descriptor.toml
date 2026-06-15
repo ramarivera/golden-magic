@@ -1,0 +1,10 @@
+id = "known.wasm-json.demo"
+name = "WASM JSON demo"
+priority = 70
+
+[matches]
+required_substrings = ["wasm-row:"]
+
+[parser]
+backend = "wasm-json"
+module = "./parser-plugin.wat"

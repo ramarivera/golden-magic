@@ -21,7 +21,7 @@ The implemented slice is a narrow backend experiment, not a general grammar engi
 3. The `sections` backend prototypes one structured output family whose shape is awkward for delimiter or repeated-space parsing.
 4. Fallback heuristics remain the default path for ordinary CLI tables.
 
-Status: the core has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic`, `sections`, `tree-sitter`, `tree-sitter-rust`, and `executable-json` backends.
+Status: the core has an explicit parser backend selection path through `ParseOptions`, and descriptors can select the implemented `heuristic`, `sections`, `tree-sitter`, `tree-sitter-rust`, `executable-json`, and `wasm-json` backends.
 
 ## Why Tree-sitter Fits Some Cases
 
@@ -48,7 +48,7 @@ The evidence:
 - Official tree-sitter docs frame it as a parser generator plus incremental parsing library that produces concrete syntax trees for source files. Golden Magic's dominant inputs are one-shot CLI output streams, not editable source files.
 - Rust tree-sitter usage requires the `tree-sitter` crate plus a language grammar crate such as `tree-sitter-rust`; this dependency surface is now explicit in `Cargo.toml`.
 - Tree-sitter parser authoring uses generated grammars from `grammar.js`. The authoring docs call out a real grammar development workflow, including grammar DSL, parser writing, tests, and publishing. That is heavier than the current descriptor-pack SDK.
-- The current repo has grammar-capable non-default backends: `sections` for section/key-value blocks, `tree-sitter` with `grammar = "rust"` for Rust syntax declaration extraction, and `executable-json` for bounded subprocess parser plugins.
+- The current repo has grammar-capable non-default backends: `sections` for section/key-value blocks, `tree-sitter` with `grammar = "rust"` for Rust syntax declaration extraction, `executable-json` for bounded subprocess parser plugins, and `wasm-json` for bounded WebAssembly parser plugins.
 
 New tree-sitter grammar targets should still require a named input family, fixtures that cannot be handled by `heuristic` or `sections`, and explicit approval to add the generated grammar package.
 
@@ -128,6 +128,22 @@ to stdin, and expects stdout to be a `golden-magic.executable-json.v1` envelope
 with a `rows` array. Relative executable paths resolve beside the descriptor
 file. The host enforces a 2 second timeout and a 1 MiB stdout cap.
 
+and:
+
+```toml
+[parser]
+backend = "wasm-json"
+module = "./parser-plugin.wasm"
+```
+
+`wasm-json` loads an explicit WebAssembly module with `wasmi`. The module must
+export `memory` and `golden_magic_parse(ptr: i32, len: i32) -> i64`. Golden
+Magic writes input bytes into memory, calls that export, and reads a
+`golden-magic.wasm-json.v1` JSON envelope from the returned packed
+`(offset, length)` range. The host uses no imports, enables fuel metering,
+caps input/output at 1 MiB each, and reports traps or protocol mismatches as
+trace diagnostics.
+
 Direct core use can also select the implemented backend:
 
 ```rust
@@ -138,6 +154,9 @@ ParseOptions::new().backend("tree-sitter-rust")
 ParseOptions::new()
     .backend("executable-json")
     .executable_plugin("./parser-plugin")
+ParseOptions::new()
+    .backend("wasm-json")
+    .wasm_module("./parser-plugin.wasm")
 ```
 
 Inspect implemented backend ids with:

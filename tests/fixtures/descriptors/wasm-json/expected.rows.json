@@ -1,0 +1,10 @@
+[
+  {
+    "name": "alpha",
+    "status": "ok"
+  },
+  {
+    "name": "beta",
+    "status": "degraded"
+  }
+]
