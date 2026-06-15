@@ -1,0 +1,18 @@
+[
+  {
+    "name": "result",
+    "value": "file state"
+  },
+  {
+    "name": "LineLength",
+    "value": "src/main.py open"
+  },
+  {
+    "name": "UnusedImport",
+    "value": "src/app.py fixed"
+  },
+  {
+    "name": "Format",
+    "value": "tests/test_app.py open"
+  }
+]

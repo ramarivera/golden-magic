@@ -1,0 +1,10 @@
+id = "known.ouch.archives"
+name = "ouch archive list"
+priority = 50
+
+[matches]
+required_substrings = ["archive\tformat","logs.tar.gz\ttar.gz"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+slide	format state
+deck.md	pdf exported
+notes.md	html exported
+draft.md	pptx queued

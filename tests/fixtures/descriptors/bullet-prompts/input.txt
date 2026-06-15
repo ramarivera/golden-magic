@@ -1,0 +1,4 @@
+prompt	kind state
+confirm	boolean ready
+choice	select ready
+input	text ready

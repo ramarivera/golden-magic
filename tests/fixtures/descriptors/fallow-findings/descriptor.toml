@@ -1,0 +1,10 @@
+id = "known.fallow.findings"
+name = "fallow finding list"
+priority = 50
+
+[matches]
+required_substrings = ["finding\tfile","unused-export\tsrc/api.ts"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.rsync-time-backup.snapshots"
+name = "rsync-time-backup snapshot list"
+priority = 50
+
+[matches]
+required_substrings = ["snapshot\tfiles","2026-06-15\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

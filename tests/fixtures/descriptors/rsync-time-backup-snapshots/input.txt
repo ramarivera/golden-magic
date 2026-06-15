@@ -1,0 +1,4 @@
+snapshot	files state
+2026-06-15	120 complete
+2026-06-14	118 complete
+2026-06-13	116 pruned

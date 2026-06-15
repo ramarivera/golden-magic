@@ -1,0 +1,2 @@
+widget kind state
+window container active

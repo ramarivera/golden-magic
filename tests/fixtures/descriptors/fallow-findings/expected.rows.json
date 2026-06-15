@@ -1,0 +1,18 @@
+[
+  {
+    "name": "finding",
+    "value": "file state"
+  },
+  {
+    "name": "unused-export",
+    "value": "src/api.ts open"
+  },
+  {
+    "name": "unused-file",
+    "value": "src/old.ts open"
+  },
+  {
+    "name": "ignored",
+    "value": "tests/mock.ts suppressed"
+  }
+]

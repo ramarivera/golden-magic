@@ -1,0 +1,4 @@
+archive	format state
+logs.tar.gz	tar.gz compressed
+release.zip	zip compressed
+backup.7z	7z extracted

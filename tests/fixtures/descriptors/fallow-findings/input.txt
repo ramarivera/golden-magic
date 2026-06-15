@@ -1,0 +1,4 @@
+finding	file state
+unused-export	src/api.ts open
+unused-file	src/old.ts open
+ignored	tests/mock.ts suppressed

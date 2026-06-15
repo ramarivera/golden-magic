@@ -1,0 +1,4 @@
+request	method state
+login	POST saved
+users	GET saved
+health	GET archived

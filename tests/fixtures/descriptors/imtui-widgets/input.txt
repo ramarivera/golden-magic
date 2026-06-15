@@ -1,0 +1,4 @@
+widget	kind state
+window	container active
+button	control active
+log	view passive

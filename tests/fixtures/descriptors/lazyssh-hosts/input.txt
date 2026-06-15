@@ -1,0 +1,4 @@
+host	user state
+prod	root connected
+stage	deploy saved
+lab	ramiro offline

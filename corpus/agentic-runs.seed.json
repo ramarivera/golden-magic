@@ -14110,5 +14110,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Julien-cpsn/ATAC",
+    "descriptor_id": "known.atac.requests",
+    "run_id": "agentic.atac-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/atac-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/atac-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.atac.requests for ATAC request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/marp-team/marp-cli",
+    "descriptor_id": "known.marp-cli.slides",
+    "run_id": "agentic.marp-cli-slides.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/marp-cli-slides/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/marp-cli-slides/expected.rows.json",
+    "variants": [
+      "slide header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.marp-cli.slides for marp-cli slide list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fallow-rs/fallow",
+    "descriptor_id": "known.fallow.findings",
+    "run_id": "agentic.fallow-findings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fallow-findings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fallow-findings/expected.rows.json",
+    "variants": [
+      "finding header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fallow.findings for fallow finding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ouch-org/ouch",
+    "descriptor_id": "known.ouch.archives",
+    "run_id": "agentic.ouch-archives.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ouch-archives/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ouch-archives/expected.rows.json",
+    "variants": [
+      "archive header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ouch.archives for ouch archive list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bchao1/bullet",
+    "descriptor_id": "known.bullet.prompts",
+    "run_id": "agentic.bullet-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bullet-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bullet-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bullet.prompts for bullet prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/antonmedv/walk",
+    "descriptor_id": "known.walk.entries",
+    "run_id": "agentic.walk-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/walk-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/walk-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.walk.entries for walk entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/laurent22/rsync-time-backup",
+    "descriptor_id": "known.rsync-time-backup.snapshots",
+    "run_id": "agentic.rsync-time-backup-snapshots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rsync-time-backup-snapshots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rsync-time-backup-snapshots/expected.rows.json",
+    "variants": [
+      "snapshot header row",
+      "files row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rsync-time-backup.snapshots for rsync-time-backup snapshot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/coala/coala",
+    "descriptor_id": "known.coala.results",
+    "run_id": "agentic.coala-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/coala-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/coala-results/expected.rows.json",
+    "variants": [
+      "result header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.coala.results for coala result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Adembc/lazyssh",
+    "descriptor_id": "known.lazyssh.hosts",
+    "run_id": "agentic.lazyssh-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lazyssh-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lazyssh-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "user row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lazyssh.hosts for lazyssh host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ggerganov/imtui",
+    "descriptor_id": "known.imtui.widgets",
+    "run_id": "agentic.imtui-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/imtui-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/imtui-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.imtui.widgets for ImTui widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

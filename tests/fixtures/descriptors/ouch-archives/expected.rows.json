@@ -1,0 +1,18 @@
+[
+  {
+    "name": "archive",
+    "value": "format state"
+  },
+  {
+    "name": "logs.tar.gz",
+    "value": "tar.gz compressed"
+  },
+  {
+    "name": "release.zip",
+    "value": "zip compressed"
+  },
+  {
+    "name": "backup.7z",
+    "value": "7z extracted"
+  }
+]

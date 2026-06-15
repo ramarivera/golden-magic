@@ -1,0 +1,18 @@
+[
+  {
+    "name": "entry",
+    "value": "kind state"
+  },
+  {
+    "name": "src",
+    "value": "directory selected"
+  },
+  {
+    "name": "README.md",
+    "value": "file visible"
+  },
+  {
+    "name": "dist",
+    "value": "directory hidden"
+  }
+]

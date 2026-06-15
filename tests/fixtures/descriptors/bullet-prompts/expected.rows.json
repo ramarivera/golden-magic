@@ -1,0 +1,18 @@
+[
+  {
+    "name": "prompt",
+    "value": "kind state"
+  },
+  {
+    "name": "confirm",
+    "value": "boolean ready"
+  },
+  {
+    "name": "choice",
+    "value": "select ready"
+  },
+  {
+    "name": "input",
+    "value": "text ready"
+  }
+]

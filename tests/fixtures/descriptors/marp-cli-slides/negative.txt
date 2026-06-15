@@ -1,0 +1,2 @@
+slide format state
+deck.md pdf exported

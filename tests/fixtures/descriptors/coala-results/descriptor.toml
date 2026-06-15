@@ -1,0 +1,10 @@
+id = "known.coala.results"
+name = "coala result list"
+priority = 50
+
+[matches]
+required_substrings = ["result\tfile","LineLength\tsrc/main.py"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -5486,5 +5486,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/curlie-requests",
     "analysis_notes": "Modeled curlie request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Julien-cpsn/ATAC",
+    "descriptor_id": "known.atac.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/atac-requests",
+    "analysis_notes": "Modeled ATAC API request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/marp-team/marp-cli",
+    "descriptor_id": "known.marp-cli.slides",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/marp-cli-slides",
+    "analysis_notes": "Modeled marp-cli conversion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fallow-rs/fallow",
+    "descriptor_id": "known.fallow.findings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fallow-findings",
+    "analysis_notes": "Modeled fallow codebase finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ouch-org/ouch",
+    "descriptor_id": "known.ouch.archives",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ouch-archives",
+    "analysis_notes": "Modeled ouch archive operation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bchao1/bullet",
+    "descriptor_id": "known.bullet.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bullet-prompts",
+    "analysis_notes": "Modeled bullet interactive prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/antonmedv/walk",
+    "descriptor_id": "known.walk.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/walk-entries",
+    "analysis_notes": "Modeled walk file-manager entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/laurent22/rsync-time-backup",
+    "descriptor_id": "known.rsync-time-backup.snapshots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rsync-time-backup-snapshots",
+    "analysis_notes": "Modeled rsync-time-backup snapshot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/coala/coala",
+    "descriptor_id": "known.coala.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/coala-results",
+    "analysis_notes": "Modeled coala lint result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Adembc/lazyssh",
+    "descriptor_id": "known.lazyssh.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lazyssh-hosts",
+    "analysis_notes": "Modeled lazyssh host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ggerganov/imtui",
+    "descriptor_id": "known.imtui.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/imtui-widgets",
+    "analysis_notes": "Modeled ImTui widget output with a generated executable-json parser plugin."
   }
 ]
