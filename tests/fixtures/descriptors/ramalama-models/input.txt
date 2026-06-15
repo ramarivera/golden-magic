@@ -1,0 +1,4 @@
+model	runtime state
+llama	podman ready
+mistral	docker ready
+old	unknown missing

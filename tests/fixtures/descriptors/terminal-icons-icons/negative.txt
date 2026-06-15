@@ -1,0 +1,2 @@
+icon extension state
+rust rs enabled

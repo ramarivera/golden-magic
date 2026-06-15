@@ -1,0 +1,2 @@
+tab url state
+main https://example.test open

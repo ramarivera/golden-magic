@@ -1,0 +1,4 @@
+section	status state
+install	generated ready
+usage	generated ready
+old	missing skipped

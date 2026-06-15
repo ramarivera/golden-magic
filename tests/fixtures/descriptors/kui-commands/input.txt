@@ -1,0 +1,4 @@
+command	plugin state
+kubectl	kubernetes active
+helm	charts active
+old	legacy hidden

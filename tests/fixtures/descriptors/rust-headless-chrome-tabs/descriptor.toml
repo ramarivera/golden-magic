@@ -1,0 +1,10 @@
+id = "known.rust-headless-chrome.tabs"
+name = "rust-headless-chrome tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\turl","main\thttps://example.test"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+command plugin state
+kubectl kubernetes active

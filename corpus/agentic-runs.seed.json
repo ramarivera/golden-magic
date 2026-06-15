@@ -16630,5 +16630,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/eli64s/readme-ai",
+    "descriptor_id": "known.readme-ai.sections",
+    "run_id": "agentic.readme-ai-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/readme-ai-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/readme-ai-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.readme-ai.sections for readme-ai section list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rust-headless-chrome/rust-headless-chrome",
+    "descriptor_id": "known.rust-headless-chrome.tabs",
+    "run_id": "agentic.rust-headless-chrome-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rust-headless-chrome-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rust-headless-chrome-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "url row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rust-headless-chrome.tabs for rust-headless-chrome tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kejilion/sh",
+    "descriptor_id": "known.kejilion-sh.scripts",
+    "run_id": "agentic.kejilion-sh-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kejilion-sh-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kejilion-sh-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kejilion-sh.scripts for kejilion shell script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/googlearchive/chromedeveditor",
+    "descriptor_id": "known.chrome-dev-editor.projects",
+    "run_id": "agentic.chrome-dev-editor-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chrome-dev-editor-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chrome-dev-editor-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chrome-dev-editor.projects for Chrome Dev Editor project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/devblackops/Terminal-Icons",
+    "descriptor_id": "known.terminal-icons.icons",
+    "run_id": "agentic.terminal-icons-icons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminal-icons-icons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminal-icons-icons/expected.rows.json",
+    "variants": [
+      "icon header row",
+      "extension row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminal-icons.icons for Terminal-Icons icon list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kubernetes-retired/kui",
+    "descriptor_id": "known.kui.commands",
+    "run_id": "agentic.kui-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kui-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kui-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "plugin row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kui.commands for Kui command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/asciinema/asciinema-player",
+    "descriptor_id": "known.asciinema-player.recordings",
+    "run_id": "agentic.asciinema-player-recordings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asciinema-player-recordings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asciinema-player-recordings/expected.rows.json",
+    "variants": [
+      "recording header row",
+      "duration row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.asciinema-player.recordings for asciinema-player recording list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pankod/superplate",
+    "descriptor_id": "known.superplate.templates",
+    "run_id": "agentic.superplate-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/superplate-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/superplate-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "framework row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.superplate.templates for superplate template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/containers/ramalama",
+    "descriptor_id": "known.ramalama.models",
+    "run_id": "agentic.ramalama-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ramalama-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ramalama-models/expected.rows.json",
+    "variants": [
+      "model header row",
+      "runtime row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ramalama.models for RamaLama model list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/justjanne/powerline-go",
+    "descriptor_id": "known.powerline-go.segments",
+    "run_id": "agentic.powerline-go-segments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/powerline-go-segments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/powerline-go-segments/expected.rows.json",
+    "variants": [
+      "segment header row",
+      "module row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.powerline-go.segments for powerline-go segment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

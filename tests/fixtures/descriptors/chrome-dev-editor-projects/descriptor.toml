@@ -1,0 +1,10 @@
+id = "known.chrome-dev-editor.projects"
+name = "Chrome Dev Editor project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\ttype","app\tchrome"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

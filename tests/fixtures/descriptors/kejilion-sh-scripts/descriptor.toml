@@ -1,0 +1,10 @@
+id = "known.kejilion-sh.scripts"
+name = "kejilion shell script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tcategory","install.sh\tsetup"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

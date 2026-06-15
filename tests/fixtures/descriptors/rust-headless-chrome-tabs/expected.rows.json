@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tab",
+    "value": "url state"
+  },
+  {
+    "name": "main",
+    "value": "https://example.test open"
+  },
+  {
+    "name": "worker",
+    "value": "about:blank open"
+  },
+  {
+    "name": "old",
+    "value": "chrome://crash closed"
+  }
+]

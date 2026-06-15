@@ -1,0 +1,10 @@
+id = "known.kui.commands"
+name = "Kui command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tplugin","kubectl\tkubernetes"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

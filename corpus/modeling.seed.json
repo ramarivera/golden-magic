@@ -6466,5 +6466,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/lamp-services",
     "analysis_notes": "Modeled LAMP installer service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/eli64s/readme-ai",
+    "descriptor_id": "known.readme-ai.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/readme-ai-sections",
+    "analysis_notes": "Modeled readme-ai generated section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rust-headless-chrome/rust-headless-chrome",
+    "descriptor_id": "known.rust-headless-chrome.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rust-headless-chrome-tabs",
+    "analysis_notes": "Modeled rust-headless-chrome browser tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kejilion/sh",
+    "descriptor_id": "known.kejilion-sh.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kejilion-sh-scripts",
+    "analysis_notes": "Modeled kejilion shell script catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/googlearchive/chromedeveditor",
+    "descriptor_id": "known.chrome-dev-editor.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chrome-dev-editor-projects",
+    "analysis_notes": "Modeled Chrome Dev Editor project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/devblackops/Terminal-Icons",
+    "descriptor_id": "known.terminal-icons.icons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminal-icons-icons",
+    "analysis_notes": "Modeled Terminal-Icons extension mapping output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kubernetes-retired/kui",
+    "descriptor_id": "known.kui.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kui-commands",
+    "analysis_notes": "Modeled Kui command registry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/asciinema/asciinema-player",
+    "descriptor_id": "known.asciinema-player.recordings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asciinema-player-recordings",
+    "analysis_notes": "Modeled asciinema-player recording output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pankod/superplate",
+    "descriptor_id": "known.superplate.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/superplate-templates",
+    "analysis_notes": "Modeled superplate template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/containers/ramalama",
+    "descriptor_id": "known.ramalama.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ramalama-models",
+    "analysis_notes": "Modeled RamaLama model runtime output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/justjanne/powerline-go",
+    "descriptor_id": "known.powerline-go.segments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/powerline-go-segments",
+    "analysis_notes": "Modeled powerline-go segment output with a generated executable-json parser plugin."
   }
 ]

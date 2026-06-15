@@ -1,0 +1,2 @@
+segment module state
+git vcs enabled

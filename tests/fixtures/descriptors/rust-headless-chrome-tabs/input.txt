@@ -1,0 +1,4 @@
+tab	url state
+main	https://example.test open
+worker	about:blank open
+old	chrome://crash closed

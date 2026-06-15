@@ -1,0 +1,10 @@
+id = "known.terminal-icons.icons"
+name = "Terminal-Icons icon list"
+priority = 50
+
+[matches]
+required_substrings = ["icon\textension","rust\trs"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

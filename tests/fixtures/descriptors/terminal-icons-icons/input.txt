@@ -1,0 +1,4 @@
+icon	extension state
+rust	rs enabled
+powershell	ps1 enabled
+old	txt disabled

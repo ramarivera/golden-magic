@@ -1,0 +1,2 @@
+section status state
+install generated ready

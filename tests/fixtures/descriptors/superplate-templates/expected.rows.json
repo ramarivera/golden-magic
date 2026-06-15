@@ -1,0 +1,18 @@
+[
+  {
+    "name": "template",
+    "value": "framework state"
+  },
+  {
+    "name": "admin",
+    "value": "react available"
+  },
+  {
+    "name": "api",
+    "value": "nest available"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

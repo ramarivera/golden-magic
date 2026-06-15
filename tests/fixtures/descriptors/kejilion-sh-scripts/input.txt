@@ -1,0 +1,4 @@
+script	category state
+install.sh	setup ready
+backup.sh	ops ready
+old.sh	legacy disabled

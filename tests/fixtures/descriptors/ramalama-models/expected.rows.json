@@ -1,0 +1,18 @@
+[
+  {
+    "name": "model",
+    "value": "runtime state"
+  },
+  {
+    "name": "llama",
+    "value": "podman ready"
+  },
+  {
+    "name": "mistral",
+    "value": "docker ready"
+  },
+  {
+    "name": "old",
+    "value": "unknown missing"
+  }
+]

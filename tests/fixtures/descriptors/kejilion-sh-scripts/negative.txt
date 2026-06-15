@@ -1,0 +1,2 @@
+script category state
+install.sh setup ready

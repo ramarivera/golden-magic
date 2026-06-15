@@ -1,0 +1,18 @@
+[
+  {
+    "name": "recording",
+    "value": "duration state"
+  },
+  {
+    "name": "demo.cast",
+    "value": "42s playable"
+  },
+  {
+    "name": "intro.cast",
+    "value": "12s playable"
+  },
+  {
+    "name": "old.cast",
+    "value": "99s broken"
+  }
+]

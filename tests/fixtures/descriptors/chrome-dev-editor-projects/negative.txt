@@ -1,0 +1,2 @@
+project type state
+app chrome open

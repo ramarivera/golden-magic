@@ -1,0 +1,18 @@
+[
+  {
+    "name": "script",
+    "value": "category state"
+  },
+  {
+    "name": "install.sh",
+    "value": "setup ready"
+  },
+  {
+    "name": "backup.sh",
+    "value": "ops ready"
+  },
+  {
+    "name": "old.sh",
+    "value": "legacy disabled"
+  }
+]
