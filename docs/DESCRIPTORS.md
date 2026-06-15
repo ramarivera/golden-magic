@@ -6,7 +6,7 @@ The descriptor system is intentionally data-first. Native runtime plugin loading
 
 ## Format
 
-Descriptors are TOML files loaded recursively from a directory.
+Descriptors are TOML files loaded recursively from a directory. `nix.toml` is reserved for optional fixture metadata and is ignored by descriptor loading.
 
 ```toml
 id = "example.table"

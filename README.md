@@ -170,6 +170,7 @@ See:
 - [`docs/NIX-FIXTURES.md`](docs/NIX-FIXTURES.md)
 - [`docs/DEBUG-INSTRUMENTATION.md`](docs/DEBUG-INSTRUMENTATION.md)
 - [`docs/PRIOR-ART.md`](docs/PRIOR-ART.md)
+- [`docs/PARSER-BACKENDS.md`](docs/PARSER-BACKENDS.md)
 - [`docs/EXTENSIONS.md`](docs/EXTENSIONS.md)
 - [`AGENTS.md`](AGENTS.md)
 

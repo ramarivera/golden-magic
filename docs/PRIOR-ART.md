@@ -20,7 +20,7 @@ The Rust [`csv` crate](https://docs.rs/csv) is also mature, fast, Serde-friendly
 
 [`nom`](https://docs.rs/nom) is a strong fit for byte/string-level parsers where Golden Magic needs explicit grammar rules, streaming behavior, and precise failures. It is parser-combinator oriented, so it fits a future "grammar engine" only if the engine exposes a curated set of composable primitives rather than arbitrary user-authored Rust.
 
-[Tree-sitter](https://tree-sitter.github.io/) is a parser generator and incremental parsing library. Its strength is concrete syntax trees for languages and editors, not one-shot hostile CLI table extraction. It is useful prior art for stable grammars and error nodes, but it is probably too heavy as the first Golden Magic grammar backend.
+[Tree-sitter](https://tree-sitter.github.io/) is a parser generator and incremental parsing library. Its strength is concrete syntax trees for languages and editors, not one-shot hostile CLI table extraction. It is too heavy as the default parser for generic table-ish CLI text, but it is the first serious candidate for a future backend when Golden Magic needs nested syntax or queryable parse trees. See [`docs/PARSER-BACKENDS.md`](PARSER-BACKENDS.md).
 
 Miller (`mlr`) is an important comparator for command-line tabular data. Its docs describe it as a tool for querying, shaping, and reformatting CSV, TSV, JSON, JSON Lines, YAML, and related formats. Golden Magic should not try to become Miller; the narrower mission is "infer Nu-shaped rows from hostile text when upstream JSON/native parsers are absent." See [Miller docs](https://miller.readthedocs.io/).
 
@@ -36,12 +36,12 @@ WebAssembly is stronger prior art for untrusted or semi-trusted extension bounda
 - Route known formats to real parsers (`from csv` behavior conceptually, Rust `csv` implementation in core) before using weaker heuristics.
 - Treat descriptors as the first extension SDK: stable rule ids, schemas, fixtures, negative inputs, and registry conflict tests.
 - Make the known-tool corpus data-first. Each tool descriptor should carry captured input, expected rows, negative inputs, and optional Nix manifest metadata.
-- If a grammar engine is added, start with a small declarative grammar schema and a controlled parser implementation. Do not jump straight to user-authored Rust parser plugins.
+- Do not assume a custom grammar DSL. If grammar-like parsing is added, evaluate tree-sitter first and prototype it as a descriptor-selected backend before inventing Golden Magic-specific grammar machinery.
 - If executable extensions are needed, prefer subprocess or WASM/WASI boundaries before native dynamic loading.
 
 ## Open Follow-Up
 
 - `golden-magic-by0`: safe runtime extension architecture.
 - `golden-magic-9pu`: known-tool descriptor corpus.
-- `golden-magic-2mf`: grammar engine.
-- `golden-magic-euf`: extension-author SDK.
+- `golden-magic-2mf`: parser-backend evaluation and grammar-like parsing.
+- `golden-magic-x1v`: Criterion benchmark regression investigation.

@@ -55,6 +55,7 @@ Build a generic, Nushell-friendly parser engine that turns hostile table-ish CLI
 
 - Arbitrary Rust runtime extension/plugin loading is not implemented. `docs/EXTENSIONS.md` explicitly rejects native runtime loading until a separate security and portability review; current design prefers descriptor packs, subprocesses, and WASM/WASI boundaries.
 - `golden-magic-2mf`: grammar engine is not implemented. Current parsing remains heuristic rule selection plus descriptor parser hints.
+- Parser-backend work must evaluate tree-sitter first; do not assume a custom Golden Magic grammar DSL.
 - Native runtime extension SDK is not implemented. The current SDK is descriptor-pack authoring, validation, schema, examples, and fixture guidance.
 - Live execution of descriptor-driven Nix manifest fixtures is not verified in environments without `nix`; the harness skips unless `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1` and `nix` is available.
 

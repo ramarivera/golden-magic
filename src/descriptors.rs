@@ -68,11 +68,7 @@ impl DescriptorRegistry {
                 continue;
             }
 
-            if entry_path
-                .extension()
-                .and_then(|extension| extension.to_str())
-                != Some("toml")
-            {
+            if !is_descriptor_file(&entry_path) {
                 continue;
             }
 
@@ -111,6 +107,14 @@ impl Descriptor {
             .iter()
             .all(|needle| input.contains(needle))
     }
+}
+
+fn is_descriptor_file(path: &Path) -> bool {
+    if path.extension().and_then(|extension| extension.to_str()) != Some("toml") {
+        return false;
+    }
+
+    path.file_name().and_then(|name| name.to_str()) != Some("nix.toml")
 }
 
 pub fn load_descriptor_file(path: impl AsRef<Path>) -> Result<LoadedDescriptor, DescriptorError> {
@@ -265,6 +269,32 @@ required_substrings = ["alpha"]
 
         assert_eq!(registry.descriptors()[0].descriptor.id, "high");
         assert_eq!(registry.descriptors()[1].descriptor.id, "low");
+    }
+
+    #[test]
+    fn ignores_nix_fixture_manifests_in_descriptor_dirs() {
+        let dir = tempdir().expect("temp dir");
+        fs::write(
+            dir.path().join("descriptor.toml"),
+            r#"
+id = "example"
+name = "Example"
+"#,
+        )
+        .expect("write descriptor");
+        fs::write(
+            dir.path().join("nix.toml"),
+            r#"
+packages = ["nixpkgs#coreutils"]
+command = "printf 'alpha|beta\n'"
+"#,
+        )
+        .expect("write nix manifest");
+
+        let registry = DescriptorRegistry::load_dir(dir.path()).expect("registry loads");
+
+        assert_eq!(registry.descriptors().len(), 1);
+        assert_eq!(registry.descriptors()[0].descriptor.id, "example");
     }
 
     #[test]
