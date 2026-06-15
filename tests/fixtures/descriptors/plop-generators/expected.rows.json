@@ -1,0 +1,18 @@
+[
+  {
+    "name": "generator",
+    "value": "actions destination"
+  },
+  {
+    "name": "component",
+    "value": "3 src/components"
+  },
+  {
+    "name": "package",
+    "value": "4 packages"
+  },
+  {
+    "name": "page",
+    "value": "2 src/pages"
+  }
+]

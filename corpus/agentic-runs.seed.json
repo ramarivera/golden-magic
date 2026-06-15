@@ -8188,5 +8188,95 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/dylanaraps/pure-sh-bible",
+    "descriptor_id": "known.pure-sh-bible.recipes",
+    "run_id": "agentic.pure-sh-bible-recipes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pure-sh-bible-recipes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pure-sh-bible-recipes/expected.rows.json",
+    "variants": [
+      "recipe header row",
+      "category row",
+      "shell field"
+    ],
+    "transcript": [
+      "selected descriptor known.pure-sh-bible.recipes for pure-sh-bible recipe list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/np",
+    "descriptor_id": "known.np.releases",
+    "run_id": "agentic.np-releases.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/np-releases/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/np-releases/expected.rows.json",
+    "variants": [
+      "package header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.np.releases for np release list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/donnemartin/gitsome",
+    "descriptor_id": "known.gitsome.repos",
+    "run_id": "agentic.gitsome-repos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitsome-repos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitsome-repos/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "stars row",
+      "language field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitsome.repos for gitsome repo list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/plopjs/plop",
+    "descriptor_id": "known.plop.generators",
+    "run_id": "agentic.plop-generators.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/plop-generators/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/plop-generators/expected.rows.json",
+    "variants": [
+      "generator header row",
+      "actions row",
+      "destination field"
+    ],
+    "transcript": [
+      "selected descriptor known.plop.generators for plop generator list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/svenstaro/miniserve",
+    "descriptor_id": "known.miniserve.shares",
+    "run_id": "agentic.miniserve-shares.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/miniserve-shares/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/miniserve-shares/expected.rows.json",
+    "variants": [
+      "path header row",
+      "state row",
+      "port field"
+    ],
+    "transcript": [
+      "selected descriptor known.miniserve.shares for miniserve share list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

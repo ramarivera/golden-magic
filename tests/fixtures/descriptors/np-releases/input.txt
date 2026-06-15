@@ -1,0 +1,4 @@
+package	version state
+golden-magic	1.2.0 published
+parser-core	0.8.1 prepared
+nu-plugin	0.3.0 pending

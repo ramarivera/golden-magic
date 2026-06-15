@@ -3183,5 +3183,40 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/podman-desktop-containers",
     "analysis_notes": "Modeled podman-desktop container output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dylanaraps/pure-sh-bible",
+    "descriptor_id": "known.pure-sh-bible.recipes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pure-sh-bible-recipes",
+    "analysis_notes": "Modeled pure-sh-bible recipe output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/np",
+    "descriptor_id": "known.np.releases",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/np-releases",
+    "analysis_notes": "Modeled np release output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/donnemartin/gitsome",
+    "descriptor_id": "known.gitsome.repos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitsome-repos",
+    "analysis_notes": "Modeled gitsome repository output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/plopjs/plop",
+    "descriptor_id": "known.plop.generators",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/plop-generators",
+    "analysis_notes": "Modeled plop generator output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/svenstaro/miniserve",
+    "descriptor_id": "known.miniserve.shares",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/miniserve-shares",
+    "analysis_notes": "Modeled miniserve share output with a generated executable-json parser plugin."
   }
 ]

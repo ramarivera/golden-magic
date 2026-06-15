@@ -5218,5 +5218,65 @@
     "negative": "container state image\napi running quay.io/api:latest\n",
     "analysis_notes": "Modeled podman-desktop container output with a generated executable-json parser plugin.",
     "variants": ["container header row", "state row", "image field"]
+  },
+  {
+    "fixture": "pure-sh-bible-recipes",
+    "descriptor_id": "known.pure-sh-bible.recipes",
+    "name": "pure-sh-bible recipe list",
+    "repo": "https://github.com/dylanaraps/pure-sh-bible",
+    "required_substrings": ["recipe\tcategory", "trim\tstring"],
+    "parser": "tab-pairs",
+    "input": "recipe\tcategory shell\ntrim\tstring sh\nsplit\tstring sh\nrandom\tmath sh\n",
+    "negative": "recipe category shell\ntrim string sh\n",
+    "analysis_notes": "Modeled pure-sh-bible recipe output with a generated executable-json parser plugin.",
+    "variants": ["recipe header row", "category row", "shell field"]
+  },
+  {
+    "fixture": "np-releases",
+    "descriptor_id": "known.np.releases",
+    "name": "np release list",
+    "repo": "https://github.com/sindresorhus/np",
+    "required_substrings": ["package\tversion", "golden-magic\t1.2.0"],
+    "parser": "tab-pairs",
+    "input": "package\tversion state\ngolden-magic\t1.2.0 published\nparser-core\t0.8.1 prepared\nnu-plugin\t0.3.0 pending\n",
+    "negative": "package version state\ngolden-magic 1.2.0 published\n",
+    "analysis_notes": "Modeled np release output with a generated executable-json parser plugin.",
+    "variants": ["package header row", "version row", "state field"]
+  },
+  {
+    "fixture": "gitsome-repos",
+    "descriptor_id": "known.gitsome.repos",
+    "name": "gitsome repo list",
+    "repo": "https://github.com/donnemartin/gitsome",
+    "required_substrings": ["repo\tstars", "cli\t128"],
+    "parser": "tab-pairs",
+    "input": "repo\tstars language\ncli\t128 Python\ndotfiles\t82 Shell\nparser\t64 Rust\n",
+    "negative": "repo stars language\ncli 128 Python\n",
+    "analysis_notes": "Modeled gitsome repository output with a generated executable-json parser plugin.",
+    "variants": ["repo header row", "stars row", "language field"]
+  },
+  {
+    "fixture": "plop-generators",
+    "descriptor_id": "known.plop.generators",
+    "name": "plop generator list",
+    "repo": "https://github.com/plopjs/plop",
+    "required_substrings": ["generator\tactions", "component\t3"],
+    "parser": "tab-pairs",
+    "input": "generator\tactions destination\ncomponent\t3 src/components\npackage\t4 packages\npage\t2 src/pages\n",
+    "negative": "generator actions destination\ncomponent 3 src/components\n",
+    "analysis_notes": "Modeled plop generator output with a generated executable-json parser plugin.",
+    "variants": ["generator header row", "actions row", "destination field"]
+  },
+  {
+    "fixture": "miniserve-shares",
+    "descriptor_id": "known.miniserve.shares",
+    "name": "miniserve share list",
+    "repo": "https://github.com/svenstaro/miniserve",
+    "required_substrings": ["path\tstate", "/tmp/site\tserving"],
+    "parser": "tab-pairs",
+    "input": "path\tstate port\n/tmp/site\tserving 8080\n/var/log\treadonly 8081\n./dist\tserving 8082\n",
+    "negative": "path state port\n/tmp/site serving 8080\n",
+    "analysis_notes": "Modeled miniserve share output with a generated executable-json parser plugin.",
+    "variants": ["path header row", "state row", "port field"]
   }
 ]

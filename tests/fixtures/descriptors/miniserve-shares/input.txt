@@ -1,0 +1,4 @@
+path	state port
+/tmp/site	serving 8080
+/var/log	readonly 8081
+./dist	serving 8082

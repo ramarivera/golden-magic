@@ -1,0 +1,10 @@
+id = "known.miniserve.shares"
+name = "miniserve share list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tstate","/tmp/site\tserving"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

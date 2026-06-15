@@ -1,0 +1,2 @@
+generator actions destination
+component 3 src/components

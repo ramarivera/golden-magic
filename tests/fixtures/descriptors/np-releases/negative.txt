@@ -1,0 +1,2 @@
+package version state
+golden-magic 1.2.0 published

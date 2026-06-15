@@ -1,0 +1,10 @@
+id = "known.pure-sh-bible.recipes"
+name = "pure-sh-bible recipe list"
+priority = 50
+
+[matches]
+required_substrings = ["recipe\tcategory","trim\tstring"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

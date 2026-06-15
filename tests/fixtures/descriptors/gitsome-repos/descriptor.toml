@@ -1,0 +1,10 @@
+id = "known.gitsome.repos"
+name = "gitsome repo list"
+priority = 50
+
+[matches]
+required_substrings = ["repo\tstars","cli\t128"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

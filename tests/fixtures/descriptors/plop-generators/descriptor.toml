@@ -1,0 +1,10 @@
+id = "known.plop.generators"
+name = "plop generator list"
+priority = 50
+
+[matches]
+required_substrings = ["generator\tactions","component\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

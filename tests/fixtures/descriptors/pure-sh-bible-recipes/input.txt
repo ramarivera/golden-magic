@@ -1,0 +1,4 @@
+recipe	category shell
+trim	string sh
+split	string sh
+random	math sh

@@ -1,0 +1,4 @@
+generator	actions destination
+component	3 src/components
+package	4 packages
+page	2 src/pages
