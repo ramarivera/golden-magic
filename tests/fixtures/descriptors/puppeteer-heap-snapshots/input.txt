@@ -1,0 +1,4 @@
+snapshot	status state
+baseline	saved heap
+after-click	saved heap
+old	missing hidden

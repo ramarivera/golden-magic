@@ -1,0 +1,10 @@
+id = "known.arttime.clocks"
+name = "arttime clock list"
+priority = 50
+
+[matches]
+required_substrings = ["clock\tstatus","ascii\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

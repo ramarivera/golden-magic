@@ -1,0 +1,10 @@
+id = "known.clevercsv.tables"
+name = "CleverCSV table list"
+priority = 50
+
+[matches]
+required_substrings = ["table\tstatus","sample.csv\tdetected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.acd.cli.files"
+name = "acd_cli file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","photos\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

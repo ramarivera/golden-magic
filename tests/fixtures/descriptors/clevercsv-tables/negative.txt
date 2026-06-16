@@ -1,0 +1,2 @@
+table status state
+sample.csv detected csv

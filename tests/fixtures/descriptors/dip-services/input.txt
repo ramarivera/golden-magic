@@ -1,0 +1,4 @@
+service	status state
+web	running docker
+db	running docker
+old	stopped hidden

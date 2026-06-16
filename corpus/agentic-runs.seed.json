@@ -26170,5 +26170,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/poetaman/arttime",
+    "descriptor_id": "known.arttime.clocks",
+    "run_id": "agentic.arttime-clocks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/arttime-clocks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/arttime-clocks/expected.rows.json",
+    "variants": [
+      "clock header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.arttime.clocks for arttime clock list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bluetuith-org/bluetuith",
+    "descriptor_id": "known.bluetuith.devices",
+    "run_id": "agentic.bluetuith-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bluetuith-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bluetuith-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bluetuith.devices for bluetuith device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/adriancooney/puppeteer-heap-snapshot",
+    "descriptor_id": "known.puppeteer.heap.snapshots",
+    "run_id": "agentic.puppeteer-heap-snapshots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/puppeteer-heap-snapshots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/puppeteer-heap-snapshots/expected.rows.json",
+    "variants": [
+      "snapshot header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.puppeteer.heap.snapshots for puppeteer-heap-snapshot snapshot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yadayada/acd_cli",
+    "descriptor_id": "known.acd.cli.files",
+    "run_id": "agentic.acd-cli-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/acd-cli-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/acd-cli-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.acd.cli.files for acd_cli file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sgreben/jp",
+    "descriptor_id": "known.jp.matches",
+    "run_id": "agentic.jp-matches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jp-matches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jp-matches/expected.rows.json",
+    "variants": [
+      "match header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jp.matches for jp match list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/makew0rld/amfora",
+    "descriptor_id": "known.amfora.pages",
+    "run_id": "agentic.amfora-pages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/amfora-pages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/amfora-pages/expected.rows.json",
+    "variants": [
+      "page header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.amfora.pages for amfora page list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bibendi/dip",
+    "descriptor_id": "known.dip.services",
+    "run_id": "agentic.dip-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dip-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dip-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dip.services for dip service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/phalcon/phalcon-devtools",
+    "descriptor_id": "known.phalcon.devtools.tasks",
+    "run_id": "agentic.phalcon-devtools-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/phalcon-devtools-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/phalcon-devtools-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.phalcon.devtools.tasks for phalcon-devtools task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alan-turing-institute/CleverCSV",
+    "descriptor_id": "known.clevercsv.tables",
+    "run_id": "agentic.clevercsv-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clevercsv-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clevercsv-tables/expected.rows.json",
+    "variants": [
+      "table header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.clevercsv.tables for CleverCSV table list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/abhimanyu003/sttr",
+    "descriptor_id": "known.sttr.transforms",
+    "run_id": "agentic.sttr-transforms.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sttr-transforms/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sttr-transforms/expected.rows.json",
+    "variants": [
+      "transform header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sttr.transforms for sttr transform list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

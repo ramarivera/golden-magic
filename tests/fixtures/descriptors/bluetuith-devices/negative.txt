@@ -1,0 +1,2 @@
+device status state
+headphones connected bluetooth

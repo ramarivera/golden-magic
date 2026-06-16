@@ -1,0 +1,10 @@
+id = "known.sttr.transforms"
+name = "sttr transform list"
+priority = 50
+
+[matches]
+required_substrings = ["transform\tstatus","base64\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

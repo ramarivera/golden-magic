@@ -1,0 +1,4 @@
+table	status state
+sample.csv	detected csv
+messy.csv	detected csv
+old.csv	failed hidden

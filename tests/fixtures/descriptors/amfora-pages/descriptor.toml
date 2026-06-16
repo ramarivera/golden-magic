@@ -1,0 +1,10 @@
+id = "known.amfora.pages"
+name = "amfora page list"
+priority = 50
+
+[matches]
+required_substrings = ["page\tstatus","gemini://example\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

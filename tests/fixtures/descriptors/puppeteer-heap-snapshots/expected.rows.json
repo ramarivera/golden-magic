@@ -1,0 +1,18 @@
+[
+  {
+    "name": "snapshot",
+    "value": "status state"
+  },
+  {
+    "name": "baseline",
+    "value": "saved heap"
+  },
+  {
+    "name": "after-click",
+    "value": "saved heap"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

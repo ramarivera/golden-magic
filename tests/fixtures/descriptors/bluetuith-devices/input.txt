@@ -1,0 +1,4 @@
+device	status state
+headphones	connected bluetooth
+speaker	paired bluetooth
+old	disconnected hidden

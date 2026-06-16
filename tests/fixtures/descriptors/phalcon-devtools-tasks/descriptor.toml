@@ -1,0 +1,10 @@
+id = "known.phalcon.devtools.tasks"
+name = "phalcon-devtools task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","serve\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

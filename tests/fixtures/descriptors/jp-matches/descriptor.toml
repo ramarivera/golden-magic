@@ -1,0 +1,10 @@
+id = "known.jp.matches"
+name = "jp match list"
+priority = 50
+
+[matches]
+required_substrings = ["match\tstatus","users\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

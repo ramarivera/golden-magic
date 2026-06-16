@@ -1,0 +1,4 @@
+clock	status state
+ascii	active art
+matrix	active art
+old	stopped hidden

@@ -1,0 +1,4 @@
+page	status state
+gemini://example	open gemini
+gemini://docs	open gemini
+old	closed hidden

@@ -1,0 +1,2 @@
+page status state
+gemini://example open gemini

@@ -10176,5 +10176,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/webtorrent-downloads",
     "analysis_notes": "Modeled webtorrent-cli download output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/poetaman/arttime",
+    "descriptor_id": "known.arttime.clocks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/arttime-clocks",
+    "analysis_notes": "Modeled arttime clock output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bluetuith-org/bluetuith",
+    "descriptor_id": "known.bluetuith.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bluetuith-devices",
+    "analysis_notes": "Modeled bluetuith device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/adriancooney/puppeteer-heap-snapshot",
+    "descriptor_id": "known.puppeteer.heap.snapshots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/puppeteer-heap-snapshots",
+    "analysis_notes": "Modeled puppeteer-heap-snapshot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yadayada/acd_cli",
+    "descriptor_id": "known.acd.cli.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/acd-cli-files",
+    "analysis_notes": "Modeled acd_cli file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sgreben/jp",
+    "descriptor_id": "known.jp.matches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jp-matches",
+    "analysis_notes": "Modeled jp match output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/makew0rld/amfora",
+    "descriptor_id": "known.amfora.pages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/amfora-pages",
+    "analysis_notes": "Modeled amfora page output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bibendi/dip",
+    "descriptor_id": "known.dip.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dip-services",
+    "analysis_notes": "Modeled dip service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/phalcon/phalcon-devtools",
+    "descriptor_id": "known.phalcon.devtools.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/phalcon-devtools-tasks",
+    "analysis_notes": "Modeled phalcon-devtools task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alan-turing-institute/CleverCSV",
+    "descriptor_id": "known.clevercsv.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clevercsv-tables",
+    "analysis_notes": "Modeled CleverCSV table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/abhimanyu003/sttr",
+    "descriptor_id": "known.sttr.transforms",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sttr-transforms",
+    "analysis_notes": "Modeled sttr transform output with a generated executable-json parser plugin."
   }
 ]

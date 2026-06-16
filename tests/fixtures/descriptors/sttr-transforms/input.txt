@@ -1,0 +1,4 @@
+transform	status state
+base64	ready text
+slug	ready text
+old	disabled hidden

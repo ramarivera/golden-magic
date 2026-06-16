@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "status state"
+  },
+  {
+    "name": "serve",
+    "value": "ready phalcon"
+  },
+  {
+    "name": "model",
+    "value": "ready phalcon"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

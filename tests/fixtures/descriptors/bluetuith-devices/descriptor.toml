@@ -1,0 +1,10 @@
+id = "known.bluetuith.devices"
+name = "bluetuith device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tstatus","headphones\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

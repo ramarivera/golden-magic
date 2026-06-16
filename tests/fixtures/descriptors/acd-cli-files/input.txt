@@ -1,0 +1,4 @@
+file	status state
+photos	available drive
+docs	available drive
+old	missing hidden
