@@ -1,0 +1,10 @@
+id = "known.github.release.assets"
+name = "github-release asset list"
+priority = 50
+
+[matches]
+required_substrings = ["asset\tstatus","darwin.tar.gz\tuploaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

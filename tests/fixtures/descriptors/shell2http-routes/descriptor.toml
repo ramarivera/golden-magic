@@ -1,0 +1,10 @@
+id = "known.shell2http.routes"
+name = "shell2http route list"
+priority = 50
+
+[matches]
+required_substrings = ["route\tstatus","/health\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+task	status state
+classify	ready ai
+embed	ready ai
+old	disabled hidden

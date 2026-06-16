@@ -1,0 +1,4 @@
+query	status state
+stars	ready github
+code	ready github
+old	disabled hidden

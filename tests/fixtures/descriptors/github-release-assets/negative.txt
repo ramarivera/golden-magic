@@ -1,0 +1,2 @@
+asset status state
+darwin.tar.gz uploaded release

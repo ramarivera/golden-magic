@@ -1,0 +1,10 @@
+id = "known.devtools.protocol.domains"
+name = "devtools-protocol domain list"
+priority = 50
+
+[matches]
+required_substrings = ["domain\tstatus","Runtime\tstable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

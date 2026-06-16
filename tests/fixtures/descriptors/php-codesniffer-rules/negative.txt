@@ -1,0 +1,2 @@
+rule status state
+PSR12 active php

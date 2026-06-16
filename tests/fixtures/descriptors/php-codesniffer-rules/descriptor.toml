@@ -1,0 +1,10 @@
+id = "known.php.codesniffer.rules"
+name = "PHP_CodeSniffer rule list"
+priority = 50
+
+[matches]
+required_substrings = ["rule\tstatus","PSR12\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

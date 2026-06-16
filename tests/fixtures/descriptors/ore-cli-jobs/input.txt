@@ -1,0 +1,4 @@
+job	status state
+mine	running solana
+claim	queued solana
+old	stopped hidden

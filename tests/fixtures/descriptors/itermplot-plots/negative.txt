@@ -1,0 +1,2 @@
+plot status state
+line ready terminal

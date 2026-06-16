@@ -9756,5 +9756,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/swiftui-views",
     "analysis_notes": "Modeled SwiftTUI view output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+    "descriptor_id": "known.php.codesniffer.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/php-codesniffer-rules",
+    "analysis_notes": "Modeled PHP_CodeSniffer rule output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NaiboWang/CommandlineConfig",
+    "descriptor_id": "known.commandlineconfig.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/commandlineconfig-options",
+    "analysis_notes": "Modeled CommandlineConfig option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/covibes/zeroshot",
+    "descriptor_id": "known.zeroshot.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zeroshot-tasks",
+    "analysis_notes": "Modeled zeroshot task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/regolith-labs/ore-cli-legacy",
+    "descriptor_id": "known.ore.cli.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ore-cli-jobs",
+    "analysis_notes": "Modeled ore-cli-legacy job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/daleroberts/itermplot",
+    "descriptor_id": "known.itermplot.plots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/itermplot-plots",
+    "analysis_notes": "Modeled itermplot plot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/matheus-git/systemd-manager-tui",
+    "descriptor_id": "known.systemd.manager.tui.units",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/systemd-manager-tui-units",
+    "analysis_notes": "Modeled systemd-manager-tui unit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/devtools-protocol",
+    "descriptor_id": "known.devtools.protocol.domains",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtools-protocol-domains",
+    "analysis_notes": "Modeled devtools-protocol domain output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/msoap/shell2http",
+    "descriptor_id": "known.shell2http.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shell2http-routes",
+    "analysis_notes": "Modeled shell2http route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gwen001/github-search",
+    "descriptor_id": "known.github.search.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/github-search-queries",
+    "analysis_notes": "Modeled github-search query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/github-release/github-release",
+    "descriptor_id": "known.github.release.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/github-release-assets",
+    "analysis_notes": "Modeled github-release asset output with a generated executable-json parser plugin."
   }
 ]

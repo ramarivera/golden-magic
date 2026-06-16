@@ -1,0 +1,10 @@
+id = "known.systemd.manager.tui.units"
+name = "systemd-manager-tui unit list"
+priority = 50
+
+[matches]
+required_substrings = ["unit\tstatus","ssh.service\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "option",
+    "value": "status state"
+  },
+  {
+    "name": "--config",
+    "value": "parsed cli"
+  },
+  {
+    "name": "--help",
+    "value": "parsed cli"
+  },
+  {
+    "name": "--old",
+    "value": "ignored hidden"
+  }
+]

@@ -25090,5 +25090,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/PHPCSStandards/PHP_CodeSniffer",
+    "descriptor_id": "known.php.codesniffer.rules",
+    "run_id": "agentic.php-codesniffer-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/php-codesniffer-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/php-codesniffer-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.php.codesniffer.rules for PHP_CodeSniffer rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/NaiboWang/CommandlineConfig",
+    "descriptor_id": "known.commandlineconfig.options",
+    "run_id": "agentic.commandlineconfig-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/commandlineconfig-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/commandlineconfig-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.commandlineconfig.options for CommandlineConfig option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/covibes/zeroshot",
+    "descriptor_id": "known.zeroshot.tasks",
+    "run_id": "agentic.zeroshot-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zeroshot-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zeroshot-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zeroshot.tasks for zeroshot task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/regolith-labs/ore-cli-legacy",
+    "descriptor_id": "known.ore.cli.jobs",
+    "run_id": "agentic.ore-cli-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ore-cli-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ore-cli-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ore.cli.jobs for ore-cli-legacy job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/daleroberts/itermplot",
+    "descriptor_id": "known.itermplot.plots",
+    "run_id": "agentic.itermplot-plots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/itermplot-plots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/itermplot-plots/expected.rows.json",
+    "variants": [
+      "plot header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.itermplot.plots for itermplot plot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/matheus-git/systemd-manager-tui",
+    "descriptor_id": "known.systemd.manager.tui.units",
+    "run_id": "agentic.systemd-manager-tui-units.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/systemd-manager-tui-units/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/systemd-manager-tui-units/expected.rows.json",
+    "variants": [
+      "unit header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.systemd.manager.tui.units for systemd-manager-tui unit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ChromeDevTools/devtools-protocol",
+    "descriptor_id": "known.devtools.protocol.domains",
+    "run_id": "agentic.devtools-protocol-domains.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devtools-protocol-domains/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devtools-protocol-domains/expected.rows.json",
+    "variants": [
+      "domain header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devtools.protocol.domains for devtools-protocol domain list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/msoap/shell2http",
+    "descriptor_id": "known.shell2http.routes",
+    "run_id": "agentic.shell2http-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shell2http-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shell2http-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.shell2http.routes for shell2http route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gwen001/github-search",
+    "descriptor_id": "known.github.search.queries",
+    "run_id": "agentic.github-search-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/github-search-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/github-search-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.github.search.queries for github-search query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/github-release/github-release",
+    "descriptor_id": "known.github.release.assets",
+    "run_id": "agentic.github-release-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/github-release-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/github-release-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.github.release.assets for github-release asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

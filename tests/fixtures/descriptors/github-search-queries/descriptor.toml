@@ -1,0 +1,10 @@
+id = "known.github.search.queries"
+name = "github-search query list"
+priority = 50
+
+[matches]
+required_substrings = ["query\tstatus","stars\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

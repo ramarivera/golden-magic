@@ -1,0 +1,4 @@
+rule	status state
+PSR12	active php
+Squiz	active php
+old	disabled hidden

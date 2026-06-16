@@ -1,0 +1,18 @@
+[
+  {
+    "name": "unit",
+    "value": "status state"
+  },
+  {
+    "name": "ssh.service",
+    "value": "active systemd"
+  },
+  {
+    "name": "cron.service",
+    "value": "active systemd"
+  },
+  {
+    "name": "old.service",
+    "value": "failed hidden"
+  }
+]

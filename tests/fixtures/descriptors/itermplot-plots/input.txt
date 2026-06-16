@@ -1,0 +1,4 @@
+plot	status state
+line	ready terminal
+scatter	ready terminal
+old	disabled hidden

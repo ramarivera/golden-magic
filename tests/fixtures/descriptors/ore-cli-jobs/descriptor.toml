@@ -1,0 +1,10 @@
+id = "known.ore.cli.jobs"
+name = "ore-cli-legacy job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","mine\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

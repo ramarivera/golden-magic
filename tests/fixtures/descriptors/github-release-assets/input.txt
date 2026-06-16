@@ -1,0 +1,4 @@
+asset	status state
+darwin.tar.gz	uploaded release
+linux.tar.gz	uploaded release
+old.zip	deleted hidden
