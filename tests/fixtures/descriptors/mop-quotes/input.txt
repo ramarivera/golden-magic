@@ -1,0 +1,4 @@
+symbol	price state
+AAPL	195.20 watched
+MSFT	420.10 watched
+OLD	0.00 hidden

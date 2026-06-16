@@ -1,0 +1,10 @@
+id = "known.chalk-animation.frames"
+name = "chalk-animation frame list"
+priority = 50
+
+[matches]
+required_substrings = ["animation\tframes","rainbow\t7"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

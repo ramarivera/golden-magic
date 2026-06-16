@@ -7726,5 +7726,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/tweakcc-configs",
     "analysis_notes": "Modeled tweakcc config output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/privatenumber/tasuku",
+    "descriptor_id": "known.tasuku.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tasuku-tasks",
+    "analysis_notes": "Modeled tasuku task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Cysharp/ConsoleAppFramework",
+    "descriptor_id": "known.consoleappframework.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/consoleappframework-commands",
+    "analysis_notes": "Modeled ConsoleAppFramework command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gxr404/yuque-dl",
+    "descriptor_id": "known.yuque-dl.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yuque-dl-documents",
+    "analysis_notes": "Modeled yuque-dl document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mop-tracker/mop",
+    "descriptor_id": "known.mop.quotes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mop-quotes",
+    "analysis_notes": "Modeled mop stock quote output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bokub/chalk-animation",
+    "descriptor_id": "known.chalk-animation.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chalk-animation-frames",
+    "analysis_notes": "Modeled chalk-animation frame output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/elfmz/far2l",
+    "descriptor_id": "known.far2l.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/far2l-panels",
+    "analysis_notes": "Modeled far2l panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/meganz/MEGAcmd",
+    "descriptor_id": "known.megacmd.transfers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/megacmd-transfers",
+    "analysis_notes": "Modeled MEGAcmd transfer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ryanmjacobs/c",
+    "descriptor_id": "known.c.snippets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/c-snippets",
+    "analysis_notes": "Modeled c snippet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/LaunchKit/LaunchKit",
+    "descriptor_id": "known.launchkit.releases",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/launchkit-releases",
+    "analysis_notes": "Modeled LaunchKit release output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nestjs/nest-cli",
+    "descriptor_id": "known.nest-cli.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nest-cli-projects",
+    "analysis_notes": "Modeled nest-cli project output with a generated executable-json parser plugin."
   }
 ]

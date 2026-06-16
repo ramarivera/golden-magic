@@ -1,0 +1,4 @@
+command	params state
+serve	3 available
+migrate	2 available
+old	0 hidden

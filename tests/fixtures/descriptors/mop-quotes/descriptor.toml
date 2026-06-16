@@ -1,0 +1,10 @@
+id = "known.mop.quotes"
+name = "mop quote list"
+priority = 50
+
+[matches]
+required_substrings = ["symbol\tprice","AAPL\t195.20"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

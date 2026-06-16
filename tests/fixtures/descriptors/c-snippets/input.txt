@@ -1,0 +1,4 @@
+snippet	language state
+hello	c available
+args	c available
+old	sh hidden

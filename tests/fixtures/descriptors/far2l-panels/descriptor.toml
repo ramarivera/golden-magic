@@ -1,0 +1,10 @@
+id = "known.far2l.panels"
+name = "far2l panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tpath","left\t/home"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

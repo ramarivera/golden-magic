@@ -1,0 +1,4 @@
+release	channel state
+ios	stable published
+android	beta published
+old	alpha hidden

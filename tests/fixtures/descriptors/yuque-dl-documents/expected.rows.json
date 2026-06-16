@@ -1,0 +1,18 @@
+[
+  {
+    "name": "document",
+    "value": "status state"
+  },
+  {
+    "name": "guide",
+    "value": "downloaded saved"
+  },
+  {
+    "name": "api",
+    "value": "downloading active"
+  },
+  {
+    "name": "old",
+    "value": "skipped hidden"
+  }
+]

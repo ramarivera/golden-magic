@@ -1,0 +1,10 @@
+id = "known.consoleappframework.commands"
+name = "ConsoleAppFramework command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tparams","serve\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

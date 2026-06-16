@@ -1,0 +1,4 @@
+animation	frames state
+rainbow	7 available
+pulse	4 available
+old	1 hidden

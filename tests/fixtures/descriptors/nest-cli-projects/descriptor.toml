@@ -1,0 +1,10 @@
+id = "known.nest-cli.projects"
+name = "nest-cli project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\ttype","api\tapplication"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

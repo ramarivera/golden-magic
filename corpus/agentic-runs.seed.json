@@ -19870,5 +19870,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/privatenumber/tasuku",
+    "descriptor_id": "known.tasuku.tasks",
+    "run_id": "agentic.tasuku-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tasuku-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tasuku-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tasuku.tasks for tasuku task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Cysharp/ConsoleAppFramework",
+    "descriptor_id": "known.consoleappframework.commands",
+    "run_id": "agentic.consoleappframework-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/consoleappframework-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/consoleappframework-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "params row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.consoleappframework.commands for ConsoleAppFramework command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gxr404/yuque-dl",
+    "descriptor_id": "known.yuque-dl.documents",
+    "run_id": "agentic.yuque-dl-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yuque-dl-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yuque-dl-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.yuque-dl.documents for yuque-dl document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mop-tracker/mop",
+    "descriptor_id": "known.mop.quotes",
+    "run_id": "agentic.mop-quotes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mop-quotes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mop-quotes/expected.rows.json",
+    "variants": [
+      "symbol header row",
+      "price row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mop.quotes for mop quote list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bokub/chalk-animation",
+    "descriptor_id": "known.chalk-animation.frames",
+    "run_id": "agentic.chalk-animation-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chalk-animation-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chalk-animation-frames/expected.rows.json",
+    "variants": [
+      "animation header row",
+      "frames row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chalk-animation.frames for chalk-animation frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/elfmz/far2l",
+    "descriptor_id": "known.far2l.panels",
+    "run_id": "agentic.far2l-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/far2l-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/far2l-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.far2l.panels for far2l panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/meganz/MEGAcmd",
+    "descriptor_id": "known.megacmd.transfers",
+    "run_id": "agentic.megacmd-transfers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/megacmd-transfers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/megacmd-transfers/expected.rows.json",
+    "variants": [
+      "transfer header row",
+      "progress row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.megacmd.transfers for MEGAcmd transfer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ryanmjacobs/c",
+    "descriptor_id": "known.c.snippets",
+    "run_id": "agentic.c-snippets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/c-snippets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/c-snippets/expected.rows.json",
+    "variants": [
+      "snippet header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.c.snippets for c snippet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/LaunchKit/LaunchKit",
+    "descriptor_id": "known.launchkit.releases",
+    "run_id": "agentic.launchkit-releases.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/launchkit-releases/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/launchkit-releases/expected.rows.json",
+    "variants": [
+      "release header row",
+      "channel row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.launchkit.releases for LaunchKit release list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nestjs/nest-cli",
+    "descriptor_id": "known.nest-cli.projects",
+    "run_id": "agentic.nest-cli-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nest-cli-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nest-cli-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nest-cli.projects for nest-cli project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

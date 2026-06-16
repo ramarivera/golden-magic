@@ -1,0 +1,4 @@
+document	status state
+guide	downloaded saved
+api	downloading active
+old	skipped hidden

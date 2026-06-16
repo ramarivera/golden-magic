@@ -1,0 +1,18 @@
+[
+  {
+    "name": "project",
+    "value": "type state"
+  },
+  {
+    "name": "api",
+    "value": "application generated"
+  },
+  {
+    "name": "lib",
+    "value": "library generated"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

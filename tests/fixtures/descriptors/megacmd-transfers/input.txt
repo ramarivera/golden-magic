@@ -1,0 +1,4 @@
+transfer	progress state
+backup	80 running
+sync	100 done
+old	0 stopped
