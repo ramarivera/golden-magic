@@ -1,0 +1,4 @@
+palette	colors state
+nord	16 available
+gruvbox	16 available
+old	8 hidden

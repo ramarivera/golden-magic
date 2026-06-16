@@ -1,0 +1,10 @@
+id = "known.hello-bash-shell.lessons"
+name = "hello-bash-shell lesson list"
+priority = 50
+
+[matches]
+required_substrings = ["lesson\ttopic","01\tvariables"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

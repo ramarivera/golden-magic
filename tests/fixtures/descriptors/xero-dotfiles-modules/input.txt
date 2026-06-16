@@ -1,0 +1,4 @@
+module	shell state
+zsh	active linked
+vim	active linked
+old	inactive skipped

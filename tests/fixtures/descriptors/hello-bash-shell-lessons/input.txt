@@ -1,0 +1,4 @@
+lesson	topic state
+01	variables available
+02	loops available
+old	legacy hidden

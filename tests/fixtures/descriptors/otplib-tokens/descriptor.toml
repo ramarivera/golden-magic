@@ -1,0 +1,10 @@
+id = "known.otplib.tokens"
+name = "otplib token list"
+priority = 50
+
+[matches]
+required_substrings = ["issuer\tperiod","github\t30"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

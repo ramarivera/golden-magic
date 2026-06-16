@@ -1,0 +1,4 @@
+issuer	period state
+github	30 valid
+mail	60 valid
+old	30 expired

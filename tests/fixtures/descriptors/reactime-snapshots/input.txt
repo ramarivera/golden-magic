@@ -1,0 +1,4 @@
+snapshot	components state
+initial	12 recorded
+updated	18 recorded
+old	1 ignored

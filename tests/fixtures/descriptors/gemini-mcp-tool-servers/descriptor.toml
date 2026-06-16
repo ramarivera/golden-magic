@@ -1,0 +1,10 @@
+id = "known.gemini-mcp-tool.servers"
+name = "gemini-mcp-tool server list"
+priority = 50
+
+[matches]
+required_substrings = ["server\ttools","filesystem\t4"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

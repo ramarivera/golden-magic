@@ -1,0 +1,18 @@
+[
+  {
+    "name": "script",
+    "value": "binary state"
+  },
+  {
+    "name": "deploy.sh",
+    "value": "deploy.x compiled"
+  },
+  {
+    "name": "backup.sh",
+    "value": "backup.x compiled"
+  },
+  {
+    "name": "old.sh",
+    "value": "old.x skipped"
+  }
+]

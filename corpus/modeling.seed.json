@@ -7586,5 +7586,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/commandlineutils-commands",
     "analysis_notes": "Modeled CommandLineUtils command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/RichiH/vcsh",
+    "descriptor_id": "known.vcsh.repositories",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vcsh-repositories",
+    "analysis_notes": "Modeled vcsh repository output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yeojz/otplib",
+    "descriptor_id": "known.otplib.tokens",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/otplib-tokens",
+    "analysis_notes": "Modeled otplib token output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xero/dotfiles",
+    "descriptor_id": "known.xero-dotfiles.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xero-dotfiles-modules",
+    "analysis_notes": "Modeled xero dotfiles module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Achno/gowall",
+    "descriptor_id": "known.gowall.palettes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gowall-palettes",
+    "analysis_notes": "Modeled gowall palette output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/subhra74/snowflake",
+    "descriptor_id": "known.snowflake.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/snowflake-connections",
+    "analysis_notes": "Modeled snowflake connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/arachnys/athenapdf",
+    "descriptor_id": "known.athenapdf.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/athenapdf-jobs",
+    "analysis_notes": "Modeled athenapdf render job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mouredev/hello-bash-shell",
+    "descriptor_id": "known.hello-bash-shell.lessons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hello-bash-shell-lessons",
+    "analysis_notes": "Modeled hello-bash-shell lesson output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/neurobin/shc",
+    "descriptor_id": "known.shc.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shc-scripts",
+    "analysis_notes": "Modeled shc compiled script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jamubc/gemini-mcp-tool",
+    "descriptor_id": "known.gemini-mcp-tool.servers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gemini-mcp-tool-servers",
+    "analysis_notes": "Modeled gemini-mcp-tool server output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/open-source-labs/Reactime",
+    "descriptor_id": "known.reactime.snapshots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/reactime-snapshots",
+    "analysis_notes": "Modeled Reactime snapshot output with a generated executable-json parser plugin."
   }
 ]

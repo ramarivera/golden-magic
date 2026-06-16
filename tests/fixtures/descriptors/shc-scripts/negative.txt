@@ -1,0 +1,2 @@
+script binary state
+deploy.sh deploy.x compiled

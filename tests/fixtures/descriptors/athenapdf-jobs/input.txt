@@ -1,0 +1,4 @@
+job	format state
+invoice	pdf rendered
+report	pdf rendered
+old	html skipped

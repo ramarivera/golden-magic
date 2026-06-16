@@ -1,0 +1,4 @@
+script	binary state
+deploy.sh	deploy.x compiled
+backup.sh	backup.x compiled
+old.sh	old.x skipped

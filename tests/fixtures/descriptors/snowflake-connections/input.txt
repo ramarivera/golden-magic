@@ -1,0 +1,4 @@
+connection	protocol state
+prod	ssh saved
+backup	sftp saved
+old	ftp disabled

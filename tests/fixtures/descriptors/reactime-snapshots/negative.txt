@@ -1,0 +1,2 @@
+snapshot components state
+initial 12 recorded

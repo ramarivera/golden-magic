@@ -19510,5 +19510,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/RichiH/vcsh",
+    "descriptor_id": "known.vcsh.repositories",
+    "run_id": "agentic.vcsh-repositories.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vcsh-repositories/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vcsh-repositories/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "branch row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vcsh.repositories for vcsh repository list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yeojz/otplib",
+    "descriptor_id": "known.otplib.tokens",
+    "run_id": "agentic.otplib-tokens.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/otplib-tokens/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/otplib-tokens/expected.rows.json",
+    "variants": [
+      "issuer header row",
+      "period row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.otplib.tokens for otplib token list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xero/dotfiles",
+    "descriptor_id": "known.xero-dotfiles.modules",
+    "run_id": "agentic.xero-dotfiles-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xero-dotfiles-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xero-dotfiles-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "shell row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xero-dotfiles.modules for xero dotfiles module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Achno/gowall",
+    "descriptor_id": "known.gowall.palettes",
+    "run_id": "agentic.gowall-palettes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gowall-palettes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gowall-palettes/expected.rows.json",
+    "variants": [
+      "palette header row",
+      "colors row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gowall.palettes for gowall palette list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/subhra74/snowflake",
+    "descriptor_id": "known.snowflake.connections",
+    "run_id": "agentic.snowflake-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/snowflake-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/snowflake-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "protocol row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.snowflake.connections for snowflake connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/arachnys/athenapdf",
+    "descriptor_id": "known.athenapdf.jobs",
+    "run_id": "agentic.athenapdf-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/athenapdf-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/athenapdf-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.athenapdf.jobs for athenapdf job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mouredev/hello-bash-shell",
+    "descriptor_id": "known.hello-bash-shell.lessons",
+    "run_id": "agentic.hello-bash-shell-lessons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hello-bash-shell-lessons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hello-bash-shell-lessons/expected.rows.json",
+    "variants": [
+      "lesson header row",
+      "topic row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hello-bash-shell.lessons for hello-bash-shell lesson list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/neurobin/shc",
+    "descriptor_id": "known.shc.scripts",
+    "run_id": "agentic.shc-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shc-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shc-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "binary row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.shc.scripts for shc script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jamubc/gemini-mcp-tool",
+    "descriptor_id": "known.gemini-mcp-tool.servers",
+    "run_id": "agentic.gemini-mcp-tool-servers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gemini-mcp-tool-servers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gemini-mcp-tool-servers/expected.rows.json",
+    "variants": [
+      "server header row",
+      "tools row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gemini-mcp-tool.servers for gemini-mcp-tool server list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-source-labs/Reactime",
+    "descriptor_id": "known.reactime.snapshots",
+    "run_id": "agentic.reactime-snapshots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/reactime-snapshots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/reactime-snapshots/expected.rows.json",
+    "variants": [
+      "snapshot header row",
+      "components row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.reactime.snapshots for Reactime snapshot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

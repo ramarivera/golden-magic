@@ -1,0 +1,4 @@
+server	tools state
+filesystem	4 enabled
+search	2 enabled
+old	0 disabled

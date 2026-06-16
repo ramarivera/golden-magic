@@ -1,0 +1,2 @@
+lesson topic state
+01 variables available

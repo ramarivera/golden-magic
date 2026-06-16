@@ -1,0 +1,18 @@
+[
+  {
+    "name": "snapshot",
+    "value": "components state"
+  },
+  {
+    "name": "initial",
+    "value": "12 recorded"
+  },
+  {
+    "name": "updated",
+    "value": "18 recorded"
+  },
+  {
+    "name": "old",
+    "value": "1 ignored"
+  }
+]
