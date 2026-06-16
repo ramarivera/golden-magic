@@ -1,0 +1,4 @@
+report	status state
+bundle	ready webpack
+assets	ready webpack
+old	failed hidden

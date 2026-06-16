@@ -1,0 +1,4 @@
+patch	status state
+ads	available apk
+theme	available apk
+old	removed hidden

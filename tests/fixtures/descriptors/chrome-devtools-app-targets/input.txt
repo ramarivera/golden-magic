@@ -1,0 +1,4 @@
+target	status state
+page	attached devtools
+worker	attached devtools
+old	detached hidden

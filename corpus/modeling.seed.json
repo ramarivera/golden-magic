@@ -9476,5 +9476,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/ruby-progressbar-bars",
     "analysis_notes": "Modeled ruby-progressbar bar output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rojo-rbx/rojo",
+    "descriptor_id": "known.rojo.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rojo-projects",
+    "analysis_notes": "Modeled rojo project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/f/mcptools",
+    "descriptor_id": "known.mcptools.servers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mcptools-servers",
+    "analysis_notes": "Modeled mcptools server output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/repplus/rep-chrome",
+    "descriptor_id": "known.rep.chrome.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rep-chrome-tabs",
+    "analysis_notes": "Modeled rep-chrome tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/agauniyal/rang",
+    "descriptor_id": "known.rang.colors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rang-colors",
+    "analysis_notes": "Modeled rang color output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tukaani-project/xz",
+    "descriptor_id": "known.xz.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xz-files",
+    "analysis_notes": "Modeled xz file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/statoscope/statoscope",
+    "descriptor_id": "known.statoscope.reports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/statoscope-reports",
+    "analysis_notes": "Modeled statoscope report output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/auchenberg/chrome-devtools-app",
+    "descriptor_id": "known.chrome.devtools.app.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chrome-devtools-app-targets",
+    "analysis_notes": "Modeled chrome-devtools-app target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ReVanced/revanced-cli",
+    "descriptor_id": "known.revanced.cli.patches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/revanced-cli-patches",
+    "analysis_notes": "Modeled revanced-cli patch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Dicklesworthstone/beads_viewer",
+    "descriptor_id": "known.beads.viewer.issues",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/beads-viewer-issues",
+    "analysis_notes": "Modeled beads_viewer issue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Timmoth/RackPeek",
+    "descriptor_id": "known.rackpeek.racks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rackpeek-racks",
+    "analysis_notes": "Modeled RackPeek rack output with a generated executable-json parser plugin."
   }
 ]

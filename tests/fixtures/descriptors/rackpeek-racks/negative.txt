@@ -1,0 +1,2 @@
+rack status state
+main active rack

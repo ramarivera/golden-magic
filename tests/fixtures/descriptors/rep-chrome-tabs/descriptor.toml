@@ -1,0 +1,10 @@
+id = "known.rep.chrome.tabs"
+name = "rep-chrome tab list"
+priority = 50
+
+[matches]
+required_substrings = ["tab\tstatus","devtools\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

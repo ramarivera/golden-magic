@@ -1,0 +1,10 @@
+id = "known.revanced.cli.patches"
+name = "revanced-cli patch list"
+priority = 50
+
+[matches]
+required_substrings = ["patch\tstatus","ads\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

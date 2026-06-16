@@ -1,0 +1,10 @@
+id = "known.beads.viewer.issues"
+name = "beads_viewer issue list"
+priority = 50
+
+[matches]
+required_substrings = ["issue\tstatus","BD-1\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

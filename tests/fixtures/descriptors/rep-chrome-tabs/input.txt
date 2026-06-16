@@ -1,0 +1,4 @@
+tab	status state
+devtools	open browser
+console	open browser
+old	closed hidden

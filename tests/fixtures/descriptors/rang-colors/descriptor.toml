@@ -1,0 +1,10 @@
+id = "known.rang.colors"
+name = "rang color list"
+priority = 50
+
+[matches]
+required_substrings = ["color\tstatus","red\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

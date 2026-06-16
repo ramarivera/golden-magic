@@ -1,0 +1,4 @@
+file	status state
+archive.xz	compressed xz
+logs.xz	compressed xz
+old.txt	skipped hidden

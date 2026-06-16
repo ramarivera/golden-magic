@@ -1,0 +1,4 @@
+color	status state
+red	ready ansi
+green	ready ansi
+old	disabled hidden

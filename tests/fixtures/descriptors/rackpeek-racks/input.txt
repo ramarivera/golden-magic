@@ -1,0 +1,4 @@
+rack	status state
+main	active rack
+backup	active rack
+old	inactive hidden

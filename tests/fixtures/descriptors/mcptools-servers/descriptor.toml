@@ -1,0 +1,10 @@
+id = "known.mcptools.servers"
+name = "mcptools server list"
+priority = 50
+
+[matches]
+required_substrings = ["server\tstatus","local\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

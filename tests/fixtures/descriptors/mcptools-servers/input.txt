@@ -1,0 +1,4 @@
+server	status state
+local	running mcp
+remote	ready mcp
+old	stopped hidden

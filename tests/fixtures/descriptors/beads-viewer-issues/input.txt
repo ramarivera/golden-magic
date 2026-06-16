@@ -1,0 +1,4 @@
+issue	status state
+BD-1	open bead
+BD-2	closed bead
+OLD-1	archived hidden

@@ -24370,5 +24370,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/rojo-rbx/rojo",
+    "descriptor_id": "known.rojo.projects",
+    "run_id": "agentic.rojo-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rojo-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rojo-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rojo.projects for rojo project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/f/mcptools",
+    "descriptor_id": "known.mcptools.servers",
+    "run_id": "agentic.mcptools-servers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mcptools-servers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mcptools-servers/expected.rows.json",
+    "variants": [
+      "server header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mcptools.servers for mcptools server list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/repplus/rep-chrome",
+    "descriptor_id": "known.rep.chrome.tabs",
+    "run_id": "agentic.rep-chrome-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rep-chrome-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rep-chrome-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rep.chrome.tabs for rep-chrome tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/agauniyal/rang",
+    "descriptor_id": "known.rang.colors",
+    "run_id": "agentic.rang-colors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rang-colors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rang-colors/expected.rows.json",
+    "variants": [
+      "color header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rang.colors for rang color list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tukaani-project/xz",
+    "descriptor_id": "known.xz.files",
+    "run_id": "agentic.xz-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xz-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xz-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xz.files for xz file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/statoscope/statoscope",
+    "descriptor_id": "known.statoscope.reports",
+    "run_id": "agentic.statoscope-reports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/statoscope-reports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/statoscope-reports/expected.rows.json",
+    "variants": [
+      "report header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.statoscope.reports for statoscope report list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/auchenberg/chrome-devtools-app",
+    "descriptor_id": "known.chrome.devtools.app.targets",
+    "run_id": "agentic.chrome-devtools-app-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chrome-devtools-app-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chrome-devtools-app-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chrome.devtools.app.targets for chrome-devtools-app target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ReVanced/revanced-cli",
+    "descriptor_id": "known.revanced.cli.patches",
+    "run_id": "agentic.revanced-cli-patches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/revanced-cli-patches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/revanced-cli-patches/expected.rows.json",
+    "variants": [
+      "patch header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.revanced.cli.patches for revanced-cli patch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Dicklesworthstone/beads_viewer",
+    "descriptor_id": "known.beads.viewer.issues",
+    "run_id": "agentic.beads-viewer-issues.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/beads-viewer-issues/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/beads-viewer-issues/expected.rows.json",
+    "variants": [
+      "issue header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.beads.viewer.issues for beads_viewer issue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Timmoth/RackPeek",
+    "descriptor_id": "known.rackpeek.racks",
+    "run_id": "agentic.rackpeek-racks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rackpeek-racks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rackpeek-racks/expected.rows.json",
+    "variants": [
+      "rack header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rackpeek.racks for RackPeek rack list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

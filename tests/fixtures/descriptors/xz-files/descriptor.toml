@@ -1,0 +1,10 @@
+id = "known.xz.files"
+name = "xz file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","archive.xz\tcompressed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "server",
+    "value": "status state"
+  },
+  {
+    "name": "local",
+    "value": "running mcp"
+  },
+  {
+    "name": "remote",
+    "value": "ready mcp"
+  },
+  {
+    "name": "old",
+    "value": "stopped hidden"
+  }
+]
