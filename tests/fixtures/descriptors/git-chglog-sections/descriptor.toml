@@ -1,0 +1,10 @@
+id = "known.git-chglog.sections"
+name = "git-chglog section list"
+priority = 50
+
+[matches]
+required_substrings = ["section\tcount","features\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

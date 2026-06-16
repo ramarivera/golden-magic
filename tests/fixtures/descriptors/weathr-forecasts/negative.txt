@@ -1,0 +1,2 @@
+day condition state
+today clear current

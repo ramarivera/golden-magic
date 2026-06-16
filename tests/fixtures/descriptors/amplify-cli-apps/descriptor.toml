@@ -1,0 +1,10 @@
+id = "known.amplify-cli.apps"
+name = "Amplify CLI app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tenv","web\tdev"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -16810,5 +16810,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/graykode/abtop",
+    "descriptor_id": "known.abtop.processes",
+    "run_id": "agentic.abtop-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/abtop-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/abtop-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "cpu row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.abtop.processes for abtop process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Veirt/weathr",
+    "descriptor_id": "known.weathr.forecasts",
+    "run_id": "agentic.weathr-forecasts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/weathr-forecasts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/weathr-forecasts/expected.rows.json",
+    "variants": [
+      "day header row",
+      "condition row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.weathr.forecasts for weathr forecast list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aws-amplify/amplify-cli",
+    "descriptor_id": "known.amplify-cli.apps",
+    "run_id": "agentic.amplify-cli-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/amplify-cli-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/amplify-cli-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "env row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.amplify-cli.apps for Amplify CLI app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/git-chglog/git-chglog",
+    "descriptor_id": "known.git-chglog.sections",
+    "run_id": "agentic.git-chglog-sections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-chglog-sections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-chglog-sections/expected.rows.json",
+    "variants": [
+      "section header row",
+      "count row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-chglog.sections for git-chglog section list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/watchexec/cargo-watch",
+    "descriptor_id": "known.cargo-watch.jobs",
+    "run_id": "agentic.cargo-watch-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cargo-watch-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cargo-watch-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cargo-watch.jobs for cargo-watch job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vuejs/devtools",
+    "descriptor_id": "known.vue-devtools.panels",
+    "run_id": "agentic.vue-devtools-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vue-devtools-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vue-devtools-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vue-devtools.panels for Vue DevTools panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/geekjourneyx/md2wechat-skill",
+    "descriptor_id": "known.md2wechat-skill.exports",
+    "run_id": "agentic.md2wechat-skill-exports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/md2wechat-skill-exports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/md2wechat-skill-exports/expected.rows.json",
+    "variants": [
+      "export header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.md2wechat-skill.exports for md2wechat-skill export list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Doriandarko/o1-engineer",
+    "descriptor_id": "known.o1-engineer.tasks",
+    "run_id": "agentic.o1-engineer-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/o1-engineer-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/o1-engineer-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "phase row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.o1-engineer.tasks for o1-engineer task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/fast-cli",
+    "descriptor_id": "known.fast-cli.metrics",
+    "run_id": "agentic.fast-cli-metrics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fast-cli-metrics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fast-cli-metrics/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fast-cli.metrics for fast-cli metric list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/readbeyond/aeneas",
+    "descriptor_id": "known.aeneas.alignments",
+    "run_id": "agentic.aeneas-alignments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aeneas-alignments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aeneas-alignments/expected.rows.json",
+    "variants": [
+      "alignment header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.aeneas.alignments for aeneas alignment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

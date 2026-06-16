@@ -1,0 +1,4 @@
+section	count state
+features	3 emitted
+fixes	5 emitted
+old	0 skipped

@@ -1,0 +1,4 @@
+app	env state
+web	dev active
+admin	prod active
+old	test removed

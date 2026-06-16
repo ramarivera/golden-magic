@@ -1,0 +1,18 @@
+[
+  {
+    "name": "section",
+    "value": "count state"
+  },
+  {
+    "name": "features",
+    "value": "3 emitted"
+  },
+  {
+    "name": "fixes",
+    "value": "5 emitted"
+  },
+  {
+    "name": "old",
+    "value": "0 skipped"
+  }
+]

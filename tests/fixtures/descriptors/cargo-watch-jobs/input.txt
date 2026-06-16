@@ -1,0 +1,4 @@
+job	command state
+test	cargo running
+fmt	cargo waiting
+old	make disabled

@@ -1,0 +1,4 @@
+metric	value state
+download	120 measured
+upload	20 measured
+old	0 ignored

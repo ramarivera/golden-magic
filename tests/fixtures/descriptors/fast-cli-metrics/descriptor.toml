@@ -1,0 +1,10 @@
+id = "known.fast-cli.metrics"
+name = "fast-cli metric list"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","download\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

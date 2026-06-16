@@ -6536,5 +6536,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/powerline-go-segments",
     "analysis_notes": "Modeled powerline-go segment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/graykode/abtop",
+    "descriptor_id": "known.abtop.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/abtop-processes",
+    "analysis_notes": "Modeled abtop process monitor output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Veirt/weathr",
+    "descriptor_id": "known.weathr.forecasts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/weathr-forecasts",
+    "analysis_notes": "Modeled weathr CLI forecast output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aws-amplify/amplify-cli",
+    "descriptor_id": "known.amplify-cli.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/amplify-cli-apps",
+    "analysis_notes": "Modeled Amplify CLI app environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/git-chglog/git-chglog",
+    "descriptor_id": "known.git-chglog.sections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-chglog-sections",
+    "analysis_notes": "Modeled git-chglog generated section output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/watchexec/cargo-watch",
+    "descriptor_id": "known.cargo-watch.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cargo-watch-jobs",
+    "analysis_notes": "Modeled cargo-watch job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vuejs/devtools",
+    "descriptor_id": "known.vue-devtools.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vue-devtools-panels",
+    "analysis_notes": "Modeled Vue DevTools panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/geekjourneyx/md2wechat-skill",
+    "descriptor_id": "known.md2wechat-skill.exports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/md2wechat-skill-exports",
+    "analysis_notes": "Modeled md2wechat-skill export output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Doriandarko/o1-engineer",
+    "descriptor_id": "known.o1-engineer.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/o1-engineer-tasks",
+    "analysis_notes": "Modeled o1-engineer task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/fast-cli",
+    "descriptor_id": "known.fast-cli.metrics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fast-cli-metrics",
+    "analysis_notes": "Modeled fast-cli speed metric output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/readbeyond/aeneas",
+    "descriptor_id": "known.aeneas.alignments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aeneas-alignments",
+    "analysis_notes": "Modeled aeneas alignment job output with a generated executable-json parser plugin."
   }
 ]

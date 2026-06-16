@@ -1,0 +1,10 @@
+id = "known.o1-engineer.tasks"
+name = "o1-engineer task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tphase","plan\treason"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

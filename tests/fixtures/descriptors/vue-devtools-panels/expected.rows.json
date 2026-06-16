@@ -1,0 +1,18 @@
+[
+  {
+    "name": "panel",
+    "value": "kind state"
+  },
+  {
+    "name": "components",
+    "value": "tree enabled"
+  },
+  {
+    "name": "pinia",
+    "value": "store enabled"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

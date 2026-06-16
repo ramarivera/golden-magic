@@ -1,0 +1,18 @@
+[
+  {
+    "name": "day",
+    "value": "condition state"
+  },
+  {
+    "name": "today",
+    "value": "clear current"
+  },
+  {
+    "name": "tomorrow",
+    "value": "rain forecast"
+  },
+  {
+    "name": "old",
+    "value": "cloudy archived"
+  }
+]

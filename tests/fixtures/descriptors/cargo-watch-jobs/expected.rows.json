@@ -1,0 +1,18 @@
+[
+  {
+    "name": "job",
+    "value": "command state"
+  },
+  {
+    "name": "test",
+    "value": "cargo running"
+  },
+  {
+    "name": "fmt",
+    "value": "cargo waiting"
+  },
+  {
+    "name": "old",
+    "value": "make disabled"
+  }
+]

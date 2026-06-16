@@ -1,0 +1,4 @@
+day	condition state
+today	clear current
+tomorrow	rain forecast
+old	cloudy archived

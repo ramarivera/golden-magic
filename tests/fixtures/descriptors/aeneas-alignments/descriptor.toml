@@ -1,0 +1,10 @@
+id = "known.aeneas.alignments"
+name = "aeneas alignment list"
+priority = 50
+
+[matches]
+required_substrings = ["alignment\tlanguage","chapter1\ten"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+panel kind state
+components tree enabled

@@ -1,0 +1,10 @@
+id = "known.weathr.forecasts"
+name = "weathr forecast list"
+priority = 50
+
+[matches]
+required_substrings = ["day\tcondition","today\tclear"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

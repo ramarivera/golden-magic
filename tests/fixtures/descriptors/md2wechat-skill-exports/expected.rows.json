@@ -1,0 +1,18 @@
+[
+  {
+    "name": "export",
+    "value": "format state"
+  },
+  {
+    "name": "article",
+    "value": "html ready"
+  },
+  {
+    "name": "cover",
+    "value": "png ready"
+  },
+  {
+    "name": "old",
+    "value": "md skipped"
+  }
+]

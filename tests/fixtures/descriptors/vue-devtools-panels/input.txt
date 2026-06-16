@@ -1,0 +1,4 @@
+panel	kind state
+components	tree enabled
+pinia	store enabled
+old	legacy hidden
