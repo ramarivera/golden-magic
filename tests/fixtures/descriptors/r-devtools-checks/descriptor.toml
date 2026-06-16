@@ -1,0 +1,10 @@
+id = "known.r-devtools.checks"
+name = "R devtools check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tresult","tests\tOK"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

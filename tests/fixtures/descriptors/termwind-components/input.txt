@@ -1,0 +1,4 @@
+component	style state
+table	border available
+span	inline available
+old	legacy hidden

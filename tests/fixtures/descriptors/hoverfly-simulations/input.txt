@@ -1,0 +1,4 @@
+simulation	mode state
+payments	capture active
+users	simulate active
+old	spy disabled

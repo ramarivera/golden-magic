@@ -18430,5 +18430,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/r-lib/devtools",
+    "descriptor_id": "known.r-devtools.checks",
+    "run_id": "agentic.r-devtools-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/r-devtools-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/r-devtools-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.r-devtools.checks for R devtools check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/F1bonacc1/process-compose",
+    "descriptor_id": "known.process-compose.processes",
+    "run_id": "agentic.process-compose-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/process-compose-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/process-compose-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.process-compose.processes for process-compose process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yonaskolb/Mint",
+    "descriptor_id": "known.mint.packages",
+    "run_id": "agentic.mint-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mint-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mint-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mint.packages for Mint package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vbauerster/mpb",
+    "descriptor_id": "known.mpb.bars",
+    "run_id": "agentic.mpb-bars.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mpb-bars/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mpb-bars/expected.rows.json",
+    "variants": [
+      "bar header row",
+      "percent row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mpb.bars for mpb progress bar list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/SpectoLabs/hoverfly",
+    "descriptor_id": "known.hoverfly.simulations",
+    "run_id": "agentic.hoverfly-simulations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hoverfly-simulations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hoverfly-simulations/expected.rows.json",
+    "variants": [
+      "simulation header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hoverfly.simulations for Hoverfly simulation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pythops/oryx",
+    "descriptor_id": "known.oryx.containers",
+    "run_id": "agentic.oryx-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oryx-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oryx-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "image row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.oryx.containers for oryx container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/moazbuilds/CodeMachine-CLI",
+    "descriptor_id": "known.codemachine-cli.tasks",
+    "run_id": "agentic.codemachine-cli-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/codemachine-cli-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/codemachine-cli-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.codemachine-cli.tasks for CodeMachine CLI task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/DanielSWolf/rhubarb-lip-sync",
+    "descriptor_id": "known.rhubarb-lip-sync.mouths",
+    "run_id": "agentic.rhubarb-lip-sync-mouths.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rhubarb-lip-sync-mouths/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rhubarb-lip-sync-mouths/expected.rows.json",
+    "variants": [
+      "cue header row",
+      "mouth row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rhubarb-lip-sync.mouths for rhubarb-lip-sync mouth cue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/p-gen/smenu",
+    "descriptor_id": "known.smenu.options",
+    "run_id": "agentic.smenu-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/smenu-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/smenu-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "index row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.smenu.options for smenu option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nunomaduro/termwind",
+    "descriptor_id": "known.termwind.components",
+    "run_id": "agentic.termwind-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termwind-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termwind-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "style row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termwind.components for Termwind component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

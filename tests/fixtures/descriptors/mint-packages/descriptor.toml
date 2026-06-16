@@ -1,0 +1,10 @@
+id = "known.mint.packages"
+name = "Mint package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tversion","swiftlint\tlatest"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

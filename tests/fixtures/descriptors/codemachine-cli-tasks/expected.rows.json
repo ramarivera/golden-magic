@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "kind state"
+  },
+  {
+    "name": "generate",
+    "value": "code ready"
+  },
+  {
+    "name": "review",
+    "value": "analysis ready"
+  },
+  {
+    "name": "old",
+    "value": "prompt disabled"
+  }
+]

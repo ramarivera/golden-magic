@@ -1,0 +1,4 @@
+bar	percent state
+download	80 active
+upload	20 active
+old	100 complete

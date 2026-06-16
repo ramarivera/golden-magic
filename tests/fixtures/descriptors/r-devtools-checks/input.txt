@@ -1,0 +1,4 @@
+check	result state
+tests	OK passed
+lint	OK passed
+old	WARN ignored

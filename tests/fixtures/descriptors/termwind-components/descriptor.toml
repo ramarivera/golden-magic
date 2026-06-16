@@ -1,0 +1,10 @@
+id = "known.termwind.components"
+name = "Termwind component list"
+priority = 50
+
+[matches]
+required_substrings = ["component\tstyle","table\tborder"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

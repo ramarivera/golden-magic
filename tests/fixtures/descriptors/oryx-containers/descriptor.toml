@@ -1,0 +1,10 @@
+id = "known.oryx.containers"
+name = "oryx container list"
+priority = 50
+
+[matches]
+required_substrings = ["container\timage","api\tubuntu"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

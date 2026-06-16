@@ -1,0 +1,4 @@
+cue	mouth state
+0.00	A emitted
+0.12	B emitted
+old	X skipped

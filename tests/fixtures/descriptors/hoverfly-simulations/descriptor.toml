@@ -1,0 +1,10 @@
+id = "known.hoverfly.simulations"
+name = "Hoverfly simulation list"
+priority = 50
+
+[matches]
+required_substrings = ["simulation\tmode","payments\tcapture"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

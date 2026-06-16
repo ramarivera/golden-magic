@@ -1,0 +1,10 @@
+id = "known.mpb.bars"
+name = "mpb progress bar list"
+priority = 50
+
+[matches]
+required_substrings = ["bar\tpercent","download\t80"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

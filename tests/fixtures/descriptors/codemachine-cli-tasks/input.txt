@@ -1,0 +1,4 @@
+task	kind state
+generate	code ready
+review	analysis ready
+old	prompt disabled

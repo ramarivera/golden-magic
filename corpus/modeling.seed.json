@@ -7166,5 +7166,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/comtool-ports",
     "analysis_notes": "Modeled COMTool serial port output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/r-lib/devtools",
+    "descriptor_id": "known.r-devtools.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/r-devtools-checks",
+    "analysis_notes": "Modeled R devtools check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/F1bonacc1/process-compose",
+    "descriptor_id": "known.process-compose.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/process-compose-processes",
+    "analysis_notes": "Modeled process-compose process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yonaskolb/Mint",
+    "descriptor_id": "known.mint.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mint-packages",
+    "analysis_notes": "Modeled Mint package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vbauerster/mpb",
+    "descriptor_id": "known.mpb.bars",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mpb-bars",
+    "analysis_notes": "Modeled mpb progress bar output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SpectoLabs/hoverfly",
+    "descriptor_id": "known.hoverfly.simulations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hoverfly-simulations",
+    "analysis_notes": "Modeled Hoverfly simulation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pythops/oryx",
+    "descriptor_id": "known.oryx.containers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oryx-containers",
+    "analysis_notes": "Modeled oryx container output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/moazbuilds/CodeMachine-CLI",
+    "descriptor_id": "known.codemachine-cli.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/codemachine-cli-tasks",
+    "analysis_notes": "Modeled CodeMachine CLI task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/DanielSWolf/rhubarb-lip-sync",
+    "descriptor_id": "known.rhubarb-lip-sync.mouths",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rhubarb-lip-sync-mouths",
+    "analysis_notes": "Modeled rhubarb-lip-sync mouth cue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/p-gen/smenu",
+    "descriptor_id": "known.smenu.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/smenu-options",
+    "analysis_notes": "Modeled smenu selectable option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nunomaduro/termwind",
+    "descriptor_id": "known.termwind.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termwind-components",
+    "analysis_notes": "Modeled Termwind component output with a generated executable-json parser plugin."
   }
 ]

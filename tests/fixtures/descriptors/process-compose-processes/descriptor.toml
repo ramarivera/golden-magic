@@ -1,0 +1,10 @@
+id = "known.process-compose.processes"
+name = "process-compose process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tstatus","web\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

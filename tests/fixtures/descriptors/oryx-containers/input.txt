@@ -1,0 +1,4 @@
+container	image state
+api	ubuntu running
+worker	alpine running
+old	debian stopped

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "component",
+    "value": "style state"
+  },
+  {
+    "name": "table",
+    "value": "border available"
+  },
+  {
+    "name": "span",
+    "value": "inline available"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

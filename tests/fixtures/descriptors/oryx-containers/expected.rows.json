@@ -1,0 +1,18 @@
+[
+  {
+    "name": "container",
+    "value": "image state"
+  },
+  {
+    "name": "api",
+    "value": "ubuntu running"
+  },
+  {
+    "name": "worker",
+    "value": "alpine running"
+  },
+  {
+    "name": "old",
+    "value": "debian stopped"
+  }
+]

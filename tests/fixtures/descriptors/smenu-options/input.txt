@@ -1,0 +1,4 @@
+option	index state
+deploy	1 selectable
+logs	2 selectable
+old	9 hidden

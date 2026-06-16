@@ -1,0 +1,10 @@
+id = "known.codemachine-cli.tasks"
+name = "CodeMachine CLI task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tkind","generate\tcode"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

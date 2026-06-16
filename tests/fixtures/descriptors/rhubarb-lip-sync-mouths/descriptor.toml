@@ -1,0 +1,10 @@
+id = "known.rhubarb-lip-sync.mouths"
+name = "rhubarb-lip-sync mouth cue list"
+priority = 50
+
+[matches]
+required_substrings = ["cue\tmouth","0.00\tA"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
