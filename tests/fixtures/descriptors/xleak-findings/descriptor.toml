@@ -1,0 +1,10 @@
+id = "known.xleak.findings"
+name = "xleak finding list"
+priority = 50
+
+[matches]
+required_substrings = ["finding\tstatus","heap\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

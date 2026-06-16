@@ -1,0 +1,4 @@
+book	status state
+novel.epub	loaded reader
+notes.epub	loaded reader
+old.epub	missing hidden

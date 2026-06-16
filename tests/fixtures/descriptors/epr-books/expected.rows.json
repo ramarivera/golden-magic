@@ -1,0 +1,18 @@
+[
+  {
+    "name": "book",
+    "value": "status state"
+  },
+  {
+    "name": "novel.epub",
+    "value": "loaded reader"
+  },
+  {
+    "name": "notes.epub",
+    "value": "loaded reader"
+  },
+  {
+    "name": "old.epub",
+    "value": "missing hidden"
+  }
+]

@@ -1,0 +1,4 @@
+component	status state
+App	ready vue
+Router	ready vue
+Old	disabled hidden

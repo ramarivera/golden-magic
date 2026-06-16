@@ -1,0 +1,4 @@
+session	status state
+work	active multi
+review	active multi
+old	closed hidden

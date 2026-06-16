@@ -1,0 +1,10 @@
+id = "known.hdfs.files"
+name = "hdfs file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","/data\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

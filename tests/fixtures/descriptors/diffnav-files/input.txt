@@ -1,0 +1,4 @@
+file	status state
+src/main.rs	changed diff
+README.md	changed diff
+old.txt	ignored hidden

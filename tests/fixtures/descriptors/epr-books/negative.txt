@@ -1,0 +1,2 @@
+book status state
+novel.epub loaded reader

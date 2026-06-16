@@ -1,0 +1,10 @@
+id = "known.diffnav.files"
+name = "diffnav file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","src/main.rs\tchanged"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

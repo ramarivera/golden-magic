@@ -1,0 +1,4 @@
+file	status state
+/data	available hdfs
+/logs	available hdfs
+/old	missing hidden

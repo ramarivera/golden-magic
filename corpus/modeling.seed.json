@@ -10036,5 +10036,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/oneterm-sessions",
     "analysis_notes": "Modeled oneterm session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bgreenwell/xleak",
+    "descriptor_id": "known.xleak.findings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/xleak-findings",
+    "analysis_notes": "Modeled xleak finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dlvhdr/diffnav",
+    "descriptor_id": "known.diffnav.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/diffnav-files",
+    "analysis_notes": "Modeled diffnav file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/VirusTotal/vt-cli",
+    "descriptor_id": "known.vt.cli.scans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vt-cli-scans",
+    "analysis_notes": "Modeled vt-cli scan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/superstreamerapp/superstreamer",
+    "descriptor_id": "known.superstreamer.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/superstreamer-jobs",
+    "analysis_notes": "Modeled superstreamer job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/colinmarc/hdfs",
+    "descriptor_id": "known.hdfs.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hdfs-files",
+    "analysis_notes": "Modeled hdfs file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kofigumbs/multi",
+    "descriptor_id": "known.multi.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/multi-sessions",
+    "analysis_notes": "Modeled multi session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tddworks/baguette",
+    "descriptor_id": "known.baguette.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/baguette-tasks",
+    "analysis_notes": "Modeled baguette task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/open-source-labs/PreVue",
+    "descriptor_id": "known.prevue.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/prevue-components",
+    "analysis_notes": "Modeled PreVue component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/antoniorodr/cronboard",
+    "descriptor_id": "known.cronboard.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cronboard-jobs",
+    "analysis_notes": "Modeled cronboard job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wustho/epr",
+    "descriptor_id": "known.epr.books",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/epr-books",
+    "analysis_notes": "Modeled epr book output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "status state"
+  },
+  {
+    "name": "work",
+    "value": "active multi"
+  },
+  {
+    "name": "review",
+    "value": "active multi"
+  },
+  {
+    "name": "old",
+    "value": "closed hidden"
+  }
+]

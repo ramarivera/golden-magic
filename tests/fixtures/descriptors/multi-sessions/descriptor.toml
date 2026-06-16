@@ -1,0 +1,10 @@
+id = "known.multi.sessions"
+name = "multi session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","work\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

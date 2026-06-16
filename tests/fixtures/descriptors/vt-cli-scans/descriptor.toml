@@ -1,0 +1,10 @@
+id = "known.vt.cli.scans"
+name = "vt-cli scan list"
+priority = 50
+
+[matches]
+required_substrings = ["scan\tstatus","file.exe\tclean"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+scan status state
+file.exe clean vt

@@ -1,0 +1,4 @@
+scan	status state
+file.exe	clean vt
+archive.zip	queued vt
+old	failed hidden

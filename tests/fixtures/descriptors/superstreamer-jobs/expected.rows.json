@@ -1,0 +1,18 @@
+[
+  {
+    "name": "job",
+    "value": "status state"
+  },
+  {
+    "name": "transcode",
+    "value": "running media"
+  },
+  {
+    "name": "package",
+    "value": "queued media"
+  },
+  {
+    "name": "old",
+    "value": "failed hidden"
+  }
+]

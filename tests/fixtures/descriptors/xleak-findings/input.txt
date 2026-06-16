@@ -1,0 +1,4 @@
+finding	status state
+heap	open leak
+socket	open leak
+old	closed hidden

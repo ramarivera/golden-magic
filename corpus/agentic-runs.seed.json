@@ -25810,5 +25810,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/bgreenwell/xleak",
+    "descriptor_id": "known.xleak.findings",
+    "run_id": "agentic.xleak-findings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/xleak-findings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/xleak-findings/expected.rows.json",
+    "variants": [
+      "finding header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.xleak.findings for xleak finding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dlvhdr/diffnav",
+    "descriptor_id": "known.diffnav.files",
+    "run_id": "agentic.diffnav-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/diffnav-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/diffnav-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.diffnav.files for diffnav file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/VirusTotal/vt-cli",
+    "descriptor_id": "known.vt.cli.scans",
+    "run_id": "agentic.vt-cli-scans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vt-cli-scans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vt-cli-scans/expected.rows.json",
+    "variants": [
+      "scan header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vt.cli.scans for vt-cli scan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/superstreamerapp/superstreamer",
+    "descriptor_id": "known.superstreamer.jobs",
+    "run_id": "agentic.superstreamer-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/superstreamer-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/superstreamer-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.superstreamer.jobs for superstreamer job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/colinmarc/hdfs",
+    "descriptor_id": "known.hdfs.files",
+    "run_id": "agentic.hdfs-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hdfs-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hdfs-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hdfs.files for hdfs file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kofigumbs/multi",
+    "descriptor_id": "known.multi.sessions",
+    "run_id": "agentic.multi-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/multi-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/multi-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.multi.sessions for multi session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tddworks/baguette",
+    "descriptor_id": "known.baguette.tasks",
+    "run_id": "agentic.baguette-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/baguette-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/baguette-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.baguette.tasks for baguette task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-source-labs/PreVue",
+    "descriptor_id": "known.prevue.components",
+    "run_id": "agentic.prevue-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/prevue-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/prevue-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.prevue.components for PreVue component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/antoniorodr/cronboard",
+    "descriptor_id": "known.cronboard.jobs",
+    "run_id": "agentic.cronboard-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cronboard-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cronboard-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cronboard.jobs for cronboard job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wustho/epr",
+    "descriptor_id": "known.epr.books",
+    "run_id": "agentic.epr-books.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/epr-books/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/epr-books/expected.rows.json",
+    "variants": [
+      "book header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.epr.books for epr book list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
