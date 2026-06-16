@@ -1,0 +1,10 @@
+id = "known.react-perf-devtool.metrics"
+name = "react-perf-devtool metric list"
+priority = 50
+
+[matches]
+required_substrings = ["component\trenders","App\t5"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

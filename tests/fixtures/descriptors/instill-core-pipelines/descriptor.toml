@@ -1,0 +1,10 @@
+id = "known.instill-core.pipelines"
+name = "instill-core pipeline list"
+priority = 50
+
+[matches]
+required_substrings = ["pipeline\trelease","vision\tstable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

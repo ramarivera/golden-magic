@@ -19150,5 +19150,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/zhiburt/tabled",
+    "descriptor_id": "known.tabled.renderings",
+    "run_id": "agentic.tabled-renderings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tabled-renderings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tabled-renderings/expected.rows.json",
+    "variants": [
+      "table header row",
+      "style row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tabled.renderings for tabled rendering list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/skanehira/docui",
+    "descriptor_id": "known.docui.containers",
+    "run_id": "agentic.docui-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/docui-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/docui-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.docui.containers for docui container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/MegaManSec/SSH-Snake",
+    "descriptor_id": "known.ssh-snake.hosts",
+    "run_id": "agentic.ssh-snake-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ssh-snake-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ssh-snake-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ssh-snake.hosts for SSH-Snake host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/david942j/one_gadget",
+    "descriptor_id": "known.one-gadget.gadgets",
+    "run_id": "agentic.one-gadget-gadgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/one-gadget-gadgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/one-gadget-gadgets/expected.rows.json",
+    "variants": [
+      "offset header row",
+      "constraint row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.one-gadget.gadgets for one_gadget gadget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ramonvermeulen/whosthere",
+    "descriptor_id": "known.whosthere.visitors",
+    "run_id": "agentic.whosthere-visitors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/whosthere-visitors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/whosthere-visitors/expected.rows.json",
+    "variants": [
+      "visitor header row",
+      "ip row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.whosthere.visitors for whosthere visitor list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/s-a/iron-node",
+    "descriptor_id": "known.iron-node.processes",
+    "run_id": "agentic.iron-node-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/iron-node-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/iron-node-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "debug row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.iron-node.processes for iron-node process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/instill-ai/instill-core",
+    "descriptor_id": "known.instill-core.pipelines",
+    "run_id": "agentic.instill-core-pipelines.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/instill-core-pipelines/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/instill-core-pipelines/expected.rows.json",
+    "variants": [
+      "pipeline header row",
+      "release row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.instill-core.pipelines for instill-core pipeline list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/context-labs/mactop",
+    "descriptor_id": "known.mactop.processes",
+    "run_id": "agentic.mactop-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mactop-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mactop-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "cpu row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mactop.processes for mactop process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/d0c-s4vage/lookatme",
+    "descriptor_id": "known.lookatme.slides",
+    "run_id": "agentic.lookatme-slides.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lookatme-slides/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lookatme-slides/expected.rows.json",
+    "variants": [
+      "slide header row",
+      "title row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lookatme.slides for lookatme slide list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nitin42/react-perf-devtool",
+    "descriptor_id": "known.react-perf-devtool.metrics",
+    "run_id": "agentic.react-perf-devtool-metrics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-perf-devtool-metrics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-perf-devtool-metrics/expected.rows.json",
+    "variants": [
+      "component header row",
+      "renders row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-perf-devtool.metrics for react-perf-devtool metric list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

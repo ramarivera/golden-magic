@@ -1,0 +1,4 @@
+offset	constraint state
+0x4f302	rsp usable
+0x10a2fc	rax usable
+old	none skipped

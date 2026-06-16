@@ -1,0 +1,10 @@
+id = "known.ssh-snake.hosts"
+name = "SSH-Snake host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tpath","bastion\tssh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

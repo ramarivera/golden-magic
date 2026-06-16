@@ -1,0 +1,4 @@
+pipeline	release state
+vision	stable deployed
+text	beta deployed
+old	alpha disabled

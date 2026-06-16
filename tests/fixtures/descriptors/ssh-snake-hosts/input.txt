@@ -1,0 +1,4 @@
+host	path state
+bastion	ssh found
+internal	proxy found
+old	none ignored

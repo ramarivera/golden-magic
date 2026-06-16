@@ -1,0 +1,2 @@
+process cpu state
+kernel_task 12 visible

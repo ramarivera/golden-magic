@@ -1,0 +1,18 @@
+[
+  {
+    "name": "process",
+    "value": "cpu state"
+  },
+  {
+    "name": "kernel_task",
+    "value": "12 visible"
+  },
+  {
+    "name": "WindowServer",
+    "value": "7 visible"
+  },
+  {
+    "name": "old",
+    "value": "0 hidden"
+  }
+]

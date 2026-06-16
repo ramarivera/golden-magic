@@ -1,0 +1,4 @@
+process	cpu state
+kernel_task	12 visible
+WindowServer	7 visible
+old	0 hidden

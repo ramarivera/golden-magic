@@ -1,0 +1,18 @@
+[
+  {
+    "name": "visitor",
+    "value": "ip state"
+  },
+  {
+    "name": "alice",
+    "value": "10.0.0.5 present"
+  },
+  {
+    "name": "bob",
+    "value": "10.0.0.6 present"
+  },
+  {
+    "name": "old",
+    "value": "0.0.0.0 gone"
+  }
+]

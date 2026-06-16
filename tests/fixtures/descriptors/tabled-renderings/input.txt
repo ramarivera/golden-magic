@@ -1,0 +1,4 @@
+table	style state
+users	rounded rendered
+logs	ascii rendered
+old	plain hidden

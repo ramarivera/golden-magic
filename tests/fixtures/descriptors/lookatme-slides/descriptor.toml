@@ -1,0 +1,10 @@
+id = "known.lookatme.slides"
+name = "lookatme slide list"
+priority = 50
+
+[matches]
+required_substrings = ["slide\ttitle","1\tIntro"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

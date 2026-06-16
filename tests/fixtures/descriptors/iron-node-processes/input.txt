@@ -1,0 +1,4 @@
+process	debug state
+server	enabled attached
+worker	disabled listed
+old	none hidden

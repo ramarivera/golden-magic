@@ -1,0 +1,4 @@
+component	renders state
+App	5 reported
+List	12 reported
+Old	1 ignored

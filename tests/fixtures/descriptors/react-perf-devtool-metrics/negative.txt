@@ -1,0 +1,2 @@
+component renders state
+App 5 reported

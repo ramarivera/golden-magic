@@ -1,0 +1,10 @@
+id = "known.mactop.processes"
+name = "mactop process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tcpu","kernel_task\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

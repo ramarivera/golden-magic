@@ -1,0 +1,10 @@
+id = "known.one-gadget.gadgets"
+name = "one_gadget gadget list"
+priority = 50
+
+[matches]
+required_substrings = ["offset\tconstraint","0x4f302\trsp"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

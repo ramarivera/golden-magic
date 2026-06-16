@@ -1,0 +1,4 @@
+container	status state
+api	running visible
+worker	exited visible
+old	dead hidden

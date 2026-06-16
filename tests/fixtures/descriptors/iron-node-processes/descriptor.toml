@@ -1,0 +1,10 @@
+id = "known.iron-node.processes"
+name = "iron-node process list"
+priority = 50
+
+[matches]
+required_substrings = ["process\tdebug","server\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

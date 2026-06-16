@@ -1,0 +1,10 @@
+id = "known.whosthere.visitors"
+name = "whosthere visitor list"
+priority = 50
+
+[matches]
+required_substrings = ["visitor\tip","alice\t10.0.0.5"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
