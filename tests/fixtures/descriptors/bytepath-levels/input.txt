@@ -1,0 +1,4 @@
+level	status state
+arena	ready game
+boss	locked game
+old	disabled hidden

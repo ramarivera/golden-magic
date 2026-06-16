@@ -24910,5 +24910,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/trehn/termdown",
+    "descriptor_id": "known.termdown.timers",
+    "run_id": "agentic.termdown-timers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termdown-timers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termdown-timers/expected.rows.json",
+    "variants": [
+      "timer header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termdown.timers for termdown timer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hauntsaninja/pyp",
+    "descriptor_id": "known.pyp.expressions",
+    "run_id": "agentic.pyp-expressions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pyp-expressions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pyp-expressions/expected.rows.json",
+    "variants": [
+      "expression header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pyp.expressions for pyp expression list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fosslife/devtools-x",
+    "descriptor_id": "known.devtools.x.tools",
+    "run_id": "agentic.devtools-x-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devtools-x-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devtools-x-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devtools.x.tools for devtools-x tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dimonomid/nerdlog",
+    "descriptor_id": "known.nerdlog.entries",
+    "run_id": "agentic.nerdlog-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nerdlog-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nerdlog-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nerdlog.entries for nerdlog entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/a327ex/BYTEPATH",
+    "descriptor_id": "known.bytepath.levels",
+    "run_id": "agentic.bytepath-levels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bytepath-levels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bytepath-levels/expected.rows.json",
+    "variants": [
+      "level header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bytepath.levels for BYTEPATH level list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hcavarsan/kftray",
+    "descriptor_id": "known.kftray.tunnels",
+    "run_id": "agentic.kftray-tunnels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kftray-tunnels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kftray-tunnels/expected.rows.json",
+    "variants": [
+      "tunnel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kftray.tunnels for kftray tunnel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bgreenwell/lstr",
+    "descriptor_id": "known.lstr.lists",
+    "run_id": "agentic.lstr-lists.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lstr-lists/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lstr-lists/expected.rows.json",
+    "variants": [
+      "list header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lstr.lists for lstr list output output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/apollographql/apollo-client-devtools",
+    "descriptor_id": "known.apollo.client.devtools.caches",
+    "run_id": "agentic.apollo-client-devtools-caches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/apollo-client-devtools-caches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/apollo-client-devtools-caches/expected.rows.json",
+    "variants": [
+      "cache header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.apollo.client.devtools.caches for apollo-client-devtools cache list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ngs-lang/ngs",
+    "descriptor_id": "known.ngs.scripts",
+    "run_id": "agentic.ngs-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ngs-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ngs-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ngs.scripts for ngs script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rensbreur/SwiftTUI",
+    "descriptor_id": "known.swiftui.views",
+    "run_id": "agentic.swiftui-views.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/swiftui-views/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/swiftui-views/expected.rows.json",
+    "variants": [
+      "view header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.swiftui.views for SwiftTUI view list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

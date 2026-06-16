@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tool",
+    "value": "status state"
+  },
+  {
+    "name": "json",
+    "value": "ready devtools"
+  },
+  {
+    "name": "regex",
+    "value": "ready devtools"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

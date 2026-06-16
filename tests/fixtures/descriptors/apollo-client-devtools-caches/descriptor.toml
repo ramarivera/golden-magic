@@ -1,0 +1,10 @@
+id = "known.apollo.client.devtools.caches"
+name = "apollo-client-devtools cache list"
+priority = 50
+
+[matches]
+required_substrings = ["cache\tstatus","User\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

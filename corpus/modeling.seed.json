@@ -9686,5 +9686,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/sheldon-plugins",
     "analysis_notes": "Modeled sheldon plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trehn/termdown",
+    "descriptor_id": "known.termdown.timers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termdown-timers",
+    "analysis_notes": "Modeled termdown timer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hauntsaninja/pyp",
+    "descriptor_id": "known.pyp.expressions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pyp-expressions",
+    "analysis_notes": "Modeled pyp expression output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fosslife/devtools-x",
+    "descriptor_id": "known.devtools.x.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtools-x-tools",
+    "analysis_notes": "Modeled devtools-x tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dimonomid/nerdlog",
+    "descriptor_id": "known.nerdlog.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nerdlog-entries",
+    "analysis_notes": "Modeled nerdlog entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/a327ex/BYTEPATH",
+    "descriptor_id": "known.bytepath.levels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bytepath-levels",
+    "analysis_notes": "Modeled BYTEPATH level output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hcavarsan/kftray",
+    "descriptor_id": "known.kftray.tunnels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kftray-tunnels",
+    "analysis_notes": "Modeled kftray tunnel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bgreenwell/lstr",
+    "descriptor_id": "known.lstr.lists",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lstr-lists",
+    "analysis_notes": "Modeled lstr list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/apollographql/apollo-client-devtools",
+    "descriptor_id": "known.apollo.client.devtools.caches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/apollo-client-devtools-caches",
+    "analysis_notes": "Modeled apollo-client-devtools cache output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ngs-lang/ngs",
+    "descriptor_id": "known.ngs.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ngs-scripts",
+    "analysis_notes": "Modeled ngs script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rensbreur/SwiftTUI",
+    "descriptor_id": "known.swiftui.views",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/swiftui-views",
+    "analysis_notes": "Modeled SwiftTUI view output with a generated executable-json parser plugin."
   }
 ]

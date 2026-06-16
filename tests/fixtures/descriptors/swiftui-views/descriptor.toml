@@ -1,0 +1,10 @@
+id = "known.swiftui.views"
+name = "SwiftTUI view list"
+priority = 50
+
+[matches]
+required_substrings = ["view\tstatus","main\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

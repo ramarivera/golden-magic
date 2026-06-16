@@ -1,0 +1,4 @@
+script	status state
+deploy	ready ngs
+build	ready ngs
+old	disabled hidden

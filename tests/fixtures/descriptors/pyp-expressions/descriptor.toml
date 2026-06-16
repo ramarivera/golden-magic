@@ -1,0 +1,10 @@
+id = "known.pyp.expressions"
+name = "pyp expression list"
+priority = 50
+
+[matches]
+required_substrings = ["expression\tstatus","line.upper\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

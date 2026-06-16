@@ -1,0 +1,2 @@
+view status state
+main ready tui

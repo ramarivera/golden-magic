@@ -1,0 +1,10 @@
+id = "known.lstr.lists"
+name = "lstr list output"
+priority = 50
+
+[matches]
+required_substrings = ["list\tstatus","home\tvisible"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

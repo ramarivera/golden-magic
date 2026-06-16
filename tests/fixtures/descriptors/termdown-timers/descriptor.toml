@@ -1,0 +1,10 @@
+id = "known.termdown.timers"
+name = "termdown timer list"
+priority = 50
+
+[matches]
+required_substrings = ["timer\tstatus","break\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

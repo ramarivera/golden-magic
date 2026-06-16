@@ -1,0 +1,4 @@
+list	status state
+home	visible files
+tmp	visible files
+old	hidden hidden

@@ -1,0 +1,4 @@
+entry	status state
+build	logged log
+review	logged log
+old	archived hidden

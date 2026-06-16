@@ -1,0 +1,10 @@
+id = "known.ngs.scripts"
+name = "ngs script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tstatus","deploy\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

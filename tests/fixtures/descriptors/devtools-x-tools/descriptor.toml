@@ -1,0 +1,10 @@
+id = "known.devtools.x.tools"
+name = "devtools-x tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tstatus","json\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

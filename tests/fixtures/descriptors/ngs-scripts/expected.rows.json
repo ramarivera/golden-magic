@@ -1,0 +1,18 @@
+[
+  {
+    "name": "script",
+    "value": "status state"
+  },
+  {
+    "name": "deploy",
+    "value": "ready ngs"
+  },
+  {
+    "name": "build",
+    "value": "ready ngs"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

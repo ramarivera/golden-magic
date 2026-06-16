@@ -1,0 +1,18 @@
+[
+  {
+    "name": "level",
+    "value": "status state"
+  },
+  {
+    "name": "arena",
+    "value": "ready game"
+  },
+  {
+    "name": "boss",
+    "value": "locked game"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

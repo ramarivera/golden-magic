@@ -1,0 +1,4 @@
+tool	status state
+json	ready devtools
+regex	ready devtools
+old	disabled hidden

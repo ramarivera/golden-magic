@@ -1,0 +1,4 @@
+view	status state
+main	ready tui
+sidebar	ready tui
+old	disabled hidden
