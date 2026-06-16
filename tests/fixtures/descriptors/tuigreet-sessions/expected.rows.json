@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "status state"
+  },
+  {
+    "name": "sway",
+    "value": "available greeter"
+  },
+  {
+    "name": "shell",
+    "value": "available greeter"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.create.elm.app.scripts"
+name = "create-elm-app script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tstatus","start\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

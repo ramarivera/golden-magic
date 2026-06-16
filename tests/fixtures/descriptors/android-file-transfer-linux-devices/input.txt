@@ -1,0 +1,4 @@
+device	status state
+phone	mounted mtp
+tablet	mounted mtp
+old	disconnected hidden

@@ -1,0 +1,10 @@
+id = "known.openterm.windows"
+name = "openterm window list"
+priority = 50
+
+[matches]
+required_substrings = ["window\tstatus","main\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

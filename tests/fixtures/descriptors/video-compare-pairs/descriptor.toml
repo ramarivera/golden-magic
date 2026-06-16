@@ -1,0 +1,10 @@
+id = "known.video.compare.pairs"
+name = "video-compare pair list"
+priority = 50
+
+[matches]
+required_substrings = ["pair\tstatus","before-after\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+device status state
+vga ready embedded

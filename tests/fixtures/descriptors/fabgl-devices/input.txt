@@ -1,0 +1,4 @@
+device	status state
+vga	ready embedded
+keyboard	ready embedded
+old	missing hidden

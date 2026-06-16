@@ -1,0 +1,4 @@
+window	status state
+main	open terminal
+logs	open terminal
+old	closed hidden

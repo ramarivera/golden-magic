@@ -9196,5 +9196,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/antidote-plugins",
     "analysis_notes": "Modeled antidote plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/halfzebra/create-elm-app",
+    "descriptor_id": "known.create.elm.app.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-elm-app-scripts",
+    "analysis_notes": "Modeled create-elm-app script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fdivitto/FabGL",
+    "descriptor_id": "known.fabgl.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fabgl-devices",
+    "analysis_notes": "Modeled FabGL device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/elasticdog/transcrypt",
+    "descriptor_id": "known.transcrypt.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/transcrypt-files",
+    "analysis_notes": "Modeled transcrypt file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/whoozle/android-file-transfer-linux",
+    "descriptor_id": "known.android.file.transfer.linux.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/android-file-transfer-linux-devices",
+    "analysis_notes": "Modeled android-file-transfer-linux device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yamafaktory/jql",
+    "descriptor_id": "known.jql.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jql-queries",
+    "analysis_notes": "Modeled jql query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/apognu/tuigreet",
+    "descriptor_id": "known.tuigreet.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tuigreet-sessions",
+    "analysis_notes": "Modeled tuigreet session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aws/aws-lambda-dotnet",
+    "descriptor_id": "known.aws.lambda.dotnet.functions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aws-lambda-dotnet-functions",
+    "analysis_notes": "Modeled aws-lambda-dotnet function output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pixop/video-compare",
+    "descriptor_id": "known.video.compare.pairs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/video-compare-pairs",
+    "analysis_notes": "Modeled video-compare pair output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kerl/kerl",
+    "descriptor_id": "known.kerl.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kerl-builds",
+    "analysis_notes": "Modeled kerl build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/louisdh/openterm",
+    "descriptor_id": "known.openterm.windows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openterm-windows",
+    "analysis_notes": "Modeled openterm window output with a generated executable-json parser plugin."
   }
 ]

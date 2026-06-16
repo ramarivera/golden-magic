@@ -23650,5 +23650,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/halfzebra/create-elm-app",
+    "descriptor_id": "known.create.elm.app.scripts",
+    "run_id": "agentic.create-elm-app-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-elm-app-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-elm-app-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.create.elm.app.scripts for create-elm-app script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fdivitto/FabGL",
+    "descriptor_id": "known.fabgl.devices",
+    "run_id": "agentic.fabgl-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fabgl-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fabgl-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fabgl.devices for FabGL device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/elasticdog/transcrypt",
+    "descriptor_id": "known.transcrypt.files",
+    "run_id": "agentic.transcrypt-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/transcrypt-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/transcrypt-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.transcrypt.files for transcrypt file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/whoozle/android-file-transfer-linux",
+    "descriptor_id": "known.android.file.transfer.linux.devices",
+    "run_id": "agentic.android-file-transfer-linux-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/android-file-transfer-linux-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/android-file-transfer-linux-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.android.file.transfer.linux.devices for android-file-transfer-linux device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yamafaktory/jql",
+    "descriptor_id": "known.jql.queries",
+    "run_id": "agentic.jql-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jql-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jql-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jql.queries for jql query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/apognu/tuigreet",
+    "descriptor_id": "known.tuigreet.sessions",
+    "run_id": "agentic.tuigreet-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tuigreet-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tuigreet-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tuigreet.sessions for tuigreet session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aws/aws-lambda-dotnet",
+    "descriptor_id": "known.aws.lambda.dotnet.functions",
+    "run_id": "agentic.aws-lambda-dotnet-functions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aws-lambda-dotnet-functions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aws-lambda-dotnet-functions/expected.rows.json",
+    "variants": [
+      "function header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.aws.lambda.dotnet.functions for aws-lambda-dotnet function list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pixop/video-compare",
+    "descriptor_id": "known.video.compare.pairs",
+    "run_id": "agentic.video-compare-pairs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/video-compare-pairs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/video-compare-pairs/expected.rows.json",
+    "variants": [
+      "pair header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.video.compare.pairs for video-compare pair list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kerl/kerl",
+    "descriptor_id": "known.kerl.builds",
+    "run_id": "agentic.kerl-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kerl-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kerl-builds/expected.rows.json",
+    "variants": [
+      "build header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kerl.builds for kerl build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/louisdh/openterm",
+    "descriptor_id": "known.openterm.windows",
+    "run_id": "agentic.openterm-windows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openterm-windows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openterm-windows/expected.rows.json",
+    "variants": [
+      "window header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.openterm.windows for openterm window list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

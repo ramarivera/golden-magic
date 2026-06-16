@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "status state"
+  },
+  {
+    "name": "phone",
+    "value": "mounted mtp"
+  },
+  {
+    "name": "tablet",
+    "value": "mounted mtp"
+  },
+  {
+    "name": "old",
+    "value": "disconnected hidden"
+  }
+]

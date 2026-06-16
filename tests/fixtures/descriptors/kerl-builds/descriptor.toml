@@ -1,0 +1,10 @@
+id = "known.kerl.builds"
+name = "kerl build list"
+priority = 50
+
+[matches]
+required_substrings = ["build\tstatus","otp-26\tcomplete"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

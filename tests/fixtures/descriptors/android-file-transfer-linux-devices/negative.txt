@@ -1,0 +1,2 @@
+device status state
+phone mounted mtp

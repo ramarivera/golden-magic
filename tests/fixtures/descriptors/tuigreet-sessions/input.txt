@@ -1,0 +1,4 @@
+session	status state
+sway	available greeter
+shell	available greeter
+old	missing hidden

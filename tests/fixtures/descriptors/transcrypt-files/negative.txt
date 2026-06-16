@@ -1,0 +1,2 @@
+file status state
+secret.txt encrypted repo

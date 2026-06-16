@@ -1,0 +1,10 @@
+id = "known.tuigreet.sessions"
+name = "tuigreet session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","sway\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

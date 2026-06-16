@@ -1,0 +1,4 @@
+query	status state
+.items	ok json
+.name	ok json
+old	fail hidden

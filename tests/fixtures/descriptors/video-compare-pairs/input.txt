@@ -1,0 +1,4 @@
+pair	status state
+before-after	ready video
+source-target	ready video
+old	missing hidden

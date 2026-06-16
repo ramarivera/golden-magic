@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "status state"
+  },
+  {
+    "name": "secret.txt",
+    "value": "encrypted repo"
+  },
+  {
+    "name": "config.yml",
+    "value": "encrypted repo"
+  },
+  {
+    "name": "old.txt",
+    "value": "plain hidden"
+  }
+]

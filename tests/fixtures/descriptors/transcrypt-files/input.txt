@@ -1,0 +1,4 @@
+file	status state
+secret.txt	encrypted repo
+config.yml	encrypted repo
+old.txt	plain hidden

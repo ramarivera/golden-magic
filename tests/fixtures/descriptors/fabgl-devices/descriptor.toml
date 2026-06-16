@@ -1,0 +1,10 @@
+id = "known.fabgl.devices"
+name = "FabGL device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tstatus","vga\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.transcrypt.files"
+name = "transcrypt file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","secret.txt\tencrypted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

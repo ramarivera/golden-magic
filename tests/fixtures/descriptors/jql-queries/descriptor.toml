@@ -1,0 +1,10 @@
+id = "known.jql.queries"
+name = "jql query list"
+priority = 50
+
+[matches]
+required_substrings = ["query\tstatus",".items\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

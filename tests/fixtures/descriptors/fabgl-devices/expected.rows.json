@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "status state"
+  },
+  {
+    "name": "vga",
+    "value": "ready embedded"
+  },
+  {
+    "name": "keyboard",
+    "value": "ready embedded"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

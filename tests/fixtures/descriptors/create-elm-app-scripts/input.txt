@@ -1,0 +1,4 @@
+script	status state
+start	ready elm
+build	ready elm
+old	disabled hidden

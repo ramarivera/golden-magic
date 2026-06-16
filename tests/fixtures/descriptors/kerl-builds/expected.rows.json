@@ -1,0 +1,18 @@
+[
+  {
+    "name": "build",
+    "value": "status state"
+  },
+  {
+    "name": "otp-26",
+    "value": "complete erlang"
+  },
+  {
+    "name": "otp-25",
+    "value": "complete erlang"
+  },
+  {
+    "name": "old",
+    "value": "failed hidden"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.aws.lambda.dotnet.functions"
+name = "aws-lambda-dotnet function list"
+priority = 50
+
+[matches]
+required_substrings = ["function\tstatus","handler\tdeployed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

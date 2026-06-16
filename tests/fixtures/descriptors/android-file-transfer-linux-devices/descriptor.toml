@@ -1,0 +1,10 @@
+id = "known.android.file.transfer.linux.devices"
+name = "android-file-transfer-linux device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tstatus","phone\tmounted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

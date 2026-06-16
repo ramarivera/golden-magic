@@ -1,0 +1,2 @@
+function status state
+handler deployed lambda

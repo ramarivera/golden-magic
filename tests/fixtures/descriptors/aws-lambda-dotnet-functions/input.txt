@@ -1,0 +1,4 @@
+function	status state
+handler	deployed lambda
+worker	deployed lambda
+old	removed hidden
