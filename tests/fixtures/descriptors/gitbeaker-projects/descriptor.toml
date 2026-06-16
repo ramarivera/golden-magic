@@ -1,0 +1,10 @@
+id = "known.gitbeaker.projects"
+name = "gitbeaker project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\tstatus","api\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "check",
+    "value": "status state"
+  },
+  {
+    "name": "ssh",
+    "value": "pass audit"
+  },
+  {
+    "name": "kernel",
+    "value": "warn audit"
+  },
+  {
+    "name": "old",
+    "value": "fail hidden"
+  }
+]

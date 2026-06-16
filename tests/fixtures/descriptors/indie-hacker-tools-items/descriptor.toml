@@ -1,0 +1,10 @@
+id = "known.indie.hacker.tools.items"
+name = "indie-hacker-tools item list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tstatus","analytics\tlisted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

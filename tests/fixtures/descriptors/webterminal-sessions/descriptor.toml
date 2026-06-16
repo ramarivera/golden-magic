@@ -1,0 +1,10 @@
+id = "known.webterminal.sessions"
+name = "webterminal session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","shell\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

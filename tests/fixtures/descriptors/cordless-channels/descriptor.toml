@@ -1,0 +1,10 @@
+id = "known.cordless.channels"
+name = "cordless channel list"
+priority = 50
+
+[matches]
+required_substrings = ["channel\tstatus","general\tunread"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

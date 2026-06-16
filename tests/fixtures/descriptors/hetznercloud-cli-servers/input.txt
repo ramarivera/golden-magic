@@ -1,0 +1,4 @@
+server	status state
+web	running cloud
+db	stopped cloud
+old	deleted hidden

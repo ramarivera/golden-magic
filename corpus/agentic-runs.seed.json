@@ -23290,5 +23290,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jdalrymple/gitbeaker",
+    "descriptor_id": "known.gitbeaker.projects",
+    "run_id": "agentic.gitbeaker-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitbeaker-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitbeaker-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitbeaker.projects for gitbeaker project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/XiaomingX/indie-hacker-tools-plus",
+    "descriptor_id": "known.indie.hacker.tools.items",
+    "run_id": "agentic.indie-hacker-tools-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/indie-hacker-tools-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/indie-hacker-tools-items/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.indie.hacker.tools.items for indie-hacker-tools item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jimmy201602/webterminal",
+    "descriptor_id": "known.webterminal.sessions",
+    "run_id": "agentic.webterminal-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/webterminal-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/webterminal-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.webterminal.sessions for webterminal session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/flutter/devtools",
+    "descriptor_id": "known.flutter.devtools.panels",
+    "run_id": "agentic.flutter-devtools-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/flutter-devtools-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/flutter-devtools-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.flutter.devtools.panels for flutter devtools panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/konstruktoid/hardening",
+    "descriptor_id": "known.hardening.checks",
+    "run_id": "agentic.hardening-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hardening-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hardening-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hardening.checks for hardening check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hetznercloud/cli",
+    "descriptor_id": "known.hetznercloud.cli.servers",
+    "run_id": "agentic.hetznercloud-cli-servers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hetznercloud-cli-servers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hetznercloud-cli-servers/expected.rows.json",
+    "variants": [
+      "server header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hetznercloud.cli.servers for hetznercloud cli server list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/MicrosoftDocs/mcp",
+    "descriptor_id": "known.microsoftdocs.mcp.tools",
+    "run_id": "agentic.microsoftdocs-mcp-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/microsoftdocs-mcp-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/microsoftdocs-mcp-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.microsoftdocs.mcp.tools for MicrosoftDocs mcp tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/node-gh/gh",
+    "descriptor_id": "known.node.gh.repos",
+    "run_id": "agentic.node-gh-repos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/node-gh-repos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/node-gh-repos/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.node.gh.repos for node-gh repo list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hexsum/Mojo-Webqq",
+    "descriptor_id": "known.mojo.webqq.contacts",
+    "run_id": "agentic.mojo-webqq-contacts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mojo-webqq-contacts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mojo-webqq-contacts/expected.rows.json",
+    "variants": [
+      "contact header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mojo.webqq.contacts for Mojo-Webqq contact list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Bios-Marcel/cordless",
+    "descriptor_id": "known.cordless.channels",
+    "run_id": "agentic.cordless-channels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cordless-channels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cordless-channels/expected.rows.json",
+    "variants": [
+      "channel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cordless.channels for cordless channel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

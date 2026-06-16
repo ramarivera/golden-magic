@@ -1,0 +1,4 @@
+tool	status state
+docs	ready mcp
+search	ready mcp
+old	disabled hidden

@@ -9056,5 +9056,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/t4-app-templates",
     "analysis_notes": "Modeled t4-app template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jdalrymple/gitbeaker",
+    "descriptor_id": "known.gitbeaker.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitbeaker-projects",
+    "analysis_notes": "Modeled gitbeaker project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/XiaomingX/indie-hacker-tools-plus",
+    "descriptor_id": "known.indie.hacker.tools.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/indie-hacker-tools-items",
+    "analysis_notes": "Modeled indie-hacker-tools-plus item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jimmy201602/webterminal",
+    "descriptor_id": "known.webterminal.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/webterminal-sessions",
+    "analysis_notes": "Modeled webterminal session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/flutter/devtools",
+    "descriptor_id": "known.flutter.devtools.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/flutter-devtools-panels",
+    "analysis_notes": "Modeled flutter devtools panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/konstruktoid/hardening",
+    "descriptor_id": "known.hardening.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hardening-checks",
+    "analysis_notes": "Modeled hardening check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hetznercloud/cli",
+    "descriptor_id": "known.hetznercloud.cli.servers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hetznercloud-cli-servers",
+    "analysis_notes": "Modeled hetznercloud cli server output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MicrosoftDocs/mcp",
+    "descriptor_id": "known.microsoftdocs.mcp.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/microsoftdocs-mcp-tools",
+    "analysis_notes": "Modeled MicrosoftDocs mcp tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/node-gh/gh",
+    "descriptor_id": "known.node.gh.repos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/node-gh-repos",
+    "analysis_notes": "Modeled node-gh repo output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hexsum/Mojo-Webqq",
+    "descriptor_id": "known.mojo.webqq.contacts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mojo-webqq-contacts",
+    "analysis_notes": "Modeled Mojo-Webqq contact output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Bios-Marcel/cordless",
+    "descriptor_id": "known.cordless.channels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cordless-channels",
+    "analysis_notes": "Modeled cordless channel output with a generated executable-json parser plugin."
   }
 ]

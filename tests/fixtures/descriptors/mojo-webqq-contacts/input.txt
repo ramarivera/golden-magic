@@ -1,0 +1,4 @@
+contact	status state
+bot	online chat
+ops	offline chat
+old	blocked hidden

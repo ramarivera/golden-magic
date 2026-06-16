@@ -1,0 +1,4 @@
+channel	status state
+general	unread discord
+ops	read discord
+old	muted hidden

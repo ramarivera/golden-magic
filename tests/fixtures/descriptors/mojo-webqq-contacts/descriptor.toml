@@ -1,0 +1,10 @@
+id = "known.mojo.webqq.contacts"
+name = "Mojo-Webqq contact list"
+priority = 50
+
+[matches]
+required_substrings = ["contact\tstatus","bot\tonline"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

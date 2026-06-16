@@ -1,0 +1,10 @@
+id = "known.flutter.devtools.panels"
+name = "flutter devtools panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tstatus","inspector\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

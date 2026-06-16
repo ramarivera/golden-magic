@@ -1,0 +1,18 @@
+[
+  {
+    "name": "channel",
+    "value": "status state"
+  },
+  {
+    "name": "general",
+    "value": "unread discord"
+  },
+  {
+    "name": "ops",
+    "value": "read discord"
+  },
+  {
+    "name": "old",
+    "value": "muted hidden"
+  }
+]

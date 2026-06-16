@@ -1,0 +1,18 @@
+[
+  {
+    "name": "contact",
+    "value": "status state"
+  },
+  {
+    "name": "bot",
+    "value": "online chat"
+  },
+  {
+    "name": "ops",
+    "value": "offline chat"
+  },
+  {
+    "name": "old",
+    "value": "blocked hidden"
+  }
+]

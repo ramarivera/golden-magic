@@ -1,0 +1,4 @@
+project	status state
+api	active gitlab
+web	active gitlab
+old	archived hidden

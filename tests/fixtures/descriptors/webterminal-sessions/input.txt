@@ -1,0 +1,4 @@
+session	status state
+shell	connected web
+logs	connected web
+old	closed hidden

@@ -1,0 +1,4 @@
+panel	status state
+inspector	ready tool
+memory	ready tool
+old	disabled hidden
