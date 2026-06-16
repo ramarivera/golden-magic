@@ -1,0 +1,4 @@
+session	url state
+main	ssh://host active
+support	ssh://help active
+old	ssh://old closed

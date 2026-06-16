@@ -1,0 +1,10 @@
+id = "known.piston.runtimes"
+name = "Piston runtime list"
+priority = 50
+
+[matches]
+required_substrings = ["runtime\tversion","python\t3.11"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

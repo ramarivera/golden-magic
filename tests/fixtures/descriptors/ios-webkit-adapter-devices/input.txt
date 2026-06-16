@@ -1,0 +1,4 @@
+device	port state
+iphone	9221 attached
+ipad	9222 attached
+old	9223 detached

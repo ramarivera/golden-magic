@@ -1,0 +1,4 @@
+connection	db state
+local	0 connected
+cache	2 connected
+old	9 closed

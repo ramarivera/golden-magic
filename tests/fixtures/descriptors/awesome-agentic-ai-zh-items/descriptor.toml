@@ -1,0 +1,10 @@
+id = "known.awesome-agentic-ai-zh.items"
+name = "awesome-agentic-ai-zh item list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tcategory","planner\tagent"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

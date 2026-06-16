@@ -1,0 +1,18 @@
+[
+  {
+    "name": "level",
+    "value": "priority state"
+  },
+  {
+    "name": "warn",
+    "value": "3 enabled"
+  },
+  {
+    "name": "error",
+    "value": "4 enabled"
+  },
+  {
+    "name": "old",
+    "value": "0 disabled"
+  }
+]

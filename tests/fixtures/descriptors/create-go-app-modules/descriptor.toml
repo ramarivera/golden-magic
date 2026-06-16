@@ -1,0 +1,10 @@
+id = "known.create-go-app.modules"
+name = "create-go-app module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tkind","fiber\tweb"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

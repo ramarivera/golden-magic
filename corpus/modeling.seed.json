@@ -6676,5 +6676,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/kew-tracks",
     "analysis_notes": "Modeled kew terminal music track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+    "descriptor_id": "known.awesome-agentic-ai-zh.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-agentic-ai-zh-items",
+    "analysis_notes": "Modeled awesome-agentic-ai-zh catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/junedomingo/react-native-rename",
+    "descriptor_id": "known.react-native-rename.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-native-rename-targets",
+    "analysis_notes": "Modeled react-native-rename target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gravitational/teleconsole",
+    "descriptor_id": "known.teleconsole.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/teleconsole-sessions",
+    "analysis_notes": "Modeled Teleconsole session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/create-go-app/cli",
+    "descriptor_id": "known.create-go-app.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-go-app-modules",
+    "analysis_notes": "Modeled create-go-app module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tach-org/tach",
+    "descriptor_id": "known.tach.boundaries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tach-boundaries",
+    "analysis_notes": "Modeled tach package boundary output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/dnsx",
+    "descriptor_id": "known.dnsx.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dnsx-results",
+    "analysis_notes": "Modeled dnsx DNS result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pimterry/loglevel",
+    "descriptor_id": "known.loglevel.levels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/loglevel-levels",
+    "analysis_notes": "Modeled loglevel configured level output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/laixintao/iredis",
+    "descriptor_id": "known.iredis.connections",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/iredis-connections",
+    "analysis_notes": "Modeled iredis connection output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter",
+    "descriptor_id": "known.remotedebug-ios-webkit-adapter.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ios-webkit-adapter-devices",
+    "analysis_notes": "Modeled remotedebug-ios-webkit-adapter device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/engineer-man/piston",
+    "descriptor_id": "known.piston.runtimes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/piston-runtimes",
+    "analysis_notes": "Modeled Piston runtime output with a generated executable-json parser plugin."
   }
 ]

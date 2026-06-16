@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "port state"
+  },
+  {
+    "name": "iphone",
+    "value": "9221 attached"
+  },
+  {
+    "name": "ipad",
+    "value": "9222 attached"
+  },
+  {
+    "name": "old",
+    "value": "9223 detached"
+  }
+]

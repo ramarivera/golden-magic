@@ -17170,5 +17170,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+    "descriptor_id": "known.awesome-agentic-ai-zh.items",
+    "run_id": "agentic.awesome-agentic-ai-zh-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-agentic-ai-zh-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-agentic-ai-zh-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-agentic-ai-zh.items for awesome-agentic-ai-zh item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/junedomingo/react-native-rename",
+    "descriptor_id": "known.react-native-rename.targets",
+    "run_id": "agentic.react-native-rename-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-native-rename-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-native-rename-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "bundle row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-native-rename.targets for react-native-rename target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gravitational/teleconsole",
+    "descriptor_id": "known.teleconsole.sessions",
+    "run_id": "agentic.teleconsole-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/teleconsole-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/teleconsole-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "url row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.teleconsole.sessions for Teleconsole session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/create-go-app/cli",
+    "descriptor_id": "known.create-go-app.modules",
+    "run_id": "agentic.create-go-app-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-go-app-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-go-app-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-go-app.modules for create-go-app module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tach-org/tach",
+    "descriptor_id": "known.tach.boundaries",
+    "run_id": "agentic.tach-boundaries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tach-boundaries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tach-boundaries/expected.rows.json",
+    "variants": [
+      "boundary header row",
+      "package row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tach.boundaries for tach boundary list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/projectdiscovery/dnsx",
+    "descriptor_id": "known.dnsx.results",
+    "run_id": "agentic.dnsx-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dnsx-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dnsx-results/expected.rows.json",
+    "variants": [
+      "host header row",
+      "record row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dnsx.results for dnsx result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pimterry/loglevel",
+    "descriptor_id": "known.loglevel.levels",
+    "run_id": "agentic.loglevel-levels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/loglevel-levels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/loglevel-levels/expected.rows.json",
+    "variants": [
+      "level header row",
+      "priority row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.loglevel.levels for loglevel level list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/laixintao/iredis",
+    "descriptor_id": "known.iredis.connections",
+    "run_id": "agentic.iredis-connections.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/iredis-connections/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/iredis-connections/expected.rows.json",
+    "variants": [
+      "connection header row",
+      "db row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.iredis.connections for iredis connection list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter",
+    "descriptor_id": "known.remotedebug-ios-webkit-adapter.devices",
+    "run_id": "agentic.remotedebug-ios-webkit-adapter-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ios-webkit-adapter-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ios-webkit-adapter-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "port row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.remotedebug-ios-webkit-adapter.devices for RemoteDebug iOS WebKit adapter device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/engineer-man/piston",
+    "descriptor_id": "known.piston.runtimes",
+    "run_id": "agentic.piston-runtimes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/piston-runtimes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/piston-runtimes/expected.rows.json",
+    "variants": [
+      "runtime header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.piston.runtimes for Piston runtime list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

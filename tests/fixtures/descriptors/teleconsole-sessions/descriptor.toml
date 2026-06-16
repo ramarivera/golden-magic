@@ -1,0 +1,10 @@
+id = "known.teleconsole.sessions"
+name = "Teleconsole session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\turl","main\tssh://"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

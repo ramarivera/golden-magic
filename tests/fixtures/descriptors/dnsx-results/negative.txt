@@ -1,0 +1,2 @@
+host record state
+example.com A resolved

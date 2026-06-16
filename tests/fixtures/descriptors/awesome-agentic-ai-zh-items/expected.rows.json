@@ -1,0 +1,18 @@
+[
+  {
+    "name": "item",
+    "value": "category state"
+  },
+  {
+    "name": "planner",
+    "value": "agent listed"
+  },
+  {
+    "name": "runtime",
+    "value": "tool listed"
+  },
+  {
+    "name": "old",
+    "value": "paper hidden"
+  }
+]

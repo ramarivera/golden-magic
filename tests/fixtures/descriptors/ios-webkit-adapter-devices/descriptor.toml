@@ -1,0 +1,10 @@
+id = "known.remotedebug-ios-webkit-adapter.devices"
+name = "RemoteDebug iOS WebKit adapter device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tport","iphone\t9221"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

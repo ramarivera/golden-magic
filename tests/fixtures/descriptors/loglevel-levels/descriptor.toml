@@ -1,0 +1,10 @@
+id = "known.loglevel.levels"
+name = "loglevel level list"
+priority = 50
+
+[matches]
+required_substrings = ["level\tpriority","warn\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.react-native-rename.targets"
+name = "react-native-rename target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tbundle","ios\tcom.app"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

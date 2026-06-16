@@ -1,0 +1,10 @@
+id = "known.dnsx.results"
+name = "dnsx result list"
+priority = 50
+
+[matches]
+required_substrings = ["host\trecord","example.com\tA"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

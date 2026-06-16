@@ -1,0 +1,4 @@
+target	bundle state
+ios	com.app renamed
+android	com.app renamed
+old	com.old skipped

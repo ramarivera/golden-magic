@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "kind state"
+  },
+  {
+    "name": "fiber",
+    "value": "web selected"
+  },
+  {
+    "name": "postgres",
+    "value": "database selected"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

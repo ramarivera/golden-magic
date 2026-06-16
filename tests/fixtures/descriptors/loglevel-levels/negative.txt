@@ -1,0 +1,2 @@
+level priority state
+warn 3 enabled

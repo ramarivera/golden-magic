@@ -1,0 +1,4 @@
+host	record state
+example.com	A resolved
+mx.example.com	MX resolved
+old.example.com	TXT failed

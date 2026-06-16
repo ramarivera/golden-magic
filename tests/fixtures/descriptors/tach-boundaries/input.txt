@@ -1,0 +1,4 @@
+boundary	package state
+core	app enforced
+ui	web enforced
+old	legacy ignored
