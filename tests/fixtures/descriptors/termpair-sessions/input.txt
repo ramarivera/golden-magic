@@ -1,0 +1,4 @@
+session	status state
+pair	connected live
+share	waiting live
+old	closed hidden

@@ -1,0 +1,10 @@
+id = "known.rmux.sessions"
+name = "rmux session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","main\tattached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

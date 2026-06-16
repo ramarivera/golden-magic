@@ -1,0 +1,18 @@
+[
+  {
+    "name": "title",
+    "value": "status state"
+  },
+  {
+    "name": "chapter1",
+    "value": "done library"
+  },
+  {
+    "name": "chapter2",
+    "value": "queued library"
+  },
+  {
+    "name": "old",
+    "value": "failed hidden"
+  }
+]

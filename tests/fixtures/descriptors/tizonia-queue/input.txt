@@ -1,0 +1,4 @@
+track	status state
+song	playing queue
+next	queued queue
+old	missing hidden

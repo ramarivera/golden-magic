@@ -1,0 +1,4 @@
+command	status state
+help	ready builtin
+version	ready builtin
+old	disabled hidden

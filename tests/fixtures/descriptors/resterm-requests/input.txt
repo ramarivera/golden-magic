@@ -1,0 +1,4 @@
+request	status state
+login	ok saved
+health	ok saved
+old	failed hidden

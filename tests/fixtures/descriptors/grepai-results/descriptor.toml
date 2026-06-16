@@ -1,0 +1,10 @@
+id = "known.grepai.results"
+name = "grepai result list"
+priority = 50
+
+[matches]
+required_substrings = ["match\tscore","parser\t0.91"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

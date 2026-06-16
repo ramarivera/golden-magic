@@ -1,0 +1,10 @@
+id = "known.durdraw.frames"
+name = "durdraw frame list"
+priority = 50
+
+[matches]
+required_substrings = ["frame\tstatus","1\tvisible"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+frame	status state
+1	visible canvas
+2	visible canvas
+old	hidden hidden

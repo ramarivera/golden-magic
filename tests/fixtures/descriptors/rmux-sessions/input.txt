@@ -1,0 +1,4 @@
+session	status state
+main	attached tmux
+logs	detached tmux
+old	dead hidden

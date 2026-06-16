@@ -8916,5 +8916,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/query-monitor-panels",
     "analysis_notes": "Modeled query-monitor panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/unkn0wn-root/resterm",
+    "descriptor_id": "known.resterm.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/resterm-requests",
+    "analysis_notes": "Modeled resterm request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lirantal/npq",
+    "descriptor_id": "known.npq.audits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/npq-audits",
+    "analysis_notes": "Modeled npq audit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Helvesec/rmux",
+    "descriptor_id": "known.rmux.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rmux-sessions",
+    "analysis_notes": "Modeled rmux session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yoanbernabeu/grepai",
+    "descriptor_id": "known.grepai.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/grepai-results",
+    "analysis_notes": "Modeled grepai result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cmang/durdraw",
+    "descriptor_id": "known.durdraw.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/durdraw-frames",
+    "analysis_notes": "Modeled durdraw frame output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mitchellh/cli",
+    "descriptor_id": "known.mitchellh.cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mitchellh-cli-commands",
+    "analysis_notes": "Modeled mitchellh cli command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cs01/termpair",
+    "descriptor_id": "known.termpair.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termpair-sessions",
+    "analysis_notes": "Modeled termpair session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tizonia/tizonia-openmax-il",
+    "descriptor_id": "known.tizonia.queue",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tizonia-queue",
+    "analysis_notes": "Modeled tizonia queue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bellingcat/telegram-phone-number-checker",
+    "descriptor_id": "known.telegram.phone.number.checker.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/telegram-phone-number-checker-results",
+    "analysis_notes": "Modeled telegram-phone-number-checker result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/metafates/mangal",
+    "descriptor_id": "known.mangal.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mangal-downloads",
+    "analysis_notes": "Modeled mangal download output with a generated executable-json parser plugin."
   }
 ]

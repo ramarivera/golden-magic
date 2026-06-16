@@ -1,0 +1,10 @@
+id = "known.mangal.downloads"
+name = "mangal download list"
+priority = 50
+
+[matches]
+required_substrings = ["title\tstatus","chapter1\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

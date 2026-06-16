@@ -1,0 +1,18 @@
+[
+  {
+    "name": "track",
+    "value": "status state"
+  },
+  {
+    "name": "song",
+    "value": "playing queue"
+  },
+  {
+    "name": "next",
+    "value": "queued queue"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

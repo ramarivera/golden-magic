@@ -1,0 +1,4 @@
+number	status state
++100	found checked
++200	missing checked
+old	unknown hidden

@@ -22930,5 +22930,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/unkn0wn-root/resterm",
+    "descriptor_id": "known.resterm.requests",
+    "run_id": "agentic.resterm-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/resterm-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/resterm-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.resterm.requests for resterm request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lirantal/npq",
+    "descriptor_id": "known.npq.audits",
+    "run_id": "agentic.npq-audits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/npq-audits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/npq-audits/expected.rows.json",
+    "variants": [
+      "package header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.npq.audits for npq audit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Helvesec/rmux",
+    "descriptor_id": "known.rmux.sessions",
+    "run_id": "agentic.rmux-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rmux-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rmux-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rmux.sessions for rmux session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yoanbernabeu/grepai",
+    "descriptor_id": "known.grepai.results",
+    "run_id": "agentic.grepai-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/grepai-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/grepai-results/expected.rows.json",
+    "variants": [
+      "match header row",
+      "score row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.grepai.results for grepai result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cmang/durdraw",
+    "descriptor_id": "known.durdraw.frames",
+    "run_id": "agentic.durdraw-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/durdraw-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/durdraw-frames/expected.rows.json",
+    "variants": [
+      "frame header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.durdraw.frames for durdraw frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mitchellh/cli",
+    "descriptor_id": "known.mitchellh.cli.commands",
+    "run_id": "agentic.mitchellh-cli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mitchellh-cli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mitchellh-cli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mitchellh.cli.commands for mitchellh cli command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cs01/termpair",
+    "descriptor_id": "known.termpair.sessions",
+    "run_id": "agentic.termpair-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termpair-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termpair-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termpair.sessions for termpair session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tizonia/tizonia-openmax-il",
+    "descriptor_id": "known.tizonia.queue",
+    "run_id": "agentic.tizonia-queue.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tizonia-queue/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tizonia-queue/expected.rows.json",
+    "variants": [
+      "track header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tizonia.queue for tizonia queue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bellingcat/telegram-phone-number-checker",
+    "descriptor_id": "known.telegram.phone.number.checker.results",
+    "run_id": "agentic.telegram-phone-number-checker-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/telegram-phone-number-checker-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/telegram-phone-number-checker-results/expected.rows.json",
+    "variants": [
+      "number header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.telegram.phone.number.checker.results for telegram-phone-number-checker result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/metafates/mangal",
+    "descriptor_id": "known.mangal.downloads",
+    "run_id": "agentic.mangal-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mangal-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mangal-downloads/expected.rows.json",
+    "variants": [
+      "title header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mangal.downloads for mangal download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

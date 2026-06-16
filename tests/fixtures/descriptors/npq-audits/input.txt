@@ -1,0 +1,4 @@
+package	status state
+leftpad	warn checked
+express	ok checked
+old	fail hidden

@@ -1,0 +1,4 @@
+match	score state
+parser	0.91 ranked
+descriptor	0.84 ranked
+old	0.10 hidden

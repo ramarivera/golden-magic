@@ -1,0 +1,2 @@
+frame status state
+1 visible canvas

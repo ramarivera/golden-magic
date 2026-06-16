@@ -1,0 +1,4 @@
+title	status state
+chapter1	done library
+chapter2	queued library
+old	failed hidden

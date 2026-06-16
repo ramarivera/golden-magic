@@ -1,0 +1,10 @@
+id = "known.telegram.phone.number.checker.results"
+name = "telegram-phone-number-checker result list"
+priority = 50
+
+[matches]
+required_substrings = ["number\tstatus","+100\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
