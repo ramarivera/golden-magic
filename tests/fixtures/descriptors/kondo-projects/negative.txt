@@ -1,0 +1,2 @@
+project size state
+node_modules 120M cleanable

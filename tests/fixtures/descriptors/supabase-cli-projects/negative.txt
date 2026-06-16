@@ -1,0 +1,2 @@
+project region state
+app us-east-1 linked

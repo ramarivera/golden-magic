@@ -1,0 +1,2 @@
+pattern color state
+*.rs 38;5;208 active

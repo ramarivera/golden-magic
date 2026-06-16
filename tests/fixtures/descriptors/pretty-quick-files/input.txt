@@ -1,0 +1,4 @@
+file	status state
+src/app.ts	formatted changed
+README.md	formatted changed
+old.js	ignored skipped

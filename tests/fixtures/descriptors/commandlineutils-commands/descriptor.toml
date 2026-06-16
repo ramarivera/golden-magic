@@ -1,0 +1,10 @@
+id = "known.commandlineutils.commands"
+name = "CommandLineUtils command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\toptions","serve\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

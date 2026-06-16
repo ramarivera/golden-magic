@@ -1,0 +1,18 @@
+[
+  {
+    "name": "project",
+    "value": "size state"
+  },
+  {
+    "name": "node_modules",
+    "value": "120M cleanable"
+  },
+  {
+    "name": "target",
+    "value": "80M cleanable"
+  },
+  {
+    "name": "old",
+    "value": "0M ignored"
+  }
+]

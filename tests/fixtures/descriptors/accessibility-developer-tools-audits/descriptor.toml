@@ -1,0 +1,10 @@
+id = "known.accessibility-developer-tools.audits"
+name = "accessibility-developer-tools audit list"
+priority = 50
+
+[matches]
+required_substrings = ["audit\tseverity","aria\twarning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

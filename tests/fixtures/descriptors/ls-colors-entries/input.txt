@@ -1,0 +1,4 @@
+pattern	color state
+*.rs	38;5;208 active
+*.md	38;5;111 active
+old	0 hidden

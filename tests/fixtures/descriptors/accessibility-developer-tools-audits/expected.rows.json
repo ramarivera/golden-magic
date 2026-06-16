@@ -1,0 +1,18 @@
+[
+  {
+    "name": "audit",
+    "value": "severity state"
+  },
+  {
+    "name": "aria",
+    "value": "warning reported"
+  },
+  {
+    "name": "contrast",
+    "value": "error reported"
+  },
+  {
+    "name": "old",
+    "value": "info ignored"
+  }
+]

@@ -7516,5 +7516,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/react-perf-devtool-metrics",
     "analysis_notes": "Modeled react-perf-devtool metric output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tbillington/kondo",
+    "descriptor_id": "known.kondo.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kondo-projects",
+    "analysis_notes": "Modeled kondo cleanup target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dflemstr/rq",
+    "descriptor_id": "known.rq.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rq-queries",
+    "analysis_notes": "Modeled rq query output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GoogleChrome/accessibility-developer-tools",
+    "descriptor_id": "known.accessibility-developer-tools.audits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/accessibility-developer-tools-audits",
+    "analysis_notes": "Modeled accessibility-developer-tools audit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/anufrievroman/calcure",
+    "descriptor_id": "known.calcure.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/calcure-events",
+    "analysis_notes": "Modeled calcure calendar event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/prettier/pretty-quick",
+    "descriptor_id": "known.pretty-quick.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pretty-quick-files",
+    "analysis_notes": "Modeled pretty-quick formatted file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/randy3k/radian",
+    "descriptor_id": "known.radian.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/radian-sessions",
+    "analysis_notes": "Modeled radian R session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Everduin94/better-commits",
+    "descriptor_id": "known.better-commits.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/better-commits-prompts",
+    "analysis_notes": "Modeled better-commits prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/supabase/cli",
+    "descriptor_id": "known.supabase-cli.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/supabase-cli-projects",
+    "analysis_notes": "Modeled Supabase CLI project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trapd00r/LS_COLORS",
+    "descriptor_id": "known.ls-colors.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ls-colors-entries",
+    "analysis_notes": "Modeled LS_COLORS pattern output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/natemcmaster/CommandLineUtils",
+    "descriptor_id": "known.commandlineutils.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/commandlineutils-commands",
+    "analysis_notes": "Modeled CommandLineUtils command output with a generated executable-json parser plugin."
   }
 ]

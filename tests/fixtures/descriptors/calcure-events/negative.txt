@@ -1,0 +1,2 @@
+date event state
+2026-06-16 standup scheduled

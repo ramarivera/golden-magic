@@ -19330,5 +19330,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/tbillington/kondo",
+    "descriptor_id": "known.kondo.projects",
+    "run_id": "agentic.kondo-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kondo-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kondo-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kondo.projects for kondo project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dflemstr/rq",
+    "descriptor_id": "known.rq.queries",
+    "run_id": "agentic.rq-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rq-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rq-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "format row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rq.queries for rq query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GoogleChrome/accessibility-developer-tools",
+    "descriptor_id": "known.accessibility-developer-tools.audits",
+    "run_id": "agentic.accessibility-developer-tools-audits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/accessibility-developer-tools-audits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/accessibility-developer-tools-audits/expected.rows.json",
+    "variants": [
+      "audit header row",
+      "severity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.accessibility-developer-tools.audits for accessibility-developer-tools audit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/anufrievroman/calcure",
+    "descriptor_id": "known.calcure.events",
+    "run_id": "agentic.calcure-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/calcure-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/calcure-events/expected.rows.json",
+    "variants": [
+      "date header row",
+      "event row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.calcure.events for calcure event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/prettier/pretty-quick",
+    "descriptor_id": "known.pretty-quick.files",
+    "run_id": "agentic.pretty-quick-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pretty-quick-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pretty-quick-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pretty-quick.files for pretty-quick file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/randy3k/radian",
+    "descriptor_id": "known.radian.sessions",
+    "run_id": "agentic.radian-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/radian-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/radian-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.radian.sessions for radian session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Everduin94/better-commits",
+    "descriptor_id": "known.better-commits.prompts",
+    "run_id": "agentic.better-commits-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/better-commits-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/better-commits-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "choice row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.better-commits.prompts for better-commits prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/supabase/cli",
+    "descriptor_id": "known.supabase-cli.projects",
+    "run_id": "agentic.supabase-cli-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/supabase-cli-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/supabase-cli-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "region row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.supabase-cli.projects for Supabase CLI project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/trapd00r/LS_COLORS",
+    "descriptor_id": "known.ls-colors.entries",
+    "run_id": "agentic.ls-colors-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ls-colors-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ls-colors-entries/expected.rows.json",
+    "variants": [
+      "pattern header row",
+      "color row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ls-colors.entries for LS_COLORS entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/natemcmaster/CommandLineUtils",
+    "descriptor_id": "known.commandlineutils.commands",
+    "run_id": "agentic.commandlineutils-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/commandlineutils-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/commandlineutils-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "options row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.commandlineutils.commands for CommandLineUtils command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

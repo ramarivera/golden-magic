@@ -1,0 +1,4 @@
+audit	severity state
+aria	warning reported
+contrast	error reported
+old	info ignored

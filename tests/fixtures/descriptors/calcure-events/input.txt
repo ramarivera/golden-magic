@@ -1,0 +1,4 @@
+date	event state
+2026-06-16	standup scheduled
+2026-06-17	review scheduled
+old	archive hidden

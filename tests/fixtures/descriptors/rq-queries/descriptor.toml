@@ -1,0 +1,10 @@
+id = "known.rq.queries"
+name = "rq query list"
+priority = 50
+
+[matches]
+required_substrings = ["query\tformat",".users\tjson"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+prompt	choice state
+type	feat selected
+scope	corpus selected
+old	misc skipped

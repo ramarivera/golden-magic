@@ -1,0 +1,10 @@
+id = "known.better-commits.prompts"
+name = "better-commits prompt list"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\tchoice","type\tfeat"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

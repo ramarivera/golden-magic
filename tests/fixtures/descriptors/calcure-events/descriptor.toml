@@ -1,0 +1,10 @@
+id = "known.calcure.events"
+name = "calcure event list"
+priority = 50
+
+[matches]
+required_substrings = ["date\tevent","2026-06-16\tstandup"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

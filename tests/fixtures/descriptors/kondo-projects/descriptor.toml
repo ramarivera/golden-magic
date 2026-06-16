@@ -1,0 +1,10 @@
+id = "known.kondo.projects"
+name = "kondo project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\tsize","node_modules\t120M"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
