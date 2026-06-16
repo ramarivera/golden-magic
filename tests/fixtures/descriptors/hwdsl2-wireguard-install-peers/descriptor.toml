@@ -1,0 +1,10 @@
+id = "known.hwdsl2.wireguard.install.peers"
+name = "hwdsl2 wireguard-install peer list"
+priority = 50
+
+[matches]
+required_substrings = ["peer\tstatus","phone\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

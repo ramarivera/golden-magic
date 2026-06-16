@@ -1,0 +1,10 @@
+id = "known.jbang.scripts"
+name = "jbang script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tstatus","hello.java\tcached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

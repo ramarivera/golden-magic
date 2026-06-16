@@ -1,0 +1,4 @@
+script	status state
+hello.java	cached local
+build.java	cached local
+old.java	missing hidden

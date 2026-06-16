@@ -1,0 +1,4 @@
+session	status state
+desk	active live
+mobile	active live
+old	closed hidden

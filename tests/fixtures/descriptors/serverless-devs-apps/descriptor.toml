@@ -1,0 +1,10 @@
+id = "known.serverless.devs.apps"
+name = "Serverless-Devs app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tstatus","api\tdeployed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

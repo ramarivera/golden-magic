@@ -1,0 +1,10 @@
+id = "known.video.to.ascii.frames"
+name = "video-to-ascii frame list"
+priority = 50
+
+[matches]
+required_substrings = ["frame\tstatus","001\trendered"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

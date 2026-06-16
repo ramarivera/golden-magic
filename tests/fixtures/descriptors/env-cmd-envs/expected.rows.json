@@ -1,0 +1,18 @@
+[
+  {
+    "name": "env",
+    "value": "status state"
+  },
+  {
+    "name": "dev",
+    "value": "loaded local"
+  },
+  {
+    "name": "prod",
+    "value": "loaded local"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

@@ -1,0 +1,4 @@
+panel	status state
+request	visible enabled
+errors	visible enabled
+old	hidden hidden

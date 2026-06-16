@@ -1,0 +1,10 @@
+id = "known.nexrender.jobs"
+name = "nexrender job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","intro\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

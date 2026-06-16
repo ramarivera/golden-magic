@@ -1,0 +1,2 @@
+pair status state
+calendar synced active

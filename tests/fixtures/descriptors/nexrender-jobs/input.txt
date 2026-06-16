@@ -1,0 +1,4 @@
+job	status state
+intro	done rendered
+outro	queued rendered
+old	failed hidden

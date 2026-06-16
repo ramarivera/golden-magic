@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pair",
+    "value": "status state"
+  },
+  {
+    "name": "calendar",
+    "value": "synced active"
+  },
+  {
+    "name": "contacts",
+    "value": "synced active"
+  },
+  {
+    "name": "old",
+    "value": "failed hidden"
+  }
+]

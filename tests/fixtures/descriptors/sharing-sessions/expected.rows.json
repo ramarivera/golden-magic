@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "status state"
+  },
+  {
+    "name": "desk",
+    "value": "active live"
+  },
+  {
+    "name": "mobile",
+    "value": "active live"
+  },
+  {
+    "name": "old",
+    "value": "closed hidden"
+  }
+]

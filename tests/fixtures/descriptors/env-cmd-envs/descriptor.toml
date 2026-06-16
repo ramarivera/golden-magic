@@ -1,0 +1,10 @@
+id = "known.env.cmd.envs"
+name = "env-cmd environment list"
+priority = 50
+
+[matches]
+required_substrings = ["env\tstatus","dev\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

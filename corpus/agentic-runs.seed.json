@@ -22210,5 +22210,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/joelibaceta/video-to-ascii",
+    "descriptor_id": "known.video.to.ascii.frames",
+    "run_id": "agentic.video-to-ascii-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/video-to-ascii-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/video-to-ascii-frames/expected.rows.json",
+    "variants": [
+      "frame header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.video.to.ascii.frames for video-to-ascii frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pimutils/vdirsyncer",
+    "descriptor_id": "known.vdirsyncer.pairs",
+    "run_id": "agentic.vdirsyncer-pairs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vdirsyncer-pairs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vdirsyncer-pairs/expected.rows.json",
+    "variants": [
+      "pair header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vdirsyncer.pairs for vdirsyncer pair list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/parvardegr/sharing",
+    "descriptor_id": "known.sharing.sessions",
+    "run_id": "agentic.sharing-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sharing-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sharing-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sharing.sessions for sharing session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hwdsl2/wireguard-install",
+    "descriptor_id": "known.hwdsl2.wireguard.install.peers",
+    "run_id": "agentic.hwdsl2-wireguard-install-peers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hwdsl2-wireguard-install-peers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hwdsl2-wireguard-install-peers/expected.rows.json",
+    "variants": [
+      "peer header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hwdsl2.wireguard.install.peers for hwdsl2 wireguard-install peer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/inlife/nexrender",
+    "descriptor_id": "known.nexrender.jobs",
+    "run_id": "agentic.nexrender-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nexrender-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nexrender-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nexrender.jobs for nexrender job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nette/tracy",
+    "descriptor_id": "known.tracy.panels",
+    "run_id": "agentic.tracy-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tracy-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tracy-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tracy.panels for tracy panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jbangdev/jbang",
+    "descriptor_id": "known.jbang.scripts",
+    "run_id": "agentic.jbang-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jbang-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jbang-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jbang.scripts for jbang script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bahmutov/code-snippets",
+    "descriptor_id": "known.code.snippets.items",
+    "run_id": "agentic.code-snippets-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/code-snippets-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/code-snippets-items/expected.rows.json",
+    "variants": [
+      "snippet header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.code.snippets.items for code-snippets item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Serverless-Devs/Serverless-Devs",
+    "descriptor_id": "known.serverless.devs.apps",
+    "run_id": "agentic.serverless-devs-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/serverless-devs-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/serverless-devs-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.serverless.devs.apps for Serverless-Devs app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/toddbluhm/env-cmd",
+    "descriptor_id": "known.env.cmd.envs",
+    "run_id": "agentic.env-cmd-envs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/env-cmd-envs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/env-cmd-envs/expected.rows.json",
+    "variants": [
+      "env header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.env.cmd.envs for env-cmd environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

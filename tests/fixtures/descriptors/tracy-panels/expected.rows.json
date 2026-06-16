@@ -1,0 +1,18 @@
+[
+  {
+    "name": "panel",
+    "value": "status state"
+  },
+  {
+    "name": "request",
+    "value": "visible enabled"
+  },
+  {
+    "name": "errors",
+    "value": "visible enabled"
+  },
+  {
+    "name": "old",
+    "value": "hidden hidden"
+  }
+]

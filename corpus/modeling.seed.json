@@ -8636,5 +8636,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/3mux-panes",
     "analysis_notes": "Modeled 3mux pane output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/joelibaceta/video-to-ascii",
+    "descriptor_id": "known.video.to.ascii.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/video-to-ascii-frames",
+    "analysis_notes": "Modeled video-to-ascii frame output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pimutils/vdirsyncer",
+    "descriptor_id": "known.vdirsyncer.pairs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vdirsyncer-pairs",
+    "analysis_notes": "Modeled vdirsyncer pair output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/parvardegr/sharing",
+    "descriptor_id": "known.sharing.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sharing-sessions",
+    "analysis_notes": "Modeled sharing session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hwdsl2/wireguard-install",
+    "descriptor_id": "known.hwdsl2.wireguard.install.peers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hwdsl2-wireguard-install-peers",
+    "analysis_notes": "Modeled hwdsl2 wireguard-install peer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/inlife/nexrender",
+    "descriptor_id": "known.nexrender.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nexrender-jobs",
+    "analysis_notes": "Modeled nexrender job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nette/tracy",
+    "descriptor_id": "known.tracy.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tracy-panels",
+    "analysis_notes": "Modeled tracy panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jbangdev/jbang",
+    "descriptor_id": "known.jbang.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jbang-scripts",
+    "analysis_notes": "Modeled jbang script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bahmutov/code-snippets",
+    "descriptor_id": "known.code.snippets.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/code-snippets-items",
+    "analysis_notes": "Modeled code-snippets item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Serverless-Devs/Serverless-Devs",
+    "descriptor_id": "known.serverless.devs.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/serverless-devs-apps",
+    "analysis_notes": "Modeled Serverless-Devs app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/toddbluhm/env-cmd",
+    "descriptor_id": "known.env.cmd.envs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/env-cmd-envs",
+    "analysis_notes": "Modeled env-cmd environment output with a generated executable-json parser plugin."
   }
 ]

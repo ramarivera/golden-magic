@@ -1,0 +1,4 @@
+pair	status state
+calendar	synced active
+contacts	synced active
+old	failed hidden

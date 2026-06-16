@@ -1,0 +1,4 @@
+app	status state
+api	deployed cloud
+worker	deployed cloud
+old	removed hidden

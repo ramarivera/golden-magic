@@ -1,0 +1,4 @@
+peer	status state
+phone	active configured
+laptop	active configured
+old	revoked hidden

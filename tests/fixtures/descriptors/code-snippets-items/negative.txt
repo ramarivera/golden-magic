@@ -1,0 +1,2 @@
+snippet language state
+assert js ready

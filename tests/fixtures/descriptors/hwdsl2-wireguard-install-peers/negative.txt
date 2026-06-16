@@ -1,0 +1,2 @@
+peer status state
+phone active configured
