@@ -1,0 +1,18 @@
+[
+  {
+    "name": "service",
+    "value": "status state"
+  },
+  {
+    "name": "web",
+    "value": "deployed nix"
+  },
+  {
+    "name": "worker",
+    "value": "deployed nix"
+  },
+  {
+    "name": "old",
+    "value": "removed hidden"
+  }
+]

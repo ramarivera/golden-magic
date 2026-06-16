@@ -1,0 +1,18 @@
+[
+  {
+    "name": "scene",
+    "value": "status state"
+  },
+  {
+    "name": "menu",
+    "value": "ready game"
+  },
+  {
+    "name": "level1",
+    "value": "ready game"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

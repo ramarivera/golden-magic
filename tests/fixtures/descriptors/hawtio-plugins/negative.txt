@@ -1,0 +1,2 @@
+plugin status state
+jmx loaded java

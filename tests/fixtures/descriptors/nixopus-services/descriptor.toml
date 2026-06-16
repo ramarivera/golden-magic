@@ -1,0 +1,10 @@
+id = "known.nixopus.services"
+name = "nixopus service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tstatus","web\tdeployed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

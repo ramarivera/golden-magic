@@ -1,0 +1,2 @@
+scene status state
+menu ready game

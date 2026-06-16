@@ -1,0 +1,10 @@
+id = "known.termloop.scenes"
+name = "termloop scene list"
+priority = 50
+
+[matches]
+required_substrings = ["scene\tstatus","menu\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

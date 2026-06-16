@@ -1,0 +1,4 @@
+node	status state
+local	active proxy
+remote	active proxy
+old	disabled hidden

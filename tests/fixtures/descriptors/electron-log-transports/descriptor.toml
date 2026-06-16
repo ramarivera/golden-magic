@@ -1,0 +1,10 @@
+id = "known.electron.log.transports"
+name = "electron-log transport list"
+priority = 50
+
+[matches]
+required_substrings = ["transport\tstatus","file\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

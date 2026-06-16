@@ -1,0 +1,4 @@
+session	status state
+shell	open sublime
+build	open sublime
+old	closed hidden

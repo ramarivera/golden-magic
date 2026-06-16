@@ -1,0 +1,4 @@
+transport	status state
+file	active electron
+console	active electron
+old	disabled hidden

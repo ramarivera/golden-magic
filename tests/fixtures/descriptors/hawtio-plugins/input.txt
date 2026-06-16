@@ -1,0 +1,4 @@
+plugin	status state
+jmx	loaded java
+logs	loaded java
+old	disabled hidden

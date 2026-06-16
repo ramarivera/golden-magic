@@ -1,0 +1,4 @@
+day	status state
+monday	painted github
+tuesday	painted github
+old	blank hidden

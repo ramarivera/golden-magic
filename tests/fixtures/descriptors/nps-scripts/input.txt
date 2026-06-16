@@ -1,0 +1,4 @@
+script	status state
+build	ready node
+test	ready node
+old	disabled hidden

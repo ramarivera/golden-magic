@@ -1,0 +1,4 @@
+scene	status state
+menu	ready game
+level1	ready game
+old	disabled hidden

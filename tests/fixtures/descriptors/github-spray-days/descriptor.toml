@@ -1,0 +1,10 @@
+id = "known.github.spray.days"
+name = "github-spray day list"
+priority = 50
+
+[matches]
+required_substrings = ["day\tstatus","monday\tpainted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

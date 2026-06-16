@@ -25450,5 +25450,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/JoelOtter/termloop",
+    "descriptor_id": "known.termloop.scenes",
+    "run_id": "agentic.termloop-scenes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termloop-scenes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termloop-scenes/expected.rows.json",
+    "variants": [
+      "scene header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termloop.scenes for termloop scene list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/diegohaz/generact",
+    "descriptor_id": "known.generact.generators",
+    "run_id": "agentic.generact-generators.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/generact-generators/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/generact-generators/expected.rows.json",
+    "variants": [
+      "generator header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.generact.generators for generact generator list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/megahertz/electron-log",
+    "descriptor_id": "known.electron.log.transports",
+    "run_id": "agentic.electron-log-transports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/electron-log-transports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/electron-log-transports/expected.rows.json",
+    "variants": [
+      "transport header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.electron.log.transports for electron-log transport list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Annihil/github-spray",
+    "descriptor_id": "known.github.spray.days",
+    "run_id": "agentic.github-spray-days.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/github-spray-days/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/github-spray-days/expected.rows.json",
+    "variants": [
+      "day header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.github.spray.days for github-spray day list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hawtio/hawtio",
+    "descriptor_id": "known.hawtio.plugins",
+    "run_id": "agentic.hawtio-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hawtio-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hawtio-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hawtio.plugins for hawtio plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/orhun/systeroid",
+    "descriptor_id": "known.systeroid.services",
+    "run_id": "agentic.systeroid-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/systeroid-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/systeroid-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.systeroid.services for systeroid service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sezna/nps",
+    "descriptor_id": "known.nps.scripts",
+    "run_id": "agentic.nps-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nps-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nps-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nps.scripts for nps script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/randy3k/Terminus",
+    "descriptor_id": "known.terminus.sessions",
+    "run_id": "agentic.terminus-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminus-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminus-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminus.sessions for Terminus session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/RivoLink/leaf",
+    "descriptor_id": "known.leaf.nodes",
+    "run_id": "agentic.leaf-nodes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/leaf-nodes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/leaf-nodes/expected.rows.json",
+    "variants": [
+      "node header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.leaf.nodes for leaf node list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nixopus/nixopus",
+    "descriptor_id": "known.nixopus.services",
+    "run_id": "agentic.nixopus-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nixopus-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nixopus-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nixopus.services for nixopus service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

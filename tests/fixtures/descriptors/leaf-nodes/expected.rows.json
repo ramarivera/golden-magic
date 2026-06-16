@@ -1,0 +1,18 @@
+[
+  {
+    "name": "node",
+    "value": "status state"
+  },
+  {
+    "name": "local",
+    "value": "active proxy"
+  },
+  {
+    "name": "remote",
+    "value": "active proxy"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

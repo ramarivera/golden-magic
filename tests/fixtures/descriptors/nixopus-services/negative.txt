@@ -1,0 +1,2 @@
+service status state
+web deployed nix

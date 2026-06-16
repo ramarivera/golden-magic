@@ -1,0 +1,4 @@
+service	status state
+web	deployed nix
+worker	deployed nix
+old	removed hidden

@@ -9896,5 +9896,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/jwt-cli-tokens",
     "analysis_notes": "Modeled jwt-cli token output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JoelOtter/termloop",
+    "descriptor_id": "known.termloop.scenes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termloop-scenes",
+    "analysis_notes": "Modeled termloop scene output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/diegohaz/generact",
+    "descriptor_id": "known.generact.generators",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/generact-generators",
+    "analysis_notes": "Modeled generact generator output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/megahertz/electron-log",
+    "descriptor_id": "known.electron.log.transports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/electron-log-transports",
+    "analysis_notes": "Modeled electron-log transport output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Annihil/github-spray",
+    "descriptor_id": "known.github.spray.days",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/github-spray-days",
+    "analysis_notes": "Modeled github-spray day output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hawtio/hawtio",
+    "descriptor_id": "known.hawtio.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hawtio-plugins",
+    "analysis_notes": "Modeled hawtio plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/orhun/systeroid",
+    "descriptor_id": "known.systeroid.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/systeroid-services",
+    "analysis_notes": "Modeled systeroid service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sezna/nps",
+    "descriptor_id": "known.nps.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nps-scripts",
+    "analysis_notes": "Modeled nps script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/randy3k/Terminus",
+    "descriptor_id": "known.terminus.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminus-sessions",
+    "analysis_notes": "Modeled Terminus session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/RivoLink/leaf",
+    "descriptor_id": "known.leaf.nodes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/leaf-nodes",
+    "analysis_notes": "Modeled leaf node output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nixopus/nixopus",
+    "descriptor_id": "known.nixopus.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nixopus-services",
+    "analysis_notes": "Modeled nixopus service output with a generated executable-json parser plugin."
   }
 ]
