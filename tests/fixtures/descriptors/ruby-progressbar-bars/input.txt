@@ -1,0 +1,4 @@
+bar	status state
+download	active terminal
+install	active terminal
+old	stopped hidden

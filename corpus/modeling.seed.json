@@ -9406,5 +9406,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/timewarrior-entries",
     "analysis_notes": "Modeled timewarrior entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jakobhoeg/shadcn-chat",
+    "descriptor_id": "known.shadcn.chat.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shadcn-chat-prompts",
+    "analysis_notes": "Modeled shadcn-chat prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gsscoder/commandline",
+    "descriptor_id": "known.gsscoder.commandline.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gsscoder-commandline-options",
+    "analysis_notes": "Modeled gsscoder commandline option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ok-borg/borg",
+    "descriptor_id": "known.ok.borg.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/borg-checks",
+    "analysis_notes": "Modeled ok-borg check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chunqiuyiyu/ervy",
+    "descriptor_id": "known.ervy.charts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ervy-charts",
+    "analysis_notes": "Modeled ervy chart output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Tyrrrz/CliFx",
+    "descriptor_id": "known.clifx.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clifx-commands",
+    "analysis_notes": "Modeled CliFx command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/webfansplz/vite-plugin-vue-devtools",
+    "descriptor_id": "known.vite.vue.devtools.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vite-vue-devtools-panels",
+    "analysis_notes": "Modeled vite-plugin-vue-devtools panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gookit/color",
+    "descriptor_id": "known.gookit.color.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gookit-color-styles",
+    "analysis_notes": "Modeled gookit color style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Benexl/yt-x",
+    "descriptor_id": "known.yt.x.videos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yt-x-videos",
+    "analysis_notes": "Modeled yt-x video output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/stakpak/agent",
+    "descriptor_id": "known.stakpak.agent.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/stakpak-agent-tasks",
+    "analysis_notes": "Modeled stakpak agent task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jfelchner/ruby-progressbar",
+    "descriptor_id": "known.ruby.progressbar.bars",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ruby-progressbar-bars",
+    "analysis_notes": "Modeled ruby-progressbar bar output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.gookit.color.styles"
+name = "gookit color style list"
+priority = 50
+
+[matches]
+required_substrings = ["style\tstatus","red\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

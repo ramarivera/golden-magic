@@ -1,0 +1,10 @@
+id = "known.ruby.progressbar.bars"
+name = "ruby-progressbar bar list"
+priority = 50
+
+[matches]
+required_substrings = ["bar\tstatus","download\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

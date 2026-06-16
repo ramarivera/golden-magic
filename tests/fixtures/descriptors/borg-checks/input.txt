@@ -1,0 +1,4 @@
+check	status state
+lint	ok ci
+test	ok ci
+old	failed hidden

@@ -1,0 +1,4 @@
+task	status state
+scan	running agent
+apply	queued agent
+old	closed hidden

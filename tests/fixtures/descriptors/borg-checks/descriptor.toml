@@ -1,0 +1,10 @@
+id = "known.ok.borg.checks"
+name = "ok-borg check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tstatus","lint\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

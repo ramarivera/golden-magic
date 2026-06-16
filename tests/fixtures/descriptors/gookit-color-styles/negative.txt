@@ -1,0 +1,2 @@
+style status state
+red ready ansi

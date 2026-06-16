@@ -1,0 +1,18 @@
+[
+  {
+    "name": "prompt",
+    "value": "status state"
+  },
+  {
+    "name": "welcome",
+    "value": "ready chat"
+  },
+  {
+    "name": "rewrite",
+    "value": "ready chat"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

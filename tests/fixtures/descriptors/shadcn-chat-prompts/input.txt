@@ -1,0 +1,4 @@
+prompt	status state
+welcome	ready chat
+rewrite	ready chat
+old	disabled hidden

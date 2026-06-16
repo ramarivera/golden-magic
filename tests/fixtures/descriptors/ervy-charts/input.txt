@@ -1,0 +1,4 @@
+chart	status state
+bar	ready terminal
+pie	ready terminal
+old	disabled hidden

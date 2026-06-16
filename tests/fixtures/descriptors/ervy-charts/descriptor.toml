@@ -1,0 +1,10 @@
+id = "known.ervy.charts"
+name = "ervy chart list"
+priority = 50
+
+[matches]
+required_substrings = ["chart\tstatus","bar\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

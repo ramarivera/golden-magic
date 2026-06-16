@@ -1,0 +1,10 @@
+id = "known.stakpak.agent.tasks"
+name = "stakpak agent task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","scan\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

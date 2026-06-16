@@ -1,0 +1,18 @@
+[
+  {
+    "name": "bar",
+    "value": "status state"
+  },
+  {
+    "name": "download",
+    "value": "active terminal"
+  },
+  {
+    "name": "install",
+    "value": "active terminal"
+  },
+  {
+    "name": "old",
+    "value": "stopped hidden"
+  }
+]

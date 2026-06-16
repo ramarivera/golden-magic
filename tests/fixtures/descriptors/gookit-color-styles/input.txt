@@ -1,0 +1,4 @@
+style	status state
+red	ready ansi
+blue	ready ansi
+old	disabled hidden

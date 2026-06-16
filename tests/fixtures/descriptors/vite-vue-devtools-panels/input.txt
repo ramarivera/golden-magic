@@ -1,0 +1,4 @@
+panel	status state
+routes	ready browser
+components	ready browser
+old	disabled hidden

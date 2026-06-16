@@ -1,0 +1,10 @@
+id = "known.clifx.commands"
+name = "CliFx command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tstatus","serve\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

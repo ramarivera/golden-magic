@@ -1,0 +1,2 @@
+chart status state
+bar ready terminal

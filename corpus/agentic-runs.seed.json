@@ -24190,5 +24190,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jakobhoeg/shadcn-chat",
+    "descriptor_id": "known.shadcn.chat.prompts",
+    "run_id": "agentic.shadcn-chat-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shadcn-chat-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shadcn-chat-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.shadcn.chat.prompts for shadcn-chat prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gsscoder/commandline",
+    "descriptor_id": "known.gsscoder.commandline.options",
+    "run_id": "agentic.gsscoder-commandline-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gsscoder-commandline-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gsscoder-commandline-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gsscoder.commandline.options for gsscoder commandline option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ok-borg/borg",
+    "descriptor_id": "known.ok.borg.checks",
+    "run_id": "agentic.ok-borg-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/borg-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/borg-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ok.borg.checks for ok-borg check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/chunqiuyiyu/ervy",
+    "descriptor_id": "known.ervy.charts",
+    "run_id": "agentic.ervy-charts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ervy-charts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ervy-charts/expected.rows.json",
+    "variants": [
+      "chart header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ervy.charts for ervy chart list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Tyrrrz/CliFx",
+    "descriptor_id": "known.clifx.commands",
+    "run_id": "agentic.clifx-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clifx-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clifx-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.clifx.commands for CliFx command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/webfansplz/vite-plugin-vue-devtools",
+    "descriptor_id": "known.vite.vue.devtools.panels",
+    "run_id": "agentic.vite-vue-devtools-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vite-vue-devtools-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vite-vue-devtools-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vite.vue.devtools.panels for vite-plugin-vue-devtools panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gookit/color",
+    "descriptor_id": "known.gookit.color.styles",
+    "run_id": "agentic.gookit-color-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gookit-color-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gookit-color-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gookit.color.styles for gookit color style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Benexl/yt-x",
+    "descriptor_id": "known.yt.x.videos",
+    "run_id": "agentic.yt-x-videos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yt-x-videos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yt-x-videos/expected.rows.json",
+    "variants": [
+      "video header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.yt.x.videos for yt-x video list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/stakpak/agent",
+    "descriptor_id": "known.stakpak.agent.tasks",
+    "run_id": "agentic.stakpak-agent-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/stakpak-agent-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/stakpak-agent-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.stakpak.agent.tasks for stakpak agent task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jfelchner/ruby-progressbar",
+    "descriptor_id": "known.ruby.progressbar.bars",
+    "run_id": "agentic.ruby-progressbar-bars.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ruby-progressbar-bars/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ruby-progressbar-bars/expected.rows.json",
+    "variants": [
+      "bar header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ruby.progressbar.bars for ruby-progressbar bar list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

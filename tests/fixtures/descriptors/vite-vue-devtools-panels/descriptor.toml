@@ -1,0 +1,10 @@
+id = "known.vite.vue.devtools.panels"
+name = "vite-plugin-vue-devtools panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tstatus","routes\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.shadcn.chat.prompts"
+name = "shadcn-chat prompt list"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\tstatus","welcome\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
