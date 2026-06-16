@@ -1,0 +1,18 @@
+[
+  {
+    "name": "import",
+    "value": "status state"
+  },
+  {
+    "name": "photos",
+    "value": "ready media"
+  },
+  {
+    "name": "videos",
+    "value": "ready media"
+  },
+  {
+    "name": "old",
+    "value": "skipped hidden"
+  }
+]

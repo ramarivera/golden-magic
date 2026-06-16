@@ -1,0 +1,10 @@
+id = "known.episode.rename.files"
+name = "Episode-ReName file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","S01E01.mkv\trenamed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

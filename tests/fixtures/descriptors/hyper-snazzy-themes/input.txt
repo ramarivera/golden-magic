@@ -1,0 +1,4 @@
+theme	status state
+snazzy	active terminal
+dim	available terminal
+old	disabled hidden

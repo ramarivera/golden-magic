@@ -1,0 +1,10 @@
+id = "known.accent.translations"
+name = "accent translation list"
+priority = 50
+
+[matches]
+required_substrings = ["key\tstatus","home.title\ttranslated"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.elodie.imports"
+name = "elodie import list"
+priority = 50
+
+[matches]
+required_substrings = ["import\tstatus","photos\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

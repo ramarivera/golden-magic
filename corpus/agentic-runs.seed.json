@@ -25270,5 +25270,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jmathai/elodie",
+    "descriptor_id": "known.elodie.imports",
+    "run_id": "agentic.elodie-imports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/elodie-imports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/elodie-imports/expected.rows.json",
+    "variants": [
+      "import header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.elodie.imports for elodie import list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Nriver/Episode-ReName",
+    "descriptor_id": "known.episode.rename.files",
+    "run_id": "agentic.episode-rename-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/episode-rename-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/episode-rename-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.episode.rename.files for Episode-ReName file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mirego/accent",
+    "descriptor_id": "known.accent.translations",
+    "run_id": "agentic.accent-translations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/accent-translations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/accent-translations/expected.rows.json",
+    "variants": [
+      "key header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.accent.translations for accent translation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/hyper-snazzy",
+    "descriptor_id": "known.hyper.snazzy.themes",
+    "run_id": "agentic.hyper-snazzy-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hyper-snazzy-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hyper-snazzy-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hyper.snazzy.themes for hyper-snazzy theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ExTV/Podroid",
+    "descriptor_id": "known.podroid.feeds",
+    "run_id": "agentic.podroid-feeds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/podroid-feeds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/podroid-feeds/expected.rows.json",
+    "variants": [
+      "feed header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.podroid.feeds for Podroid feed list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/0x00-0x00/ShellPop",
+    "descriptor_id": "known.shellpop.payloads",
+    "run_id": "agentic.shellpop-payloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shellpop-payloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shellpop-payloads/expected.rows.json",
+    "variants": [
+      "payload header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.shellpop.payloads for ShellPop payload list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cyberark/FuzzyAI",
+    "descriptor_id": "known.fuzzyai.runs",
+    "run_id": "agentic.fuzzyai-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fuzzyai-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fuzzyai-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fuzzyai.runs for FuzzyAI run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ajermakovics/jvm-mon",
+    "descriptor_id": "known.jvm.mon.processes",
+    "run_id": "agentic.jvm-mon-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jvm-mon-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jvm-mon-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jvm.mon.processes for jvm-mon process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Nonchalant/AppIcon",
+    "descriptor_id": "known.appicon.icons",
+    "run_id": "agentic.appicon-icons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/appicon-icons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/appicon-icons/expected.rows.json",
+    "variants": [
+      "icon header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.appicon.icons for AppIcon icon list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mike-engel/jwt-cli",
+    "descriptor_id": "known.jwt.cli.tokens",
+    "run_id": "agentic.jwt-cli-tokens.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jwt-cli-tokens/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jwt-cli-tokens/expected.rows.json",
+    "variants": [
+      "token header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jwt.cli.tokens for jwt-cli token list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,4 @@
+payload	status state
+reverse	ready shell
+bind	ready shell
+old	disabled hidden

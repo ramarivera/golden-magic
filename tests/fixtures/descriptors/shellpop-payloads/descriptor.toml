@@ -1,0 +1,10 @@
+id = "known.shellpop.payloads"
+name = "ShellPop payload list"
+priority = 50
+
+[matches]
+required_substrings = ["payload\tstatus","reverse\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

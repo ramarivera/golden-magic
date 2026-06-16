@@ -1,0 +1,18 @@
+[
+  {
+    "name": "payload",
+    "value": "status state"
+  },
+  {
+    "name": "reverse",
+    "value": "ready shell"
+  },
+  {
+    "name": "bind",
+    "value": "ready shell"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

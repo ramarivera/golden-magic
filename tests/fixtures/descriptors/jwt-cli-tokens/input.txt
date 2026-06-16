@@ -1,0 +1,4 @@
+token	status state
+access	decoded jwt
+refresh	decoded jwt
+old	expired hidden

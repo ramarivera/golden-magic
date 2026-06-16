@@ -1,0 +1,4 @@
+run	status state
+prompt	queued fuzz
+model	running fuzz
+old	failed hidden

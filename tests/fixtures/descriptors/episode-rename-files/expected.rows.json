@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "status state"
+  },
+  {
+    "name": "S01E01.mkv",
+    "value": "renamed media"
+  },
+  {
+    "name": "S01E02.mkv",
+    "value": "renamed media"
+  },
+  {
+    "name": "old.avi",
+    "value": "skipped hidden"
+  }
+]

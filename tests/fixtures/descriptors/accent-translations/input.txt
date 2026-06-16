@@ -1,0 +1,4 @@
+key	status state
+home.title	translated i18n
+button.save	translated i18n
+old.key	missing hidden

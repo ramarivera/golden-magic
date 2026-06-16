@@ -1,0 +1,4 @@
+icon	status state
+ios	generated asset
+mac	generated asset
+old	missing hidden

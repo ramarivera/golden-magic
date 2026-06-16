@@ -1,0 +1,2 @@
+icon status state
+ios generated asset

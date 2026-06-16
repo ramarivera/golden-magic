@@ -1,0 +1,10 @@
+id = "known.podroid.feeds"
+name = "Podroid feed list"
+priority = 50
+
+[matches]
+required_substrings = ["feed\tstatus","tech\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

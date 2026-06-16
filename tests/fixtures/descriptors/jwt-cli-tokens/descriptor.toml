@@ -1,0 +1,10 @@
+id = "known.jwt.cli.tokens"
+name = "jwt-cli token list"
+priority = 50
+
+[matches]
+required_substrings = ["token\tstatus","access\tdecoded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

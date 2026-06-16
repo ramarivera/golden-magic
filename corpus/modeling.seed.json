@@ -9826,5 +9826,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/github-release-assets",
     "analysis_notes": "Modeled github-release asset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jmathai/elodie",
+    "descriptor_id": "known.elodie.imports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/elodie-imports",
+    "analysis_notes": "Modeled elodie import output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Nriver/Episode-ReName",
+    "descriptor_id": "known.episode.rename.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/episode-rename-files",
+    "analysis_notes": "Modeled Episode-ReName file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mirego/accent",
+    "descriptor_id": "known.accent.translations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/accent-translations",
+    "analysis_notes": "Modeled accent translation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/hyper-snazzy",
+    "descriptor_id": "known.hyper.snazzy.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hyper-snazzy-themes",
+    "analysis_notes": "Modeled hyper-snazzy theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ExTV/Podroid",
+    "descriptor_id": "known.podroid.feeds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/podroid-feeds",
+    "analysis_notes": "Modeled Podroid feed output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/0x00-0x00/ShellPop",
+    "descriptor_id": "known.shellpop.payloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shellpop-payloads",
+    "analysis_notes": "Modeled ShellPop payload output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cyberark/FuzzyAI",
+    "descriptor_id": "known.fuzzyai.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fuzzyai-runs",
+    "analysis_notes": "Modeled FuzzyAI run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ajermakovics/jvm-mon",
+    "descriptor_id": "known.jvm.mon.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jvm-mon-processes",
+    "analysis_notes": "Modeled jvm-mon process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Nonchalant/AppIcon",
+    "descriptor_id": "known.appicon.icons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/appicon-icons",
+    "analysis_notes": "Modeled AppIcon icon output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mike-engel/jwt-cli",
+    "descriptor_id": "known.jwt.cli.tokens",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jwt-cli-tokens",
+    "analysis_notes": "Modeled jwt-cli token output with a generated executable-json parser plugin."
   }
 ]

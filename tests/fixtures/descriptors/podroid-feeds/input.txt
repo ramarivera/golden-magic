@@ -1,0 +1,4 @@
+feed	status state
+tech	ready podcast
+news	ready podcast
+old	disabled hidden
