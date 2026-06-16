@@ -1,0 +1,4 @@
+app	status state
+phone	ready launcher
+settings	ready launcher
+old	disabled hidden

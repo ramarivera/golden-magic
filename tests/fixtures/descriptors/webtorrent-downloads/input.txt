@@ -1,0 +1,4 @@
+download	status state
+movie.torrent	seeding torrent
+linux.iso	downloading torrent
+old	paused hidden

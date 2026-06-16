@@ -1,0 +1,4 @@
+service	status state
+api	up monitor
+worker	up monitor
+old	down hidden

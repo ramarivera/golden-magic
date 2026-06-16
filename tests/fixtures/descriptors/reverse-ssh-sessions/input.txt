@@ -1,0 +1,4 @@
+session	status state
+edge	connected ssh
+lab	connected ssh
+old	disconnected hidden

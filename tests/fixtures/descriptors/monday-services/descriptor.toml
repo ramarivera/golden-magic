@@ -1,0 +1,10 @@
+id = "known.monday.services"
+name = "monday service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tstatus","api\tup"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

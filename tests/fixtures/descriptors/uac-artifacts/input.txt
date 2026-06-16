@@ -1,0 +1,4 @@
+artifact	status state
+processes	collected forensics
+network	collected forensics
+old	missing hidden

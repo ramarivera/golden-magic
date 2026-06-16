@@ -1,0 +1,10 @@
+id = "known.oh.jobs"
+name = "oh job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","shell\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

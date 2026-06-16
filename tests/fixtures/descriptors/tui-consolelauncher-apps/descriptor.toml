@@ -1,0 +1,10 @@
+id = "known.tui.consolelauncher.apps"
+name = "TUI ConsoleLauncher app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tstatus","phone\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

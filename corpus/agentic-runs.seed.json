@@ -25990,5 +25990,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/fandreuz/TUI-ConsoleLauncher",
+    "descriptor_id": "known.tui.consolelauncher.apps",
+    "run_id": "agentic.tui-consolelauncher-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-consolelauncher-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-consolelauncher-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui.consolelauncher.apps for TUI ConsoleLauncher app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Tencent/feflow",
+    "descriptor_id": "known.feflow.tasks",
+    "run_id": "agentic.feflow-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/feflow-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/feflow-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.feflow.tasks for feflow task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/michaelmacinnis/oh",
+    "descriptor_id": "known.oh.jobs",
+    "run_id": "agentic.oh-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oh-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oh-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.oh.jobs for oh job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tclahr/uac",
+    "descriptor_id": "known.uac.artifacts",
+    "run_id": "agentic.uac-artifacts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/uac-artifacts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/uac-artifacts/expected.rows.json",
+    "variants": [
+      "artifact header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.uac.artifacts for uac artifact list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/NHAS/reverse_ssh",
+    "descriptor_id": "known.reverse.ssh.sessions",
+    "run_id": "agentic.reverse-ssh-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/reverse-ssh-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/reverse-ssh-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.reverse.ssh.sessions for reverse_ssh session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/whipper-team/whipper",
+    "descriptor_id": "known.whipper.tracks",
+    "run_id": "agentic.whipper-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/whipper-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/whipper-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.whipper.tracks for whipper track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/eko/monday",
+    "descriptor_id": "known.monday.services",
+    "run_id": "agentic.monday-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/monday-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/monday-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.monday.services for monday service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gorilla-llm/gorilla-cli",
+    "descriptor_id": "known.gorilla.cli.commands",
+    "run_id": "agentic.gorilla-cli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gorilla-cli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gorilla-cli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gorilla.cli.commands for gorilla-cli command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tenox7/ttyplot",
+    "descriptor_id": "known.ttyplot.series",
+    "run_id": "agentic.ttyplot-series.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ttyplot-series/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ttyplot-series/expected.rows.json",
+    "variants": [
+      "series header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ttyplot.series for ttyplot series list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/webtorrent/webtorrent-cli",
+    "descriptor_id": "known.webtorrent.downloads",
+    "run_id": "agentic.webtorrent-downloads.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/webtorrent-downloads/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/webtorrent-downloads/expected.rows.json",
+    "variants": [
+      "download header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.webtorrent.downloads for webtorrent-cli download list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

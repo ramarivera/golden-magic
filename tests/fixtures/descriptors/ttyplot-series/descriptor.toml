@@ -1,0 +1,10 @@
+id = "known.ttyplot.series"
+name = "ttyplot series list"
+priority = 50
+
+[matches]
+required_substrings = ["series\tstatus","cpu\tplotting"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

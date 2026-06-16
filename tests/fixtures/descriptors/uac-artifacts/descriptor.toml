@@ -1,0 +1,10 @@
+id = "known.uac.artifacts"
+name = "uac artifact list"
+priority = 50
+
+[matches]
+required_substrings = ["artifact\tstatus","processes\tcollected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

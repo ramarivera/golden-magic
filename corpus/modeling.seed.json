@@ -10106,5 +10106,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/epr-books",
     "analysis_notes": "Modeled epr book output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fandreuz/TUI-ConsoleLauncher",
+    "descriptor_id": "known.tui.consolelauncher.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-consolelauncher-apps",
+    "analysis_notes": "Modeled TUI ConsoleLauncher app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Tencent/feflow",
+    "descriptor_id": "known.feflow.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/feflow-tasks",
+    "analysis_notes": "Modeled feflow task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/michaelmacinnis/oh",
+    "descriptor_id": "known.oh.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oh-jobs",
+    "analysis_notes": "Modeled oh job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tclahr/uac",
+    "descriptor_id": "known.uac.artifacts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/uac-artifacts",
+    "analysis_notes": "Modeled uac artifact output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NHAS/reverse_ssh",
+    "descriptor_id": "known.reverse.ssh.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/reverse-ssh-sessions",
+    "analysis_notes": "Modeled reverse_ssh session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/whipper-team/whipper",
+    "descriptor_id": "known.whipper.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/whipper-tracks",
+    "analysis_notes": "Modeled whipper track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/eko/monday",
+    "descriptor_id": "known.monday.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/monday-services",
+    "analysis_notes": "Modeled monday service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gorilla-llm/gorilla-cli",
+    "descriptor_id": "known.gorilla.cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gorilla-cli-commands",
+    "analysis_notes": "Modeled gorilla-cli command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tenox7/ttyplot",
+    "descriptor_id": "known.ttyplot.series",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ttyplot-series",
+    "analysis_notes": "Modeled ttyplot series output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/webtorrent/webtorrent-cli",
+    "descriptor_id": "known.webtorrent.downloads",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/webtorrent-downloads",
+    "analysis_notes": "Modeled webtorrent-cli download output with a generated executable-json parser plugin."
   }
 ]

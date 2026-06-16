@@ -1,0 +1,4 @@
+job	status state
+shell	active oh
+worker	active oh
+old	closed hidden

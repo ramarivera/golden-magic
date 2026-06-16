@@ -1,0 +1,4 @@
+series	status state
+cpu	plotting graph
+mem	plotting graph
+old	stopped hidden

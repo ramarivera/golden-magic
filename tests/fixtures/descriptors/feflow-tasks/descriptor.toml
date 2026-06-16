@@ -1,0 +1,10 @@
+id = "known.feflow.tasks"
+name = "feflow task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","build\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.webtorrent.downloads"
+name = "webtorrent-cli download list"
+priority = 50
+
+[matches]
+required_substrings = ["download\tstatus","movie.torrent\tseeding"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+service status state
+api up monitor
