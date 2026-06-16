@@ -1,0 +1,4 @@
+image	version state
+base	1.0 available
+full	1.1 available
+old	0.9 hidden

@@ -1,0 +1,10 @@
+id = "known.arkos.images"
+name = "arkos image list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tversion","base\t1.0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

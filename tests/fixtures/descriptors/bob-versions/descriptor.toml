@@ -1,0 +1,10 @@
+id = "known.bob.versions"
+name = "bob Neovim version list"
+priority = 50
+
+[matches]
+required_substrings = ["version\tchannel","stable\trelease"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

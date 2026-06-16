@@ -1,0 +1,4 @@
+service	status state
+nginx	running active
+postgres	stopped listed
+old	failed hidden

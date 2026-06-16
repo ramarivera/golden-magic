@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "owner state"
+  },
+  {
+    "name": "plan",
+    "value": "agent active"
+  },
+  {
+    "name": "verify",
+    "value": "agent active"
+  },
+  {
+    "name": "old",
+    "value": "human blocked"
+  }
+]

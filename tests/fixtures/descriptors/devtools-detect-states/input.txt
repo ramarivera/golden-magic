@@ -1,0 +1,4 @@
+state	value status
+open	true detected
+orientation	vertical detected
+old	false ignored

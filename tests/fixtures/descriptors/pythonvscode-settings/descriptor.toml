@@ -1,0 +1,10 @@
+id = "known.pythonvscode.settings"
+name = "pythonVSCode setting list"
+priority = 50
+
+[matches]
+required_substrings = ["setting\tvalue","linting\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

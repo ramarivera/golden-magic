@@ -1,0 +1,4 @@
+widget	layout state
+table	grid available
+button	inline available
+old	float hidden

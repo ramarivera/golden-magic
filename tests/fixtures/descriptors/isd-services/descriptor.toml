@@ -1,0 +1,10 @@
+id = "known.isd.services"
+name = "isd service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\tstatus","nginx\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

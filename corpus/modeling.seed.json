@@ -7866,5 +7866,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/f8x-checks",
     "analysis_notes": "Modeled f8x check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/christianhaitian/arkos",
+    "descriptor_id": "known.arkos.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/arkos-images",
+    "analysis_notes": "Modeled arkos image output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sindresorhus/devtools-detect",
+    "descriptor_id": "known.devtools-detect.states",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtools-detect-states",
+    "analysis_notes": "Modeled devtools-detect state output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openfl/openfl",
+    "descriptor_id": "known.openfl.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openfl-targets",
+    "analysis_notes": "Modeled openfl target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ifd3f/caligula",
+    "descriptor_id": "known.caligula.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/caligula-devices",
+    "analysis_notes": "Modeled caligula device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MordechaiHadad/bob",
+    "descriptor_id": "known.bob.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bob-versions",
+    "analysis_notes": "Modeled bob version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kainctl/isd",
+    "descriptor_id": "known.isd.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/isd-services",
+    "analysis_notes": "Modeled isd systemd service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/marcusolsson/tui-go",
+    "descriptor_id": "known.tui-go.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-go-widgets",
+    "analysis_notes": "Modeled tui-go widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Fakerr/git-recall",
+    "descriptor_id": "known.git-recall.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/git-recall-entries",
+    "analysis_notes": "Modeled git-recall commit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cjo4m06/mcp-shrimp-task-manager",
+    "descriptor_id": "known.mcp-shrimp-task-manager.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mcp-shrimp-task-manager-tasks",
+    "analysis_notes": "Modeled mcp-shrimp-task-manager task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/DonJayamanne/pythonVSCode",
+    "descriptor_id": "known.pythonvscode.settings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pythonvscode-settings",
+    "analysis_notes": "Modeled pythonVSCode setting output with a generated executable-json parser plugin."
   }
 ]

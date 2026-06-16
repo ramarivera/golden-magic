@@ -1,0 +1,18 @@
+[
+  {
+    "name": "state",
+    "value": "value status"
+  },
+  {
+    "name": "open",
+    "value": "true detected"
+  },
+  {
+    "name": "orientation",
+    "value": "vertical detected"
+  },
+  {
+    "name": "old",
+    "value": "false ignored"
+  }
+]

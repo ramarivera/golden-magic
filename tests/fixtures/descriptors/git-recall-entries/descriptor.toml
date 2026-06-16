@@ -1,0 +1,10 @@
+id = "known.git-recall.entries"
+name = "git-recall entry list"
+priority = 50
+
+[matches]
+required_substrings = ["commit\tmessage","abc123\tfix"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

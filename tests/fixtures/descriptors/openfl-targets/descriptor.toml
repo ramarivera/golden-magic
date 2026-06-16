@@ -1,0 +1,10 @@
+id = "known.openfl.targets"
+name = "openfl target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tplatform","html5\tweb"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

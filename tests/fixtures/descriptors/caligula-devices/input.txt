@@ -1,0 +1,4 @@
+device	size state
+disk0	64G writable
+disk1	32G writable
+old	1G ignored

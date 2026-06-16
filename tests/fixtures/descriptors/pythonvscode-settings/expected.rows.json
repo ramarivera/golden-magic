@@ -1,0 +1,18 @@
+[
+  {
+    "name": "setting",
+    "value": "value state"
+  },
+  {
+    "name": "linting",
+    "value": "enabled active"
+  },
+  {
+    "name": "formatting",
+    "value": "enabled active"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

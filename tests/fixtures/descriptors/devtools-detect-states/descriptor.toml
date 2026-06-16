@@ -1,0 +1,10 @@
+id = "known.devtools-detect.states"
+name = "devtools-detect state list"
+priority = 50
+
+[matches]
+required_substrings = ["state\tvalue","open\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

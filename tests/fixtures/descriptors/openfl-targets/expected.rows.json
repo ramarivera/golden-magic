@@ -1,0 +1,18 @@
+[
+  {
+    "name": "target",
+    "value": "platform state"
+  },
+  {
+    "name": "html5",
+    "value": "web available"
+  },
+  {
+    "name": "windows",
+    "value": "desktop available"
+  },
+  {
+    "name": "old",
+    "value": "flash hidden"
+  }
+]

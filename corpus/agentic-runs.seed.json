@@ -20230,5 +20230,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/christianhaitian/arkos",
+    "descriptor_id": "known.arkos.images",
+    "run_id": "agentic.arkos-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/arkos-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/arkos-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.arkos.images for arkos image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sindresorhus/devtools-detect",
+    "descriptor_id": "known.devtools-detect.states",
+    "run_id": "agentic.devtools-detect-states.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devtools-detect-states/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devtools-detect-states/expected.rows.json",
+    "variants": [
+      "state header row",
+      "value row",
+      "status field"
+    ],
+    "transcript": [
+      "selected descriptor known.devtools-detect.states for devtools-detect state list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/openfl/openfl",
+    "descriptor_id": "known.openfl.targets",
+    "run_id": "agentic.openfl-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openfl-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openfl-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.openfl.targets for openfl target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ifd3f/caligula",
+    "descriptor_id": "known.caligula.devices",
+    "run_id": "agentic.caligula-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/caligula-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/caligula-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.caligula.devices for caligula device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/MordechaiHadad/bob",
+    "descriptor_id": "known.bob.versions",
+    "run_id": "agentic.bob-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bob-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bob-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "channel row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bob.versions for bob Neovim version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kainctl/isd",
+    "descriptor_id": "known.isd.services",
+    "run_id": "agentic.isd-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/isd-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/isd-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.isd.services for isd service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/marcusolsson/tui-go",
+    "descriptor_id": "known.tui-go.widgets",
+    "run_id": "agentic.tui-go-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-go-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-go-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "layout row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui-go.widgets for tui-go widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Fakerr/git-recall",
+    "descriptor_id": "known.git-recall.entries",
+    "run_id": "agentic.git-recall-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/git-recall-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/git-recall-entries/expected.rows.json",
+    "variants": [
+      "commit header row",
+      "message row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.git-recall.entries for git-recall entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cjo4m06/mcp-shrimp-task-manager",
+    "descriptor_id": "known.mcp-shrimp-task-manager.tasks",
+    "run_id": "agentic.mcp-shrimp-task-manager-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mcp-shrimp-task-manager-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mcp-shrimp-task-manager-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "owner row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mcp-shrimp-task-manager.tasks for mcp-shrimp-task-manager task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/DonJayamanne/pythonVSCode",
+    "descriptor_id": "known.pythonvscode.settings",
+    "run_id": "agentic.pythonvscode-settings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pythonvscode-settings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pythonvscode-settings/expected.rows.json",
+    "variants": [
+      "setting header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pythonvscode.settings for pythonVSCode setting list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

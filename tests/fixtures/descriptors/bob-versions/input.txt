@@ -1,0 +1,4 @@
+version	channel state
+stable	release installed
+nightly	edge installed
+old	legacy removed

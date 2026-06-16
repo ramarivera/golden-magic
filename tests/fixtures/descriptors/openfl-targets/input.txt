@@ -1,0 +1,4 @@
+target	platform state
+html5	web available
+windows	desktop available
+old	flash hidden

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "image",
+    "value": "version state"
+  },
+  {
+    "name": "base",
+    "value": "1.0 available"
+  },
+  {
+    "name": "full",
+    "value": "1.1 available"
+  },
+  {
+    "name": "old",
+    "value": "0.9 hidden"
+  }
+]

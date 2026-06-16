@@ -1,0 +1,2 @@
+service status state
+nginx running active

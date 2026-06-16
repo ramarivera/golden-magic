@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "size state"
+  },
+  {
+    "name": "disk0",
+    "value": "64G writable"
+  },
+  {
+    "name": "disk1",
+    "value": "32G writable"
+  },
+  {
+    "name": "old",
+    "value": "1G ignored"
+  }
+]
