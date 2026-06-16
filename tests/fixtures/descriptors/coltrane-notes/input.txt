@@ -1,0 +1,4 @@
+note	chord state
+C	maj7 playable
+D	min7 playable
+old	dim hidden

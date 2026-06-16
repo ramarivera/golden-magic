@@ -1,0 +1,10 @@
+id = "known.hacklock.checks"
+name = "hacklock check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tresult","lock\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

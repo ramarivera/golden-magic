@@ -1,0 +1,4 @@
+job	status state
+import	running active
+export	queued active
+old	failed ignored

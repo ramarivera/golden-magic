@@ -7376,5 +7376,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/zsh-z-directories",
     "analysis_notes": "Modeled zsh-z frecency directory output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pedrozath/coltrane",
+    "descriptor_id": "known.coltrane.notes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/coltrane-notes",
+    "analysis_notes": "Modeled coltrane music theory output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ggozad/oterm",
+    "descriptor_id": "known.oterm.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oterm-sessions",
+    "analysis_notes": "Modeled oterm chat session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/VeryGoodOpenSource/very_good_cli",
+    "descriptor_id": "known.very-good-cli.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/very-good-cli-templates",
+    "analysis_notes": "Modeled very_good_cli template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/TermuxHackz/X-osint",
+    "descriptor_id": "known.x-osint.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/x-osint-modules",
+    "analysis_notes": "Modeled X-osint module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nodenv/nodenv",
+    "descriptor_id": "known.nodenv.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nodenv-versions",
+    "analysis_notes": "Modeled nodenv version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/onecli/onecli",
+    "descriptor_id": "known.onecli.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/onecli-actions",
+    "analysis_notes": "Modeled onecli action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/drush-ops/drush",
+    "descriptor_id": "known.drush.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/drush-commands",
+    "analysis_notes": "Modeled drush command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools",
+    "descriptor_id": "known.cn-chrome-devtools.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cn-chrome-devtools-panels",
+    "analysis_notes": "Modeled CN-Chrome-DevTools translated panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/XZB-1248/Spark",
+    "descriptor_id": "known.spark.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spark-jobs",
+    "analysis_notes": "Modeled Spark job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/noob-hackers/hacklock",
+    "descriptor_id": "known.hacklock.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hacklock-checks",
+    "analysis_notes": "Modeled hacklock check output with a generated executable-json parser plugin."
   }
 ]

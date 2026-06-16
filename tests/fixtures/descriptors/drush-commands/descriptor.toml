@@ -1,0 +1,10 @@
+id = "known.drush.commands"
+name = "drush command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tcategory","cache:rebuild\tcache"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

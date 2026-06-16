@@ -1,0 +1,18 @@
+[
+  {
+    "name": "note",
+    "value": "chord state"
+  },
+  {
+    "name": "C",
+    "value": "maj7 playable"
+  },
+  {
+    "name": "D",
+    "value": "min7 playable"
+  },
+  {
+    "name": "old",
+    "value": "dim hidden"
+  }
+]

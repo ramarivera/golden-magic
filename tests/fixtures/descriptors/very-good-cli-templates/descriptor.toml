@@ -1,0 +1,10 @@
+id = "known.very-good-cli.templates"
+name = "very_good_cli template list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tplatform","flutter_app\tmobile"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

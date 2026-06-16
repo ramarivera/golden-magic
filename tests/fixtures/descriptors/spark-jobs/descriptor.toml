@@ -1,0 +1,10 @@
+id = "known.spark.jobs"
+name = "Spark job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","import\trunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

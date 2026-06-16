@@ -1,0 +1,2 @@
+panel locale state
+network zh_CN translated

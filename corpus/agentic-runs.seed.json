@@ -18970,5 +18970,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/pedrozath/coltrane",
+    "descriptor_id": "known.coltrane.notes",
+    "run_id": "agentic.coltrane-notes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/coltrane-notes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/coltrane-notes/expected.rows.json",
+    "variants": [
+      "note header row",
+      "chord row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.coltrane.notes for coltrane note list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ggozad/oterm",
+    "descriptor_id": "known.oterm.sessions",
+    "run_id": "agentic.oterm-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oterm-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oterm-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.oterm.sessions for oterm session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/VeryGoodOpenSource/very_good_cli",
+    "descriptor_id": "known.very-good-cli.templates",
+    "run_id": "agentic.very-good-cli-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/very-good-cli-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/very-good-cli-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.very-good-cli.templates for very_good_cli template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/TermuxHackz/X-osint",
+    "descriptor_id": "known.x-osint.modules",
+    "run_id": "agentic.x-osint-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/x-osint-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/x-osint-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "target row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.x-osint.modules for X-osint module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nodenv/nodenv",
+    "descriptor_id": "known.nodenv.versions",
+    "run_id": "agentic.nodenv-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nodenv-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nodenv-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "origin row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nodenv.versions for nodenv version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/onecli/onecli",
+    "descriptor_id": "known.onecli.actions",
+    "run_id": "agentic.onecli-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/onecli-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/onecli-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.onecli.actions for onecli action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/drush-ops/drush",
+    "descriptor_id": "known.drush.commands",
+    "run_id": "agentic.drush-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/drush-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/drush-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.drush.commands for drush command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools",
+    "descriptor_id": "known.cn-chrome-devtools.panels",
+    "run_id": "agentic.cn-chrome-devtools-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cn-chrome-devtools-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cn-chrome-devtools-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "locale row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cn-chrome-devtools.panels for CN-Chrome-DevTools panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/XZB-1248/Spark",
+    "descriptor_id": "known.spark.jobs",
+    "run_id": "agentic.spark-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spark-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spark-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.spark.jobs for Spark job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/noob-hackers/hacklock",
+    "descriptor_id": "known.hacklock.checks",
+    "run_id": "agentic.hacklock-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hacklock-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hacklock-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hacklock.checks for hacklock check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

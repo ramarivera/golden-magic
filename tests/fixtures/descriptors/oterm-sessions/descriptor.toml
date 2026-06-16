@@ -1,0 +1,10 @@
+id = "known.oterm.sessions"
+name = "oterm session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tmodel","chat-1\tllama3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

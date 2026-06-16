@@ -1,0 +1,4 @@
+panel	locale state
+network	zh_CN translated
+console	zh_CN translated
+old	en_US skipped

@@ -1,0 +1,2 @@
+note chord state
+C maj7 playable

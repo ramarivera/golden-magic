@@ -1,0 +1,2 @@
+command category state
+cache:rebuild cache available

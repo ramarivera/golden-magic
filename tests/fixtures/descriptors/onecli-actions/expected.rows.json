@@ -1,0 +1,18 @@
+[
+  {
+    "name": "action",
+    "value": "status state"
+  },
+  {
+    "name": "deploy",
+    "value": "ready available"
+  },
+  {
+    "name": "rollback",
+    "value": "ready available"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

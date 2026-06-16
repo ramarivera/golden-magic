@@ -1,0 +1,4 @@
+command	category state
+cache:rebuild	cache available
+pm:list	project available
+old:cmd	legacy hidden

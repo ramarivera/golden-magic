@@ -1,0 +1,10 @@
+id = "known.nodenv.versions"
+name = "nodenv version list"
+priority = 50
+
+[matches]
+required_substrings = ["version\torigin","20.11.1\tglobal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

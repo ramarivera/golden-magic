@@ -1,0 +1,4 @@
+session	model state
+chat-1	llama3 active
+chat-2	mistral active
+old	gemma archived

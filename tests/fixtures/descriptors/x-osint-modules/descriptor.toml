@@ -1,0 +1,10 @@
+id = "known.x-osint.modules"
+name = "X-osint module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\ttarget","username\tsocial"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

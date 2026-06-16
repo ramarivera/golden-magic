@@ -1,0 +1,18 @@
+[
+  {
+    "name": "check",
+    "value": "result state"
+  },
+  {
+    "name": "lock",
+    "value": "found reported"
+  },
+  {
+    "name": "backup",
+    "value": "missing reported"
+  },
+  {
+    "name": "old",
+    "value": "unknown ignored"
+  }
+]

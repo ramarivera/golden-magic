@@ -1,0 +1,4 @@
+module	target state
+username	social enabled
+email	breach enabled
+old	phone disabled

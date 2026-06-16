@@ -1,0 +1,4 @@
+check	result state
+lock	found reported
+backup	missing reported
+old	unknown ignored

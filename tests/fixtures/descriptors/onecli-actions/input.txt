@@ -1,0 +1,4 @@
+action	status state
+deploy	ready available
+rollback	ready available
+old	disabled hidden
