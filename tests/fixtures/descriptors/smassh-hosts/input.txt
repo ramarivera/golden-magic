@@ -1,0 +1,4 @@
+host	user state
+prod	root ready
+stage	deploy ready
+old	guest hidden

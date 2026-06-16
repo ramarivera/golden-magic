@@ -1,0 +1,10 @@
+id = "known.termenv.profiles"
+name = "termenv profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tcolors","ansi\t16"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

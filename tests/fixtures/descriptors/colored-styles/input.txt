@@ -1,0 +1,4 @@
+style	ansi state
+red	31 enabled
+bold	1 enabled
+old	0 hidden

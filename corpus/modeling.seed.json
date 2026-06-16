@@ -8076,5 +8076,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/sad-replacements",
     "analysis_notes": "Modeled sad search-and-replace output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/colored-rs/colored",
+    "descriptor_id": "known.colored.styles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/colored-styles",
+    "analysis_notes": "Modeled colored style output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vadimdemedes/ink-ui",
+    "descriptor_id": "known.ink.ui.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ink-ui-components",
+    "analysis_notes": "Modeled ink-ui component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ipinfo/cli",
+    "descriptor_id": "known.ipinfo.cli.lookups",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ipinfo-cli-lookups",
+    "analysis_notes": "Modeled ipinfo CLI lookup output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Urigo/graphql-cli",
+    "descriptor_id": "known.graphql.cli.endpoints",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/graphql-cli-endpoints",
+    "analysis_notes": "Modeled graphql-cli endpoint output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/coderaiser/cloudcmd",
+    "descriptor_id": "known.cloudcmd.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cloudcmd-files",
+    "analysis_notes": "Modeled cloudcmd file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bensadeh/circumflex",
+    "descriptor_id": "known.circumflex.articles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/circumflex-articles",
+    "analysis_notes": "Modeled circumflex article output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trailofbits/claude-code-config",
+    "descriptor_id": "known.claude.code.config.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-config-profiles",
+    "analysis_notes": "Modeled claude-code-config profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/muesli/termenv",
+    "descriptor_id": "known.termenv.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termenv-profiles",
+    "analysis_notes": "Modeled termenv profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/moretension/duti",
+    "descriptor_id": "known.duti.bindings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/duti-bindings",
+    "analysis_notes": "Modeled duti extension binding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kraanzu/smassh",
+    "descriptor_id": "known.smassh.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/smassh-hosts",
+    "analysis_notes": "Modeled smassh host output with a generated executable-json parser plugin."
   }
 ]

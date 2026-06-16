@@ -1,0 +1,10 @@
+id = "known.duti.bindings"
+name = "duti binding list"
+priority = 50
+
+[matches]
+required_substrings = ["extension\tapp","txt\tTextEdit"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

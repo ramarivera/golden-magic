@@ -1,0 +1,2 @@
+endpoint url state
+api https://example.test/graphql active

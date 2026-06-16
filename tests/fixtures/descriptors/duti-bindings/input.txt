@@ -1,0 +1,4 @@
+extension	app state
+txt	TextEdit mapped
+md	Editor mapped
+old	Legacy hidden

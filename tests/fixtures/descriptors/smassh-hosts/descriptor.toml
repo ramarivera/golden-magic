@@ -1,0 +1,10 @@
+id = "known.smassh.hosts"
+name = "smassh host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tuser","prod\troot"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

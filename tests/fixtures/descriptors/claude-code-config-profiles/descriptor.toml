@@ -1,0 +1,10 @@
+id = "known.claude.code.config.profiles"
+name = "claude-code-config profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tpolicy","default\tstrict"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+profile colors state
+ansi 16 supported

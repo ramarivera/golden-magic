@@ -1,0 +1,18 @@
+[
+  {
+    "name": "profile",
+    "value": "policy state"
+  },
+  {
+    "name": "default",
+    "value": "strict active"
+  },
+  {
+    "name": "review",
+    "value": "audit active"
+  },
+  {
+    "name": "old",
+    "value": "loose hidden"
+  }
+]

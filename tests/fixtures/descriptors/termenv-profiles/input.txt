@@ -1,0 +1,4 @@
+profile	colors state
+ansi	16 supported
+truecolor	16777216 supported
+old	8 hidden

@@ -1,0 +1,10 @@
+id = "known.graphql.cli.endpoints"
+name = "graphql-cli endpoint list"
+priority = 50
+
+[matches]
+required_substrings = ["endpoint\turl","api\thttps://"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.ipinfo.cli.lookups"
+name = "ipinfo CLI lookup list"
+priority = 50
+
+[matches]
+required_substrings = ["ip\tcountry","8.8.8.8\tUS"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

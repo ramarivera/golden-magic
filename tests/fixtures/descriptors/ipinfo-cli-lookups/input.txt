@@ -1,0 +1,4 @@
+ip	country state
+8.8.8.8	US found
+1.1.1.1	AU found
+old	ZZ hidden

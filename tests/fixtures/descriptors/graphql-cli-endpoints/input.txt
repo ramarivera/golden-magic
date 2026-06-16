@@ -1,0 +1,4 @@
+endpoint	url state
+api	https://example.test/graphql active
+admin	https://example.test/admin active
+old	file://hidden hidden

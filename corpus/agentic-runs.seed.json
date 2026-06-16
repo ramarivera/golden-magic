@@ -20770,5 +20770,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/colored-rs/colored",
+    "descriptor_id": "known.colored.styles",
+    "run_id": "agentic.colored-styles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/colored-styles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/colored-styles/expected.rows.json",
+    "variants": [
+      "style header row",
+      "ansi row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.colored.styles for colored style list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vadimdemedes/ink-ui",
+    "descriptor_id": "known.ink.ui.components",
+    "run_id": "agentic.ink-ui-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ink-ui-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ink-ui-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ink.ui.components for ink-ui component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ipinfo/cli",
+    "descriptor_id": "known.ipinfo.cli.lookups",
+    "run_id": "agentic.ipinfo-cli-lookups.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ipinfo-cli-lookups/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ipinfo-cli-lookups/expected.rows.json",
+    "variants": [
+      "ip header row",
+      "country row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ipinfo.cli.lookups for ipinfo CLI lookup list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Urigo/graphql-cli",
+    "descriptor_id": "known.graphql.cli.endpoints",
+    "run_id": "agentic.graphql-cli-endpoints.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/graphql-cli-endpoints/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/graphql-cli-endpoints/expected.rows.json",
+    "variants": [
+      "endpoint header row",
+      "url row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.graphql.cli.endpoints for graphql-cli endpoint list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/coderaiser/cloudcmd",
+    "descriptor_id": "known.cloudcmd.files",
+    "run_id": "agentic.cloudcmd-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cloudcmd-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cloudcmd-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cloudcmd.files for cloudcmd file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bensadeh/circumflex",
+    "descriptor_id": "known.circumflex.articles",
+    "run_id": "agentic.circumflex-articles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/circumflex-articles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/circumflex-articles/expected.rows.json",
+    "variants": [
+      "article header row",
+      "source row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.circumflex.articles for circumflex article list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/trailofbits/claude-code-config",
+    "descriptor_id": "known.claude.code.config.profiles",
+    "run_id": "agentic.claude-code-config-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-config-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-config-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "policy row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude.code.config.profiles for claude-code-config profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/muesli/termenv",
+    "descriptor_id": "known.termenv.profiles",
+    "run_id": "agentic.termenv-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termenv-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termenv-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "colors row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termenv.profiles for termenv profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/moretension/duti",
+    "descriptor_id": "known.duti.bindings",
+    "run_id": "agentic.duti-bindings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/duti-bindings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/duti-bindings/expected.rows.json",
+    "variants": [
+      "extension header row",
+      "app row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.duti.bindings for duti binding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kraanzu/smassh",
+    "descriptor_id": "known.smassh.hosts",
+    "run_id": "agentic.smassh-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/smassh-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/smassh-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "user row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.smassh.hosts for smassh host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]
