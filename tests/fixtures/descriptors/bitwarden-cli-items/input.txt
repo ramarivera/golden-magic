@@ -1,0 +1,4 @@
+item	status state
+login	unlocked vault
+note	locked vault
+old	deleted hidden

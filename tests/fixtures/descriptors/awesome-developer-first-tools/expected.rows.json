@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tool",
+    "value": "category state"
+  },
+  {
+    "name": "cli",
+    "value": "developer listed"
+  },
+  {
+    "name": "api",
+    "value": "developer listed"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

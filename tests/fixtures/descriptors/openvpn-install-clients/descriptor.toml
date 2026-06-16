@@ -1,0 +1,10 @@
+id = "known.openvpn.install.clients"
+name = "openvpn-install client list"
+priority = 50
+
+[matches]
+required_substrings = ["client\tstatus","phone\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

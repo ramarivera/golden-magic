@@ -1,0 +1,4 @@
+client	status state
+phone	active vpn
+laptop	active vpn
+old	revoked hidden

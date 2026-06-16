@@ -1,0 +1,4 @@
+system	status state
+snes	ready emulator
+gba	ready emulator
+old	missing hidden

@@ -9126,5 +9126,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/cordless-channels",
     "analysis_notes": "Modeled cordless channel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ares-emulator/ares",
+    "descriptor_id": "known.ares.systems",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ares-systems",
+    "analysis_notes": "Modeled ares system output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hwdsl2/openvpn-install",
+    "descriptor_id": "known.openvpn.install.clients",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openvpn-install-clients",
+    "analysis_notes": "Modeled openvpn-install client output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/adi1090x/termux-style",
+    "descriptor_id": "known.termux.style.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termux-style-themes",
+    "analysis_notes": "Modeled termux-style theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bitwarden/cli",
+    "descriptor_id": "known.bitwarden.cli.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bitwarden-cli-items",
+    "analysis_notes": "Modeled bitwarden cli item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/brenns10/lsh",
+    "descriptor_id": "known.lsh.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lsh-files",
+    "analysis_notes": "Modeled lsh file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/agamm/awesome-developer-first",
+    "descriptor_id": "known.awesome.developer.first.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-developer-first-tools",
+    "analysis_notes": "Modeled awesome-developer-first tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/leo-arch/clifm",
+    "descriptor_id": "known.clifm.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/clifm-entries",
+    "analysis_notes": "Modeled clifm entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/samwho/spacer",
+    "descriptor_id": "known.spacer.layouts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spacer-layouts",
+    "analysis_notes": "Modeled spacer layout output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/wireghoul/graudit",
+    "descriptor_id": "known.graudit.patterns",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/graudit-patterns",
+    "analysis_notes": "Modeled graudit pattern output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mattmc3/antidote",
+    "descriptor_id": "known.antidote.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/antidote-plugins",
+    "analysis_notes": "Modeled antidote plugin output with a generated executable-json parser plugin."
   }
 ]

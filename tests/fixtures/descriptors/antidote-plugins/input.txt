@@ -1,0 +1,4 @@
+plugin	status state
+prompt	loaded zsh
+completion	loaded zsh
+old	disabled hidden

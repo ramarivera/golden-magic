@@ -1,0 +1,10 @@
+id = "known.lsh.files"
+name = "lsh file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","main.c\tlisted"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

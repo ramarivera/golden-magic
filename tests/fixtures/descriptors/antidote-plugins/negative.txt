@@ -1,0 +1,2 @@
+plugin status state
+prompt loaded zsh

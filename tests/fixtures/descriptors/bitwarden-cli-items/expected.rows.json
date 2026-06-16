@@ -1,0 +1,18 @@
+[
+  {
+    "name": "item",
+    "value": "status state"
+  },
+  {
+    "name": "login",
+    "value": "unlocked vault"
+  },
+  {
+    "name": "note",
+    "value": "locked vault"
+  },
+  {
+    "name": "old",
+    "value": "deleted hidden"
+  }
+]

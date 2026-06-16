@@ -1,0 +1,18 @@
+[
+  {
+    "name": "theme",
+    "value": "status state"
+  },
+  {
+    "name": "dark",
+    "value": "active termux"
+  },
+  {
+    "name": "light",
+    "value": "available termux"
+  },
+  {
+    "name": "old",
+    "value": "removed hidden"
+  }
+]

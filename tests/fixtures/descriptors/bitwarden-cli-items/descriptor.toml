@@ -1,0 +1,10 @@
+id = "known.bitwarden.cli.items"
+name = "bitwarden cli item list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tstatus","login\tunlocked"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

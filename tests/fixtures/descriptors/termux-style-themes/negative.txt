@@ -1,0 +1,2 @@
+theme status state
+dark active termux

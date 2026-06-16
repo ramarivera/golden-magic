@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pattern",
+    "value": "status state"
+  },
+  {
+    "name": "sql",
+    "value": "loaded audit"
+  },
+  {
+    "name": "xss",
+    "value": "loaded audit"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

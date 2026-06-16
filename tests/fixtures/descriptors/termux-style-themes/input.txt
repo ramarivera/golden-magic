@@ -1,0 +1,4 @@
+theme	status state
+dark	active termux
+light	available termux
+old	removed hidden

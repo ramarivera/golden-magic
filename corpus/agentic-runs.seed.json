@@ -23470,5 +23470,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/ares-emulator/ares",
+    "descriptor_id": "known.ares.systems",
+    "run_id": "agentic.ares-systems.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ares-systems/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ares-systems/expected.rows.json",
+    "variants": [
+      "system header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ares.systems for ares system list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hwdsl2/openvpn-install",
+    "descriptor_id": "known.openvpn.install.clients",
+    "run_id": "agentic.openvpn-install-clients.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openvpn-install-clients/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openvpn-install-clients/expected.rows.json",
+    "variants": [
+      "client header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.openvpn.install.clients for openvpn-install client list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/adi1090x/termux-style",
+    "descriptor_id": "known.termux.style.themes",
+    "run_id": "agentic.termux-style-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termux-style-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termux-style-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termux.style.themes for termux-style theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bitwarden/cli",
+    "descriptor_id": "known.bitwarden.cli.items",
+    "run_id": "agentic.bitwarden-cli-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bitwarden-cli-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bitwarden-cli-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bitwarden.cli.items for bitwarden cli item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/brenns10/lsh",
+    "descriptor_id": "known.lsh.files",
+    "run_id": "agentic.lsh-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lsh-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lsh-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lsh.files for lsh file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/agamm/awesome-developer-first",
+    "descriptor_id": "known.awesome.developer.first.tools",
+    "run_id": "agentic.awesome-developer-first-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-developer-first-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-developer-first-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome.developer.first.tools for awesome-developer-first tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/leo-arch/clifm",
+    "descriptor_id": "known.clifm.entries",
+    "run_id": "agentic.clifm-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/clifm-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/clifm-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.clifm.entries for clifm entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/samwho/spacer",
+    "descriptor_id": "known.spacer.layouts",
+    "run_id": "agentic.spacer-layouts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spacer-layouts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spacer-layouts/expected.rows.json",
+    "variants": [
+      "layout header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.spacer.layouts for spacer layout list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/wireghoul/graudit",
+    "descriptor_id": "known.graudit.patterns",
+    "run_id": "agentic.graudit-patterns.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/graudit-patterns/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/graudit-patterns/expected.rows.json",
+    "variants": [
+      "pattern header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.graudit.patterns for graudit pattern list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mattmc3/antidote",
+    "descriptor_id": "known.antidote.plugins",
+    "run_id": "agentic.antidote-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/antidote-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/antidote-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.antidote.plugins for antidote plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

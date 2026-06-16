@@ -1,0 +1,18 @@
+[
+  {
+    "name": "system",
+    "value": "status state"
+  },
+  {
+    "name": "snes",
+    "value": "ready emulator"
+  },
+  {
+    "name": "gba",
+    "value": "ready emulator"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.termux.style.themes"
+name = "termux-style theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tstatus","dark\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

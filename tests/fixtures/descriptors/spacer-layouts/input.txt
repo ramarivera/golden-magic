@@ -1,0 +1,4 @@
+layout	status state
+grid	active window
+stack	available window
+old	removed hidden

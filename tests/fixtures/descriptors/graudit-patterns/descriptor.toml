@@ -1,0 +1,10 @@
+id = "known.graudit.patterns"
+name = "graudit pattern list"
+priority = 50
+
+[matches]
+required_substrings = ["pattern\tstatus","sql\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

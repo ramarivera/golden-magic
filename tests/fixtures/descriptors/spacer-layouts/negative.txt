@@ -1,0 +1,2 @@
+layout status state
+grid active window

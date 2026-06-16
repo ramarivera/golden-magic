@@ -1,0 +1,4 @@
+file	status state
+main.c	listed shell
+README.md	listed shell
+old.tmp	hidden hidden
