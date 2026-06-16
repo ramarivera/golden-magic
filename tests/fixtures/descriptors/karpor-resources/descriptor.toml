@@ -1,0 +1,10 @@
+id = "known.karpor.resources"
+name = "karpor resource list"
+priority = 50
+
+[matches]
+required_substrings = ["resource\tstatus","pod\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+template	status state
+web	ready scaffold
+api	ready scaffold
+old	missing hidden

@@ -1,0 +1,10 @@
+id = "known.t4.app.templates"
+name = "t4-app template list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tstatus","web\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

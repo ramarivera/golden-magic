@@ -1,0 +1,18 @@
+[
+  {
+    "name": "color",
+    "value": "style state"
+  },
+  {
+    "name": "red",
+    "value": "bold sample"
+  },
+  {
+    "name": "green",
+    "value": "dim sample"
+  },
+  {
+    "name": "old",
+    "value": "plain hidden"
+  }
+]

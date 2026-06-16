@@ -1,0 +1,4 @@
+node	status state
+root	seen graph
+leaf	seen graph
+old	missing hidden

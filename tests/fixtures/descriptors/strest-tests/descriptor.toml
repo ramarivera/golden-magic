@@ -1,0 +1,10 @@
+id = "known.strest.tests"
+name = "strest test list"
+priority = 50
+
+[matches]
+required_substrings = ["test\tstatus","login\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

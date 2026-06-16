@@ -8986,5 +8986,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/mangal-downloads",
     "analysis_notes": "Modeled mangal download output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/papis/papis",
+    "descriptor_id": "known.papis.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/papis-documents",
+    "analysis_notes": "Modeled papis document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/KusionStack/karpor",
+    "descriptor_id": "known.karpor.resources",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/karpor-resources",
+    "analysis_notes": "Modeled karpor resource output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/eykrehbein/strest",
+    "descriptor_id": "known.strest.tests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/strest-tests",
+    "analysis_notes": "Modeled strest test output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alexeyraspopov/picocolors",
+    "descriptor_id": "known.picocolors.swatches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/picocolors-swatches",
+    "analysis_notes": "Modeled picocolors swatch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/rnx-kit",
+    "descriptor_id": "known.rnx.kit.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rnx-kit-tools",
+    "analysis_notes": "Modeled rnx-kit tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/orhun/gpg-tui",
+    "descriptor_id": "known.gpg.tui.keys",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gpg-tui-keys",
+    "analysis_notes": "Modeled gpg-tui key output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jtdaugherty/brick",
+    "descriptor_id": "known.brick.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/brick-widgets",
+    "analysis_notes": "Modeled brick widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gabotechs/dep-tree",
+    "descriptor_id": "known.dep.tree.nodes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dep-tree-nodes",
+    "analysis_notes": "Modeled dep-tree node output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mrjackwills/oxker",
+    "descriptor_id": "known.oxker.containers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oxker-containers",
+    "analysis_notes": "Modeled oxker container output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/timothymiller/t4-app",
+    "descriptor_id": "known.t4.app.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/t4-app-templates",
+    "analysis_notes": "Modeled t4-app template output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+resource	status state
+pod	ready cluster
+service	ready cluster
+old	gone hidden

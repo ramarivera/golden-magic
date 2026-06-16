@@ -1,0 +1,4 @@
+widget	status state
+list	ready tui
+editor	ready tui
+old	disabled hidden

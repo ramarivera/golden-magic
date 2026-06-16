@@ -1,0 +1,10 @@
+id = "known.gpg.tui.keys"
+name = "gpg-tui key list"
+priority = 50
+
+[matches]
+required_substrings = ["key\tstatus","primary\tvalid"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

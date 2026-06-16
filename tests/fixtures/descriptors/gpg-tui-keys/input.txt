@@ -1,0 +1,4 @@
+key	status state
+primary	valid ring
+backup	expired ring
+old	revoked hidden

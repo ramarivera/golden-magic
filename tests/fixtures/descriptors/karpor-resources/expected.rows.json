@@ -1,0 +1,18 @@
+[
+  {
+    "name": "resource",
+    "value": "status state"
+  },
+  {
+    "name": "pod",
+    "value": "ready cluster"
+  },
+  {
+    "name": "service",
+    "value": "ready cluster"
+  },
+  {
+    "name": "old",
+    "value": "gone hidden"
+  }
+]

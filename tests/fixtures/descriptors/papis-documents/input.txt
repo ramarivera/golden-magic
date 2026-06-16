@@ -1,0 +1,4 @@
+document	status state
+paper	indexed library
+book	indexed library
+old	missing hidden

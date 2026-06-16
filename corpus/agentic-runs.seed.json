@@ -23110,5 +23110,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/papis/papis",
+    "descriptor_id": "known.papis.documents",
+    "run_id": "agentic.papis-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/papis-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/papis-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.papis.documents for papis document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/KusionStack/karpor",
+    "descriptor_id": "known.karpor.resources",
+    "run_id": "agentic.karpor-resources.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/karpor-resources/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/karpor-resources/expected.rows.json",
+    "variants": [
+      "resource header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.karpor.resources for karpor resource list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/eykrehbein/strest",
+    "descriptor_id": "known.strest.tests",
+    "run_id": "agentic.strest-tests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/strest-tests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/strest-tests/expected.rows.json",
+    "variants": [
+      "test header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.strest.tests for strest test list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alexeyraspopov/picocolors",
+    "descriptor_id": "known.picocolors.swatches",
+    "run_id": "agentic.picocolors-swatches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/picocolors-swatches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/picocolors-swatches/expected.rows.json",
+    "variants": [
+      "color header row",
+      "style row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.picocolors.swatches for picocolors swatch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/rnx-kit",
+    "descriptor_id": "known.rnx.kit.tools",
+    "run_id": "agentic.rnx-kit-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rnx-kit-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rnx-kit-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rnx.kit.tools for rnx-kit tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/orhun/gpg-tui",
+    "descriptor_id": "known.gpg.tui.keys",
+    "run_id": "agentic.gpg-tui-keys.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gpg-tui-keys/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gpg-tui-keys/expected.rows.json",
+    "variants": [
+      "key header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gpg.tui.keys for gpg-tui key list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jtdaugherty/brick",
+    "descriptor_id": "known.brick.widgets",
+    "run_id": "agentic.brick-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/brick-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/brick-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.brick.widgets for brick widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gabotechs/dep-tree",
+    "descriptor_id": "known.dep.tree.nodes",
+    "run_id": "agentic.dep-tree-nodes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dep-tree-nodes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dep-tree-nodes/expected.rows.json",
+    "variants": [
+      "node header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dep.tree.nodes for dep-tree node list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mrjackwills/oxker",
+    "descriptor_id": "known.oxker.containers",
+    "run_id": "agentic.oxker-containers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oxker-containers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oxker-containers/expected.rows.json",
+    "variants": [
+      "container header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.oxker.containers for oxker container list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/timothymiller/t4-app",
+    "descriptor_id": "known.t4.app.templates",
+    "run_id": "agentic.t4-app-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/t4-app-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/t4-app-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.t4.app.templates for t4-app template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

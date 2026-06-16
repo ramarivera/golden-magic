@@ -1,0 +1,10 @@
+id = "known.picocolors.swatches"
+name = "picocolors swatch list"
+priority = 50
+
+[matches]
+required_substrings = ["color\tstyle","red\tbold"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

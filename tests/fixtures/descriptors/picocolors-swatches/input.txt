@@ -1,0 +1,4 @@
+color	style state
+red	bold sample
+green	dim sample
+old	plain hidden

@@ -1,0 +1,4 @@
+test	status state
+login	pass suite
+health	pass suite
+old	fail hidden

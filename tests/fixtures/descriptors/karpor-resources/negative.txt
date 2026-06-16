@@ -1,0 +1,2 @@
+resource status state
+pod ready cluster

@@ -1,0 +1,10 @@
+id = "known.papis.documents"
+name = "papis document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tstatus","paper\tindexed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

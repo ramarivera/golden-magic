@@ -1,0 +1,4 @@
+container	status state
+web	running docker
+db	paused docker
+old	exited hidden

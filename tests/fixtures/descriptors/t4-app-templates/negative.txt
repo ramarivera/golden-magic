@@ -1,0 +1,2 @@
+template status state
+web ready scaffold
