@@ -1,0 +1,2 @@
+pane command state
+1 shell active

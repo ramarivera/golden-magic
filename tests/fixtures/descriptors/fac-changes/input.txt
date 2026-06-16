@@ -1,0 +1,4 @@
+file	status state
+src/main.rs	modified staged
+README.md	added staged
+old.txt	deleted hidden

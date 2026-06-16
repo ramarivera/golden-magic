@@ -1,0 +1,4 @@
+pane	command state
+1	shell active
+2	tail active
+old	noop hidden

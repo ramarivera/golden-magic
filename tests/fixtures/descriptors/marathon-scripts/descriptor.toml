@@ -1,0 +1,10 @@
+id = "known.marathon.scripts"
+name = "Marathon script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tstatus","build.swift\tcached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

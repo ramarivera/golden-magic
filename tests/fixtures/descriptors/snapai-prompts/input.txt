@@ -1,0 +1,4 @@
+prompt	status state
+caption	ready active
+summary	ready active
+old	disabled hidden

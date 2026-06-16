@@ -1,0 +1,10 @@
+id = "known.claude.code.tools.actions"
+name = "claude-code-tools action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tstatus","review\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

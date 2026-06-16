@@ -1,0 +1,10 @@
+id = "known.verible.lints"
+name = "verible lint diagnostic list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tseverity","top.sv\twarning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

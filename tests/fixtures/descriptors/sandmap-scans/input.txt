@@ -1,0 +1,4 @@
+target	status state
+example.com	open scanned
+localhost	closed scanned
+old.invalid	filtered hidden

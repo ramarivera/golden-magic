@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "status state"
+  },
+  {
+    "name": "src/main.rs",
+    "value": "modified staged"
+  },
+  {
+    "name": "README.md",
+    "value": "added staged"
+  },
+  {
+    "name": "old.txt",
+    "value": "deleted hidden"
+  }
+]

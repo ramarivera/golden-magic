@@ -1,0 +1,4 @@
+script	status state
+build.swift	cached local
+test.swift	cached local
+old.swift	missing hidden

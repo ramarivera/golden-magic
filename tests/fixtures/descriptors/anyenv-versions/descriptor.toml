@@ -1,0 +1,10 @@
+id = "known.anyenv.versions"
+name = "anyenv version list"
+priority = 50
+
+[matches]
+required_substrings = ["runtime\tversion","ruby\t3.3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

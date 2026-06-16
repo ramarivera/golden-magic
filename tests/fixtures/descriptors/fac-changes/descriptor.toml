@@ -1,0 +1,10 @@
+id = "known.fac.changes"
+name = "fac change list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","src/main.rs\tmodified"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

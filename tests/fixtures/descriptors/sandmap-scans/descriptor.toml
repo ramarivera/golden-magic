@@ -1,0 +1,10 @@
+id = "known.sandmap.scans"
+name = "sandmap scan list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstatus","example.com\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

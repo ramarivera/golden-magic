@@ -1,0 +1,2 @@
+target status state
+example.com open scanned

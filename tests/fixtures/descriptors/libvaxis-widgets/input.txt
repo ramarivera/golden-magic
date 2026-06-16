@@ -1,0 +1,4 @@
+widget	state scope
+table	ready core
+input	ready core
+old	disabled hidden

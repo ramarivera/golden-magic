@@ -1,0 +1,18 @@
+[
+  {
+    "name": "action",
+    "value": "status state"
+  },
+  {
+    "name": "review",
+    "value": "ready active"
+  },
+  {
+    "name": "summarize",
+    "value": "ready active"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

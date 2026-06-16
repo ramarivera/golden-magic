@@ -22030,5 +22030,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/chipsalliance/verible",
+    "descriptor_id": "known.verible.lints",
+    "run_id": "agentic.verible-lints.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/verible-lints/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/verible-lints/expected.rows.json",
+    "variants": [
+      "file header row",
+      "severity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.verible.lints for verible lint diagnostic list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rockorager/libvaxis",
+    "descriptor_id": "known.libvaxis.widgets",
+    "run_id": "agentic.libvaxis-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/libvaxis-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/libvaxis-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "state row",
+      "scope field"
+    ],
+    "transcript": [
+      "selected descriptor known.libvaxis.widgets for libvaxis widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mkchoi212/fac",
+    "descriptor_id": "known.fac.changes",
+    "run_id": "agentic.fac-changes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fac-changes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fac-changes/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fac.changes for fac change list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/carapace-sh/carapace-bin",
+    "descriptor_id": "known.carapace.bin.completions",
+    "run_id": "agentic.carapace-bin-completions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/carapace-bin-completions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/carapace-bin-completions/expected.rows.json",
+    "variants": [
+      "shell header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.carapace.bin.completions for carapace-bin completion list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pchalasani/claude-code-tools",
+    "descriptor_id": "known.claude.code.tools.actions",
+    "run_id": "agentic.claude-code-tools-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-tools-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-tools-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude.code.tools.actions for claude-code-tools action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JohnSundell/Marathon",
+    "descriptor_id": "known.marathon.scripts",
+    "run_id": "agentic.marathon-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/marathon-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/marathon-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.marathon.scripts for Marathon script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/anyenv/anyenv",
+    "descriptor_id": "known.anyenv.versions",
+    "run_id": "agentic.anyenv-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/anyenv-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/anyenv-versions/expected.rows.json",
+    "variants": [
+      "runtime header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.anyenv.versions for anyenv version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/trimstray/sandmap",
+    "descriptor_id": "known.sandmap.scans",
+    "run_id": "agentic.sandmap-scans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sandmap-scans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sandmap-scans/expected.rows.json",
+    "variants": [
+      "target header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sandmap.scans for sandmap scan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/betomoedano/snapai",
+    "descriptor_id": "known.snapai.prompts",
+    "run_id": "agentic.snapai-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/snapai-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/snapai-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.snapai.prompts for snapai prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aaronjanse/3mux",
+    "descriptor_id": "known.3mux.panes",
+    "run_id": "agentic.3mux-panes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/3mux-panes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/3mux-panes/expected.rows.json",
+    "variants": [
+      "pane header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.3mux.panes for 3mux pane list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

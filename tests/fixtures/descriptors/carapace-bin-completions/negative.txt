@@ -1,0 +1,2 @@
+shell status state
+nu enabled installed

@@ -1,0 +1,4 @@
+action	status state
+review	ready active
+summarize	ready active
+old	disabled hidden

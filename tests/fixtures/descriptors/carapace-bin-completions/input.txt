@@ -1,0 +1,4 @@
+shell	status state
+nu	enabled installed
+zsh	enabled installed
+old	disabled hidden

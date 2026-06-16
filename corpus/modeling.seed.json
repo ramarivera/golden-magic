@@ -8566,5 +8566,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/rime-auto-deploy-jobs",
     "analysis_notes": "Modeled rime-auto-deploy job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/chipsalliance/verible",
+    "descriptor_id": "known.verible.lints",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/verible-lints",
+    "analysis_notes": "Modeled verible lint output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rockorager/libvaxis",
+    "descriptor_id": "known.libvaxis.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/libvaxis-widgets",
+    "analysis_notes": "Modeled libvaxis widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mkchoi212/fac",
+    "descriptor_id": "known.fac.changes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fac-changes",
+    "analysis_notes": "Modeled fac change output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/carapace-sh/carapace-bin",
+    "descriptor_id": "known.carapace.bin.completions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/carapace-bin-completions",
+    "analysis_notes": "Modeled carapace-bin completion output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pchalasani/claude-code-tools",
+    "descriptor_id": "known.claude.code.tools.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-tools-actions",
+    "analysis_notes": "Modeled claude-code-tools action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JohnSundell/Marathon",
+    "descriptor_id": "known.marathon.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/marathon-scripts",
+    "analysis_notes": "Modeled Marathon script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/anyenv/anyenv",
+    "descriptor_id": "known.anyenv.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/anyenv-versions",
+    "analysis_notes": "Modeled anyenv version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trimstray/sandmap",
+    "descriptor_id": "known.sandmap.scans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sandmap-scans",
+    "analysis_notes": "Modeled sandmap scan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/betomoedano/snapai",
+    "descriptor_id": "known.snapai.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/snapai-prompts",
+    "analysis_notes": "Modeled snapai prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aaronjanse/3mux",
+    "descriptor_id": "known.3mux.panes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/3mux-panes",
+    "analysis_notes": "Modeled 3mux pane output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+file	severity state
+top.sv	warning emitted
+alu.sv	error emitted
+old.sv	info hidden

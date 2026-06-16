@@ -1,0 +1,10 @@
+id = "known.3mux.panes"
+name = "3mux pane list"
+priority = 50
+
+[matches]
+required_substrings = ["pane\tcommand","1\tshell"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
