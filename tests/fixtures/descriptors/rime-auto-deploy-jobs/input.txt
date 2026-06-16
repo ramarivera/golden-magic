@@ -1,0 +1,4 @@
+job	status state
+sync	done recent
+deploy	queued recent
+old	failed hidden

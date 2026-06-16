@@ -1,0 +1,10 @@
+id = "known.md.to.pdf.jobs"
+name = "md-to-pdf job list"
+priority = 50
+
+[matches]
+required_substrings = ["input\toutput","README.md\tREADME.pdf"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

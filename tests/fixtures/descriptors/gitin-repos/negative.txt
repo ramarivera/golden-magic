@@ -1,0 +1,2 @@
+repo status state
+golden-magic clean listed

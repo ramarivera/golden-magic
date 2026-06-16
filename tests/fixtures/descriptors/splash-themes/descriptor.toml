@@ -1,0 +1,10 @@
+id = "known.splash.themes"
+name = "Splash theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tlanguage","sunset\tswift"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

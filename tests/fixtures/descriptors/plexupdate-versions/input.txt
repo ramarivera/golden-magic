@@ -1,0 +1,4 @@
+version	channel state
+1.0	stable available
+1.1	beta available
+old	legacy hidden

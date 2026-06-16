@@ -1,0 +1,2 @@
+version channel state
+1.0 stable available

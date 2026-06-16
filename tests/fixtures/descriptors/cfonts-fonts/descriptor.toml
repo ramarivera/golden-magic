@@ -1,0 +1,10 @@
+id = "known.cfonts.fonts"
+name = "cfonts font list"
+priority = 50
+
+[matches]
+required_substrings = ["font\tstyle","block\tbold"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

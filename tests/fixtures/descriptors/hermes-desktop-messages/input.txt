@@ -1,0 +1,4 @@
+message	status state
+hello	sent synced
+bye	queued synced
+old	failed hidden

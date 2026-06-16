@@ -1,0 +1,10 @@
+id = "known.internetarchive.items"
+name = "internetarchive item list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tfiles","book\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

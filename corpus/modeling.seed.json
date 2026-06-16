@@ -8496,5 +8496,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/terminal-markdown-viewer-headings",
     "analysis_notes": "Modeled terminal_markdown_viewer heading output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mrworf/plexupdate",
+    "descriptor_id": "known.plexupdate.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/plexupdate-versions",
+    "analysis_notes": "Modeled plexupdate version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dodo-reach/hermes-desktop",
+    "descriptor_id": "known.hermes.desktop.messages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hermes-desktop-messages",
+    "analysis_notes": "Modeled hermes-desktop message output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/simonhaenisch/md-to-pdf",
+    "descriptor_id": "known.md.to.pdf.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/md-to-pdf-jobs",
+    "analysis_notes": "Modeled md-to-pdf job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jjjake/internetarchive",
+    "descriptor_id": "known.internetarchive.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/internetarchive-items",
+    "analysis_notes": "Modeled internetarchive item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/joehillen/sysz",
+    "descriptor_id": "known.sysz.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sysz-services",
+    "analysis_notes": "Modeled sysz service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tony/tmux-config",
+    "descriptor_id": "known.tmux.config.bindings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tmux-config-bindings",
+    "analysis_notes": "Modeled tmux-config binding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dominikwilkowski/cfonts",
+    "descriptor_id": "known.cfonts.fonts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cfonts-fonts",
+    "analysis_notes": "Modeled cfonts font output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JohnSundell/Splash",
+    "descriptor_id": "known.splash.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/splash-themes",
+    "analysis_notes": "Modeled Splash theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/isacikgoz/gitin",
+    "descriptor_id": "known.gitin.repos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitin-repos",
+    "analysis_notes": "Modeled gitin repo output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Mark24Code/rime-auto-deploy",
+    "descriptor_id": "known.rime.auto.deploy.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rime-auto-deploy-jobs",
+    "analysis_notes": "Modeled rime-auto-deploy job output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,2 @@
+key action state
+c new-window bound

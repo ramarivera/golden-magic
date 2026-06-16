@@ -1,0 +1,10 @@
+id = "known.rime.auto.deploy.jobs"
+name = "rime-auto-deploy job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","sync\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

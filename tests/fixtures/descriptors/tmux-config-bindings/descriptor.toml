@@ -1,0 +1,10 @@
+id = "known.tmux.config.bindings"
+name = "tmux-config binding list"
+priority = 50
+
+[matches]
+required_substrings = ["key\taction","c\tnew-window"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

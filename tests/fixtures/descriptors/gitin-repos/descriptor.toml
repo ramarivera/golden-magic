@@ -1,0 +1,10 @@
+id = "known.gitin.repos"
+name = "gitin repo list"
+priority = 50
+
+[matches]
+required_substrings = ["repo\tstatus","golden-magic\tclean"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

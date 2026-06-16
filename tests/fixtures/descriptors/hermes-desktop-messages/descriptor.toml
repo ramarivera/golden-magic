@@ -1,0 +1,10 @@
+id = "known.hermes.desktop.messages"
+name = "hermes-desktop message list"
+priority = 50
+
+[matches]
+required_substrings = ["message\tstatus","hello\tsent"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

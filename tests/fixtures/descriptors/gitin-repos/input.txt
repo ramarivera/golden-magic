@@ -1,0 +1,4 @@
+repo	status state
+golden-magic	clean listed
+toolbox	dirty listed
+old	gone hidden

@@ -1,0 +1,4 @@
+service	status state
+ssh	running active
+docker	stopped active
+old	failed hidden

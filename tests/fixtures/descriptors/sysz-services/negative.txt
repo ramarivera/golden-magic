@@ -1,0 +1,2 @@
+service status state
+ssh running active

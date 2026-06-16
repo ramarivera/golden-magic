@@ -21850,5 +21850,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/mrworf/plexupdate",
+    "descriptor_id": "known.plexupdate.versions",
+    "run_id": "agentic.plexupdate-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/plexupdate-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/plexupdate-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "channel row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.plexupdate.versions for plexupdate version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dodo-reach/hermes-desktop",
+    "descriptor_id": "known.hermes.desktop.messages",
+    "run_id": "agentic.hermes-desktop-messages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hermes-desktop-messages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hermes-desktop-messages/expected.rows.json",
+    "variants": [
+      "message header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hermes.desktop.messages for hermes-desktop message list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/simonhaenisch/md-to-pdf",
+    "descriptor_id": "known.md.to.pdf.jobs",
+    "run_id": "agentic.md-to-pdf-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/md-to-pdf-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/md-to-pdf-jobs/expected.rows.json",
+    "variants": [
+      "input header row",
+      "output row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.md.to.pdf.jobs for md-to-pdf job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jjjake/internetarchive",
+    "descriptor_id": "known.internetarchive.items",
+    "run_id": "agentic.internetarchive-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/internetarchive-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/internetarchive-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "files row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.internetarchive.items for internetarchive item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/joehillen/sysz",
+    "descriptor_id": "known.sysz.services",
+    "run_id": "agentic.sysz-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sysz-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sysz-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sysz.services for sysz service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tony/tmux-config",
+    "descriptor_id": "known.tmux.config.bindings",
+    "run_id": "agentic.tmux-config-bindings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tmux-config-bindings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tmux-config-bindings/expected.rows.json",
+    "variants": [
+      "key header row",
+      "action row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tmux.config.bindings for tmux-config binding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dominikwilkowski/cfonts",
+    "descriptor_id": "known.cfonts.fonts",
+    "run_id": "agentic.cfonts-fonts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cfonts-fonts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cfonts-fonts/expected.rows.json",
+    "variants": [
+      "font header row",
+      "style row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cfonts.fonts for cfonts font list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/JohnSundell/Splash",
+    "descriptor_id": "known.splash.themes",
+    "run_id": "agentic.splash-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/splash-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/splash-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.splash.themes for Splash theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/isacikgoz/gitin",
+    "descriptor_id": "known.gitin.repos",
+    "run_id": "agentic.gitin-repos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitin-repos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitin-repos/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitin.repos for gitin repo list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Mark24Code/rime-auto-deploy",
+    "descriptor_id": "known.rime.auto.deploy.jobs",
+    "run_id": "agentic.rime-auto-deploy-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rime-auto-deploy-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rime-auto-deploy-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rime.auto.deploy.jobs for rime-auto-deploy job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

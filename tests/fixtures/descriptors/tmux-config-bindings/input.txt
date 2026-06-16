@@ -1,0 +1,4 @@
+key	action state
+c	new-window bound
+x	kill-pane bound
+old	noop hidden

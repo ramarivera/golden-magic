@@ -1,0 +1,4 @@
+font	style state
+block	bold available
+simple	regular available
+old	thin hidden
