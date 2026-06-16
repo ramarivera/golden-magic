@@ -1,0 +1,10 @@
+id = "known.cliclick.actions"
+name = "cliclick action list"
+priority = 50
+
+[matches]
+required_substrings = ["action\tcoords","click\t10,20"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.unimported.modules"
+name = "unimported module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tstatus","lodash\tunused"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

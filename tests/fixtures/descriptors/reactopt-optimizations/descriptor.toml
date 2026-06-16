@@ -1,0 +1,10 @@
+id = "known.reactopt.optimizations"
+name = "reactopt optimization list"
+priority = 50
+
+[matches]
+required_substrings = ["component\tissue","App\trender"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

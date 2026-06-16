@@ -1,0 +1,10 @@
+id = "known.vps.audit.checks"
+name = "vps-audit check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tresult","ssh\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

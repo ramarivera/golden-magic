@@ -1,0 +1,10 @@
+id = "known.workflow.runs"
+name = "workflow run list"
+priority = 50
+
+[matches]
+required_substrings = ["workflow\tstatus","build\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

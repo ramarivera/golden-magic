@@ -21130,5 +21130,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/ofek/pyapp",
+    "descriptor_id": "known.pyapp.builds",
+    "run_id": "agentic.pyapp-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pyapp-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pyapp-builds/expected.rows.json",
+    "variants": [
+      "build header row",
+      "python row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pyapp.builds for pyapp build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/reactopt/reactopt",
+    "descriptor_id": "known.reactopt.optimizations",
+    "run_id": "agentic.reactopt-optimizations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/reactopt-optimizations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/reactopt-optimizations/expected.rows.json",
+    "variants": [
+      "component header row",
+      "issue row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.reactopt.optimizations for reactopt optimization list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/supreme-gg-gg/instagram-cli",
+    "descriptor_id": "known.instagram.cli.posts",
+    "run_id": "agentic.instagram-cli-posts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/instagram-cli-posts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/instagram-cli-posts/expected.rows.json",
+    "variants": [
+      "post header row",
+      "likes row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.instagram.cli.posts for instagram-cli post list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rememberber/MooTool",
+    "descriptor_id": "known.mootool.jobs",
+    "run_id": "agentic.mootool-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mootool-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mootool-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mootool.jobs for MooTool job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bpkg/bpkg",
+    "descriptor_id": "known.bpkg.packages",
+    "run_id": "agentic.bpkg-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bpkg-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bpkg-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bpkg.packages for bpkg package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vernu/vps-audit",
+    "descriptor_id": "known.vps.audit.checks",
+    "run_id": "agentic.vps-audit-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vps-audit-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vps-audit-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vps.audit.checks for vps-audit check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/smeijer/unimported",
+    "descriptor_id": "known.unimported.modules",
+    "run_id": "agentic.unimported-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/unimported-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/unimported-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.unimported.modules for unimported module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/BlueM/cliclick",
+    "descriptor_id": "known.cliclick.actions",
+    "run_id": "agentic.cliclick-actions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cliclick-actions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cliclick-actions/expected.rows.json",
+    "variants": [
+      "action header row",
+      "coords row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cliclick.actions for cliclick action list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/luoxue-victor/workflow",
+    "descriptor_id": "known.workflow.runs",
+    "run_id": "agentic.workflow-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/workflow-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/workflow-runs/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.workflow.runs for workflow run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/aws/amazon-q-developer-cli",
+    "descriptor_id": "known.amazon.q.developer.cli.chats",
+    "run_id": "agentic.amazon-q-developer-cli-chats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/amazon-q-developer-cli-chats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/amazon-q-developer-cli-chats/expected.rows.json",
+    "variants": [
+      "chat header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.amazon.q.developer.cli.chats for Amazon Q Developer CLI chat list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

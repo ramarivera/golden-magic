@@ -8216,5 +8216,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/jjui-changes",
     "analysis_notes": "Modeled jjui change output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ofek/pyapp",
+    "descriptor_id": "known.pyapp.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pyapp-builds",
+    "analysis_notes": "Modeled pyapp build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/reactopt/reactopt",
+    "descriptor_id": "known.reactopt.optimizations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/reactopt-optimizations",
+    "analysis_notes": "Modeled reactopt optimization output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/supreme-gg-gg/instagram-cli",
+    "descriptor_id": "known.instagram.cli.posts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/instagram-cli-posts",
+    "analysis_notes": "Modeled instagram-cli post output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rememberber/MooTool",
+    "descriptor_id": "known.mootool.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mootool-jobs",
+    "analysis_notes": "Modeled MooTool job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bpkg/bpkg",
+    "descriptor_id": "known.bpkg.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bpkg-packages",
+    "analysis_notes": "Modeled bpkg package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vernu/vps-audit",
+    "descriptor_id": "known.vps.audit.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vps-audit-checks",
+    "analysis_notes": "Modeled vps-audit check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/smeijer/unimported",
+    "descriptor_id": "known.unimported.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/unimported-modules",
+    "analysis_notes": "Modeled unimported module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/BlueM/cliclick",
+    "descriptor_id": "known.cliclick.actions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cliclick-actions",
+    "analysis_notes": "Modeled cliclick action output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/luoxue-victor/workflow",
+    "descriptor_id": "known.workflow.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/workflow-runs",
+    "analysis_notes": "Modeled workflow run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/aws/amazon-q-developer-cli",
+    "descriptor_id": "known.amazon.q.developer.cli.chats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/amazon-q-developer-cli-chats",
+    "analysis_notes": "Modeled Amazon Q Developer CLI chat output with a generated executable-json parser plugin."
   }
 ]

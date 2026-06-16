@@ -1,0 +1,10 @@
+id = "known.pyapp.builds"
+name = "pyapp build list"
+priority = 50
+
+[matches]
+required_substrings = ["build\tpython","wheel\t3.12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

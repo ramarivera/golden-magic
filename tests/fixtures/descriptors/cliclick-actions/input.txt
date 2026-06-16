@@ -1,0 +1,4 @@
+action	coords state
+click	10,20 queued
+move	30,40 queued
+old	0,0 hidden

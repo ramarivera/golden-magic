@@ -1,0 +1,10 @@
+id = "known.bpkg.packages"
+name = "bpkg package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tversion","jq\t1.0"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

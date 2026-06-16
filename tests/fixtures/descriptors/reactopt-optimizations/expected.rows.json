@@ -1,0 +1,18 @@
+[
+  {
+    "name": "component",
+    "value": "issue state"
+  },
+  {
+    "name": "App",
+    "value": "render flagged"
+  },
+  {
+    "name": "List",
+    "value": "memo flagged"
+  },
+  {
+    "name": "old",
+    "value": "ignore hidden"
+  }
+]

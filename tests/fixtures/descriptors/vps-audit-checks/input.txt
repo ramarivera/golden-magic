@@ -1,0 +1,4 @@
+check	result state
+ssh	pass audited
+firewall	fail audited
+old	skip hidden

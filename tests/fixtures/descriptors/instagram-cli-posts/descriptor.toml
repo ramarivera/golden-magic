@@ -1,0 +1,10 @@
+id = "known.instagram.cli.posts"
+name = "instagram-cli post list"
+priority = 50
+
+[matches]
+required_substrings = ["post\tlikes","photo1\t10"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

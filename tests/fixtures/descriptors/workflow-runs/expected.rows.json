@@ -1,0 +1,18 @@
+[
+  {
+    "name": "workflow",
+    "value": "status state"
+  },
+  {
+    "name": "build",
+    "value": "ok recent"
+  },
+  {
+    "name": "deploy",
+    "value": "fail recent"
+  },
+  {
+    "name": "old",
+    "value": "skip hidden"
+  }
+]

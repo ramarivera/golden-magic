@@ -1,0 +1,10 @@
+id = "known.amazon.q.developer.cli.chats"
+name = "Amazon Q Developer CLI chat list"
+priority = 50
+
+[matches]
+required_substrings = ["chat\tmodel","default\tq"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

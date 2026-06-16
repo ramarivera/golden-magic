@@ -1,0 +1,4 @@
+component	issue state
+App	render flagged
+List	memo flagged
+old	ignore hidden

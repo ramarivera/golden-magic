@@ -1,0 +1,2 @@
+action coords state
+click 10,20 queued

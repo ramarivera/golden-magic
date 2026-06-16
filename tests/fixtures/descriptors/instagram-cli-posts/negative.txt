@@ -1,0 +1,2 @@
+post likes state
+photo1 10 listed

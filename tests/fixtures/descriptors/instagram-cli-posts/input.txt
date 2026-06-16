@@ -1,0 +1,4 @@
+post	likes state
+photo1	10 listed
+photo2	20 listed
+old	0 hidden

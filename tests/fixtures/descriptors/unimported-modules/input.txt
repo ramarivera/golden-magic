@@ -1,0 +1,4 @@
+module	status state
+lodash	unused reported
+chalk	missing reported
+old	used hidden

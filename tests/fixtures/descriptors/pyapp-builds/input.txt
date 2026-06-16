@@ -1,0 +1,4 @@
+build	python state
+wheel	3.12 ready
+standalone	3.11 ready
+old	2.7 hidden

@@ -1,0 +1,4 @@
+package	version state
+jq	1.0 installed
+curl	2.0 installed
+old	0.1 hidden

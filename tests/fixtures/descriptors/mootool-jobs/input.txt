@@ -1,0 +1,4 @@
+job	status state
+sync	running active
+backup	queued active
+old	done hidden
