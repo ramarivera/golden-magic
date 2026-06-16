@@ -1,0 +1,10 @@
+id = "known.awesome-cli-apps-csv.tools"
+name = "awesome-cli-apps-in-a-csv tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tcategory","ripgrep\tsearch"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

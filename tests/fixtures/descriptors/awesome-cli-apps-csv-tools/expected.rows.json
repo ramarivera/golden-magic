@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tool",
+    "value": "category state"
+  },
+  {
+    "name": "ripgrep",
+    "value": "search listed"
+  },
+  {
+    "name": "fd",
+    "value": "files listed"
+  },
+  {
+    "name": "old",
+    "value": "misc hidden"
+  }
+]

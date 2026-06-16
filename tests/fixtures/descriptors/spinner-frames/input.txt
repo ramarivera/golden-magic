@@ -1,0 +1,4 @@
+spinner	frames state
+dots	10 available
+line	4 available
+old	1 hidden

@@ -1,0 +1,4 @@
+doc	kind state
+spec	markdown synced
+notes	text synced
+old	pdf archived

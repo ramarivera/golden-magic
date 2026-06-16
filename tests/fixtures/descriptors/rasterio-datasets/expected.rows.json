@@ -1,0 +1,18 @@
+[
+  {
+    "name": "dataset",
+    "value": "crs state"
+  },
+  {
+    "name": "landsat",
+    "value": "EPSG:4326 open"
+  },
+  {
+    "name": "elevation",
+    "value": "EPSG:3857 open"
+  },
+  {
+    "name": "old",
+    "value": "unknown closed"
+  }
+]

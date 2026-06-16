@@ -1,0 +1,4 @@
+dataset	crs state
+landsat	EPSG:4326 open
+elevation	EPSG:3857 open
+old	unknown closed

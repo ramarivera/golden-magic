@@ -1,0 +1,4 @@
+prompt	component state
+select	tty-prompt ready
+table	tty-table ready
+old	legacy hidden

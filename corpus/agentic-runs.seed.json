@@ -18250,5 +18250,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/rasterio/rasterio",
+    "descriptor_id": "known.rasterio.datasets",
+    "run_id": "agentic.rasterio-datasets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rasterio-datasets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rasterio-datasets/expected.rows.json",
+    "variants": [
+      "dataset header row",
+      "crs row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rasterio.datasets for rasterio dataset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/openclaw/wacli",
+    "descriptor_id": "known.wacli.workflows",
+    "run_id": "agentic.wacli-workflows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wacli-workflows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wacli-workflows/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wacli.workflows for wacli workflow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/collabs-inc/collab-public",
+    "descriptor_id": "known.collab-public.docs",
+    "run_id": "agentic.collab-public-docs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/collab-public-docs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/collab-public-docs/expected.rows.json",
+    "variants": [
+      "doc header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.collab-public.docs for collab-public document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/piotrmurach/tty",
+    "descriptor_id": "known.tty.prompts",
+    "run_id": "agentic.tty-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tty-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tty-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "component row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tty.prompts for TTY prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jazzband/Watson",
+    "descriptor_id": "known.watson.frames",
+    "run_id": "agentic.watson-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/watson-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/watson-frames/expected.rows.json",
+    "variants": [
+      "frame header row",
+      "project row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.watson.frames for Watson time frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mono0926/LicensePlist",
+    "descriptor_id": "known.licenseplist.packages",
+    "run_id": "agentic.licenseplist-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/licenseplist-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/licenseplist-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "license row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.licenseplist.packages for LicensePlist package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/briandowns/spinner",
+    "descriptor_id": "known.spinner.frames",
+    "run_id": "agentic.spinner-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/spinner-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/spinner-frames/expected.rows.json",
+    "variants": [
+      "spinner header row",
+      "frames row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.spinner.frames for spinner frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/toolleeo/awesome-cli-apps-in-a-csv",
+    "descriptor_id": "known.awesome-cli-apps-csv.tools",
+    "run_id": "agentic.awesome-cli-apps-csv-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/awesome-cli-apps-csv-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/awesome-cli-apps-csv-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.awesome-cli-apps-csv.tools for awesome-cli-apps-in-a-csv tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jarulraj/sqlcheck",
+    "descriptor_id": "known.sqlcheck.findings",
+    "run_id": "agentic.sqlcheck-findings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sqlcheck-findings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sqlcheck-findings/expected.rows.json",
+    "variants": [
+      "finding header row",
+      "severity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sqlcheck.findings for sqlcheck finding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Neutree/COMTool",
+    "descriptor_id": "known.comtool.ports",
+    "run_id": "agentic.comtool-ports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/comtool-ports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/comtool-ports/expected.rows.json",
+    "variants": [
+      "port header row",
+      "baud row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.comtool.ports for COMTool port list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

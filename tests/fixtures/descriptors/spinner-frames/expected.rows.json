@@ -1,0 +1,18 @@
+[
+  {
+    "name": "spinner",
+    "value": "frames state"
+  },
+  {
+    "name": "dots",
+    "value": "10 available"
+  },
+  {
+    "name": "line",
+    "value": "4 available"
+  },
+  {
+    "name": "old",
+    "value": "1 hidden"
+  }
+]

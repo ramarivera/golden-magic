@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "license state"
+  },
+  {
+    "name": "Alamofire",
+    "value": "MIT included"
+  },
+  {
+    "name": "Nimble",
+    "value": "Apache included"
+  },
+  {
+    "name": "Old",
+    "value": "Unknown skipped"
+  }
+]

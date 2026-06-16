@@ -7096,5 +7096,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/refurb-fixes",
     "analysis_notes": "Modeled refurb lint fix output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rasterio/rasterio",
+    "descriptor_id": "known.rasterio.datasets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rasterio-datasets",
+    "analysis_notes": "Modeled rasterio dataset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/openclaw/wacli",
+    "descriptor_id": "known.wacli.workflows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wacli-workflows",
+    "analysis_notes": "Modeled wacli workflow output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/collabs-inc/collab-public",
+    "descriptor_id": "known.collab-public.docs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/collab-public-docs",
+    "analysis_notes": "Modeled collab-public document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/piotrmurach/tty",
+    "descriptor_id": "known.tty.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tty-prompts",
+    "analysis_notes": "Modeled TTY component prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jazzband/Watson",
+    "descriptor_id": "known.watson.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/watson-frames",
+    "analysis_notes": "Modeled Watson time tracking output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mono0926/LicensePlist",
+    "descriptor_id": "known.licenseplist.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/licenseplist-packages",
+    "analysis_notes": "Modeled LicensePlist package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/briandowns/spinner",
+    "descriptor_id": "known.spinner.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/spinner-frames",
+    "analysis_notes": "Modeled spinner frame catalog output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/toolleeo/awesome-cli-apps-in-a-csv",
+    "descriptor_id": "known.awesome-cli-apps-csv.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/awesome-cli-apps-csv-tools",
+    "analysis_notes": "Modeled awesome-cli-apps CSV tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jarulraj/sqlcheck",
+    "descriptor_id": "known.sqlcheck.findings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sqlcheck-findings",
+    "analysis_notes": "Modeled sqlcheck finding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Neutree/COMTool",
+    "descriptor_id": "known.comtool.ports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/comtool-ports",
+    "analysis_notes": "Modeled COMTool serial port output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+package	license state
+Alamofire	MIT included
+Nimble	Apache included
+Old	Unknown skipped

@@ -1,0 +1,2 @@
+spinner frames state
+dots 10 available

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "port",
+    "value": "baud state"
+  },
+  {
+    "name": "ttyUSB0",
+    "value": "115200 open"
+  },
+  {
+    "name": "ttyUSB1",
+    "value": "9600 open"
+  },
+  {
+    "name": "old",
+    "value": "4800 closed"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "frame",
+    "value": "project state"
+  },
+  {
+    "name": "morning",
+    "value": "work tracked"
+  },
+  {
+    "name": "afternoon",
+    "value": "ops tracked"
+  },
+  {
+    "name": "old",
+    "value": "misc stopped"
+  }
+]

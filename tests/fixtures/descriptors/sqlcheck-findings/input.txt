@@ -1,0 +1,4 @@
+finding	severity state
+cartesian	high reported
+index	medium reported
+old	low ignored

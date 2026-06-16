@@ -1,0 +1,4 @@
+port	baud state
+ttyUSB0	115200 open
+ttyUSB1	9600 open
+old	4800 closed

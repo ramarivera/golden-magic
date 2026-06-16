@@ -1,0 +1,4 @@
+tool	category state
+ripgrep	search listed
+fd	files listed
+old	misc hidden

@@ -1,0 +1,10 @@
+id = "known.licenseplist.packages"
+name = "LicensePlist package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tlicense","Alamofire\tMIT"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

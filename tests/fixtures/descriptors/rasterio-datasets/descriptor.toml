@@ -1,0 +1,10 @@
+id = "known.rasterio.datasets"
+name = "rasterio dataset list"
+priority = 50
+
+[matches]
+required_substrings = ["dataset\tcrs","landsat\tEPSG:4326"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
