@@ -1,0 +1,10 @@
+id = "known.pure.prompts"
+name = "pure prompt list"
+priority = 50
+
+[matches]
+required_substrings = ["prompt\tstatus","main\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

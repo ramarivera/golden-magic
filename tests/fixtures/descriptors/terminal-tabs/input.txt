@@ -1,0 +1,4 @@
+tab	status state
+shell	open terminal
+logs	open terminal
+old	closed hidden

@@ -1,0 +1,4 @@
+device	status state
+esp32	ready iot
+simulator	ready iot
+old	disabled hidden

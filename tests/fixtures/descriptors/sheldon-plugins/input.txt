@@ -1,0 +1,4 @@
+plugin	status state
+prompt	loaded shell
+syntax	loaded shell
+old	disabled hidden

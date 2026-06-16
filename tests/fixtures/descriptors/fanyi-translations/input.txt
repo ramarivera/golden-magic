@@ -1,0 +1,4 @@
+term	status state
+hello	translated zh
+world	translated zh
+old	missing hidden

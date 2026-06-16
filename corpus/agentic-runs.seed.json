@@ -24730,5 +24730,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Hejsil/zig-clap",
+    "descriptor_id": "known.zig.clap.options",
+    "run_id": "agentic.zig-clap-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zig-clap-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zig-clap-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zig.clap.options for zig-clap option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pure-fish/pure",
+    "descriptor_id": "known.pure.prompts",
+    "run_id": "agentic.pure-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pure-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pure-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pure.prompts for pure prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/max-niederman/ttyper",
+    "descriptor_id": "known.ttyper.lessons",
+    "run_id": "agentic.ttyper-lessons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ttyper-lessons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ttyper-lessons/expected.rows.json",
+    "variants": [
+      "lesson header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ttyper.lessons for ttyper lesson list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/php-standard-library/php-standard-library",
+    "descriptor_id": "known.php.standard.library.commands",
+    "run_id": "agentic.php-standard-library-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/php-standard-library-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/php-standard-library-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.php.standard.library.commands for php-standard-library command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/m4tt72/terminal",
+    "descriptor_id": "known.terminal.tabs",
+    "run_id": "agentic.terminal-tabs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminal-tabs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminal-tabs/expected.rows.json",
+    "variants": [
+      "tab header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminal.tabs for terminal tab list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/afc163/fanyi",
+    "descriptor_id": "known.fanyi.translations",
+    "run_id": "agentic.fanyi-translations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fanyi-translations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fanyi-translations/expected.rows.json",
+    "variants": [
+      "term header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fanyi.translations for fanyi translation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/quantumsheep/sshs",
+    "descriptor_id": "known.sshs.hosts",
+    "run_id": "agentic.sshs-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sshs-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sshs-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sshs.hosts for sshs host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Moddable-OpenSource/moddable",
+    "descriptor_id": "known.moddable.devices",
+    "run_id": "agentic.moddable-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/moddable-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/moddable-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.moddable.devices for moddable device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kylef/Commander",
+    "descriptor_id": "known.kylef.commander.commands",
+    "run_id": "agentic.kylef-commander-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/commander-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/commander-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kylef.commander.commands for Kylef Commander command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rossmacarthur/sheldon",
+    "descriptor_id": "known.sheldon.plugins",
+    "run_id": "agentic.sheldon-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sheldon-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sheldon-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sheldon.plugins for sheldon plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

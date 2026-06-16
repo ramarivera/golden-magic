@@ -1,0 +1,4 @@
+command	status state
+array	ready php
+string	ready php
+old	disabled hidden

@@ -1,0 +1,10 @@
+id = "known.kylef.commander.commands"
+name = "Kylef Commander command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tstatus","run\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

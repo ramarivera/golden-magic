@@ -1,0 +1,4 @@
+prompt	status state
+main	active fish
+git	active fish
+old	disabled hidden

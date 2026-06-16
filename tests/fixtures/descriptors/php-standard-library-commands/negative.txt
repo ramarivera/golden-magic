@@ -1,0 +1,2 @@
+command status state
+array ready php

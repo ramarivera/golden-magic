@@ -1,0 +1,2 @@
+term status state
+hello translated zh

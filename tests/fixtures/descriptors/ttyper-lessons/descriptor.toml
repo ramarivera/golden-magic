@@ -1,0 +1,10 @@
+id = "known.ttyper.lessons"
+name = "ttyper lesson list"
+priority = 50
+
+[matches]
+required_substrings = ["lesson\tstatus","intro\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "status state"
+  },
+  {
+    "name": "esp32",
+    "value": "ready iot"
+  },
+  {
+    "name": "simulator",
+    "value": "ready iot"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

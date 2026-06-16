@@ -1,0 +1,4 @@
+command	status state
+run	ready cli
+build	ready cli
+old	disabled hidden

@@ -9616,5 +9616,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/catimg-images",
     "analysis_notes": "Modeled catimg image output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Hejsil/zig-clap",
+    "descriptor_id": "known.zig.clap.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zig-clap-options",
+    "analysis_notes": "Modeled zig-clap option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pure-fish/pure",
+    "descriptor_id": "known.pure.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pure-prompts",
+    "analysis_notes": "Modeled pure prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/max-niederman/ttyper",
+    "descriptor_id": "known.ttyper.lessons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ttyper-lessons",
+    "analysis_notes": "Modeled ttyper lesson output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/php-standard-library/php-standard-library",
+    "descriptor_id": "known.php.standard.library.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/php-standard-library-commands",
+    "analysis_notes": "Modeled php-standard-library command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/m4tt72/terminal",
+    "descriptor_id": "known.terminal.tabs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminal-tabs",
+    "analysis_notes": "Modeled terminal tab output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/afc163/fanyi",
+    "descriptor_id": "known.fanyi.translations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fanyi-translations",
+    "analysis_notes": "Modeled fanyi translation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/quantumsheep/sshs",
+    "descriptor_id": "known.sshs.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sshs-hosts",
+    "analysis_notes": "Modeled sshs host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Moddable-OpenSource/moddable",
+    "descriptor_id": "known.moddable.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/moddable-devices",
+    "analysis_notes": "Modeled moddable device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kylef/Commander",
+    "descriptor_id": "known.kylef.commander.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/commander-commands",
+    "analysis_notes": "Modeled Kylef Commander command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rossmacarthur/sheldon",
+    "descriptor_id": "known.sheldon.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sheldon-plugins",
+    "analysis_notes": "Modeled sheldon plugin output with a generated executable-json parser plugin."
   }
 ]

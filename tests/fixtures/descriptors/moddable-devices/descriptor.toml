@@ -1,0 +1,10 @@
+id = "known.moddable.devices"
+name = "moddable device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tstatus","esp32\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

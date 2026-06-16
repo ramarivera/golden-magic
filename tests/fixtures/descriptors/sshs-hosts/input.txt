@@ -1,0 +1,4 @@
+host	status state
+prod	known ssh
+stage	known ssh
+old	removed hidden

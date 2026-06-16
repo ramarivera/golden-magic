@@ -1,0 +1,4 @@
+lesson	status state
+intro	ready typing
+advanced	ready typing
+old	disabled hidden

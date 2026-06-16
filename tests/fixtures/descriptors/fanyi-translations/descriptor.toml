@@ -1,0 +1,10 @@
+id = "known.fanyi.translations"
+name = "fanyi translation list"
+priority = 50
+
+[matches]
+required_substrings = ["term\tstatus","hello\ttranslated"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

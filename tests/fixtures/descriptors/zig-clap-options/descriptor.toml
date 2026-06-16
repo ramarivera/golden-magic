@@ -1,0 +1,10 @@
+id = "known.zig.clap.options"
+name = "zig-clap option list"
+priority = 50
+
+[matches]
+required_substrings = ["option\tstatus","--help\tparsed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
