@@ -8146,5 +8146,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/smassh-hosts",
     "analysis_notes": "Modeled smassh host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zyedidia/eget",
+    "descriptor_id": "known.eget.assets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/eget-assets",
+    "analysis_notes": "Modeled eget release asset output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xl7dev/WebShell",
+    "descriptor_id": "known.webshell.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/webshell-sessions",
+    "analysis_notes": "Modeled WebShell session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ionic-team/ionic-cli",
+    "descriptor_id": "known.ionic.cli.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ionic-cli-projects",
+    "analysis_notes": "Modeled Ionic CLI project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/WeiChiaChang/stacks-cli",
+    "descriptor_id": "known.stacks.cli.transactions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/stacks-cli-transactions",
+    "analysis_notes": "Modeled stacks-cli transaction output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/CITGuru/PyInquirer",
+    "descriptor_id": "known.pyinquirer.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pyinquirer-prompts",
+    "analysis_notes": "Modeled PyInquirer prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme",
+    "descriptor_id": "known.zerodarkmatrix.theme.scopes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zerodarkmatrix-theme-scopes",
+    "analysis_notes": "Modeled chrome-devtools-zerodarkmatrix-theme scope output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rubik/radon",
+    "descriptor_id": "known.radon.metrics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/radon-metrics",
+    "analysis_notes": "Modeled radon complexity metric output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kyclark/command-line-rust",
+    "descriptor_id": "known.command.line.rust.examples",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/command-line-rust-examples",
+    "analysis_notes": "Modeled command-line-rust example output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Tencent/cloudbase-framework",
+    "descriptor_id": "known.cloudbase.framework.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cloudbase-framework-apps",
+    "analysis_notes": "Modeled cloudbase-framework app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/idursun/jjui",
+    "descriptor_id": "known.jjui.changes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jjui-changes",
+    "analysis_notes": "Modeled jjui change output with a generated executable-json parser plugin."
   }
 ]

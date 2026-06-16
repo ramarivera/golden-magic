@@ -1,0 +1,10 @@
+id = "known.command.line.rust.examples"
+name = "command-line-rust example list"
+priority = 50
+
+[matches]
+required_substrings = ["example\tchapter","echor\t1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

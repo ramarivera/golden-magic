@@ -1,0 +1,10 @@
+id = "known.radon.metrics"
+name = "radon metric list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tcomplexity","app.py\tA"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

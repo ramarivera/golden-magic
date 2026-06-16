@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "remote state"
+  },
+  {
+    "name": "main",
+    "value": "10.0.0.1 open"
+  },
+  {
+    "name": "backup",
+    "value": "10.0.0.2 open"
+  },
+  {
+    "name": "old",
+    "value": "0.0.0.0 hidden"
+  }
+]

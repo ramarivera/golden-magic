@@ -1,0 +1,4 @@
+change	author state
+abc123	alice open
+def456	bob open
+old	carol hidden

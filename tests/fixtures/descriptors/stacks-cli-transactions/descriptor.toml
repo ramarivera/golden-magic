@@ -1,0 +1,10 @@
+id = "known.stacks.cli.transactions"
+name = "stacks-cli transaction list"
+priority = 50
+
+[matches]
+required_substrings = ["tx\tstatus","0xabc\tpending"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

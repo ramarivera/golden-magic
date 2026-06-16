@@ -1,0 +1,4 @@
+scope	color state
+console	green active
+network	cyan active
+old	gray hidden

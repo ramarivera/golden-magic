@@ -1,0 +1,4 @@
+prompt	type state
+name	input ready
+color	list ready
+old	password hidden

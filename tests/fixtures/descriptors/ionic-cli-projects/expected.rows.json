@@ -1,0 +1,18 @@
+[
+  {
+    "name": "project",
+    "value": "framework state"
+  },
+  {
+    "name": "mobile",
+    "value": "angular active"
+  },
+  {
+    "name": "starter",
+    "value": "react active"
+  },
+  {
+    "name": "old",
+    "value": "v1 hidden"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.ionic.cli.projects"
+name = "Ionic CLI project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\tframework","mobile\tangular"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

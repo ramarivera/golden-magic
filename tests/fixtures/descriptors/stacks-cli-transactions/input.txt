@@ -1,0 +1,4 @@
+tx	status state
+0xabc	pending mempool
+0xdef	confirmed chain
+old	failed hidden

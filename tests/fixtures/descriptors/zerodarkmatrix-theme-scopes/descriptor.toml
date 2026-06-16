@@ -1,0 +1,10 @@
+id = "known.zerodarkmatrix.theme.scopes"
+name = "chrome-devtools-zerodarkmatrix-theme scope list"
+priority = 50
+
+[matches]
+required_substrings = ["scope\tcolor","console\tgreen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

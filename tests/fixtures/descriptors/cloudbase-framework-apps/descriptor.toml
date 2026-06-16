@@ -1,0 +1,10 @@
+id = "known.cloudbase.framework.apps"
+name = "cloudbase-framework app list"
+priority = 50
+
+[matches]
+required_substrings = ["app\tenv","site\tprod"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

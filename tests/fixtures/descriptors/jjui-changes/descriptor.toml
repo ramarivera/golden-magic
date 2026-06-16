@@ -1,0 +1,10 @@
+id = "known.jjui.changes"
+name = "jjui change list"
+priority = 50
+
+[matches]
+required_substrings = ["change\tauthor","abc123\talice"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -20950,5 +20950,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/zyedidia/eget",
+    "descriptor_id": "known.eget.assets",
+    "run_id": "agentic.eget-assets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/eget-assets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/eget-assets/expected.rows.json",
+    "variants": [
+      "asset header row",
+      "platform row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.eget.assets for eget asset list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xl7dev/WebShell",
+    "descriptor_id": "known.webshell.sessions",
+    "run_id": "agentic.webshell-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/webshell-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/webshell-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "remote row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.webshell.sessions for WebShell session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ionic-team/ionic-cli",
+    "descriptor_id": "known.ionic.cli.projects",
+    "run_id": "agentic.ionic-cli-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ionic-cli-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ionic-cli-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "framework row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ionic.cli.projects for Ionic CLI project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/WeiChiaChang/stacks-cli",
+    "descriptor_id": "known.stacks.cli.transactions",
+    "run_id": "agentic.stacks-cli-transactions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/stacks-cli-transactions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/stacks-cli-transactions/expected.rows.json",
+    "variants": [
+      "tx header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.stacks.cli.transactions for stacks-cli transaction list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/CITGuru/PyInquirer",
+    "descriptor_id": "known.pyinquirer.prompts",
+    "run_id": "agentic.pyinquirer-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pyinquirer-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pyinquirer-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pyinquirer.prompts for PyInquirer prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme",
+    "descriptor_id": "known.zerodarkmatrix.theme.scopes",
+    "run_id": "agentic.zerodarkmatrix-theme-scopes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zerodarkmatrix-theme-scopes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zerodarkmatrix-theme-scopes/expected.rows.json",
+    "variants": [
+      "scope header row",
+      "color row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zerodarkmatrix.theme.scopes for chrome-devtools-zerodarkmatrix-theme scope list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rubik/radon",
+    "descriptor_id": "known.radon.metrics",
+    "run_id": "agentic.radon-metrics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/radon-metrics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/radon-metrics/expected.rows.json",
+    "variants": [
+      "file header row",
+      "complexity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.radon.metrics for radon metric list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kyclark/command-line-rust",
+    "descriptor_id": "known.command.line.rust.examples",
+    "run_id": "agentic.command-line-rust-examples.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/command-line-rust-examples/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/command-line-rust-examples/expected.rows.json",
+    "variants": [
+      "example header row",
+      "chapter row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.command.line.rust.examples for command-line-rust example list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Tencent/cloudbase-framework",
+    "descriptor_id": "known.cloudbase.framework.apps",
+    "run_id": "agentic.cloudbase-framework-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cloudbase-framework-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cloudbase-framework-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "env row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cloudbase.framework.apps for cloudbase-framework app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/idursun/jjui",
+    "descriptor_id": "known.jjui.changes",
+    "run_id": "agentic.jjui-changes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jjui-changes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jjui-changes/expected.rows.json",
+    "variants": [
+      "change header row",
+      "author row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jjui.changes for jjui change list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

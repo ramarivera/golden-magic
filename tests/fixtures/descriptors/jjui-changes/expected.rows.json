@@ -1,0 +1,18 @@
+[
+  {
+    "name": "change",
+    "value": "author state"
+  },
+  {
+    "name": "abc123",
+    "value": "alice open"
+  },
+  {
+    "name": "def456",
+    "value": "bob open"
+  },
+  {
+    "name": "old",
+    "value": "carol hidden"
+  }
+]
