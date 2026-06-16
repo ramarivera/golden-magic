@@ -1,0 +1,18 @@
+[
+  {
+    "name": "entry",
+    "value": "folder state"
+  },
+  {
+    "name": "github",
+    "value": "personal synced"
+  },
+  {
+    "name": "bank",
+    "value": "finance synced"
+  },
+  {
+    "name": "old",
+    "value": "archive hidden"
+  }
+]

@@ -1,0 +1,4 @@
+app	status state
+notes	open active
+mail	closed idle
+old	crashed hidden

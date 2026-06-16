@@ -1,0 +1,18 @@
+[
+  {
+    "name": "field",
+    "value": "type state"
+  },
+  {
+    "name": "name",
+    "value": "string generated"
+  },
+  {
+    "name": "age",
+    "value": "int generated"
+  },
+  {
+    "name": "old",
+    "value": "any skipped"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.bunster.builds"
+name = "bunster build list"
+priority = 50
+
+[matches]
+required_substrings = ["build\ttarget","script\tbinary"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

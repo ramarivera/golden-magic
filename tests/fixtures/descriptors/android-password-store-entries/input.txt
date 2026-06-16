@@ -1,0 +1,4 @@
+entry	folder state
+github	personal synced
+bank	finance synced
+old	archive hidden

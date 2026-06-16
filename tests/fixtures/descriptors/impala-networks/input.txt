@@ -1,0 +1,4 @@
+network	signal state
+office	80 connected
+home	65 saved
+old	10 hidden

@@ -1,0 +1,10 @@
+id = "known.gojson.fields"
+name = "gojson field list"
+priority = 50
+
+[matches]
+required_substrings = ["field\ttype","name\tstring"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

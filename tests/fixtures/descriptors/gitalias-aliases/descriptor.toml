@@ -1,0 +1,10 @@
+id = "known.gitalias.aliases"
+name = "GitAlias alias list"
+priority = 50
+
+[matches]
+required_substrings = ["alias\tcommand","st\tstatus"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

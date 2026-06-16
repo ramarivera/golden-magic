@@ -1,0 +1,2 @@
+field type state
+name string generated

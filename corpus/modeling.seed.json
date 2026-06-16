@@ -6816,5 +6816,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/unity-debug-console-commands",
     "analysis_notes": "Modeled Unity Ingame Debug Console command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jfernandez/bpftop",
+    "descriptor_id": "known.bpftop.programs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bpftop-programs",
+    "analysis_notes": "Modeled bpftop eBPF program output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ChimeraCoder/gojson",
+    "descriptor_id": "known.gojson.fields",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gojson-fields",
+    "analysis_notes": "Modeled gojson generated field output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pythops/impala",
+    "descriptor_id": "known.impala.networks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/impala-networks",
+    "analysis_notes": "Modeled impala Wi-Fi network output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GitAlias/gitalias",
+    "descriptor_id": "known.gitalias.aliases",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitalias-aliases",
+    "analysis_notes": "Modeled GitAlias alias output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/control-theory/gonzo",
+    "descriptor_id": "known.gonzo.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gonzo-events",
+    "analysis_notes": "Modeled Gonzo event stream output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yassinebenaid/bunster",
+    "descriptor_id": "known.bunster.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bunster-builds",
+    "analysis_notes": "Modeled bunster build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Gaurav-Gosain/tuios",
+    "descriptor_id": "known.tuios.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tuios-apps",
+    "analysis_notes": "Modeled TuiOS app switcher output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hzeller/timg",
+    "descriptor_id": "known.timg.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/timg-images",
+    "analysis_notes": "Modeled timg rendered image output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/expo/expo-cli",
+    "descriptor_id": "known.expo-cli.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/expo-cli-projects",
+    "analysis_notes": "Modeled Expo CLI project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/android-password-store/Android-Password-Store",
+    "descriptor_id": "known.android-password-store.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/android-password-store-entries",
+    "analysis_notes": "Modeled Android Password Store entry output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,4 @@
+alias	command state
+st	status active
+co	checkout active
+old	legacy disabled

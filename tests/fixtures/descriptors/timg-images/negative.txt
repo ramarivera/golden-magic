@@ -1,0 +1,2 @@
+image mode state
+photo.jpg kitty rendered

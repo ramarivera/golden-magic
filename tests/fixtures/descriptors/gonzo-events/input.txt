@@ -1,0 +1,4 @@
+event	stream state
+deploy	prod observed
+alert	ops observed
+old	dev ignored

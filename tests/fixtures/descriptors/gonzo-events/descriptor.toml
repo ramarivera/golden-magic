@@ -1,0 +1,10 @@
+id = "known.gonzo.events"
+name = "Gonzo event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tstream","deploy\tprod"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

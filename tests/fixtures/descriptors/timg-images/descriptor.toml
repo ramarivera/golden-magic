@@ -1,0 +1,10 @@
+id = "known.timg.images"
+name = "timg image list"
+priority = 50
+
+[matches]
+required_substrings = ["image\tmode","photo.jpg\tkitty"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

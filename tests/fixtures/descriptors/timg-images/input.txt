@@ -1,0 +1,4 @@
+image	mode state
+photo.jpg	kitty rendered
+logo.png	ansi rendered
+old.gif	unsupported skipped

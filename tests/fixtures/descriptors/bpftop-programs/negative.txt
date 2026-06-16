@@ -1,0 +1,2 @@
+program cpu state
+xdp 12 running

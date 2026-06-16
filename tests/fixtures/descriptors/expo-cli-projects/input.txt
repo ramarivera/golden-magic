@@ -1,0 +1,4 @@
+project	sdk state
+mobile	51 ready
+preview	50 ready
+old	44 upgrade

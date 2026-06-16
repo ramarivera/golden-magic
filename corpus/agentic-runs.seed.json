@@ -17530,5 +17530,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jfernandez/bpftop",
+    "descriptor_id": "known.bpftop.programs",
+    "run_id": "agentic.bpftop-programs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bpftop-programs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bpftop-programs/expected.rows.json",
+    "variants": [
+      "program header row",
+      "cpu row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bpftop.programs for bpftop program list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ChimeraCoder/gojson",
+    "descriptor_id": "known.gojson.fields",
+    "run_id": "agentic.gojson-fields.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gojson-fields/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gojson-fields/expected.rows.json",
+    "variants": [
+      "field header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gojson.fields for gojson field list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pythops/impala",
+    "descriptor_id": "known.impala.networks",
+    "run_id": "agentic.impala-networks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/impala-networks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/impala-networks/expected.rows.json",
+    "variants": [
+      "network header row",
+      "signal row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.impala.networks for impala network list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GitAlias/gitalias",
+    "descriptor_id": "known.gitalias.aliases",
+    "run_id": "agentic.gitalias-aliases.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitalias-aliases/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitalias-aliases/expected.rows.json",
+    "variants": [
+      "alias header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitalias.aliases for GitAlias alias list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/control-theory/gonzo",
+    "descriptor_id": "known.gonzo.events",
+    "run_id": "agentic.gonzo-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gonzo-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gonzo-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "stream row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gonzo.events for Gonzo event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yassinebenaid/bunster",
+    "descriptor_id": "known.bunster.builds",
+    "run_id": "agentic.bunster-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bunster-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bunster-builds/expected.rows.json",
+    "variants": [
+      "build header row",
+      "target row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bunster.builds for bunster build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Gaurav-Gosain/tuios",
+    "descriptor_id": "known.tuios.apps",
+    "run_id": "agentic.tuios-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tuios-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tuios-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tuios.apps for TuiOS app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hzeller/timg",
+    "descriptor_id": "known.timg.images",
+    "run_id": "agentic.timg-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/timg-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/timg-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.timg.images for timg image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/expo/expo-cli",
+    "descriptor_id": "known.expo-cli.projects",
+    "run_id": "agentic.expo-cli-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/expo-cli-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/expo-cli-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "sdk row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.expo-cli.projects for Expo CLI project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/android-password-store/Android-Password-Store",
+    "descriptor_id": "known.android-password-store.entries",
+    "run_id": "agentic.android-password-store-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/android-password-store-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/android-password-store-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "folder row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.android-password-store.entries for Android Password Store entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

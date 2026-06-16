@@ -1,0 +1,4 @@
+program	cpu state
+xdp	12 running
+trace	4 running
+old	0 detached

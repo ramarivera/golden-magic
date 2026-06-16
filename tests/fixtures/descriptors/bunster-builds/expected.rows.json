@@ -1,0 +1,18 @@
+[
+  {
+    "name": "build",
+    "value": "target state"
+  },
+  {
+    "name": "script",
+    "value": "binary complete"
+  },
+  {
+    "name": "helper",
+    "value": "binary complete"
+  },
+  {
+    "name": "old",
+    "value": "shell failed"
+  }
+]

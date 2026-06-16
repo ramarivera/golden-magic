@@ -1,0 +1,2 @@
+network signal state
+office 80 connected

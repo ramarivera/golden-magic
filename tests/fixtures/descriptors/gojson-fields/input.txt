@@ -1,0 +1,4 @@
+field	type state
+name	string generated
+age	int generated
+old	any skipped

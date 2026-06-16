@@ -1,0 +1,10 @@
+id = "known.android-password-store.entries"
+name = "Android Password Store entry list"
+priority = 50
+
+[matches]
+required_substrings = ["entry\tfolder","github\tpersonal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
