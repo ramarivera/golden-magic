@@ -8286,5 +8286,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/amazon-q-developer-cli-chats",
     "analysis_notes": "Modeled Amazon Q Developer CLI chat output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/noborus/ov",
+    "descriptor_id": "known.ov.views",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ov-views",
+    "analysis_notes": "Modeled ov pager view output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/node-pty",
+    "descriptor_id": "known.node.pty.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/node-pty-sessions",
+    "analysis_notes": "Modeled node-pty session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lusingander/serie",
+    "descriptor_id": "known.serie.commits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/serie-commits",
+    "analysis_notes": "Modeled serie commit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dronesploit/dronesploit",
+    "descriptor_id": "known.dronesploit.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dronesploit-modules",
+    "analysis_notes": "Modeled dronesploit module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/DP-Hridayan/aShellYou",
+    "descriptor_id": "known.ashellyou.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ashellyou-commands",
+    "analysis_notes": "Modeled aShellYou command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hectorm/hblock",
+    "descriptor_id": "known.hblock.domains",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hblock-domains",
+    "analysis_notes": "Modeled hblock domain output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gitless-vcs/gitless",
+    "descriptor_id": "known.gitless.branches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitless-branches",
+    "analysis_notes": "Modeled gitless branch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/da-luce/astroterm",
+    "descriptor_id": "known.astroterm.locations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/astroterm-locations",
+    "analysis_notes": "Modeled astroterm location output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/php-school/cli-menu",
+    "descriptor_id": "known.cli.menu.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cli-menu-items",
+    "analysis_notes": "Modeled cli-menu item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cytostack/openwolf",
+    "descriptor_id": "known.openwolf.games",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/openwolf-games",
+    "analysis_notes": "Modeled openwolf game output with a generated executable-json parser plugin."
   }
 ]

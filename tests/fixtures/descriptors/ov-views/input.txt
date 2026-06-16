@@ -1,0 +1,4 @@
+view	file state
+main	log.txt open
+error	error.log open
+old	old.log hidden

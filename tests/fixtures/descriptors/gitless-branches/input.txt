@@ -1,0 +1,4 @@
+branch	status state
+master	current active
+feature	clean active
+old	deleted hidden

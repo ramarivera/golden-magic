@@ -1,0 +1,4 @@
+command	device state
+ls	local ready
+cat	local ready
+old	remote hidden

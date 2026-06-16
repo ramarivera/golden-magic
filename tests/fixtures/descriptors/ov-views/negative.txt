@@ -1,0 +1,2 @@
+view file state
+main log.txt open

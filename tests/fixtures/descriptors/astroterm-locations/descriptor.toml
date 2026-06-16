@@ -1,0 +1,10 @@
+id = "known.astroterm.locations"
+name = "astroterm location list"
+priority = 50
+
+[matches]
+required_substrings = ["location\tclouds","Berlin\tclear"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

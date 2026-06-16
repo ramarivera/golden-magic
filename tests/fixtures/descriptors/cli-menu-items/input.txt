@@ -1,0 +1,4 @@
+item	action state
+Start	run enabled
+Quit	exit enabled
+old	noop hidden

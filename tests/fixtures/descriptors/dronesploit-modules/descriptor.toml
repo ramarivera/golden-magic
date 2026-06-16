@@ -1,0 +1,10 @@
+id = "known.dronesploit.modules"
+name = "dronesploit module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tcategory","scan\trecon"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

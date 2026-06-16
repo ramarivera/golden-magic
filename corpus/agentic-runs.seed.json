@@ -21310,5 +21310,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/noborus/ov",
+    "descriptor_id": "known.ov.views",
+    "run_id": "agentic.ov-views.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ov-views/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ov-views/expected.rows.json",
+    "variants": [
+      "view header row",
+      "file row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ov.views for ov view list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/node-pty",
+    "descriptor_id": "known.node.pty.sessions",
+    "run_id": "agentic.node-pty-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/node-pty-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/node-pty-sessions/expected.rows.json",
+    "variants": [
+      "pty header row",
+      "shell row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.node.pty.sessions for node-pty session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lusingander/serie",
+    "descriptor_id": "known.serie.commits",
+    "run_id": "agentic.serie-commits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/serie-commits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/serie-commits/expected.rows.json",
+    "variants": [
+      "commit header row",
+      "branch row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.serie.commits for serie commit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dronesploit/dronesploit",
+    "descriptor_id": "known.dronesploit.modules",
+    "run_id": "agentic.dronesploit-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dronesploit-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dronesploit-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "category row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dronesploit.modules for dronesploit module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/DP-Hridayan/aShellYou",
+    "descriptor_id": "known.ashellyou.commands",
+    "run_id": "agentic.ashellyou-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ashellyou-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ashellyou-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "device row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ashellyou.commands for aShellYou command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hectorm/hblock",
+    "descriptor_id": "known.hblock.domains",
+    "run_id": "agentic.hblock-domains.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hblock-domains/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hblock-domains/expected.rows.json",
+    "variants": [
+      "domain header row",
+      "source row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hblock.domains for hblock domain list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gitless-vcs/gitless",
+    "descriptor_id": "known.gitless.branches",
+    "run_id": "agentic.gitless-branches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitless-branches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitless-branches/expected.rows.json",
+    "variants": [
+      "branch header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitless.branches for gitless branch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/da-luce/astroterm",
+    "descriptor_id": "known.astroterm.locations",
+    "run_id": "agentic.astroterm-locations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/astroterm-locations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/astroterm-locations/expected.rows.json",
+    "variants": [
+      "location header row",
+      "clouds row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.astroterm.locations for astroterm location list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/php-school/cli-menu",
+    "descriptor_id": "known.cli.menu.items",
+    "run_id": "agentic.cli-menu-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cli-menu-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cli-menu-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "action row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cli.menu.items for cli-menu item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cytostack/openwolf",
+    "descriptor_id": "known.openwolf.games",
+    "run_id": "agentic.openwolf-games.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/openwolf-games/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/openwolf-games/expected.rows.json",
+    "variants": [
+      "game header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.openwolf.games for openwolf game list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

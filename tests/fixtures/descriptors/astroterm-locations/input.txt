@@ -1,0 +1,4 @@
+location	clouds state
+Berlin	clear visible
+Paris	cloudy visible
+old	fog hidden

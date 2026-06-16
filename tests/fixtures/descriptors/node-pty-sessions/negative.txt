@@ -1,0 +1,2 @@
+pty shell state
+1 bash running

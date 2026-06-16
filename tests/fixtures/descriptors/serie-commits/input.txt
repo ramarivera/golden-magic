@@ -1,0 +1,4 @@
+commit	branch state
+abc123	main selected
+def456	feature selected
+old	gone hidden

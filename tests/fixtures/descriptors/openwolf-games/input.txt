@@ -1,0 +1,4 @@
+game	status state
+arena	open joined
+ctf	closed listed
+old	archived hidden

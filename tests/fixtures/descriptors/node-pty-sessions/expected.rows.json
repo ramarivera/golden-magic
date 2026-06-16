@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pty",
+    "value": "shell state"
+  },
+  {
+    "name": "1",
+    "value": "bash running"
+  },
+  {
+    "name": "2",
+    "value": "zsh running"
+  },
+  {
+    "name": "old",
+    "value": "cmd hidden"
+  }
+]

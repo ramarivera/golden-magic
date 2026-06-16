@@ -1,0 +1,10 @@
+id = "known.gitless.branches"
+name = "gitless branch list"
+priority = 50
+
+[matches]
+required_substrings = ["branch\tstatus","master\tcurrent"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

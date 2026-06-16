@@ -1,0 +1,10 @@
+id = "known.serie.commits"
+name = "serie commit list"
+priority = 50
+
+[matches]
+required_substrings = ["commit\tbranch","abc123\tmain"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

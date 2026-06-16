@@ -1,0 +1,4 @@
+domain	source state
+ads.example	list blocked
+track.example	list blocked
+old.example	custom hidden

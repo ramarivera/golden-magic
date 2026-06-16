@@ -1,0 +1,10 @@
+id = "known.ov.views"
+name = "ov view list"
+priority = 50
+
+[matches]
+required_substrings = ["view\tfile","main\tlog.txt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

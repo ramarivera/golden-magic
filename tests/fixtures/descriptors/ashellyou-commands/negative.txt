@@ -1,0 +1,2 @@
+command device state
+ls local ready

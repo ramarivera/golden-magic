@@ -1,0 +1,4 @@
+module	category state
+scan	recon loaded
+exploit	attack loaded
+old	legacy hidden

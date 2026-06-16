@@ -1,0 +1,10 @@
+id = "known.ashellyou.commands"
+name = "aShellYou command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tdevice","ls\tlocal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

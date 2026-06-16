@@ -1,0 +1,18 @@
+[
+  {
+    "name": "module",
+    "value": "category state"
+  },
+  {
+    "name": "scan",
+    "value": "recon loaded"
+  },
+  {
+    "name": "exploit",
+    "value": "attack loaded"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

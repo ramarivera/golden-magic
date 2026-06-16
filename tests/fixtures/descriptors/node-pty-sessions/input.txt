@@ -1,0 +1,4 @@
+pty	shell state
+1	bash running
+2	zsh running
+old	cmd hidden
