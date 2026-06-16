@@ -16,6 +16,7 @@ fn generated_parser_matrix_runs_more_than_two_thousand_cases() {
     cases += tree_sitter_rust_cases();
     cases += wasm_json_cases();
     cases += tool_pack_loader_cases();
+    cases += tool_pack_duplicate_id_cases();
 
     eprintln!("generated parser matrix ran {cases} deterministic cases");
     assert!(
@@ -223,6 +224,40 @@ affects_output = true
             vec![format!("known.case.{case_id}")]
         );
         assert_eq!(loaded.pack.commands[0].args[0].kind, ToolArgKind::Flag);
+        cases += 1;
+    }
+
+    cases
+}
+
+fn tool_pack_duplicate_id_cases() -> usize {
+    let mut cases = 0usize;
+
+    for case_id in 0..100 {
+        let dir = tempdir().expect("temp dir");
+        for suffix in ["left", "right"] {
+            let pack_dir = dir.path().join(format!("pack-{case_id}-{suffix}"));
+            fs::create_dir(&pack_dir).expect("create pack dir");
+            fs::write(
+                pack_dir.join("tool.toml"),
+                format!(
+                    r#"
+id = "tool.duplicate-{case_id}"
+name = "duplicate-{case_id}-{suffix}"
+version = "1"
+"#
+                ),
+            )
+            .expect("write tool pack");
+        }
+
+        let error =
+            golden_magic::tool_packs::load_tool_packs_dir(dir.path()).expect_err("duplicates fail");
+
+        assert_eq!(
+            error.to_string(),
+            format!("duplicate tool-pack id(s): tool.duplicate-{case_id}")
+        );
         cases += 1;
     }
 

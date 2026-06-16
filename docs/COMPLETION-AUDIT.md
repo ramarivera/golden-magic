@@ -25,7 +25,7 @@ This audit validates the previously claimed completion list against current repo
 | CLI tests | `tests/cli.rs`; `cargo test --test cli -- --nocapture` passed. |
 | Nu wrapper tests | `tests/nu_wrapper.rs`; `cargo test --test nu_wrapper -- --nocapture` passed. |
 | Native Nu plugin integration test | `tests/nu_plugin.rs`; `cargo test --features nu-plugin --test nu_plugin -- --nocapture` passed. |
-| Generated 2,000+ deterministic parser/tool-pack cases | `tests/generated_matrix.rs` runs 2,400 generated cases and fails below 2,000; see `docs/TEST-MATRIX.md`. |
+| Generated 2,000+ deterministic parser/tool-pack cases | `tests/generated_matrix.rs` runs 2,700 generated cases and fails below 2,000; see `docs/TEST-MATRIX.md`. |
 | Optional Nix-backed fixture test exists | `tests/nix_fixture.rs` exists and `cargo test --test nix_fixture -- --nocapture` passed the default skip path. |
 | Descriptor-driven Nix manifest harness exists | `tests/nix_fixture.rs` reads `nix.toml` manifests; `tests/fixtures/descriptors/generic-pipes/nix.toml` exists; default skip test passed; opt-in live execution passed in a disposable `nixos/nix:latest` container with `GOLDEN_MAGIC_RUN_NIX_FIXTURES=1`. |
 | Known-tool descriptor corpus | `tests/fixtures/descriptors/*` contains representative descriptor packs; `docs/KNOWN-TOOLS.md`; descriptor fixture tests passed. |

@@ -21,7 +21,8 @@ Current generated case budget:
 | tree-sitter Rust backend | 300 |
 | wasm-json backend | 200 |
 | tool-pack loader | 250 |
-| total | 2,600 |
+| tool-pack duplicate-id rejection | 100 |
+| total | 2,700 |
 
 Descriptor fixtures also expose a countable matrix through the shared test
 support utilities. Each fixture contributes expected-row, negative-input, and
