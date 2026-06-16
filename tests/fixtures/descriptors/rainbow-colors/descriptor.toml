@@ -1,0 +1,10 @@
+id = "known.rainbow.colors"
+name = "Rainbow color list"
+priority = 50
+
+[matches]
+required_substrings = ["color\tcode","red\t31"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

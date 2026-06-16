@@ -1,0 +1,10 @@
+id = "known.tinyconsole.logs"
+name = "TinyConsole log list"
+priority = 50
+
+[matches]
+required_substrings = ["level\tmessage","info\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

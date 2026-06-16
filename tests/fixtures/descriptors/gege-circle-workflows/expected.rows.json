@@ -1,0 +1,18 @@
+[
+  {
+    "name": "workflow",
+    "value": "status state"
+  },
+  {
+    "name": "ci",
+    "value": "passing active"
+  },
+  {
+    "name": "release",
+    "value": "waiting active"
+  },
+  {
+    "name": "old",
+    "value": "failed hidden"
+  }
+]

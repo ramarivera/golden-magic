@@ -1,0 +1,4 @@
+metric	value state
+kernel	Darwin shown
+shell	zsh shown
+old	unknown hidden

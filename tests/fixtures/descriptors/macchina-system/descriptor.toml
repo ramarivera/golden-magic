@@ -1,0 +1,10 @@
+id = "known.macchina.system"
+name = "macchina system summary"
+priority = 50
+
+[matches]
+required_substrings = ["metric\tvalue","kernel\tDarwin"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

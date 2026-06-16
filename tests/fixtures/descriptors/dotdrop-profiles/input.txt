@@ -1,0 +1,4 @@
+profile	host state
+work	laptop active
+home	desktop active
+old	vm hidden

@@ -21490,5 +21490,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Macchina-CLI/macchina",
+    "descriptor_id": "known.macchina.system",
+    "run_id": "agentic.macchina-system.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/macchina-system/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/macchina-system/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.macchina.system for macchina system summary output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Cosmo/TinyConsole",
+    "descriptor_id": "known.tinyconsole.logs",
+    "run_id": "agentic.tinyconsole-logs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tinyconsole-logs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tinyconsole-logs/expected.rows.json",
+    "variants": [
+      "level header row",
+      "message row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tinyconsole.logs for TinyConsole log list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fcambus/ansiweather",
+    "descriptor_id": "known.ansiweather.forecasts",
+    "run_id": "agentic.ansiweather-forecasts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ansiweather-forecasts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ansiweather-forecasts/expected.rows.json",
+    "variants": [
+      "city header row",
+      "weather row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ansiweather.forecasts for ansiweather forecast list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/onevcat/Rainbow",
+    "descriptor_id": "known.rainbow.colors",
+    "run_id": "agentic.rainbow-colors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/rainbow-colors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/rainbow-colors/expected.rows.json",
+    "variants": [
+      "color header row",
+      "code row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.rainbow.colors for Rainbow color list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mix-php/mix",
+    "descriptor_id": "known.mix.php.services",
+    "run_id": "agentic.mix-php-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mix-php-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mix-php-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mix.php.services for mix-php service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gildas-lormeau/SingleFileZ",
+    "descriptor_id": "known.singlefilez.archives",
+    "run_id": "agentic.singlefilez-archives.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/singlefilez-archives/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/singlefilez-archives/expected.rows.json",
+    "variants": [
+      "archive header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.singlefilez.archives for SingleFileZ archive list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/deadc0de6/dotdrop",
+    "descriptor_id": "known.dotdrop.profiles",
+    "run_id": "agentic.dotdrop-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/dotdrop-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/dotdrop-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "host row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.dotdrop.profiles for dotdrop profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ilai-deutel/kibi",
+    "descriptor_id": "known.kibi.buffers",
+    "run_id": "agentic.kibi-buffers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kibi-buffers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kibi-buffers/expected.rows.json",
+    "variants": [
+      "buffer header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kibi.buffers for kibi buffer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gege-circle/.github",
+    "descriptor_id": "known.gege.circle.workflows",
+    "run_id": "agentic.gege-circle-workflows.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gege-circle-workflows/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gege-circle-workflows/expected.rows.json",
+    "variants": [
+      "workflow header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gege.circle.workflows for gege-circle workflow list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/udhos/update-golang",
+    "descriptor_id": "known.update.golang.versions",
+    "run_id": "agentic.update-golang-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/update-golang-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/update-golang-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "arch row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.update.golang.versions for update-golang version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

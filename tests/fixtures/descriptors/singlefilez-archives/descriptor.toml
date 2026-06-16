@@ -1,0 +1,10 @@
+id = "known.singlefilez.archives"
+name = "SingleFileZ archive list"
+priority = 50
+
+[matches]
+required_substrings = ["archive\tsize","page.zip\t42K"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

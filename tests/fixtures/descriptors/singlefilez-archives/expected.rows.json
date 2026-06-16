@@ -1,0 +1,18 @@
+[
+  {
+    "name": "archive",
+    "value": "size state"
+  },
+  {
+    "name": "page.zip",
+    "value": "42K saved"
+  },
+  {
+    "name": "doc.zip",
+    "value": "10K saved"
+  },
+  {
+    "name": "old.zip",
+    "value": "0K hidden"
+  }
+]

@@ -1,0 +1,10 @@
+id = "known.kibi.buffers"
+name = "kibi buffer list"
+priority = 50
+
+[matches]
+required_substrings = ["buffer\tmode","main.rs\trust"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

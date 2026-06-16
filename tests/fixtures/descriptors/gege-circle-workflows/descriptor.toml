@@ -1,0 +1,10 @@
+id = "known.gege.circle.workflows"
+name = "gege-circle workflow list"
+priority = 50
+
+[matches]
+required_substrings = ["workflow\tstatus","ci\tpassing"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

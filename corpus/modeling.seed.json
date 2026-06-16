@@ -8356,5 +8356,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/openwolf-games",
     "analysis_notes": "Modeled openwolf game output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Macchina-CLI/macchina",
+    "descriptor_id": "known.macchina.system",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/macchina-system",
+    "analysis_notes": "Modeled macchina system output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Cosmo/TinyConsole",
+    "descriptor_id": "known.tinyconsole.logs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tinyconsole-logs",
+    "analysis_notes": "Modeled TinyConsole log output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fcambus/ansiweather",
+    "descriptor_id": "known.ansiweather.forecasts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ansiweather-forecasts",
+    "analysis_notes": "Modeled ansiweather forecast output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/onevcat/Rainbow",
+    "descriptor_id": "known.rainbow.colors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/rainbow-colors",
+    "analysis_notes": "Modeled Rainbow color output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mix-php/mix",
+    "descriptor_id": "known.mix.php.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mix-php-services",
+    "analysis_notes": "Modeled mix-php service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gildas-lormeau/SingleFileZ",
+    "descriptor_id": "known.singlefilez.archives",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/singlefilez-archives",
+    "analysis_notes": "Modeled SingleFileZ archive output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/deadc0de6/dotdrop",
+    "descriptor_id": "known.dotdrop.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/dotdrop-profiles",
+    "analysis_notes": "Modeled dotdrop profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ilai-deutel/kibi",
+    "descriptor_id": "known.kibi.buffers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kibi-buffers",
+    "analysis_notes": "Modeled kibi buffer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gege-circle/.github",
+    "descriptor_id": "known.gege.circle.workflows",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gege-circle-workflows",
+    "analysis_notes": "Modeled gege-circle workflow output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/udhos/update-golang",
+    "descriptor_id": "known.update.golang.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/update-golang-versions",
+    "analysis_notes": "Modeled update-golang version output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.update.golang.versions"
+name = "update-golang version list"
+priority = 50
+
+[matches]
+required_substrings = ["version\tarch","1.22\tamd64"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

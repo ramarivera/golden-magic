@@ -1,0 +1,2 @@
+version arch state
+1.22 amd64 available

@@ -1,0 +1,4 @@
+city	weather state
+Berlin	Sunny current
+Paris	Rain current
+old	Fog hidden

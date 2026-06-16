@@ -1,0 +1,2 @@
+city weather state
+Berlin Sunny current

@@ -1,0 +1,10 @@
+id = "known.dotdrop.profiles"
+name = "dotdrop profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\thost","work\tlaptop"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

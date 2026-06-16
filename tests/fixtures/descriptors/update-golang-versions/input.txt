@@ -1,0 +1,4 @@
+version	arch state
+1.22	amd64 available
+1.21	arm64 available
+old	386 hidden
