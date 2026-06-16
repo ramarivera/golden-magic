@@ -58,6 +58,7 @@ Fields:
 
 - Tool packs are loaded from explicit `--tool-pack-dir` paths, `tool_pack_dirs` in config, or the default XDG path.
 - Unknown schema fields fail validation.
+- Duplicate `tool.*` ids fail validation across the full recursively loaded registry.
 - Descriptor ids referenced by `tool.toml` must exist in the same pack or a configured registry.
 - Tool packs do not execute code.
 - Tool packs do not read secrets.

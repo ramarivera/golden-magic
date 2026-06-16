@@ -1,4 +1,5 @@
 use serde::{Deserialize, Serialize};
+use std::collections::BTreeMap;
 use std::fmt;
 use std::fs;
 use std::path::{Path, PathBuf};
@@ -111,7 +112,13 @@ pub fn load_tool_packs_dir(path: impl AsRef<Path>) -> Result<Vec<LoadedToolPack>
         }
     }
 
-    packs.sort_by(|left, right| left.pack.id.cmp(&right.pack.id));
+    packs.sort_by(|left, right| {
+        left.pack
+            .id
+            .cmp(&right.pack.id)
+            .then_with(|| left.path.cmp(&right.path))
+    });
+    reject_duplicate_ids(&packs)?;
     Ok(packs)
 }
 
@@ -170,12 +177,49 @@ fn invalid(path: &Path, reason: impl Into<String>) -> ToolPackError {
     }
 }
 
+fn reject_duplicate_ids(packs: &[LoadedToolPack]) -> Result<(), ToolPackError> {
+    let mut by_id: BTreeMap<&str, Vec<PathBuf>> = BTreeMap::new();
+    for loaded in packs {
+        by_id
+            .entry(&loaded.pack.id)
+            .or_default()
+            .push(loaded.path.clone());
+    }
+
+    let duplicates = by_id
+        .into_iter()
+        .filter(|(_, paths)| paths.len() > 1)
+        .map(|(id, paths)| (id.to_string(), paths))
+        .collect::<BTreeMap<_, _>>();
+
+    if duplicates.is_empty() {
+        Ok(())
+    } else {
+        Err(ToolPackError::DuplicateIds { duplicates })
+    }
+}
+
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub enum ToolPackError {
-    ReadDir { path: PathBuf, source: String },
-    ReadFile { path: PathBuf, source: String },
-    ParseToml { path: PathBuf, source: String },
-    InvalidToolPack { path: PathBuf, reason: String },
+    ReadDir {
+        path: PathBuf,
+        source: String,
+    },
+    ReadFile {
+        path: PathBuf,
+        source: String,
+    },
+    ParseToml {
+        path: PathBuf,
+        source: String,
+    },
+    InvalidToolPack {
+        path: PathBuf,
+        reason: String,
+    },
+    DuplicateIds {
+        duplicates: BTreeMap<String, Vec<PathBuf>>,
+    },
 }
 
 impl fmt::Display for ToolPackError {
@@ -204,6 +248,10 @@ impl fmt::Display for ToolPackError {
             }
             ToolPackError::InvalidToolPack { path, reason } => {
                 write!(formatter, "invalid tool-pack {}: {reason}", path.display())
+            }
+            ToolPackError::DuplicateIds { duplicates } => {
+                let ids = duplicates.keys().cloned().collect::<Vec<_>>().join(", ");
+                write!(formatter, "duplicate tool-pack id(s): {ids}")
             }
         }
     }
@@ -275,5 +323,33 @@ surprise = true
         let error = load_tool_pack_file(&path).expect_err("unknown fields fail");
 
         assert!(error.to_string().contains("failed to parse tool-pack file"));
+    }
+
+    #[test]
+    fn rejects_duplicate_tool_pack_ids() {
+        let dir = tempdir().expect("temp dir");
+        for name in ["git-a", "git-b"] {
+            let pack_dir = dir.path().join(name);
+            fs::create_dir(&pack_dir).expect("create pack dir");
+            fs::write(
+                pack_dir.join("tool.toml"),
+                r#"
+id = "tool.git"
+name = "git"
+version = "1"
+"#,
+            )
+            .expect("write tool pack");
+        }
+
+        let error = load_tool_packs_dir(dir.path()).expect_err("duplicate ids fail");
+
+        assert_eq!(error.to_string(), "duplicate tool-pack id(s): tool.git");
+        match error {
+            ToolPackError::DuplicateIds { duplicates } => {
+                assert_eq!(duplicates["tool.git"].len(), 2);
+            }
+            other => panic!("expected duplicate ids error, got {other:?}"),
+        }
     }
 }
