@@ -1,0 +1,4 @@
+pane	command state
+0	ssh active
+1	top active
+old	false hidden

@@ -1,0 +1,4 @@
+package	size state
+react	2M installed
+vite	1M installed
+old	0M hidden

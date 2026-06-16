@@ -1,0 +1,10 @@
+id = "known.doit.tasks"
+name = "doit task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","build\trun"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

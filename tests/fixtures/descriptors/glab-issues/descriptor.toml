@@ -1,0 +1,10 @@
+id = "known.glab.issues"
+name = "glab issue list"
+priority = 50
+
+[matches]
+required_substrings = ["issue\tstate","12\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "size state"
+  },
+  {
+    "name": "react",
+    "value": "2M installed"
+  },
+  {
+    "name": "vite",
+    "value": "1M installed"
+  },
+  {
+    "name": "old",
+    "value": "0M hidden"
+  }
+]

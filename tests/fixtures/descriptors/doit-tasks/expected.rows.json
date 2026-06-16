@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "status state"
+  },
+  {
+    "name": "build",
+    "value": "run ready"
+  },
+  {
+    "name": "test",
+    "value": "up-to-date ready"
+  },
+  {
+    "name": "old",
+    "value": "ignore hidden"
+  }
+]

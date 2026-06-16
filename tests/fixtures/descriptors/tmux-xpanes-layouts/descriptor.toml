@@ -1,0 +1,10 @@
+id = "known.tmux-xpanes.layouts"
+name = "tmux-xpanes layout list"
+priority = 50
+
+[matches]
+required_substrings = ["pane\tcommand","0\tssh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

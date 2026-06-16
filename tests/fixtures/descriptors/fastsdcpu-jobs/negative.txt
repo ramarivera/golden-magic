@@ -1,0 +1,2 @@
+job model state
+txt2img sd queued

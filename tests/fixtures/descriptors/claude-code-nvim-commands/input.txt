@@ -1,0 +1,4 @@
+command	mode state
+ClaudeCode	normal mapped
+ClaudeCodeSend	visual mapped
+old	insert hidden

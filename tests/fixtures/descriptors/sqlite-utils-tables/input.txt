@@ -1,0 +1,4 @@
+table	rows state
+users	42 present
+logs	100 present
+old	0 hidden

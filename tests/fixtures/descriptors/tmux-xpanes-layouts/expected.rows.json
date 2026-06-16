@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pane",
+    "value": "command state"
+  },
+  {
+    "name": "0",
+    "value": "ssh active"
+  },
+  {
+    "name": "1",
+    "value": "top active"
+  },
+  {
+    "name": "old",
+    "value": "false hidden"
+  }
+]

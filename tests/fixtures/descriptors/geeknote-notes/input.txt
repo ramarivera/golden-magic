@@ -1,0 +1,4 @@
+note	notebook state
+todo	Inbox synced
+ideas	Work synced
+old	Archive hidden

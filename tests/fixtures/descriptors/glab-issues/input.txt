@@ -1,0 +1,4 @@
+issue	state label
+12	open bug
+13	closed docs
+old	merged hidden

@@ -1,0 +1,10 @@
+id = "known.asciichart.series"
+name = "asciichart series list"
+priority = 50
+
+[matches]
+required_substrings = ["series\tpoints","load\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

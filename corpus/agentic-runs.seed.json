@@ -20410,5 +20410,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/greymd/tmux-xpanes",
+    "descriptor_id": "known.tmux-xpanes.layouts",
+    "run_id": "agentic.tmux-xpanes-layouts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tmux-xpanes-layouts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tmux-xpanes-layouts/expected.rows.json",
+    "variants": [
+      "pane header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tmux-xpanes.layouts for tmux-xpanes layout list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vitalyrodnenko/geeknote",
+    "descriptor_id": "known.geeknote.notes",
+    "run_id": "agentic.geeknote-notes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/geeknote-notes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/geeknote-notes/expected.rows.json",
+    "variants": [
+      "note header row",
+      "notebook row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.geeknote.notes for geeknote note list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/rupeshs/fastsdcpu",
+    "descriptor_id": "known.fastsdcpu.jobs",
+    "run_id": "agentic.fastsdcpu-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fastsdcpu-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fastsdcpu-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fastsdcpu.jobs for fastsdcpu job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kroitor/asciichart",
+    "descriptor_id": "known.asciichart.series",
+    "run_id": "agentic.asciichart-series.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asciichart-series/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asciichart-series/expected.rows.json",
+    "variants": [
+      "series header row",
+      "points row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.asciichart.series for asciichart series list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/profclems/glab",
+    "descriptor_id": "known.glab.issues",
+    "run_id": "agentic.glab-issues.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glab-issues/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glab-issues/expected.rows.json",
+    "variants": [
+      "issue header row",
+      "state row",
+      "label field"
+    ],
+    "transcript": [
+      "selected descriptor known.glab.issues for glab issue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/greggh/claude-code.nvim",
+    "descriptor_id": "known.claude-code.nvim.commands",
+    "run_id": "agentic.claude-code-nvim-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-nvim-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-nvim-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude-code.nvim.commands for claude-code.nvim command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/simonwhitaker/gibo",
+    "descriptor_id": "known.gibo.templates",
+    "run_id": "agentic.gibo-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gibo-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gibo-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "group row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gibo.templates for gibo template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/simonw/sqlite-utils",
+    "descriptor_id": "known.sqlite-utils.tables",
+    "run_id": "agentic.sqlite-utils-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sqlite-utils-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sqlite-utils-tables/expected.rows.json",
+    "variants": [
+      "table header row",
+      "rows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sqlite-utils.tables for sqlite-utils table list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ranyitz/qnm",
+    "descriptor_id": "known.qnm.packages",
+    "run_id": "agentic.qnm-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qnm-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qnm-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.qnm.packages for qnm package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pydoit/doit",
+    "descriptor_id": "known.doit.tasks",
+    "run_id": "agentic.doit-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/doit-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/doit-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.doit.tasks for doit task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

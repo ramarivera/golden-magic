@@ -1,0 +1,18 @@
+[
+  {
+    "name": "series",
+    "value": "points state"
+  },
+  {
+    "name": "load",
+    "value": "3 plotted"
+  },
+  {
+    "name": "latency",
+    "value": "4 plotted"
+  },
+  {
+    "name": "old",
+    "value": "1 hidden"
+  }
+]

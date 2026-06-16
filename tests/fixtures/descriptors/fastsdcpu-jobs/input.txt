@@ -1,0 +1,4 @@
+job	model state
+txt2img	sd queued
+img2img	sd queued
+old	legacy hidden

@@ -1,0 +1,4 @@
+task	status state
+build	run ready
+test	up-to-date ready
+old	ignore hidden

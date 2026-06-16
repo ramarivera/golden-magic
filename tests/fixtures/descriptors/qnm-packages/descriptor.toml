@@ -1,0 +1,10 @@
+id = "known.qnm.packages"
+name = "qnm package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tsize","react\t2M"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

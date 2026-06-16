@@ -1,0 +1,2 @@
+pane command state
+0 ssh active

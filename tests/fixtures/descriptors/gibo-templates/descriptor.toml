@@ -1,0 +1,10 @@
+id = "known.gibo.templates"
+name = "gibo template list"
+priority = 50
+
+[matches]
+required_substrings = ["template\tgroup","Python\tLanguages"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

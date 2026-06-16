@@ -1,0 +1,10 @@
+id = "known.geeknote.notes"
+name = "geeknote note list"
+priority = 50
+
+[matches]
+required_substrings = ["note\tnotebook","todo\tInbox"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

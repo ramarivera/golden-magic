@@ -1,0 +1,4 @@
+series	points state
+load	3 plotted
+latency	4 plotted
+old	1 hidden

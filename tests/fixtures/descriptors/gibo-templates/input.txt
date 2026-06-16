@@ -1,0 +1,4 @@
+template	group state
+Python	Languages available
+macOS	Globals available
+old	Legacy hidden

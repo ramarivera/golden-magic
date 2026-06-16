@@ -1,0 +1,18 @@
+[
+  {
+    "name": "issue",
+    "value": "state label"
+  },
+  {
+    "name": "12",
+    "value": "open bug"
+  },
+  {
+    "name": "13",
+    "value": "closed docs"
+  },
+  {
+    "name": "old",
+    "value": "merged hidden"
+  }
+]

@@ -7936,5 +7936,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/pythonvscode-settings",
     "analysis_notes": "Modeled pythonVSCode setting output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/greymd/tmux-xpanes",
+    "descriptor_id": "known.tmux-xpanes.layouts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tmux-xpanes-layouts",
+    "analysis_notes": "Modeled tmux-xpanes pane command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vitalyrodnenko/geeknote",
+    "descriptor_id": "known.geeknote.notes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/geeknote-notes",
+    "analysis_notes": "Modeled geeknote note output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/rupeshs/fastsdcpu",
+    "descriptor_id": "known.fastsdcpu.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fastsdcpu-jobs",
+    "analysis_notes": "Modeled fastsdcpu generation job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kroitor/asciichart",
+    "descriptor_id": "known.asciichart.series",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asciichart-series",
+    "analysis_notes": "Modeled asciichart series metadata output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/profclems/glab",
+    "descriptor_id": "known.glab.issues",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glab-issues",
+    "analysis_notes": "Modeled glab issue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/greggh/claude-code.nvim",
+    "descriptor_id": "known.claude-code.nvim.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-nvim-commands",
+    "analysis_notes": "Modeled claude-code.nvim command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/simonwhitaker/gibo",
+    "descriptor_id": "known.gibo.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gibo-templates",
+    "analysis_notes": "Modeled gibo template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/simonw/sqlite-utils",
+    "descriptor_id": "known.sqlite-utils.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sqlite-utils-tables",
+    "analysis_notes": "Modeled sqlite-utils table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ranyitz/qnm",
+    "descriptor_id": "known.qnm.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qnm-packages",
+    "analysis_notes": "Modeled qnm package size output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pydoit/doit",
+    "descriptor_id": "known.doit.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/doit-tasks",
+    "analysis_notes": "Modeled doit task output with a generated executable-json parser plugin."
   }
 ]
