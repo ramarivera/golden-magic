@@ -1,0 +1,4 @@
+track	status state
+intro	queued playlist
+outro	played playlist
+old	missing hidden

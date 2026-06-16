@@ -1,0 +1,18 @@
+[
+  {
+    "name": "wallpaper",
+    "value": "status state"
+  },
+  {
+    "name": "forest",
+    "value": "active selected"
+  },
+  {
+    "name": "city",
+    "value": "queued selected"
+  },
+  {
+    "name": "old",
+    "value": "removed hidden"
+  }
+]

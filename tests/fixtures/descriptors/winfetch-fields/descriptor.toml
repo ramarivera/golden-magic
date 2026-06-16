@@ -1,0 +1,10 @@
+id = "known.winfetch.fields"
+name = "winfetch field list"
+priority = 50
+
+[matches]
+required_substrings = ["field\tvalue","OS\tWindows"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

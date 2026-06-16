@@ -22750,5 +22750,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/JohnSundell/SwiftPlate",
+    "descriptor_id": "known.swiftplate.templates",
+    "run_id": "agentic.swiftplate-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/swiftplate-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/swiftplate-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.swiftplate.templates for SwiftPlate template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lptstr/winfetch",
+    "descriptor_id": "known.winfetch.fields",
+    "run_id": "agentic.winfetch-fields.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/winfetch-fields/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/winfetch-fields/expected.rows.json",
+    "variants": [
+      "field header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.winfetch.fields for winfetch field list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/electron/devtron",
+    "descriptor_id": "known.devtron.panels",
+    "run_id": "agentic.devtron-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devtron-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devtron-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devtron.panels for devtron panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PabloLec/RecoverPy",
+    "descriptor_id": "known.recoverpy.files",
+    "run_id": "agentic.recoverpy-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/recoverpy-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/recoverpy-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.recoverpy.files for RecoverPy file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Noovolari/leapp",
+    "descriptor_id": "known.leapp.profiles",
+    "run_id": "agentic.leapp-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/leapp-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/leapp-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.leapp.profiles for leapp profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zonemeen/musicn",
+    "descriptor_id": "known.musicn.tracks",
+    "run_id": "agentic.musicn-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/musicn-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/musicn-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.musicn.tracks for musicn track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/variety/variety",
+    "descriptor_id": "known.variety.wallpapers",
+    "run_id": "agentic.variety-wallpapers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/variety-wallpapers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/variety-wallpapers/expected.rows.json",
+    "variants": [
+      "wallpaper header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.variety.wallpapers for variety wallpaper list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/towardsthecloud/cloudburn",
+    "descriptor_id": "known.cloudburn.runs",
+    "run_id": "agentic.cloudburn-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/cloudburn-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/cloudburn-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.cloudburn.runs for cloudburn run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/abiosoft/ishell",
+    "descriptor_id": "known.ishell.commands",
+    "run_id": "agentic.ishell-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ishell-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ishell-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ishell.commands for ishell command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/johnbillion/query-monitor",
+    "descriptor_id": "known.query.monitor.panels",
+    "run_id": "agentic.query-monitor-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/query-monitor-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/query-monitor-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.query.monitor.panels for query-monitor panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

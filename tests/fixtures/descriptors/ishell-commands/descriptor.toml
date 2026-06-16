@@ -1,0 +1,10 @@
+id = "known.ishell.commands"
+name = "ishell command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tstatus","help\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

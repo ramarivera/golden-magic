@@ -1,0 +1,4 @@
+field	value state
+OS	Windows visible
+Shell	PowerShell visible
+Old	Unknown hidden

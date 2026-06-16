@@ -1,0 +1,4 @@
+wallpaper	status state
+forest	active selected
+city	queued selected
+old	removed hidden

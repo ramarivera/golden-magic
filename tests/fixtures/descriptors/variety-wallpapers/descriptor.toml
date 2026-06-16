@@ -1,0 +1,10 @@
+id = "known.variety.wallpapers"
+name = "variety wallpaper list"
+priority = 50
+
+[matches]
+required_substrings = ["wallpaper\tstatus","forest\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

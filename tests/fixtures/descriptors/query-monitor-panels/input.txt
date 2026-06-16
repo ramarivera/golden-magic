@@ -1,0 +1,4 @@
+panel	status state
+queries	visible enabled
+hooks	visible enabled
+old	hidden hidden

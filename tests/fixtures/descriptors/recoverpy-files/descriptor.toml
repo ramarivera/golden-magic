@@ -1,0 +1,10 @@
+id = "known.recoverpy.files"
+name = "RecoverPy file list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tstatus","notes.txt\tfound"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

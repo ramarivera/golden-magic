@@ -1,0 +1,10 @@
+id = "known.query.monitor.panels"
+name = "query-monitor panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tstatus","queries\tvisible"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

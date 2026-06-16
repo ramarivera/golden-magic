@@ -1,0 +1,4 @@
+template	status state
+ios	ready local
+macos	ready local
+old	missing hidden

@@ -1,0 +1,4 @@
+run	status state
+scan	done cloud
+report	queued cloud
+old	failed hidden

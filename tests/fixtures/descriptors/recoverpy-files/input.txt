@@ -1,0 +1,4 @@
+file	status state
+notes.txt	found recoverable
+main.rs	found recoverable
+old.tmp	lost hidden

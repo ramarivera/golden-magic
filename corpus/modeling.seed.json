@@ -8846,5 +8846,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/taskell-tasks",
     "analysis_notes": "Modeled taskell task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/JohnSundell/SwiftPlate",
+    "descriptor_id": "known.swiftplate.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/swiftplate-templates",
+    "analysis_notes": "Modeled SwiftPlate template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lptstr/winfetch",
+    "descriptor_id": "known.winfetch.fields",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/winfetch-fields",
+    "analysis_notes": "Modeled winfetch field output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/electron/devtron",
+    "descriptor_id": "known.devtron.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devtron-panels",
+    "analysis_notes": "Modeled devtron panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PabloLec/RecoverPy",
+    "descriptor_id": "known.recoverpy.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/recoverpy-files",
+    "analysis_notes": "Modeled RecoverPy file output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Noovolari/leapp",
+    "descriptor_id": "known.leapp.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/leapp-profiles",
+    "analysis_notes": "Modeled leapp profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zonemeen/musicn",
+    "descriptor_id": "known.musicn.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/musicn-tracks",
+    "analysis_notes": "Modeled musicn track output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/variety/variety",
+    "descriptor_id": "known.variety.wallpapers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/variety-wallpapers",
+    "analysis_notes": "Modeled variety wallpaper output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/towardsthecloud/cloudburn",
+    "descriptor_id": "known.cloudburn.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/cloudburn-runs",
+    "analysis_notes": "Modeled cloudburn run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/abiosoft/ishell",
+    "descriptor_id": "known.ishell.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ishell-commands",
+    "analysis_notes": "Modeled ishell command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/johnbillion/query-monitor",
+    "descriptor_id": "known.query.monitor.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/query-monitor-panels",
+    "analysis_notes": "Modeled query-monitor panel output with a generated executable-json parser plugin."
   }
 ]

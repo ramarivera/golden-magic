@@ -1,0 +1,4 @@
+panel	status state
+events	visible enabled
+ipc	visible enabled
+old	hidden hidden

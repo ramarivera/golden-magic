@@ -1,0 +1,10 @@
+id = "known.cloudburn.runs"
+name = "cloudburn run list"
+priority = 50
+
+[matches]
+required_substrings = ["run\tstatus","scan\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

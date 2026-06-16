@@ -1,0 +1,2 @@
+run status state
+scan done cloud
