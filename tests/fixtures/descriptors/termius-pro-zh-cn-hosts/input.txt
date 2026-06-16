@@ -1,0 +1,4 @@
+host	protocol state
+bastion	ssh translated
+prod	sftp translated
+old	telnet hidden

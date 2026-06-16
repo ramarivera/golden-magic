@@ -1,0 +1,10 @@
+id = "known.asciinema-server.recordings"
+name = "asciinema-server recording list"
+priority = 50
+
+[matches]
+required_substrings = ["recording\tvisibility","demo\tpublic"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

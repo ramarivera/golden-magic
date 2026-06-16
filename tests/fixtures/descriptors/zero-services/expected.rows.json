@@ -1,0 +1,18 @@
+[
+  {
+    "name": "service",
+    "value": "port state"
+  },
+  {
+    "name": "api",
+    "value": "3000 running"
+  },
+  {
+    "name": "web",
+    "value": "5173 running"
+  },
+  {
+    "name": "old",
+    "value": "8080 stopped"
+  }
+]

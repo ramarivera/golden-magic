@@ -1,0 +1,10 @@
+id = "known.elia.chats"
+name = "elia chat list"
+priority = 50
+
+[matches]
+required_substrings = ["chat\tmodel","draft\tgpt"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

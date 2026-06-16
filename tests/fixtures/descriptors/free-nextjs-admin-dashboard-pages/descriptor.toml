@@ -1,0 +1,10 @@
+id = "known.free-nextjs-admin-dashboard.pages"
+name = "free-nextjs-admin-dashboard page list"
+priority = 50
+
+[matches]
+required_substrings = ["page\troute","dashboard\t/admin"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

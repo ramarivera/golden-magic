@@ -1,0 +1,18 @@
+[
+  {
+    "name": "path",
+    "value": "change state"
+  },
+  {
+    "name": "config.name",
+    "value": "modified reported"
+  },
+  {
+    "name": "items[0]",
+    "value": "added reported"
+  },
+  {
+    "name": "old",
+    "value": "unchanged hidden"
+  }
+]

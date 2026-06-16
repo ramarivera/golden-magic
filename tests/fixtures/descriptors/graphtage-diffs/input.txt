@@ -1,0 +1,4 @@
+path	change state
+config.name	modified reported
+items[0]	added reported
+old	unchanged hidden

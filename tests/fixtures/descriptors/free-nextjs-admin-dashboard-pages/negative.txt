@@ -1,0 +1,2 @@
+page route state
+dashboard /admin enabled

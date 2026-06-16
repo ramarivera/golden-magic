@@ -1,0 +1,4 @@
+page	route state
+dashboard	/admin enabled
+profile	/profile enabled
+old	/legacy hidden

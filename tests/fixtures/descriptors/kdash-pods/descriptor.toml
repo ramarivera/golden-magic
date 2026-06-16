@@ -1,0 +1,10 @@
+id = "known.kdash.pods"
+name = "kdash pod list"
+priority = 50
+
+[matches]
+required_substrings = ["pod\tstatus","api-0\tRunning"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+path change state
+config.name modified reported

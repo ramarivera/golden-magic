@@ -1,0 +1,4 @@
+recording	visibility state
+demo	public published
+ops	private published
+old	private deleted

@@ -1,0 +1,2 @@
+channel unread state
+general 2 active

@@ -1,0 +1,2 @@
+pod status state
+api-0 Running ready

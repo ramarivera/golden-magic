@@ -1,0 +1,4 @@
+target	status state
+chrome	built ready
+firefox	built ready
+old	failed ignored

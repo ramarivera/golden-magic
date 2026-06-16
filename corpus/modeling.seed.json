@@ -7236,5 +7236,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/termwind-components",
     "analysis_notes": "Modeled Termwind component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kdash-rs/kdash",
+    "descriptor_id": "known.kdash.pods",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kdash-pods",
+    "analysis_notes": "Modeled kdash Kubernetes pod output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/haskellcamargo/sclack",
+    "descriptor_id": "known.sclack.channels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sclack-channels",
+    "analysis_notes": "Modeled sclack channel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/asciinema/asciinema-server",
+    "descriptor_id": "known.asciinema-server.recordings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/asciinema-server-recordings",
+    "analysis_notes": "Modeled asciinema-server recording output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/trailofbits/graphtage",
+    "descriptor_id": "known.graphtage.diffs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/graphtage-diffs",
+    "analysis_notes": "Modeled graphtage structured diff output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ArcSurge/Termius-Pro-zh_CN",
+    "descriptor_id": "known.termius-pro-zh-cn.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termius-pro-zh-cn-hosts",
+    "analysis_notes": "Modeled Termius Pro zh_CN host output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/darrenburns/elia",
+    "descriptor_id": "known.elia.chats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/elia-chats",
+    "analysis_notes": "Modeled elia terminal chat output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dutiyesh/chrome-extension-cli",
+    "descriptor_id": "known.chrome-extension-cli.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chrome-extension-cli-builds",
+    "analysis_notes": "Modeled chrome-extension-cli build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/TailAdmin/free-nextjs-admin-dashboard",
+    "descriptor_id": "known.free-nextjs-admin-dashboard.pages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/free-nextjs-admin-dashboard-pages",
+    "analysis_notes": "Modeled free-nextjs-admin-dashboard route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mohsen1/yek",
+    "descriptor_id": "known.yek.files",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yek-files",
+    "analysis_notes": "Modeled yek file/token output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sinclairzx81/zero",
+    "descriptor_id": "known.zero.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zero-services",
+    "analysis_notes": "Modeled zero service output with a generated executable-json parser plugin."
   }
 ]

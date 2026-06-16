@@ -1,0 +1,10 @@
+id = "known.sclack.channels"
+name = "sclack channel list"
+priority = 50
+
+[matches]
+required_substrings = ["channel\tunread","general\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

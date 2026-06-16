@@ -1,0 +1,4 @@
+pod	status state
+api-0	Running ready
+worker-0	Running ready
+old	Pending ignored

@@ -1,0 +1,10 @@
+id = "known.termius-pro-zh-cn.hosts"
+name = "Termius Pro zh_CN host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tprotocol","bastion\tssh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

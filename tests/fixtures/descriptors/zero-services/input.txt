@@ -1,0 +1,4 @@
+service	port state
+api	3000 running
+web	5173 running
+old	8080 stopped

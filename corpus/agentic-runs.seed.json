@@ -18610,5 +18610,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/kdash-rs/kdash",
+    "descriptor_id": "known.kdash.pods",
+    "run_id": "agentic.kdash-pods.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kdash-pods/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kdash-pods/expected.rows.json",
+    "variants": [
+      "pod header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kdash.pods for kdash pod list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/haskellcamargo/sclack",
+    "descriptor_id": "known.sclack.channels",
+    "run_id": "agentic.sclack-channels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sclack-channels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sclack-channels/expected.rows.json",
+    "variants": [
+      "channel header row",
+      "unread row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sclack.channels for sclack channel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/asciinema/asciinema-server",
+    "descriptor_id": "known.asciinema-server.recordings",
+    "run_id": "agentic.asciinema-server-recordings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/asciinema-server-recordings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/asciinema-server-recordings/expected.rows.json",
+    "variants": [
+      "recording header row",
+      "visibility row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.asciinema-server.recordings for asciinema-server recording list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/trailofbits/graphtage",
+    "descriptor_id": "known.graphtage.diffs",
+    "run_id": "agentic.graphtage-diffs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/graphtage-diffs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/graphtage-diffs/expected.rows.json",
+    "variants": [
+      "path header row",
+      "change row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.graphtage.diffs for graphtage diff list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ArcSurge/Termius-Pro-zh_CN",
+    "descriptor_id": "known.termius-pro-zh-cn.hosts",
+    "run_id": "agentic.termius-pro-zh-cn-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termius-pro-zh-cn-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termius-pro-zh-cn-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "protocol row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termius-pro-zh-cn.hosts for Termius Pro zh_CN host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/darrenburns/elia",
+    "descriptor_id": "known.elia.chats",
+    "run_id": "agentic.elia-chats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/elia-chats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/elia-chats/expected.rows.json",
+    "variants": [
+      "chat header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.elia.chats for elia chat list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dutiyesh/chrome-extension-cli",
+    "descriptor_id": "known.chrome-extension-cli.builds",
+    "run_id": "agentic.chrome-extension-cli-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chrome-extension-cli-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chrome-extension-cli-builds/expected.rows.json",
+    "variants": [
+      "target header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chrome-extension-cli.builds for chrome-extension-cli build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/TailAdmin/free-nextjs-admin-dashboard",
+    "descriptor_id": "known.free-nextjs-admin-dashboard.pages",
+    "run_id": "agentic.free-nextjs-admin-dashboard-pages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/free-nextjs-admin-dashboard-pages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/free-nextjs-admin-dashboard-pages/expected.rows.json",
+    "variants": [
+      "page header row",
+      "route row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.free-nextjs-admin-dashboard.pages for free-nextjs-admin-dashboard page list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mohsen1/yek",
+    "descriptor_id": "known.yek.files",
+    "run_id": "agentic.yek-files.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yek-files/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yek-files/expected.rows.json",
+    "variants": [
+      "file header row",
+      "tokens row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.yek.files for yek file list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sinclairzx81/zero",
+    "descriptor_id": "known.zero.services",
+    "run_id": "agentic.zero-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zero-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zero-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "port row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zero.services for zero service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

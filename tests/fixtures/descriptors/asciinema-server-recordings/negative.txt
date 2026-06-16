@@ -1,0 +1,2 @@
+recording visibility state
+demo public published

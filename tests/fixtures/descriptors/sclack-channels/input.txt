@@ -1,0 +1,4 @@
+channel	unread state
+general	2 active
+ops	0 active
+old	9 archived
