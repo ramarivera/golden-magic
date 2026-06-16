@@ -1,0 +1,10 @@
+id = "known.learnprompt.lessons"
+name = "LearnPrompt lesson list"
+priority = 50
+
+[matches]
+required_substrings = ["lesson\tlevel","basics\tintro"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

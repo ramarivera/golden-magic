@@ -1,0 +1,10 @@
+id = "known.netcatty.sessions"
+name = "Netcatty session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tpeer","reverse\t10.0.0.2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+lesson	level state
+basics	intro available
+agents	advanced available
+old	legacy hidden

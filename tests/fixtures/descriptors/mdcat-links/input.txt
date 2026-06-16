@@ -1,0 +1,4 @@
+label	target state
+docs	https://example.test rendered
+repo	https://github.com rendered
+old	mailto:none hidden

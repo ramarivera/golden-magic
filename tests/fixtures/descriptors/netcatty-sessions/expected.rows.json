@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "peer state"
+  },
+  {
+    "name": "reverse",
+    "value": "10.0.0.2 open"
+  },
+  {
+    "name": "bind",
+    "value": "127.0.0.1 open"
+  },
+  {
+    "name": "old",
+    "value": "0.0.0.0 closed"
+  }
+]

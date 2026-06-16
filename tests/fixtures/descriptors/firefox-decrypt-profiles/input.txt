@@ -1,0 +1,4 @@
+profile	entries state
+default	12 decrypted
+work	4 decrypted
+old	0 skipped

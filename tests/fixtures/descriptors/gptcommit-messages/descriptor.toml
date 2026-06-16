@@ -1,0 +1,10 @@
+id = "known.gptcommit.messages"
+name = "gptcommit message list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tmessage","src/lib.rs\trefactor"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

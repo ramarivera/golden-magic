@@ -1,0 +1,10 @@
+id = "known.mdcat.links"
+name = "mdcat link list"
+priority = 50
+
+[matches]
+required_substrings = ["label\ttarget","docs\thttps://example.test"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

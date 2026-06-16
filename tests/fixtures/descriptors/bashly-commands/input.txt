@@ -1,0 +1,4 @@
+command	args state
+deploy	2 generated
+logs	1 generated
+old	0 skipped

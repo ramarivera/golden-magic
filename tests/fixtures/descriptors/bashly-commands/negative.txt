@@ -1,0 +1,2 @@
+command args state
+deploy 2 generated

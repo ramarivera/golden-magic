@@ -1,0 +1,10 @@
+id = "known.firefox-decrypt.profiles"
+name = "firefox_decrypt profile list"
+priority = 50
+
+[matches]
+required_substrings = ["profile\tentries","default\t12"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

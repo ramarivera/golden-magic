@@ -1,0 +1,4 @@
+directory	score state
+/repo	42 ranked
+/tmp	3 ranked
+/old	1 expired

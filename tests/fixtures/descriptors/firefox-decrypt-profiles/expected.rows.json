@@ -1,0 +1,18 @@
+[
+  {
+    "name": "profile",
+    "value": "entries state"
+  },
+  {
+    "name": "default",
+    "value": "12 decrypted"
+  },
+  {
+    "name": "work",
+    "value": "4 decrypted"
+  },
+  {
+    "name": "old",
+    "value": "0 skipped"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "file",
+    "value": "message state"
+  },
+  {
+    "name": "src/lib.rs",
+    "value": "refactor suggested"
+  },
+  {
+    "name": "README.md",
+    "value": "docs suggested"
+  },
+  {
+    "name": "old.txt",
+    "value": "chore ignored"
+  }
+]

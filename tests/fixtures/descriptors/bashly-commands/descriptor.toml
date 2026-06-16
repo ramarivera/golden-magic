@@ -1,0 +1,10 @@
+id = "known.bashly.commands"
+name = "bashly command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\targs","deploy\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

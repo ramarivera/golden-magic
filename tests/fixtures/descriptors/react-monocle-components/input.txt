@@ -1,0 +1,4 @@
+component	props state
+Button	3 visible
+Card	5 visible
+Old	1 hidden

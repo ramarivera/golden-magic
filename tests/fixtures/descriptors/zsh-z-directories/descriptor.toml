@@ -1,0 +1,10 @@
+id = "known.zsh-z.directories"
+name = "zsh-z directory list"
+priority = 50
+
+[matches]
+required_substrings = ["directory\tscore","/repo\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

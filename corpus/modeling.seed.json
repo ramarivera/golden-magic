@@ -7306,5 +7306,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/zero-services",
     "analysis_notes": "Modeled zero service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/LearnPrompt/LearnPrompt",
+    "descriptor_id": "known.learnprompt.lessons",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/learnprompt-lessons",
+    "analysis_notes": "Modeled LearnPrompt lesson output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sheeki03/tirith",
+    "descriptor_id": "known.tirith.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tirith-rules",
+    "analysis_notes": "Modeled tirith rule output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/team-gryff/react-monocle",
+    "descriptor_id": "known.react-monocle.components",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/react-monocle-components",
+    "analysis_notes": "Modeled react-monocle component output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/binaricat/Netcatty",
+    "descriptor_id": "known.netcatty.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/netcatty-sessions",
+    "analysis_notes": "Modeled Netcatty session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/unode/firefox_decrypt",
+    "descriptor_id": "known.firefox-decrypt.profiles",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/firefox-decrypt-profiles",
+    "analysis_notes": "Modeled firefox_decrypt profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bashly-framework/bashly",
+    "descriptor_id": "known.bashly.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bashly-commands",
+    "analysis_notes": "Modeled bashly generated command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zurawiki/gptcommit",
+    "descriptor_id": "known.gptcommit.messages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gptcommit-messages",
+    "analysis_notes": "Modeled gptcommit generated message output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jnsahaj/lumen",
+    "descriptor_id": "known.lumen.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/lumen-routes",
+    "analysis_notes": "Modeled lumen route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/swsnr/mdcat",
+    "descriptor_id": "known.mdcat.links",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mdcat-links",
+    "analysis_notes": "Modeled mdcat rendered link output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/agkozak/zsh-z",
+    "descriptor_id": "known.zsh-z.directories",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zsh-z-directories",
+    "analysis_notes": "Modeled zsh-z frecency directory output with a generated executable-json parser plugin."
   }
 ]

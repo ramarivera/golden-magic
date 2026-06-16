@@ -18790,5 +18790,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/LearnPrompt/LearnPrompt",
+    "descriptor_id": "known.learnprompt.lessons",
+    "run_id": "agentic.learnprompt-lessons.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/learnprompt-lessons/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/learnprompt-lessons/expected.rows.json",
+    "variants": [
+      "lesson header row",
+      "level row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.learnprompt.lessons for LearnPrompt lesson list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sheeki03/tirith",
+    "descriptor_id": "known.tirith.rules",
+    "run_id": "agentic.tirith-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tirith-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tirith-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tirith.rules for tirith rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/team-gryff/react-monocle",
+    "descriptor_id": "known.react-monocle.components",
+    "run_id": "agentic.react-monocle-components.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/react-monocle-components/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/react-monocle-components/expected.rows.json",
+    "variants": [
+      "component header row",
+      "props row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.react-monocle.components for react-monocle component list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/binaricat/Netcatty",
+    "descriptor_id": "known.netcatty.sessions",
+    "run_id": "agentic.netcatty-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/netcatty-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/netcatty-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "peer row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.netcatty.sessions for Netcatty session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/unode/firefox_decrypt",
+    "descriptor_id": "known.firefox-decrypt.profiles",
+    "run_id": "agentic.firefox-decrypt-profiles.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/firefox-decrypt-profiles/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/firefox-decrypt-profiles/expected.rows.json",
+    "variants": [
+      "profile header row",
+      "entries row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.firefox-decrypt.profiles for firefox_decrypt profile list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bashly-framework/bashly",
+    "descriptor_id": "known.bashly.commands",
+    "run_id": "agentic.bashly-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bashly-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bashly-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "args row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bashly.commands for bashly command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zurawiki/gptcommit",
+    "descriptor_id": "known.gptcommit.messages",
+    "run_id": "agentic.gptcommit-messages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gptcommit-messages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gptcommit-messages/expected.rows.json",
+    "variants": [
+      "file header row",
+      "message row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gptcommit.messages for gptcommit message list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jnsahaj/lumen",
+    "descriptor_id": "known.lumen.routes",
+    "run_id": "agentic.lumen-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/lumen-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/lumen-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.lumen.routes for lumen route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/swsnr/mdcat",
+    "descriptor_id": "known.mdcat.links",
+    "run_id": "agentic.mdcat-links.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mdcat-links/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mdcat-links/expected.rows.json",
+    "variants": [
+      "label header row",
+      "target row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mdcat.links for mdcat link list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/agkozak/zsh-z",
+    "descriptor_id": "known.zsh-z.directories",
+    "run_id": "agentic.zsh-z-directories.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zsh-z-directories/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zsh-z-directories/expected.rows.json",
+    "variants": [
+      "directory header row",
+      "score row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zsh-z.directories for zsh-z directory list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

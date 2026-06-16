@@ -1,0 +1,4 @@
+rule	result state
+ssh	pass reported
+sudo	warn reported
+old	fail ignored
