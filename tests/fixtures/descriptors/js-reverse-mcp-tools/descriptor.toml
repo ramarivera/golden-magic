@@ -1,0 +1,10 @@
+id = "known.js.reverse.mcp.tools"
+name = "js-reverse-mcp tool list"
+priority = 50
+
+[matches]
+required_substrings = ["tool\tstatus","deobfuscate\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

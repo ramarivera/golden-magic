@@ -1,0 +1,10 @@
+id = "known.netlify.cli.sites"
+name = "Netlify CLI site list"
+priority = 50
+
+[matches]
+required_substrings = ["site\turl","docs\thttps://"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

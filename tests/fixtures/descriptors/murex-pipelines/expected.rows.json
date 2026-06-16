@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pipeline",
+    "value": "status state"
+  },
+  {
+    "name": "build",
+    "value": "ok active"
+  },
+  {
+    "name": "deploy",
+    "value": "wait active"
+  },
+  {
+    "name": "old",
+    "value": "fail hidden"
+  }
+]

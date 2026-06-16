@@ -1,0 +1,10 @@
+id = "known.terminal.markdown.viewer.headings"
+name = "terminal_markdown_viewer heading list"
+priority = 50
+
+[matches]
+required_substrings = ["heading\tlevel","Intro\t1"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

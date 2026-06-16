@@ -1,0 +1,10 @@
+id = "known.fastmod.replacements"
+name = "fastmod replacement list"
+priority = 50
+
+[matches]
+required_substrings = ["file\tmatches","src/main.rs\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

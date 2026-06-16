@@ -1,0 +1,4 @@
+site	url state
+docs	https://docs.example deployed
+app	https://app.example deployed
+old	https://old.example hidden

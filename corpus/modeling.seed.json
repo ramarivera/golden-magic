@@ -8426,5 +8426,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/update-golang-versions",
     "analysis_notes": "Modeled update-golang version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/facebookincubator/fastmod",
+    "descriptor_id": "known.fastmod.replacements",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fastmod-replacements",
+    "analysis_notes": "Modeled fastmod replacement output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/afar1/fieldtheory-cli",
+    "descriptor_id": "known.fieldtheory.cli.fields",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fieldtheory-cli-fields",
+    "analysis_notes": "Modeled fieldtheory-cli field output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ycd/manage-fastapi",
+    "descriptor_id": "known.manage.fastapi.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/manage-fastapi-routes",
+    "analysis_notes": "Modeled manage-fastapi route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bcicen/grmon",
+    "descriptor_id": "known.grmon.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/grmon-processes",
+    "analysis_notes": "Modeled grmon process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/netlify/cli",
+    "descriptor_id": "known.netlify.cli.sites",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/netlify-cli-sites",
+    "analysis_notes": "Modeled Netlify CLI site output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/paxtonhare/demo-magic",
+    "descriptor_id": "known.demo.magic.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/demo-magic-steps",
+    "analysis_notes": "Modeled demo-magic step output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lmorg/murex",
+    "descriptor_id": "known.murex.pipelines",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/murex-pipelines",
+    "analysis_notes": "Modeled murex pipeline output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zhizhuodemao/js-reverse-mcp",
+    "descriptor_id": "known.js.reverse.mcp.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/js-reverse-mcp-tools",
+    "analysis_notes": "Modeled js-reverse-mcp tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nosarthur/gita",
+    "descriptor_id": "known.gita.repos",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gita-repos",
+    "analysis_notes": "Modeled gita repo output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/axiros/terminal_markdown_viewer",
+    "descriptor_id": "known.terminal.markdown.viewer.headings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminal-markdown-viewer-headings",
+    "analysis_notes": "Modeled terminal_markdown_viewer heading output with a generated executable-json parser plugin."
   }
 ]

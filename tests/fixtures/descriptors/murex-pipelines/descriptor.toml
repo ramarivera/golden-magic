@@ -1,0 +1,10 @@
+id = "known.murex.pipelines"
+name = "murex pipeline list"
+priority = 50
+
+[matches]
+required_substrings = ["pipeline\tstatus","build\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

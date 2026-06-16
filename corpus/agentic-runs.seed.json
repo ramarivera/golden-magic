@@ -21670,5 +21670,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/facebookincubator/fastmod",
+    "descriptor_id": "known.fastmod.replacements",
+    "run_id": "agentic.fastmod-replacements.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fastmod-replacements/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fastmod-replacements/expected.rows.json",
+    "variants": [
+      "file header row",
+      "matches row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fastmod.replacements for fastmod replacement list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/afar1/fieldtheory-cli",
+    "descriptor_id": "known.fieldtheory.cli.fields",
+    "run_id": "agentic.fieldtheory-cli-fields.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fieldtheory-cli-fields/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fieldtheory-cli-fields/expected.rows.json",
+    "variants": [
+      "field header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fieldtheory.cli.fields for fieldtheory-cli field list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ycd/manage-fastapi",
+    "descriptor_id": "known.manage.fastapi.routes",
+    "run_id": "agentic.manage-fastapi-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/manage-fastapi-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/manage-fastapi-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.manage.fastapi.routes for manage-fastapi route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bcicen/grmon",
+    "descriptor_id": "known.grmon.processes",
+    "run_id": "agentic.grmon-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/grmon-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/grmon-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "gpu row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.grmon.processes for grmon process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/netlify/cli",
+    "descriptor_id": "known.netlify.cli.sites",
+    "run_id": "agentic.netlify-cli-sites.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/netlify-cli-sites/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/netlify-cli-sites/expected.rows.json",
+    "variants": [
+      "site header row",
+      "url row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.netlify.cli.sites for Netlify CLI site list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/paxtonhare/demo-magic",
+    "descriptor_id": "known.demo.magic.steps",
+    "run_id": "agentic.demo-magic-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/demo-magic-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/demo-magic-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.demo.magic.steps for demo-magic step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lmorg/murex",
+    "descriptor_id": "known.murex.pipelines",
+    "run_id": "agentic.murex-pipelines.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/murex-pipelines/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/murex-pipelines/expected.rows.json",
+    "variants": [
+      "pipeline header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.murex.pipelines for murex pipeline list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zhizhuodemao/js-reverse-mcp",
+    "descriptor_id": "known.js.reverse.mcp.tools",
+    "run_id": "agentic.js-reverse-mcp-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/js-reverse-mcp-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/js-reverse-mcp-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.js.reverse.mcp.tools for js-reverse-mcp tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nosarthur/gita",
+    "descriptor_id": "known.gita.repos",
+    "run_id": "agentic.gita-repos.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gita-repos/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gita-repos/expected.rows.json",
+    "variants": [
+      "repo header row",
+      "branch row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gita.repos for gita repo list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/axiros/terminal_markdown_viewer",
+    "descriptor_id": "known.terminal.markdown.viewer.headings",
+    "run_id": "agentic.terminal-markdown-viewer-headings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminal-markdown-viewer-headings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminal-markdown-viewer-headings/expected.rows.json",
+    "variants": [
+      "heading header row",
+      "level row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminal.markdown.viewer.headings for terminal_markdown_viewer heading list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

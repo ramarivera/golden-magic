@@ -1,0 +1,4 @@
+heading	level state
+Intro	1 visible
+Usage	2 visible
+Old	3 hidden

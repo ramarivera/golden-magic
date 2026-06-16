@@ -1,0 +1,10 @@
+id = "known.gita.repos"
+name = "gita repo list"
+priority = 50
+
+[matches]
+required_substrings = ["repo\tbranch","golden-magic\tmaster"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+field	value state
+mass	1 measured
+charge	0 measured
+old	9 hidden

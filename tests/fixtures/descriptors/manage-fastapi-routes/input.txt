@@ -1,0 +1,4 @@
+route	method state
+/health	GET registered
+/users	POST registered
+/old	DELETE hidden

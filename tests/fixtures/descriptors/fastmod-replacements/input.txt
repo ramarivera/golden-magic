@@ -1,0 +1,4 @@
+file	matches state
+src/main.rs	2 changed
+README.md	1 changed
+old.txt	0 hidden

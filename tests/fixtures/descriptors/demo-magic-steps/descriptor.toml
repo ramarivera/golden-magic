@@ -1,0 +1,10 @@
+id = "known.demo.magic.steps"
+name = "demo-magic step list"
+priority = 50
+
+[matches]
+required_substrings = ["step\tcommand","1\ttype"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

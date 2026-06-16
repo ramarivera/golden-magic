@@ -1,0 +1,4 @@
+tool	status state
+deobfuscate	ready active
+trace	ready active
+old	disabled hidden

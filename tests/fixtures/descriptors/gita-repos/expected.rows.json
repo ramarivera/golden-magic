@@ -1,0 +1,18 @@
+[
+  {
+    "name": "repo",
+    "value": "branch state"
+  },
+  {
+    "name": "golden-magic",
+    "value": "master clean"
+  },
+  {
+    "name": "toolbox",
+    "value": "main clean"
+  },
+  {
+    "name": "old",
+    "value": "dev hidden"
+  }
+]

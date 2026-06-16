@@ -1,0 +1,18 @@
+[
+  {
+    "name": "route",
+    "value": "method state"
+  },
+  {
+    "name": "/health",
+    "value": "GET registered"
+  },
+  {
+    "name": "/users",
+    "value": "POST registered"
+  },
+  {
+    "name": "/old",
+    "value": "DELETE hidden"
+  }
+]

@@ -1,0 +1,4 @@
+pipeline	status state
+build	ok active
+deploy	wait active
+old	fail hidden
