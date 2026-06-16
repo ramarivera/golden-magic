@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "license state"
+  },
+  {
+    "name": "core",
+    "value": "MIT included"
+  },
+  {
+    "name": "cli",
+    "value": "Apache included"
+  },
+  {
+    "name": "old",
+    "value": "GPL excluded"
+  }
+]

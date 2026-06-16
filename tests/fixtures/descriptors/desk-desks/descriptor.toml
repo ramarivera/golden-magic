@@ -1,0 +1,10 @@
+id = "known.desk.desks"
+name = "desk workspace list"
+priority = 50
+
+[matches]
+required_substrings = ["desk\tpath","work\t~/work"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

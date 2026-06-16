@@ -1,0 +1,4 @@
+desk	path state
+work	~/work active
+ops	~/ops active
+old	~/old archived

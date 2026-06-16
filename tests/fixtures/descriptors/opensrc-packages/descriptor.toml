@@ -1,0 +1,10 @@
+id = "known.opensrc.packages"
+name = "opensrc package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tlicense","core\tMIT"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

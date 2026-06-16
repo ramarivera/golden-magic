@@ -1,0 +1,4 @@
+device	size state
+/dev/sdb	16G writable
+/dev/sdc	32G writable
+/dev/sda	512G skipped

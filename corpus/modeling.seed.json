@@ -7026,5 +7026,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/euporie-notebooks",
     "analysis_notes": "Modeled euporie notebook output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jamesob/desk",
+    "descriptor_id": "known.desk.desks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/desk-desks",
+    "analysis_notes": "Modeled desk workspace output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel-labs/opensrc",
+    "descriptor_id": "known.opensrc.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/opensrc-packages",
+    "analysis_notes": "Modeled opensrc package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/WoeUSB/WoeUSB",
+    "descriptor_id": "known.woeusb.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/woeusb-devices",
+    "analysis_notes": "Modeled WoeUSB target device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zquestz/s",
+    "descriptor_id": "known.s.search-results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/s-search-results",
+    "analysis_notes": "Modeled s web search result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/roninoss/create-expo-stack",
+    "descriptor_id": "known.create-expo-stack.templates",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/create-expo-stack-templates",
+    "analysis_notes": "Modeled create-expo-stack template output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sequelize/cli",
+    "descriptor_id": "known.sequelize-cli.migrations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sequelize-cli-migrations",
+    "analysis_notes": "Modeled sequelize-cli migration output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/d0k3/GodMode9",
+    "descriptor_id": "known.godmode9.scripts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/godmode9-scripts",
+    "analysis_notes": "Modeled GodMode9 script output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/google-gemini/live-api-web-console",
+    "descriptor_id": "known.gemini-live-console.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gemini-live-console-sessions",
+    "analysis_notes": "Modeled Gemini live API web console session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/coder/ghostty-web",
+    "descriptor_id": "known.ghostty-web.pages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ghostty-web-pages",
+    "analysis_notes": "Modeled ghostty-web page output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dosisod/refurb",
+    "descriptor_id": "known.refurb.fixes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/refurb-fixes",
+    "analysis_notes": "Modeled refurb lint fix output with a generated executable-json parser plugin."
   }
 ]

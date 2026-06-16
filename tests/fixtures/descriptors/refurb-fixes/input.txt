@@ -1,0 +1,4 @@
+fix	code state
+simplify	FURB101 suggested
+loop	FURB120 suggested
+old	FURB001 ignored

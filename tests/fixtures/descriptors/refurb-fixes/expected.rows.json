@@ -1,0 +1,18 @@
+[
+  {
+    "name": "fix",
+    "value": "code state"
+  },
+  {
+    "name": "simplify",
+    "value": "FURB101 suggested"
+  },
+  {
+    "name": "loop",
+    "value": "FURB120 suggested"
+  },
+  {
+    "name": "old",
+    "value": "FURB001 ignored"
+  }
+]

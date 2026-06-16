@@ -18070,5 +18070,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/jamesob/desk",
+    "descriptor_id": "known.desk.desks",
+    "run_id": "agentic.desk-desks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/desk-desks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/desk-desks/expected.rows.json",
+    "variants": [
+      "desk header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.desk.desks for desk workspace list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel-labs/opensrc",
+    "descriptor_id": "known.opensrc.packages",
+    "run_id": "agentic.opensrc-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/opensrc-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/opensrc-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "license row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.opensrc.packages for opensrc package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/WoeUSB/WoeUSB",
+    "descriptor_id": "known.woeusb.devices",
+    "run_id": "agentic.woeusb-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/woeusb-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/woeusb-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.woeusb.devices for WoeUSB device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zquestz/s",
+    "descriptor_id": "known.s.search-results",
+    "run_id": "agentic.s-search-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/s-search-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/s-search-results/expected.rows.json",
+    "variants": [
+      "result header row",
+      "engine row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.s.search-results for s search result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/roninoss/create-expo-stack",
+    "descriptor_id": "known.create-expo-stack.templates",
+    "run_id": "agentic.create-expo-stack-templates.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/create-expo-stack-templates/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/create-expo-stack-templates/expected.rows.json",
+    "variants": [
+      "template header row",
+      "router row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.create-expo-stack.templates for create-expo-stack template list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sequelize/cli",
+    "descriptor_id": "known.sequelize-cli.migrations",
+    "run_id": "agentic.sequelize-cli-migrations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sequelize-cli-migrations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sequelize-cli-migrations/expected.rows.json",
+    "variants": [
+      "migration header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sequelize-cli.migrations for sequelize-cli migration list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/d0k3/GodMode9",
+    "descriptor_id": "known.godmode9.scripts",
+    "run_id": "agentic.godmode9-scripts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/godmode9-scripts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/godmode9-scripts/expected.rows.json",
+    "variants": [
+      "script header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.godmode9.scripts for GodMode9 script list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/google-gemini/live-api-web-console",
+    "descriptor_id": "known.gemini-live-console.sessions",
+    "run_id": "agentic.gemini-live-console-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gemini-live-console-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gemini-live-console-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gemini-live-console.sessions for Gemini live API web console session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/coder/ghostty-web",
+    "descriptor_id": "known.ghostty-web.pages",
+    "run_id": "agentic.ghostty-web-pages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ghostty-web-pages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ghostty-web-pages/expected.rows.json",
+    "variants": [
+      "page header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ghostty-web.pages for ghostty-web page list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dosisod/refurb",
+    "descriptor_id": "known.refurb.fixes",
+    "run_id": "agentic.refurb-fixes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/refurb-fixes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/refurb-fixes/expected.rows.json",
+    "variants": [
+      "fix header row",
+      "code row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.refurb.fixes for refurb fix list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

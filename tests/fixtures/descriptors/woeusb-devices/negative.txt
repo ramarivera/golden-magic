@@ -1,0 +1,2 @@
+device size state
+/dev/sdb 16G writable

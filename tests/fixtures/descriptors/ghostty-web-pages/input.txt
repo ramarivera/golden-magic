@@ -1,0 +1,4 @@
+page	status state
+terminal	loaded visible
+settings	loaded visible
+old	missing hidden

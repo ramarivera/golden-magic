@@ -1,0 +1,4 @@
+migration	status state
+users	up applied
+posts	up applied
+old	down pending

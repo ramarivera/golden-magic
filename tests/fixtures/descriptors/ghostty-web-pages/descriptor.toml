@@ -1,0 +1,10 @@
+id = "known.ghostty-web.pages"
+name = "ghostty-web page list"
+priority = 50
+
+[matches]
+required_substrings = ["page\tstatus","terminal\tloaded"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

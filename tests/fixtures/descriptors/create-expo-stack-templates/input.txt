@@ -1,0 +1,4 @@
+template	router state
+tabs	expo-router ready
+blank	none ready
+old	legacy hidden

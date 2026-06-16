@@ -1,0 +1,10 @@
+id = "known.godmode9.scripts"
+name = "GodMode9 script list"
+priority = 50
+
+[matches]
+required_substrings = ["script\tmode","backup\tgm9"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

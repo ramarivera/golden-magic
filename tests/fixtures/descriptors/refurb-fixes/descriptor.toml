@@ -1,0 +1,10 @@
+id = "known.refurb.fixes"
+name = "refurb fix list"
+priority = 50
+
+[matches]
+required_substrings = ["fix\tcode","simplify\tFURB101"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+session	model state
+voice	gemini active
+screen	gemini active
+old	legacy closed

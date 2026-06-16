@@ -1,0 +1,2 @@
+template router state
+tabs expo-router ready

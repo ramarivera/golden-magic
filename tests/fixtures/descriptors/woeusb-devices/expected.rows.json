@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "size state"
+  },
+  {
+    "name": "/dev/sdb",
+    "value": "16G writable"
+  },
+  {
+    "name": "/dev/sdc",
+    "value": "32G writable"
+  },
+  {
+    "name": "/dev/sda",
+    "value": "512G skipped"
+  }
+]

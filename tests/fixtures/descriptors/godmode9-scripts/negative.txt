@@ -1,0 +1,2 @@
+script mode state
+backup gm9 available

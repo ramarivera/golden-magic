@@ -1,0 +1,4 @@
+result	engine state
+rust	google opened
+docs	duckduckgo opened
+old	bing skipped

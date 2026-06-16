@@ -1,0 +1,4 @@
+package	license state
+core	MIT included
+cli	Apache included
+old	GPL excluded

@@ -1,0 +1,10 @@
+id = "known.gemini-live-console.sessions"
+name = "Gemini live API web console session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tmodel","voice\tgemini"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

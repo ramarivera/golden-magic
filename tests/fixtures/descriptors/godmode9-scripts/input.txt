@@ -1,0 +1,4 @@
+script	mode state
+backup	gm9 available
+restore	gm9 available
+old	legacy hidden

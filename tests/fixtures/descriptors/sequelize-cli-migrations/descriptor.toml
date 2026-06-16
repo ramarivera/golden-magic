@@ -1,0 +1,10 @@
+id = "known.sequelize-cli.migrations"
+name = "sequelize-cli migration list"
+priority = 50
+
+[matches]
+required_substrings = ["migration\tstatus","users\tup"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

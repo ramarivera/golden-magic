@@ -1,0 +1,10 @@
+id = "known.s.search-results"
+name = "s search result list"
+priority = 50
+
+[matches]
+required_substrings = ["result\tengine","rust\tgoogle"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
