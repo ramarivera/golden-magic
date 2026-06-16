@@ -1,0 +1,18 @@
+[
+  {
+    "name": "panel",
+    "value": "status state"
+  },
+  {
+    "name": "components",
+    "value": "ready browser"
+  },
+  {
+    "name": "stores",
+    "value": "ready browser"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

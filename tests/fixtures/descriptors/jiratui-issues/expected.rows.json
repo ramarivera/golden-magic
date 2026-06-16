@@ -1,0 +1,18 @@
+[
+  {
+    "name": "issue",
+    "value": "status state"
+  },
+  {
+    "name": "PROJ-1",
+    "value": "open jira"
+  },
+  {
+    "name": "PROJ-2",
+    "value": "done jira"
+  },
+  {
+    "name": "OLD-1",
+    "value": "closed hidden"
+  }
+]

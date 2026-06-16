@@ -1,0 +1,18 @@
+[
+  {
+    "name": "widget",
+    "value": "status state"
+  },
+  {
+    "name": "todos",
+    "value": "active dashboard"
+  },
+  {
+    "name": "git",
+    "value": "active dashboard"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

@@ -1,0 +1,4 @@
+entry	status state
+coding	tracked time
+review	tracked time
+old	stopped hidden

@@ -1,0 +1,2 @@
+route status state
+/health ok web

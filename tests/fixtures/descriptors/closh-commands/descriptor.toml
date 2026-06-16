@@ -1,0 +1,10 @@
+id = "known.closh.commands"
+name = "closh command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tstatus","cd\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

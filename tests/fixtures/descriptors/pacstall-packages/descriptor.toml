@@ -1,0 +1,10 @@
+id = "known.pacstall.packages"
+name = "pacstall package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstatus","hello\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

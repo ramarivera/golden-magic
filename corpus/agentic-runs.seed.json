@@ -24010,5 +24010,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/Phantas0s/devdash",
+    "descriptor_id": "known.devdash.widgets",
+    "run_id": "agentic.devdash-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/devdash-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/devdash-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.devdash.widgets for devdash widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pacstall/pacstall",
+    "descriptor_id": "known.pacstall.packages",
+    "run_id": "agentic.pacstall-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pacstall-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pacstall-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pacstall.packages for pacstall package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mithrandie/csvq",
+    "descriptor_id": "known.csvq.tables",
+    "run_id": "agentic.csvq-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/csvq-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/csvq-tables/expected.rows.json",
+    "variants": [
+      "table header row",
+      "rows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.csvq.tables for csvq table list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dundalek/closh",
+    "descriptor_id": "known.closh.commands",
+    "run_id": "agentic.closh-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/closh-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/closh-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.closh.commands for closh command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jorgebucaran/colorette",
+    "descriptor_id": "known.colorette.colors",
+    "run_id": "agentic.colorette-colors.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/colorette-colors/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/colorette-colors/expected.rows.json",
+    "variants": [
+      "color header row",
+      "style row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.colorette.colors for colorette color list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/whyisdifficult/jiratui",
+    "descriptor_id": "known.jiratui.issues",
+    "run_id": "agentic.jiratui-issues.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jiratui-issues/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jiratui-issues/expected.rows.json",
+    "variants": [
+      "issue header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jiratui.issues for jiratui issue list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Taywee/args",
+    "descriptor_id": "known.taywee.args.options",
+    "run_id": "agentic.taywee-args-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/taywee-args-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/taywee-args-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.taywee.args.options for Taywee args option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sveltejs/svelte-devtools",
+    "descriptor_id": "known.svelte.devtools.panels",
+    "run_id": "agentic.svelte-devtools-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/svelte-devtools-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/svelte-devtools-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.svelte.devtools.panels for svelte-devtools panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/spolu/warp",
+    "descriptor_id": "known.warp.routes",
+    "run_id": "agentic.warp-routes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/warp-routes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/warp-routes/expected.rows.json",
+    "variants": [
+      "route header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.warp.routes for warp route list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/GothenburgBitFactory/timewarrior",
+    "descriptor_id": "known.timewarrior.entries",
+    "run_id": "agentic.timewarrior-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/timewarrior-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/timewarrior-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.timewarrior.entries for timewarrior entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,4 @@
+option	status state
+--help	parsed cli
+--version	parsed cli
+--old	ignored hidden

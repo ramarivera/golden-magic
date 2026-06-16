@@ -1,0 +1,10 @@
+id = "known.jiratui.issues"
+name = "jiratui issue list"
+priority = 50
+
+[matches]
+required_substrings = ["issue\tstatus","PROJ-1\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

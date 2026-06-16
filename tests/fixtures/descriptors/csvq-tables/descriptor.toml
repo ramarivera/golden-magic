@@ -1,0 +1,10 @@
+id = "known.csvq.tables"
+name = "csvq table list"
+priority = 50
+
+[matches]
+required_substrings = ["table\trows","users\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

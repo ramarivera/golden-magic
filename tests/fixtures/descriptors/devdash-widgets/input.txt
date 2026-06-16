@@ -1,0 +1,4 @@
+widget	status state
+todos	active dashboard
+git	active dashboard
+old	disabled hidden

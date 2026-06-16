@@ -1,0 +1,4 @@
+issue	status state
+PROJ-1	open jira
+PROJ-2	done jira
+OLD-1	closed hidden

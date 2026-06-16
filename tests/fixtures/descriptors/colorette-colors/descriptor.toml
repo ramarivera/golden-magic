@@ -1,0 +1,10 @@
+id = "known.colorette.colors"
+name = "colorette color list"
+priority = 50
+
+[matches]
+required_substrings = ["color\tstyle","red\tbold"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

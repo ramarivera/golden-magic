@@ -9336,5 +9336,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/passforios-entries",
     "analysis_notes": "Modeled passforios entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Phantas0s/devdash",
+    "descriptor_id": "known.devdash.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/devdash-widgets",
+    "analysis_notes": "Modeled devdash widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pacstall/pacstall",
+    "descriptor_id": "known.pacstall.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pacstall-packages",
+    "analysis_notes": "Modeled pacstall package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mithrandie/csvq",
+    "descriptor_id": "known.csvq.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/csvq-tables",
+    "analysis_notes": "Modeled csvq table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dundalek/closh",
+    "descriptor_id": "known.closh.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/closh-commands",
+    "analysis_notes": "Modeled closh command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jorgebucaran/colorette",
+    "descriptor_id": "known.colorette.colors",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/colorette-colors",
+    "analysis_notes": "Modeled colorette color output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/whyisdifficult/jiratui",
+    "descriptor_id": "known.jiratui.issues",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jiratui-issues",
+    "analysis_notes": "Modeled jiratui issue output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Taywee/args",
+    "descriptor_id": "known.taywee.args.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/taywee-args-options",
+    "analysis_notes": "Modeled Taywee args option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sveltejs/svelte-devtools",
+    "descriptor_id": "known.svelte.devtools.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/svelte-devtools-panels",
+    "analysis_notes": "Modeled svelte-devtools panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/spolu/warp",
+    "descriptor_id": "known.warp.routes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/warp-routes",
+    "analysis_notes": "Modeled warp route output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/GothenburgBitFactory/timewarrior",
+    "descriptor_id": "known.timewarrior.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/timewarrior-entries",
+    "analysis_notes": "Modeled timewarrior entry output with a generated executable-json parser plugin."
   }
 ]

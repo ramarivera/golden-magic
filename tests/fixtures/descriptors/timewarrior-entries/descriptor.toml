@@ -1,0 +1,10 @@
+id = "known.timewarrior.entries"
+name = "timewarrior entry list"
+priority = 50
+
+[matches]
+required_substrings = ["entry\tstatus","coding\ttracked"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

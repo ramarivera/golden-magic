@@ -1,0 +1,4 @@
+route	status state
+/health	ok web
+/api	ok web
+/old	gone hidden

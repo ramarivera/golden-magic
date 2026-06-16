@@ -1,0 +1,4 @@
+package	status state
+hello	installed apt
+curl	available apt
+old	removed hidden
