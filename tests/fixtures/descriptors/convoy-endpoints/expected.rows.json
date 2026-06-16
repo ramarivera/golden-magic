@@ -1,0 +1,18 @@
+[
+  {
+    "name": "endpoint",
+    "value": "status state"
+  },
+  {
+    "name": "webhook",
+    "value": "active sending"
+  },
+  {
+    "name": "audit",
+    "value": "active sending"
+  },
+  {
+    "name": "old",
+    "value": "disabled paused"
+  }
+]

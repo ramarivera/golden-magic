@@ -1,0 +1,10 @@
+id = "known.kirimase.generators"
+name = "kirimase generator list"
+priority = 50
+
+[matches]
+required_substrings = ["generator\tframework","crud\tnext"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

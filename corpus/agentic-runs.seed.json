@@ -16990,5 +16990,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/pythops/bluetui",
+    "descriptor_id": "known.bluetui.adapters",
+    "run_id": "agentic.bluetui-adapters.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bluetui-adapters/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bluetui-adapters/expected.rows.json",
+    "variants": [
+      "adapter header row",
+      "address row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bluetui.adapters for bluetui adapter list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sedwards2009/extraterm",
+    "descriptor_id": "known.extraterm.sessions",
+    "run_id": "agentic.extraterm-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/extraterm-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/extraterm-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "shell row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.extraterm.sessions for Extraterm session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/frain-dev/convoy",
+    "descriptor_id": "known.convoy.endpoints",
+    "run_id": "agentic.convoy-endpoints.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/convoy-endpoints/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/convoy-endpoints/expected.rows.json",
+    "variants": [
+      "endpoint header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.convoy.endpoints for Convoy endpoint list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/noahgorstein/jqp",
+    "descriptor_id": "known.jqp.filters",
+    "run_id": "agentic.jqp-filters.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jqp-filters/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jqp-filters/expected.rows.json",
+    "variants": [
+      "filter header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jqp.filters for jqp filter list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bradygaster/squad",
+    "descriptor_id": "known.squad.services",
+    "run_id": "agentic.squad-services.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/squad-services/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/squad-services/expected.rows.json",
+    "variants": [
+      "service header row",
+      "role row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.squad.services for Squad service list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/EnhancedJax/Bagels",
+    "descriptor_id": "known.bagels.games",
+    "run_id": "agentic.bagels-games.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/bagels-games/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/bagels-games/expected.rows.json",
+    "variants": [
+      "game header row",
+      "guess row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.bagels.games for Bagels game list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/altsem/gitu",
+    "descriptor_id": "known.gitu.branches",
+    "run_id": "agentic.gitu-branches.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gitu-branches/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gitu-branches/expected.rows.json",
+    "variants": [
+      "branch header row",
+      "remote row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gitu.branches for gitu branch list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vercel/kirimase",
+    "descriptor_id": "known.kirimase.generators",
+    "run_id": "agentic.kirimase-generators.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kirimase-generators/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kirimase-generators/expected.rows.json",
+    "variants": [
+      "generator header row",
+      "framework row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kirimase.generators for kirimase generator list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/open-source-labs/Svelvet",
+    "descriptor_id": "known.svelvet.nodes",
+    "run_id": "agentic.svelvet-nodes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/svelvet-nodes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/svelvet-nodes/expected.rows.json",
+    "variants": [
+      "node header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.svelvet.nodes for Svelvet node list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ravachol/kew",
+    "descriptor_id": "known.kew.tracks",
+    "run_id": "agentic.kew-tracks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kew-tracks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kew-tracks/expected.rows.json",
+    "variants": [
+      "track header row",
+      "artist row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kew.tracks for kew track list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

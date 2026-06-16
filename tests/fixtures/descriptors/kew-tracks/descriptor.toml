@@ -1,0 +1,10 @@
+id = "known.kew.tracks"
+name = "kew track list"
+priority = 50
+
+[matches]
+required_substrings = ["track\tartist","intro\tlocal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+generator	framework state
+crud	next ready
+trpc	next ready
+old	pages hidden

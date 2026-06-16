@@ -1,0 +1,4 @@
+track	artist state
+intro	local playing
+next	local queued
+old	remote skipped

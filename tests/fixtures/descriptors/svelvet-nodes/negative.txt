@@ -1,0 +1,2 @@
+node type state
+input source active

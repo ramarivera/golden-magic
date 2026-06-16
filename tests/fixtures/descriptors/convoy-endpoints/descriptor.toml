@@ -1,0 +1,10 @@
+id = "known.convoy.endpoints"
+name = "Convoy endpoint list"
+priority = 50
+
+[matches]
+required_substrings = ["endpoint\tstatus","webhook\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

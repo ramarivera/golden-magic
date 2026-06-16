@@ -1,0 +1,4 @@
+session	shell state
+build	zsh active
+logs	bash active
+old	fish closed

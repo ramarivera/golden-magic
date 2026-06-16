@@ -1,0 +1,10 @@
+id = "known.bagels.games"
+name = "Bagels game list"
+priority = 50
+
+[matches]
+required_substrings = ["game\tguess","round1\t123"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

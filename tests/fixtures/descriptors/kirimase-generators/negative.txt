@@ -1,0 +1,2 @@
+generator framework state
+crud next ready

@@ -1,0 +1,10 @@
+id = "known.gitu.branches"
+name = "gitu branch list"
+priority = 50
+
+[matches]
+required_substrings = ["branch\tremote","main\torigin"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

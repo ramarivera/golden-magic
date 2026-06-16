@@ -1,0 +1,4 @@
+node	type state
+input	source active
+output	sink active
+old	legacy hidden

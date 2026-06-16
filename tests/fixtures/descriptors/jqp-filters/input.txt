@@ -1,0 +1,4 @@
+filter	result state
+.items	array valid
+.name	string valid
+.old	null invalid

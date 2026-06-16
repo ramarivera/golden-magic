@@ -1,0 +1,4 @@
+branch	remote state
+main	origin clean
+feature	origin dirty
+old	upstream stale

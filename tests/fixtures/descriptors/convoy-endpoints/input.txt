@@ -1,0 +1,4 @@
+endpoint	status state
+webhook	active sending
+audit	active sending
+old	disabled paused

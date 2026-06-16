@@ -6606,5 +6606,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/aeneas-alignments",
     "analysis_notes": "Modeled aeneas alignment job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pythops/bluetui",
+    "descriptor_id": "known.bluetui.adapters",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bluetui-adapters",
+    "analysis_notes": "Modeled bluetui Bluetooth adapter output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sedwards2009/extraterm",
+    "descriptor_id": "known.extraterm.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/extraterm-sessions",
+    "analysis_notes": "Modeled Extraterm session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/frain-dev/convoy",
+    "descriptor_id": "known.convoy.endpoints",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/convoy-endpoints",
+    "analysis_notes": "Modeled Convoy endpoint output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/noahgorstein/jqp",
+    "descriptor_id": "known.jqp.filters",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jqp-filters",
+    "analysis_notes": "Modeled jqp interactive filter output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bradygaster/squad",
+    "descriptor_id": "known.squad.services",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/squad-services",
+    "analysis_notes": "Modeled Squad service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/EnhancedJax/Bagels",
+    "descriptor_id": "known.bagels.games",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/bagels-games",
+    "analysis_notes": "Modeled Bagels terminal game round output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/altsem/gitu",
+    "descriptor_id": "known.gitu.branches",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gitu-branches",
+    "analysis_notes": "Modeled gitu branch output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vercel/kirimase",
+    "descriptor_id": "known.kirimase.generators",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kirimase-generators",
+    "analysis_notes": "Modeled kirimase generator output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/open-source-labs/Svelvet",
+    "descriptor_id": "known.svelvet.nodes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/svelvet-nodes",
+    "analysis_notes": "Modeled Svelvet graph node output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ravachol/kew",
+    "descriptor_id": "known.kew.tracks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kew-tracks",
+    "analysis_notes": "Modeled kew terminal music track output with a generated executable-json parser plugin."
   }
 ]

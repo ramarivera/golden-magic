@@ -1,0 +1,10 @@
+id = "known.jqp.filters"
+name = "jqp filter list"
+priority = 50
+
+[matches]
+required_substrings = ["filter\tresult",".items\tarray"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+adapter address state
+hci0 00:11 up

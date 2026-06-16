@@ -1,0 +1,10 @@
+id = "known.squad.services"
+name = "Squad service list"
+priority = 50
+
+[matches]
+required_substrings = ["service\trole","api\tbackend"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
