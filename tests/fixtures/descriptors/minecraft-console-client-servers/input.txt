@@ -1,0 +1,4 @@
+server	status state
+lobby	online joined
+survival	online joined
+old	offline hidden

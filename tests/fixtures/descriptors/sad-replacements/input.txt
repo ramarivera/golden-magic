@@ -1,0 +1,4 @@
+file	matches state
+src/lib.rs	3 staged
+README.md	1 staged
+old.txt	0 hidden

@@ -1,0 +1,4 @@
+buffer	mode state
+main	rust open
+notes	markdown open
+old	text hidden

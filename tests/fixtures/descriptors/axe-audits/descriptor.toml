@@ -1,0 +1,10 @@
+id = "known.axe.audits"
+name = "AXe audit list"
+priority = 50
+
+[matches]
+required_substrings = ["audit\tresult","contrast\tpass"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.minecraft.console.client.servers"
+name = "Minecraft Console Client server list"
+priority = 50
+
+[matches]
+required_substrings = ["server\tstatus","lobby\tonline"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

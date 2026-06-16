@@ -1,0 +1,10 @@
+id = "known.taskwarrior.tui.tasks"
+name = "taskwarrior-tui task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tpriority","write\tH"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

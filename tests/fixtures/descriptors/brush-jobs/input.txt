@@ -1,0 +1,4 @@
+job	status state
+1	running foreground
+2	stopped background
+old	done hidden

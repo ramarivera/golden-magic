@@ -1,0 +1,10 @@
+id = "known.kulala.requests"
+name = "kulala.nvim request list"
+priority = 50
+
+[matches]
+required_substrings = ["request\tmethod","health\tGET"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

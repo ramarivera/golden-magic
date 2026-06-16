@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "model state"
+  },
+  {
+    "name": "chat",
+    "value": "llama active"
+  },
+  {
+    "name": "review",
+    "value": "llama active"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

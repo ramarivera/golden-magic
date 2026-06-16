@@ -1,0 +1,4 @@
+playlist	tracks state
+focus	12 available
+liked	200 available
+old	0 hidden

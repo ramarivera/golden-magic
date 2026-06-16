@@ -1,0 +1,10 @@
+id = "known.flow.buffers"
+name = "flow buffer list"
+priority = 50
+
+[matches]
+required_substrings = ["buffer\tmode","main\trust"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -20590,5 +20590,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/mistweaverco/kulala.nvim",
+    "descriptor_id": "known.kulala.requests",
+    "run_id": "agentic.kulala-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kulala-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kulala-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kulala.requests for kulala.nvim request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ggml-org/llama.vim",
+    "descriptor_id": "known.llama.vim.sessions",
+    "run_id": "agentic.llama-vim-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/llama-vim-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/llama-vim-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.llama.vim.sessions for llama.vim session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kdheepak/taskwarrior-tui",
+    "descriptor_id": "known.taskwarrior.tui.tasks",
+    "run_id": "agentic.taskwarrior-tui-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/taskwarrior-tui-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/taskwarrior-tui-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "priority row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.taskwarrior.tui.tasks for taskwarrior-tui task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/klaudiosinani/qoa",
+    "descriptor_id": "known.qoa.feeds",
+    "run_id": "agentic.qoa-feeds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/qoa-feeds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/qoa-feeds/expected.rows.json",
+    "variants": [
+      "feed header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.qoa.feeds for qoa feed list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/hnarayanan/shpotify",
+    "descriptor_id": "known.shpotify.playlists",
+    "run_id": "agentic.shpotify-playlists.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/shpotify-playlists/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/shpotify-playlists/expected.rows.json",
+    "variants": [
+      "playlist header row",
+      "tracks row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.shpotify.playlists for shpotify playlist list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/MCCTeam/Minecraft-Console-Client",
+    "descriptor_id": "known.minecraft.console.client.servers",
+    "run_id": "agentic.minecraft-console-client-servers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/minecraft-console-client-servers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/minecraft-console-client-servers/expected.rows.json",
+    "variants": [
+      "server header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.minecraft.console.client.servers for Minecraft Console Client server list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/neurocyte/flow",
+    "descriptor_id": "known.flow.buffers",
+    "run_id": "agentic.flow-buffers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/flow-buffers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/flow-buffers/expected.rows.json",
+    "variants": [
+      "buffer header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.flow.buffers for flow buffer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/reubeno/brush",
+    "descriptor_id": "known.brush.jobs",
+    "run_id": "agentic.brush-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/brush-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/brush-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.brush.jobs for brush job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cameroncooke/AXe",
+    "descriptor_id": "known.axe.audits",
+    "run_id": "agentic.axe-audits.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/axe-audits/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/axe-audits/expected.rows.json",
+    "variants": [
+      "audit header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.axe.audits for AXe audit list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ms-jpq/sad",
+    "descriptor_id": "known.sad.replacements",
+    "run_id": "agentic.sad-replacements.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/sad-replacements/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/sad-replacements/expected.rows.json",
+    "variants": [
+      "file header row",
+      "matches row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.sad.replacements for sad replacement list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

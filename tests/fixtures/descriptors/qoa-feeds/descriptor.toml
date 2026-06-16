@@ -1,0 +1,10 @@
+id = "known.qoa.feeds"
+name = "qoa feed list"
+priority = 50
+
+[matches]
+required_substrings = ["feed\tstatus","inbox\tfresh"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

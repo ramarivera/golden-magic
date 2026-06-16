@@ -8006,5 +8006,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/doit-tasks",
     "analysis_notes": "Modeled doit task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mistweaverco/kulala.nvim",
+    "descriptor_id": "known.kulala.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kulala-requests",
+    "analysis_notes": "Modeled kulala.nvim HTTP request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ggml-org/llama.vim",
+    "descriptor_id": "known.llama.vim.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/llama-vim-sessions",
+    "analysis_notes": "Modeled llama.vim session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kdheepak/taskwarrior-tui",
+    "descriptor_id": "known.taskwarrior.tui.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/taskwarrior-tui-tasks",
+    "analysis_notes": "Modeled taskwarrior-tui task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/klaudiosinani/qoa",
+    "descriptor_id": "known.qoa.feeds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/qoa-feeds",
+    "analysis_notes": "Modeled qoa feed output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/hnarayanan/shpotify",
+    "descriptor_id": "known.shpotify.playlists",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/shpotify-playlists",
+    "analysis_notes": "Modeled shpotify playlist output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MCCTeam/Minecraft-Console-Client",
+    "descriptor_id": "known.minecraft.console.client.servers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/minecraft-console-client-servers",
+    "analysis_notes": "Modeled Minecraft Console Client server output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/neurocyte/flow",
+    "descriptor_id": "known.flow.buffers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/flow-buffers",
+    "analysis_notes": "Modeled flow editor buffer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/reubeno/brush",
+    "descriptor_id": "known.brush.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/brush-jobs",
+    "analysis_notes": "Modeled brush shell job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cameroncooke/AXe",
+    "descriptor_id": "known.axe.audits",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/axe-audits",
+    "analysis_notes": "Modeled AXe accessibility audit output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ms-jpq/sad",
+    "descriptor_id": "known.sad.replacements",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/sad-replacements",
+    "analysis_notes": "Modeled sad search-and-replace output with a generated executable-json parser plugin."
   }
 ]

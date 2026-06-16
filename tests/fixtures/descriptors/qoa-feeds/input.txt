@@ -1,0 +1,4 @@
+feed	status state
+inbox	fresh synced
+archive	stale synced
+old	missing hidden

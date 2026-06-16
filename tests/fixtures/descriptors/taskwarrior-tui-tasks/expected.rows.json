@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "priority state"
+  },
+  {
+    "name": "write",
+    "value": "H pending"
+  },
+  {
+    "name": "review",
+    "value": "M pending"
+  },
+  {
+    "name": "old",
+    "value": "L done"
+  }
+]

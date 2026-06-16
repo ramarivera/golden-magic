@@ -1,0 +1,10 @@
+id = "known.llama.vim.sessions"
+name = "llama.vim session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tmodel","chat\tllama"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

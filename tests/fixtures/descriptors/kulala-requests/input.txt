@@ -1,0 +1,4 @@
+request	method state
+health	GET ready
+create	POST ready
+old	DELETE hidden
