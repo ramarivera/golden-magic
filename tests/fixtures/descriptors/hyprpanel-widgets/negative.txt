@@ -1,0 +1,2 @@
+widget position state
+clock right enabled

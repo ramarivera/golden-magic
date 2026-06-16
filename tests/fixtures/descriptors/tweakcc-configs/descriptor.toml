@@ -1,0 +1,10 @@
+id = "known.tweakcc.configs"
+name = "tweakcc config list"
+priority = 50
+
+[matches]
+required_substrings = ["config\tvalue","temperature\t0.2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+session	model state
+latest	gpt active
+review	codex active
+old	local archived

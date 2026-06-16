@@ -1,0 +1,10 @@
+id = "known.junest.roots"
+name = "junest root list"
+priority = 50
+
+[matches]
+required_substrings = ["root\tversion","default\tlatest"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -19690,5 +19690,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/oniony/TMSU",
+    "descriptor_id": "known.tmsu.tags",
+    "run_id": "agentic.tmsu-tags.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tmsu-tags/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tmsu-tags/expected.rows.json",
+    "variants": [
+      "tag header row",
+      "count row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tmsu.tags for TMSU tag list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Doriandarko/deepseek-engineer",
+    "descriptor_id": "known.deepseek-engineer.tasks",
+    "run_id": "agentic.deepseek-engineer-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/deepseek-engineer-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/deepseek-engineer-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.deepseek-engineer.tasks for deepseek-engineer task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/knowsuchagency/mcp2cli",
+    "descriptor_id": "known.mcp2cli.tools",
+    "run_id": "agentic.mcp2cli-tools.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mcp2cli-tools/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mcp2cli-tools/expected.rows.json",
+    "variants": [
+      "tool header row",
+      "args row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mcp2cli.tools for mcp2cli tool list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/astefanutti/kubebox",
+    "descriptor_id": "known.kubebox.pods",
+    "run_id": "agentic.kubebox-pods.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kubebox-pods/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kubebox-pods/expected.rows.json",
+    "variants": [
+      "pod header row",
+      "namespace row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kubebox.pods for kubebox pod list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sharkdp/vivid",
+    "descriptor_id": "known.vivid.themes",
+    "run_id": "agentic.vivid-themes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/vivid-themes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/vivid-themes/expected.rows.json",
+    "variants": [
+      "theme header row",
+      "colors row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.vivid.themes for vivid theme list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/fsquillace/junest",
+    "descriptor_id": "known.junest.roots",
+    "run_id": "agentic.junest-roots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/junest-roots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/junest-roots/expected.rows.json",
+    "variants": [
+      "root header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.junest.roots for junest root list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/livecycle/preevy",
+    "descriptor_id": "known.preevy.environments",
+    "run_id": "agentic.preevy-environments.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/preevy-environments/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/preevy-environments/expected.rows.json",
+    "variants": [
+      "environment header row",
+      "url row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.preevy.environments for preevy environment list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Jas-SinghFSU/HyprPanel",
+    "descriptor_id": "known.hyprpanel.widgets",
+    "run_id": "agentic.hyprpanel-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hyprpanel-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hyprpanel-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "position row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hyprpanel.widgets for HyprPanel widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dou-jiang/codex-console",
+    "descriptor_id": "known.codex-console.sessions",
+    "run_id": "agentic.codex-console-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/codex-console-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/codex-console-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.codex-console.sessions for codex-console session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Piebald-AI/tweakcc",
+    "descriptor_id": "known.tweakcc.configs",
+    "run_id": "agentic.tweakcc-configs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tweakcc-configs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tweakcc-configs/expected.rows.json",
+    "variants": [
+      "config header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tweakcc.configs for tweakcc config list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.kubebox.pods"
+name = "kubebox pod list"
+priority = 50
+
+[matches]
+required_substrings = ["pod\tnamespace","api-0\tdefault"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

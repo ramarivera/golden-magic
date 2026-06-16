@@ -1,0 +1,4 @@
+root	version state
+default	latest active
+ci	stable active
+old	legacy removed

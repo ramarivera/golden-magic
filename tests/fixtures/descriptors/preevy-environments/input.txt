@@ -1,0 +1,4 @@
+environment	url state
+pr-12	https://pr-12.test running
+pr-13	https://pr-13.test running
+old	https://old.test stopped

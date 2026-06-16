@@ -1,0 +1,4 @@
+pod	namespace state
+api-0	default running
+worker-0	jobs running
+old	kube-system hidden

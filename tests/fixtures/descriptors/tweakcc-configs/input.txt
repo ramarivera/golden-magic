@@ -1,0 +1,4 @@
+config	value state
+temperature	0.2 active
+model	sonnet active
+old	legacy disabled

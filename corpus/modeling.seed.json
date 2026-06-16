@@ -7656,5 +7656,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/reactime-snapshots",
     "analysis_notes": "Modeled Reactime snapshot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/oniony/TMSU",
+    "descriptor_id": "known.tmsu.tags",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tmsu-tags",
+    "analysis_notes": "Modeled TMSU tag output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Doriandarko/deepseek-engineer",
+    "descriptor_id": "known.deepseek-engineer.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/deepseek-engineer-tasks",
+    "analysis_notes": "Modeled deepseek-engineer task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/knowsuchagency/mcp2cli",
+    "descriptor_id": "known.mcp2cli.tools",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mcp2cli-tools",
+    "analysis_notes": "Modeled mcp2cli generated tool output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/astefanutti/kubebox",
+    "descriptor_id": "known.kubebox.pods",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kubebox-pods",
+    "analysis_notes": "Modeled kubebox pod output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sharkdp/vivid",
+    "descriptor_id": "known.vivid.themes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/vivid-themes",
+    "analysis_notes": "Modeled vivid theme output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/fsquillace/junest",
+    "descriptor_id": "known.junest.roots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/junest-roots",
+    "analysis_notes": "Modeled junest root output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/livecycle/preevy",
+    "descriptor_id": "known.preevy.environments",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/preevy-environments",
+    "analysis_notes": "Modeled preevy environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Jas-SinghFSU/HyprPanel",
+    "descriptor_id": "known.hyprpanel.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hyprpanel-widgets",
+    "analysis_notes": "Modeled HyprPanel widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dou-jiang/codex-console",
+    "descriptor_id": "known.codex-console.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/codex-console-sessions",
+    "analysis_notes": "Modeled codex-console session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Piebald-AI/tweakcc",
+    "descriptor_id": "known.tweakcc.configs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tweakcc-configs",
+    "analysis_notes": "Modeled tweakcc config output with a generated executable-json parser plugin."
   }
 ]

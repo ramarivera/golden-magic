@@ -1,0 +1,18 @@
+[
+  {
+    "name": "pod",
+    "value": "namespace state"
+  },
+  {
+    "name": "api-0",
+    "value": "default running"
+  },
+  {
+    "name": "worker-0",
+    "value": "jobs running"
+  },
+  {
+    "name": "old",
+    "value": "kube-system hidden"
+  }
+]

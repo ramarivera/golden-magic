@@ -1,0 +1,4 @@
+widget	position state
+clock	right enabled
+workspaces	left enabled
+old	center disabled

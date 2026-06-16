@@ -1,0 +1,10 @@
+id = "known.vivid.themes"
+name = "vivid theme list"
+priority = 50
+
+[matches]
+required_substrings = ["theme\tcolors","nord\t16"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

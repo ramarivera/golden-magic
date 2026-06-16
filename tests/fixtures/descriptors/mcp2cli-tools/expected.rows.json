@@ -1,0 +1,18 @@
+[
+  {
+    "name": "tool",
+    "value": "args state"
+  },
+  {
+    "name": "search",
+    "value": "2 exposed"
+  },
+  {
+    "name": "read",
+    "value": "1 exposed"
+  },
+  {
+    "name": "old",
+    "value": "0 hidden"
+  }
+]

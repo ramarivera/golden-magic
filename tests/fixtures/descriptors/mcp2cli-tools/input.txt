@@ -1,0 +1,4 @@
+tool	args state
+search	2 exposed
+read	1 exposed
+old	0 hidden
