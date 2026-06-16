@@ -1,0 +1,4 @@
+recording	status state
+demo	rendered gif
+intro	queued gif
+old	failed hidden

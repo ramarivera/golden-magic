@@ -23830,5 +23830,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/asciinema/agg",
+    "descriptor_id": "known.agg.recordings",
+    "run_id": "agentic.agg-recordings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/agg-recordings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/agg-recordings/expected.rows.json",
+    "variants": [
+      "recording header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.agg.recordings for agg recording list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/cropsly/ffmpeg-android",
+    "descriptor_id": "known.ffmpeg.android.builds",
+    "run_id": "agentic.ffmpeg-android-builds.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ffmpeg-android-builds/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ffmpeg-android-builds/expected.rows.json",
+    "variants": [
+      "build header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ffmpeg.android.builds for ffmpeg-android build list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/sapegin/mrm",
+    "descriptor_id": "known.mrm.tasks",
+    "run_id": "agentic.mrm-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mrm-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mrm-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mrm.tasks for mrm task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/SpartanJ/ecode",
+    "descriptor_id": "known.ecode.projects",
+    "run_id": "agentic.ecode-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ecode-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ecode-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ecode.projects for ecode project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/vladkens/macmon",
+    "descriptor_id": "known.macmon.metrics",
+    "run_id": "agentic.macmon-metrics.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/macmon-metrics/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/macmon-metrics/expected.rows.json",
+    "variants": [
+      "metric header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.macmon.metrics for macmon metric list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lorryjovens-hub/claude-code-rust",
+    "descriptor_id": "known.claude.code.rust.sessions",
+    "run_id": "agentic.claude-code-rust-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/claude-code-rust-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/claude-code-rust-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.claude.code.rust.sessions for claude-code-rust session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/tarkah/tickrs",
+    "descriptor_id": "known.tickrs.tickers",
+    "run_id": "agentic.tickrs-tickers.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tickrs-tickers/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tickrs-tickers/expected.rows.json",
+    "variants": [
+      "ticker header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tickrs.tickers for tickrs ticker list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/kimono-koans/httm",
+    "descriptor_id": "known.httm.snapshots",
+    "run_id": "agentic.httm-snapshots.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/httm-snapshots/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/httm-snapshots/expected.rows.json",
+    "variants": [
+      "snapshot header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.httm.snapshots for httm snapshot list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/isaacs/nave",
+    "descriptor_id": "known.nave.versions",
+    "run_id": "agentic.nave-versions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nave-versions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nave-versions/expected.rows.json",
+    "variants": [
+      "version header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nave.versions for nave version list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mssun/passforios",
+    "descriptor_id": "known.passforios.entries",
+    "run_id": "agentic.passforios-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/passforios-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/passforios-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.passforios.entries for passforios entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

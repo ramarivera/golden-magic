@@ -9266,5 +9266,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/openterm-windows",
     "analysis_notes": "Modeled openterm window output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/asciinema/agg",
+    "descriptor_id": "known.agg.recordings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/agg-recordings",
+    "analysis_notes": "Modeled agg recording output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cropsly/ffmpeg-android",
+    "descriptor_id": "known.ffmpeg.android.builds",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ffmpeg-android-builds",
+    "analysis_notes": "Modeled ffmpeg-android build output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sapegin/mrm",
+    "descriptor_id": "known.mrm.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mrm-tasks",
+    "analysis_notes": "Modeled mrm task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/SpartanJ/ecode",
+    "descriptor_id": "known.ecode.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ecode-projects",
+    "analysis_notes": "Modeled ecode project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/vladkens/macmon",
+    "descriptor_id": "known.macmon.metrics",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/macmon-metrics",
+    "analysis_notes": "Modeled macmon metric output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lorryjovens-hub/claude-code-rust",
+    "descriptor_id": "known.claude.code.rust.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/claude-code-rust-sessions",
+    "analysis_notes": "Modeled claude-code-rust session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/tarkah/tickrs",
+    "descriptor_id": "known.tickrs.tickers",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tickrs-tickers",
+    "analysis_notes": "Modeled tickrs ticker output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/kimono-koans/httm",
+    "descriptor_id": "known.httm.snapshots",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/httm-snapshots",
+    "analysis_notes": "Modeled httm snapshot output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/isaacs/nave",
+    "descriptor_id": "known.nave.versions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nave-versions",
+    "analysis_notes": "Modeled nave version output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mssun/passforios",
+    "descriptor_id": "known.passforios.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/passforios-entries",
+    "analysis_notes": "Modeled passforios entry output with a generated executable-json parser plugin."
   }
 ]

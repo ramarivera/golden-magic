@@ -1,0 +1,10 @@
+id = "known.ffmpeg.android.builds"
+name = "ffmpeg-android build list"
+priority = 50
+
+[matches]
+required_substrings = ["build\tstatus","arm64\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

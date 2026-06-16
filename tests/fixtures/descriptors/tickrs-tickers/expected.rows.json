@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ticker",
+    "value": "status state"
+  },
+  {
+    "name": "AAPL",
+    "value": "tracked market"
+  },
+  {
+    "name": "MSFT",
+    "value": "tracked market"
+  },
+  {
+    "name": "OLD",
+    "value": "removed hidden"
+  }
+]

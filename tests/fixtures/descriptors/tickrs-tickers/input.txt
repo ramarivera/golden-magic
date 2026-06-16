@@ -1,0 +1,4 @@
+ticker	status state
+AAPL	tracked market
+MSFT	tracked market
+OLD	removed hidden

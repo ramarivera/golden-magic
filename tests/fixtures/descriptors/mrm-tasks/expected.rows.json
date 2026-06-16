@@ -1,0 +1,18 @@
+[
+  {
+    "name": "task",
+    "value": "status state"
+  },
+  {
+    "name": "eslint",
+    "value": "ready config"
+  },
+  {
+    "name": "prettier",
+    "value": "ready config"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

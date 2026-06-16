@@ -1,0 +1,4 @@
+version	status state
+20	installed node
+18	installed node
+old	missing hidden

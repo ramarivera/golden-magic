@@ -1,0 +1,10 @@
+id = "known.nave.versions"
+name = "nave version list"
+priority = 50
+
+[matches]
+required_substrings = ["version\tstatus","20\tinstalled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

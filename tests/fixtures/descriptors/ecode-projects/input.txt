@@ -1,0 +1,4 @@
+project	status state
+game	open editor
+tool	open editor
+old	closed hidden

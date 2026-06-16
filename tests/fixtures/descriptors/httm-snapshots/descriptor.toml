@@ -1,0 +1,10 @@
+id = "known.httm.snapshots"
+name = "httm snapshot list"
+priority = 50
+
+[matches]
+required_substrings = ["snapshot\tstatus","home\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

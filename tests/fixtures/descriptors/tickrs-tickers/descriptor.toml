@@ -1,0 +1,10 @@
+id = "known.tickrs.tickers"
+name = "tickrs ticker list"
+priority = 50
+
+[matches]
+required_substrings = ["ticker\tstatus","AAPL\ttracked"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
