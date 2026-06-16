@@ -1,0 +1,10 @@
+id = "known.muxy.streams"
+name = "muxy stream list"
+priority = 50
+
+[matches]
+required_substrings = ["stream\tstatus","main\tlive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

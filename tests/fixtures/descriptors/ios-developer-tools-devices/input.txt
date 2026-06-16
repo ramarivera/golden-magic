@@ -1,0 +1,4 @@
+device	status state
+simulator	booted available
+iphone	connected available
+old	missing hidden

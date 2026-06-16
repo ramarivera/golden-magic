@@ -1,0 +1,10 @@
+id = "known.gollama.models"
+name = "gollama model list"
+priority = 50
+
+[matches]
+required_substrings = ["model\tstatus","llama3\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,4 @@
+item	size state
+cache	2G found
+logs	1G found
+old	0G hidden

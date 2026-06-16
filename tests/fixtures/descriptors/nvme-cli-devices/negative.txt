@@ -1,0 +1,2 @@
+device status state
+nvme0 online attached

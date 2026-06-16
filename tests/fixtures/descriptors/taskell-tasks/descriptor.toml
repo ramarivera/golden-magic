@@ -1,0 +1,10 @@
+id = "known.taskell.tasks"
+name = "taskell task list"
+priority = 50
+
+[matches]
+required_substrings = ["task\tstatus","write\tdone"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

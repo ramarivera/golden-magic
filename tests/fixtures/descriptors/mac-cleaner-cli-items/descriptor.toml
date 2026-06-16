@@ -1,0 +1,10 @@
+id = "known.mac.cleaner.cli.items"
+name = "mac-cleaner-cli item list"
+priority = 50
+
+[matches]
+required_substrings = ["item\tsize","cache\t2G"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

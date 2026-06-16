@@ -1,0 +1,4 @@
+device	status state
+nvme0	online attached
+nvme1	online attached
+old	offline hidden

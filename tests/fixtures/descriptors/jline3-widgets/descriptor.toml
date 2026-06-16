@@ -1,0 +1,10 @@
+id = "known.jline3.widgets"
+name = "jline3 widget list"
+priority = 50
+
+[matches]
+required_substrings = ["widget\tstatus","history\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

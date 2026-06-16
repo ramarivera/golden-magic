@@ -1,0 +1,10 @@
+id = "known.responsible.ai.toolbox.reports"
+name = "responsible-ai-toolbox report list"
+priority = 50
+
+[matches]
+required_substrings = ["report\tstatus","fairness\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

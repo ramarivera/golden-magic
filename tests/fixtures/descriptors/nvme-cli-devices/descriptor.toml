@@ -1,0 +1,10 @@
+id = "known.nvme.cli.devices"
+name = "nvme-cli device list"
+priority = 50
+
+[matches]
+required_substrings = ["device\tstatus","nvme0\tonline"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

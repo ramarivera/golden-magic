@@ -22570,5 +22570,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/sammcj/gollama",
+    "descriptor_id": "known.gollama.models",
+    "run_id": "agentic.gollama-models.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gollama-models/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gollama-models/expected.rows.json",
+    "variants": [
+      "model header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gollama.models for gollama model list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Hamza417/Inure",
+    "descriptor_id": "known.inure.packages",
+    "run_id": "agentic.inure-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inure-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inure-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.inure.packages for Inure package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/linux-nvme/nvme-cli",
+    "descriptor_id": "known.nvme.cli.devices",
+    "run_id": "agentic.nvme-cli-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nvme-cli-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nvme-cli-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nvme.cli.devices for nvme-cli device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/muxy-app/muxy",
+    "descriptor_id": "known.muxy.streams",
+    "run_id": "agentic.muxy-streams.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/muxy-streams/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/muxy-streams/expected.rows.json",
+    "variants": [
+      "stream header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.muxy.streams for muxy stream list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/guhcostan/mac-cleaner-cli",
+    "descriptor_id": "known.mac.cleaner.cli.items",
+    "run_id": "agentic.mac-cleaner-cli-items.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mac-cleaner-cli-items/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mac-cleaner-cli-items/expected.rows.json",
+    "variants": [
+      "item header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mac.cleaner.cli.items for mac-cleaner-cli item list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/iojw/socialscan",
+    "descriptor_id": "known.socialscan.results",
+    "run_id": "agentic.socialscan-results.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/socialscan-results/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/socialscan-results/expected.rows.json",
+    "variants": [
+      "site header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.socialscan.results for socialscan result list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/microsoft/responsible-ai-toolbox",
+    "descriptor_id": "known.responsible.ai.toolbox.reports",
+    "run_id": "agentic.responsible-ai-toolbox-reports.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/responsible-ai-toolbox-reports/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/responsible-ai-toolbox-reports/expected.rows.json",
+    "variants": [
+      "report header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.responsible.ai.toolbox.reports for responsible-ai-toolbox report list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jline/jline3",
+    "descriptor_id": "known.jline3.widgets",
+    "run_id": "agentic.jline3-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/jline3-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/jline3-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.jline3.widgets for jline3 widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/LeoMobileDeveloper/ios-developer-tools",
+    "descriptor_id": "known.ios.developer.tools.devices",
+    "run_id": "agentic.ios-developer-tools-devices.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ios-developer-tools-devices/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ios-developer-tools-devices/expected.rows.json",
+    "variants": [
+      "device header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ios.developer.tools.devices for ios-developer-tools device list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/smallhadroncollider/taskell",
+    "descriptor_id": "known.taskell.tasks",
+    "run_id": "agentic.taskell-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/taskell-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/taskell-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.taskell.tasks for taskell task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

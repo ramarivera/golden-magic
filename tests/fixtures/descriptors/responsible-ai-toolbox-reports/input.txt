@@ -1,0 +1,4 @@
+report	status state
+fairness	ready generated
+error	ready generated
+old	stale hidden

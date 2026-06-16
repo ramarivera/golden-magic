@@ -1,0 +1,2 @@
+model status state
+llama3 ready local

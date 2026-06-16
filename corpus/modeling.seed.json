@@ -8776,5 +8776,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/remote-redux-devtools-sessions",
     "analysis_notes": "Modeled remote-redux-devtools session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/sammcj/gollama",
+    "descriptor_id": "known.gollama.models",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gollama-models",
+    "analysis_notes": "Modeled gollama model output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Hamza417/Inure",
+    "descriptor_id": "known.inure.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inure-packages",
+    "analysis_notes": "Modeled Inure package output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/linux-nvme/nvme-cli",
+    "descriptor_id": "known.nvme.cli.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nvme-cli-devices",
+    "analysis_notes": "Modeled nvme-cli device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/muxy-app/muxy",
+    "descriptor_id": "known.muxy.streams",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/muxy-streams",
+    "analysis_notes": "Modeled muxy stream output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/guhcostan/mac-cleaner-cli",
+    "descriptor_id": "known.mac.cleaner.cli.items",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mac-cleaner-cli-items",
+    "analysis_notes": "Modeled mac-cleaner-cli item output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/iojw/socialscan",
+    "descriptor_id": "known.socialscan.results",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/socialscan-results",
+    "analysis_notes": "Modeled socialscan result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/microsoft/responsible-ai-toolbox",
+    "descriptor_id": "known.responsible.ai.toolbox.reports",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/responsible-ai-toolbox-reports",
+    "analysis_notes": "Modeled responsible-ai-toolbox report output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jline/jline3",
+    "descriptor_id": "known.jline3.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/jline3-widgets",
+    "analysis_notes": "Modeled jline3 widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/LeoMobileDeveloper/ios-developer-tools",
+    "descriptor_id": "known.ios.developer.tools.devices",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ios-developer-tools-devices",
+    "analysis_notes": "Modeled ios-developer-tools device output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/smallhadroncollider/taskell",
+    "descriptor_id": "known.taskell.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/taskell-tasks",
+    "analysis_notes": "Modeled taskell task output with a generated executable-json parser plugin."
   }
 ]

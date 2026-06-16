@@ -1,0 +1,2 @@
+item size state
+cache 2G found

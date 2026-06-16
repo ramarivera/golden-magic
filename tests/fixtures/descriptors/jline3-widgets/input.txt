@@ -1,0 +1,4 @@
+widget	status state
+history	ready builtin
+completion	ready builtin
+old	disabled hidden

@@ -1,0 +1,10 @@
+id = "known.inure.packages"
+name = "Inure package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tstatus","app.one\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

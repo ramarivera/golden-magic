@@ -1,0 +1,4 @@
+package	status state
+app.one	enabled installed
+app.two	disabled installed
+old.app	removed hidden

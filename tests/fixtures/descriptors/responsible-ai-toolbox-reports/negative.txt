@@ -1,0 +1,2 @@
+report status state
+fairness ready generated

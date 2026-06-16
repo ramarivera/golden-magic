@@ -1,0 +1,4 @@
+stream	status state
+main	live active
+backup	idle active
+old	offline hidden

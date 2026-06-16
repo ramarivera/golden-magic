@@ -1,0 +1,4 @@
+site	status state
+github	found checked
+twitter	missing checked
+old	unknown hidden

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "status state"
+  },
+  {
+    "name": "simulator",
+    "value": "booted available"
+  },
+  {
+    "name": "iphone",
+    "value": "connected available"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

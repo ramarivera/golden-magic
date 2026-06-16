@@ -1,0 +1,4 @@
+model	status state
+llama3	ready local
+mistral	ready local
+old	missing hidden

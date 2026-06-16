@@ -1,0 +1,18 @@
+[
+  {
+    "name": "device",
+    "value": "status state"
+  },
+  {
+    "name": "nvme0",
+    "value": "online attached"
+  },
+  {
+    "name": "nvme1",
+    "value": "online attached"
+  },
+  {
+    "name": "old",
+    "value": "offline hidden"
+  }
+]

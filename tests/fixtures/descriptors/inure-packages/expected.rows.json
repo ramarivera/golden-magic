@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "status state"
+  },
+  {
+    "name": "app.one",
+    "value": "enabled installed"
+  },
+  {
+    "name": "app.two",
+    "value": "disabled installed"
+  },
+  {
+    "name": "old.app",
+    "value": "removed hidden"
+  }
+]
