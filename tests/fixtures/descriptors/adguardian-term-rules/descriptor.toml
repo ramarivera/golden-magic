@@ -1,0 +1,10 @@
+id = "known.adguardian.term.rules"
+name = "AdGuardian-Term rule list"
+priority = 50
+
+[matches]
+required_substrings = ["rule\tstatus","ads\tblocked"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

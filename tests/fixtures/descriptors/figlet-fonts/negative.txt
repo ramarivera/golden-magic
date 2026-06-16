@@ -1,0 +1,2 @@
+font status state
+standard available ascii

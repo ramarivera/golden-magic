@@ -1,0 +1,4 @@
+image	status state
+logo.png	ready terminal
+photo.jpg	ready terminal
+old.gif	skipped hidden

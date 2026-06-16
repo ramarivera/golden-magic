@@ -1,0 +1,10 @@
+id = "known.figlet.fonts"
+name = "figlet font list"
+priority = 50
+
+[matches]
+required_substrings = ["font\tstatus","standard\tavailable"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

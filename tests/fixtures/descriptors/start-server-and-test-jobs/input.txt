@@ -1,0 +1,4 @@
+job	status state
+server	ready test
+browser	passed test
+old	failed hidden

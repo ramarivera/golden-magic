@@ -1,0 +1,2 @@
+image status state
+logo.png ready terminal

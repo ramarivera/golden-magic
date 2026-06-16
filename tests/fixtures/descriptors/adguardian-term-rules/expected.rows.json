@@ -1,0 +1,18 @@
+[
+  {
+    "name": "rule",
+    "value": "status state"
+  },
+  {
+    "name": "ads",
+    "value": "blocked dns"
+  },
+  {
+    "name": "trackers",
+    "value": "blocked dns"
+  },
+  {
+    "name": "old",
+    "value": "allowed hidden"
+  }
+]

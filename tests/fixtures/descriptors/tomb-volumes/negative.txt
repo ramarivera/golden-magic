@@ -1,0 +1,2 @@
+volume status state
+vault open crypto

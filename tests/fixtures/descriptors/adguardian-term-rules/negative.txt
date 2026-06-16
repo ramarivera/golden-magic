@@ -1,0 +1,2 @@
+rule status state
+ads blocked dns

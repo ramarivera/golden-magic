@@ -24550,5 +24550,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/klange/nyancat",
+    "descriptor_id": "known.nyancat.frames",
+    "run_id": "agentic.nyancat-frames.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nyancat-frames/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nyancat-frames/expected.rows.json",
+    "variants": [
+      "frame header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nyancat.frames for nyancat frame list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/AlisamTechnology/ATSCAN",
+    "descriptor_id": "known.atscan.targets",
+    "run_id": "agentic.atscan-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/atscan-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/atscan-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.atscan.targets for ATSCAN target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/lissy93/AdGuardian-Term",
+    "descriptor_id": "known.adguardian.term.rules",
+    "run_id": "agentic.adguardian-term-rules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/adguardian-term-rules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/adguardian-term-rules/expected.rows.json",
+    "variants": [
+      "rule header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.adguardian.term.rules for AdGuardian-Term rule list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bahmutov/start-server-and-test",
+    "descriptor_id": "known.start.server.and.test.jobs",
+    "run_id": "agentic.start-server-and-test-jobs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/start-server-and-test-jobs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/start-server-and-test-jobs/expected.rows.json",
+    "variants": [
+      "job header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.start.server.and.test.jobs for start-server-and-test job list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/grpc-ecosystem/grpc-health-probe",
+    "descriptor_id": "known.grpc.health.probe.targets",
+    "run_id": "agentic.grpc-health-probe-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/grpc-health-probe-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/grpc-health-probe-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.grpc.health.probe.targets for grpc-health-probe target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dyne/tomb",
+    "descriptor_id": "known.tomb.volumes",
+    "run_id": "agentic.tomb-volumes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tomb-volumes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tomb-volumes/expected.rows.json",
+    "variants": [
+      "volume header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tomb.volumes for tomb volume list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/xero/figlet-fonts",
+    "descriptor_id": "known.figlet.fonts",
+    "run_id": "agentic.figlet-fonts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/figlet-fonts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/figlet-fonts/expected.rows.json",
+    "variants": [
+      "font header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.figlet.fonts for figlet font list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/piotrmurach/tty-prompt",
+    "descriptor_id": "known.tty.prompt.questions",
+    "run_id": "agentic.tty-prompt-questions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tty-prompt-questions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tty-prompt-questions/expected.rows.json",
+    "variants": [
+      "question header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tty.prompt.questions for tty-prompt question list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nickola/web-console",
+    "descriptor_id": "known.web.console.sessions",
+    "run_id": "agentic.web-console-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/web-console-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/web-console-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.web.console.sessions for web-console session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/posva/catimg",
+    "descriptor_id": "known.catimg.images",
+    "run_id": "agentic.catimg-images.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/catimg-images/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/catimg-images/expected.rows.json",
+    "variants": [
+      "image header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.catimg.images for catimg image list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

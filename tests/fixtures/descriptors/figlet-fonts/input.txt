@@ -1,0 +1,4 @@
+font	status state
+standard	available ascii
+slant	available ascii
+old	missing hidden

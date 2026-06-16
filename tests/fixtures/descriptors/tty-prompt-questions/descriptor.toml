@@ -1,0 +1,10 @@
+id = "known.tty.prompt.questions"
+name = "tty-prompt question list"
+priority = 50
+
+[matches]
+required_substrings = ["question\tstatus","confirm\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

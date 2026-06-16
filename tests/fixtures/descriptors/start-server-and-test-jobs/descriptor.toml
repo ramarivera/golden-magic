@@ -1,0 +1,10 @@
+id = "known.start.server.and.test.jobs"
+name = "start-server-and-test job list"
+priority = 50
+
+[matches]
+required_substrings = ["job\tstatus","server\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

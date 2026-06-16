@@ -1,0 +1,4 @@
+volume	status state
+vault	open crypto
+backup	closed crypto
+old	missing hidden

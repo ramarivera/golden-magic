@@ -1,0 +1,10 @@
+id = "known.grpc.health.probe.targets"
+name = "grpc-health-probe target list"
+priority = 50
+
+[matches]
+required_substrings = ["target\tstatus","localhost:50051\tserving"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

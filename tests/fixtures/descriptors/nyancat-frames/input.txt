@@ -1,0 +1,4 @@
+frame	status state
+rainbow	ready terminal
+star	ready terminal
+old	disabled hidden

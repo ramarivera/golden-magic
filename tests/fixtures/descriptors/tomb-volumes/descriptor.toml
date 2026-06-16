@@ -1,0 +1,10 @@
+id = "known.tomb.volumes"
+name = "tomb volume list"
+priority = 50
+
+[matches]
+required_substrings = ["volume\tstatus","vault\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

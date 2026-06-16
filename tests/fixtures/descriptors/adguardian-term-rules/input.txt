@@ -1,0 +1,4 @@
+rule	status state
+ads	blocked dns
+trackers	blocked dns
+old	allowed hidden

@@ -9546,5 +9546,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/rackpeek-racks",
     "analysis_notes": "Modeled RackPeek rack output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/klange/nyancat",
+    "descriptor_id": "known.nyancat.frames",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nyancat-frames",
+    "analysis_notes": "Modeled nyancat frame output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/AlisamTechnology/ATSCAN",
+    "descriptor_id": "known.atscan.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/atscan-targets",
+    "analysis_notes": "Modeled ATSCAN target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/lissy93/AdGuardian-Term",
+    "descriptor_id": "known.adguardian.term.rules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/adguardian-term-rules",
+    "analysis_notes": "Modeled AdGuardian-Term rule output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bahmutov/start-server-and-test",
+    "descriptor_id": "known.start.server.and.test.jobs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/start-server-and-test-jobs",
+    "analysis_notes": "Modeled start-server-and-test job output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/grpc-ecosystem/grpc-health-probe",
+    "descriptor_id": "known.grpc.health.probe.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/grpc-health-probe-targets",
+    "analysis_notes": "Modeled grpc-health-probe target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dyne/tomb",
+    "descriptor_id": "known.tomb.volumes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tomb-volumes",
+    "analysis_notes": "Modeled tomb volume output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/xero/figlet-fonts",
+    "descriptor_id": "known.figlet.fonts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/figlet-fonts",
+    "analysis_notes": "Modeled figlet font output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/piotrmurach/tty-prompt",
+    "descriptor_id": "known.tty.prompt.questions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tty-prompt-questions",
+    "analysis_notes": "Modeled tty-prompt question output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nickola/web-console",
+    "descriptor_id": "known.web.console.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/web-console-sessions",
+    "analysis_notes": "Modeled web-console session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/posva/catimg",
+    "descriptor_id": "known.catimg.images",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/catimg-images",
+    "analysis_notes": "Modeled catimg image output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "image",
+    "value": "status state"
+  },
+  {
+    "name": "logo.png",
+    "value": "ready terminal"
+  },
+  {
+    "name": "photo.jpg",
+    "value": "ready terminal"
+  },
+  {
+    "name": "old.gif",
+    "value": "skipped hidden"
+  }
+]

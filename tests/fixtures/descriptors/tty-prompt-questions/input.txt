@@ -1,0 +1,4 @@
+question	status state
+confirm	ready prompt
+select	ready prompt
+old	disabled hidden

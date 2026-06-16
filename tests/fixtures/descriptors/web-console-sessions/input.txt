@@ -1,0 +1,4 @@
+session	status state
+admin	active web
+guest	idle web
+old	closed hidden
