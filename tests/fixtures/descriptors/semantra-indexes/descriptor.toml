@@ -1,0 +1,10 @@
+id = "known.semantra.indexes"
+name = "Semantra index list"
+priority = 50
+
+[matches]
+required_substrings = ["index\tdocuments","notes\t120"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

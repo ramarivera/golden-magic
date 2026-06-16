@@ -1,0 +1,4 @@
+path	rank state
+/work	10 recent
+/tmp	3 recent
+/old	1 stale

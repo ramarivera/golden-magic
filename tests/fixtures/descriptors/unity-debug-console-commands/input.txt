@@ -1,0 +1,4 @@
+command	arity state
+teleport	3 registered
+godmode	1 registered
+old	0 disabled

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "check",
+    "value": "latency state"
+  },
+  {
+    "name": "home",
+    "value": "20 ok"
+  },
+  {
+    "name": "api",
+    "value": "80 ok"
+  },
+  {
+    "name": "old",
+    "value": "999 failed"
+  }
+]

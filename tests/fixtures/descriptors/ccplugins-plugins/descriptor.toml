@@ -1,0 +1,10 @@
+id = "known.ccplugins.plugins"
+name = "CCPlugins plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tkind","logger\ttool"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

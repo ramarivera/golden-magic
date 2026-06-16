@@ -1,0 +1,10 @@
+id = "known.pspg.queries"
+name = "pspg query list"
+priority = 50
+
+[matches]
+required_substrings = ["query\trows","select\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

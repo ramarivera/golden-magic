@@ -1,0 +1,4 @@
+variant	weight state
+regular	400 installed
+bold	700 installed
+old	300 removed

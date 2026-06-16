@@ -1,0 +1,4 @@
+host	profile state
+laptop	work synced
+mini	home synced
+old	legacy archived

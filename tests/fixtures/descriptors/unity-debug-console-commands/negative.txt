@@ -1,0 +1,2 @@
+command arity state
+teleport 3 registered

@@ -1,0 +1,4 @@
+plugin	kind state
+logger	tool enabled
+review	agent enabled
+old	legacy disabled

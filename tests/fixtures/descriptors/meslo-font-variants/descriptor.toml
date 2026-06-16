@@ -1,0 +1,10 @@
+id = "known.meslo-font.variants"
+name = "Meslo Font variant list"
+priority = 50
+
+[matches]
+required_substrings = ["variant\tweight","regular\t400"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.driesvints-dotfiles.hosts"
+name = "driesvints dotfiles host list"
+priority = 50
+
+[matches]
+required_substrings = ["host\tprofile","laptop\twork"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

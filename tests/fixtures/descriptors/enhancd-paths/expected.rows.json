@@ -1,0 +1,18 @@
+[
+  {
+    "name": "path",
+    "value": "rank state"
+  },
+  {
+    "name": "/work",
+    "value": "10 recent"
+  },
+  {
+    "name": "/tmp",
+    "value": "3 recent"
+  },
+  {
+    "name": "/old",
+    "value": "1 stale"
+  }
+]

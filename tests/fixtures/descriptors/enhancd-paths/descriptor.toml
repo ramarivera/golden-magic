@@ -1,0 +1,10 @@
+id = "known.enhancd.paths"
+name = "enhancd path list"
+priority = 50
+
+[matches]
+required_substrings = ["path\trank","/work\t10"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

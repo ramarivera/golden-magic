@@ -1,0 +1,4 @@
+index	documents state
+notes	120 ready
+books	45 ready
+old	0 stale

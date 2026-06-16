@@ -1,0 +1,4 @@
+check	latency state
+home	20 ok
+api	80 ok
+old	999 failed

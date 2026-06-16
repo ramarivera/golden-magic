@@ -1,0 +1,4 @@
+slide	title state
+1	Intro ready
+2	Demo ready
+old	Draft hidden

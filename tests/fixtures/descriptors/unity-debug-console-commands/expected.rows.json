@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "arity state"
+  },
+  {
+    "name": "teleport",
+    "value": "3 registered"
+  },
+  {
+    "name": "godmode",
+    "value": "1 registered"
+  },
+  {
+    "name": "old",
+    "value": "0 disabled"
+  }
+]

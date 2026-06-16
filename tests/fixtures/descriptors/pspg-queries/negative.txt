@@ -1,0 +1,2 @@
+query rows state
+select 42 displayed

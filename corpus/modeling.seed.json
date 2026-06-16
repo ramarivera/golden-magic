@@ -6746,5 +6746,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/piston-runtimes",
     "analysis_notes": "Modeled Piston runtime output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pod4g/hiper",
+    "descriptor_id": "known.hiper.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/hiper-checks",
+    "analysis_notes": "Modeled hiper network check output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jaspervdj/patat",
+    "descriptor_id": "known.patat.slides",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/patat-slides",
+    "analysis_notes": "Modeled patat terminal presentation slide output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/andreberg/Meslo-Font",
+    "descriptor_id": "known.meslo-font.variants",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/meslo-font-variants",
+    "analysis_notes": "Modeled Meslo Font variant output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/notlikeDev/CCPlugins",
+    "descriptor_id": "known.ccplugins.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/ccplugins-plugins",
+    "analysis_notes": "Modeled CCPlugins plugin registry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/okbob/pspg",
+    "descriptor_id": "known.pspg.queries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pspg-queries",
+    "analysis_notes": "Modeled pspg query result output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/driesvints/dotfiles",
+    "descriptor_id": "known.driesvints-dotfiles.hosts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/driesvints-dotfiles-hosts",
+    "analysis_notes": "Modeled dotfiles host profile output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/freedmand/semantra",
+    "descriptor_id": "known.semantra.indexes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/semantra-indexes",
+    "analysis_notes": "Modeled Semantra document index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/babarot/enhancd",
+    "descriptor_id": "known.enhancd.paths",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/enhancd-paths",
+    "analysis_notes": "Modeled enhancd directory ranking output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gobackup/gobackup",
+    "descriptor_id": "known.gobackup.plans",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gobackup-plans",
+    "analysis_notes": "Modeled GoBackup backup plan output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/yasirkula/UnityIngameDebugConsole",
+    "descriptor_id": "known.unity-debug-console.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/unity-debug-console-commands",
+    "analysis_notes": "Modeled Unity Ingame Debug Console command output with a generated executable-json parser plugin."
   }
 ]

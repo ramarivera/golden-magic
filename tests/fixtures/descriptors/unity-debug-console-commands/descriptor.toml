@@ -1,0 +1,10 @@
+id = "known.unity-debug-console.commands"
+name = "Unity Ingame Debug Console command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tarity","teleport\t3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

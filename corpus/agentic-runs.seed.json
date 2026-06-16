@@ -17350,5 +17350,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/pod4g/hiper",
+    "descriptor_id": "known.hiper.checks",
+    "run_id": "agentic.hiper-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/hiper-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/hiper-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "latency row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.hiper.checks for hiper check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jaspervdj/patat",
+    "descriptor_id": "known.patat.slides",
+    "run_id": "agentic.patat-slides.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/patat-slides/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/patat-slides/expected.rows.json",
+    "variants": [
+      "slide header row",
+      "title row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.patat.slides for patat slide list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/andreberg/Meslo-Font",
+    "descriptor_id": "known.meslo-font.variants",
+    "run_id": "agentic.meslo-font-variants.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/meslo-font-variants/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/meslo-font-variants/expected.rows.json",
+    "variants": [
+      "variant header row",
+      "weight row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.meslo-font.variants for Meslo Font variant list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/notlikeDev/CCPlugins",
+    "descriptor_id": "known.ccplugins.plugins",
+    "run_id": "agentic.ccplugins-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/ccplugins-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/ccplugins-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.ccplugins.plugins for CCPlugins plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/okbob/pspg",
+    "descriptor_id": "known.pspg.queries",
+    "run_id": "agentic.pspg-queries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pspg-queries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pspg-queries/expected.rows.json",
+    "variants": [
+      "query header row",
+      "rows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pspg.queries for pspg query list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/driesvints/dotfiles",
+    "descriptor_id": "known.driesvints-dotfiles.hosts",
+    "run_id": "agentic.driesvints-dotfiles-hosts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/driesvints-dotfiles-hosts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/driesvints-dotfiles-hosts/expected.rows.json",
+    "variants": [
+      "host header row",
+      "profile row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.driesvints-dotfiles.hosts for driesvints dotfiles host list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/freedmand/semantra",
+    "descriptor_id": "known.semantra.indexes",
+    "run_id": "agentic.semantra-indexes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/semantra-indexes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/semantra-indexes/expected.rows.json",
+    "variants": [
+      "index header row",
+      "documents row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.semantra.indexes for Semantra index list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/babarot/enhancd",
+    "descriptor_id": "known.enhancd.paths",
+    "run_id": "agentic.enhancd-paths.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/enhancd-paths/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/enhancd-paths/expected.rows.json",
+    "variants": [
+      "path header row",
+      "rank row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.enhancd.paths for enhancd path list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/gobackup/gobackup",
+    "descriptor_id": "known.gobackup.plans",
+    "run_id": "agentic.gobackup-plans.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gobackup-plans/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gobackup-plans/expected.rows.json",
+    "variants": [
+      "plan header row",
+      "target row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gobackup.plans for GoBackup plan list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/yasirkula/UnityIngameDebugConsole",
+    "descriptor_id": "known.unity-debug-console.commands",
+    "run_id": "agentic.unity-debug-console-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/unity-debug-console-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/unity-debug-console-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "arity row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.unity-debug-console.commands for Unity Ingame Debug Console command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,4 @@
+plan	target state
+daily	s3 scheduled
+weekly	local scheduled
+old	tape disabled

@@ -1,0 +1,10 @@
+id = "known.gobackup.plans"
+name = "GoBackup plan list"
+priority = 50
+
+[matches]
+required_substrings = ["plan\ttarget","daily\ts3"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

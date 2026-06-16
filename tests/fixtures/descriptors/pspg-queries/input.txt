@@ -1,0 +1,4 @@
+query	rows state
+select	42 displayed
+explain	8 displayed
+old	0 hidden
