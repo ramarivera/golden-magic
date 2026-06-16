@@ -1,0 +1,4 @@
+prompt	kind state
+name	text ready
+choice	select ready
+old	legacy hidden

@@ -17890,5 +17890,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/gnome-terminator/terminator",
+    "descriptor_id": "known.terminator.layouts",
+    "run_id": "agentic.terminator-layouts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminator-layouts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminator-layouts/expected.rows.json",
+    "variants": [
+      "layout header row",
+      "panes row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminator.layouts for Terminator layout list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/webpack/webpack-cli",
+    "descriptor_id": "known.webpack-cli.commands",
+    "run_id": "agentic.webpack-cli-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/webpack-cli-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/webpack-cli-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.webpack-cli.commands for webpack-cli command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pickhardt/betty",
+    "descriptor_id": "known.betty.commands",
+    "run_id": "agentic.betty-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/betty-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/betty-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "intent row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.betty.commands for Betty command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/npiv/chatblade",
+    "descriptor_id": "known.chatblade.chats",
+    "run_id": "agentic.chatblade-chats.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/chatblade-chats/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/chatblade-chats/expected.rows.json",
+    "variants": [
+      "chat header row",
+      "model row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.chatblade.chats for chatblade chat list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/firecamp-dev/firecamp",
+    "descriptor_id": "known.firecamp.requests",
+    "run_id": "agentic.firecamp-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/firecamp-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/firecamp-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "method row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.firecamp.requests for Firecamp request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/megastep/makeself",
+    "descriptor_id": "known.makeself.archives",
+    "run_id": "agentic.makeself-archives.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/makeself-archives/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/makeself-archives/expected.rows.json",
+    "variants": [
+      "archive header row",
+      "size row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.makeself.archives for makeself archive list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/agent-of-empires/agent-of-empires",
+    "descriptor_id": "known.agent-of-empires.agents",
+    "run_id": "agentic.agent-of-empires-agents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/agent-of-empires-agents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/agent-of-empires-agents/expected.rows.json",
+    "variants": [
+      "agent header row",
+      "role row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.agent-of-empires.agents for Agent of Empires agent list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mikaelmello/inquire",
+    "descriptor_id": "known.inquire.prompts",
+    "run_id": "agentic.inquire-prompts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/inquire-prompts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/inquire-prompts/expected.rows.json",
+    "variants": [
+      "prompt header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.inquire.prompts for inquire prompt list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/solidiquis/erdtree",
+    "descriptor_id": "known.erdtree.entries",
+    "run_id": "agentic.erdtree-entries.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/erdtree-entries/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/erdtree-entries/expected.rows.json",
+    "variants": [
+      "entry header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.erdtree.entries for erdtree entry list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/joouha/euporie",
+    "descriptor_id": "known.euporie.notebooks",
+    "run_id": "agentic.euporie-notebooks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/euporie-notebooks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/euporie-notebooks/expected.rows.json",
+    "variants": [
+      "notebook header row",
+      "kernel row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.euporie.notebooks for euporie notebook list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

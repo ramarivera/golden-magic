@@ -1,0 +1,4 @@
+command	mode state
+build	production ready
+serve	development ready
+old	legacy hidden

@@ -1,0 +1,10 @@
+id = "known.makeself.archives"
+name = "makeself archive list"
+priority = 50
+
+[matches]
+required_substrings = ["archive\tsize","installer.run\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

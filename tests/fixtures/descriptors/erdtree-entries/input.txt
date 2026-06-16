@@ -1,0 +1,4 @@
+entry	kind state
+src	dir visible
+main.rs	file visible
+old	file hidden

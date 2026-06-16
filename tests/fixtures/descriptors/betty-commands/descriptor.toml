@@ -1,0 +1,10 @@
+id = "known.betty.commands"
+name = "Betty command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tintent","find\tsearch"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

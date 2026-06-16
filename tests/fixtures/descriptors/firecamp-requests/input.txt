@@ -1,0 +1,4 @@
+request	method state
+users	GET ready
+login	POST ready
+old	DELETE disabled

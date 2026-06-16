@@ -6956,5 +6956,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/mprocs-processes",
     "analysis_notes": "Modeled mprocs process output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gnome-terminator/terminator",
+    "descriptor_id": "known.terminator.layouts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminator-layouts",
+    "analysis_notes": "Modeled Terminator terminal layout output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/webpack/webpack-cli",
+    "descriptor_id": "known.webpack-cli.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/webpack-cli-commands",
+    "analysis_notes": "Modeled webpack-cli command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pickhardt/betty",
+    "descriptor_id": "known.betty.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/betty-commands",
+    "analysis_notes": "Modeled Betty natural-language command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/npiv/chatblade",
+    "descriptor_id": "known.chatblade.chats",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/chatblade-chats",
+    "analysis_notes": "Modeled chatblade chat session output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/firecamp-dev/firecamp",
+    "descriptor_id": "known.firecamp.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/firecamp-requests",
+    "analysis_notes": "Modeled Firecamp API request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/megastep/makeself",
+    "descriptor_id": "known.makeself.archives",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/makeself-archives",
+    "analysis_notes": "Modeled makeself archive output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/agent-of-empires/agent-of-empires",
+    "descriptor_id": "known.agent-of-empires.agents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/agent-of-empires-agents",
+    "analysis_notes": "Modeled Agent of Empires agent output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mikaelmello/inquire",
+    "descriptor_id": "known.inquire.prompts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/inquire-prompts",
+    "analysis_notes": "Modeled inquire prompt output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/solidiquis/erdtree",
+    "descriptor_id": "known.erdtree.entries",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/erdtree-entries",
+    "analysis_notes": "Modeled erdtree file tree output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/joouha/euporie",
+    "descriptor_id": "known.euporie.notebooks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/euporie-notebooks",
+    "analysis_notes": "Modeled euporie notebook output with a generated executable-json parser plugin."
   }
 ]

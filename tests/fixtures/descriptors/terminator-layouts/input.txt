@@ -1,0 +1,4 @@
+layout	panes state
+default	2 active
+ops	4 saved
+old	1 hidden

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "chat",
+    "value": "model state"
+  },
+  {
+    "name": "default",
+    "value": "gpt active"
+  },
+  {
+    "name": "review",
+    "value": "claude active"
+  },
+  {
+    "name": "old",
+    "value": "legacy archived"
+  }
+]

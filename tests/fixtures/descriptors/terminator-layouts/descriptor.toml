@@ -1,0 +1,10 @@
+id = "known.terminator.layouts"
+name = "Terminator layout list"
+priority = 50
+
+[matches]
+required_substrings = ["layout\tpanes","default\t2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,2 @@
+layout panes state
+default 2 active

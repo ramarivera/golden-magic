@@ -1,0 +1,2 @@
+entry kind state
+src dir visible

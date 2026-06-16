@@ -1,0 +1,10 @@
+id = "known.agent-of-empires.agents"
+name = "Agent of Empires agent list"
+priority = 50
+
+[matches]
+required_substrings = ["agent\trole","scout\texplore"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

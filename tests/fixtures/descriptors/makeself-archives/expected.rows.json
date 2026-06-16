@@ -1,0 +1,18 @@
+[
+  {
+    "name": "archive",
+    "value": "size state"
+  },
+  {
+    "name": "installer.run",
+    "value": "42 built"
+  },
+  {
+    "name": "patch.run",
+    "value": "8 built"
+  },
+  {
+    "name": "old.run",
+    "value": "1 stale"
+  }
+]

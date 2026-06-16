@@ -1,0 +1,4 @@
+notebook	kernel state
+demo.ipynb	python open
+analysis.ipynb	python open
+old.ipynb	bash closed

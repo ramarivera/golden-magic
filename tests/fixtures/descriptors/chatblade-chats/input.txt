@@ -1,0 +1,4 @@
+chat	model state
+default	gpt active
+review	claude active
+old	legacy archived

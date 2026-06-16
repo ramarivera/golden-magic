@@ -1,0 +1,2 @@
+prompt kind state
+name text ready

@@ -1,0 +1,10 @@
+id = "known.webpack-cli.commands"
+name = "webpack-cli command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tmode","build\tproduction"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

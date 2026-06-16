@@ -1,0 +1,4 @@
+archive	size state
+installer.run	42 built
+patch.run	8 built
+old.run	1 stale

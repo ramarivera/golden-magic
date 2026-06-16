@@ -1,0 +1,10 @@
+id = "known.erdtree.entries"
+name = "erdtree entry list"
+priority = 50
+
+[matches]
+required_substrings = ["entry\tkind","src\tdir"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

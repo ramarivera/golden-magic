@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "mode state"
+  },
+  {
+    "name": "build",
+    "value": "production ready"
+  },
+  {
+    "name": "serve",
+    "value": "development ready"
+  },
+  {
+    "name": "old",
+    "value": "legacy hidden"
+  }
+]

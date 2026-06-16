@@ -1,0 +1,10 @@
+id = "known.euporie.notebooks"
+name = "euporie notebook list"
+priority = 50
+
+[matches]
+required_substrings = ["notebook\tkernel","demo.ipynb\tpython"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

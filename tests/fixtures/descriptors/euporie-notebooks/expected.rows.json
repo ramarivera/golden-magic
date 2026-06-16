@@ -1,0 +1,18 @@
+[
+  {
+    "name": "notebook",
+    "value": "kernel state"
+  },
+  {
+    "name": "demo.ipynb",
+    "value": "python open"
+  },
+  {
+    "name": "analysis.ipynb",
+    "value": "python open"
+  },
+  {
+    "name": "old.ipynb",
+    "value": "bash closed"
+  }
+]

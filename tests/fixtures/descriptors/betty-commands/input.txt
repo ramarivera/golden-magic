@@ -1,0 +1,4 @@
+command	intent state
+find	search available
+open	launch available
+old	legacy disabled
