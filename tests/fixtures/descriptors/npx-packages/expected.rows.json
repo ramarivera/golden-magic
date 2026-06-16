@@ -1,0 +1,18 @@
+[
+  {
+    "name": "package",
+    "value": "version state"
+  },
+  {
+    "name": "create-app",
+    "value": "latest resolved"
+  },
+  {
+    "name": "serve",
+    "value": "14 resolved"
+  },
+  {
+    "name": "old",
+    "value": "1 deprecated"
+  }
+]

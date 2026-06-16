@@ -1,0 +1,4 @@
+panel	path state
+left	/home active
+right	/tmp active
+old	/root hidden

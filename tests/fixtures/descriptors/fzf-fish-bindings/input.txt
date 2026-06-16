@@ -1,0 +1,4 @@
+binding	action state
+ctrl-r	history enabled
+ctrl-v	variables enabled
+old	files disabled

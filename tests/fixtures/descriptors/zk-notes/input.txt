@@ -1,0 +1,4 @@
+note	tags state
+daily	journal indexed
+idea	project indexed
+old	archive hidden

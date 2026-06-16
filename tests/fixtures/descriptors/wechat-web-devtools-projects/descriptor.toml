@@ -1,0 +1,10 @@
+id = "known.wechat-web-devtools.projects"
+name = "wechat_web_devtools project list"
+priority = 50
+
+[matches]
+required_substrings = ["project\tappid","demo\twx123"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

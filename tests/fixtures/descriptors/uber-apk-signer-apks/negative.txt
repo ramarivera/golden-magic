@@ -1,0 +1,2 @@
+apk signature state
+app.apk v2 signed

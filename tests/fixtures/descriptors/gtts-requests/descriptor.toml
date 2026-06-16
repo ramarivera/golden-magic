@@ -1,0 +1,10 @@
+id = "known.gtts.requests"
+name = "gTTS request list"
+priority = 50
+
+[matches]
+required_substrings = ["request\tlanguage","hello\ten"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

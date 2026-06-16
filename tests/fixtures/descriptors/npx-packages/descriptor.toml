@@ -1,0 +1,10 @@
+id = "known.npx.packages"
+name = "npx package list"
+priority = 50
+
+[matches]
+required_substrings = ["package\tversion","create-app\tlatest"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

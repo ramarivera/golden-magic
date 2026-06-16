@@ -1,0 +1,2 @@
+module kind state
+battery status enabled

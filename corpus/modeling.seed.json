@@ -6886,5 +6886,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/android-password-store-entries",
     "analysis_notes": "Modeled Android Password Store entry output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/cytle/wechat_web_devtools",
+    "descriptor_id": "known.wechat-web-devtools.projects",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/wechat-web-devtools-projects",
+    "analysis_notes": "Modeled wechat_web_devtools project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bczsalba/pytermgui",
+    "descriptor_id": "known.pytermgui.widgets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pytermgui-widgets",
+    "analysis_notes": "Modeled pytermgui widget output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zk-org/zk",
+    "descriptor_id": "known.zk.notes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/zk-notes",
+    "analysis_notes": "Modeled zk note list output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/patrickfav/uber-apk-signer",
+    "descriptor_id": "known.uber-apk-signer.apks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/uber-apk-signer-apks",
+    "analysis_notes": "Modeled uber-apk-signer signing output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/MidnightCommander/mc-old",
+    "descriptor_id": "known.midnight-commander.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/midnight-commander-panels",
+    "analysis_notes": "Modeled Midnight Commander panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/PatrickF1/fzf.fish",
+    "descriptor_id": "known.fzf-fish.bindings",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/fzf-fish-bindings",
+    "analysis_notes": "Modeled fzf.fish key binding output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/polybar/polybar-scripts",
+    "descriptor_id": "known.polybar-scripts.modules",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/polybar-scripts-modules",
+    "analysis_notes": "Modeled polybar-scripts module output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pndurette/gTTS",
+    "descriptor_id": "known.gtts.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/gtts-requests",
+    "analysis_notes": "Modeled gTTS synthesis request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zkat/npx",
+    "descriptor_id": "known.npx.packages",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/npx-packages",
+    "analysis_notes": "Modeled npx package resolution output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/pvolok/mprocs",
+    "descriptor_id": "known.mprocs.processes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/mprocs-processes",
+    "analysis_notes": "Modeled mprocs process output with a generated executable-json parser plugin."
   }
 ]

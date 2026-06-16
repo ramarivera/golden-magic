@@ -17710,5 +17710,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/cytle/wechat_web_devtools",
+    "descriptor_id": "known.wechat-web-devtools.projects",
+    "run_id": "agentic.wechat-web-devtools-projects.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/wechat-web-devtools-projects/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/wechat-web-devtools-projects/expected.rows.json",
+    "variants": [
+      "project header row",
+      "appid row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.wechat-web-devtools.projects for wechat_web_devtools project list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bczsalba/pytermgui",
+    "descriptor_id": "known.pytermgui.widgets",
+    "run_id": "agentic.pytermgui-widgets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pytermgui-widgets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pytermgui-widgets/expected.rows.json",
+    "variants": [
+      "widget header row",
+      "role row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pytermgui.widgets for pytermgui widget list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zk-org/zk",
+    "descriptor_id": "known.zk.notes",
+    "run_id": "agentic.zk-notes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/zk-notes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/zk-notes/expected.rows.json",
+    "variants": [
+      "note header row",
+      "tags row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.zk.notes for zk note list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/patrickfav/uber-apk-signer",
+    "descriptor_id": "known.uber-apk-signer.apks",
+    "run_id": "agentic.uber-apk-signer-apks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/uber-apk-signer-apks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/uber-apk-signer-apks/expected.rows.json",
+    "variants": [
+      "apk header row",
+      "signature row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.uber-apk-signer.apks for uber-apk-signer APK list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/MidnightCommander/mc-old",
+    "descriptor_id": "known.midnight-commander.panels",
+    "run_id": "agentic.midnight-commander-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/midnight-commander-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/midnight-commander-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "path row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.midnight-commander.panels for Midnight Commander panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/PatrickF1/fzf.fish",
+    "descriptor_id": "known.fzf-fish.bindings",
+    "run_id": "agentic.fzf-fish-bindings.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/fzf-fish-bindings/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/fzf-fish-bindings/expected.rows.json",
+    "variants": [
+      "binding header row",
+      "action row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.fzf-fish.bindings for fzf.fish binding list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/polybar/polybar-scripts",
+    "descriptor_id": "known.polybar-scripts.modules",
+    "run_id": "agentic.polybar-scripts-modules.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/polybar-scripts-modules/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/polybar-scripts-modules/expected.rows.json",
+    "variants": [
+      "module header row",
+      "kind row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.polybar-scripts.modules for polybar-scripts module list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pndurette/gTTS",
+    "descriptor_id": "known.gtts.requests",
+    "run_id": "agentic.gtts-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/gtts-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/gtts-requests/expected.rows.json",
+    "variants": [
+      "request header row",
+      "language row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.gtts.requests for gTTS request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zkat/npx",
+    "descriptor_id": "known.npx.packages",
+    "run_id": "agentic.npx-packages.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/npx-packages/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/npx-packages/expected.rows.json",
+    "variants": [
+      "package header row",
+      "version row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.npx.packages for npx package list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/pvolok/mprocs",
+    "descriptor_id": "known.mprocs.processes",
+    "run_id": "agentic.mprocs-processes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/mprocs-processes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/mprocs-processes/expected.rows.json",
+    "variants": [
+      "process header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.mprocs.processes for mprocs process list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.fzf-fish.bindings"
+name = "fzf.fish binding list"
+priority = 50
+
+[matches]
+required_substrings = ["binding\taction","ctrl-r\thistory"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

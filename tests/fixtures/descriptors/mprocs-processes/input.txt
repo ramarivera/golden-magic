@@ -1,0 +1,4 @@
+process	command state
+web	npm running
+api	cargo running
+old	make stopped

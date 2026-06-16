@@ -1,0 +1,10 @@
+id = "known.zk.notes"
+name = "zk note list"
+priority = 50
+
+[matches]
+required_substrings = ["note\ttags","daily\tjournal"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

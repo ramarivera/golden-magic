@@ -1,0 +1,18 @@
+[
+  {
+    "name": "binding",
+    "value": "action state"
+  },
+  {
+    "name": "ctrl-r",
+    "value": "history enabled"
+  },
+  {
+    "name": "ctrl-v",
+    "value": "variables enabled"
+  },
+  {
+    "name": "old",
+    "value": "files disabled"
+  }
+]

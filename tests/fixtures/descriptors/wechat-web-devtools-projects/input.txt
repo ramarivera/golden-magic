@@ -1,0 +1,4 @@
+project	appid state
+demo	wx123 open
+shop	wx456 open
+old	wx000 archived

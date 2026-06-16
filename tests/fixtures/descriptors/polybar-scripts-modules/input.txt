@@ -1,0 +1,4 @@
+module	kind state
+battery	status enabled
+weather	status enabled
+old	legacy disabled

@@ -1,0 +1,10 @@
+id = "known.polybar-scripts.modules"
+name = "polybar-scripts module list"
+priority = 50
+
+[matches]
+required_substrings = ["module\tkind","battery\tstatus"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

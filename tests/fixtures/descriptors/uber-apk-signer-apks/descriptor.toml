@@ -1,0 +1,10 @@
+id = "known.uber-apk-signer.apks"
+name = "uber-apk-signer APK list"
+priority = 50
+
+[matches]
+required_substrings = ["apk\tsignature","app.apk\tv2"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

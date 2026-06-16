@@ -1,0 +1,2 @@
+panel path state
+left /home active

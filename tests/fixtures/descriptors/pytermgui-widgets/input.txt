@@ -1,0 +1,4 @@
+widget	role state
+Window	container available
+Button	input available
+Old	legacy hidden
