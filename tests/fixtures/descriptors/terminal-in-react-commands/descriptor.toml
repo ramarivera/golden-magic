@@ -1,0 +1,10 @@
+id = "known.terminal-in-react.commands"
+name = "terminal-in-react command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\thelp","clear\ttrue"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

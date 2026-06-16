@@ -1,0 +1,18 @@
+[
+  {
+    "name": "plugin",
+    "value": "status state"
+  },
+  {
+    "name": "network",
+    "value": "enabled visible"
+  },
+  {
+    "name": "memory",
+    "value": "enabled visible"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

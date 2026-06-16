@@ -1,0 +1,4 @@
+table	columns state
+users	3 rendered
+metrics	4 rendered
+old	1 hidden

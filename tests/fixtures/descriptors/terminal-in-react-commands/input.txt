@@ -1,0 +1,4 @@
+command	help state
+clear	true available
+history	true available
+old	false hidden

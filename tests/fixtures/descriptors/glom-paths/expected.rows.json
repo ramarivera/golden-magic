@@ -1,0 +1,18 @@
+[
+  {
+    "name": "path",
+    "value": "result state"
+  },
+  {
+    "name": "user.name",
+    "value": "ok matched"
+  },
+  {
+    "name": "items.0",
+    "value": "ok matched"
+  },
+  {
+    "name": "old",
+    "value": "missing ignored"
+  }
+]

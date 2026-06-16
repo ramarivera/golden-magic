@@ -20050,5 +20050,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/FarGroup/FarManager",
+    "descriptor_id": "known.farmanager.panels",
+    "run_id": "agentic.farmanager-panels.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/farmanager-panels/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/farmanager-panels/expected.rows.json",
+    "variants": [
+      "panel header row",
+      "mode row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.farmanager.panels for FarManager panel list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/redox-os/termion",
+    "descriptor_id": "known.termion.events",
+    "run_id": "agentic.termion-events.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termion-events/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termion-events/expected.rows.json",
+    "variants": [
+      "event header row",
+      "code row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termion.events for termion event list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/p-ranav/tabulate",
+    "descriptor_id": "known.tabulate.tables",
+    "run_id": "agentic.tabulate-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tabulate-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tabulate-tables/expected.rows.json",
+    "variants": [
+      "table header row",
+      "columns row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tabulate.tables for tabulate table list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/bytedance/flutter_ume",
+    "descriptor_id": "known.flutter-ume.plugins",
+    "run_id": "agentic.flutter-ume-plugins.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/flutter-ume-plugins/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/flutter-ume-plugins/expected.rows.json",
+    "variants": [
+      "plugin header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.flutter-ume.plugins for flutter_ume plugin list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/apconw/Aix-DB",
+    "descriptor_id": "known.aix-db.tables",
+    "run_id": "agentic.aix-db-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/aix-db-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/aix-db-tables/expected.rows.json",
+    "variants": [
+      "table header row",
+      "rows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.aix-db.tables for Aix-DB table list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/nitin42/terminal-in-react",
+    "descriptor_id": "known.terminal-in-react.commands",
+    "run_id": "agentic.terminal-in-react-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/terminal-in-react-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/terminal-in-react-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "help row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.terminal-in-react.commands for terminal-in-react command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/dylanaraps/pfetch",
+    "descriptor_id": "known.pfetch.fields",
+    "run_id": "agentic.pfetch-fields.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/pfetch-fields/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/pfetch-fields/expected.rows.json",
+    "variants": [
+      "field header row",
+      "value row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.pfetch.fields for pfetch field list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/alexhallam/tv",
+    "descriptor_id": "known.tv.tables",
+    "run_id": "agentic.tv-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tv-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tv-tables/expected.rows.json",
+    "variants": [
+      "column header row",
+      "type row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tv.tables for tv table viewer list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mahmoud/glom",
+    "descriptor_id": "known.glom.paths",
+    "run_id": "agentic.glom-paths.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/glom-paths/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/glom-paths/expected.rows.json",
+    "variants": [
+      "path header row",
+      "result row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.glom.paths for glom path list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ffffffff0x/f8x",
+    "descriptor_id": "known.f8x.checks",
+    "run_id": "agentic.f8x-checks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/f8x-checks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/f8x-checks/expected.rows.json",
+    "variants": [
+      "check header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.f8x.checks for f8x check list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

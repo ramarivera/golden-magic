@@ -1,0 +1,4 @@
+plugin	status state
+network	enabled visible
+memory	enabled visible
+old	disabled hidden

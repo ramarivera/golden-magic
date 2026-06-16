@@ -1,0 +1,4 @@
+panel	mode state
+left	files active
+right	preview active
+old	archive hidden

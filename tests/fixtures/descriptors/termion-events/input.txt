@@ -1,0 +1,4 @@
+event	code state
+key	13 emitted
+resize	80x24 emitted
+old	0 ignored

@@ -1,0 +1,4 @@
+check	status state
+network	ok passed
+shell	ok passed
+old	fail ignored

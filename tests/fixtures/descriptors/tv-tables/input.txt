@@ -1,0 +1,4 @@
+column	type state
+name	string visible
+count	number visible
+old	unknown hidden

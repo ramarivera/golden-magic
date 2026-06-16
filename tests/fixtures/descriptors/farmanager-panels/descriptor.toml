@@ -1,0 +1,10 @@
+id = "known.farmanager.panels"
+name = "FarManager panel list"
+priority = 50
+
+[matches]
+required_substrings = ["panel\tmode","left\tfiles"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

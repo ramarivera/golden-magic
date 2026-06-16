@@ -1,0 +1,10 @@
+id = "known.tv.tables"
+name = "tv table viewer list"
+priority = 50
+
+[matches]
+required_substrings = ["column\ttype","name\tstring"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

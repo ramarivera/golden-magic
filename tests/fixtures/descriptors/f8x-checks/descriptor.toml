@@ -1,0 +1,10 @@
+id = "known.f8x.checks"
+name = "f8x check list"
+priority = 50
+
+[matches]
+required_substrings = ["check\tstatus","network\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

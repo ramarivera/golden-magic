@@ -1,0 +1,2 @@
+check status state
+network ok passed

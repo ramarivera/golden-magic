@@ -1,0 +1,10 @@
+id = "known.termion.events"
+name = "termion event list"
+priority = 50
+
+[matches]
+required_substrings = ["event\tcode","key\t13"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

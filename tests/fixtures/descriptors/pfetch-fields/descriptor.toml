@@ -1,0 +1,10 @@
+id = "known.pfetch.fields"
+name = "pfetch field list"
+priority = 50
+
+[matches]
+required_substrings = ["field\tvalue","os\tlinux"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

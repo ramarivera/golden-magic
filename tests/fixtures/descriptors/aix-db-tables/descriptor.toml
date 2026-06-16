@@ -1,0 +1,10 @@
+id = "known.aix-db.tables"
+name = "Aix-DB table list"
+priority = 50
+
+[matches]
+required_substrings = ["table\trows","users\t42"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

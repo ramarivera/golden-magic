@@ -1,0 +1,2 @@
+panel mode state
+left files active

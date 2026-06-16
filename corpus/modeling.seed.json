@@ -7796,5 +7796,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/nest-cli-projects",
     "analysis_notes": "Modeled nest-cli project output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/FarGroup/FarManager",
+    "descriptor_id": "known.farmanager.panels",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/farmanager-panels",
+    "analysis_notes": "Modeled FarManager panel output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/redox-os/termion",
+    "descriptor_id": "known.termion.events",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termion-events",
+    "analysis_notes": "Modeled termion terminal event output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/p-ranav/tabulate",
+    "descriptor_id": "known.tabulate.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tabulate-tables",
+    "analysis_notes": "Modeled tabulate table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/bytedance/flutter_ume",
+    "descriptor_id": "known.flutter-ume.plugins",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/flutter-ume-plugins",
+    "analysis_notes": "Modeled flutter_ume plugin output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/apconw/Aix-DB",
+    "descriptor_id": "known.aix-db.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/aix-db-tables",
+    "analysis_notes": "Modeled Aix-DB table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/nitin42/terminal-in-react",
+    "descriptor_id": "known.terminal-in-react.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/terminal-in-react-commands",
+    "analysis_notes": "Modeled terminal-in-react command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/dylanaraps/pfetch",
+    "descriptor_id": "known.pfetch.fields",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/pfetch-fields",
+    "analysis_notes": "Modeled pfetch system field output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/alexhallam/tv",
+    "descriptor_id": "known.tv.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tv-tables",
+    "analysis_notes": "Modeled tv tabular viewer output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mahmoud/glom",
+    "descriptor_id": "known.glom.paths",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/glom-paths",
+    "analysis_notes": "Modeled glom path output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ffffffff0x/f8x",
+    "descriptor_id": "known.f8x.checks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/f8x-checks",
+    "analysis_notes": "Modeled f8x check output with a generated executable-json parser plugin."
   }
 ]

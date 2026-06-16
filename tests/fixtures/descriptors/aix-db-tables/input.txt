@@ -1,0 +1,4 @@
+table	rows state
+users	42 selected
+orders	99 selected
+old	0 skipped

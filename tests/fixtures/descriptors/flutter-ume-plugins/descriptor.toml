@@ -1,0 +1,10 @@
+id = "known.flutter-ume.plugins"
+name = "flutter_ume plugin list"
+priority = 50
+
+[matches]
+required_substrings = ["plugin\tstatus","network\tenabled"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"
