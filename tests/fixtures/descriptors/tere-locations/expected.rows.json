@@ -1,0 +1,18 @@
+[
+  {
+    "name": "path",
+    "value": "status state"
+  },
+  {
+    "name": "src",
+    "value": "visited recent"
+  },
+  {
+    "name": "tests",
+    "value": "visited recent"
+  },
+  {
+    "name": "old",
+    "value": "missing hidden"
+  }
+]

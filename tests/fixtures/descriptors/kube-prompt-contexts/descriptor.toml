@@ -1,0 +1,10 @@
+id = "known.kube.prompt.contexts"
+name = "kube-prompt context list"
+priority = 50
+
+[matches]
+required_substrings = ["context\tstatus","dev\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

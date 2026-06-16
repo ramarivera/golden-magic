@@ -1,0 +1,4 @@
+video	status state
+demo	indexed searchable
+talk	indexed searchable
+old	missing hidden

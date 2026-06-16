@@ -1,0 +1,4 @@
+step	command state
+1	echo ready
+2	wait ready
+old	skip hidden

@@ -1,0 +1,4 @@
+index	status state
+docs	ready loaded
+code	ready loaded
+old	stale hidden

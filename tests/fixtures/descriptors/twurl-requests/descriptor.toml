@@ -1,0 +1,10 @@
+id = "known.twurl.requests"
+name = "twurl request list"
+priority = 50
+
+[matches]
+required_substrings = ["endpoint\tstatus","/2/users\tok"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

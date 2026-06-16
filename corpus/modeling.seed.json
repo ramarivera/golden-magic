@@ -8706,5 +8706,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/env-cmd-envs",
     "analysis_notes": "Modeled env-cmd environment output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/c-bata/kube-prompt",
+    "descriptor_id": "known.kube.prompt.contexts",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/kube-prompt-contexts",
+    "analysis_notes": "Modeled kube-prompt context output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/run-llama/semtools",
+    "descriptor_id": "known.semtools.indexes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/semtools-indexes",
+    "analysis_notes": "Modeled semtools index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mathaou/termdbms",
+    "descriptor_id": "known.termdbms.tables",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termdbms-tables",
+    "analysis_notes": "Modeled termdbms table output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/EmbarkStudios/texture-synthesis",
+    "descriptor_id": "known.texture.synthesis.runs",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/texture-synthesis-runs",
+    "analysis_notes": "Modeled texture-synthesis run output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/ines/termynal",
+    "descriptor_id": "known.termynal.steps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/termynal-steps",
+    "analysis_notes": "Modeled termynal step output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/d99kris/nchat",
+    "descriptor_id": "known.nchat.conversations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/nchat-conversations",
+    "analysis_notes": "Modeled nchat conversation output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/NotJoeMartinez/yt-fts",
+    "descriptor_id": "known.yt.fts.indexes",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/yt-fts-indexes",
+    "analysis_notes": "Modeled yt-fts index output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/twitter/twurl",
+    "descriptor_id": "known.twurl.requests",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/twurl-requests",
+    "analysis_notes": "Modeled twurl request output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/mgunyho/tere",
+    "descriptor_id": "known.tere.locations",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tere-locations",
+    "analysis_notes": "Modeled tere location output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/zalmoxisus/remote-redux-devtools",
+    "descriptor_id": "known.remote.redux.devtools.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/remote-redux-devtools-sessions",
+    "analysis_notes": "Modeled remote-redux-devtools session output with a generated executable-json parser plugin."
   }
 ]

@@ -1,0 +1,10 @@
+id = "known.yt.fts.indexes"
+name = "yt-fts index list"
+priority = 50
+
+[matches]
+required_substrings = ["video\tstatus","demo\tindexed"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,10 @@
+id = "known.termynal.steps"
+name = "termynal step list"
+priority = 50
+
+[matches]
+required_substrings = ["step\tcommand","1\techo"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

@@ -1,0 +1,18 @@
+[
+  {
+    "name": "session",
+    "value": "status state"
+  },
+  {
+    "name": "web",
+    "value": "connected live"
+  },
+  {
+    "name": "native",
+    "value": "connected live"
+  },
+  {
+    "name": "old",
+    "value": "disconnected hidden"
+  }
+]

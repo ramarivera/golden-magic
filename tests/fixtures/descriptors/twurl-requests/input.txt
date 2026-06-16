@@ -1,0 +1,4 @@
+endpoint	status state
+/2/users	ok cached
+/2/tweets	ok cached
+/1.1/old	gone hidden

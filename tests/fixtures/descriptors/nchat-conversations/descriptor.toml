@@ -1,0 +1,10 @@
+id = "known.nchat.conversations"
+name = "nchat conversation list"
+priority = 50
+
+[matches]
+required_substrings = ["chat\tstatus","team\tunread"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

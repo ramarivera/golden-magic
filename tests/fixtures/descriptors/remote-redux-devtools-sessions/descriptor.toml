@@ -1,0 +1,10 @@
+id = "known.remote.redux.devtools.sessions"
+name = "remote-redux-devtools session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","web\tconnected"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

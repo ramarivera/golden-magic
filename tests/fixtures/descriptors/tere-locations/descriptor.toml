@@ -1,0 +1,10 @@
+id = "known.tere.locations"
+name = "tere location list"
+priority = 50
+
+[matches]
+required_substrings = ["path\tstatus","src\tvisited"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

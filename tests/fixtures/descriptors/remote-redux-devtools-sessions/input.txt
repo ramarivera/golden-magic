@@ -1,0 +1,4 @@
+session	status state
+web	connected live
+native	connected live
+old	disconnected hidden

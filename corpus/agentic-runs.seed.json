@@ -22390,5 +22390,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/c-bata/kube-prompt",
+    "descriptor_id": "known.kube.prompt.contexts",
+    "run_id": "agentic.kube-prompt-contexts.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/kube-prompt-contexts/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/kube-prompt-contexts/expected.rows.json",
+    "variants": [
+      "context header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.kube.prompt.contexts for kube-prompt context list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/run-llama/semtools",
+    "descriptor_id": "known.semtools.indexes",
+    "run_id": "agentic.semtools-indexes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/semtools-indexes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/semtools-indexes/expected.rows.json",
+    "variants": [
+      "index header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.semtools.indexes for semtools index list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mathaou/termdbms",
+    "descriptor_id": "known.termdbms.tables",
+    "run_id": "agentic.termdbms-tables.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termdbms-tables/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termdbms-tables/expected.rows.json",
+    "variants": [
+      "table header row",
+      "rows row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termdbms.tables for termdbms table list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/EmbarkStudios/texture-synthesis",
+    "descriptor_id": "known.texture.synthesis.runs",
+    "run_id": "agentic.texture-synthesis-runs.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/texture-synthesis-runs/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/texture-synthesis-runs/expected.rows.json",
+    "variants": [
+      "run header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.texture.synthesis.runs for texture-synthesis run list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/ines/termynal",
+    "descriptor_id": "known.termynal.steps",
+    "run_id": "agentic.termynal-steps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/termynal-steps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/termynal-steps/expected.rows.json",
+    "variants": [
+      "step header row",
+      "command row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.termynal.steps for termynal step list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/d99kris/nchat",
+    "descriptor_id": "known.nchat.conversations",
+    "run_id": "agentic.nchat-conversations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/nchat-conversations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/nchat-conversations/expected.rows.json",
+    "variants": [
+      "chat header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.nchat.conversations for nchat conversation list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/NotJoeMartinez/yt-fts",
+    "descriptor_id": "known.yt.fts.indexes",
+    "run_id": "agentic.yt-fts-indexes.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/yt-fts-indexes/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/yt-fts-indexes/expected.rows.json",
+    "variants": [
+      "video header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.yt.fts.indexes for yt-fts index list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/twitter/twurl",
+    "descriptor_id": "known.twurl.requests",
+    "run_id": "agentic.twurl-requests.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/twurl-requests/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/twurl-requests/expected.rows.json",
+    "variants": [
+      "endpoint header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.twurl.requests for twurl request list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/mgunyho/tere",
+    "descriptor_id": "known.tere.locations",
+    "run_id": "agentic.tere-locations.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tere-locations/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tere-locations/expected.rows.json",
+    "variants": [
+      "path header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tere.locations for tere location list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/zalmoxisus/remote-redux-devtools",
+    "descriptor_id": "known.remote.redux.devtools.sessions",
+    "run_id": "agentic.remote-redux-devtools-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/remote-redux-devtools-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/remote-redux-devtools-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.remote.redux.devtools.sessions for remote-redux-devtools session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

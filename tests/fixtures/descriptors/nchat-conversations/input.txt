@@ -1,0 +1,4 @@
+chat	status state
+team	unread active
+ops	read active
+old	archived hidden

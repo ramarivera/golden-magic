@@ -1,0 +1,4 @@
+run	status state
+brick	done generated
+wood	queued generated
+old	failed hidden
