@@ -1,0 +1,18 @@
+[
+  {
+    "name": "document",
+    "value": "status state"
+  },
+  {
+    "name": "notes.txt",
+    "value": "open editor"
+  },
+  {
+    "name": "plan.md",
+    "value": "open editor"
+  },
+  {
+    "name": "old.txt",
+    "value": "closed hidden"
+  }
+]

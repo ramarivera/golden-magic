@@ -25630,5 +25630,185 @@
       "ran golden-magic against generated fixture input through executable-json parser plugin",
       "compared emitted rows against expected.rows.json"
     ]
+  },
+  {
+    "repo": "https://github.com/gildas-lormeau/single-file-cli",
+    "descriptor_id": "known.single.file.cli.archives",
+    "run_id": "agentic.single-file-cli-archives.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/single-file-cli-archives/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/single-file-cli-archives/expected.rows.json",
+    "variants": [
+      "archive header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.single.file.cli.archives for single-file-cli archive list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/adishavit/argh",
+    "descriptor_id": "known.argh.options",
+    "run_id": "agentic.argh-options.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/argh-options/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/argh-options/expected.rows.json",
+    "variants": [
+      "option header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.argh.options for argh option list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/netz98/n98-magerun",
+    "descriptor_id": "known.n98.magerun.commands",
+    "run_id": "agentic.n98-magerun-commands.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/n98-magerun-commands/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/n98-magerun-commands/expected.rows.json",
+    "variants": [
+      "command header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.n98.magerun.commands for n98-magerun command list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/t3l3machus/toxssin",
+    "descriptor_id": "known.toxssin.targets",
+    "run_id": "agentic.toxssin-targets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/toxssin-targets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/toxssin-targets/expected.rows.json",
+    "variants": [
+      "target header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.toxssin.targets for toxssin target list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/adtac/climate",
+    "descriptor_id": "known.climate.tasks",
+    "run_id": "agentic.climate-tasks.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/climate-tasks/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/climate-tasks/expected.rows.json",
+    "variants": [
+      "task header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.climate.tasks for climate task list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/jalonsogo/tui-studio",
+    "descriptor_id": "known.tui.studio.screens",
+    "run_id": "agentic.tui-studio-screens.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/tui-studio-screens/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/tui-studio-screens/expected.rows.json",
+    "variants": [
+      "screen header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.tui.studio.screens for tui-studio screen list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/Textualize/textual-web",
+    "descriptor_id": "known.textual.web.apps",
+    "run_id": "agentic.textual-web-apps.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/textual-web-apps/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/textual-web-apps/expected.rows.json",
+    "variants": [
+      "app header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.textual.web.apps for textual-web app list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/subethaedit/SubEthaEdit",
+    "descriptor_id": "known.subethaedit.documents",
+    "run_id": "agentic.subethaedit-documents.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/subethaedit-documents/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/subethaedit-documents/expected.rows.json",
+    "variants": [
+      "document header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.subethaedit.documents for SubEthaEdit document list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/samtay/so",
+    "descriptor_id": "known.so.snippets",
+    "run_id": "agentic.so-snippets.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/so-snippets/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/so-snippets/expected.rows.json",
+    "variants": [
+      "snippet header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.so.snippets for so snippet list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
+  },
+  {
+    "repo": "https://github.com/veops/oneterm",
+    "descriptor_id": "known.oneterm.sessions",
+    "run_id": "agentic.oneterm-sessions.001",
+    "run_kind": "exploratory-cli-variant",
+    "input_fixture": "tests/fixtures/descriptors/oneterm-sessions/input.txt",
+    "expected_rows": "tests/fixtures/descriptors/oneterm-sessions/expected.rows.json",
+    "variants": [
+      "session header row",
+      "status row",
+      "state field"
+    ],
+    "transcript": [
+      "selected descriptor known.oneterm.sessions for oneterm session list output",
+      "ran golden-magic against generated fixture input through executable-json parser plugin",
+      "compared emitted rows against expected.rows.json"
+    ]
   }
 ]

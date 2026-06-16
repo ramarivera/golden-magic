@@ -1,0 +1,10 @@
+id = "known.single.file.cli.archives"
+name = "single-file-cli archive list"
+priority = 50
+
+[matches]
+required_substrings = ["archive\tstatus","page.html\tsaved"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

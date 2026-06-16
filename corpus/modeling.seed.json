@@ -9966,5 +9966,75 @@
     "backend": "executable-json",
     "fixture": "tests/fixtures/descriptors/nixopus-services",
     "analysis_notes": "Modeled nixopus service output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/gildas-lormeau/single-file-cli",
+    "descriptor_id": "known.single.file.cli.archives",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/single-file-cli-archives",
+    "analysis_notes": "Modeled single-file-cli archive output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/adishavit/argh",
+    "descriptor_id": "known.argh.options",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/argh-options",
+    "analysis_notes": "Modeled argh option output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/netz98/n98-magerun",
+    "descriptor_id": "known.n98.magerun.commands",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/n98-magerun-commands",
+    "analysis_notes": "Modeled n98-magerun command output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/t3l3machus/toxssin",
+    "descriptor_id": "known.toxssin.targets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/toxssin-targets",
+    "analysis_notes": "Modeled toxssin target output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/adtac/climate",
+    "descriptor_id": "known.climate.tasks",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/climate-tasks",
+    "analysis_notes": "Modeled climate task output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/jalonsogo/tui-studio",
+    "descriptor_id": "known.tui.studio.screens",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/tui-studio-screens",
+    "analysis_notes": "Modeled tui-studio screen output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/Textualize/textual-web",
+    "descriptor_id": "known.textual.web.apps",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/textual-web-apps",
+    "analysis_notes": "Modeled textual-web app output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/subethaedit/SubEthaEdit",
+    "descriptor_id": "known.subethaedit.documents",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/subethaedit-documents",
+    "analysis_notes": "Modeled SubEthaEdit document output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/samtay/so",
+    "descriptor_id": "known.so.snippets",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/so-snippets",
+    "analysis_notes": "Modeled so snippet output with a generated executable-json parser plugin."
+  },
+  {
+    "repo": "https://github.com/veops/oneterm",
+    "descriptor_id": "known.oneterm.sessions",
+    "backend": "executable-json",
+    "fixture": "tests/fixtures/descriptors/oneterm-sessions",
+    "analysis_notes": "Modeled oneterm session output with a generated executable-json parser plugin."
   }
 ]

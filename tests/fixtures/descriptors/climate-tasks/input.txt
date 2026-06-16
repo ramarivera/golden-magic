@@ -1,0 +1,4 @@
+task	status state
+forecast	ready weather
+history	ready weather
+old	disabled hidden

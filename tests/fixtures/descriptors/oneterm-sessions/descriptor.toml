@@ -1,0 +1,10 @@
+id = "known.oneterm.sessions"
+name = "oneterm session list"
+priority = 50
+
+[matches]
+required_substrings = ["session\tstatus","prod\tactive"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

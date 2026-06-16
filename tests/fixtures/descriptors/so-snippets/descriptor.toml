@@ -1,0 +1,10 @@
+id = "known.so.snippets"
+name = "so snippet list"
+priority = 50
+
+[matches]
+required_substrings = ["snippet\tstatus","rust\tcached"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

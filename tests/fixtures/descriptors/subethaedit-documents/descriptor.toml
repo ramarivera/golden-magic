@@ -1,0 +1,10 @@
+id = "known.subethaedit.documents"
+name = "SubEthaEdit document list"
+priority = 50
+
+[matches]
+required_substrings = ["document\tstatus","notes.txt\topen"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

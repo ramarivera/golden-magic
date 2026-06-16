@@ -1,0 +1,4 @@
+target	status state
+example.com	queued scan
+api.local	running scan
+old	ignored hidden

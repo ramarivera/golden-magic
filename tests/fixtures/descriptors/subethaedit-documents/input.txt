@@ -1,0 +1,4 @@
+document	status state
+notes.txt	open editor
+plan.md	open editor
+old.txt	closed hidden

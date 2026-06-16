@@ -1,0 +1,4 @@
+screen	status state
+main	ready tui
+settings	ready tui
+old	disabled hidden

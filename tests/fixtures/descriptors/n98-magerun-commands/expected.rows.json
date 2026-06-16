@@ -1,0 +1,18 @@
+[
+  {
+    "name": "command",
+    "value": "status state"
+  },
+  {
+    "name": "cache:clean",
+    "value": "ready magento"
+  },
+  {
+    "name": "sys:info",
+    "value": "ready magento"
+  },
+  {
+    "name": "old",
+    "value": "disabled hidden"
+  }
+]

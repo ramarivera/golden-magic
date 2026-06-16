@@ -1,0 +1,2 @@
+task status state
+forecast ready weather

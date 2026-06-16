@@ -1,0 +1,4 @@
+session	status state
+prod	active terminal
+stage	active terminal
+old	closed hidden

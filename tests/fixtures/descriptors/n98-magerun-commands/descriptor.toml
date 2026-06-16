@@ -1,0 +1,10 @@
+id = "known.n98.magerun.commands"
+name = "n98-magerun command list"
+priority = 50
+
+[matches]
+required_substrings = ["command\tstatus","cache:clean\tready"]
+
+[parser]
+backend = "executable-json"
+executable = "./parser-plugin.py"

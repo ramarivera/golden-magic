@@ -1,0 +1,2 @@
+command status state
+cache:clean ready magento

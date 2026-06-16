@@ -1,0 +1,4 @@
+app	status state
+demo	ready textual
+docs	ready textual
+old	disabled hidden

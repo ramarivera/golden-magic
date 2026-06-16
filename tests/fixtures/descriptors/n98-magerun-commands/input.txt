@@ -1,0 +1,4 @@
+command	status state
+cache:clean	ready magento
+sys:info	ready magento
+old	disabled hidden
