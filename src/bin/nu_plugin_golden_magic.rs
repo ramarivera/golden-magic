@@ -49,7 +49,10 @@ impl SimplePluginCommand for FromGoldenMagic {
     fn signature(&self) -> Signature {
         Signature::build(self.name())
             .category(Category::Formats)
-            .input_output_type(Type::String, Type::List(Type::Record([].into()).into()))
+            .input_output_type(
+                Type::String,
+                Type::List(Type::Record(Vec::new().into()).into()),
+            )
             .named(
                 "headers",
                 SyntaxShape::String,
